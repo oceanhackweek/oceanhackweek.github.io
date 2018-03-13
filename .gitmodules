@@ -1,0 +1,3 @@
+[submodule "jekyll-spectral-theme"]
+	path = jekyll-spectral-theme
+	url = https://github.com/oceanhackweek/jekyll-spectral-theme.git

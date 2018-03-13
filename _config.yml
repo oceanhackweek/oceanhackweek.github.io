@@ -1,0 +1,38 @@
+# Site settings
+title: Oceanhackweek 2018
+email: landungs@uw.edu
+description: Workshop On Geospatial Data Science <br>
+             University of Washington eScience Institute <br>
+             Sept 10 - 14, 2018
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# Misc settings
+featured-image-source:
+
+# Social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/oceanhackweek
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
+email_url: cahw@uw.edu
+
+# Build settings
+markdown: kramdown
+
+destination:  _site/
+plugins_dir:  jekyll-spectral-theme/_plugins/
+layouts_dir:  jekyll-spectral-theme/_layouts/
+includes_dir: jekyll-spectral-theme/_includes/
+exclude:
+- jekyll-spectral-theme/
