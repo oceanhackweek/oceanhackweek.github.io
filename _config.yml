@@ -30,9 +30,12 @@ email_url: cahw@uw.edu
 # Build settings
 markdown: kramdown
 
+# Submodule setting
 destination:  _site/
 plugins_dir:  jekyll-spectral-theme/_plugins/
 layouts_dir:  jekyll-spectral-theme/_layouts/
 includes_dir: jekyll-spectral-theme/_includes/
 exclude:
 - jekyll-spectral-theme/
+
+include: ["_pages"]

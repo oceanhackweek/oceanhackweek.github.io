@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Home
-description: Oceanhackweek
+description: Oceanhackweek home
 ---
