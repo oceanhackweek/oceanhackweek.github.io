@@ -4,12 +4,7 @@ title: INSTRUCTORS and EVENT COORDINATORS
 permalink: our-team.html
 description:
 team:
-  - - name: Deb Kelley
-      title: Professor
-      affiliate: UW School of Oceanography
-      image_url: https://coenv-media-gene1ufvxiloffjq.stackpathdns.com/2014/04/Debbie-Kelley-528x528.jpg
-
-    - name: Rob Fatland
+  - - name: Rob Fatland
       title: UW Cloud Czar for Research
       affiliate: eScience & UW-IT
       image_url: https://geohackweek.github.io/ghw2017/images/6199513.jpeg
@@ -21,13 +16,13 @@ team:
       image_url: https://geohackweek.github.io/ghw2017/images/17802172.jpeg
       github_user: lsetiawan
 
-  - - name: Amanda Tan
+    - name: Amanda Tan
       title: Data Scientist
       affiliate: eScience & UW-IT
       image_url: https://geohackweek.github.io/ghw2017/images/Amanda-Tan-300x300.jpg
       github_user: cloudmaven
 
-    - name: Anthony Arendt
+  - - name: Anthony Arendt
       title: Principal Research Scientist
       affiliate: eScience & APL
       image_url: https://geohackweek.github.io/ghw2017/images/4993098.jpeg
@@ -38,6 +33,12 @@ team:
       affiliate: APL
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
       github_user: leewujung
+
+    - name: Friedrich Knuth
+      title: OOI Data Evaluator
+      affiliate: Rutgers University
+      image_url: https://avatars0.githubusercontent.com/u/10554254?s=400&v=4
+      github_user: friedrichknuth
 
   - - name: Aaron Marburg
       title: Senior Research Engineer
@@ -51,9 +52,8 @@ team:
       image_url: http://escience.washington.edu/wp-content/uploads/2015/09/Bio_Valentina-Staneva.jpg
       github_user: valentina-s
 
-    - name: Friedrich Knuth
-      title: OOI Data Evaluator
-      affiliate: Rutgers University
-      image_url: https://avatars0.githubusercontent.com/u/10554254?s=400&v=4
-      github_user: friedrichknuth
+    - name: Deb Kelley
+      title: Professor
+      affiliate: UW School of Oceanography
+      image_url: https://coenv-media-gene1ufvxiloffjq.stackpathdns.com/2014/04/Debbie-Kelley-528x528.jpg
 ---
