@@ -14,7 +14,5 @@ computation, or visualization ideas in a group setting. Of particular interests 
 complex temporal-spatial structures or high volume. To best benefit from the program, participants
 are expected to have some experience with Python programming and data analysis.
 
-If you would like to register click [here](#).
-
-<!--Successful applicants will pay a $75 registration fee and be expected to cover lodging and travel expenses. Financial support may be available based on need.-->
+If you would like to sign up click [here](https://form.jotform.com/oceanhack/2018).
 
