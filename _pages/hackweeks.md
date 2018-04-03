@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What is a hackweek?
-permalink: hackweeks.html
+permalink: hackweek.html
 description: Learn about "hackweek".
 ---
 
