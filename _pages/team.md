@@ -37,7 +37,7 @@ team:
     - name: Friedrich Knuth
       title: OOI Data Evaluator
       affiliate: Rutgers University
-      image_url: https://avatars0.githubusercontent.com/u/10554254?s=400&v=4
+      image_url: /assets/images/FKnuth_pic.jpg
       github_user: friedrichknuth
 
   - - name: Aaron Marburg
