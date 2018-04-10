@@ -4,13 +4,7 @@ title: INSTRUCTORS and EVENT COORDINATORS
 permalink: our-team.html
 description:
 team:
-  - - name: Amanda Tan
-      title: Data Scientist
-      affiliate: eScience & UW-IT
-      image_url: https://geohackweek.github.io/ghw2017/images/Amanda-Tan-300x300.jpg
-      github_user: cloudmaven 
-    
-    - name: Wu-Jung Lee
+  - - name: Wu-Jung Lee
       title: Research Associate
       affiliate: APL
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
@@ -21,6 +15,12 @@ team:
       affiliate: Rutgers University
       image_url: /assets/images/FKnuth_pic.jpg
       github_user: friedrichknuth
+      
+    - name: Amanda Tan
+      title: Data Scientist
+      affiliate: eScience & UW-IT
+      image_url: https://geohackweek.github.io/ghw2017/images/Amanda-Tan-300x300.jpg
+      github_user: cloudmaven 
       
   - - name: Valentina Staneva
       title: eScience Data Scientist
