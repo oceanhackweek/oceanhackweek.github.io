@@ -18,4 +18,4 @@ the success of the previous *Astro-*, *Neuro-*, and *Geohackweeks*. This is an e
 with the nature of oceanographic research where data are large and complex and the
 community is diverse and collaborative.
 
-[See what we will do in the Oceanhackweek](https://oceanhackweek.github.io/2018/04/02/information-for-applicants.html)
+[See what we will do in the Oceanhackweek](https://oceanhackweek.github.io/applicant-info.html)
