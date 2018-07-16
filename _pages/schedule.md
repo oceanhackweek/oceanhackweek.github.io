@@ -24,29 +24,80 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>Morning</td>
+      <td>8.30am - 9am</td>
       <td>
+        Breakfast
+      </td>
+    </tr>
+    <tr>
+      <td>9am - 9.30am</td>
+      <td>
+        Welcome to Oceanhackweek
         <ul>
-          <li>Welcome</li>
-          <li>Data science tools 1</li>
+          <li>Code of Conduct</li>
+          <li>Logistics</li>
+          <li>Consent Form</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>9.30am - 10.30am</td>
       <td>
-        <ul>
-          <li>Data science tools 2</li>
-          <li>Hack project pitch</li>
-        </ul>
+        OOI Introduction
       </td>
     </tr>
     <tr>
-      <td>Evening</td>
+      <td>10.30am - 10.45am</td>
       <td>
-        <ul>
-          <li>Welcome reception</li>
-        </ul>
+        Coffee Break and Pictures
+      </td>
+    </tr>
+    <tr>
+      <td>10.45am - 11.15am</td>
+      <td>
+        Icebreakers
+      </td>
+    </tr>
+    <tr>
+      <td>11.15am - 12.15pm</td>
+      <td>
+        Git/Github
+      </td>
+    </tr>
+    <tr>
+      <td>12.15pm - 1.15pm</td>
+      <td>
+        Lunch
+      </td>
+    </tr>
+    <tr>
+      <td>1.15pm - 2.30pm</td>
+      <td>
+        Data Sharing and Collaboration Tools
+      </td>
+    </tr>
+    <tr>
+      <td>2.30pm - 2.45pm</td>
+      <td>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>2.45pm - 4pm</td>
+      <td>
+        Data Sharing and Collaboration Tools
+      </td>
+    </tr>
+    <tr>
+      <td>4pm - 5.30pm</td>
+      <td>
+        Project Introductions, Pitching, and Work
+      </td>
+    </tr>
+    <tr>
+      <td>6pm - 8pm</td>
+      <td>
+        Welcome Reception
       </td>
     </tr>
   </tbody>
@@ -63,28 +114,69 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>Morning</td>
+      <td>8.30am - 9am</td>
       <td>
-        <ul>
-          <li>OOI data access and software assets</li>
-        </ul>
+        Breakfast
       </td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>9am - 10am</td>
       <td>
-        <ul>
-          <li>Data visualization</li>
-          <li>Hack project work</li>
-        </ul>
+        Data access talk part 1 (OOI)
       </td>
     </tr>
     <tr>
-      <td>Evening</td>
+      <td>10am - 10.15am</td>
       <td>
-        <ul>
-          <li>Optional hack project work</li>
-        </ul>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>10.15am - 11.15am</td>
+      <td>
+        Data access talk part 2 (IOOS)
+      </td>
+    </tr>
+    <tr>
+      <td>11.15am - 12.15pm</td>
+      <td>
+        Cutting edge data visualization tools
+      </td>
+    </tr>
+    <tr>
+      <td>12.15pm - 1.15pm</td>
+      <td>
+        Lunch
+      </td>
+    </tr>
+    <tr>
+      <td>1.15pm - 2.15pm</td>
+      <td>
+        Open session for small talks by participants
+      </td>
+    </tr>
+    <tr>
+      <td>2.15pm - 2.30pm</td>
+      <td>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>2.30pm - 3.45pm</td>
+      <td>
+        Project Check-in
+      </td>
+    </tr>
+    <tr>
+      <td>3.45pm - 5.30pm</td>
+      <td>
+        Project Work
+      </td>
+    </tr>
+    <tr>
+      <td>5.30pm - 11pm (Optional)</td>
+      <td>
+        Hackathon sessions
       </td>
     </tr>
   </tbody>
@@ -101,28 +193,63 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>Morning</td>
+      <td>8.30am - 9am</td>
       <td>
-        <ul>
-          <li>nD Array</li>
-          <li>Statistics tools for oceanographic data</li>
-        </ul>
+        Breakfast
       </td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>9am - 10am</td>
       <td>
-        <ul>
-          <li>Hack project work</li>
-        </ul>
+        Geospatial and Mapping Tools
       </td>
     </tr>
     <tr>
-      <td>Evening</td>
+      <td>10am - 10.15am</td>
       <td>
-        <ul>
-          <li>Optional hack project work</li>
-        </ul>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>10.15am - 11.15am</td>
+      <td>
+        nD Arrays
+      </td>
+    </tr>
+    <tr>
+      <td>11.15am - 11.30am</td>
+      <td>
+        Break
+      </td>
+    </tr>
+    <tr>
+      <td>11.30am - 12.15pm</td>
+      <td>
+        Short talks on statistics and modeling
+      </td>
+    </tr>
+    <tr>
+      <td>12.15pm - 1.15pm</td>
+      <td>
+        Lunch
+      </td>
+    </tr>
+    <tr>
+      <td>1.15pm - 1.45pm</td>
+      <td>
+        Project Check-in
+      </td>
+    </tr>
+    <tr>
+      <td>1.45pm - 5pm</td>
+      <td>
+        Project work
+      </td>
+    </tr>
+    <tr>
+      <td>5pm - 11pm (Optional)</td>
+      <td>
+        Hackathon sessions
       </td>
     </tr>
   </tbody>
@@ -139,28 +266,63 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>Morning</td>
+      <td>8.30am - 9am</td>
       <td>
-        <ul>
-          <li>Data mining</li>
-          <li>The ecosystem of ocean observation</li>
-        </ul>
+        Breakfast
       </td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>9am - 10.30am</td>
       <td>
-        <ul>
-          <li>Hack project work</li>
-        </ul>
+        Cloud tutorial
       </td>
     </tr>
     <tr>
-      <td>Evening</td>
+      <td>10.30am - 11am</td>
       <td>
-        <ul>
-          <li>Optional hack project work</li>
-        </ul>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>11am - 12.15pm</td>
+      <td>
+        Data mining
+      </td>
+    </tr>
+    <tr>
+      <td>12.15pm - 1.15pm</td>
+      <td>
+        Lunch
+      </td>
+    </tr>
+    <tr>
+      <td>1.15pm - 1.45pm</td>
+      <td>
+        Demystification deep learning
+      </td>
+    </tr>
+    <tr>
+      <td>2.15pm - 2.30pm</td>
+      <td>
+        Coffee Break
+      </td>
+    </tr>
+    <tr>
+      <td>2.30pm - 3.45pm</td>
+      <td>
+        Project Check-in
+      </td>
+    </tr>
+    <tr>
+      <td>3.45pm - 5.30pm</td>
+      <td>
+        Project Work
+      </td>
+    </tr>
+    <tr>
+      <td>5.30pm - 11pm (Optional)</td>
+      <td>
+        Hackathon sessions
       </td>
     </tr>
   </tbody>
@@ -177,28 +339,33 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>Morning</td>
+      <td>8.30am - 9am</td>
       <td>
-        <ul>
-          <li>Open sessions</li>
-          <li>Reproducible research</li>
-        </ul>
+        Breakfast
       </td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>9am - 9.45am</td>
       <td>
-        <ul>
-          <li>Project presentations</li>
-        </ul>
+         Reproducible research and tools
       </td>
     </tr>
     <tr>
-      <td>Evening</td>
+      <td>9.45am - 12pm</td>
       <td>
-        <ul>
-          <li>Optional Seattle outing</li>
-        </ul>
+        Project Work
+      </td>
+    </tr>
+    <tr>
+      <td>12pm - 1pm</td>
+      <td>
+        Lunch
+      </td>
+    </tr>
+    <tr>
+      <td>1pm - 3.30pm</td>
+      <td>
+        Project Presentations
       </td>
     </tr>
   </tbody>
