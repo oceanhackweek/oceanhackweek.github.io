@@ -55,7 +55,7 @@ team:
     - name: Filipe Fernandes
       title: Research Software Engineer
       affiliate: IOOS
-      image_url: /assets/images/filipe.jpg
+      image_url: https://oceanhackweek.github.io//assets/images/filipe.jpg
       github_user: ocefpaf
 
   - - name: Emilio Mayorga
