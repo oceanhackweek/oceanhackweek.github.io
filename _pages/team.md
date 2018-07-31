@@ -23,14 +23,14 @@ team:
       github_user: cloudmaven 
       
   - - name: Valentina Staneva
-      title: eScience Data Scientist
+      title: Data Scientist
       affiliate: eScience
       image_url: http://escience.washington.edu/wp-content/uploads/2015/09/Bio_Valentina-Staneva.jpg
       github_user: valentina-s
   
     - name: Don Setiawan
-      title: Environmental Data Specialist
-      affiliate: APL & eScience
+      title: Computer Specialist
+      affiliate: Oceanography & eScience
       image_url: https://geohackweek.github.io/ghw2017/images/17802172.jpeg
       github_user: lsetiawan
   
@@ -45,8 +45,38 @@ team:
       affiliate: eScience & UW-IT
       image_url: https://geohackweek.github.io/ghw2017/images/6199513.jpeg
       github_user: robfatland
+    
+    - name: Rachael Murray
+      title: Program Specialist
+      affiliate: eScience
+      image_url: https://github.com/geohackweek/geohackweek.github.io/raw/master/assets/images/rachael.JPG
+      github_user: rlm92
+    
+    - name: Filipe Fernandes
+      title: Research Software Engineer
+      affiliate: IOOS
+      image_url: /assets/images/filipe.jpg
+      github_user: ocefpaf
+
+  - - name: Emilio Mayorga
+      title: Research Scientist
+      affiliate: APL
+      image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
+      github_user: emiliom
+
+    - name: Jake Vanderplas
+      title: Data Scientist
+      affiliate: eScience
+      image_url: http://astrohackweek.org/2018/images/vanderplas.jpg
+      github_user: jakevdp
       
-    - name: Anthony Arendt
+    - name: Joe Hamman
+      title: Postdoctoral Researcher
+      affiliate: NCAR
+      image_url: https://geohackweek.github.io/ghw2017/images/jhamman.png
+      github_user: jhamman
+
+  - - name: Anthony Arendt
       title: Principal Research Scientist
       affiliate: eScience & APL
       image_url: https://geohackweek.github.io/ghw2017/images/4993098.jpeg
