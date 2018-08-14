@@ -13,7 +13,7 @@ description: Current Tentative schedule
 - [Thursday](#thursday)
 - [Friday](#friday)
 
-**All Tutorials will be held in [Odegaard Undergraduate Library](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Odegaard+Undergraduate+Library,+George+Washington+Lane+Northeast,+Seattle,+WA)**
+**All tutorials and coffee breaks will be held at [Odegaard Undergraduate Library](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Odegaard+Undergraduate+Library,+George+Washington+Lane+Northeast,+Seattle,+WA), lunch and hackathon sessions will be held at the [eScience Data Science Studio](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA). Breakfast is at [Local Point, Lander Hall](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA).**
 
 ### Monday
 
@@ -27,7 +27,7 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>8.30am - 9am</td>
+      <td>7.30am - 8.45am</td>
       <td>
         Breakfast @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA">Lander Hall (Local Point)</a>
       </td>
@@ -36,26 +36,27 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 9.45am</td>
+      <td>9.15am - 9.35am</td>
       <td>
         <strong>Welcome to Oceanhackweek</strong>
         <ul>
           <li>Code of Conduct</li>
           <li>Logistics</li>
           <li>Consent Form</li>
+          <li>Name Tags</li>
         </ul>
       </td>
       <td>
-        <strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
+        <strong>Wu-Jung Lee</strong>,<strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
       </td>
     </tr>
     <tr>
-      <td>9.45am - 10.45am</td>
+      <td>9.35am - 10.45am</td>
       <td>
         <strong>OOI Introduction</strong>
       </td>
       <td>
-        <strong>Deb Kelley</strong> or <strong>Jon Trowbridge</strong>
+        TBD
       </td>
     </tr>
     <tr>
@@ -118,7 +119,7 @@ description: Current Tentative schedule
         <strong>Lightning talks</strong>
       </td>
       <td>
-        <strong>Valentina Staneva</strong> and <strong>Rob Fatland</strong>
+        <strong>Valentina Staneva</strong> and <strong>Aaron Marburg</strong>
       </td>
     </tr>
     <tr>
@@ -127,7 +128,7 @@ description: Current Tentative schedule
         <strong>Project Introductions, Pitching, and Work</strong>
       </td>
       <td>
-        <strong>Rob Fatland</strong>
+        <strong>Wu-Jung Lee</strong>
       </td>
     </tr>
     <tr>
@@ -154,7 +155,7 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>8.30am - 9am</td>
+      <td>7.30am - 8.45am</td>
       <td>
         Breakfast @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA">Lander Hall (Local Point)</a>
       </td>
@@ -163,7 +164,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 10.15am</td>
+      <td>9am - 10am</td>
       <td>
         <strong>Data access talk part 1 (OOI)</strong>
       </td>
@@ -172,7 +173,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.15am - 10.30am</td>
+      <td>10am - 10.15am</td>
       <td>
         Coffee Break
       </td>
@@ -181,7 +182,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.30am - 11.30am</td>
+      <td>10.15am - 11.15am</td>
       <td>
         <strong>Data access talk part 2 (IOOS)</strong>
       </td>
@@ -190,7 +191,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>11.30am - 12.30pm</td>
+      <td>11.15am - 12.15pm</td>
       <td>
         <strong>Cutting edge data visualization tools</strong>
       </td>
@@ -208,16 +209,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.30pm - 2.30pm</td>
+      <td>1.45pm - 2.45pm</td>
       <td>
         <strong>Open session for small talks by participants</strong>
       </td>
       <td>
-        Everyone
+        <strong>Rob Fatland</strong> and <strong>Aaron Marburg</strong>
       </td>
     </tr>
     <tr>
-      <td>2.30pm - 2.45pm</td>
+      <td>2.45pm - 3pm</td>
       <td>
         Coffee Break
       </td>
@@ -226,7 +227,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2.45pm - 4pm</td>
+      <td>3pm - 3.15pm</td>
       <td>
         Project Check-in
       </td>
@@ -235,7 +236,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>4pm - 5.30pm</td>
+      <td>3.15pm - 5.30pm</td>
       <td>
         Project Work
       </td>
@@ -267,7 +268,7 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>8.30am - 9am</td>
+      <td>7.30am - 8.45am</td>
       <td>
         Breakfast @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA">Lander Hall (Local Point)</a>
       </td>
@@ -276,7 +277,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 10.15am</td>
+      <td>9am - 10.30am</td>
       <td>
         <strong>Geospatial and Mapping Tools</strong>
       </td>
@@ -285,7 +286,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.15am - 10.30am</td>
+      <td>10.30am - 10.45am</td>
       <td>
         Coffee Break
       </td>
@@ -294,25 +295,25 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.30am - 11.30am</td>
+      <td>10.45am - 11.45am</td>
       <td>
-        <strong>nD Arrays</strong>
+        <strong>xArray</strong>
       </td>
       <td>
         <strong>Joe Hamman</strong>
       </td>
     </tr>
     <tr>
-      <td>11.30am - 12.15pm</td>
+      <td>11.45am - 12.30am</td>
       <td>
-        Project Check-in
+        <strong>Synoptic Validation</strong>
       </td>
       <td>
-        Everyone
+        <strong>Rob Fatland</strong>
       </td>
     </tr>
     <tr>
-      <td>12.15pm - 1.15pm</td>
+      <td>12.30pm - 1.30pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -321,7 +322,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.45pm - 5pm</td>
+      <td>1.45am - 2pm</td>
+      <td>
+        Project Check-in
+      </td>
+      <td>
+        Everyone
+      </td>
+    </tr>
+    <tr>
+      <td>2pm - 5pm</td>
       <td>
         Project work
       </td>
@@ -353,7 +363,7 @@ description: Current Tentative schedule
   </thead>
   <tbody>
     <tr>
-      <td>8.30am - 9am</td>
+      <td>7.30am - 8.45am</td>
       <td>
         Breakfast @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA">Lander Hall (Local Point)</a>
       </td>
@@ -362,7 +372,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 10.45am</td>
+      <td>9am - 10.30am</td>
       <td>
         <strong>Cloud tutorial</strong>
       </td>
@@ -371,7 +381,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.45am - 11am</td>
+      <td>10.30am - 11am</td>
       <td>
         Coffee Break
       </td>
@@ -380,7 +390,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>11am - 12.15pm</td>
+      <td>11am - 12.30pm</td>
       <td>
         <strong>Data mining</strong>
       </td>
@@ -389,7 +399,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.15pm - 1.15pm</td>
+      <td>12.30pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -398,34 +408,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.15pm - 1.45pm</td>
-      <td>
-        <strong>Demystification deep learning</strong>
-      </td>
-      <td>
-        TBD
-      </td>
-    </tr>
-    <tr>
-      <td>2.15pm - 2.30pm</td>
-      <td>
-        Coffee Break
-      </td>
-      <td>
-        Everyone
-      </td>
-    </tr>
-    <tr>
-      <td>2.30pm - 3.45pm</td>
-      <td>
-        Project Check-in
-      </td>
-      <td>
-        Everyone
-      </td>
-    </tr>
-    <tr>
-      <td>3.45pm - 5.30pm</td>
+      <td>2pm - 4pm</td>
       <td>
         Project Work
       </td>
@@ -434,7 +417,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>5.30pm - 11pm (Optional)</td>
+      <td>4pm - 5pm</td>
+      <td>
+        Project Check-in/Work
+      </td>
+      <td>
+        Everyone
+      </td>
+    </tr>
+    <tr>
+      <td>5pm - 11pm (Optional)</td>
       <td>
         Hackathon sessions
       </td>
@@ -475,16 +467,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.45am - 12pm</td>
+      <td>9.45am - 12.15pm</td>
       <td>
-        Project Work
+        Project Work and Open Sessions
       </td>
       <td>
         Everyone
       </td>
     </tr>
     <tr>
-      <td>12pm - 1pm</td>
+      <td>12.15pm - 1.15pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -493,9 +485,9 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1pm - 3.30pm</td>
+      <td>1.30pm - 3.30pm</td>
       <td>
-        Project Presentations
+        Project Presentations @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
       <td>
         Everyone
