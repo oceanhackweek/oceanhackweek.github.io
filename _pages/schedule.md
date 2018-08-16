@@ -47,16 +47,22 @@ description: Current Tentative schedule
         </ul>
       </td>
       <td>
-        <strong>Wu-Jung Lee</strong>,<strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
+        <strong>Wu-Jung Lee</strong>, <strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
       </td>
     </tr>
     <tr>
       <td>9.35am - 10.45am</td>
       <td>
         <strong>OOI Introduction</strong>
+        <ul>
+          <li>OOI Overview</li>
+          <li>Cabled Array</li>
+          <li>Pioneer and Global Array</li>
+          <li>Endurance Array</li>
+        </ul>
       </td>
       <td>
-        TBD
+        <strong>John Trowbridge</strong>, <strong>Deb Kelley</strong>, <strong>Sheri White</strong> and <strong>Craig Risien</strong>
       </td>
     </tr>
     <tr>
@@ -164,7 +170,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9am - 10am</td>
+      <td>9am - 9.15am</td>
+      <td>
+        <strong>OOI Cyberinfrastructure overview</strong>
+      </td>
+      <td>
+        <strong>Mike Vardaro</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>9.15am - 10.15am</td>
       <td>
         <strong>Data access talk part 1 (OOI)</strong>
       </td>
@@ -173,7 +188,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10am - 10.15am</td>
+      <td>10.15am - 10.30am</td>
       <td>
         Coffee Break
       </td>
@@ -182,7 +197,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.15am - 11.15am</td>
+      <td>10.30am - 11.30am</td>
       <td>
         <strong>Data access talk part 2 (IOOS)</strong>
       </td>
@@ -191,7 +206,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>11.15am - 12.15pm</td>
+      <td>11.30am - 12.30pm</td>
       <td>
         <strong>Cutting edge data visualization tools</strong>
       </td>
@@ -487,7 +502,7 @@ description: Current Tentative schedule
     <tr>
       <td>1.30pm - 3.30pm</td>
       <td>
-        Project Presentations @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
+        <strong>Project Presentations</strong>
       </td>
       <td>
         Everyone
