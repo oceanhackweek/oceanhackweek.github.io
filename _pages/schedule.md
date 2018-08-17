@@ -335,7 +335,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.30pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -344,7 +344,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.45am - 2pm</td>
+      <td>2am - 2.15pm</td>
       <td>
         Project Check-in
       </td>
@@ -353,7 +353,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2pm - 5pm</td>
+      <td>2.15pm - 5pm</td>
       <td>
         Project work
       </td>
@@ -421,7 +421,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.45pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
