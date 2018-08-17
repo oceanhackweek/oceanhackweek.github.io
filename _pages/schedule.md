@@ -36,27 +36,40 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 9.35am</td>
+      <td>9.00am - 9.15am</td>
+      <td>
+        Check-in @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Odegaard+Undergraduate+Library,+George+Washington+Lane+Northeast,+Seattle,+WA">Odegaard Undergraduate Library Rm136</a>
+      </td>
+      <td>
+        Everyone
+      </td>
+    </tr>
+    <tr>
+      <td>9.15am - 9.45am</td>
       <td>
         <strong>Welcome to Oceanhackweek</strong>
         <ul>
           <li>Code of Conduct</li>
           <li>Logistics</li>
-          <li>Consent Form</li>
-          <li>Name Tags</li>
         </ul>
       </td>
       <td>
-        <strong>Wu-Jung Lee</strong>,<strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
+        <strong>Wu-Jung Lee</strong>, <strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
       </td>
     </tr>
     <tr>
-      <td>9.35am - 10.45am</td>
+      <td>9.45am - 10.45am</td>
       <td>
         <strong>OOI Introduction</strong>
+        <ul>
+          <li>OOI Overview</li>
+          <li>Cabled Array</li>
+          <li>Pioneer and Global Array</li>
+          <li>Endurance Array</li>
+        </ul>
       </td>
       <td>
-        TBD
+        <strong>John Trowbridge</strong>, <strong>Deb Kelley</strong>, <strong>Sheri White</strong> and <strong>Craig Risien</strong>
       </td>
     </tr>
     <tr>
@@ -71,7 +84,7 @@ description: Current Tentative schedule
     <tr>
       <td>11am - 11.30am</td>
       <td>
-        Icebreakers
+        Icebreakers + Group picture!
       </td>
       <td>
         Everyone
@@ -87,7 +100,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.30pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -96,7 +109,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.45pm - 2.45pm</td>
+      <td>2pm - 2.30pm</td>
       <td>
         <strong>Data Sharing and Collaboration Tools</strong>
       </td>
@@ -105,7 +118,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2.45pm - 3pm</td>
+      <td>2.30pm - 2.45pm</td>
       <td>
         Coffee Break
       </td>
@@ -114,7 +127,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>3pm - 4.15pm</td>
+      <td>2.45pm - 4pm</td>
       <td>
         <strong>Lightning talks</strong>
       </td>
@@ -123,12 +136,12 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>4.15pm - 5.30pm</td>
+      <td>4pm - 5pm</td>
       <td>
         <strong>Project Introductions, Pitching, and Work</strong>
       </td>
       <td>
-        <strong>Wu-Jung Lee</strong>
+        <strong>Wu-Jung Lee</strong> and <strong>Valentina Staneva</strong>
       </td>
     </tr>
     <tr>
@@ -164,7 +177,16 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9am - 10am</td>
+      <td>9am - 9.15am</td>
+      <td>
+        <strong>OOI Cyberinfrastructure overview</strong>
+      </td>
+      <td>
+        <strong>Mike Vardaro</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>9.15am - 10.15am</td>
       <td>
         <strong>Data access talk part 1 (OOI)</strong>
       </td>
@@ -173,7 +195,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10am - 10.15am</td>
+      <td>10.15am - 10.30am</td>
       <td>
         Coffee Break
       </td>
@@ -182,7 +204,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>10.15am - 11.15am</td>
+      <td>10.30am - 11.30am</td>
       <td>
         <strong>Data access talk part 2 (IOOS)</strong>
       </td>
@@ -191,7 +213,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>11.15am - 12.15pm</td>
+      <td>11.30am - 12.30pm</td>
       <td>
         <strong>Cutting edge data visualization tools</strong>
       </td>
@@ -200,7 +222,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.30pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -209,7 +231,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.45pm - 2.45pm</td>
+      <td>2pm - 3pm</td>
       <td>
         <strong>Open session for small talks by participants</strong>
       </td>
@@ -218,7 +240,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2.45pm - 3pm</td>
+      <td>3pm - 3.15pm</td>
       <td>
         Coffee Break
       </td>
@@ -227,7 +249,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>3pm - 3.15pm</td>
+      <td>3.15pm - 3.30pm</td>
       <td>
         Project Check-in
       </td>
@@ -236,7 +258,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>3.15pm - 5.30pm</td>
+      <td>3.30pm - 5pm</td>
       <td>
         Project Work
       </td>
@@ -245,7 +267,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>5.30pm - 11pm (Optional)</td>
+      <td>5pm - 11pm (Optional)</td>
       <td>
         Hackathon sessions
       </td>
@@ -313,7 +335,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.30pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -322,7 +344,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>1.45am - 2pm</td>
+      <td>2am - 2.15pm</td>
       <td>
         Project Check-in
       </td>
@@ -331,7 +353,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2pm - 5pm</td>
+      <td>2.15pm - 5pm</td>
       <td>
         Project work
       </td>
@@ -399,7 +421,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>12.30pm - 1.45pm</td>
+      <td>12.45pm - 1.45pm</td>
       <td>
         Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
@@ -487,7 +509,7 @@ description: Current Tentative schedule
     <tr>
       <td>1.30pm - 3.30pm</td>
       <td>
-        Project Presentations @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
+        <strong>Project Presentations</strong>
       </td>
       <td>
         Everyone
