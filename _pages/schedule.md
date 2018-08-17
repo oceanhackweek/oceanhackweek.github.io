@@ -36,14 +36,12 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>9.15am - 9.35am</td>
+      <td>9.00am - 9.35am</td>
       <td>
         <strong>Welcome to Oceanhackweek</strong>
         <ul>
           <li>Code of Conduct</li>
           <li>Logistics</li>
-          <li>Consent Form</li>
-          <li>Name Tags</li>
         </ul>
       </td>
       <td>
