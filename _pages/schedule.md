@@ -127,7 +127,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>4.15pm - 5.30pm</td>
+      <td>4.15pm - 5pm</td>
       <td>
         <strong>Project Introductions, Pitching, and Work</strong>
       </td>
@@ -249,7 +249,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>3.15pm - 5.30pm</td>
+      <td>3.15pm - 5pm</td>
       <td>
         Project Work
       </td>
@@ -258,7 +258,7 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>5.30pm - 11pm (Optional)</td>
+      <td>5pm - 11pm (Optional)</td>
       <td>
         Hackathon sessions
       </td>
