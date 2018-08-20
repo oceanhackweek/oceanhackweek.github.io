@@ -2,7 +2,7 @@
 layout: page
 title: Schedule
 permalink: schedule.html
-description: Current Tentative schedule
+description: Latest schedule
 ---
 
 ## Tentative Schedule
@@ -138,7 +138,7 @@ description: Current Tentative schedule
     <tr>
       <td>4pm - 5pm</td>
       <td>
-        <strong>Project Introductions, Pitching, and Work</strong>
+        <strong>Project Discussion & Pitching</strong>
       </td>
       <td>
         <strong>Wu-Jung Lee</strong> and <strong>Valentina Staneva</strong>
@@ -251,7 +251,7 @@ description: Current Tentative schedule
     <tr>
       <td>3.15pm - 3.30pm</td>
       <td>
-        Project Check-in
+        Forming Project Groups
       </td>
       <td>
         Everyone
@@ -344,18 +344,18 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2am - 2.15pm</td>
+      <td>2pm - 4.40pm</td>
       <td>
-        Project Check-in
+        Project work
       </td>
       <td>
         Everyone
       </td>
     </tr>
     <tr>
-      <td>2.15pm - 5pm</td>
+      <td>4.40am - 5pm</td>
       <td>
-        Project work
+        Group Dynamic Discussion
       </td>
       <td>
         Everyone
@@ -430,7 +430,8 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2pm - 4pm</td>
+    <tr>
+      <td>2pm - 4.40pm</td>
       <td>
         Project Work
       </td>
@@ -439,9 +440,9 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>4pm - 5pm</td>
+      <td>4.40pm - 5pm</td>
       <td>
-        Project Check-in/Work
+        Project Check-In
       </td>
       <td>
         Everyone
