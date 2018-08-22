@@ -206,7 +206,7 @@ description: Latest schedule
     <tr>
       <td>10.30am - 11.30am</td>
       <td>
-        <strong>Data access talk part 2 (IOOS)</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ioos_data_access">repo</a>)
+        <strong><a href="https://youtu.be/Jia0RmIciEQ">Data access talk part 2 (IOOS)</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ioos_data_access">repo</a>)
       </td>
       <td>
         <strong>Emilio Mayorga</strong>
