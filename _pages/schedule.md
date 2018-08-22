@@ -430,7 +430,6 @@ description: Latest schedule
       </td>
     </tr>
     <tr>
-    <tr>
       <td>2pm - 4.40pm</td>
       <td>
         Project Work
