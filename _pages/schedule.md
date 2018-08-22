@@ -62,10 +62,10 @@ description: Latest schedule
       <td>
         <strong>OOI Introduction</strong>
         <ul>
-          <li>OOI Overview</li>
-          <li>Cabled Array</li>
-          <li>Pioneer and Global Array</li>
-          <li>Endurance Array</li>
+          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/1_Trowbridge_OOI%20Overview.pdf">OOI Overview</a></li>
+          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/2_Kelley_OOI_Hackweek_2018.pdf">Cabled Array</a></li>
+          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/3_White_CGSN-Overview_2018-08-20.pdf">Pioneer and Global Array</a></li>
+          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/4_Risien_Endurance_Oceanhackweek_20180820.pdf">Endurance Array</a></li>
         </ul>
       </td>
       <td>
@@ -179,7 +179,7 @@ description: Latest schedule
     <tr>
       <td>9am - 9.15am</td>
       <td>
-        <strong><a href="https://youtu.be/VJpE9DkCVfM">OOI Cyberinfrastructure overview</a></strong>
+        <strong><a href="https://youtu.be/VJpE9DkCVfM">OOI Cyberinfrastructure overview</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day2/OOICI_Data_Flow_Presentation_2018-08-20.pdf">slides</a>)
       </td>
       <td>
         <strong>Mike Vardaro</strong>
