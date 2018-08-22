@@ -2,7 +2,7 @@
 layout: page
 title: Schedule
 permalink: schedule.html
-description: Current Tentative schedule
+description: Latest schedule
 ---
 
 ## Tentative Schedule
@@ -93,7 +93,7 @@ description: Current Tentative schedule
     <tr>
       <td>11.30am - 12.30pm</td>
       <td>
-        <strong>Git/Github</strong>
+        <strong><a href="https://youtu.be/wyiiTHVEF8k">Git/Github</a></strong>
       </td>
       <td>
         <strong>Valentina Staneva</strong>
@@ -111,7 +111,7 @@ description: Current Tentative schedule
     <tr>
       <td>2pm - 2.30pm</td>
       <td>
-        <strong>Data Sharing and Collaboration Tools</strong>
+        <strong><a href="https://youtu.be/2Mbr6kQACF4">Data Sharing and Collaboration Tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day1/data_sharing_collaborations">repo</a>)
       </td>
       <td>
         <strong>Don Setiawan</strong> and <strong>Amanda Tan</strong>
@@ -138,7 +138,7 @@ description: Current Tentative schedule
     <tr>
       <td>4pm - 5pm</td>
       <td>
-        <strong>Project Introductions, Pitching, and Work</strong>
+        <strong>Project Discussion & Pitching</strong>
       </td>
       <td>
         <strong>Wu-Jung Lee</strong> and <strong>Valentina Staneva</strong>
@@ -179,7 +179,7 @@ description: Current Tentative schedule
     <tr>
       <td>9am - 9.15am</td>
       <td>
-        <strong>OOI Cyberinfrastructure overview</strong>
+        <strong><a href="https://youtu.be/VJpE9DkCVfM">OOI Cyberinfrastructure overview</a></strong>
       </td>
       <td>
         <strong>Mike Vardaro</strong>
@@ -188,7 +188,7 @@ description: Current Tentative schedule
     <tr>
       <td>9.15am - 10.15am</td>
       <td>
-        <strong>Data access talk part 1 (OOI)</strong>
+        <strong><a href="https://youtu.be/of6ZxMwXIg4">Data access talk part 1 (OOI)</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ooi_data_access">repo</a>)
       </td>
       <td>
         <strong>Friedrich Knuth</strong>
@@ -206,7 +206,7 @@ description: Current Tentative schedule
     <tr>
       <td>10.30am - 11.30am</td>
       <td>
-        <strong>Data access talk part 2 (IOOS)</strong>
+        <strong>Data access talk part 2 (IOOS)</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ioos_data_access">repo</a>)
       </td>
       <td>
         <strong>Emilio Mayorga</strong>
@@ -215,7 +215,7 @@ description: Current Tentative schedule
     <tr>
       <td>11.30am - 12.30pm</td>
       <td>
-        <strong>Cutting edge data visualization tools</strong>
+        <strong><a href="https://youtu.be/KfPd3B9zQzw">Cutting edge data visualization tools</a></strong>
       </td>
       <td>
         <strong>Jake Vanderplas</strong>
@@ -251,7 +251,7 @@ description: Current Tentative schedule
     <tr>
       <td>3.15pm - 3.30pm</td>
       <td>
-        Project Check-in
+        Forming Project Groups
       </td>
       <td>
         Everyone
@@ -301,7 +301,7 @@ description: Current Tentative schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong>Geospatial and Mapping Tools</strong>
+        <strong>Geospatial and Mapping Tools</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
@@ -319,7 +319,7 @@ description: Current Tentative schedule
     <tr>
       <td>10.45am - 11.45am</td>
       <td>
-        <strong>xArray</strong>
+        <strong>xArray</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Joe Hamman</strong>
@@ -328,7 +328,7 @@ description: Current Tentative schedule
     <tr>
       <td>11.45am - 12.30am</td>
       <td>
-        <strong>Synoptic Validation</strong>
+        <strong>Synoptic Validation</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/synoptics">repo</a>)
       </td>
       <td>
         <strong>Rob Fatland</strong>
@@ -344,18 +344,18 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2am - 2.15pm</td>
+      <td>2pm - 4.40pm</td>
       <td>
-        Project Check-in
+        Project work
       </td>
       <td>
         Everyone
       </td>
     </tr>
     <tr>
-      <td>2.15pm - 5pm</td>
+      <td>4.40am - 5pm</td>
       <td>
-        Project work
+        Group Dynamic Discussion
       </td>
       <td>
         Everyone
@@ -396,7 +396,7 @@ description: Current Tentative schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong>Cloud tutorial</strong>
+        <strong>Cloud Computing</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/cloud">repo</a>)
       </td>
       <td>
         <strong>Amanda Tan</strong>
@@ -414,7 +414,7 @@ description: Current Tentative schedule
     <tr>
       <td>11am - 12.30pm</td>
       <td>
-        <strong>Data mining</strong>
+        <strong>Data mining</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/data-mining">repo</a>)
       </td>
       <td>
         <strong>Valentina Staneva</strong>
@@ -430,7 +430,8 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>2pm - 4pm</td>
+    <tr>
+      <td>2pm - 4.40pm</td>
       <td>
         Project Work
       </td>
@@ -439,9 +440,9 @@ description: Current Tentative schedule
       </td>
     </tr>
     <tr>
-      <td>4pm - 5pm</td>
+      <td>4.40pm - 5pm</td>
       <td>
-        Project Check-in/Work
+        Project Check-In
       </td>
       <td>
         Everyone
@@ -482,7 +483,7 @@ description: Current Tentative schedule
     <tr>
       <td>9am - 9.45am</td>
       <td>
-         <strong>Reproducible research and tools</strong>
+         <strong>Reproducible research and tools</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day5/reproducible_research_and_tools">repo</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
