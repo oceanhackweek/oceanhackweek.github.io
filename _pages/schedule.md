@@ -215,7 +215,7 @@ description: Latest schedule
     <tr>
       <td>11.30am - 12.30pm</td>
       <td>
-        <strong><a href="https://youtu.be/KfPd3B9zQzw">Cutting edge data visualization tools</a></strong>
+        <strong><a href="https://youtu.be/QiQAvEOVvII">Cutting edge data visualization tools</a></strong>
       </td>
       <td>
         <strong>Jake Vanderplas</strong>
@@ -328,7 +328,7 @@ description: Latest schedule
     <tr>
       <td>11.45am - 12.30am</td>
       <td>
-        <strong>Synoptic Validation</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/synoptics">repo</a>)
+        <strong><a href="https://youtu.be/xT9NztOtD5c">Synoptic Validation</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/synoptics">repo</a>)
       </td>
       <td>
         <strong>Rob Fatland</strong>
@@ -507,7 +507,7 @@ description: Latest schedule
       </td>
     </tr>
     <tr>
-      <td>1.30pm - 3.30pm</td>
+      <td>2pm - 4pm</td>
       <td>
         <strong>Project Presentations</strong>
       </td>
