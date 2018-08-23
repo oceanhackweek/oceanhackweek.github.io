@@ -54,7 +54,7 @@ description: Latest schedule
         </ul>
       </td>
       <td>
-        <strong>Wu-Jung Lee</strong>, <strong>Rob Fatland</strong> and <strong>Rachael Murray</strong>
+        <strong>Wu-Jung Lee</strong>, <strong>Anthony Arendt</strong> and <strong>Rachael Murray</strong>
       </td>
     </tr>
     <tr>
@@ -132,7 +132,7 @@ description: Latest schedule
         <strong>Lightning talks</strong>
       </td>
       <td>
-        <strong>Valentina Staneva</strong> and <strong>Aaron Marburg</strong>
+        <strong>Aaron Marburg</strong>
       </td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@ description: Latest schedule
         <strong>Open session for small talks by participants</strong>
       </td>
       <td>
-        <strong>Rob Fatland</strong> and <strong>Aaron Marburg</strong>
+        <strong>Eric McRae</strong>, <strong>Joseph Gum</strong>, <strong>Jen Bosch</strong>, <strong>Brian Glazer</strong>, <strong>Manuel Valera</strong>, and <strong>Christian Sarason</strong>
       </td>
     </tr>
     <tr>
@@ -301,7 +301,7 @@ description: Latest schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong>Geospatial and Mapping Tools</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
+        <strong><a href="https://youtu.be/YDhHWklo-v4">Geospatial and Mapping Tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
@@ -319,7 +319,7 @@ description: Latest schedule
     <tr>
       <td>10.45am - 11.45am</td>
       <td>
-        <strong>xArray</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
+        <strong><a href="https://youtu.be/KOjXB6vYVhU">xArray</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Joe Hamman</strong>
