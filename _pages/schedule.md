@@ -396,7 +396,7 @@ description: Latest schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong>Cloud Computing</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/cloud">repo</a>)
+        <strong><a href="https://youtu.be/1ZvmlMKisI8">Cloud Computing</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/cloud">repo</a>)
       </td>
       <td>
         <strong>Amanda Tan</strong>
@@ -414,7 +414,7 @@ description: Latest schedule
     <tr>
       <td>11am - 12.30pm</td>
       <td>
-        <strong>Data mining</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/data-mining">repo</a>)
+        <strong><a href="https://youtu.be/7yxxCYJ5Bto">Data mining</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/data-mining">repo</a>)
       </td>
       <td>
         <strong>Valentina Staneva</strong>
@@ -489,7 +489,16 @@ description: Latest schedule
       </td>
     </tr>
     <tr>
-      <td>9.45am - 12.15pm</td>
+      <td>9.45am - 10.10am</td>
+      <td>
+         <strong>Exit survey</strong>
+      </td>
+      <td>
+        Everyone
+      </td>
+    </tr>
+    <tr>
+      <td>10.10am - 12.15pm</td>
       <td>
         Project Work and Open Sessions
       </td>
@@ -498,9 +507,9 @@ description: Latest schedule
       </td>
     </tr>
     <tr>
-      <td>12.15pm - 1.15pm</td>
+      <td>12.15pm - 1.45pm</td>
       <td>
-        Lunch @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
+        Lunch + Hacking @ <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA">eScience Data Science Studio</a>
       </td>
       <td>
         Everyone
