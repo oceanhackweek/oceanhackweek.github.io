@@ -62,10 +62,10 @@ description: Latest schedule
       <td>
         <strong>OOI Introduction</strong>
         <ul>
-          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/1_Trowbridge_OOI%20Overview.pdf">OOI Overview</a></li>
-          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/2_Kelley_OOI_Hackweek_2018.pdf">Cabled Array</a></li>
-          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/3_White_CGSN-Overview_2018-08-20.pdf">Pioneer and Global Array</a></li>
-          <li><a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/4_Risien_Endurance_Oceanhackweek_20180820.pdf">Endurance Array</a></li>
+          <li>OOI Overview (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/1_Trowbridge_OOI%20Overview.pdf">slides</a>)</li>
+          <li>Cabled Array (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/2_Kelley_OOI_Hackweek_2018.pdf">slides</a>)</li>
+          <li>Pioneer and Global Array (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/3_White_CGSN-Overview_2018-08-20.pdf">slides</a>)</li>
+          <li>Endurance Array (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day1/ooi_intro_talks/4_Risien_Endurance_Oceanhackweek_20180820.pdf">slides</a>)</li>
         </ul>
       </td>
       <td>
@@ -93,7 +93,7 @@ description: Latest schedule
     <tr>
       <td>11.30am - 12.30pm</td>
       <td>
-        <strong><a href="https://youtu.be/wyiiTHVEF8k">Git/Github</a></strong>
+        <strong>Git/Github</strong> (<a href="https://youtu.be/wyiiTHVEF8k">video</a>)
       </td>
       <td>
         <strong>Valentina Staneva</strong>
@@ -111,7 +111,7 @@ description: Latest schedule
     <tr>
       <td>2pm - 2.30pm</td>
       <td>
-        <strong><a href="https://youtu.be/2Mbr6kQACF4">Data Sharing and Collaboration Tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day1/data_sharing_collaborations">repo</a>)
+        <strong>Data Sharing and Collaboration Tools</strong> (<a href="https://youtu.be/2Mbr6kQACF4">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day1/data_sharing_collaborations">repo</a>)
       </td>
       <td>
         <strong>Don Setiawan</strong> and <strong>Amanda Tan</strong>
@@ -179,7 +179,7 @@ description: Latest schedule
     <tr>
       <td>9am - 9.15am</td>
       <td>
-        <strong><a href="https://youtu.be/VJpE9DkCVfM">OOI Cyberinfrastructure overview</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day2/OOICI_Data_Flow_Presentation_2018-08-20.pdf">slides</a>)
+        <strong>OOI Cyberinfrastructure overview</strong> (<a href="https://youtu.be/VJpE9DkCVfM">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/blob/master/day2/OOICI_Data_Flow_Presentation_2018-08-20.pdf">slides</a>)
       </td>
       <td>
         <strong>Mike Vardaro</strong>
@@ -188,7 +188,7 @@ description: Latest schedule
     <tr>
       <td>9.15am - 10.15am</td>
       <td>
-        <strong><a href="https://youtu.be/of6ZxMwXIg4">Data access talk part 1 (OOI)</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ooi_data_access">repo</a>)
+        <strong>Data access talk part 1 (OOI)</strong> (<a href="https://youtu.be/of6ZxMwXIg4">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ooi_data_access">repo</a>)
       </td>
       <td>
         <strong>Friedrich Knuth</strong>
@@ -206,7 +206,7 @@ description: Latest schedule
     <tr>
       <td>10.30am - 11.30am</td>
       <td>
-        <strong><a href="https://youtu.be/Jia0RmIciEQ">Data access talk part 2 (IOOS)</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ioos_data_access">repo</a>)
+        <strong>Data access talk part 2 (IOOS)</strong> (<a href="https://youtu.be/Jia0RmIciEQ">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day2/ioos_data_access">repo</a>)
       </td>
       <td>
         <strong>Emilio Mayorga</strong>
@@ -215,7 +215,7 @@ description: Latest schedule
     <tr>
       <td>11.30am - 12.30pm</td>
       <td>
-        <strong><a href="https://youtu.be/QiQAvEOVvII">Cutting edge data visualization tools</a></strong>
+        <strong>Cutting edge data visualization tools</strong> (<a href="https://youtu.be/QiQAvEOVvII">video</a>)
       </td>
       <td>
         <strong>Jake Vanderplas</strong>
@@ -301,7 +301,7 @@ description: Latest schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong><a href="https://youtu.be/YDhHWklo-v4">Geospatial and Mapping Tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
+        <strong>Geospatial and Mapping Tools</strong> (<a href="https://youtu.be/YDhHWklo-v4">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
@@ -319,7 +319,7 @@ description: Latest schedule
     <tr>
       <td>10.45am - 11.45am</td>
       <td>
-        <strong><a href="https://youtu.be/KOjXB6vYVhU">xArray</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
+        <strong>xArray</strong> (<a href="https://youtu.be/KOjXB6vYVhU">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/geospatial_and_mapping_tools">repo</a>)
       </td>
       <td>
         <strong>Joe Hamman</strong>
@@ -328,7 +328,7 @@ description: Latest schedule
     <tr>
       <td>11.45am - 12.30am</td>
       <td>
-        <strong><a href="https://youtu.be/xT9NztOtD5c">Synoptic Validation</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/synoptics">repo</a>)
+        <strong>Synoptic Validation</strong> (<a href="https://youtu.be/xT9NztOtD5c">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day3/synoptics">repo</a>)
       </td>
       <td>
         <strong>Rob Fatland</strong>
@@ -396,7 +396,7 @@ description: Latest schedule
     <tr>
       <td>9am - 10.30am</td>
       <td>
-        <strong><a href="https://youtu.be/1ZvmlMKisI8">Cloud Computing</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/cloud">repo</a>)
+        <strong>Cloud Computing</strong> (<a href="https://youtu.be/1ZvmlMKisI8">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/cloud">repo</a>)
       </td>
       <td>
         <strong>Amanda Tan</strong>
@@ -414,7 +414,7 @@ description: Latest schedule
     <tr>
       <td>11am - 12.30pm</td>
       <td>
-        <strong><a href="https://youtu.be/7yxxCYJ5Bto">Data mining</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/data-mining">repo</a>)
+        <strong>Data mining</strong> (<a href="https://youtu.be/7yxxCYJ5Bto">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day4/data-mining">repo</a>)
       </td>
       <td>
         <strong>Valentina Staneva</strong>
@@ -482,7 +482,7 @@ description: Latest schedule
     <tr>
       <td>9am - 9.45am</td>
       <td>
-         <strong><a href="https://youtu.be/R0aghgGXync">Reproducible research and tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day5/reproducible_research_and_tools">repo</a>) (<a href="https://etherpad.wikimedia.org/p/ohw-discussion">discussion notes :)</a>)
+         <strong>Reproducible research and tools</strong> (<a href="https://youtu.be/R0aghgGXync">video</a>, <a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day5/reproducible_research_and_tools">repo</a>, <a href="https://etherpad.wikimedia.org/p/ohw-discussion">discussion notes :)</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
