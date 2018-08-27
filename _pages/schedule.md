@@ -482,7 +482,7 @@ description: Latest schedule
     <tr>
       <td>9am - 9.45am</td>
       <td>
-         <strong>Reproducible research and tools</strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day5/reproducible_research_and_tools">repo</a>) (<a href="https://etherpad.wikimedia.org/p/ohw-discussion">discussion notes :)</a>)
+         <strong><a href="https://youtu.be/R0aghgGXync">Reproducible research and tools</a></strong> (<a href="https://github.com/oceanhackweek/ohw2018_tutorials/tree/master/day5/reproducible_research_and_tools">repo</a>) (<a href="https://etherpad.wikimedia.org/p/ohw-discussion">discussion notes :)</a>)
       </td>
       <td>
         <strong>Filipe Fernandes</strong>
