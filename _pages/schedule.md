@@ -2,10 +2,10 @@
 layout: page
 title: Schedule
 permalink: schedule.html
-description: Latest schedule
+# description: Latest schedule
 ---
 
-## Tentative Schedule
+## Schedule
 
 - [Monday](#monday)
 - [Tuesday](#tuesday)
