@@ -5,7 +5,7 @@ description: In the Oceanhackweek we will explore the intersection of data scien
              through tutorials and hands-on “hacking” projects. To best benefit from the program,
              participants are expected to have some experience with Python programming and data analysis.
 permalink: applicant-info.html
-image: ohw18-hacking.JPG
+image: ohw18-hacking2.JPG
 ---
 In the Oceanhackweek we will explore the intersection of data science and oceanography through tutorials and hands-on
 “hacking” projects. In tutorials, we will learn data science tools, cloud computing, visualization,
