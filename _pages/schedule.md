@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Schedule
+title: 2018 Schedule
 permalink: schedule.html
-# description: Latest schedule
+description: Come back for 2019 schedule soon!
 ---
 
-## Schedule
+## 2018 Schedule
+
+**Links to video recordings and materials of all tutorials are embedded in the schedule below. Have fun!**
 
 - [Monday](#monday)
 - [Tuesday](#tuesday)
