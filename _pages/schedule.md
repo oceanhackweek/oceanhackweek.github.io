@@ -5,9 +5,7 @@ permalink: schedule.html
 description: Come back for 2019 schedule soon!
 ---
 
-## 2018 Schedule
-
-**Links to video recordings and materials of all tutorials are embedded in the schedule below. Have fun!**
+**Links to video recordings and materials of all 2018 tutorials are embedded in the schedule below. Have fun!**
 
 - [Monday](#monday)
 - [Tuesday](#tuesday)
@@ -15,7 +13,7 @@ description: Come back for 2019 schedule soon!
 - [Thursday](#thursday)
 - [Friday](#friday)
 
-**All tutorials and coffee breaks will be held at [Odegaard Undergraduate Library](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Odegaard+Undergraduate+Library,+George+Washington+Lane+Northeast,+Seattle,+WA), lunch and hackathon sessions will be held at the [eScience Data Science Studio](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA). Breakfast is at [Local Point, Lander Hall](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA).**
+All tutorials and coffee breaks were held at [Odegaard Undergraduate Library](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Odegaard+Undergraduate+Library,+George+Washington+Lane+Northeast,+Seattle,+WA). Lunch and hackathon sessions were held at the [eScience Data Science Studio](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=eScience+Institute,+15th+Avenue+Northeast,+Seattle,+WA). Breakfast was at [Local Point, Lander Hall](https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=Local+Point,+Northeast+Campus+Parkway,+Seattle,+WA).
 
 ### Monday
 
