@@ -23,7 +23,7 @@ team:
       github_user: valentina-s
 
   - - name: Filipe Fernandes
-      title: Reproducibility, IOOS
+      title: Reproducibility,                 IOOS
       affiliate: Research Software Engineer,  IOOS
       image_url: https://oceanhackweek.github.io/assets/images/filipe.jpg
       github_user: ocefpaf
