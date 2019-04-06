@@ -16,7 +16,7 @@ are expected to have some experience with Python programming and data analysis.
 
 Come back soon for application info for Oceanhackweek 2019! In the meantime, please read our FAQs to see how you can benefit from Oceanhackweek.
 
-#FAQs
+## FAQs
 
 ---
 
