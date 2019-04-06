@@ -4,12 +4,12 @@ email: oceanhkw@uw.edu
 description: Data Science + Oceanography <br>
              University of Washington <br>
              Aug. 26 - 30, 2019 <br> <br>
-             Application will open soon! <br> 
+             Applications will open soon! <br> 
              
 
 # Banner button to lead to form, then schedule, then next year's website.
-banner_button_url: https://oceanhackweek.github.io/ohw2018/
-banner_button_text: Oceanhackweek 2018
+#banner_button_url: https://oceanhackweek.github.io/ohw2018/
+#banner_button_text: Oceanhackweek 2018
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
