@@ -23,26 +23,26 @@ team:
       github_user: valentina-s
 
   - - name: Filipe Fernandes
-      title: Committee Member, IOOS
+      title: Reproducibility, IOOS
       affiliate: Research Software Engineer, IOOS
       image_url: https://oceanhackweek.github.io/assets/images/filipe.jpg
       github_user: ocefpaf
 
     - name: Emilio Mayorga
-      title: Ocean data systems, data science education, IOOS 
-      affiliate: Senior Oceanographer, Applied Physics Laboratory, UW
+      title: Ocean data systems, IOOS 
+      affiliate: Senior Oceanographer, APL, UW
       image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
       github_user: emiliom
 
     - name: Ryan Abernathy
-      title: Pangeo, curriculum design, ocean modelling
+      title: Pangeo, ocean modeling
       affiliate: Assistant Professor, LDEO, Columbia University
       image_url: https://avatars2.githubusercontent.com/u/1197350?s=400&v=4
       github_user: rabernat
 
   - - name: Joseph Gum 
-      title: Data science education, ship data, project facilitation
-      affiliate: Data Analyst, Scripps Institute of Oceanography
+      title: Data science education, ship data
+      affiliate: Data Analyst, Scripps
       image_url: "https://media.licdn.com/dms/image/C4E03AQFiRCK1jVnQCQ/profile-displayphoto-shrink_800_800/0?e=1559779200&v=beta&t=Mc1qQbxIBIWx_JgGQMRgfVHe9uCgEeuCIs0P-zttY70"
       github_user: asx-
 
@@ -51,5 +51,11 @@ team:
       affiliate: Associate Research Professor, LDEO, Columbia University
       image_url: https://avatars1.githubusercontent.com/u/5667194?s=400&v=4
       github_user: tjcrone
+
+    - name: Rich Signell
+      title: Pangeo, OOI
+      affiliate: Oceanographer, USGS Woods Hole
+      image_url: https://avatars2.githubusercontent.com/u/1872600?s=460&v=4
+      github_user: rsignell-usgs
 
 ---
