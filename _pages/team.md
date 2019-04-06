@@ -6,7 +6,7 @@ description:
 team:
   - - name: Wu-Jung Lee
       title: Organizing Committee Chair
-      affiliate: Senior Oceanographer, APL, UW
+      affiliate: Senior Oceanographer,        APL, UW
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
       github_user: leewujung
 
@@ -24,13 +24,13 @@ team:
 
   - - name: Filipe Fernandes
       title: Reproducibility, IOOS
-      affiliate: Research Software Engineer, IOOS
+      affiliate: Research Software Engineer,  IOOS
       image_url: https://oceanhackweek.github.io/assets/images/filipe.jpg
       github_user: ocefpaf
 
     - name: Emilio Mayorga
       title: Ocean data systems, IOOS 
-      affiliate: Senior Oceanographer, APL, UW
+      affiliate: Senior Oceanographer,       APL, UW
       image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
       github_user: emiliom
 
