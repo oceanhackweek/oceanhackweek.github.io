@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 2018 Schedule
+title: 2018 Schedule & Materials
 permalink: schedule.html
 description: Come back for 2019 schedule soon!
 ---

@@ -5,85 +5,51 @@ permalink: our-team.html
 description:
 team:
   - - name: Wu-Jung Lee
-      title: Research Associate
-      affiliate: APL
+      title: Organizing Committee Chair
+      affiliate: Senior Oceanographer, APL, UW
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
       github_user: leewujung
 
-    - name: Friedrich Knuth
-      title: OOI Data Evaluator
-      affiliate: Rutgers University
-      image_url: /assets/images/FKnuth_pic.jpg
-      github_user: friedrichknuth
-
     - name: Amanda Tan
-      title: Data Scientist
-      affiliate: eScience & UW-IT
+      title: Cybertraining Lead
+      affiliate: Research Scientist, eScience Institute, UW
       image_url: https://geohackweek.github.io/ghw2017/images/Amanda-Tan-300x300.jpg
-      github_user: cloudmaven
+      github_user: amanda-tan
 
-  - - name: Valentina Staneva
-      title: Data Scientist
-      affiliate: eScience
+    - name: Valentina Staneva
+      title: Data Science Education Lead
+      affiliate: Data Scientist, eScience Institute, UW
       image_url: http://escience.washington.edu/wp-content/uploads/2015/09/Bio_Valentina-Staneva.jpg
       github_user: valentina-s
 
-    - name: Don Setiawan
-      title: Computer Specialist
-      affiliate: Oceanography & eScience
-      image_url: https://geohackweek.github.io/ghw2017/images/17802172.jpeg
-      github_user: lsetiawan
-
-    - name: Aaron Marburg
-      title: Senior Research Engineer
-      affiliate: APL
-      image_url: https://avatars2.githubusercontent.com/u/122743?s=460&v=4
-      github_user: amarburg
-
-  - - name: Rob Fatland
-      title: UW Cloud Czar for Research
-      affiliate: eScience & UW-IT
-      image_url: https://geohackweek.github.io/ghw2017/images/6199513.jpeg
-      github_user: robfatland
-
-    - name: Rachael Murray
-      title: Program Specialist
-      affiliate: eScience
-      image_url: https://github.com/geohackweek/geohackweek.github.io/raw/master/assets/images/rachael.JPG
-      github_user: rlm92
-
-    - name: Filipe Fernandes
-      title: Research Software Engineer
-      affiliate: IOOS
-      image_url: https://oceanhackweek.github.io//assets/images/filipe.jpg
+  - - name: Filipe Fernandes
+      title: Committee Member, IOOS
+      affiliate: Research Software Engineer, IOOS
+      image_url: https://oceanhackweek.github.io/assets/images/filipe.jpg
       github_user: ocefpaf
 
-  - - name: Emilio Mayorga
-      title: Research Scientist
-      affiliate: APL
+    - name: Emilio Mayorga
+      title: Ocean data systems, data science education, IOOS 
+      affiliate: Senior Oceanographer, Applied Physics Laboratory, UW
       image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
       github_user: emiliom
 
-    - name: Jake Vanderplas
-      title: Data Scientist
-      affiliate: eScience
-      image_url: http://astrohackweek.org/2018/images/vanderplas.jpg
-      github_user: jakevdp
+    - name: Ryan Abernathy
+      title: Pangeo, curriculum design, ocean modelling
+      affiliate: Assistant Professor, LDEO, Columbia University
+      image_url: https://avatars2.githubusercontent.com/u/1197350?s=400&v=4
+      github_user: rabernat
 
-    - name: Joe Hamman
-      title: Postdoctoral Researcher
-      affiliate: NCAR
+    - name: Joseph Gum 
+      title: Data science education, ship data, project facilitation
+      affiliate: Data Analyst, Scripps Institute of Oceanography
       image_url: https://geohackweek.github.io/ghw2017/images/jhamman.png
-      github_user: jhamman
+      github_user: asx-
 
-  - - name: Anthony Arendt
-      title: Principal Research Scientist
-      affiliate: eScience & APL
-      image_url: https://geohackweek.github.io/ghw2017/images/4993098.jpeg
-      github_user: aaarendt
+  - - name: Timothy Crone 
+      title: Pangeo, OOI
+      affiliate: Associate Research Professor, LDEO, Columbia University
+      image_url: https://avatars1.githubusercontent.com/u/5667194?s=400&v=4
+      github_user: tjcrone
 
-    - name: Deb Kelley
-      title: Professor
-      affiliate: UW School of Oceanography
-      image_url: https://coenv-media-gene1ufvxiloffjq.stackpathdns.com/2014/04/Debbie-Kelley-528x528.jpg
 ---
