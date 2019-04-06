@@ -4,7 +4,7 @@ title: Organizing committee and instructors
 permalink: our-team.html
 description:
 team:
-   - name: Wu-Jung Lee
+   -  name: Wu-Jung Lee
       title: Organizing Committee Chair
       affiliate: Senior Oceanographer, APL, UW
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
