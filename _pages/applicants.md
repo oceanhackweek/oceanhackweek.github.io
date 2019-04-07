@@ -11,6 +11,8 @@ image: ohw18-hacking2.JPG
 **I am proficient in Matlab/R/other language but I have not used Python. It has been on my list to learn. Can I apply?**
 
 We want to build an inclusive Oceanography community regardless of people’s language of choice and programming level. Since the event is only one week long, the tutorials will be presented in one language (Python), and participants will benefit the most if they have basic familiarity with this language. We expect that you have gone through the Software Carpentry Python tutorials to get familiar with the syntax in advance of the program.
+=======
+## FAQs
 
 ---
 
