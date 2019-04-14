@@ -45,4 +45,15 @@ To ensure that participants will be interested in the oceanography problems they
 
 Make sure to explain your motivation for participation in the application form! We expect participants from the private sector to pay for their own expenses. We will hold a career panel discussion, so please mention if you are interested in participating.
 
+
+**Q: I work in a non-US institution / organization / company. Can I apply?**
+
+Yes, we welcome applications from abroad. However please note that we are constrained by the amount of funding we could provide for people who travel internationally.
+
+
+**Q: I was a participant in Oceanhackweek last year. Can I apply to again?**
+
+Yes, we welcome applications from previous participants, but priority will be given to new applicants. If you are interested in being a TA (teaching assistant) during the hackweek, please mention that in the application.
+
+
 ---
