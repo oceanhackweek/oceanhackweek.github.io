@@ -36,6 +36,16 @@ We believe that Oceanhackweek participants will benefit the most with some prior
 Once you have gone through some training you will have a better understanding of whether Oceanhackweek is right for you. We expect that you have basic operational knowledge of Python in advance of the program.
 
 
+**Q: Do I have to be a stellar Python programmer to be accepted?**
+
+No, we aim to bring in motivated participants with a range of programming skills levels, but we do require basic familiarity with Python (see above) so that you will be able to learn and have fun in the tutorials and hack project time!
+
+
+**Q: I already know a lot of what you plan to cover, should I apply / will I be bored?**
+
+Oceanhackweek is not only a place to learn new skills but also a place to share expertise and build a community together. If you are already an expert but are interested in sharing and helping others, we welcome you to pitch project ideas, contribute to hacking, and assist other participants during the tutorials by being a teaching assistant!  Please mention this in the application. Send us an email if you have any questions!
+
+
 **Q: I have strong computational skills but have not worked in oceanography?**
 
 To ensure that participants will be interested in the oceanography problems they are solving and can give back to the field later on, we require that participants have had at least some familiarity or prior experience with oceanography data.
