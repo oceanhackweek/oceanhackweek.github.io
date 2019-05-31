@@ -13,8 +13,9 @@ The tutorials will be based on the scientific Python stack, which is an ecosyste
 - The landscape of ocean data systems and data access workflow
 - Spatial statistics and geospatial mapping tools: e.g. Rasterio, Gdal
 - Working with data efficiently using open source Python tools: e.g. Xarray, Dask
+- Large-scale data processing frameworks: e.g. Pangeo, cloud computing
 - Data visualization tools: e.g. PyViz, Bokeh, Seaborn, Altair
-- Large-scale data analysis tools: e.g. Pangeo, cloud computing
+- Machine learning methods and tools: e.g. dimensionality reduction, classification, scikit-learn
 
 We will also have open discussion sessions on:
 - Code of conduct in collaborative research
