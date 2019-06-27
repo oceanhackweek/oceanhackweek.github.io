@@ -58,4 +58,8 @@ team:
       image_url: https://avatars2.githubusercontent.com/u/1872600?s=460&v=4
       github_user: rsignell-usgs
 
+  - - name: Jane Koh
+      title: Program Specialist
+      affiliate: eScience
+      image_url: https://geohackweek.github.io/assets/images/JaneKoh.jpg
 ---
