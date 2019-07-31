@@ -158,7 +158,7 @@ We will also have open discussion sessions on:
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>1:30PM - 3:30PM (Optional)</td>
+      <td>1:30PM - 3:30PM<br>(Optional)</td>
       <td><strong>Cloud Computing 101</strong></td>
       <td><strong>Amanda Tan</strong></td>
     </tr>
