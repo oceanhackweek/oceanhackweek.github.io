@@ -42,12 +42,12 @@ We will also have open discussion sessions on:
           <li>Logistics</li>
         </ul>
       </td>
-      <td>?</td>
+      <td>Wu-Jung Lee, Amanda Tan</td>
     </tr>
     <tr>
       <td>9:00AM - 10:00AM</td>
       <td><strong>Oceanhackweek at a glance</strong></td>
-      <td><strong>Wu-Jung Lee</strong></td>
+      <td>Wu-Jung Lee, Ryan Abernathey</td>
     </tr>
     <tr>
       <td>10:15AM - 11:00AM</td>
@@ -57,7 +57,7 @@ We will also have open discussion sessions on:
     <tr>
       <td>11:10AM - 12:30PM</td>
       <td>Lightning Talks</td>
-      <td>?</td>
+      <td>Tim Crone</td>
     </tr>
     <tr>
       <td>12:30PM - 1:30PM</td>
@@ -67,22 +67,22 @@ We will also have open discussion sessions on:
     <tr>
       <td>1:30PM - 2:15PM</td>
       <td><strong>Git/GitHub Part 1:<br>Basics reminder</strong></td>
-      <td><strong>Amanda Tan</strong></td>
+      <td>Amanda Tan, Valentina Staneva</td>
     </tr>
     <tr>
       <td>2:15PM - 3:00PM</td>
       <td><strong>Project Discussion</strong></td>
-      <td><strong>Ryan Abernathey</strong></td>
+      <td>Joseph Gum</td>
     </tr>
     <tr>
       <td>3:00PM - 4:30PM</td>
       <td><strong>Project pitch, project group breakouts</strong></td>
-      <td><strong>Tim Crone</strong></td>
+      <td>Ryan Abernathey</td>
     </tr>
     <tr>
       <td>4:30PM - 5:30PM</td>
       <td><strong>Git/Github Part 2:<br>Project collaboration</strong></td>
-      <td><strong>Valentina Staneva</strong></td>
+      <td>Amanda Tan, Valentina Staneva</td>
     </tr>
     <tr>
       <td>6:30PM - 8:30PM</td>
@@ -106,12 +106,12 @@ We will also have open discussion sessions on:
     <tr>
       <td>9:00AM - 11:00AM</td>
       <td><strong>Access and Clean-up Ocean Observation Data</strong></td>
-      <td><strong>Emilio Mayorga</strong></td>
+      <td>Emilio Mayorga, Filipe Fernandes, Joseph Gum, Tim Crone</td>
     </tr>
     <tr>
       <td>11:15AM - 12:00AM</td>
       <td><strong>Data Visualization Part I:<br>Basics and Geospatial Visualization</strong></td>
-      <td><strong>Filipe Fernandes</strong></td>
+      <td>Filipe Fernandes, Emilio Mayorga, Joseph Gum, Tim Crone</td>
     </tr>
     <tr>
       <td>12:00PM - 1:30PM</td>
@@ -121,7 +121,7 @@ We will also have open discussion sessions on:
     <tr>
       <td>1:30PM - 2:30PM<br>(Optional)</td>
       <td><strong>Advanced GitHub Tutorials For Those Who Need It</strong></td>
-      <td><strong>Valentina Staneva</strong></td>
+      <td>Valentina Staneva, Amanda Tan</td>
     </tr>
     <tr>
       <td>Afternoon</td>
@@ -145,12 +145,12 @@ We will also have open discussion sessions on:
     <tr>
       <td>9:00AM - 10:30AM</td>
       <td><strong>Handle "Big" Larger-than-memory Data</strong></td>
-      <td><strong>Joe Hamman</strong></td>
+      <td>Joe Hamman, Ryan Abernathey</td>
     </tr>
     <tr>
       <td>10:45AM - 12:00AM</td>
       <td><strong>Advanced Data Visualization</strong></td>
-      <td><strong>Filipe Fernandes</strong></td>
+      <td>Filipe Fernandes, Amanda Tan</td>
     </tr>
     <tr>
       <td>12:00PM - 1:30PM</td>
@@ -160,7 +160,7 @@ We will also have open discussion sessions on:
     <tr>
       <td>1:30PM - 3:30PM<br>(Optional)</td>
       <td><strong>Cloud Computing 101</strong></td>
-      <td><strong>Amanda Tan</strong></td>
+      <td>Amanda Tan</td>
     </tr>
     <tr>
       <td>Afternoon</td>
@@ -184,7 +184,7 @@ We will also have open discussion sessions on:
     <tr>
       <td>9:00AM - 11:30AM</td>
       <td><strong>Machine Learning</strong></td>
-      <td><strong>Valentina Staneva</strong></td>
+      <td>Valentina Staneva, Joseph Gum</td>
     </tr>
     <tr>
       <td>11:30AM - 1:30PM</td>
@@ -213,7 +213,7 @@ We will also have open discussion sessions on:
     <tr>
       <td>9:00AM - 10:00AM</td>
       <td><strong>Sharing Your Work and Reproducible Research</strong></td>
-      <td><strong>Joseph Gum</strong></td>
+      <td>Joseph Gum</td>
     </tr>
     <tr>
       <td>11:30AM - 1:30PM</td>
