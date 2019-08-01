@@ -8,7 +8,7 @@ description: Data Science + Oceanography <br>
  	     Oceanhackweek Wiki for more information on logistics. 
 
 # Banner button to lead to form, then schedule, then next year's website.
-banner_button_url: 
+banner_button_url: https://oceanhackweek.github.io/wiki/ 
 banner_button_text: Oceanhackweek Wiki 
 
 
