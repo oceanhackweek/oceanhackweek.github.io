@@ -4,13 +4,11 @@ email: oceanhkw@uw.edu
 description: Data Science + Oceanography <br>
              University of Washington <br>
              Aug. 26 - 30, 2019 <br> <br>
-             Accepted applicants will be notified no later than <strike>May 28</strike> May 31. <br> 
-             <font size="1"> (we have delayed the notification due to the large number of applications)</font><br>
-
+             We will see you soon! In the meantime, please take a look at the Oceanhackweek Wiki for more information on logistics. 
 
 # Banner button to lead to form, then schedule, then next year's website.
-banner_button_url: https://form.jotform.com/oceanhack/2019
-banner_button_text: Applications are now closed
+banner_button_url: 
+banner_button_text: Oceanhackweek Wiki 
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,7 +30,7 @@ googleplus_url:
 instagram_url:
 linkedin_url:
 pinterest_url:
-slack_url: https://oceanhackweek2018.slack.com
+slack_url: https://oceanhackweek2019.slack.com
 twitter_url:
 email_url: oceanhkw@uw.edu
 
