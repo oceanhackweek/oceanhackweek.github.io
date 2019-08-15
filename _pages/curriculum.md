@@ -2,25 +2,15 @@
 layout: page
 title: 2019 Curriculum
 permalink: curriculum.html
-# description: Hackweek Projects 2018.
 ---
 
-Oceanhackweek curriculum consists of hands-on tutorials, visual presentations and collaborative hack projects. Tutorials and presentations will take place mostly in the mornings, with the afternoons devoted to project brainstorming and project work. This year we plan to focus on access strategies for diverse data systems and workflow for interoperating different types of ocean data and models.
+Oceanhackweek curriculum consists of hands-on tutorials, visual presentations and collaborative hack projects. Tutorials and presentations will take place mostly in the mornings, with the afternoons devoted to project work. The tutorials will be based on the scientific Python stack, which is an ecosystem of interrelated Python packages for scientific computing and analysis. This year we focus on access strategies for diverse data systems and workflow for interoperating different types of ocean data and models.
 
-The tutorials will be based on the scientific Python stack, which is an ecosystem of interrelated Python packages for scientific computing and analysis. Tentative topics include:
-- Data science and collaboration tools: Git, Conda, Jupyter
-- Interoperating ocean data and models: APIs and ERDDAP servers
-- The landscape of ocean data systems and data access workflow
-- Spatial statistics and geospatial mapping tools: e.g. Rasterio, Gdal
-- Working with data efficiently using open source Python tools: e.g. Xarray, Dask
-- Large-scale data processing frameworks: e.g. Pangeo, cloud computing
-- Data visualization tools: e.g. PyViz, Bokeh, Seaborn, Altair
-- Machine learning methods and tools: e.g. dimensionality reduction, classification, scikit-learn
+In the afternoons from Tuesday to Thursday, we also host helpdesks for Python, git, Pangeo, ocean data systems, and machine learning. See <A href="#helpdesks">bottom of this page</A> for detail.
 
-We will also have open discussion sessions on:
-- Code of conduct in collaborative research
-- Reproducible and replicable research
-- Open science challenges and ethics
+<br>
+
+## Schedule
 
 ### Monday
 
@@ -45,44 +35,49 @@ We will also have open discussion sessions on:
       <td>Wu-Jung Lee, Amanda Tan</td>
     </tr>
     <tr>
-      <td>9:00AM - 10:00AM</td>
-      <td><strong>Oceanhackweek at a glance</strong></td>
+      <td>9:00AM - 10:10AM</td>
+      <td><strong>Oceanhackweek At A Glance</strong></td>
       <td>Wu-Jung Lee, Ryan Abernathey</td>
     </tr>
     <tr>
-      <td>10:15AM - 11:00AM</td>
-      <td>Icebreakers</td>
+      <td>10:10AM - 10:30AM</td>
+      <td>Group Picture Time</td>
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>11:10AM - 12:30PM</td>
-      <td>Lightning Talks</td>
-      <td>Tim Crone</td>
+      <td>10:45AM - 11:15AM</td>
+      <td>Icebreakers</td>
+      <td>Amanda Tan</td>
     </tr>
     <tr>
-      <td>12:30PM - 1:30PM</td>
+      <td>11:15AM - 12:15PM</td>
+      <td><strong>Lightning Introductions I</strong></td>
+      <td>Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>12:15PM - 1:15PM</td>
       <td>Lunch</td>
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>1:30PM - 2:15PM</td>
-      <td><strong>Git/GitHub Part 1:<br>Basics reminder</strong></td>
-      <td>Amanda Tan, Valentina Staneva</td>
+      <td>1:15PM - 2:15PM</td>
+      <td><strong>Lightning Introductions II</strong></td>
+      <td>Amanda Tan</td>
     </tr>
     <tr>
-      <td>2:15PM - 3:00PM</td>
+      <td>2:30PM - 3:15PM</td>
       <td><strong>Project Discussion</strong></td>
       <td>Joseph Gum</td>
     </tr>
     <tr>
-      <td>3:00PM - 4:30PM</td>
-      <td><strong>Project pitch, project group breakouts</strong></td>
-      <td>Ryan Abernathey</td>
+      <td>3:15PM - 3:45PM</td>
+      <td><strong>Project Pitch and Group Breakouts</strong></td>
+      <td>Joseph Gum</td>
     </tr>
     <tr>
-      <td>4:30PM - 5:30PM</td>
-      <td><strong>Git/Github Part 2:<br>Project collaboration</strong></td>
-      <td>Amanda Tan, Valentina Staneva</td>
+      <td>4:00PM - 5:15PM</td>
+      <td><strong>Git, GitHub and Project Collaboration </strong></td>
+      <td>Valentina Staneva, Tim Crone</td>
     </tr>
     <tr>
       <td>6:30PM - 8:30PM</td>
@@ -106,12 +101,12 @@ We will also have open discussion sessions on:
     <tr>
       <td>9:00AM - 11:00AM</td>
       <td><strong>Access and Clean-up Ocean Observation Data</strong></td>
-      <td>Emilio Mayorga, Filipe Fernandes, Joseph Gum, Tim Crone</td>
+      <td>Emilio Mayorga, Filipe Fernandes, <br>Joseph Gum, Tim Crone</td>
     </tr>
     <tr>
       <td>11:15AM - 12:00AM</td>
       <td><strong>Data Visualization Part I:<br>Basics and Geospatial Visualization</strong></td>
-      <td>Filipe Fernandes, Emilio Mayorga, Joseph Gum, Tim Crone</td>
+      <td>Filipe Fernandes, Emilio Mayorga, <br>Joseph Gum, Tim Crone</td>
     </tr>
     <tr>
       <td>12:00PM - 1:30PM</td>
@@ -119,12 +114,12 @@ We will also have open discussion sessions on:
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>1:30PM - 2:30PM<br>(Optional)</td>
-      <td><strong>Advanced GitHub Tutorials For Those Who Need It</strong></td>
-      <td>Valentina Staneva, Amanda Tan</td>
+      <td>1:30PM - 2:30PM</td>
+      <td><strong>Cloud Computing 101</strong><br>(Optional)</td>
+      <td>Amanda Tan</td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>Rest of Afternoon</td>
       <td>Hack Project Work</td>
       <td>Everyone</td>
     </tr>
@@ -158,12 +153,17 @@ We will also have open discussion sessions on:
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>1:30PM - 3:30PM<br>(Optional)</td>
-      <td><strong>Cloud Computing 101</strong></td>
-      <td>Amanda Tan</td>
+      <td>1:30PM - 2:30PM</td>
+      <td><strong>Lightning Talks (Demo a tool!)</strong></td>
+      <td>Everyone</td>
     </tr>
     <tr>
-      <td>Afternoon</td>
+      <td>2:30PM - 2:45PM</td>
+      <td><strong>Project check-in</strong></td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>Rest of Afternoon</td>
       <td>Hack Project Work</td>
       <td>Everyone</td>
     </tr>
@@ -212,7 +212,7 @@ We will also have open discussion sessions on:
   <tbody>
     <tr>
       <td>9:00AM - 10:00AM</td>
-      <td><strong>Sharing Your Work and Reproducible Research</strong></td>
+      <td><strong>Reproducible Research</strong></td>
       <td>Joseph Gum</td>
     </tr>
     <tr>
@@ -224,6 +224,42 @@ We will also have open discussion sessions on:
       <td>3:00PM</td>
       <td>Final Project Presentation</td>
       <td>Everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+## Helpdesks
+
+Time: 2:30-4:00PM
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Time</th>
+      <th>Helpers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ask a Machine Learning Question</strong></td>
+      <td>Tuesday</td>
+      <td>Valentina Staneva, Joseph Gum</td>
+    </tr>
+    <tr>
+      <td><strong>Python, Git, and Pangeo</strong></td>
+      <td>Tuesday-Thursday</td>
+      <td>Filipe Fernandes, Joseph Gum, Wu-Jung Lee</td>
+    </tr>
+    <tr>
+      <td><strong>Ocean Data System Consultation</strong></td>
+      <td>Tuesday-Wednesday</td>
+      <td><strong>IOOS</strong>: Micah Wengren
+        <br><strong>OOI</strong>: Orest Kawka, Mike Vardaro
+        <br><strong>NCEI/BCO-DMO</strong>: Matt Biddle
+      </td>
     </tr>
   </tbody>
 </table>
