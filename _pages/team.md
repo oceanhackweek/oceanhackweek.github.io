@@ -43,7 +43,7 @@ team:
   - - name: Joseph Gum 
       title: Data science education, ship data
       affiliate: Data Analyst, Scripps
-      image_url: "https://media.licdn.com/dms/image/C4E03AQFiRCK1jVnQCQ/profile-displayphoto-shrink_800_800/0?e=1559779200&v=beta&t=Mc1qQbxIBIWx_JgGQMRgfVHe9uCgEeuCIs0P-zttY70"
+      image_url: https://oceanhackweek.github.io/assets/images/jgum.jpg 
       github_user: asx-
 
     - name: Timothy Crone 
