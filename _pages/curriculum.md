@@ -4,9 +4,11 @@ title: 2019 Curriculum
 permalink: curriculum.html
 ---
 
-Oceanhackweek curriculum consists of hands-on tutorials, visual presentations and collaborative hack projects. Tutorials and presentations will take place mostly in the mornings, with the afternoons devoted to project work. The tutorials will be based on the scientific Python stack, which is an ecosystem of interrelated Python packages for scientific computing and analysis. This year we focus on access strategies for diverse data systems and workflow for interoperating different types of ocean data and models.
+**Oceanhackweek curriculum consists of hands-on tutorials, visual presentations and collaborative hack projects.** Tutorials and presentations will take place mostly in the mornings, with the afternoons devoted to project work. The tutorials will be based on the scientific Python stack, which is an ecosystem of interrelated Python packages for scientific computing and analysis. This year we focus on access strategies for diverse data systems and workflow for interoperating different types of ocean data and models.
 
-In the afternoons from Tuesday to Thursday, we also host helpdesks for Python, git, Pangeo, ocean data systems, and machine learning. See <A href="#helpdesks">bottom of this page</A> for detail.
+**We host helpdesks for Python, git, Pangeo, ocean data systems, and machine learning** in the afternoons from Tuesday to Thursday. See <A href="#helpdesks">bottom of this page</A> for detail.
+
+**We will be experimenting streaming all tutorials!** If you are interested in joining remotely, [log in via Zoom](https://columbiauniversity.zoom.us/j/318805257). Connection will be staffed during all tutorials and helpdesks.
 
 <br>
 
