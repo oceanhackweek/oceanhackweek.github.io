@@ -46,6 +46,10 @@ permalink: curriculum.html
       <td>Group Picture Time</td>
       <td>Everyone</td>
     </tr>
+ <tr>
+      <td>10:30AM - 10:45AM</td>
+      <td>Coffee Break</td>
+    </tr>
     <tr>
       <td>10:45AM - 11:15AM</td>
       <td>Icebreakers</td>
@@ -76,6 +80,10 @@ permalink: curriculum.html
       <td><strong>Project Pitch and Group Breakouts</strong></td>
       <td>Joseph Gum</td>
     </tr>
+ <tr>
+      <td>3:45PM - 4.00PM</td>
+      <td>Coffee Break</td>
+    </tr>
     <tr>
       <td>4:00PM - 5:15PM</td>
       <td><strong>Git, GitHub and Project Collaboration </strong></td>
@@ -105,6 +113,10 @@ permalink: curriculum.html
       <td><strong>Access and Clean-up Ocean Observation Data</strong></td>
       <td>Emilio Mayorga, Filipe Fernandes, <br>Joseph Gum, Tim Crone</td>
     </tr>
+ <tr>
+      <td>11:00AM - 11:15AM</td>
+      <td>Coffee Break</td>
+    </tr>
     <tr>
       <td>11:15AM - 12:00AM</td>
       <td><strong>Data Visualization Part I:<br>Basics and Geospatial Visualization</strong></td>
@@ -119,6 +131,10 @@ permalink: curriculum.html
       <td>1:30PM - 2:30PM</td>
       <td><strong>Cloud Computing 101</strong><br>(Optional)</td>
       <td>Amanda Tan</td>
+    </tr>
+ <tr>
+      <td>3:30PM - 3:45AM</td>
+      <td>Coffee Break</td>
     </tr>
     <tr>
       <td>Rest of Afternoon</td>
@@ -144,6 +160,10 @@ permalink: curriculum.html
       <td><strong>Handle "Big" Larger-than-memory Data</strong></td>
       <td>Joe Hamman, Ryan Abernathey</td>
     </tr>
+ <tr>
+      <td>10:30AM - 10:45AM</td>
+      <td>Coffee Break</td>
+    </tr>
     <tr>
       <td>10:45AM - 12:00AM</td>
       <td><strong>Advanced Data Visualization</strong></td>
@@ -168,6 +188,10 @@ permalink: curriculum.html
       <td>Rest of Afternoon</td>
       <td>Hack Project Work</td>
       <td>Everyone</td>
+    </tr>
+ <tr>
+      <td>3:30PM - 3:45PM</td>
+      <td>Coffee Break</td>
     </tr>
   </tbody>
 </table>
