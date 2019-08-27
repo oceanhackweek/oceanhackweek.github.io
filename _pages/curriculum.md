@@ -36,7 +36,7 @@ permalink: curriculum.html
         </ul>
       </td>
       <td>Wu-Jung Lee, Amanda Tan</td>
-      <td rowspan=2><a href="https://github.com/oceanhackweek/ohw19-tutorial-overview">Tutorial Overview</a></td>
+      <td><a href="https://github.com/oceanhackweek/ohw19-tutorial-overview">Tutorial Overview</a></td>
     </tr>
     <tr>
       <td>9:00AM - 10:10AM</td>
@@ -116,7 +116,7 @@ permalink: curriculum.html
       <td>9:00AM - 11:00AM</td>
       <td><strong>Access and Clean-up Ocean Observation Data</strong></td>
       <td>Emilio Mayorga, Filipe Fernandes, <br>Joseph Gum, Tim Crone</td>
-      <td rowspan=3><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Access & Basic Visualization</a></td>
+      <td><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Access & Basic Visualization</a></td>
     </tr>
  <tr>
       <td>11:00AM - 11:15AM</td>
@@ -157,7 +157,7 @@ permalink: curriculum.html
       <th>Time</th>
       <th>Event</th>
       <th>Instructors</th>
-      <th>Repos<
+      <th>Repositories</th>
     </tr>
   </thead>
   <tbody>
