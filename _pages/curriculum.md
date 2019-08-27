@@ -130,7 +130,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>1:30PM - 2:30PM</td>
-      <td><strong><a href="https://github.com/oceanhackweek/ohw19-cloud101">Cloud Computing 101</strong><br></a>(Optional)</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-cloud101">Cloud Computing 101</a></strong><br>(Optional)</td>
       <td>Amanda Tan</td>
     </tr>
  <tr>
