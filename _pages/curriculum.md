@@ -22,6 +22,7 @@ permalink: curriculum.html
       <th>Time</th>
       <th>Event</th>
       <th>Instructors</th>
+      <th>Repositories</th>
     </tr>
   </thead>
   <tbody>
@@ -35,6 +36,7 @@ permalink: curriculum.html
         </ul>
       </td>
       <td>Wu-Jung Lee, Amanda Tan</td>
+      <td rowspan=2><a href="https://github.com/oceanhackweek/ohw19-tutorial-overview">Tutorial Overview</a></td>
     </tr>
     <tr>
       <td>9:00AM - 10:10AM</td>
@@ -88,6 +90,7 @@ permalink: curriculum.html
       <td>4:00PM - 5:15PM</td>
       <td><strong>Git, GitHub and Project Collaboration </strong></td>
       <td>Valentina Staneva, Tim Crone</td>
+      <td><a href="https://github.com/oceanhackweek/ohw19-tutorial-github">Github Introduction</a></td>
     </tr>
     <tr>
       <td>6:30PM - 8:30PM</td>
@@ -105,6 +108,7 @@ permalink: curriculum.html
       <th>Time</th>
       <th>Event</th>
       <th>Instructors</th>
+      <th>Repositories</th>
     </tr>
   </thead>
   <tbody>
@@ -112,6 +116,7 @@ permalink: curriculum.html
       <td>9:00AM - 11:00AM</td>
       <td><strong>Access and Clean-up Ocean Observation Data</strong></td>
       <td>Emilio Mayorga, Filipe Fernandes, <br>Joseph Gum, Tim Crone</td>
+      <td rowspan=3><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Access & Basic Visualization</a></td>
     </tr>
  <tr>
       <td>11:00AM - 11:15AM</td>
@@ -152,6 +157,7 @@ permalink: curriculum.html
       <th>Time</th>
       <th>Event</th>
       <th>Instructors</th>
+      <th>Repos<
     </tr>
   </thead>
   <tbody>
@@ -168,6 +174,7 @@ permalink: curriculum.html
       <td>10:45AM - 12:00AM</td>
       <td><strong>Advanced Data Visualization</strong></td>
       <td>Filipe Fernandes, Amanda Tan</td>
+      <td><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanded Data Visualization</a></td>
     </tr>
     <tr>
       <td>12:00PM - 1:30PM</td>
@@ -204,6 +211,7 @@ permalink: curriculum.html
       <th>Time</th>
       <th>Event</th>
       <th>Instructors</th>
+      <th>Repositories</th>
     </tr>
   </thead>
   <tbody>
@@ -211,6 +219,7 @@ permalink: curriculum.html
       <td>9:00AM - 11:30AM</td>
       <td><strong>Machine Learning</strong></td>
       <td>Valentina Staneva, Joseph Gum</td>
+      <td><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></td>
     </tr>
     <tr>
       <td>11:30AM - 1:30PM</td>
