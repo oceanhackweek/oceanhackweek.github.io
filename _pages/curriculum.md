@@ -14,6 +14,7 @@ permalink: curriculum.html
 
 ## Schedule
 
+
 ### Monday
 
 <table>
@@ -167,7 +168,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>10:45AM - 12:00AM</td>
-      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanded Data Visualization</a></strong></td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanced Data Visualization</a></strong></td>
       <td>Filipe Fernandes, Amanda Tan</td>
     </tr>
     <tr>
