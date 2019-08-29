@@ -159,7 +159,7 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 10:30AM</td>
-      <td><strong>Handle "Big" Larger-than-memory Data</strong></td>
+      <td><strong><a href="https://github.com/pangeo-data/pangeo-tutorial/blob/master/notebooks/xarray.ipynb">Handle</a> "Big" <a href="https://github.com/pangeo-data/pangeo-tutorial/blob/master/notebooks/dask.ipynb">Larger-than-memory</a> <a href="https://github.com/pangeo-data/pangeo-ocean-examples/blob/master/ecco_v4_example.ipynb">Data</a></strong></td>
       <td>Joe Hamman, Ryan Abernathey</td>
     </tr>
  <tr>
