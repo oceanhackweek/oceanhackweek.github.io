@@ -240,7 +240,7 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 10:00AM</td>
-      <td><strong>Reproducible Research</strong></td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-reproducible-science">Reproducible Research</a></strong></td>
       <td>Joseph Gum</td>
     </tr>
     <tr>
