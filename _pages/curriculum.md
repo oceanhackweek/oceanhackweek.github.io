@@ -249,7 +249,7 @@ permalink: curriculum.html
       <td>Everyone</td>
     </tr>
     <tr>
-      <td>3:00PM</td>
+      <td>2:30PM</td>
       <td>Final Project Presentation</td>
       <td>Everyone</td>
     </tr>
