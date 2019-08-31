@@ -229,7 +229,10 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 11:30AM</td>
-      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></strong></td>
+      <td>
+        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></strong>
+        <br><a href="https://www.youtube.com/watch?v=Fzd9m18ZrpU">(Video)</a>
+      </td>
       <td>Valentina Staneva, Joseph Gum</td>
     </tr>
     <tr>
