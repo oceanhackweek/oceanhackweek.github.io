@@ -9,7 +9,7 @@ description: Data Science + Oceanography<br>
 
 # Banner button to lead to form, then schedule, then next year's website.
 banner_button_url: projects_2019.html
-banner_button_text: 2019 Hack Projects!
+banner_button_text: 2019 Hack Projects
 
 
 baseurl: "" # the subpath of your site, e.g. /blog

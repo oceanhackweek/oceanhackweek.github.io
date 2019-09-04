@@ -4,9 +4,9 @@ title: 2019 Hackweek Projects
 permalink: projects_2019.html
 ---
 
-OceanHackWeek is not just about learning, it is also about using what is learned to create exciting new tools in collaboration with others. The OceanHackWeek organizing committee worked hard to foster an inclusive and supportive learning environment based on the shared interests of its members. They were awed by the creativity and dedication of the eleven groups that worked and presented a project during the conclusion of OceanHackWeek, and are proud to be able to share these projects here.
+Oceanhackweek is not just about learning, it is also about using what is learned to create exciting new tools in collaboration with others. We strive to foster an inclusive and supportive learning environment based on the shared interests of all participants, and are proud to share outcome of the hack projects here.
 
-Will Update with YouTube links soon
+YouTube links to the final presentations are coming soon.
 
 
 ---
