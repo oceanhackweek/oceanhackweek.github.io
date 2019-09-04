@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Organizing committee and instructors
+title: Organizing committee
 permalink: our-team.html
 description:
 team:
@@ -29,7 +29,7 @@ team:
       github_user: ocefpaf
 
     - name: Emilio Mayorga
-      title: Ocean data systems, IOOS 
+      title: Ocean data systems, IOOS
       affiliate: Senior Oceanographer,       APL, UW
       image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
       github_user: emiliom
@@ -40,13 +40,13 @@ team:
       image_url: https://avatars2.githubusercontent.com/u/1197350?s=400&v=4
       github_user: rabernat
 
-  - - name: Joseph Gum 
+  - - name: Joseph Gum
       title: Data science education, ship data
       affiliate: Data Analyst, Scripps
-      image_url: https://oceanhackweek.github.io/assets/images/jgum.jpg 
+      image_url: https://oceanhackweek.github.io/assets/images/jgum.jpg
       github_user: asx-
 
-    - name: Timothy Crone 
+    - name: Timothy Crone
       title: Pangeo, OOI
       affiliate: Associate Research Professor, LDEO, Columbia University
       image_url: https://avatars1.githubusercontent.com/u/5667194?s=400&v=4
