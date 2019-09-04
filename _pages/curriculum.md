@@ -88,10 +88,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>4:00PM - 5:15PM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-github">Git, GitHub and Project Collaboration</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=wWKDp4Uw25A&t=1s">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-github">Git, GitHub and Project Collaboration</a></strong></td>
       <td>Valentina Staneva, Tim Crone</td>
     </tr>
     <tr>
@@ -115,10 +112,7 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 11:00AM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Access and Clean-up Ocean Observation Data</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=JO8tfMQ6Kfw">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Access and Clean-up Ocean Observation Data</a></strong></td>
       <td>Emilio Mayorga, Filipe Fernandes, <br>Joseph Gum, Tim Crone</td>
     </tr>
  <tr>
@@ -127,10 +121,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>11:15AM - 12:00AM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Visualization Part I:<br>Basics and Geospatial Visualization</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=g3mEs-i5-pI">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Visualization Part I:<br>Basics and Geospatial Visualization</a></strong></td>
       <td>Filipe Fernandes, Emilio Mayorga, <br>Joseph Gum, Tim Crone</td>
     </tr>
     <tr>
@@ -140,10 +131,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>1:30PM - 2:30PM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-cloud101">Cloud Computing 101</a></strong><br>(Optional)
-        <br><a href="https://www.youtube.com/watch?v=XZxcZoWXA5w">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-cloud101">Cloud Computing 101</a></strong><br>(Optional)</td>
       <td>Amanda Tan</td>
     </tr>
  <tr>
@@ -171,10 +159,7 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 10:30AM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/xarray.ipynb">Handle</a> "Big" <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/dask.ipynb">Larger-than-memory</a> <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/ecco_v4_example.ipynb">Data</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=DQIhxEdlWVQ">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/xarray.ipynb">Handle</a> "Big" <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/dask.ipynb">Larger-than-memory</a> <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/ecco_v4_example.ipynb">Data</a></strong></td>
       <td>Joe Hamman, Ryan Abernathey</td>
     </tr>
  <tr>
@@ -183,10 +168,7 @@ permalink: curriculum.html
     </tr>
     <tr>
       <td>10:45AM - 12:00AM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanced Data Visualization</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=UOiYmE0IsFs">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanced Data Visualization</a></strong></td>
       <td>Filipe Fernandes, Amanda Tan</td>
     </tr>
     <tr>
@@ -229,10 +211,7 @@ permalink: curriculum.html
   <tbody>
     <tr>
       <td>9:00AM - 11:30AM</td>
-      <td>
-        <strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></strong>
-        <br><a href="https://www.youtube.com/watch?v=Fzd9m18ZrpU">(Video)</a>
-      </td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></strong></td>
       <td>Valentina Staneva, Joseph Gum</td>
     </tr>
     <tr>
