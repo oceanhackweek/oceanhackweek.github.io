@@ -5,12 +5,11 @@ description: Data Science + Oceanography<br>
              University of Washington<br>
              Aug 26-30, 2019 <br> <br>
 
-             Check out our <a href="https://oceanhackweek.github.io/wiki/">Wiki</a>
-             <br>for logistics and pre-event preparation!
+             Useful resources on the <a href="https://oceanhackweek.github.io/wiki/">Wiki</a>!
 
 # Banner button to lead to form, then schedule, then next year's website.
-banner_button_url: https://columbiauniversity.zoom.us/j/318805257
-banner_button_text: Join remotely during the event (via Zoom)!
+banner_button_url: projects_2019.html
+banner_button_text: 2019 Hack Projects!
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
