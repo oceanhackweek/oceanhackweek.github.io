@@ -38,7 +38,8 @@ email_url: oceanhkw@uw.edu
 # Build settings
 markdown: kramdown
 
-# Submodule setting
+# Theme setting, we are excluding jekyll-spectral-theme/ root to avoid picking up theme config.
+# We should probably clean it up later.
 destination:  _site/
 plugins_dir:  jekyll-spectral-theme/_plugins/
 layouts_dir:  jekyll-spectral-theme/_layouts/
