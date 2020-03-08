@@ -1,17 +1,15 @@
-name: GH-Pages Status
-on:
-  page_build
-  
-jobs:
-  see-page-build-payload:
+name: Jekyll Deploy
+
+on: [push]
+
+jobs: 
+  build_and_deploy:
     runs-on: ubuntu-latest
-    steps:      
-      - name: check status
-        run: |
-          import os
-          status, errormsg = os.getenv('STATUS'), os.getenv('ERROR')
-          assert status == 'built', 'There was an error building the page on GitHub pages.\n\nStatus: {}\n\nError messsage: {}'.format(status, errormsg)
-        shell: python
-        env:
-          STATUS: ${{ github.event.build.status }}
-          ERROR: ${{ github.event.build.error.message }}
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build & Deploy to GitHub Pages
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        uses: ocefpaf/jekyll-deploy-gh-pages@master
