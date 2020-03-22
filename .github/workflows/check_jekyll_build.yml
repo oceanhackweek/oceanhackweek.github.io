@@ -4,20 +4,26 @@ on:
     branches: [ master ]
 
 jobs:
-  # Job to test that web pages build
   jekyll_build:
     name: Jekyll build of web pages
     runs-on: ubuntu-latest
 
     steps:
+      # https://github.com/actions/checkout
       - name: Checkout
         uses: actions/checkout@v2
 
+      # https://github.com/marketplace/actions/build-jekyll
       - name: Build with Jekyll
         uses: jerryjvl/jekyll-build-action@v1
 
+      # workaround https://github.com/actions/upload-artifact/issues/38
+      - name: tarball
+        run: tar czf site.tar.gz ./_site/
+
+      # https://github.com/actions/upload-artifact
       - name: Upload Website artifact
         uses: actions/upload-artifact@v1
         with:
           name: Website
-          path: ./_site/
+          path: site.tar.gz
