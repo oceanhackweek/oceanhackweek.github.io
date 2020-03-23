@@ -1,9 +1,12 @@
 # Site settings
 title: Oceanhackweek 2020
-email: oceanhkw@uw.edu
+email: oceanhackweek@uw.edu
 description: Data Science + Oceanography<br>
-             University of Washington<br>
-             Aug 10-14, 2020 <br> <br>
+             Aug 10-14, 2020<br>
+             Two parallel, coordinated events:<br>
+             <b>East</b> @ Bigelow Laboratory for Ocean Sciences<br>
+             <b>West</b> @ University of Washington<br>
+             <br>
 
              Useful resources on the <a href="https://oceanhackweek.github.io/wiki/">Wiki</a>!
 
@@ -23,17 +26,17 @@ tiles-count: 3
 featured-image-source:
 
 # Social settings
+github_url: https://github.com/oceanhackweek
+slack_url: https://oceanhackweek.slack.com
+email_url: oceanhackweek@uw.edu
 500px_url:
 facebook_url:
-github_url: https://github.com/oceanhackweek
 gitlab_url:
 googleplus_url:
 instagram_url:
 linkedin_url:
 pinterest_url:
-slack_url: https://oceanhackweek2019.slack.com
 twitter_url:
-email_url: oceanhkw@uw.edu
 
 # Build settings
 markdown: kramdown
