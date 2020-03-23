@@ -11,7 +11,7 @@ image: ohw18-hacking2.JPG
 
 In Oceanhackweek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. In tutorials, we will learn data science tools, cloud computing, visualization, and a suite of software assets to interact with data sets of complex temporal-spatial structures or high volume. In project sessions, we will immediately put these skills to use by implementing research, computation, or visualization ideas in a group setting. To best benefit from the program, participant are expected to have some experience with Python programming and data analysis.
 
-If you are ready to apply, please use the application form [https://form.jotform.com/oceanhack/2019](https://form.jotform.com/oceanhack/2019)
+If you are ready to apply, please use the application form [https://form.jotform.com/oceanhack/2020](https://form.jotform.com/oceanhack/2020)
 
 
 ---
