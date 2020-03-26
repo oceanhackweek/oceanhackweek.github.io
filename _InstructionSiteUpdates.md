@@ -14,7 +14,7 @@ Relevant, editable content is organized in the following directories and files:
 - [_pages](https://github.com/oceanhackweek/oceanhackweek.github.io/tree/master/_pages): content for extra pages, including all the pages accessible via the drop-down menu on the upper right of the page.
   - The destination page file name (what a user sees) is *not* the source markdown file name on the repository; instead, the destination file name is found in the `permalink` tag within the markdown file. For example, for [_pages/01-applicants.md](https://github.com/oceanhackweek/oceanhackweek.github.io/blob/master/_pages/01-applicants.md), the destination file name is [applicant-info.html](https://oceanhackweek.github.io/applicant-info.html)
 
-Note that apparently any Markdown file dropped at the root level of the repository, or in the `_pages` directory (or possibly anywhere else?), will be automatically added to the Menu drop down.
+Note that apparently any Markdown file dropped at the root level of the repository, or in the `_pages` directory (or possibly anywhere else?), will be automatically added to the Menu drop down; except ones with names starting with the `_` character.
 
 ## Editing and testing locally (in your computer) with Jekyll
 
