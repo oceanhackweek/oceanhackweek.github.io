@@ -7,8 +7,10 @@ description: Data Science + Oceanography<br>
              <b>East</b> @ Bigelow Laboratory for Ocean Sciences<br>
              <b>West</b> @ University of Washington<br>
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+# the subpath of your site, e.g. /blog
+baseurl: "/emiliom/out/ohw20draft/"
+# the base hostname & protocol for your site
+url: "https://staff.washington.edu"
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
