@@ -4,6 +4,5 @@
 .idea/
 .jekyll-metadata
 .sass-cache/
-_site/
 
 _config_localdev.yml
