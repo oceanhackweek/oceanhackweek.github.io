@@ -18,7 +18,7 @@ If you are ready to apply, please use the application form [https://form.jotform
 
 ## FAQs
 
-**Q: I'm an undergrad / first year grad / faculty / etc. Is this program right for me?**
+**Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?**
 
 We welcome participants from all career stages. We strongly encourage applications from graduate students, postdocs and early career researchers. There are different ways to contribute to the event: by pitching a project, by your knowledge of data sets, by your computational skills, by your project management skills. We want you to grow/learn during the event! We expect all participants to be engaged in the team projects and focus during the week. If in doubt, simply apply and explain your motivation for participation.
 
