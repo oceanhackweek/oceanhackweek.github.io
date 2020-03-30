@@ -1,0 +1,39 @@
+language: minimal
+
+sudo: false
+
+env:
+  global:
+    - secure: 
+
+before_install:
+  # Install miniconda and create TEST env.
+  - |
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+    bash miniconda.sh -b -p $HOME/miniconda
+    export PATH="$HOME/miniconda/bin:$PATH"
+    conda config --set always_yes yes --set changeps1 no --set show_channel_urls true
+    conda update --quiet conda
+    conda config --add channels conda-forge --force
+    conda config --set channel_priority strict
+    conda config --set safety_checks disabled
+    conda create --name TEST python=3 rb-bundler compilers doctr
+    source activate TEST
+    bundle install
+
+install:
+  - bundle exec jekyll build
+
+script:
+  - |
+    set -e
+    if [[ -z "$TRAVIS_TAG" ]]; then
+      python -m doctr deploy --build-tags --key-path github_deploy_key.enc --built-docs _site/ dev
+    else
+      python -m doctr deploy --build-tags --key-path github_deploy_key.enc --built-docs _site/ "version-$TRAVIS_TAG"
+      python -m doctr deploy --build-tags --key-path github_deploy_key.enc --built-docs _site/ .
+    fi
+
+doctr:
+  require-master: true
+  sync: false
