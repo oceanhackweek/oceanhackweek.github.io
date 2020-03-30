@@ -1,7 +1,7 @@
 ---
 layout: applicant
 title: Information for Applicants
-description: In OceanHackweek we will explore the intersection of data science 
+description: In OceanHackWeek we will explore the intersection of data science 
             and oceanography through tutorials and hands-on “hacking” projects. 
             To best benefit from the program, participants are expected to have some experience with Python programming and data analysis.
 permalink: applicant-info.html
