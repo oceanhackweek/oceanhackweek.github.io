@@ -32,8 +32,8 @@ script:
     else
       DEPLOY_DIR="version-$TRAVIS_TAG"
     fi
-    python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
-    python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
+    python -m doctr deploy --branch-whitelist source --deploy-branch-name master --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
+    python -m doctr deploy --branch-whitelist source --deploy-branch-name master --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
 
 doctr:
   require-master: true
