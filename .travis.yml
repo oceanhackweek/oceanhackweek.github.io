@@ -17,7 +17,6 @@ before_install:
     conda update --quiet conda
     conda config --add channels conda-forge --force
     conda config --set channel_priority strict
-    conda config --set safety_checks disabled
     conda create --name TEST python=3 rb-bundler compilers doctr
     source activate TEST
     bundle install
