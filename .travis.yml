@@ -22,7 +22,7 @@ before_install:
     bundle install
 
 install:
-  - bundle exec jekyll build
+  - bundle exec jekyll build --verbose
 
 script:
   - |
