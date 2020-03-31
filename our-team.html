@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Oceanhackweek 2020</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+		  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+		  crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+			integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+			crossorigin=""></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116958811-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116958811-1');
+	</script>
+</head>
+
+
+<body>
+    <!-- Page Wrapper -->
+<div id="page-wrapper">
+
+	<!-- Header -->
+	<header id="header" >
+		<h1><a href="/">Oceanhackweek 2020</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"><span>Menu</span></a>
+					<div id="menu">
+						<ul>
+							           
+							<li><a href="/">Home</a></li>
+							      
+							<li><a href="/applicant-info.html">Information for Applicants</a></li>
+							 
+							<li><a href="/hackweek.html">What is a hackweek?</a></li>
+							  
+							<li><a href="/curriculum_2019.html">2019 Curriculum</a></li>
+							  
+							<li><a href="/projects_2019.html">2019 Hackweek Projects</a></li>
+							  
+							<li><a href="/our-team.html">Organizing committee</a></li>
+							     
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2>Organizing committee</h2>
+            <p></p>
+        </header>
+        <section class="wrapper style5">
+            <div class="inner">
+                
+                    
+                        <div class="team-row">
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://leewujung.github.io/img/wjlee_pic-01.jpg" alt="Wu-Jung Lee" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Wu-Jung Lee</h3>
+                                        <h5>Organizing Committee Chair</h5>
+                                        <h5>Senior Oceanographer,        APL, UW</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/leewujung" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://geohackweek.github.io/ghw2017/images/Amanda-Tan-300x300.jpg" alt="Amanda Tan" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Amanda Tan</h3>
+                                        <h5>Cybertraining Lead</h5>
+                                        <h5>Research Scientist, eScience Institute, UW</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/amanda-tan" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="http://escience.washington.edu/wp-content/uploads/2015/09/Bio_Valentina-Staneva.jpg" alt="Valentina Staneva" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Valentina Staneva</h3>
+                                        <h5>Data Science Education Lead</h5>
+                                        <h5>Data Scientist, eScience Institute, UW</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/valentina-s" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="team-row">
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://oceanhackweek.github.io/assets/images/filipe.jpg" alt="Filipe Fernandes" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Filipe Fernandes</h3>
+                                        <h5>Reproducibility,                 IOOS</h5>
+                                        <h5>Research Software Engineer,  IOOS</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/ocefpaf" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://geohackweek.github.io/ghw2017/images/742403.jpg" alt="Emilio Mayorga" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Emilio Mayorga</h3>
+                                        <h5>Ocean data systems, IOOS</h5>
+                                        <h5>Senior Oceanographer,       APL, UW</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/emiliom" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://avatars2.githubusercontent.com/u/1197350?s=400&v=4" alt="Ryan Abernathy" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Ryan Abernathy</h3>
+                                        <h5>Pangeo, ocean modeling</h5>
+                                        <h5>Assistant Professor, LDEO, Columbia University</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/rabernat" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="team-row">
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://oceanhackweek.github.io/assets/images/jgum.jpg" alt="Joseph Gum" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Joseph Gum</h3>
+                                        <h5>Data science education, ship data</h5>
+                                        <h5>Data Analyst, Scripps</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/asx-" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://avatars1.githubusercontent.com/u/5667194?s=400&v=4" alt="Timothy Crone" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Timothy Crone</h3>
+                                        <h5>Pangeo, OOI</h5>
+                                        <h5>Associate Research Professor, LDEO, Columbia University</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/tjcrone" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://avatars2.githubusercontent.com/u/1872600?s=460&v=4" alt="Rich Signell" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Rich Signell</h3>
+                                        <h5>Pangeo, OOI</h5>
+                                        <h5>Oceanographer, USGS Woods Hole</h5>
+                                        <div class="icons">
+                                            
+                                                <a href="https://github.com/rsignell-usgs" class="icon fa-github"></a>
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="team-row">
+                            
+                            <div class="team-column">
+                                <figure class="team-card">
+                                    <div class="profile-image">
+                                        <img src="https://geohackweek.github.io/assets/images/JaneKoh.jpg" alt="Jane Koh" />
+                                    </div>
+                                    <figcaption>
+                                        <h3>Jane Koh</h3>
+                                        <h5>Program Specialist</h5>
+                                        <h5>eScience</h5>
+                                        <div class="icons">
+                                            
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                    
+                
+
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		       
+		<li><a href="https://github.com/oceanhackweek" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+		 
+		<li><a href="https://oceanhackweek.slack.com" class="icon fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+		  
+		<li><a href="mailto:oceanhackweek@uw.edu" class="icon fa-envelope" target="_blank"><span class="label">email</span></a></li>
+		
+	</ul>
+	<ul class="copyright">
+		<li>&copy; Oceanhackweek 2020</li>
+		<!--<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.</li>-->
+		<!--<li>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</li>-->
+		<!--<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a>.</li>-->
+	</ul>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
