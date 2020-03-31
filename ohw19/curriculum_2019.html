@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Oceanhackweek 2019</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+		  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+		  crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+			integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+			crossorigin=""></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116958811-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116958811-1');
+	</script>
+</head>
+
+
+<body>
+    <!-- Page Wrapper -->
+<div id="page-wrapper">
+
+	<!-- Header -->
+	<header id="header" >
+		<h1><a href="/">Oceanhackweek 2019</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"><span>Menu</span></a>
+					<div id="menu">
+						<ul>
+							           
+							<li><a href="/">Home</a></li>
+							          
+							<li><a href="/applicant-info.html">Information for Applicants</a></li>
+							 
+							<li><a href="/hackweek.html">What is a hackweek?</a></li>
+							  
+							<li><a href="/curriculum_2019.html">2019 Curriculum</a></li>
+							  
+							<li><a href="/projects_2019.html">2019 Hackweek Projects</a></li>
+							  
+							<li><a href="/our-team.html">Organizing committee</a></li>
+							    
+							<li><a href="/projects.html">2018 Hackweek Projects</a></li>
+							  
+							<li><a href="/schedule.html">2018 Schedule & Materials</a></li>
+							   
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2>2019 Curriculum</h2>
+            <p></p>
+        </header>
+        <section class="wrapper style5">
+            <div class="inner">
+                
+                    <p><strong>Oceanhackweek curriculum consists of hands-on tutorials, visual presentations and collaborative hack projects.</strong> Tutorials and presentations will take place mostly in the mornings, with the afternoons devoted to project work. The tutorials will be based on the scientific Python stack, which is an ecosystem of interrelated Python packages for scientific computing and analysis. This year we focus on access strategies for diverse data systems and workflow for interoperating different types of ocean data and models.</p>
+
+<p><strong>We host helpdesks for Python, git, Pangeo, ocean data systems, and machine learning</strong> in the afternoons from Tuesday to Thursday. See <a href="#helpdesks">bottom of this page</a> for detail.</p>
+
+<p><strong>We will be experimenting streaming all tutorials!</strong> If you are interested in joining remotely, <a href="https://columbiauniversity.zoom.us/j/318805257">log in via Zoom</a>. Connection will be staffed during all tutorials and helpdesks.</p>
+
+<p><br /></p>
+
+<h2 id="schedule">Schedule</h2>
+
+<h3 id="monday">Monday</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+      <th>Instructors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:30AM - 9:00AM</td>
+      <td>
+        <strong>Welcome to Oceanhackweek</strong>
+        <ul>
+          <li>Code of Conduct</li>
+          <li>Logistics</li>
+          <li><a href="https://github.com/oceanhackweek/ohw19-tutorial-overview">Tutorial Overview</a></li>
+        </ul>
+      </td>
+      <td>Wu-Jung Lee, Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>9:00AM - 10:10AM</td>
+      <td><strong>Oceanhackweek At A Glance</strong></td>
+      <td>Wu-Jung Lee, Ryan Abernathey</td>
+    </tr>
+    <tr>
+      <td>10:10AM - 10:30AM</td>
+      <td>Group Picture Time</td>
+      <td>Everyone</td>
+    </tr>
+ <tr>
+      <td>10:30AM - 10:45AM</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>10:45AM - 11:15AM</td>
+      <td>Icebreakers</td>
+      <td>Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>11:15AM - 12:15PM</td>
+      <td><strong>Lightning Introductions I</strong></td>
+      <td>Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>12:15PM - 1:15PM</td>
+      <td>Lunch</td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>1:15PM - 2:15PM</td>
+      <td><strong>Lightning Introductions II</strong></td>
+      <td>Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>2:30PM - 3:15PM</td>
+      <td><strong>Project Discussion</strong></td>
+      <td>Joseph Gum</td>
+    </tr>
+    <tr>
+      <td>3:15PM - 3:45PM</td>
+      <td><strong>Project Pitch and Group Breakouts</strong></td>
+      <td>Joseph Gum</td>
+    </tr>
+ <tr>
+      <td>3:45PM - 4.00PM</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>4:00PM - 5:15PM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-github">Git, GitHub and Project Collaboration</a></strong><br /><a href="https://www.youtube.com/watch?v=wWKDp4Uw25A&amp;t=1s">(video)</a></td>
+      <td>Valentina Staneva, Tim Crone</td>
+    </tr>
+    <tr>
+      <td>6:30PM - 8:30PM</td>
+      <td>Reception @ <a href="https://www.google.com/maps/dir/Del+Taco,+34528+16th+Ave+S,+Federal+Way,+WA+98003/eScience+Institute,+WRF+Data+Science+Studio,+UW+Physics%2FAstronomy+Tower,+6th+Floor,+Campus+Box+351570,+3910+15th+Ave+NE,+Seattle,+WA+98195/@47.4731599,-122.5837931,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x549057c764bbcb89:0xcc4d40bef5482956!2m2!1d-122.3128756!2d47.2917625!1m5!1m1!1s0x549014f277b0f15d:0x7c2434f079426d8c!2m2!1d-122.3117848!2d47.6533665!3e2">eScience</a></td>
+      <td>Everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tuesday">Tuesday</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+      <th>Instructors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00AM - 11:00AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Access and Clean-up Ocean Observation Data</a></strong><br /><a href="https://www.youtube.com/watch?v=JO8tfMQ6Kfw">(video)</a></td>
+      <td>Emilio Mayorga, Filipe Fernandes, <br />Joseph Gum, Tim Crone</td>
+    </tr>
+ <tr>
+      <td>11:00AM - 11:15AM</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>11:15AM - 12:00AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-data-access-viz">Data Visualization Part I:<br />Basics and Geospatial Visualization</a></strong><br /><a href="https://www.youtube.com/watch?v=g3mEs-i5-pI">(video)</a></td>
+      <td>Filipe Fernandes, Emilio Mayorga, <br />Joseph Gum, Tim Crone</td>
+    </tr>
+    <tr>
+      <td>12:00PM - 1:30PM</td>
+      <td>Lunch</td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>1:30PM - 2:30PM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-cloud101">Cloud Computing 101</a></strong><br />(Optional)<br /><a href="https://www.youtube.com/watch?v=XZxcZoWXA5w">(video)</a></td>
+      <td>Amanda Tan</td>
+    </tr>
+ <tr>
+      <td>3:30PM - 3:45AM</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>Rest of Afternoon</td>
+      <td>Hack Project Work</td>
+      <td>Everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="wednesday">Wednesday</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+      <th>Instructors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00AM - 10:30AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/xarray.ipynb">Handle</a> "Big" <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/dask.ipynb">Larger-than-memory</a> <a href="https://github.com/oceanhackweek/ohw19-tutorial-handle-big-data/blob/master/notebooks/ecco_v4_example.ipynb">Data</a></strong><br /><a href="https://www.youtube.com/watch?v=DQIhxEdlWVQ">(video)</a></td>
+      <td>Joe Hamman, Ryan Abernathey</td>
+    </tr>
+ <tr>
+      <td>10:30AM - 10:45AM</td>
+      <td>Coffee Break</td>
+    </tr>
+    <tr>
+      <td>10:45AM - 12:00AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-advanced-viz">Advanced Data Visualization</a></strong><br /><a href="https://www.youtube.com/watch?v=UOiYmE0IsFs">(video)</a></td>
+      <td>Filipe Fernandes, Amanda Tan</td>
+    </tr>
+    <tr>
+      <td>12:00PM - 1:30PM</td>
+      <td>Lunch<br /></td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>1:30PM - 2:30PM</td>
+      <td><strong>Lightning Talks (Demo a tool!)</strong></td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>2:30PM - 2:45PM</td>
+      <td><strong>Project check-in</strong></td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>Rest of Afternoon</td>
+      <td>Hack Project Work</td>
+      <td>Everyone</td>
+    </tr>
+ <tr>
+      <td>3:30PM - 3:45PM</td>
+      <td>Coffee Break</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="thursday">Thursday</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+      <th>Instructors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00AM - 11:30AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-machine-learning">Machine Learning</a></strong><br /><a href="https://www.youtube.com/watch?v=Fzd9m18ZrpU">(video)</a></td>
+      <td>Valentina Staneva, Joseph Gum</td>
+    </tr>
+    <tr>
+      <td>11:30AM - 1:30PM</td>
+      <td>Lunch</td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>Afternoon</td>
+      <td>Hack Project Work</td>
+      <td>Everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="friday">Friday</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+      <th>Instructors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00AM - 10:00AM</td>
+      <td><strong><a href="https://github.com/oceanhackweek/ohw19-tutorial-reproducible-science">Reproducible Research</a></strong></td>
+      <td>Joseph Gum</td>
+    </tr>
+    <tr>
+      <td>11:30AM - 1:30PM</td>
+      <td>Lunch</td>
+      <td>Everyone</td>
+    </tr>
+    <tr>
+      <td>2:30PM</td>
+      <td>Final Project Presentation</td>
+      <td>Everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h2 id="helpdesks">Helpdesks</h2>
+
+<p>Time: 2:30-4:00PM</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Time</th>
+      <th>Helpers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ask a Machine Learning Question</strong></td>
+      <td>Tuesday</td>
+      <td>Valentina Staneva, Joseph Gum</td>
+    </tr>
+    <tr>
+      <td><strong>Python, Git, and Pangeo</strong></td>
+      <td>Tuesday-Thursday</td>
+      <td>Filipe Fernandes, Joseph Gum, Wu-Jung Lee</td>
+    </tr>
+    <tr>
+      <td><strong>Ocean Data System Consultation</strong></td>
+      <td>Tuesday-Wednesday</td>
+      <td><strong>IOOS</strong>: Micah Wengren
+        <br /><strong>OOI</strong>: Orest Kawka, Mike Vardaro
+        <br /><strong>NCEI/BCO-DMO</strong>: Matt Biddle
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+                
+
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		       
+		<li><a href="https://github.com/oceanhackweek" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+		 
+		<li><a href="https://oceanhackweek2019.slack.com" class="icon fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+		  
+		<li><a href="mailto:oceanhkw@uw.edu" class="icon fa-envelope" target="_blank"><span class="label">email</span></a></li>
+		
+	</ul>
+	<ul class="copyright">
+		<li>&copy; Oceanhackweek 2019</li>
+		<!--<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.</li>-->
+		<!--<li>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</li>-->
+		<!--<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a>.</li>-->
+	</ul>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
