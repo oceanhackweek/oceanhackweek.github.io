@@ -19,6 +19,7 @@ before_install:
     conda config --set channel_priority strict
     conda create --name TEST python=3 rb-bundler compilers doctr
     source activate TEST
+    rm -f miniconda.sh
     bundle install
 
 install:
@@ -26,11 +27,15 @@ install:
 
 script:
   - |
-    set -e
     if [[ -z "$TRAVIS_TAG" ]]; then
       DEPLOY_DIR=dev
     else
       DEPLOY_DIR="$TRAVIS_TAG"
     fi
-    python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
-    python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
+
+    if [[ "${TRAVIS_BRANCH}" == "source" ]]; then
+      python -m doctr deploy --branch-whitelist source --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
+    elif [[ "${TRAVIS_BRANCH}" == "draft" ]]; then
+      python -m doctr deploy --branch-whitelist draft --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ draft
+    fi
+    python -m doctr deploy --branch-whitelist draft --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
