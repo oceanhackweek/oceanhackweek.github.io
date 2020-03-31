@@ -30,7 +30,7 @@ script:
     if [[ -z "$TRAVIS_TAG" ]]; then
       DEPLOY_DIR=dev
     else
-      DEPLOY_DIR="version-$TRAVIS_TAG"
+      DEPLOY_DIR="$TRAVIS_TAG"
     fi
     python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
     python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
