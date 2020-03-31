@@ -5,7 +5,7 @@ sudo: false
 env:
   global:
     # Doctr deploy key for oceanhackweek/oceanhackweek.github.io
-    - secure: "EjC+PdnyrYNtX++XFFWNGm62KJq/kktGGj5ujhKGCcleGMI3sVSA8UEHZZOeahX/CTu/TfTcJhkieD4gJ0S7GvWxE8kVi02z/lP1LwNw3NFtNvCQ91KU+66U6vVe/JmyVY8JfhZmL3PzjNR19UaJ+54R+j1pt+KpIMyWwuAROc4bNTK55EIPQfN4IYnuuphLPrNtJV0ka49RI5mJ8dYI8nioz3lbfJ4ydp1/BaBQ9YOWdEddhV5+0/mp7TEc9kG5Mq8Vzzp66RexUq5iQingF3gzgm3RyOKdygEbM0E6Zt5TwRBK9eV6Z5nF0VRSlTlEbx0TzyDxMYpycVx056GDR7RLio8ftndqtkKLnAjmilBvelaWMGWnqbkvux6OQfwETmf1q0wRMTKmMJz+QRicmP3Z4rWJuZc04IYoI2aZrVR2EBpLUI5L5Ul/req1EOkcluLEKuAeU2glH+BikK4iQjZE40Sb998ezejm0bnYIkEJigfIuHz4n5SyrG7zhG15AwIuZTgvQiulF3PV7aKOgSfhnSaJd0t+5YrKipdk6M2aKfuScKJHfi/79RcJoQIv1CfPvLpDilzhdH4qZ9IhaPx2jNw8/oQw8WjTVylMu8vMDC0SY5Au2ypoXnuCPOzPnXb8ZsZqYhMCU1beM145OaCjAnyLg+7wImWI7+AHgfQ="
+    - secure: "OXn6IPTYhA/SXmmztmp0uaOUF2y7jq7Wj5eXhylrTpI7/8ayi0huS/urxiRW+mawDwtCDNC1rGS+K6+cORNpkh7LI9PW1eIhNfXeKITYo89HfP7R7ozsL8EQ0xPBb1CR1bfEM3G5Jxo5CcdwmRpR6ahQqaB7Mm+aidXUI0an2eZ7QDthZfKd10tWkfTOQY2jbNuyHJmXfLpx2FhUEUNnBFlcqdSOZWmqv5hX0AfepHW/J5LOu4cqBwfxZNeeNHBfLjHMqBHL9muaaf/TuY78pt2XOcCjZk+ww2+SVxbY3w5gTdGrtbY56pUthbMY/5sBWftz5LAyVG9xp54JE+J3pDPBethwqDMENRsbTOG+eQ0ygEXlP0UbUpkZ4JInsvILzpsDUOSfhsl2GZqBOvpSIeEKXiMsJu3blU14+z+K/B7lhvz8cCeJ24O5LeqTepKwO57Q2sVAu1dRoGV1SQwcJbq8jkqOVePbpCHgn8Yl0YNu2NJARAfntQy7W84GHqlGkhdOwT0FSBi1B4PNunI6/AeJz7O+1vph5McSETTkncGJajgH1ibhjr2UypzGzGz548ByqAgDRT32pW/e5vYmXQnpSOhPsDQDMiONAcqJkJtWSY2RYLkx8jh21AseS/mKxMX8Lah3FcsYBo19CtbOpsU/qAYUDJOJBOrWwbNQbek="
 
 before_install:
   # Install miniconda and create TEST env.
@@ -34,7 +34,3 @@ script:
     fi
     python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR
     python -m doctr deploy --branch-whitelist source --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ .
-
-doctr:
-  require-master: true
-  sync: false
