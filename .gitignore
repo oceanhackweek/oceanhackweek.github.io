@@ -1,4 +1,7 @@
-_site/
-.idea/
+*.gem
 .DS_Store
 .gitignore~
+.idea/
+.jekyll-metadata
+.sass-cache/
+_site/
