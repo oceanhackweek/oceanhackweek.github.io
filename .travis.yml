@@ -27,10 +27,8 @@ install:
 
 script:
   - |
-    if [[ -z "$TRAVIS_TAG" ]]; then
-      DEPLOY_DIR=dev
-    else
-      DEPLOY_DIR="$TRAVIS_TAG"
+    if [[ -n "$TRAVIS_TAG" ]]; then
+      python -m doctr deploy --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ "$TRAVIS_TAG"
     fi
 
     if [[ "${TRAVIS_BRANCH}" == "source" ]]; then
@@ -38,4 +36,3 @@ script:
     elif [[ "${TRAVIS_BRANCH}" == "draft" ]]; then
       python -m doctr deploy --branch-whitelist draft --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ draft
     fi
-    python -m doctr deploy --branch-whitelist draft --build-tags --key-path github_deploy_key_oceanhackweek_oceanhackweek_github_io.enc --built-docs _site/ $DEPLOY_DIR

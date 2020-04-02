@@ -22,4 +22,4 @@ where data are large and complex and the community is diverse and collaborative.
 The hackweek model was spearheaded by the successful [*Astro-*](http://astrohackweek.org/2019/),
 [*Neuro-*](https://neurohackweek.github.io/), and [*Geohackweek*](https://geohackweek.github.io/).
 
-[See what we did in Oceanhackweek 2018](https://oceanhackweek.github.io/schedule.html).
+[See what we did in Oceanhackweek 2018](https://oceanhackweek.github.io/ohw2018/schedule.html).
