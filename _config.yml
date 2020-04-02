@@ -12,8 +12,8 @@ banner_button_url: projects_2019.html
 banner_button_text: 2019 Hack Projects
 
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/ohw19" # the subpath of your site, e.g. /blog
+BASE_PATH : /ohw19
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
@@ -23,17 +23,17 @@ tiles-count: 3
 featured-image-source:
 
 # Social settings
+github_url: https://github.com/oceanhackweek
+slack_url: https://oceanhackweek.slack.com
+email_url: oceanhackweek@uw.edu
 500px_url:
 facebook_url:
-github_url: https://github.com/oceanhackweek
 gitlab_url:
 googleplus_url:
 instagram_url:
 linkedin_url:
 pinterest_url:
-slack_url: https://oceanhackweek2019.slack.com
 twitter_url:
-email_url: oceanhkw@uw.edu
 
 # Build settings
 markdown: kramdown
