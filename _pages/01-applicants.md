@@ -1,22 +1,37 @@
 ---
 layout: applicant
 title: Information for Applicants
-description: In OceanHackWeek we will explore the intersection of data science 
-            and oceanography through tutorials and hands-on “hacking” projects. 
-            To best benefit from the program, participants are expected to have some experience with Python programming and data analysis.
+description: <b>Due to COVID-19, there will be no in-person event in 2020. 
+    A virtual event around August is being discussed.
+    Applications will open soon.
+    Please check back in early May.</b><br><br>
+
+    In OceanHackWeek we will explore the intersection of data science 
+    and oceanography through tutorials and hands-on “hacking” projects. 
+    To best benefit from the program, participants are expected to have some experience with Python programming and data analysis.
 permalink: applicant-info.html
 image: ohw18-hacking2.JPG
 
 ---
 
-In Oceanhackweek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. In tutorials, we will learn data science tools, cloud computing, visualization, and a suite of software assets to interact with data sets of complex temporal-spatial structures or high volume. In project sessions, we will immediately put these skills to use by implementing research, computation, or visualization ideas in a group setting. To best benefit from the program, participant are expected to have some experience with Python programming and data analysis.
+**Due to COVID-19, there will be no in-person event in 2020. A virtual event around August is 
+being discussed. Applications will open soon. Please check back in early May.**
 
-If you are ready to apply, please use the application form [https://form.jotform.com/oceanhack/2020](https://form.jotform.com/oceanhack/2020)
+In Oceanhackweek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. In tutorials, we will learn data science tools, cloud computing, visualization, and a suite of software assets to interact with data sets of complex temporal-spatial structures or high volume. In project sessions, we will immediately put these skills to use by implementing research, computation, or visualization ideas in a group setting. To best benefit from the program, participant are expected to have some experience with Python programming and data analysis.
 
 ---
 
-
 ## FAQs
+
+**Q: How will the coronavirus (COVID-19) impact OceanHackweek plans?**
+
+**2020-4-23.** We are monitoring the COVID-19 situation and are in ongoing discussions 
+about its impact on plans for a virtual event in 2020 and in-person events in 2021. 
+Please check this web site regularly for updates.
+To stay up to date on the current impact of the coronavirus emergency and government recommendations,
+see the US Federal web site <a href="https://www.coronavirus.gov">https://www.coronavirus.gov</a> 
+and your state and local positions.
+
 
 **Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?**
 
