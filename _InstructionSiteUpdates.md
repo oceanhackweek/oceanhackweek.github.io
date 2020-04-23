@@ -23,7 +23,7 @@ Clone the GitHub repo locally, then edit the content of files following the docu
 Install Jekyll locally through conda with:
 
 ```shell
-conda create --name JEKYLL rb-bundler compilers
+conda create --name JEKYLL -c conda-forge rb-bundler compilers
 conda activate JEKYLL
 bundle install
 ```
@@ -35,3 +35,5 @@ bundle exec jekyll serve
 ```
 
 The site will be available at `http://127.0.0.1:4000/`.
+
+Note that the main branch is actually called `source`, not `master`! Ignore the `master` branch (we may delete it later).
