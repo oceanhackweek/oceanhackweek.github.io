@@ -30,7 +30,7 @@ For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="
 We welcome participants from all career stages and encourage applications from graduate students,
 postdocs and early career researchers.
 
-Before applying consider what you can bring to the even:
+Before applying consider what you can bring to the event:
 by pitching a project,
 by your knowledge of data sets,
 by your programming/computational skills,
@@ -44,13 +44,14 @@ We expect all participants to be engaged in the team projects and focus during t
 
 **Q: I am proficient in Matlab / R / other languages but have not used Python. It has been on my list to learn. How can I make my application be stronger?**
 
-We want to build an inclusive Oceanography community regardless of people’s language of choice and programming level.
-Note that most of the tutorials will be presented in Python,
-and participants will benefit the most if they have basic Python skills.
+We plan to accept participants with diverse skill levels and backgrounds in programming.
 
-We expect that you have gone through the [Software Carpentry Python tutorial](http://swcarpentry.github.io/python-novice-gapminder) to get familiar with the syntax in advance of the program.
-The more experience you can obtain before the beginning of the program,
-the easier it will be to follow the tutorials and contribute to the projects.
+However, to best benefit from and contribute to the program, participants are expected to have some experience with Python and/or R programming. Python will be the primary language used, but R examples and projects will be encouraged as well.
+
+Applicants with an extensive programming background in other languages (e.g. Matlab) are welcome to apply,
+if they are willing to get up-to-date on the required basics before the program.
+
+Due to the compressed nature of OHW 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/). These are a good reflection of the level we expect participants to be at coming into the workshop. [The Programming with Python materials](https://swcarpentry.github.io/python-novice-inflammation/) also provides a solid refresher of basic Python skills.
 
 **Q: I don't know the first thing about version revision/control systems. Can I still apply?**
 
@@ -64,8 +65,7 @@ We believe that Oceanhackweek participants will benefit the most with some prior
 and might not find the hackweek the best place to learn programming.
 
 If you do not have any programming experience we encourage you to start with some local or online training.
-Check if your institution runs a [Software Carpentry workshop](https://software-carpentry.org/workshops/),
-or try learning by going through the [Python Novice Lesson](http://swcarpentry.github.io/python-novice-gapminder).
+Check if your institution runs a [Software Carpentry workshop](https://software-carpentry.org/workshops/).
 
 Once you have gone through some training you will have a better understanding of whether Oceanhackweek is right for you.
 We expect that you have basic operational knowledge of Python in advance of the program.
@@ -91,7 +91,7 @@ we require that participants have had at least some familiarity or prior experie
 
 **Q: I work in an ocean engineering/robotics/consulting company. Can I apply?**
 
-We expect participants from the private sector to pay for their own expenses.
+<!-- We expect participants from the private sector to pay for their own expenses. -->
 Make sure to explain your motivation for participation in the application form!
 We may hold a career panel discussion,
 so please mention if you are interested in participating.
