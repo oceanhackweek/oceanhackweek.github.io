@@ -29,7 +29,7 @@ For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="
 
 We welcome participants from all career stages and encourage applications from graduate students,
 postdocs and early career researchers. Advanced undergrad students with background in oceanography
-or data science are also welcome.
+and data science are also welcome.
 
 Before applying consider what you can bring to the event:
 by pitching a project,
@@ -84,8 +84,6 @@ contribute to hacking,
 and assist other participants during the tutorials by being a teaching assistant!
 
 *Please mention this in the application. Send us an email if you have any questions!*
-
-<br>
 
 **Q: I have strong computational skills but have not worked in oceanography?**
 
