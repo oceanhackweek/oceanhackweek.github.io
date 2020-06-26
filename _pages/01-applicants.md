@@ -17,7 +17,7 @@ OceanHackWeek 2020 is a small, hands-on, interactive virtual workshop focused on
 Accepted applicants will be notified no later than July 22, 2020.  
 We expect to accommodate approximately 50 participants.
 
-**Formal daily activities will take place over a period of up to 3 hours per day, tentatively 10am-1pm US PDT / 1-4pm US EDT / 17:00-20:00 UTC.** Formal daily activities includes tutorials and project check-in with the entire group, but excludes actual project time. The time period will be finalized based on the geographical distribution of participants.
+**Formal daily activities will take place over a period of up to 3 hours per day, tentatively 10am-1pm US PDT / 1-4pm US EDT / 17:00-20:00 UTC.** Formal daily activities includes tutorials and project check-in with the entire group, but excludes actual project time.
 
 For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="_blank">oceanhkw@uw.edu</a>.
 
