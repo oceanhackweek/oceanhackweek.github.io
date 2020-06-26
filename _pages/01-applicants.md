@@ -100,7 +100,7 @@ so please mention if you are interested in participating.
 
 Yes, we welcome applications from abroad.
 
-**Q: I was a participant in previous Oceanhackweek. Can I apply to again?**
+**Q: I was a participant in previous Oceanhackweek. Can I apply again?**
 
 Yes, we welcome applications from previous participants,
 but priority will be given to new applicants.
