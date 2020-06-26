@@ -1,12 +1,8 @@
 ---
 layout: applicant
 title: Information for Applicants
-description: <b>Due to COVID-19, there will be no in-person event in 2020. 
-    A virtual event around August is being discussed.
-    Applications will open soon.
-    Please check back in early May.</b><br><br>
-
-    Applications will be 
+description: <b>Due to COVID-19, OceanHackWeek (OHW) 2020 will take place as a virtual, online event.
+    <a href="applicant-info.html">Applications</a> close on July 13, 2020. 
 
     In OceanHackWeek we will explore the intersection of data science 
     and oceanography through tutorials and hands-on “hacking” projects. 
@@ -17,17 +13,13 @@ image: ohw18-hacking2.JPG
 
 OceanHackWeek 2020 is a small, hands-on, interactive virtual workshop focused on data science and oceanography that will be held during **August 10-14, 2020**. Join us for five days of tutorials, data exploration, software development and community networking!
 
-**To apply, please [fill out this form](https://form.jotform.com/201774238098159) by Jul 13, 2020.**  
+**To apply, please [fill out this form](https://form.jotform.com/201774238098159) by July 13, 2020.**  
 Accepted applicants will be notified no later than July 22, 2020.  
 We expect to accommodate approximately 50 participants.
 
 **Formal daily activities will take place over a period of up to 3 hours per day, tentatively 10am-1pm US PDT / 1-4pm US EDT / 17:00-20:00 UTC.** Formal daily activities includes tutorials and project check-in with the entire group, but excludes actual project time. The time period will be finalized based on the geographical distribution of participants.
 
 For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="_blank">oceanhkw@uw.edu</a>.
-
----
-
-In OceanHackWeek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. In tutorials, we will learn data science tools, cloud computing, visualization, and a suite of software assets to interact with data sets of complex temporal-spatial structures or high volume. In project sessions, we will immediately put these skills to use by implementing research, computation, or visualization ideas in a small-group setting. To best benefit from the program, participant are expected to have some experience with Python programming and data analysis.
 
 ---
 
