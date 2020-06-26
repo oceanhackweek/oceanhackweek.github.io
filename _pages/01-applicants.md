@@ -2,10 +2,10 @@
 layout: applicant
 title: Information for Applicants
 description: <b>Due to COVID-19, OceanHackWeek (OHW) 2020 will take place as a virtual, online event.
-    <a href="applicant-info.html">Applications</a> close on July 13, 2020. 
+    <a href="applicant-info.html">Applications</a> close on July 13, 2020.
 
-    In OceanHackWeek we will explore the intersection of data science 
-    and oceanography through tutorials and hands-on “hacking” projects. 
+    In OceanHackWeek we will explore the intersection of data science
+    and oceanography through tutorials and hands-on “hacking” projects.
     To best benefit from the program, participants are expected to have some experience with Python programming and data analysis.
 permalink: applicant-info.html
 image: ohw18-hacking2.JPG
@@ -28,7 +28,8 @@ For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="
 **Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?**
 
 We welcome participants from all career stages and encourage applications from graduate students,
-postdocs and early career researchers.
+postdocs and early career researchers. Advanced undergrad students with background in oceanography
+or data science are also welcome.
 
 Before applying consider what you can bring to the event:
 by pitching a project,
@@ -51,7 +52,7 @@ However, to best benefit from and contribute to the program, participants are ex
 Applicants with an extensive programming background in other languages (e.g. Matlab) are welcome to apply,
 if they are willing to get up-to-date on the required basics before the program.
 
-Due to the compressed nature of OHW 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/). These are a good reflection of the level we expect participants to be at coming into the workshop. [The Programming with Python materials](https://swcarpentry.github.io/python-novice-inflammation/) also provides a solid refresher of basic Python skills.
+Due to the compressed nature of OceanHack 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/). These are a good reflection of the level we expect participants to be at coming into the workshop. [The Programming with Python materials](https://swcarpentry.github.io/python-novice-inflammation/) also provides a solid refresher of basic Python skills.
 
 **Q: I don't know the first thing about version revision/control systems. Can I still apply?**
 
@@ -61,35 +62,37 @@ Note that we will require you to create a [GitHub account](https://github.com/).
 
 **Q: I do not have any programming experience. Is the program a good opportunity to get started?**
 
-We believe that Oceanhackweek participants will benefit the most with some prior programming experience,
+We believe that OceanHackWeek participants will benefit the most with some prior programming experience,
 and might not find the hackweek the best place to learn programming.
 
 If you do not have any programming experience we encourage you to start with some local or online training.
 Check if your institution runs a [Software Carpentry workshop](https://software-carpentry.org/workshops/).
 
-Once you have gone through some training you will have a better understanding of whether Oceanhackweek is right for you.
+Once you have gone through some training you will have a better understanding of whether OceanHackWeek is right for you.
 We expect that you have basic operational knowledge of Python in advance of the program.
 
 **Q: Do I have to be a stellar Python programmer to be accepted?**
 
-No. We aim to bring in motivated participants with a range of programming skills levels.
+No. We aim to bring in motivated participants with a diverse range of programming skill levels.
 
 **Q: I already know a lot of what you plan to cover, should I apply / will I be bored?**
 
-Oceanhackweek is not only a place to learn new skills but also a place to share expertise and build a community together.
+OceanHackWeek is not only a place to learn new skills but also a place to share expertise and build a community together.
 If you are already an expert but are interested in sharing and helping others,
 we welcome you to pitch project ideas,
 contribute to hacking,
 and assist other participants during the tutorials by being a teaching assistant!
 
-**Please mention this in the application. Send us an email if you have any questions!**
+*Please mention this in the application. Send us an email if you have any questions!*
+
+<br>
 
 **Q: I have strong computational skills but have not worked in oceanography?**
 
 To ensure that participants will be interested in the oceanography problems they are solving and can give back to the field later on,
 we require that participants have had at least some familiarity or prior experience with oceanography data.
 
-**Q: I work in an ocean engineering/robotics/consulting company. Can I apply?**
+**Q: I work in an ocean engineering / robotics / consulting company. Can I apply?**
 
 <!-- We expect participants from the private sector to pay for their own expenses. -->
 Make sure to explain your motivation for participation in the application form!
@@ -100,7 +103,7 @@ so please mention if you are interested in participating.
 
 Yes, we welcome applications from abroad.
 
-**Q: I was a participant in previous Oceanhackweek. Can I apply again?**
+**Q: I was a participant in previous OceanHackWeek. Can I apply again?**
 
 Yes, we welcome applications from previous participants,
 but priority will be given to new applicants.
@@ -109,6 +112,6 @@ please mention that in the application.
 
 **Q: Am I supposed to participate in all tutorials and presentations?**
 
-Yes. While we understand that not all topics may be 100% relevant to you we want to maximize engagement. Note that we post the lessons and videos online later, so if you are interested in only a portion of the OHW consider that an option rather than taking someone spot.
+Yes. While we understand that not all topics may be 100% relevant to you we want to maximize engagement. Note that we post the lessons and videos online later, so if you are interested in only a portion of the OceanHackWeek consider that an option rather than taking someone's spot.
 
 ---
