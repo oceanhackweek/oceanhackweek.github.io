@@ -2,10 +2,8 @@
 title: Oceanhackweek 2020
 email: oceanhackweek@uw.edu
 description: Data Science + Oceanography<br>
-    COVID-19 has impacted OceanHackweek 2020 plans.<br>
-    There will be no in-person event in 2020.<br>
-    A virtual event around August is being discussed.<br><br>
-    <b>Please check back in early May.</b>
+    A hands-on, interactive virtual workshop<br>
+    August 10-14, 2020.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -23,8 +21,6 @@ slack_url: https://oceanhackweek.slack.com
 email_url: oceanhkw@uw.edu
 500px_url:
 facebook_url:
-gitlab_url:
-googleplus_url:
 instagram_url:
 linkedin_url:
 pinterest_url:
