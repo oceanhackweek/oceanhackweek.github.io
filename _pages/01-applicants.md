@@ -52,7 +52,7 @@ However, to best benefit from and contribute to the program, participants are ex
 Applicants with an extensive programming background in other languages (e.g. Matlab) are welcome to apply,
 if they are willing to get up-to-date on the required basics before the program.
 
-Due to the compressed nature of OceanHack 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/). These are a good reflection of the level we expect participants to be at coming into the workshop. [The Programming with Python materials](https://swcarpentry.github.io/python-novice-inflammation/) also provides a solid refresher of basic Python skills.
+Due to the compressed nature of OceanHackWeek 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [Python novice inflammation](https://swcarpentry.github.io/python-novice-inflammation/). These are a good reflection of the level we expect participants to be at coming into the workshop. The [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/) materials also provides a solid refresher of basic R skills.
 
 **Q: I don't know the first thing about version revision/control systems. Can I still apply?**
 
