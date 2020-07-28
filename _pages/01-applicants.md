@@ -122,4 +122,6 @@ It is important to note that a rejected application does not mean a bad one! The
 
 - Another important factor that goes into the selection of candidates is the motivation paragraph in your application. Boilerplate answers or short answers like: "I want to participate" or "It is important to me" may get lower ranking than those who read the past year materials and wrote a paragraph on how the OHW can really make a difference to them. In short: be informed, be honest, be you!
 
+- Also, please refer to the FAQ question: "I am proficient in Matlab / R / other languages but have not used Python. It has been on my list to learn. How can I make my application be stronger?"
+
 ---
