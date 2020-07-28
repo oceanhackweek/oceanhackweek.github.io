@@ -118,7 +118,7 @@ Sadly resources are limited and we cannot accommodate all the applicants we woul
 
 It is important to note that a rejected application does not mean a bad one! The reasons are:
 
-- The organizer tries to accommodate a good balance between novices, intermediaries and experts. That means a candidate may be rejected one year and accepted in another due to the different pool of applicants. Rule of thumb? Always apply again next year if possible! Also, if you believe you can contribute to the OHW as a helper instead of a student, please get in touch! We are always in need of helpers.
+- The organizer tries to accommodate a good balance from novices to experts. That means a candidate may be rejected one year and accepted in another due to the different pool of applicants. Rule of thumb? Always apply again next year if possible! Also, if you believe you can contribute to the OHW as a helper instead of a student, please get in touch! We are always in need of helpers.
 
 - Another important factor that goes into the selection of candidates is the motivation paragraph in your application. Boilerplate answers or short answers like: "I want to participate" or "It is important to me" may get lower ranking than those who read the past year materials and wrote a paragraph on how the OHW can really make a difference to them. TL;DR be honest, be you!
 
