@@ -2,7 +2,7 @@
 layout: applicant
 title: Information for Applicants
 description: <b>Due to COVID-19, OceanHackWeek (OHW) 2020 will take place as a virtual, online event.
-    <a href="applicant-info.html">Applications</a> close on July 13, 2020.
+    <a href="applicant-info.html">Applications</a> closed on July 13, 2020.
 
     In OceanHackWeek we will explore the intersection of data science
     and oceanography through tutorials and hands-on “hacking” projects.
