@@ -16,11 +16,16 @@
 ./assets/fonts/fontawesome-webfont.ttf
 ./assets/fonts/fontawesome-webfont.woff
 ./assets/fonts/fontawesome-webfont.woff2
+./assets/images/BigelowLabs.png
 ./assets/images/COE_UW_purp.png
 ./assets/images/FKnuth_pic.jpg
+./assets/images/OCB_logo.png
 ./assets/images/apl_logo_blue.jpg
 ./assets/images/banner.jpg
 ./assets/images/col.png
+./assets/images/eScience-UW.png
+./assets/images/eScience-stacked_logo.png
+./assets/images/eScience_square_logo.jpg
 ./assets/images/escience.png
 ./assets/images/filipe.jpg
 ./assets/images/geohackweek_01.png
@@ -29,6 +34,7 @@
 ./assets/images/jgum.jpg
 ./assets/images/moore.png
 ./assets/images/nsf.jpeg
+./assets/images/nsf_buffered.png
 ./assets/images/ohw-group-pic.jpg
 ./assets/images/ohw18-hacking2.JPG
 ./assets/images/ooi.jpg
