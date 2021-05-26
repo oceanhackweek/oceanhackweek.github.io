@@ -1,8 +1,8 @@
 ---
 layout: applicant
 title: Information for Applicants
-description: <b>Due to COVID-19, OceanHackWeek (OHW) 2020 will take place as a virtual, online event.
-    <a href="applicant-info.html">Applications</a> closed on July 13, 2020.
+description: <b>OceanHackWeek (OHW) 2021 will take place as a hybrid in-person and virtual, online event.
+    <a href="applicant-info.html">Applications</a> closed on July 14, 2021.
 
     In OceanHackWeek we will explore the intersection of data science
     and oceanography through tutorials and hands-on “hacking” projects.
@@ -11,13 +11,15 @@ permalink: applicant-info.html
 image: ohw18-hacking2.JPG
 ---
 
-OceanHackWeek 2020 is a small, hands-on, interactive virtual workshop focused on data science and oceanography that will be held during **August 10-14, 2020**. Join us for five days of tutorials, data exploration, software development and community networking!
+Last year, OceanHackWeek was held completely virtual, with both an US East and West Coast events. This move to virtual was a great success that allowed for more participation, but it was difficult for other time zones to participate. This year, we have learned from that and intend to have recorded tutorials with interactive discussions and project work sessions held in 3 different time zones that should work for most people.
+    
+Hybrid OceanHackWeek 2021 is a small, hands-on, interactive in-person and virtual workshop focused on data science and oceanography that will be held during **August 2-6, 2021**. Join us for four days of tutorials, data exploration, software development and community networking!
 
-**To apply, please [fill out this form](https://form.jotform.com/201774238098159) by July 13, 2020.**  
-Accepted applicants will be notified no later than July 22, 2020.  
-We expect to accommodate approximately 50 participants.
+**To apply, please [fill out this form](https://form.jotform.com/201774238098159) by June 10, 2021.**  
+Accepted applicants will be notified no later than June 14, 2021.  
+We expect to accommodate approximately 50-100 participants.
 
-**Formal daily activities will take place over a period of up to 3 hours per day, tentatively 10am-1pm US PDT / 1-4pm US EDT / 17:00-20:00 UTC.** Formal daily activities includes tutorials and project check-in with the entire group, but excludes actual project time.
+**Formal daily activities will take place over a period of up to 3 hours per day.** Formal daily activities includes tutorials and project check-in with the entire group, but excludes actual project time. 
 
 For additional questions, please email <a href="mailto:oceanhkw@uw.edu" target="_blank">oceanhkw@uw.edu</a>.
 
