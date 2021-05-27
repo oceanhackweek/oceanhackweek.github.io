@@ -1,9 +1,11 @@
 # Site settings
-title: Oceanhackweek 2020
+title: OceanHackWeek 2021
 email: oceanhackweek@uw.edu
 description: Data Science + Oceanography<br>
-    A hands-on, interactive virtual workshop<br>
-    August 10-14, 2020.
+    A hands-on, interactive HYBRID workshop<br>
+    August 3-6, 2021<br>
+    <b>In person</b> @ Bigelow Laboratory for Ocean Sciences, Maine<br>
+    <b>Virtual</b> @ a couple of time zones.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
