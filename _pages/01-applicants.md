@@ -23,7 +23,7 @@ and will hold a **hybrid** event.
 **To apply, please [fill out this form](https://PLACEHOLDER) by June 14, 2021.**  
 Accepted applicants will be notified no later than June 18, 2021.
 
-The **in-person event** will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/), in East Boothbay, Maine. We expect to accommodate approximately 30-35 participants.
+The **in-person event** will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/), in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 30-35 participants.
 
 For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time. 
 While plans are still tentative, we expect to hold these sessions in at least two time zones, 
@@ -55,16 +55,16 @@ simply apply and explain your motivation for participation.
 
 We expect all participants to be engaged in the team projects and focus during the week.
 
-**Q: I am proficient in Matlab / R / other languages but have not used Python. It has been on my list to learn. How can I make my application be stronger?**
+**Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?**
 
 We plan to accept participants with diverse skill levels and backgrounds in programming.
 
-However, to best benefit from and contribute to the program, participants are expected to have some experience with Python and/or R programming. Python will be the primary language used, but R examples and projects will be encouraged as well.
+However, to best benefit from and contribute to the program, participants are expected to have some experience with Python and/or R programming.
 
 Applicants with an extensive programming background in other languages (e.g. Matlab) are welcome to apply,
-if they are willing to get up-to-date on the required basics before the program.
+if they are willing to get up-to-date on the expected basic skills before the program.
 
-Due to the compressed nature of OceanHackWeek 2020, the focus of the event will be in Python with some tutorials and projects conducted in R. Participants whose primary language is R should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [Python novice inflammation](https://swcarpentry.github.io/python-novice-inflammation/). These are a good reflection of the level we expect participants to be at coming into the workshop. The [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/) materials also provides a solid refresher of basic R skills.
+Participants should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [Python novice inflammation](https://swcarpentry.github.io/python-novice-inflammation/) for a Python focus, or [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/) for an R focus. These are a good reflection of the level we expect participants to be at coming into the workshop.
 
 **Q: I don't know the first thing about version revision/control systems. Can I still apply?**
 
@@ -81,9 +81,9 @@ If you do not have any programming experience we encourage you to start with som
 Check if your institution runs a [Software Carpentry workshop](https://software-carpentry.org/workshops/).
 
 Once you have gone through some training you will have a better understanding of whether OceanHackWeek is right for you.
-We expect that you have basic operational knowledge of Python in advance of the program.
+We expect that you have basic operational knowledge of Python or R in advance of the program.
 
-**Q: Do I have to be a stellar Python programmer to be accepted?**
+**Q: Do I have to be a stellar Python or R programmer to be accepted?**
 
 No. We aim to bring in motivated participants with a diverse range of programming skill levels.
 
@@ -111,7 +111,8 @@ so please mention if you are interested in participating.
 
 **Q: I work in a non-US institution / organization / company. Can I apply?**
 
-Yes, we welcome applications from abroad.
+Yes, we welcome applications from abroad for the *virtual* event. 
+Due to COVID-19 concerns, the *in-person* event will be limited to vaccinated US residents.
 
 **Q: I was a participant in previous OceanHackWeek. Can I apply again?**
 
@@ -131,9 +132,7 @@ Sadly resources are limited and we cannot accommodate all the applicants we woul
 It is important to note that a rejected application does not mean a bad one! The reasons are:
 
 - The organizer tries to accommodate a good balance from novices to experts. That means a candidate may be rejected one year and accepted in another due to the different pool of applicants. Rule of thumb? Always apply again next year if possible! Also, if you believe you can contribute to the OHW as a helper instead of a student, please get in touch! We are always in need of helpers.
-
 - Another important factor that goes into the selection of candidates is the motivation paragraph in your application. Boilerplate answers or short answers like: "I want to participate" or "It is important to me" may get lower ranking than those who read the past year materials and wrote a paragraph on how the OHW can really make a difference to them. In short: be informed, be honest, be you!
-
-- Also, please refer to the FAQ question: "I am proficient in Matlab / R / other languages but have not used Python. It has been on my list to learn. How can I make my application be stronger?"
+- Also, please refer to the FAQ question: "I am proficient in Matlab / other languages but have not used Python or R. It has been on my list to learn. How can I make my application be stronger?"
 
 ---
