@@ -19,8 +19,7 @@ but it was difficult for participants outside North American time zones.
 For 2021, we have learned from that experience and previous in-person events 
 and will hold a **hybrid** event.
 
-<!-- **To apply, please [fill out this form](https://www.jotform.com/build/211262036692148) by June 14, 2021.**   -->
-**To apply, please [fill out this form](https://PLACEHOLDER) by June 14, 2021.**  
+**To apply, please [fill out this form](https://form.jotform.com/211262036692148) by June 14, 2021.**  
 Accepted applicants will be notified no later than June 18, 2021.
 
 The **in-person event** will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/), in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 30-35 participants.
