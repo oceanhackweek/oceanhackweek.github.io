@@ -2,10 +2,10 @@
 title: OceanHackWeek 2021
 email: oceanhackweek@uw.edu
 description: Data Science + Oceanography<br>
-    A hands-on, interactive HYBRID workshop<br>
+    A <b><u>HYBRID</u></b>, hands-on, interactive workshop<br>
     August 3-6, 2021<br>
-    <b>In person</b> @ Bigelow Laboratory for Ocean Sciences, Maine<br>
-    <b>Virtual</b> @ a couple of time zones.
+    <b>Virtual</b> @ a couple of time zones<br>
+    <b>In person</b> @ Bigelow Laboratory for Ocean Sciences, Maine
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
