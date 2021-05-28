@@ -7,7 +7,7 @@ team:
 
   - - name: Stace Beaulieu
       title: Senior Research Specialist
-      affiliate: Woods Hole Oceanographic Inst
+      affiliate: Woods Hole Oceanographic Institute
       image_url: https://www2.whoi.edu/staff/sbeaulieu/wp-content/uploads/sites/30/2019/02/Stace_IMG_1365-300x225.jpg
       github_user: sbeaulieu
 
@@ -19,7 +19,7 @@ team:
 
     - name: Guilherme Castelão
       title: Academic Specialist
-      affiliate: Scripps Inst of Oceanography
+      affiliate: Scripps Institute of Oceanography
       image_url: https://avatars2.githubusercontent.com/u/1903589?s=460&v=4
       github_user: castelao
 
@@ -43,7 +43,7 @@ team:
 
   - - name: Alison Gray
       title: Assistant Professor
-      affiliate: UW Oceanography
+      affiliate: UW School of Oceanography
       image_url: https://www.ocean.washington.edu/files/alisongray-2018-20180717023407_smsq.jpg
       github_user: alisonrgray
 
@@ -56,7 +56,7 @@ team:
     - name: Alex Kerney
       title: Web Application Developer
       affiliate: Gulf of Maine Research Institute
-      image_url: https://www.gmri.org/sites/default/files/styles/gmri_main/public/staff/alexk_web.jpg?itok=UL1vO0HZ
+      image_url: https://gmri-org-production.s3.amazonaws.com/images/Alex_Kerney.a5935ce3.fill-600x600-c75.jpg
       github_user: abkfenris
 
   - - name: Jane Koh
@@ -66,25 +66,25 @@ team:
 
     - name: Wu-Jung Lee
       title: Senior Oceanographer
-      affiliate: UW Applied Physics Lab
+      affiliate: UW Applied Physics Laboratory
       image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
       github_user: leewujung
 
     - name: Emilio Mayorga
       title: Senior Oceanographer
-      affiliate: UW Applied Physics Lab
+      affiliate: UW Applied Physics Laboratory
       image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
       github_user: emiliom
 
   - - name: Catherine Mitchell
-      title: Research Scientist
-      affiliate: Bigelow Lab for Ocean Sciences
+      title: Senior Research Scientist
+      affiliate: Bigelow Laboratory for Ocean Sciences
       image_url: https://www.bigelow.org/img/people/cmitchell.png
       github_user: cathmmitchell
 
     - name: Nick Record
       title: Senior Research Scientist
-      affiliate: Bigelow Lab for Ocean Sciences
+      affiliate: Bigelow Laboratory for Ocean Sciences
       image_url: https://www.bigelow.org/img/people/nrecord.png
       github_user: SeascapeScience
 
