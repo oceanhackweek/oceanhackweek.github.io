@@ -2,7 +2,8 @@
 layout: applicant
 title: Information for Applicants
 description: <b>OceanHackWeek (OHW) 2021 will take place as a hybrid in-person and virtual, online event.
-    <a href="applicant-info.html">Applications</a> close on June 14, 2021.
+    <a href="applicant-info.html">Applications</a> close on June 14, 2021
+    for the in-person event and June 28 for the virtual event.
     In OceanHackWeek we will explore the intersection of data science
     and oceanography through tutorials and hands-on “hacking” projects.
     To best benefit from the program, participants are expected to have some experience with Python or R programming and data analysis.
@@ -19,8 +20,9 @@ but it was difficult for participants outside North American time zones.
 For 2021, we have learned from that experience and previous in-person events 
 and will hold a **hybrid** event.
 
-**To apply, please [fill out this form](https://form.jotform.com/211262036692148) by June 14, 2021.**  
-Accepted applicants will be notified no later than June 18, 2021.
+**To apply, please [fill out this form](https://form.jotform.com/211262036692148) by June 14, 2021, for the in-person event. The deadline for the virtual event has been extended to June 28, 2021.**  
+
+Accepted applicants will be notified no later than June 18, 2021, for the in-person event and July 8, 2021, for the virtual event.
 
 The **in-person event** will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/), in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 30-35 participants.
 
