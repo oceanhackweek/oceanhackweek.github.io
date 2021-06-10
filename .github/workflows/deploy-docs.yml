@@ -1,6 +1,6 @@
 name: Build and Deploy docs
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build-docs:
@@ -18,14 +18,14 @@ jobs:
     - name: Build environment
       shell: bash -l {0}
       run: |
-         conda create --name IOOS --file .binder/conda-linux-64.lock
-         source activate IOOS
+         conda create --name OHW-site --file .binder/conda-linux-64.lock
+         source activate OHW-site
          conda install rb-bundler compilers
          bundle install
     - name: Build documentation
       shell: bash -l {0}
       run: |
-        source activate IOOS
+        source activate OHW-site
         bundle exec jekyll build --verbose
 
     - name: Deploy
