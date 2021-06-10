@@ -18,10 +18,6 @@ jobs:
     - name: Build environment
       shell: bash -l {0}
       run: |
-         conda config --set always_yes yes --set changeps1 no --set show_channel_urls true
-         conda update --quiet conda
-         conda config --add channels conda-forge --force
-         conda config --set channel_priority strict
          conda create --name OHW-site -c conda-forge rb-bundler compilers
          source activate OHW-site
          bundle install
