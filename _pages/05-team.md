@@ -38,7 +38,7 @@ team:
     - name: Chelle Gentemann
       title: Senior Scientist
       affiliate: Farallon Institute
-      image_url: https://www.esr.org/wp-content/uploads/2017/04/cgentemannstaff.jpg
+      image_url: https://images.squarespace-cdn.com/content/v1/56a6b01dd8af105db2511b83/1619046574422-KMBIXE9PYFBIXH9SN7CO/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mh5VMMOxnTbph8FXiclivDQnof69TlCeE0rAhj6HUpXkw/ChelleIMG_7296.jpg
       github_user: cgentemann
 
   - - name: Alison Gray
