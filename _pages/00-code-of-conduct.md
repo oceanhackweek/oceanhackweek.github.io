@@ -7,7 +7,7 @@ permalink: code_of_conduct.html
 
 # Code of Conduct
 
-OceanHackWeek (OHW) is dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any OHW venues in either in-person and virtual form, including the Slack workspace. Participants violating these rules may be sanctioned or expelled from OHW at the discretion of the organizers.
+OceanHackWeek (OHW) is dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any OHW venues in either in-person or virtual form, including the Slack workspace. Participants violating these rules may be sanctioned or expelled from OHW at the discretion of the organizers.
 
 Harassment includes, but is not limited to:
 
