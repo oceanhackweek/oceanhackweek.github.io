@@ -34,7 +34,30 @@ This anti-harassment policy is based on the example policy from the Geek Feminis
 ## Group discussion
 **Q: What can each of us do to make OceanHackWeek an optimal learning environment that is inclusive and welcoming for everyone?**
 
-We'll post the discussion results contributed by everyone after morning of Day 1!
+- Give people room to express themselves, helping them achieve what they want to achieve this week
+- Be helpful and spend some time jumping start someone with coding. 
+- Open to new ideas and ways of approaching a problem, being approachable
+- Organizers are also here to learn from others and certainly don’t have all the answers!
+- Be cognizant of different locations and time zones, engagement levels
+- Allow and encourage different ways to engage, not just need to engage via video - like this google doc!
+- Don’t use language like “obviously” or “clearly” (don’t assume something is easy for others)
+- Ask questions, all the questions. 
+- Cameras on, so people can see that you’re engaged
+- Build bridges between all three groups by reaching out to virtual/in-person participants
+- Making sure everyone is working from a common knowledge baseline
+- Listen actively and pay attention +1)
+- Creating specific times/spaces for individuals to bring up questions/concerns - helps shy folks get a chance to communicate
+- Specifically ask folks who are quieter if they would like to contribute (but don’t pressure them)
+- Listening and adjusting behaviour if someone expresses discomfort about a behaviour
+- Letting others know if you are uncomfortable-- especially the person causing you the discomfort if it feels safe to do so
+- Patient and understanding that everyone from different backgrounds and experiences
+- Communicating in open spaces like slack channels so that others can follow or join
+- Be patient with technological problems
+- Using we language instead of you or I esp when learning on Project teams together
+- Being a good listener and making space for others to speak their mind or answer questions especially if I’ve been the one talking
+- Using inclusive language to make sure that we aren’t inadvertently accusing or attacking anyone
+- Smile and show a bit of patience. 
+
 
 <!-- OHW20 discussion outcome
 - Be respectful to others’ views; whether it’s technical question or scientific hypothesis
