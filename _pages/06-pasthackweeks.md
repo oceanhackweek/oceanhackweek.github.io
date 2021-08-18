@@ -12,8 +12,8 @@ OceanHackWeek was held as a virtual event for the first time in 2020; in 2019 an
 ## 2020 (OHW20)
 
 - [Web site](https://oceanhackweek.github.io/ohw20/)
-- [OHW Resources site](https://oceanhackweek.github.io/ohw-resources/)
-- [Schedule](https://oceanhackweek.github.io/ohw-resources/schedule/)
+- [OHW Resources site](https://oceanhackweek.github.io/ohw-resources/ohw20/)
+- [Schedule](https://oceanhackweek.github.io/ohw-resources/ohw20/schedule/)
 - [Projects](projects_2020.html)
 
 ## 2019 (OHW19)
