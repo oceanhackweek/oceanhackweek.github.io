@@ -1,0 +1,22 @@
+<h1>Organizing Committee</h1>
+
+<p>Team of OceanHackWeek organizers</p>
+
+<div class="row">
+{% for person in team %}
+    <div class="col-4" style="margin-bottom: 1rem">
+        <div class="card">
+            <img class="card-image-top" src="{{ person.image_url }}" alt="{{ person.name }}" />
+            <div class="card-body">
+                <h3>{{ person.name }}</h3>
+                <span>{{ person.title }}</span> - 
+                <em>{{ person.affiliate }}</em>
+                {% if person.github_user %}
+                    <a href="https://github.com/{{ person.github_user }}" class="fab fa-github"></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
