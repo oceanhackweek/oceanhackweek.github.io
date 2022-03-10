@@ -18,6 +18,7 @@ We will use Slack, Zoom and GitHub as our primary communication and content deli
 
 ```{toctree}
 :maxdepth: 2
+:hidden:
 :caption: Logistics
 
 logistics/overview
@@ -26,6 +27,7 @@ logistics/coffeebreaks
 ```
 
 ```{toctree}
+:hidden:
 :caption: Preperation
 
 prep/git
@@ -36,6 +38,7 @@ prep/conda
 ```
 
 ```{toctree}
+:hidden:
 :caption: Tutorials
 
 tutorials/getting_started
@@ -43,6 +46,7 @@ tutorials/getting_started
 ```
 
 ```{toctree}
+:hidden:
 :caption: Projects
 
 projects/overview

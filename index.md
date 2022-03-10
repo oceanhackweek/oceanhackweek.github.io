@@ -64,6 +64,39 @@ It is sometimes hard to predict whether a given conference, training or hack-a-t
 
 Thanks to our sponsors that make this event possible.
 
+<div class="row">
+<div class="col-4" style="margin-bottom: 1rem">
+
+![UW eScience](assets/images/eScience_square_logo.jpg)
+
+</div>
+<div class="col-4" style="margin-bottom: 1rem">
+
+![Bigelow Lab](assets/images/BigelowLabs.png)
+
+</div>
+<div class="col-4" style="margin-bottom: 1rem">
+
+![UW APL](assets/images/apl_logo_blue.jpg)
+
+</div>
+<div class="col-4" style="margin-bottom: 1rem">
+
+![NSF](assets/images/nsf.jpeg)
+
+</div>
+<div class="col-4" style="margin-bottom: 1rem">
+
+![IOOS](assets/images/ioos_logo.jpg)
+
+</div>
+<div class="col-4" style="margin-bottom: 1rem">
+
+![OCB](assets/images/OCB_logo.png)
+
+</div>
+</div>
+
 <!-- ## Location and Time Zones
 
 In-person workshop: Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine (US EDT, UTC-4).
