@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "OceanHackWeek"
-author = "Author Name"
+author = "OceanHackWeek contributors"
 # -- Sphinx config ---------------------------------------------------
 extensions = [
     "myst_nb",
@@ -20,7 +20,7 @@ panels_add_bootstrap_css = True
 templates_path = ["_templates"]
 pygments_style = "sphinx"
 exclude_patterns = [
-    "_build/**",
+    "_build",
     "Thumbs.db",
     ".DS_Store",
     "*import_posts*",
@@ -32,7 +32,6 @@ exclude_patterns = [
     "github_submodule/*",
     "LICENSE.md",
     "README.md",
-    "jekyll-spectral-theme/**/*",
     "jupyter_execute/**/*",
     "_InstructionSiteUpdates.md",
 ]
@@ -87,7 +86,8 @@ html_sidebars = {
     "posts/**": [
         "hello.html",
         "recentposts.html",
-        # "archives.html", "tags.html"
+        "archives.html",
+        # "tags.html"
     ],
     "**": [
         "hello.html",
@@ -100,10 +100,10 @@ blog_baseurl = ""
 blog_title = "OceanHackWeek"
 blog_path = "posts"
 fontawesome_included = True
-blog_post_pattern = "posts/**"
+blog_post_pattern = "posts/**/*"
 post_redirect_refresh = 1
 post_auto_image = 1
-post_auto_except = 1
+post_auto_excerpt = 1
 post_date_format = "%d %B %Y"
 
 # -- Myst config ---------------------------------------------------

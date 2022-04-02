@@ -6,6 +6,13 @@ description: OceanHackWeek home
 
 # OceanHackWeek
 
+```{admonition} Updates in progress
+:class: warning
+
+We're currently updating the site for OceanHackWeek 2022. We've got some new things planned, so stay tuned!
+
+```
+
 While OceanHackWeek 2021 has finished, we're scheming what's next for the OceanHackWeek community.
 If you've got any idea's please get in touch!
 

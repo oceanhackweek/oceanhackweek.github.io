@@ -12,6 +12,13 @@ image: ohw18-hacking2.JPG
 
 # Information for Applicants
 
+```{admonition} Updates in progress
+:class: warning
+
+We're currently updating the site for OceanHackWeek 2022. We've got some new things planned, so stay tuned!
+
+```
+
 OceanHackWeek 2021 is a small, hands-on, interactive **hybrid** in-person and virtual workshop focused on data science and oceanography that will be held during **August 3-6, 2021**. Join us for four days of tutorials, data exploration, software development and community networking!
 
 Last year, OceanHackWeek was held completely virtual, after initial plans for
