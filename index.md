@@ -115,6 +115,6 @@ Virtual event: We expect to hold formal sessions in at least two time zones, USA
 :hidden:
 about/index.md
 2022/index.md
-resources/index.md
-posts
+% resources/index.md
+% posts
 ```

@@ -81,7 +81,10 @@ html_context = {"test_context": "Test context value", "team": load_team_info()}
 html_favicon = "_static/magnifying.ico"
 html_static_path = ["_static"]
 html_sidebars = {
-    "index": ["hello.html", "recentposts.html"],
+    "index": [
+        "hello.html",
+        # "recentposts.html"
+    ],
     "about": ["hello.html"],
     "posts/**": [
         "hello.html",
@@ -92,7 +95,7 @@ html_sidebars = {
     "**": [
         "hello.html",
         "sidebar-nav-bs.html",
-        "recentposts.html",
+        # "recentposts.html",
         # "archives.html", "tags.html"
     ],
 }
