@@ -9,7 +9,7 @@ description: OceanHackWeek home
 ```{admonition} Updates in progress
 :class: warning
 
-We're currently updating the site for OceanHackWeek 2022. We've got some new things planned, so stay tuned!
+We're currently updating the site for OceanHackWeek 2022, but you can put August 15-19th on your calendar. We've got some new things planned, so stay tuned!
 
 ```
 

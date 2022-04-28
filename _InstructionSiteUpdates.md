@@ -62,7 +62,18 @@ _the rest of the post below_
 
 The only required metadata tag to make a post is `date`. The rest will either be extracted from the post (the title), derived from `conf.py` (authors), or treated as null (tags and comments).
 
+#### Directives
+
+MyST-NB/MyST-Parser brings ReStructured Text style directive support to Markdown.
+The `toctree` above is one example, but rather than listing all possibilities, here are some resources:
+- [Jupyterbook - MyST Markdown Overview](https://jupyterbook.org/en/stable/content/myst.html)
+- [MyST syntax guide](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html)
+- [Sphinx - Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+- [ReStructued Text - Directives](https://docutils.sourceforge.io/docs/ref/rst/directives.html)
+
 ### ReStructured Text
+
+ReStructured Text can be written as usual for Sphinx documentation.
 
 ### Jupyter Notebooks
 
@@ -94,7 +105,7 @@ Then you will see a JSON object with lots distracting Jupyter metadata.
 }
 ```
 
-To turn it into a post, `date` and `title` keys needs to be added at a minimum. I'd suggest `author`, `category`, and `tags` as well.
+To turn it into a post, `date` and `title` keys needs to be added in addition to having the notebook within the `posts/` directory. I'd suggest `author`, `category`, and `tags` as well.
 
 ```diff
 {
