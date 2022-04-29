@@ -1,0 +1,12 @@
+{% if ablog.tags %}
+<h3>
+  <a href="{{ pathto(ablog.tags.docname) }}">🏷️ {{ gettext('Tags') }}</a>
+</h3>
+<ul>
+  {% for coll in ablog.tags %} {% if coll %}
+  <li>
+    <a href="{{ pathto(coll.docname) }}">{{ coll }} ({{ coll|length }})</a>
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+{% endif %}

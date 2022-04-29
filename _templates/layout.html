@@ -1,0 +1,9 @@
+{%- extends "pydata_sphinx_theme/layout.html" %}
+
+{% block docs_body %}
+    {% if "about/team.md.txt" == sourcename %}
+        {% include "team.html" %}
+    {% else %}
+        {{ super() }}
+    {% endif %}
+{% endblock %}

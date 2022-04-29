@@ -1,0 +1,17 @@
+name: ohw-site
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  # website/blog building
+  - myst-nb
+  - sphinx
+  # - sphinx-panels
+  - ablog
+  - sphinx-autobuild
+  - pydata-sphinx-theme
+  # computation
+  - numpy
+  - pandas
+  - xarray
+  - ipywidgets

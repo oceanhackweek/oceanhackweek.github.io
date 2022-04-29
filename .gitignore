@@ -7,3 +7,6 @@
 _site/
 
 _config_localdev.yml
+.mypy_cache
+_build
+**/.ipynb_checkpoints/*
