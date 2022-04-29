@@ -1,7 +1,7 @@
-name: Check Jekyll Build
+name: Check Sphinx Build
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master, source]
 
 jobs:
   jekyll_build:
@@ -13,13 +13,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # https://github.com/marketplace/actions/build-jekyll
-      - name: Build with Jekyll
-        uses: jerryjvl/jekyll-build-action@v1
+      - name: Install Conda environment from environment.yml
+        uses: mamba-org/provision-with-micromamba@v11
+
+      - name: Build documentation
+        shell: bash -l {0}
+        run: |
+          make html
 
       # workaround https://github.com/actions/upload-artifact/issues/38
       - name: tarball
-        run: tar czf site.tar.gz ./_site/
+        run: tar czf site.tar.gz ./_build/html/
 
       # https://github.com/actions/upload-artifact
       - name: Upload Website artifact
