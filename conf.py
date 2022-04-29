@@ -46,10 +46,9 @@ html_show_copyright = False
 # -- HTML Config -------------------------------------------------
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
-    # "github_url": "https://github.com/oceanhackweek/",
     "search_bar_text": "Search this site...",
     # "google_analytics_id": "",
-    "search_bar_position": "navbar",
+    "navbar_end": ["search-field.html", "navbar-icon-links"],
     "icon_links": [
         {
             "name": "GitHub",
@@ -63,6 +62,7 @@ html_theme_options = {
         },
         {"name": "Email", "url": "mailto:oceanhkw@uw.edu", "icon": "fas fa-envelope"},
     ],
+    "use_edit_page_button": True,
 }
 
 
@@ -72,13 +72,16 @@ def load_team_info():
     with open("./about/team.yaml") as f:
         return yaml.safe_load(f.read())["team"]
 
-    # return ["An awesome team", "another awesome team"]
+
+html_context = {
+    "team": load_team_info(),
+    "github_user": "oceanhackweek",
+    "github_repo": "oceanhackweek.github.io",
+    "github_version": "source",
+}
 
 
-html_context = {"test_context": "Test context value", "team": load_team_info()}
-
-
-html_favicon = "_static/magnifying.ico"
+# html_favicon = "_static/magnifying.ico"
 html_static_path = ["_static"]
 html_sidebars = {
     "index": [
@@ -94,6 +97,7 @@ html_sidebars = {
     ],
     "**": [
         "hello.html",
+        # "search-field.html",
         "sidebar-nav-bs.html",
         # "recentposts.html",
         # "archives.html", "tags.html"
