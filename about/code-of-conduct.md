@@ -20,7 +20,7 @@ Harassment includes, but is not limited to:
 * Unwelcome sexual attention
 * Advocating for, or encouraging, any of the above behavior
 
-Participants asked to stop any harassing behavior are expected to comply immediately. If a participant engages in harassing behavior, the organizers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from OceanHackWeek with no refund.
+Participants asked to stop any harassing behavior are expected to comply immediately. If a participant engages in harassing behavior, the organizers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from OceanHackWeek.
 
 OceanHackWeek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants. We expect participants to follow these rules at all the event venues and event-related social activities.
 
