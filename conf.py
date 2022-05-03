@@ -12,7 +12,7 @@ extensions = [
     "myst_nb",
     # "myst_parser",
     "ablog",
-    "sphinx_panels"
+    "sphinx_design",
 ]
 
 # sphinx_panels config
@@ -118,10 +118,7 @@ post_date_format = "%d %B %Y"
 myst_admonition_enable = True
 myst_deflist_enable = True
 myst_update_mathjax = False
-myst_enable_extensions = [
-    "substitution", 
-    "colon_fence"
-]
+myst_enable_extensions = ["substitution", "colon_fence"]
 
 # panels_add_bootstrap_css = False
 

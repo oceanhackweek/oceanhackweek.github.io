@@ -11,36 +11,28 @@ description: OceanHackWeek home
 
 OceanHackWeek 2022 will take place **August 15-19, 2022**. The workshop will take a hybrid form consisting of a global virtual event and a number of regional “satellite” events that are either in-person or virtual. Applications will open shortly.
 
-```{link-button} /ohw22/
-:text: Go to OceanHackWeek 2022
+```{button-link} /ohw22/
+:color: primary
 :tooltip: /ohw22/
-:classes: btn-primary btn-lg btn-block
+Go to OceanHackWeek 2022
 ```
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 :::
 
-
-<!-- :::{panels}
-:container: full-width
-:column: col-lg-6 p-2
----
-:header: bg-myst-one
-
-**Get started**
-^^^
+::::{grid} 1 2 2 2
+:::{grid-item-card}  Get started
 
 - **(start/your-first-book.md)**: a step-by-step tutorial to get started.
 
 - **(create-a-template-book)**: get started with a simple template book.
----
-:header: bg-myst-two
+:::
+:::{grid-item-card}  Be inspired
 
-**Be inspired**
-^^^
 [**The Jupyter Book Gallery**](http://gallery.jupyterbook.org): A gallery of community books that have been created with Jupyter Book.
 
 [**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
-::: -->
+:::
+::::
 
 ## About OceanHackWeek
 
