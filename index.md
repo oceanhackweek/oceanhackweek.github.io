@@ -9,17 +9,19 @@ description: OceanHackWeek home
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
-OceanHackWeek 2022 will take place **August 15-19, 2022**. The workshop will take a hybrid form consisting of a global virtual event and a number of regional “satellite” events that are either in-person or virtual. Applications will open shortly.
+OceanHackWeek 2022 will take place **August 15-19, 2022**. The workshop will take a hybrid form consisting of a global virtual event and a number of regional “satellite” events that are either in-person or virtual. **Applications will open shortly.**
 
-```{button-link} /ohw22/
+
+```{button-link} ohw22/
 :color: primary
-:tooltip: /ohw22/
+:expand:
+:tooltip: OHW22
 Go to OceanHackWeek 2022
 ```
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 :::
 
-::::{grid} 1 2 2 2
+<!-- ::::{grid} 1 2 2 2
 :::{grid-item-card}  Get started
 
 - **(start/your-first-book.md)**: a step-by-step tutorial to get started.
@@ -32,7 +34,7 @@ Go to OceanHackWeek 2022
 
 [**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
 :::
-::::
+:::: -->
 
 ## About OceanHackWeek
 
@@ -41,7 +43,7 @@ Go to OceanHackWeek 2022
 :width: 280px
 :align: right
 ```
-OceanHackWeek (OHW) is a 5-day collaborative learning experience aimed at exploring,
+[OceanHackWeek (OHW)](about/index) is a 5-day collaborative learning experience aimed at exploring,
 creating and promoting effective computation and analysis workflows for
 large and complex oceanographic data. It includes tutorials, data exploration, software development, collaborative projects and community networking.
 Its objectives are to:
