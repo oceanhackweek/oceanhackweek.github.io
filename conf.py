@@ -61,10 +61,16 @@ html_theme_options = {
             "url": "https://twitter.com/oceanhackweek",
             "icon": "fab fa-twitter-square",
         },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF",
+            "icon": "fab fa-youtube-square",
+        },
         {"name": "Email", "url": "mailto:oceanhkw@uw.edu", "icon": "fas fa-envelope"},
     ],
     "use_edit_page_button": True,
 }
+html_scaled_image_link = False
 
 
 def load_team_info():
