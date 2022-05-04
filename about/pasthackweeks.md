@@ -23,7 +23,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - [Web site](https://oceanhackweek.github.io/ohw20/)
 - [OHW Resources site](https://oceanhackweek.github.io/ohw-resources/ohw20/)
 - [Schedule](https://oceanhackweek.github.io/ohw-resources/ohw20/schedule/). Links to tutorials are found here.
-- [Projects](/2020/projects_2020.md)
+- [Projects](https://oceanhackweek.github.io/ohw21/projects_2020.html)
 
 ## 2019 (OHW19)
 
