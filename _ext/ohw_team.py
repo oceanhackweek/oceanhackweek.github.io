@@ -29,7 +29,6 @@ class OHWTeam(SphinxDirective):
     option_spec = {"roles": directives.unchanged_required, "badges": directives.flag}
 
     def run(self):
-        print(self.options)
         team = load_team_info()
 
         if self.options["roles"] == "all":
@@ -47,14 +46,9 @@ class OHWTeam(SphinxDirective):
                 except KeyError:
                     pass
 
-            print(
-                f"There are {len(members_in_roles)} team members in {roles} of {len(team)} total"
-            )
-
         row = nodes.container(is_div=True, classes=["row"])
 
         for member in members_in_roles:
-            print(member)
             col = nodes.container(is_div=True, classes=["col-4", "mb-1"])
             card = nodes.container(is_div=True, classes=["card"])
             card.append(
@@ -65,13 +59,20 @@ class OHWTeam(SphinxDirective):
                 )
             )
             body = nodes.container(is_div=True, classes=["card-body"])
+            name = nodes.paragraph(text=member["name"], classes=["h5"])
+
+            if "github_user" in member and member["github_user"] is not None:
+                target = directives.uri("https://github.com/" + member["github_user"])
+                link = nodes.reference(
+                    "", refuri=target, text="", classes=["fab", "fa-github", "ml-1"]
+                )
+                link.append(nodes.inline(text=""))
+                name.append(link)
+
             body.extend(
                 [
-                    # nodes.header(member["name"], tagname="h3")
-                    # nodes.container("h3", is_div=False)
-                    # nodes.raw(f"<h3>{member['name']}</h3>")
-                    # nodes.header([nodes.paragraph(text=member["name"])])
-                    nodes.paragraph(text=member["name"]),
+                    name,
+                    nodes.inline(text=f'{member["title"]} - '),
                     nodes.emphasis(text=member["affiliate"]),
                 ]
             )
@@ -89,22 +90,8 @@ class OHWTeam(SphinxDirective):
                 except KeyError:
                     pass
 
-            if "github_user" in member and member["github_user"] is not None:
-                target = directives.uri("https://github.com/" + member["github_user"])
-                link = nodes.reference(
-                    "", refuri=target, text="", classes=["fab", "fa-github"]
-                )
-                link.append(nodes.inline(text=""))
-                paragraph = nodes.paragraph()
-                paragraph.append(link)
-                body.append(paragraph)
-                # body.append(link)
-
             card.append(body)
             col.append(card)
-
-            print(col)
-
             row.append(col)
 
         return [row]
