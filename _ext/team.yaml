@@ -53,6 +53,7 @@ team:
     affiliate: Gulf of Maine Research Institute
     image_url: https://gmri-org-production.s3.amazonaws.com/images/Alex_Kerney.a5935ce3.fill-600x600-c75.jpg
     github_user: abkfenris
+    email: akerney@gmri.org
     roles:
       - Steering Committee
       - Infrastructure
@@ -96,6 +97,7 @@ team:
     affiliate: Bigelow Laboratory for Ocean Sciences
     image_url: https://www.bigelow.org/img/people/cmitchell.png
     github_user: cathmmitchell
+    email: cmitchell@bigelow.org
     roles:
       - Steering Committee
       - OHW21 Organizer - Maine
