@@ -2,6 +2,11 @@
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+import os
+import sys
+
+# Load local extensions
+sys.path.append(os.path.abspath("./_ext"))
 
 # -- Project information -----------------------------------------------------
 
@@ -13,6 +18,7 @@ extensions = [
     # "myst_parser",
     "ablog",
     "sphinx_design",
+    "ohw_team",
 ]
 
 # sphinx_panels config
@@ -66,16 +72,7 @@ html_theme_options = {
     "use_edit_page_button": True,
 }
 
-
-def load_team_info():
-    import yaml
-
-    with open("./about/team.yaml") as f:
-        return yaml.safe_load(f.read())["team"]
-
-
 html_context = {
-    "team": load_team_info(),
     "github_user": "oceanhackweek",
     "github_repo": "oceanhackweek.github.io",
     "github_version": "source",

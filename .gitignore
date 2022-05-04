@@ -10,3 +10,4 @@ _config_localdev.yml
 .mypy_cache
 _build
 **/.ipynb_checkpoints/*
+__pycache__
