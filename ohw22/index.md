@@ -22,9 +22,9 @@ The **Global Virtual Event** will take place 3 hours per day over a 5-day period
 
 *ONE SENTENCE ABOUT THE UW UG PROGRAM HERE*
 
-## OHW22 organizers
+## [OHW22 organizers](./organizers.md)
 
-Mention the OHW22 organizing committee here, and link to the dedicated OHW team page (if we go that route). Maybe encourage people to help, include the OHW contact email address.
+Mention the OHW22 organizing committee here, and [link to the dedicated OHW team page](./organizers.md) (if we go that route). Maybe encourage people to help, include the OHW contact email address.
 
 
 ```{toctree}
