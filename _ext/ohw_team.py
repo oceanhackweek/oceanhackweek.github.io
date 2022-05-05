@@ -114,14 +114,33 @@ class OHWTeam(SphinxDirective):
                 link_wrapper.append(link)
                 body.append(link_wrapper)
 
+            # If badges should be shown, add and style them
             if "badges" in self.options:
                 badges = nodes.container(is_div=True)
                 body.append(badges)
                 try:
                     for role in member["roles"]:
+                        if role == "Steering Committee":
+                            color = "primary"
+                            outline = False
+                        elif (
+                            "Organizer" in role
+                            or "Instructor" in role
+                            or "Leader" in role
+                        ):
+                            color = "primary"
+                            outline = True
+                        elif "Participant" in role:
+                            color = "secondary"
+                            outline = True
+                        else:
+                            color = "secondary"
+                            outline = False
+
                         badges.append(
                             nodes.inline(
-                                text=role, classes=create_bdg_classes("primary", False)
+                                text=role,
+                                classes=[*create_bdg_classes(color, outline), "mr-1"],
                             )
                         )
                 except KeyError:
