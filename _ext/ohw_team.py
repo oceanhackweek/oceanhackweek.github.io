@@ -17,6 +17,11 @@ class OHWTeam(SphinxDirective):
     and allows the filtering by what roles they are involved in,
     and can optionally show badges for those roles.
 
+    Github icons will be shown if `github_user` is provided in the team.yaml
+
+    Emails can be shown as links or icons with `email_link` or `email_icon`
+    if `email` is set in team.yaml.
+
     ```{ohw-team}
     :roles: Steering Committee,Infrastructure
     :badges:
@@ -26,7 +31,12 @@ class OHWTeam(SphinxDirective):
     """
 
     has_content = True
-    option_spec = {"roles": directives.unchanged_required, "badges": directives.flag}
+    option_spec = {
+        "roles": directives.unchanged_required,
+        "badges": directives.flag,
+        "email_icon": directives.flag,
+        "email_link": directives.flag,
+    }
 
     def run(self):
         team = load_team_info()
@@ -61,10 +71,24 @@ class OHWTeam(SphinxDirective):
             body = nodes.container(is_div=True, classes=["card-body"])
             name = nodes.paragraph(text=member["name"], classes=["h5"])
 
+            # Add Github icon if github user account is provided
             if "github_user" in member and member["github_user"] is not None:
                 target = directives.uri("https://github.com/" + member["github_user"])
                 link = nodes.reference(
                     "", refuri=target, text="", classes=["fab", "fa-github", "ml-1"]
+                )
+                link.append(nodes.inline(text=""))
+                name.append(link)
+
+            # If emails are avaliable and email_icon is enabled, then add a email icon
+            if (
+                "email_icon" in self.options
+                and "email" in member
+                and member["email"] is not None
+            ):
+                target = directives.uri("mailto://" + member["email"])
+                link = nodes.reference(
+                    "", refuri=target, text="", classes=["fas", "fa-envelope", "ml-1"]
                 )
                 link.append(nodes.inline(text=""))
                 name.append(link)
@@ -76,6 +100,19 @@ class OHWTeam(SphinxDirective):
                     nodes.emphasis(text=member["affiliate"]),
                 ]
             )
+
+            # If emails are avaliable and email_link is enabled, then add a email link
+            if (
+                "email_link" in self.options
+                and "email" in member
+                and member["email"] is not None
+            ):
+                target = directives.uri("mailto://" + member["email"])
+                link = nodes.reference("", refuri=target, text=member["email"])
+                link.append(nodes.inline(text=member["email"]))
+                link_wrapper = nodes.paragraph(text="")
+                link_wrapper.append(link)
+                body.append(link_wrapper)
 
             if "badges" in self.options:
                 badges = nodes.container(is_div=True)

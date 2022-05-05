@@ -1,19 +1,32 @@
 # US - East
 
-This year we are having two parallel low key events in Maine.
+This year we are having two parallel East Coast events in Maine.
 One event will be held at Bigelow Labs in Boothbay, and the other at Gulf of Maine Research Institute in Portland
+​
+## Location
+​
+Gulf of Maine Research Institute, Portland, ME and/or Bigelow Laboratory for Ocean Sciences, East Boothbay, ME
+​
+## Format: In-person
+​
+We have reserved rooms at each location to watch the tutorials and work on projects. There is no travel, lodging or meal support provided.
+​
+
+Once participants have been selected we will reach out to see which location people would prefer to be at.
+
+## Applicants profile: Local participants (within commuting distance)​
+
+We welcome participants from all career stages and encourage applications from graduate students, postdocs and early career researchers. Advanced undergrad students with background in oceanography and data science are also welcome.
+
+## Summary
+​
+1. We will watch all the tutorials
+2. Participants can asynchronously work on projects with participants of other OHW events (either the virtual event or other satellites). Or participants can work on projects synchronously with other local participants.
+3. We will encourage students to communicate with the main event and other satellite events to augment their OHW experience.
 
 ## Organizers
 
 ```{ohw-team}
 :roles: OHW22 Organizer - Maine
+:email_icon:
 ```
-
-## Logistics
-
-We each have a small conference room or two booked for the week, and the ability to spread out to other locations in our labs.
-We do not have housing or travel for either of our locations, so we are looking for local applicants.
-
-Please apply to the `US-East` satellite event, and after people are selected we will reach out to see which location folks will prefer to be at.
-
-We're also scheming to make sure we have a meet and greet so that folks get to connect with people based around the other lab.
