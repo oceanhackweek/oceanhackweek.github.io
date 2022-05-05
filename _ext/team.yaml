@@ -208,14 +208,19 @@ team:
       - OHW22 Organizer
 
   # - name: Georgy Manucharyan
-  #   roles:
-  #     - OHW22 Organizer
-
-  # - name: Steve Diggs
   #   title:
   #   affiliate:
   #   image_url:
-  #   github_user: sdiggs
+  #   github_user:
   #   roles:
-  #     - OHW22 Organizer - San Diego
-  #     - Financial Planning
+  #     - OHW22 Organizer
+
+  - name: Steve Diggs
+    title: Data Manager
+    affiliate: Scripps Institution of Oceanography
+    image_url: https://scripps.ucsd.edu/sites/default/files/profilePhoto/diggs_web.jpg
+    github_user: sdiggs
+    roles:
+      - Financial Planning
+      - OHW21 Participant
+      - OHW22 Organizer - San Diego
