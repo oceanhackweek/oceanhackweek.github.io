@@ -1,3 +1,5 @@
+import fnmatch
+
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.application import Sphinx
@@ -16,6 +18,9 @@ class OHWTeam(SphinxDirective):
     Adds a directive that allows the display of team members,
     and allows the filtering by what roles they are involved in,
     and can optionally show badges for those roles.
+
+    Role filtering also supports glob style matching, so `OHW22 Organizer*`
+    should match anyone involved with OHW22 even if the role name is longer.
 
     Github icons will be shown if `github_user` is provided in the team.yaml
 
@@ -44,15 +49,22 @@ class OHWTeam(SphinxDirective):
         if self.options["roles"] == "all":
             members_in_roles = team
         else:
-            roles = set(self.options["roles"].split(","))
+            roles = self.options["roles"].split(",")
 
             members_in_roles = []
             for member in team:
                 try:
-                    member_roles = set(member["roles"])
+                    member_roles = member["roles"]
 
-                    if member_roles.intersection(roles):
-                        members_in_roles.append(member)
+                    for role in roles:
+                        if any(
+                            [
+                                fnmatch.fnmatch(member_role, role)
+                                for member_role in member_roles
+                            ]
+                        ):
+                            members_in_roles.append(member)
+                            continue
                 except KeyError:
                     pass
 
