@@ -53,3 +53,10 @@ projects/overview
 projects/steps
 
 ```
+
+```{toctree}
+:hidden:
+:caption: Website
+
+website/updates
+```
