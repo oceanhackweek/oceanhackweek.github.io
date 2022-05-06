@@ -33,6 +33,5 @@ Mention the OHW22 organizing committee here, and [link to the dedicated OHW team
 
 applicants
 satellites
-maine/index
 organizers
 ```
