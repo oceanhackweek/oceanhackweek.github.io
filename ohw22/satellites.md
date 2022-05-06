@@ -65,12 +65,11 @@ Details of the event are still being fleshed out, including the exact location. 
 
 ## OHW-Español
 
-- Time zone: UTC-4
+- Time zone: UTC-4, approximately 
 - Format: virtual + small in-person gatherings
-- Locations: Lima, Peru and Rocha, Uruguay
-- Main contact: Emilio Mayorga (emiliom@uw.edu).
-
-Details of the event are still being flushed out, including the exact venues at the two locations. Check back here soon for more info!
+- Location: virtual; Lima, Perú; Rocha, Uruguay
+- In Spanish / bilingual (English as needed)
+- **See [more details and contact info here.](./espanol/index)**
 
 
 ```{toctree}
@@ -81,4 +80,5 @@ Details of the event are still being flushed out, including the exact venues at 
 maine/index
 seattle/index
 Brazil <brazil/index>
+espanol/index
 ```
