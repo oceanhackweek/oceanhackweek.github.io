@@ -21,8 +21,8 @@ We welcome participants from all career stages and encourage applications from g
 ## Summary
 ​
 1. We will watch all the tutorials
-2. Participants can asynchronously work on projects with participants of other OHW events (either the virtual event or other satellites). Or participants can work on projects synchronously with other local participants.
-3. We will encourage students to communicate with the main event and other satellite events to augment their OHW experience.
+2. Participants can asynchronously work on projects with participants of other OHW events (either the global virtual event or other satellites). Or participants can work on projects synchronously with other local participants.
+3. We will encourage students to communicate with the global virtual event and other satellite events to augment their OHW experience.
 
 ## Organizers
 

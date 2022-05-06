@@ -14,7 +14,7 @@ For help with time zone conversions, see [https://www.timeanddate.com](https://w
 
 We will have two small parallel satellites in Maine for participants in the Boothbay and Portland areas (i.e. within commuting distance of either location). We have conference rooms at both labs available as places for participants to gather, but are not able to provide support for travel, lodging or meals. 
 
-**See [more details and contact information here.](./maine/index)**
+**See [more details and contact info here.](./maine/index)**
 
 
 ## US Northwest
@@ -25,24 +25,12 @@ We will have two small parallel satellites in Maine for participants in the Boot
 
 We will have two sub-programs in the US Northwest satellite:
 - A regular 5-day OHW satellite (August 15-19) geared toward students and scientists already conducting research in the ocean sciences domain
-- An 3-week undergraduate summer program (August 8-26) geared toward students who do not already have experiences in oceanographic research and are interested in "testing the water."
+- A 3-week undergraduate summer program (August 8-26) geared toward students who do not already have experiences in oceanographic research and are interested in "testing the water."
 
 These two sub-programs are coordinated in their planning and coincides in time. Participatns are encouraged to interact fully across the groups and with other satellites.
 
-**See [more details and contact information here.](./maine/index)**
+**See [more details and contact info here.](./seattle/index)**
 
-<!-- 
-### > Regular OHW satellite
-
-- Another liner for other OHW participants
-- This event will be in coordination with the 3-week-long undergraduate summer program listed below
-
-### > Undergraduate summer program “Data Science in Oceanography”
-
-- In coordination with the OHW West North satellite event, there will be a 3-week-long undergraduate summer program “Data Science in Oceanography” that will happen in-person on **August 8-26** at the University of Washington. This program will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW West North satellite event as part of this longer undergraduate program.
-- Financial support: undergraduate participants will be fully supported for lodging and meals, and partial travel reimbursement will be provided
-- For questions specific to this undergraduate summer program, please email Dr. Georgy Manucharyan at gmanuch@uw.edu.
- -->
 
 ## US Southwest
 
@@ -62,7 +50,7 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Time zone: UTC-3
 - Format: virtual gathering
 - Location: Florianópolis, Santa Catarina, Brazil
-- **See [more details and contact information here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
+- **See [more details and contact info here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
 
 ## OHW-Español
 
