@@ -1,4 +1,4 @@
-# US East
+# US Northeast
 
 This year we are having two parallel East Coast events in Maine.
 One event will be held at Bigelow Labs in Boothbay, and the other at Gulf of Maine Research Institute in Portland
