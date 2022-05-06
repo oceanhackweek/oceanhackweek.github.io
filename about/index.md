@@ -13,7 +13,7 @@ Learn more by browsing our [previous OceanHackWeek events](pasthackweeks), held 
 
 ## What is a HackWeek?
 
-```{image} ../assets/images/ohw21-PXL_20210803_151753297-small.jpg
+```{image} ../assets/images/ohw_hacking/ohw21-PXL_20210803_151753297-small.jpg
 :alt: OHW21 in person
 :width: 280px
 :align: left

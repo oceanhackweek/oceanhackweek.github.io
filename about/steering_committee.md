@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: our-team.html
-description: Team of OceanHackWeek organizers
+description: OceanHackWeek Steering Committee
 ---
 
 # Steering Committee
@@ -9,5 +9,5 @@ description: Team of OceanHackWeek organizers
 ```{ohw-team}
 :roles: Steering Committee
 :badges:
-:hide_role_badges: "OHW18 O*,OHW19 O*,OHW20 O*,OHW21 O*"
+:hide_role_badges: "OHW18 O*,OHW19 O*,OHW20 O*,OHW21 O*,*Participant*"
 ```

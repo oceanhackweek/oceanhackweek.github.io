@@ -46,7 +46,7 @@ team:
     github_user: alisonrgray
     roles:
       - OHW21 Organizer
-      - OHW22 Organizer
+      - OHW22 Organizer - UW UG
 
   - name: Joseph Gum
     title: Data Analyst
@@ -126,9 +126,11 @@ team:
     affiliate: UW Applied Physics Laboratory
     image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
     github_user: emiliom
+    email: emiliom@uw.edu
     roles:
       - Steering Committee
       - Applicant Selection
+      - Website
       - OHW18 Organizer
       - OHW19 Organizer
       - OHW20 Organizer
@@ -163,7 +165,7 @@ team:
       - Infrastructure
       - Website
       - OHW21 Organizer - Australia
-      - OHW22 Organizer
+      - OHW22 Organizer - Australia
 
   - name: Nick Record
     title: Senior Research Scientist
@@ -172,9 +174,9 @@ team:
     github_user: SeascapeScience
     roles:
       - Steering Committee
+      - Financial Planning
       - OHW20 Organizer
       - OHW21 Organizer - Maine
-      - OHW22 Organizer
 
   - name: Derya Gumustel
     title: Data Analytics Instructor
@@ -184,7 +186,7 @@ team:
     roles:
       - Steering Committee
       - OHW21 Organizer
-      - OHW22 Organizer
+      - OHW22 Organizer - UW
 
   - name: Nick Mortimer
     title: Senior Engineer
