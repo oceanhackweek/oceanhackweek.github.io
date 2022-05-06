@@ -37,9 +37,10 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Time zone: UTC-7 (US/Pacific)
 - Format: informal in-person gathering
 - Location: San Diego (Scripps Institution of Oceanography), California, USA
-- Main contact: Steve Diggs (sdiggs@ucsd.edu)
 
 Details of the event are still being fleshed out. Check back here soon for more info!
+
+**See [more details and contact info here.](./san-diego/index)**
 
 
 ## Australia
@@ -47,12 +48,11 @@ Details of the event are still being fleshed out. Check back here soon for more 
 - Time zone: UTC+10
 - Format: informal in-person gathering
 - Location: TBD, likely near Brisbane
-- Main contact: Nick Mortimer (Nick.Mortimer@csiro.au)
-
 We will have limited support available for regional participants needing to travel.
 
 Details of the event are still being fleshed out, including the exact location. Check back here soon for more info!
 
+**See [more details and contact info here.](./australia/index)**
 
 
 ## Brazil
@@ -60,7 +60,8 @@ Details of the event are still being fleshed out, including the exact location. 
 - Time zone: UTC-3
 - Format: in-person gathering + virtual
 - Location: Florianópolis, Santa Catarina, Brazil
-- **See [more details and contact info here.](./brazil/index)**
+
+**See [more details and contact info here.](./brazil/index)**
 
 
 ## OHW-Español
@@ -69,7 +70,8 @@ Details of the event are still being fleshed out, including the exact location. 
 - Format: virtual + small in-person gatherings
 - Location: virtual; Lima, Perú; Rocha, Uruguay
 - In Spanish / bilingual (English as needed)
-- **See [more details and contact info here.](./espanol/index)**
+
+**See [more details and contact info here.](./espanol/index)**
 
 
 ```{toctree}
@@ -79,6 +81,8 @@ Details of the event are still being fleshed out, including the exact location. 
 
 maine/index
 seattle/index
+US Southwest <san-diego/index>
+australia/index
 Brazil <brazil/index>
 espanol/index
 ```
