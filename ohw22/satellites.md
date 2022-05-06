@@ -4,6 +4,8 @@ Six Regional Satellite Events will take place this year to serve as local connec
 
 Global and satellite participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
 
+For help with timezone conversions, see [https://www.timeanddate.com](https://www.timeanddate.com) or similar sites.
+
 ## US East
 
 - Time zone: UTC-4 (US/Eastern)
@@ -17,12 +19,12 @@ Global and satellite participants will have access to the same online resources 
 - Time zone: UTC-7 (US/Pacific)
 - Format: in-person gathering
 - Location: University of Washington, Seattle, WA, USA
-### Regular OHW satellite
+### > Regular OHW satellite
 
 - Another liner for other OHW participants
 - This event will be in coordination with the 3-week-long undergraduate summer program listed below
 
-### Undergraduate summer program “Data Science in Oceanography”
+### > Undergraduate summer program “Data Science in Oceanography”
 
 - In coordination with the OHW West North satellite event, there will be a 3-week-long undergraduate summer program “Data Science in Oceanography” that will happen in-person on **August 8-26** at the University of Washington. This program will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW West North satellite event as part of this longer undergraduate program.
 - Financial support: undergraduate participants will be fully supported for lodging and meals, and partial travel reimbursement will be provided

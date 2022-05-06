@@ -1,10 +1,10 @@
 ---
 layout: default
-title: OceanHackWeek
+title: OceanHackWeek (OHW)
 description: OceanHackWeek home
 ---
 
-# OceanHackWeek
+# OceanHackWeek (OHW)
 
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
