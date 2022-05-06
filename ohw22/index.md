@@ -15,7 +15,7 @@ See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
-**Applications will close June 1, 2022.** Please visit the [Information for Applicants page](applicants) for detailed information and access to the application form. You will be required to choose between the global virtual event and one of the satellite events.
+**Applications will close June 1, 2022.** Please visit the [Information for Applicants page](applicants) for detailed information and access to the application form. You will be asked to choose between the global virtual event and one of the satellite events.
 
 ```{button-link} applicants
 :color: primary
@@ -39,9 +39,56 @@ The **Global Virtual Event** will take place through synchronous 3-hour periods 
 
 [**Six Regional Satellite Events**](satellites) will take place this year to serve as local connecting points for project work, community building, and engaging potential future OHW organizers. [OHW22 organizers](organizers) invite participants geographically located near one of these regional satellites or interested in virtual participation in a specific satellite to select one of these events. The satellite events may be virtual or in-person and take different formats depending on the event organizers. In-person participants may be required to be fully vaccinated against COVID-19.
 
-<!-- Encourage people to help, include the OHW contact email address. -->
-
 In coordination with the OHW West North satellite event, there will be a **[3-week-long undergraduate summer program “Data Science in Oceanography”](satellites/#undergraduate-summer-program-data-science-in-oceanography) taking place in-person on August 8-26 at the University of Washington**. This program will provide opportunities for undergraduate students in data-driven research in oceanography.
+
+## OHW22 Sponsors
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/eScience_square_logo.jpg
+:alt: UW eScience
+:width: 150px
+```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/BigelowLabs.png
+:alt: Bigelow Lab
+:width: 180px
+```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/apl_logo_blue.jpg
+:alt: UW APL
+:width: 180px
+```
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/nsf.jpeg
+:alt: NSF
+:width: 150px
+```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/ioos_logo.jpg
+:alt: IOOS
+:width: 180px
+```
+
+  </div>
+</div>
+
 
 
 ```{toctree}

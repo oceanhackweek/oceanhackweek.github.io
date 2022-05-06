@@ -1,3 +1,5 @@
+import fnmatch
+
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.application import Sphinx
@@ -17,6 +19,9 @@ class OHWTeam(SphinxDirective):
     and allows the filtering by what roles they are involved in,
     and can optionally show badges for those roles.
 
+    Role filtering also supports glob style matching, so `OHW22 Organizer*`
+    should match anyone involved with OHW22 even if the role name is longer.
+
     Github icons will be shown if `github_user` is provided in the team.yaml
 
     Emails can be shown as links or icons with `email_link` or `email_icon`
@@ -33,6 +38,7 @@ class OHWTeam(SphinxDirective):
     has_content = True
     option_spec = {
         "roles": directives.unchanged_required,
+        "hide_role_badges": directives.unchanged,
         "badges": directives.flag,
         "email_icon": directives.flag,
         "email_link": directives.flag,
@@ -40,19 +46,30 @@ class OHWTeam(SphinxDirective):
 
     def run(self):
         team = load_team_info()
+        try:
+            hide_role_badges = self.options["hide_role_badges"].split(",")
+        except KeyError:
+            hide_role_badges = []
 
         if self.options["roles"] == "all":
             members_in_roles = team
         else:
-            roles = set(self.options["roles"].split(","))
+            roles = self.options["roles"].split(",")
 
             members_in_roles = []
             for member in team:
                 try:
-                    member_roles = set(member["roles"])
+                    member_roles = member["roles"]
 
-                    if member_roles.intersection(roles):
-                        members_in_roles.append(member)
+                    for role in roles:
+                        if any(
+                            (
+                                fnmatch.fnmatch(member_role, role)
+                                for member_role in member_roles
+                            )
+                        ):
+                            members_in_roles.append(member)
+                            continue
                 except KeyError:
                     pass
 
@@ -114,16 +131,44 @@ class OHWTeam(SphinxDirective):
                 link_wrapper.append(link)
                 body.append(link_wrapper)
 
+            # If badges should be shown, add and style them
             if "badges" in self.options:
                 badges = nodes.container(is_div=True)
                 body.append(badges)
                 try:
                     for role in member["roles"]:
-                        badges.append(
-                            nodes.inline(
-                                text=role, classes=create_bdg_classes("primary", False)
+                        if not any(
+                            (
+                                fnmatch.fnmatch(role, hide_role)
+                                for hide_role in hide_role_badges
                             )
-                        )
+                        ):
+                            if role == "Steering Committee":
+                                color = "primary"
+                                outline = False
+                            elif (
+                                "Organizer" in role
+                                or "Instructor" in role
+                                or "Leader" in role
+                            ):
+                                color = "primary"
+                                outline = True
+                            elif "Participant" in role:
+                                color = "secondary"
+                                outline = True
+                            else:
+                                color = "secondary"
+                                outline = False
+
+                            badges.append(
+                                nodes.inline(
+                                    text=role,
+                                    classes=[
+                                        *create_bdg_classes(color, outline),
+                                        "mr-1",
+                                    ],
+                                )
+                            )
                 except KeyError:
                     pass
 
