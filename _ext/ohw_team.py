@@ -38,6 +38,7 @@ class OHWTeam(SphinxDirective):
     has_content = True
     option_spec = {
         "roles": directives.unchanged_required,
+        "hide_role_badges": directives.unchanged,
         "badges": directives.flag,
         "email_icon": directives.flag,
         "email_link": directives.flag,
@@ -45,6 +46,10 @@ class OHWTeam(SphinxDirective):
 
     def run(self):
         team = load_team_info()
+        try:
+            hide_role_badges = self.options["hide_role_badges"].split(",")
+        except KeyError:
+            hide_role_badges = []
 
         if self.options["roles"] == "all":
             members_in_roles = team
@@ -58,10 +63,10 @@ class OHWTeam(SphinxDirective):
 
                     for role in roles:
                         if any(
-                            [
+                            (
                                 fnmatch.fnmatch(member_role, role)
                                 for member_role in member_roles
-                            ]
+                            )
                         ):
                             members_in_roles.append(member)
                             continue
@@ -132,29 +137,38 @@ class OHWTeam(SphinxDirective):
                 body.append(badges)
                 try:
                     for role in member["roles"]:
-                        if role == "Steering Committee":
-                            color = "primary"
-                            outline = False
-                        elif (
-                            "Organizer" in role
-                            or "Instructor" in role
-                            or "Leader" in role
-                        ):
-                            color = "primary"
-                            outline = True
-                        elif "Participant" in role:
-                            color = "secondary"
-                            outline = True
-                        else:
-                            color = "secondary"
-                            outline = False
-
-                        badges.append(
-                            nodes.inline(
-                                text=role,
-                                classes=[*create_bdg_classes(color, outline), "mr-1"],
+                        if not any(
+                            (
+                                fnmatch.fnmatch(role, hide_role)
+                                for hide_role in hide_role_badges
                             )
-                        )
+                        ):
+                            if role == "Steering Committee":
+                                color = "primary"
+                                outline = False
+                            elif (
+                                "Organizer" in role
+                                or "Instructor" in role
+                                or "Leader" in role
+                            ):
+                                color = "primary"
+                                outline = True
+                            elif "Participant" in role:
+                                color = "secondary"
+                                outline = True
+                            else:
+                                color = "secondary"
+                                outline = False
+
+                            badges.append(
+                                nodes.inline(
+                                    text=role,
+                                    classes=[
+                                        *create_bdg_classes(color, outline),
+                                        "mr-1",
+                                    ],
+                                )
+                            )
                 except KeyError:
                     pass
 

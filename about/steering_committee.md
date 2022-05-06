@@ -9,4 +9,5 @@ description: Team of OceanHackWeek organizers
 ```{ohw-team}
 :roles: Steering Committee
 :badges:
+:hide_role_badges: "OHW18 O*,OHW19 O*,OHW20 O*,OHW21 O*"
 ```
