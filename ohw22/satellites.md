@@ -50,7 +50,7 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Time zone: UTC-3
 - Format: virtual gathering
 - Location: Florianópolis, Santa Catarina, Brazil
-- **See [more details and contact info here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
+- **See [more details and contact info here.](./brazil/index)**
 
 ## OHW-Español
 
@@ -67,4 +67,5 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 
 maine/index
 seattle/index
+Brazil <brazil/index>
 ```
