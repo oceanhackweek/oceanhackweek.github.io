@@ -6,7 +6,7 @@ Global and satellite participants will have access to the same online resources 
 
 For help with time zone conversions, see [https://www.timeanddate.com](https://www.timeanddate.com) or similar sites.
 
-## US East
+## US Northeast
 
 - Time zone: UTC-4 (US/Eastern)
 - Format: informal in-person gatherings
