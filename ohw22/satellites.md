@@ -51,7 +51,7 @@ Details of the event are still being flushed out. Check back here soon for more 
 
 We will have limited support available for regional participants needing to travel.
 
-Details of the event are still being flushed out, including the exact location. Check back here soon for more info!
+Details of the event are still being fleshed out, including the exact location. Check back here soon for more info!
 
 
 
