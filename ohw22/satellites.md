@@ -39,7 +39,7 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Location: San Diego (Scripps Institution of Oceanography), California, USA
 - Main contact: Steve Diggs (sdiggs@ucsd.edu)
 
-Details of the event are still being flushed out. Check back here soon for more info!
+Details of the event are still being fleshed out. Check back here soon for more info!
 
 
 ## Australia
