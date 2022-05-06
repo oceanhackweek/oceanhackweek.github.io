@@ -7,39 +7,32 @@ permalink: applicant-info.html
 
 # Information for OHW22 Applicants
 
-```{admonition} Updates in progress
-:class: warning
+OceanHackWeek 2022 (OHW22) will happen from **August 15-19, 2022**. The workshop will take a hybrid form consisting of a global virtual event and a number of regional satellite events that are either in-person or virtual. See [here](index) for more information about the hybrid global-regional format and the satellite options this year.
 
-We're currently updating the site for OceanHackWeek 2022. We've got some new things planned, so stay tuned!
+The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. Participants can apply for being in one of the regional satellites or the global virtual event. Regional satellite events are connected closely with the global virtual event, while providing additional collaboration and networking opportunities on a regional basis.
 
+```{admonition} Applications for OHW22 are now open!
+:class: important
+
+Applications opened on May 9. 
+**To apply, please [fill out this form](https://form.jotform.com/221166776095160) by the end of June 1, 2022.**  
+Accepted applicants will be notified no later than June 18, 2022.
 ```
-
-OceanHackWeek 2021 is a small, hands-on, interactive **hybrid** in-person and virtual workshop focused on data science and oceanography that will be held during **August 3-6, 2021**. Join us for four days of tutorials, data exploration, software development and community networking!
-
-Last year, OceanHackWeek was held completely virtual, after initial plans for
-parallel US East and West Coast in-person events. This move to virtual was a 
-great success that allowed for more participation, including internationally, 
-but it was difficult for participants outside North American time zones. 
-For 2021, we have learned from that experience and previous in-person events 
-and will hold a **hybrid** event.
-
-<!-- **To apply, please [fill out this form](https://www.jotform.com/build/211262036692148) by June 14, 2021.**   -->
-**To apply, please [fill out this form](https://PLACEHOLDER) by the end of June 1, 2022.**  
-Accepted applicants will be notified no later than June 18, 2021.
-
-The **in-person event** will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/), in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 30-35 participants.
-
-For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time.
-While plans are still tentative, we expect to hold these sessions in at least two time zones, 
-USA PDT (UTC-7) and Australian EST (UTC+10).
 
 Please see the FAQs below for answers to common questions.
 For additional questions, please email 
 <a href="mailto:oceanhkw@uw.edu" target="_blank">oceanhkw@uw.edu</a>.
+For satellite event-specific questions, please contact satellite organizers listed in the main [Regional Satellites page](satellites) or in the individual event pages.
+
+**If you are applying for the undergraduate summer program “Data Science in Oceanography”** that will take place on August 8-26, 2022 in coordination with the US Northwest OHW satellite, see [this page](seattle/index) for more information and apply using the same OHW form.
 
 ---
 
 ## FAQs
+
+### Q: The satellite event in my region doesn't have a lot of details yet, what should I do?
+
+Some regional satellite organizers are still fleshing out details of the event, including the exact location. Feel free to email them if there is specific information you need from them for you to make decisions on your application.
 
 ### Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?
 
