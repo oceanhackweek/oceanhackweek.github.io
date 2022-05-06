@@ -8,7 +8,7 @@ The satellite events may be virtual or in-person and take different formats depe
 
 *Location, Time zone, Link to detail page, format (virtual vs hybrid vs in-person)*
 
-## US East (UTC-4)
+## [US East](./maine/index) (UTC-4)
 
 - Format: informal in-person gatherings
 - Locations: East Boothbay (Bigelow Laboratory for Ocean Sciences) and Portland (Gulf of Maine Research Institute), Maine, US.
@@ -50,3 +50,11 @@ The satellite events may be virtual or in-person and take different formats depe
 - Format: virtual + small in-person gatherings
 - Location: Lima, Peru and Rocha, Uruguay
 - In Spanish / bilingual
+
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+maine/index
+```
