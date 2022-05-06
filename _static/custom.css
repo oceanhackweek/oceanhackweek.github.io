@@ -137,7 +137,7 @@ blockquote {
 blockquote.pull-quote,
 blockquote.epigraph,
 blockquote.highlights {
-  font-size: 1.25em;
+/*   font-size: 1.25em; */
   border-left: none;
 }
 blockquote div > p {
