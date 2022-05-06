@@ -1,6 +1,6 @@
 ---
 layout: page
-description: Team of OceanHackWeek organizers
+description: Team of OceanHackWeek 2022 organizers
 ---
 
 # OceanHackWeek 2022 Organizers
