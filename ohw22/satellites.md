@@ -58,7 +58,7 @@ Details of the event are still being fleshed out, including the exact location. 
 ## Brazil
 
 - Time zone: UTC-3
-- Format: virtual gathering
+- Format: in-person gathering + virtual
 - Location: Florianópolis, Santa Catarina, Brazil
 - **See [more details and contact info here.](./brazil/index)**
 
