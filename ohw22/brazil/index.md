@@ -1,4 +1,4 @@
-# UFSC Satellite
+# UFSC Satellite (Florianópolis, Brazil)
 
 ​
 ## Location
