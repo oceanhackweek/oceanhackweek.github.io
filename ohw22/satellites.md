@@ -37,13 +37,23 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Time zone: UTC-7 (US/Pacific)
 - Format: informal in-person gathering
 - Location: San Diego (Scripps Institution of Oceanography), California, USA
+- Main contact: Steve Diggs (sdiggs@ucsd.edu)
+
+Details of the event are still being flushed out. Check back here soon for more info!
+
 
 ## Australia
 
 - Time zone: UTC+10
 - Format: informal in-person gathering
-- Location: TBD
-- Limited logistic support available for regional participants needing to travel. See PAGE for detail.
+- Location: TBD, likely near Brisbane
+- Main contact: Nick Mortimer (Nick.Mortimer@csiro.au)
+
+We will have limited support available for regional participants needing to travel.
+
+Details of the event are still being flushed out, including the exact location. Check back here soon for more info!
+
+
 
 ## Brazil
 
@@ -52,12 +62,15 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 - Location: Florianópolis, Santa Catarina, Brazil
 - **See [more details and contact info here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
 
+
 ## OHW-Español
 
 - Time zone: UTC-4
 - Format: virtual + small in-person gatherings
-- Location: Lima, Peru and Rocha, Uruguay
-- In Spanish / bilingual
+- Locations: Lima, Peru and Rocha, Uruguay
+- Main contact: Emilio Mayorga (emiliom@uw.edu).
+
+Details of the event are still being flushed out, including the exact venues at the two locations. Check back here soon for more info!
 
 
 ```{toctree}
