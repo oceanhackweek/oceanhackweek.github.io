@@ -35,11 +35,13 @@ Global and satellite participants will have access to the same online resources 
 :align: right
 ```
 
+### Global Virtual Event
 The **Global Virtual Event** will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW22 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. The tutorials will be recorded and posted after the presentation. The exact hours of this global event are still being finalized, but we anticipate the activity time to be structured around the US Pacific Time (UTC-7) this year.
 
+### Regional Satellites
 [**Six Regional Satellite Events**](satellites) will take place this year to serve as local connecting points for project work, community building, and engaging potential future OHW organizers. [OHW22 organizers](organizers) invite participants geographically located near one of these regional satellites or interested in virtual participation in a specific satellite to select one of these events. The satellite events may be virtual or in-person and take different formats depending on the event organizers. In-person participants may be required to be fully vaccinated against COVID-19.
 
-In coordination with the OHW West North satellite event, there will be a **[3-week-long undergraduate summer program “Data Science in Oceanography”](satellites/#undergraduate-summer-program-data-science-in-oceanography) taking place in-person on August 8-26 at the University of Washington**. This program will provide opportunities for undergraduate students in data-driven research in oceanography.
+In coordination with the OHW Northwest satellite event, there will be a **[3-week-long undergraduate summer program “Data Science in Oceanography”](satellites/#undergraduate-summer-program-data-science-in-oceanography) taking place in-person on August 8-26 at the University of Washington**. This program will provide opportunities for undergraduate students in data-driven research in oceanography. See [the satellite event page](./seattle/index.md) for detail.
 
 ## OHW22 Sponsors
 
