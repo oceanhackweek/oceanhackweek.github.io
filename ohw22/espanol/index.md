@@ -14,9 +14,9 @@ A group of Spanish-speaking OceanHackWeek organizers and former OceanHackWeek pa
 - Instituto del Mar del Perú (IMARPE), Callao/Lima, Perú (UTC-5)
 - Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay, Rocha, Uruguay (UTC-3)
 
-## Format: Hybrid, in-person and virtual
-​
-Details are being worked out. Check back later!
+## Format
+
+Hybrid, in-person and virtual. Details are being worked out. Check back later!
 
 ## Applicants profile
 
