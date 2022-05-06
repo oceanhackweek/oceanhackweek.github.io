@@ -60,7 +60,7 @@ Details of the event are still being flushed out, including the exact location. 
 - Time zone: UTC-3
 - Format: virtual gathering
 - Location: Florianópolis, Santa Catarina, Brazil
-- **See [more details and contact info here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
+- **See [more details and contact info here.](./brazil/index)**
 
 
 ## OHW-Español
@@ -80,4 +80,5 @@ Details of the event are still being flushed out, including the exact venues at 
 
 maine/index
 seattle/index
+Brazil <brazil/index>
 ```
