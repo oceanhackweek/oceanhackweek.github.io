@@ -2,35 +2,37 @@
 
 Six Regional Satellite Events will take place this year to serve as local connecting points for project work, community building, and engaging potential future OHW organizers. [OHW22 organizers](organizers) invite participants geographically located near one of these regional satellites or interested in virtual participation in a specific satellite to select one of these events. The satellite events may be virtual or in-person and take different formats depending on the event organizers. In-person participants may be required to be fully vaccinated against COVID-19.
 
-Global and satellite participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
+Global and satellite participants will have access to the same online resources and common communication channels, and are encouraged to interact one another across time zones and geographical locations especially on project work.
 
-For help with timezone conversions, see [https://www.timeanddate.com](https://www.timeanddate.com) or similar sites.
+For help with time zone conversions, see [https://www.timeanddate.com](https://www.timeanddate.com) or similar sites.
 
-## US East
+## US Northeast
 
 - Time zone: UTC-4 (US/Eastern)
 - Format: informal in-person gatherings
 - Locations: East Boothbay (Bigelow Laboratory for Ocean Sciences) and Portland (Gulf of Maine Research Institute), Maine, US.
-- We're having two small parallel events in Maine for participants in the Boothbay and Portland areas (i.e. within commuting distance of either location). We have conference rooms at both labs available as places for participants to gather, but there is no travel, lodging or meal support provided. 
-- **See [more details here](./maine/index)**
 
-## US West North
+We will have two small parallel satellites in Maine for participants in the Boothbay and Portland areas (i.e. within commuting distance of either location). We have conference rooms at both labs available as places for participants to gather, but are not able to provide support for travel, lodging or meals. 
+
+**See [more details and contact info here.](./maine/index)**
+
+
+## US Northwest
 
 - Time zone: UTC-7 (US/Pacific)
-- Format: in-person gathering
-- Location: University of Washington, Seattle, WA, USA
-### > Regular OHW satellite
+- Format: in-person gathering across two sub-programs
+- Location: Seattle (University of Washington), WA, USA
 
-- Another liner for other OHW participants
-- This event will be in coordination with the 3-week-long undergraduate summer program listed below
+We will have two sub-programs in the US Northwest satellite:
+- A regular 5-day OHW satellite (August 15-19) geared toward students and scientists already conducting research in the ocean sciences domain
+- A 3-week undergraduate summer program (August 8-26) geared toward students who do not already have experiences in oceanographic research and are interested in "testing the water."
 
-### > Undergraduate summer program “Data Science in Oceanography”
+These two sub-programs are coordinated in their planning and coincides in time. Participatns are encouraged to interact fully across the groups and with other satellites.
 
-- In coordination with the OHW West North satellite event, there will be a 3-week-long undergraduate summer program “Data Science in Oceanography” that will happen in-person on **August 8-26** at the University of Washington. This program will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW West North satellite event as part of this longer undergraduate program.
-- Financial support: undergraduate participants will be fully supported for lodging and meals, and partial travel reimbursement will be provided
-- For questions specific to this undergraduate summer program, please email Dr. Georgy Manucharyan at gmanuch@uw.edu.
+**See [more details and contact info here.](./seattle/index)**
 
-## US West South
+
+## US Southwest
 
 - Time zone: UTC-7 (US/Pacific)
 - Format: informal in-person gathering
@@ -48,7 +50,7 @@ For help with timezone conversions, see [https://www.timeanddate.com](https://ww
 - Time zone: UTC-3
 - Format: virtual gathering
 - Location: Florianópolis, Santa Catarina, Brazil
-- **See [more details here](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
+- **See [more details and contact info here.](https://hackmd.io/ZXHFGQwvRXSrzRV6rdwYNg?view)**
 
 ## OHW-Español
 
@@ -56,7 +58,7 @@ For help with timezone conversions, see [https://www.timeanddate.com](https://ww
 - Format: virtual + small in-person gatherings
 - Location: virtual; Lima, Perú; Rocha, Uruguay
 - In Spanish / bilingual (English as needed)
-- **See [more details here](./espanol/index)**
+- **See [more details and contact info here.](./espanol/index)**
 
 
 ```{toctree}
@@ -65,5 +67,6 @@ For help with timezone conversions, see [https://www.timeanddate.com](https://ww
 :hidden:
 
 maine/index
+seattle/index
 espanol/index
 ```

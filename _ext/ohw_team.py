@@ -103,7 +103,7 @@ class OHWTeam(SphinxDirective):
                 and "email" in member
                 and member["email"] is not None
             ):
-                target = directives.uri("mailto://" + member["email"])
+                target = directives.uri("mailto:" + member["email"])
                 link = nodes.reference(
                     "", refuri=target, text="", classes=["fas", "fa-envelope", "ml-1"]
                 )
