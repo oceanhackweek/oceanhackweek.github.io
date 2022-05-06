@@ -47,7 +47,8 @@ exclude_patterns = [
 html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-html_show_copyright = False
+html_show_copyright = True
+copyright = "2022, OceanHackWeek"
 
 
 # -- HTML Config -------------------------------------------------
