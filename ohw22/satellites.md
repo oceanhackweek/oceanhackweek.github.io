@@ -66,4 +66,5 @@ These two sub-programs are coordinated in their planning and coincides in time. 
 :hidden:
 
 maine/index
+seattle/index
 ```
