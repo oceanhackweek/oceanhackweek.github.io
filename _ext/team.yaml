@@ -226,3 +226,33 @@ team:
       - Financial Planning
       - OHW21 Participant
       - OHW22 Organizer - San Diego
+
+  - name: David Correa Chilón
+    title: Specialist, Ocean-Atmosphere Interactions
+    affiliate: Instituto del Mar del Perú (IMARPE)
+    image_url: https://media-exp1.licdn.com/dms/image/C4E03AQE44LX8nI8m7Q/profile-displayphoto-shrink_800_800/0/1584919922164?e=1657152000&v=beta&t=RRW1iE8CdFpdFAhWZr8vQvX266iIW5LI9dPlGcx3UJE
+    github_user: 
+    email: dcorrea@imarpe.gob.pe
+    roles:
+      - OHW18 Participant
+      - OHW22 Organizer - Espanol
+
+  - name: Denisse Fierro Arcos
+    title: Graduate student
+    affiliate: Institute for Marine and Antarctic Studies, University of Tasmania
+    image_url: https://0.academia-photos.com/24329269/6755559/7629264/s200_denisse.fierro.jpg
+    github_user: lidefi87
+    email: lilian.fierroarcos@utas.edu.au
+    roles:
+      - OHW21 Participant
+      - OHW22 Organizer - Espanol
+
+  - name: Ángel Segura
+    title: 
+    affiliate: Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay
+    image_url: https://www.maren.cure.edu.uy/wp-content/uploads/2014/08/angel.jpg
+    github_user: AngelSegura
+    email: asegura@cure.edu.uy
+    roles:
+      - OHW20 Participant
+      - OHW22 Organizer - Espanol

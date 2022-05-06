@@ -52,10 +52,11 @@ For help with timezone conversions, see [https://www.timeanddate.com](https://ww
 
 ## OHW-Español
 
-- Time zone: UTC-4
+- Time zone: UTC-4, approximately 
 - Format: virtual + small in-person gatherings
-- Location: Lima, Peru and Rocha, Uruguay
-- In Spanish / bilingual
+- Location: virtual; Lima, Perú; Rocha, Uruguay
+- In Spanish / bilingual (English as needed)
+- **See [more details here](./espanol/index)**
 
 
 ```{toctree}
@@ -64,4 +65,5 @@ For help with timezone conversions, see [https://www.timeanddate.com](https://ww
 :hidden:
 
 maine/index
+espanol/index
 ```
