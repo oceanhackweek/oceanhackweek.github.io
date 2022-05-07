@@ -52,6 +52,10 @@ simply apply and explain your motivation for participation.
 
 We expect all participants to be engaged in the team projects and focus during the week.
 
+### Q: I am an undergraduate, and I'm not sure I'm ready for this
+
+This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program. See [here for details](seattle/index).
+
 ### Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?
 
 We plan to accept participants with diverse skill levels and backgrounds in programming.

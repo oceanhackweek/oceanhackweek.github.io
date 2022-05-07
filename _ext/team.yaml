@@ -37,6 +37,7 @@ team:
     image_url: https://images.squarespace-cdn.com/content/v1/56a6b01dd8af105db2511b83/1619046574422-KMBIXE9PYFBIXH9SN7CO/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mh5VMMOxnTbph8FXiclivDQnof69TlCeE0rAhj6HUpXkw/ChelleIMG_7296.jpg
     github_user: cgentemann
     roles:
+      - OHW19 Participant
       - OHW20 Organizer
       - OHW21 Organizer
 
@@ -101,6 +102,7 @@ team:
     affiliate: UW Applied Physics Laboratory
     image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
     github_user: leewujung
+    email: leewj@uw.edu
     roles:
       - Steering Committee
       - Applicant Selection
@@ -125,7 +127,7 @@ team:
   - name: Emilio Mayorga
     title: Senior Oceanographer
     affiliate: UW Applied Physics Laboratory
-    image_url: https://geohackweek.github.io/ghw2017/images/742403.jpg
+    image_url: https://staff.washington.edu/emiliom/images/emilio-2021_03_26-headshot.jpg
     github_user: emiliom
     email: emiliom@uw.edu
     roles:
@@ -211,13 +213,14 @@ team:
       - OHW20 Organizer
       - OHW22 Organizer
 
-  # - name: Georgy Manucharyan
-  #   title:
-  #   affiliate:
-  #   image_url:
-  #   github_user:
-  #   roles:
-  #     - OHW22 Organizer
+  - name: Georgy Manucharyan
+    title: Assistant Professor
+    affiliate: UW School of Oceanography
+    image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
+    github_user: 
+    email: gmanuch@uw.edu
+    roles:
+      - OHW22 Organizer - UW UG
 
   - name: Steve Diggs
     title: Data Manager
