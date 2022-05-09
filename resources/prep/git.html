@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Git Setup and Basics &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../index.html">
+<p class="title">OceanHackWeek</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-git-and-github">
+   About Git and GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-installation">
+   Git Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-bash-terminal">
+   Getting started with Bash terminal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminal-command-line-text-editor">
+   Terminal (command line) text editor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-steps-and-workflows">
+   Git steps and workflows
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-project-repository">
+     1. Create a project repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-the-repository">
+     2. Clone the repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update-the-readme-with-your-name">
+     3. Update the README with your name
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators">
+     4. Update your local repository (local clone) with the changes of your collaborators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#avoiding-problems-forking-workflow">
+     6. Avoiding problems: forking workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#submitting-changes-via-a-pull-request">
+       Submitting changes via a pull request
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#troubleshooting">
+   Troubleshooting
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deleting-files">
+     Deleting files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reverting-to-the-previous-commit">
+     Reverting to the previous commit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references-and-resources">
+   References and Resources
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/resources/prep/git.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="git-setup-and-basics">
+<h1>Git Setup and Basics<a class="headerlink" href="#git-setup-and-basics" title="Permalink to this headline">#</a></h1>
+<section id="about-git-and-github">
+<h2>About Git and GitHub<a class="headerlink" href="#about-git-and-github" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://git-scm.com/">Git</a> is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! <a class="reference external" href="https://github.com">GitHub</a> is a hosting service for Git repositories, enabling us to share code across teams in a web environment.</p>
+<p>We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own <a class="reference external" href="https://github.com/">GitHub</a> account.</p>
+</section>
+<section id="git-installation">
+<h2>Git Installation<a class="headerlink" href="#git-installation" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Windows</p>
+<ul>
+<li><p>Install Git for Windows from this <a class="reference external" href="https://gitforwindows.org/">link</a>. For more setup details follow these <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">instructions</a></p></li>
+</ul>
+</li>
+<li><p>Mac OS</p>
+<ul>
+<li><p>Download the <a class="reference external" href="https://git-scm.com/download/mac">git installer</a> and run it.</p></li>
+</ul>
+</li>
+<li><p>Linux (Debian): <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">git-all</span></code></p></li>
+</ul>
+<p>To test, open the terminal (on Windows, Git Bash) and setup your username and email:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;your username&quot;</span>
+git config --global user.email <span class="s2">&quot;your email&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="getting-started-with-bash-terminal">
+<h2>Getting started with Bash terminal<a class="headerlink" href="#getting-started-with-bash-terminal" title="Permalink to this headline">#</a></h2>
+<p>During the hackweek it will be useful to know how to navigate between files from the command line. If you are not familiar with the linux shell commands, you can review the first three sections of this <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">Software Carpentry Shell Novice</a> lesson. On Windows, use the Git Bash terminal to run these commands.</p>
+</section>
+<section id="terminal-command-line-text-editor">
+<h2>Terminal (command line) text editor<a class="headerlink" href="#terminal-command-line-text-editor" title="Permalink to this headline">#</a></h2>
+<p>When working on the command line (the terminal or shell), it is often handy to modify file content directly from there. For that you can use a command line editor such as <a class="reference external" href="https://linuxize.com/post/how-to-use-nano-text-editor/">nano</a>. On Mac and Linux it is usually pre-installed, but for Windows you can follow the instructions in this <a class="reference external" href="http://carpentries.github.io/workshop-template/#editor">link</a> to set it up. Test your installation by opening a terminal and running <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">--version</span></code>. If it works you can link your git configuration with <code class="docutils literal notranslate"><span class="pre">nano</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="git-steps-and-workflows">
+<h2>Git steps and workflows<a class="headerlink" href="#git-steps-and-workflows" title="Permalink to this headline">#</a></h2>
+<div class="admonition-centralized-vs-fork-clone-workflows admonition">
+<p class="admonition-title">“Centralized vs Fork-Clone workflows”</p>
+<p>Steps 1-5 focus on the Git “centralized workflow”. We present it here as an illustration, but <strong>the workflow we recommend for use in {OceanHackWeek is the Git Fork - Clone workflow, discussed in Step 6.</strong></p>
+</div>
+<section id="create-a-project-repository">
+<h3>1. Create a project repository<a class="headerlink" href="#create-a-project-repository" title="Permalink to this headline">#</a></h3>
+<p>On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the {OceanHackWeek organization, <a class="reference external" href="https://github.com/oceanhackweek">https://github.com/oceanhackweek</a></p>
+<p><img alt="New Repo" src="../../_images/newRepo.png" /></p>
+<p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and follow the steps: check yes to create a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
+<ul class="simple">
+<li><p>Format project name as <code class="docutils literal notranslate"><span class="pre">ohw21-proj-myprojectname</span></code> (you can change the name later), where <code class="docutils literal notranslate"><span class="pre">myprojectname</span></code> is a brief name for your project</p></li>
+<li><p>Invite others to the repo:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Collaborators</span></code></p></li>
+<li><p>Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the <code class="docutils literal notranslate"><span class="pre">bell</span></code> notifications on the top right of the website.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="clone-the-repository">
+<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">#</a></h3>
+<p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep {OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/oceanhackweek/ohw21-proj-myprojectname.git
+</pre></div>
+</div>
+<p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw21-proj-myprojectname</span></code>. Navigate to the new folder, <code class="docutils literal notranslate"><span class="pre">ohw21-proj-myprojectname</span></code>.</p>
+</section>
+<section id="update-the-readme-with-your-name">
+<h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this headline">#</a></h3>
+<p>Open the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file with your favorite editor and create a new section header. Under this section add your name. Then add this change, commit it to the local repository, and push it so that it appears on the <code class="docutils literal notranslate"><span class="pre">origin</span></code> GitHub repository.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
+git commit -m <span class="s2">&quot;Adding new name to README.md&quot;</span>
+git push origin
+</pre></div>
+</div>
+<p>Make sure your change appears online.</p>
+<div class="admonition-remember-to-run admonition">
+<p class="admonition-title">“Remember to run:”</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to observe the changes made into your repository. Pay attention to the colors. To see the changes in the files run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>.</p>
+</div>
+</section>
+<section id="update-your-local-repository-local-clone-with-the-changes-of-your-collaborators">
+<h3>4. Update your local repository (local clone) with the changes of your collaborators<a class="headerlink" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin master
+</pre></div>
+</div>
+<p>```{admonition} “Remember <code class="docutils literal notranslate"><span class="pre">origin</span></code> is just a short name of the web address of the repository.”
+To see what is hidden in origin: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+To continue practicing these steps, make more changes to the title and the description of the project.
+
+![Centralized Workflow](../img/centralized_workflow.png)
+
+*Ran into a problem?*
+
+When working with several people sometimes you
+
+* cannot push because changes have been made that have not been incorporated: need to first pull
+* when pulling you arrive into a merge conflict: need to resolve the conflict manually
+
+
+### 5. Resolving the merge conflict
+
+```bash
+git status
+</pre></div>
+</div>
+<p>You will see the file/s which caused the merge conflict in green.</p>
+<p>Open it and detect the conflict by the special format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+<span class="n">my</span> <span class="n">text</span>
+<span class="o">=======</span>
+<span class="n">somebody</span> <span class="k">else</span><span class="s1">&#39;s text</span>
+<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="mi">35</span><span class="n">ab35436</span>
+</pre></div>
+</div>
+<p>Decide which changes you want to keep, and modify the file so it looks as you wish directly from the editor. Remove the unnecessary characters. Add, commit and push the changes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
+git commit -m <span class="s2">&quot;resolving merge conflict&quot;</span>
+git push origin master
+</pre></div>
+</div>
+<p>You can continue working on as usual.</p>
+<div class="admonition-remember-to-pull-often-and-push-small-changes admonition">
+<p class="admonition-title">“Remember to pull often and push small changes …”</p>
+<p>… to avoid messing with complicated merges and keep your repo up-to-date.</p>
+</div>
+</section>
+<section id="avoiding-problems-forking-workflow">
+<h3>6. Avoiding problems: forking workflow<a class="headerlink" href="#avoiding-problems-forking-workflow" title="Permalink to this headline">#</a></h3>
+<p>So far you collaborated using what is called a “centralized git workflow”: i.e. every collaborator makes directly changes to the repo.</p>
+<p><img alt="" src="../../_images/centralized_workflow_atlasian.png" /></p>
+<p>Some merge conflicts can be avoided by working with <strong>forks</strong> (using a “forking git workflow) instead of directly pushing to the repo.</p>
+<div class="admonition-forking-git-workflow admonition">
+<p class="admonition-title">“Forking Git Workflow”</p>
+<p>This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation <a class="reference external" href="https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf">pdf is here</a>, and the <a class="reference external" href="https://youtu.be/7nYFRixSV2c">recording is here</a>; <strong>the workflow is the one recommended for use in OHW21.</strong>
+Here’s an excellent guide to the Forking Git Workflow: <a class="reference external" href="https://www.dataschool.io/how-to-contribute-on-github/">Step-by-step guide to contributing on GitHub</a></p>
+</div>
+<p>Forks are public copies of the main repo, from which you can submit changes to the main repo.</p>
+<p><img alt="" src="../../_images/forked_workflow.png" /></p>
+<ul class="simple">
+<li><p>Sync your local repo with the public one</p></li>
+<li><p>Fork the public repo (click on the <em>Fork</em> button)
+<img alt="" src="../../_images/fork_button.png" /></p></li>
+<li><p>Note it looks the same but the web address contains your username
+<a class="reference external" href="https://github.com/myghusername/ohw21-proj-ProjectName">https://github.com/myghusername/ohw21-proj-ProjectName</a></p></li>
+<li><p>Go to your local repo and rename your <code class="docutils literal notranslate"><span class="pre">origin</span></code> to point to the fork:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote rm origin
+git remote add origin https://github.com/myghusername/ohw21-proj-ProjectName.git
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Add a new remote to talk to the main repo:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/oceanhackweek/ohw21-proj-ProjectName.git 
+</pre></div>
+</div>
+<p>From now on you will push to <code class="docutils literal notranslate"><span class="pre">origin</span></code>, but pull from <code class="docutils literal notranslate"><span class="pre">upstream</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your <code class="docutils literal notranslate"><span class="pre">origin</span></code> contains your github username, and upstream contains the <code class="docutils literal notranslate"><span class="pre">oceanhackweek</span></code> name.</p>
+</div>
+<section id="submitting-changes-via-a-pull-request">
+<h4>Submitting changes via a pull request<a class="headerlink" href="#submitting-changes-via-a-pull-request" title="Permalink to this headline">#</a></h4>
+<p>Make some changes to a file and commit and publish them.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
+git commit -m <span class="s2">&quot;more changes&quot;</span>
+git push origin master
+</pre></div>
+</div>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p>They appear on your fork, but not on the main repo.</p>
+</div>
+<p>Submit a pull request by clicking <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">pull</span> <span class="pre">request</span></code>:</p>
+<p><img alt="New PR" src="../../_images/newPR.png" /></p>
+<ul class="simple">
+<li><p>Explain what changes you have made.</p></li>
+<li><p>Assign somebody for review.</p></li>
+<li><p>Reviewer: look through changes in the files</p></li>
+<li><p>Approve PR or ask for more changes.</p></li>
+</ul>
+<p>In general we encourage github users to submit changes to the main repo through pull requests, but direct push is still a viable workflow for small projects when participants work on the same documents.</p>
+<p><img alt="BasicForkWorkflow" src="../../_images/BasicForkWorkflow.png" /></p>
+</section>
+</section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h2>
+<section id="deleting-files">
+<h3>Deleting files<a class="headerlink" href="#deleting-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git rm filename.txt
+rm filename.txt
+</pre></div>
+</div>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span></code> just removes the file from git, to delete the file completely use the bash <code class="docutils literal notranslate"><span class="pre">rm</span></code> command after that.</p>
+</div>
+</section>
+<section id="reverting-to-the-previous-commit">
+<h3>Reverting to the previous commit<a class="headerlink" href="#reverting-to-the-previous-commit" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git revert HEAD
+</pre></div>
+</div>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p>Your files in the local repo will still be there.</p>
+</div>
+</section>
+</section>
+<section id="references-and-resources">
+<h2>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">#</a></h2>
+<p>Git and GitHub are very powerful tools but no doubt the learning curve is steep. Learning is an iterative process so below we list some resources which can help you be better prepared:</p>
+<ul class="simple">
+<li><p>OceanHackWeek (OHW) tutorials</p>
+<ul>
+<li><p>OHW20 tutorial: Git/GitHub Survival Guide presentation. <a class="reference external" href="https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf">pdf</a> and <a class="reference external" href="https://youtu.be/7nYFRixSV2c">video</a></p></li>
+<li><p>OHW19 tutorial: Git, GitHub, and Project Collaboration. <a class="reference external" href="https://github.com/oceanhackweek/ohw19-tutorial-github">presentation files</a> and <a class="reference external" href="https://www.youtube.com/watch?v=wWKDp4Uw25A&amp;list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF&amp;index=14&amp;t=0s">video</a>. This tutorial is the source of most of the materials for this Git page.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="http://swcarpentry.github.io/git-novice/">git-novice - Software Carpentry Lesson</a> (3 hours with exercises)</p></li>
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup/index.html">Setting Up Git - Software Carpentry Lesson</a></p></li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Tutorials - Version Control</a></p></li>
+<li><p>An excellent guide to the Forking Git Workflow: <a class="reference external" href="https://www.dataschool.io/how-to-contribute-on-github/">Step-by-step guide to contributing on GitHub</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=w3jLJU7DT5E">What is GitHub?</a> (3:45 min)</p></li>
+<li><p><a class="reference external" href="https://lab.github.com/">GitHub Learning Lab</a>: practice with a bot! (On your own pace)</p></li>
+<li><p><a class="reference external" href="https://berkeley-stat159-f17.github.io/stat159-f17/lectures/01-git/Git-Tutorial..html">An interactive Git Tutorial: the tool you didn’t know you needed. From personal workflows to open collaboration</a></p></li>
+<li><p><a class="reference external" href="https://geohackweek.github.io/Introductory/03-git-tutorial/">GeoHackWeek 2019 tutorial: Getting started with Git</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ICESAT-2HackWeek/intro-jupyter-git">ICESAT-2HackWeek intro-jupyter-git repo</a>, with several notebooks going into a lot of detail.</p></li>
+</ul>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

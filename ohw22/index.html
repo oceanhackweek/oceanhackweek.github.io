@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>OceanHackWeek 2022 (OHW22) &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Information for OHW22 Applicants" href="applicants.html" />
+    <link rel="prev" title="Code of Conduct" href="../about/code-of-conduct.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">OceanHackWeek</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="espanol/index.html">
+     OHW-Español
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="organizers.html">
+   Organizers
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-global-virtual-event-and-six-regional-satellites">
+   A Global Virtual Event and Six Regional Satellites
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#global-virtual-event">
+     Global Virtual Event
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regional-satellites">
+     Regional Satellites
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ohw22-sponsors">
+   OHW22 Sponsors
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/index.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="oceanhackweek-2022-ohw22">
+<h1>OceanHackWeek 2022 (OHW22)<a class="headerlink" href="#oceanhackweek-2022-ohw22" title="Permalink to this headline">#</a></h1>
+<p>OceanHackWeek 2022 will happen from <strong>August 15-19, 2022</strong>. The workshop will take a hybrid form consisting of a global virtual event and a number of regional satellite events that are either in-person or virtual.</p>
+<img alt="OHW19 in person, hacking" class="align-left" src="../_images/ohw19-hacking.JPG" style="width: 230px;" />
+<p>The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. Participants can apply for being in one of the regional satellites or the virtual global event. Regional satellite events are connected closely with the virtual global event, while providing additional collaboration and networking opportunities on a regional basis.</p>
+<p>See the <a class="reference external" href="https://oceanhackweek.github.io/ohw-resources">OHW21 program</a> (a hybrid event) to get a better sense of the usual activities and how they’re organized.</p>
+<div class="note admonition">
+<p class="admonition-title">Join us at OceanHackWeek 2022!</p>
+<p><strong>Applications will close June 1, 2022.</strong> Please visit the <a class="reference internal" href="applicants.html"><span class="doc std std-doc">Information for Applicants page</span></a> for detailed information and access to the application form. You will be asked to choose between the global virtual event and one of the satellite events.</p>
+<p><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference external" href="applicants" title="Apply to OceanHackWeek 2022"><span>Apply to OceanHackWeek 2022!</span></a></span></p>
+</div>
+<section id="a-global-virtual-event-and-six-regional-satellites">
+<h2>A Global Virtual Event and Six Regional Satellites<a class="headerlink" href="#a-global-virtual-event-and-six-regional-satellites" title="Permalink to this headline">#</a></h2>
+<p>Global and satellite participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.</p>
+<section id="global-virtual-event">
+<h3>Global Virtual Event<a class="headerlink" href="#global-virtual-event" title="Permalink to this headline">#</a></h3>
+<img alt="OHW21 Slack exchanges" class="align-right" src="../_images/ohw21-slack.png" style="width: 220px;" />
+<p>The <strong>Global Virtual Event</strong> will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW22 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. The tutorials will be recorded and posted after the presentation. The exact hours of this global event are still being finalized, but we anticipate the activity time to be structured around the US Pacific Time (UTC-7) this year.</p>
+</section>
+<section id="regional-satellites">
+<h3>Regional Satellites<a class="headerlink" href="#regional-satellites" title="Permalink to this headline">#</a></h3>
+<p><a class="reference internal" href="satellites.html"><span class="doc std std-doc"><strong>Six Regional Satellite Events</strong></span></a> will take place this year to serve as local connecting points for project work, community building, and engaging potential future OHW organizers. <a class="reference internal" href="organizers.html"><span class="doc std std-doc">OHW22 organizers</span></a> invite participants geographically located near one of these regional satellites or interested in virtual participation in a specific satellite to select one of these events. The satellite events may be virtual or in-person and take different formats depending on the event organizers. In-person participants may be required to be fully vaccinated against COVID-19.</p>
+<p>In coordination with the OHW Northwest satellite event, there will be a <strong><a class="reference external" href="satellites/#undergraduate-summer-program-data-science-in-oceanography">3-week-long undergraduate summer program “Data Science in Oceanography”</a> taking place in-person on August 8-26 at the University of Washington</strong>. This program will provide opportunities for undergraduate students in data-driven research in oceanography. See <a class="reference internal" href="seattle/index.html"><span class="doc std std-doc">the satellite event page</span></a> for detail.</p>
+</section>
+</section>
+<section id="ohw22-sponsors">
+<h2>OHW22 Sponsors<a class="headerlink" href="#ohw22-sponsors" title="Permalink to this headline">#</a></h2>
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="UW eScience" src="../_images/eScience_square_logo.jpg" style="width: 150px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="Bigelow Lab" src="../_images/BigelowLabs.png" style="width: 180px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="UW APL" src="../_images/apl_logo_blue.jpg" style="width: 180px;" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="NSF" src="../_images/nsf.jpeg" style="width: 150px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="IOOS" src="../_images/ioos_logo.jpg" style="width: 180px;" />
+  </div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../about/code-of-conduct.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Code of Conduct</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="applicants.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Information for OHW22 Applicants</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

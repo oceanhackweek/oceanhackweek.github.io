@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>JupyterHub &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../index.html">
+<p class="title">OceanHackWeek</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-notebooks-and-the-jupyter-ecosystem">
+   Jupyter notebooks and the Jupyter ecosystem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-are-we-using-a-shared-cloud-computing-environment">
+   Why are we using a shared cloud computing environment?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-do-i-access-the-shared-cloud-environment">
+   How do I access the shared cloud environment?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-do-i-get-the-tutorial-repository">
+   How do I get the tutorial repository?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-do-i-get-my-code-in-and-out-of-jupyterhub">
+   How do I get my code in and out of JupyterHub?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#end-your-hub-session-every-day-will-i-lose-all-of-my-work">
+   End your Hub session every day. Will I lose all of my work?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-do-i-do-distributed-computation">
+   How do I do distributed computation?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references-and-resources">
+   References and Resources
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/resources/prep/jupyterhub.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="jupyterhub">
+<h1>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this headline">#</a></h1>
+<section id="jupyter-notebooks-and-the-jupyter-ecosystem">
+<h2>Jupyter notebooks and the Jupyter ecosystem<a class="headerlink" href="#jupyter-notebooks-and-the-jupyter-ecosystem" title="Permalink to this headline">#</a></h2>
+<p>You may have heard of <a class="reference external" href="https://en.wikipedia.org/wiki/Project_Jupyter">Jupyter</a> – an open computing “ecosystem” developed by <a class="reference external" href="https://jupyter.org">Project Jupyter</a>. This ecosystem is described succinctly and effectively in <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/">the online open book, Teaching and Learning with Jupyter</a>:</p>
+<blockquote>
+<div><p>Project Jupyter is three things: a collection of standards, a community, and a set of software tools. Jupyter Notebook, one part of Jupyter, is software that creates a Jupyter notebook. A Jupyter notebook is a document that supports mixing executable code, equations, visualizations, and narrative text. Specifically, Jupyter notebooks allow the user to bring together data, code, and prose, to tell an interactive, computational story. (<a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#but-first-what-is-jupyter-notebook"><em>“2.2 But first, what is Jupyter Notebook?”</em></a>)</p>
+</div></blockquote>
+<p>We will use the <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> software to create, manage and run Jupyter notebooks. You will be exposed to Jupyter notebooks throughout the hackweek, including in most tutorials. To learn more about Jupyter, Jupyter notebooks and JupyterLab:</p>
+<ul class="simple">
+<li><p>Check out several sections in the <em>Teaching and Learning with Jupyter</em> online open book, specially <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/jupyter.html">Chapter 5 Jupyter Notebook ecosystem</a>.</p></li>
+<li><p>See the OceanHackWeek 2020 pre-hackweek tutorial “Jupyter and Scientific Python basics: numpy, pandas, matplotlib”, which demonstrates effective Jupyter use both on your computer (“locally”) and on JupyterHub: <a class="reference external" href="https://github.com/oceanhackweek/ohw-preweek/tree/master/data-analysis-modules">Jupyter notebooks</a> — <a class="reference external" href="https://youtu.be/CTUAgpvfze0">tutorial video</a>. The video includes Q&amp;As at the end where you’ll find common questions you may find asking yourself.</p></li>
+<li><p>See the <a class="reference external" href="#references-and-resources">resources at the end of this page</a>.</p></li>
+</ul>
+</section>
+<section id="why-are-we-using-a-shared-cloud-computing-environment">
+<h2>Why are we using a shared cloud computing environment?<a class="headerlink" href="#why-are-we-using-a-shared-cloud-computing-environment" title="Permalink to this headline">#</a></h2>
+<p>Teaching software to a diverse group of participants, each with different computers and operating systems, can be challenging. There are specific ways to configure our software for the tutorials to be successful, so it takes time to get everyone set up consistently. Our solution to this is to give everyone access to a cloud computing environment that is pre-configured for the specific software we will deploy. This cloud computing instance can be accessed from any web browser, which eliminates the need for configuring each person’s individual computer. For this hackweek we have created virtual computing instances that can be deployed on demand in a parallel computing environment. We use JupyterHub as a way to give a Jupyter Notebook server (<a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a>) to each person in a group. <a class="reference external" href="https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview?from_action=save">These (slightly old) slides</a> give a nice overview of what JupyterHub is all about. JupyterHub enables us to quickly begin working with code without spending time to get the necessary libraries and dependencies set up on everyone’s individual computers.</p>
+<p>We encourage you to use our shared JupyterHub resources for running all the tutorials and for your projects. We also hope you will practice installing Python libraries locally on your laptop so that you can continue working after leaving our event.</p>
+</section>
+<section id="how-do-i-access-the-shared-cloud-environment">
+<h2>How do I access the shared cloud environment?<a class="headerlink" href="#how-do-i-access-the-shared-cloud-environment" title="Permalink to this headline">#</a></h2>
+<p>Access to our shared cloud environment is easy. Just click on <a class="reference external" href="https://ohw.pilot.2i2c.cloud">https://ohw.pilot.2i2c.cloud</a></p>
+<p><img alt="hub-opening" src="../../_images/ohw21-jupyterhub-opening.png" /></p>
+<p>You can now click on the “Log in to continue” button, then on the next screen click on “Sign in with GitHub” to grant JupyterHub the required permissions. In the next window, enter your GitHub username (or email address) and password.
+You will then see something like this while the JupyterHub {OceanHackWeek 2022 server environment is loading:</p>
+<p><img alt="hub-loading" src="../../_images/ohw21-jupyterhub-loading.png" /></p>
+<p>It will take a bit of time for this to load - be patient! Once things are spun up you will see your very own instance of a <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> graphical user interface:</p>
+<p><img alt="jupyterlab" src="../../_images/ohw21-jupyterlab.png" /></p>
+</section>
+<section id="how-do-i-get-the-tutorial-repository">
+<h2>How do I get the tutorial repository?<a class="headerlink" href="#how-do-i-get-the-tutorial-repository" title="Permalink to this headline">#</a></h2>
+<p>For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route (<a class="reference external" href="#How-do-I-get-my-code-in-and-out-of-JupyterHub">described below</a>), or you can use <a class="reference external" href="https://ohw.pilot.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&amp;urlpath=lab%2Ftree%2Fohw-tutorials%2F&amp;branch=master">this magical nbgitpuller link</a>.</p>
+<p>Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls via a <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging">series of sane rules</a>.</p>
+<p>You can accomplish the same results as nbgitpuller when using <code class="docutils literal notranslate"><span class="pre">git</span></code> directly, but it can take a complicated dance of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span> <span class="pre">apply</span></code> to keep your changes and get the changes from upstream.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you start by using the nbgitpuller link, and then switch to using git directly, using the nbgitpuller link again will most likely lead to <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller/#when-to-use-nbgitpuller">unpredictable results</a>.</p>
+</div>
+</section>
+<section id="how-do-i-get-my-code-in-and-out-of-jupyterhub">
+<h2>How do I get my code in and out of JupyterHub?<a class="headerlink" href="#how-do-i-get-my-code-in-and-out-of-jupyterhub" title="Permalink to this headline">#</a></h2>
+<p>When you start your own instance of JupyterHub you will have access to your own virtual drive space. No other JupyterHub users will be able to see or access your data files. Next we will explain how you can upload files to your virtual drive space and how to save files from JupyterHub back to another location, such as GitHub or your own local laptop drive.</p>
+<p>First we’ll show you how to pull some files from GitHub into your virtual drive space.  This will be a common task during the hackweek: at the start of most tutorials we’ll ask you to “clone” (make a copy of) the GitHub repository corresponding to the specific tutorial being taught into your JupyterHub drive space.</p>
+<p>To do this, we will need to interface with the JupyterHub file system. JupyterHub is deployed in a Linux operating system and we will need to open a terminal within the JupyterHub JupyterLab interface to manage our files. There are two ways to do this: (1) Navigate to the “File” menu, choose “New” and then “Terminal” or (2) click on the “terminal” button in JupyterLab:</p>
+<p><img alt="terminal-button" src="../../_images/terminal-button.png" /></p>
+<p>This will open a new terminal tab in your JupyterLab interface:</p>
+<p><img alt="terminal-tab" src="../../_images/terminal.png" /></p>
+<p>You can issue any Linux commands to manage your local file system.</p>
+<p>Now let’s clone a repository (see the <a class="reference internal" href="git.html"><span class="doc std std-doc">Git Setup and Basics</span></a> page). We’ll illustrate this with the <code class="docutils literal notranslate"><span class="pre">ohw-tutorials</span></code> repository. First, navigate in a browser on your own computer to the repository link <a class="reference external" href="https://github.com/oceanhackweek/ohw-tutorials">https://github.com/oceanhackweek/ohw-tutorials</a>. Next, click on the green “Code” button and then copy the url into your clipboard by clicking the copy button (clipboard icon):</p>
+<p><img alt="clone" src="../../_images/ohw21-clone.png" /></p>
+<p>Now navigate back to your command line in JupyterLab. Type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> and then paste in the url:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/oceanhackweek/ohw-tutorials.git
+</pre></div>
+</div>
+<p>After issuing the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> command you should see something like this (again, the screenshot below is for a different repo, but the concept is identical):</p>
+<p><img alt="clone-result" src="../../_images/clone-result.png" /></p>
+</section>
+<section id="end-your-hub-session-every-day-will-i-lose-all-of-my-work">
+<h2>End your Hub session every day. Will I lose all of my work?<a class="headerlink" href="#end-your-hub-session-every-day-will-i-lose-all-of-my-work" title="Permalink to this headline">#</a></h2>
+<p><strong>When you are finished working for the day or for an extended period of time, it is important to explicitly shutdown your JupyterHub session,</strong> to reduce the load on our cloud infrastructure and overall costs.</p>
+<p><strong>To shutdown your server</strong>, if you are viewing JupyterLab, you access the control via <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Hub</span> <span class="pre">Control</span> <span class="pre">Panel</span></code> menu item:</p>
+<p><img alt="hub shut down step 1" src="../../_images/ohw21-shutdownhub-step1.png" /></p>
+<p>Then you can shutdown your server from your hub control panel (which you can also access directly from https://ohw.pilot.2i2c.cloud/hub/home ):</p>
+<p><img alt="hub shut down step 2" src="../../_images/ohw21-shutdownhub-step2.png" /></p>
+<p>Note that the menu item <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Log</span> <span class="pre">Out</span></code> doesn’t actually shut down the server, so please follow these steps instead.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will not lose your work when shutting down the server</p>
+<p>Shutting down (Stop Server) will <strong>NOT</strong> cause any of your work to be lost or deleted. It simply shuts down some resources. It would be equivalent to turning off your desktop computer at the end of the day.</p>
+</div>
+</section>
+<section id="how-do-i-do-distributed-computation">
+<h2>How do I do distributed computation?<a class="headerlink" href="#how-do-i-do-distributed-computation" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://dask.org/">Dask</a> is available on the JupyterHub for distributed compute.</p>
+<p>To start up a Dask cluster, call</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dask.distributed</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">dask_gateway</span> <span class="kn">import</span> <span class="n">GatewayCluster</span>
+
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">GatewayCluster</span><span class="p">()</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">cluster</span><span class="p">)</span>
+
+<span class="c1"># xarray becomes even more awesome</span>
+</pre></div>
+</div>
+<p>And then either call <code class="docutils literal notranslate"><span class="pre">cluster</span></code> on it’s own line in a cell and use the UI, or <code class="docutils literal notranslate"><span class="pre">cluster.scale(NUMBER_OF_WORKERS_TO_SCALE_TO)</span></code>.</p>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p>Just as it can take a few minutes for JupyterHub to start up your server, it can also take a few minutes before Dask workers become available.</p>
+<p>We are working on making Dask (and server) scaling faster, but no promises of faster scaling at this point.</p>
+</div>
+<p>Similar to your server, please shutdown your Dask clusters when you are done.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cluster</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>  <span class="c1"># or cluster.close()</span>
+</pre></div>
+</div>
+</section>
+<section id="references-and-resources">
+<h2>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.nature.com/articles/d41586-018-07196-1">Why Jupyter is data scientists’ computational notebook of choice. An improved architecture and enthusiastic user base are driving uptake of the open-source web tool (Nature, 2018-10)</a></p></li>
+<li><p><a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/">Teaching and Learning with Jupyter</a>, an online open book.</p></li>
+<li><p>OceanHackWeek 2020 pre-hackweek tutorial “Jupyter and Scientific Python basics: numpy, pandas, matplotlib”: <a class="reference external" href="https://github.com/oceanhackweek/ohw-preweek/tree/master/data-analysis-modules">Jupyter notebooks</a> — <a class="reference external" href="https://youtu.be/CTUAgpvfze0">tutorial video</a>.</p></li>
+<li><p>From <a class="reference external" href="https://dataquest.io">https://dataquest.io</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Jupyter Notebook for Beginners: A Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://www.dataquest.io/blog/advanced-jupyter-notebooks-tutorial/">Tutorial: Advanced Jupyter Notebooks</a></p></li>
+<li><p><a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/">28 Jupyter Notebook Tips, Tricks, and Shortcuts</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.blog.pythonlibrary.org/2019/02/05/getting-started-with-jupyterlab/">Getting Started with JupyterLab</a></p></li>
+<li><p><a class="reference external" href="http://bebi103.caltech.edu.s3-website-us-east-1.amazonaws.com/2019a/content/lessons/lesson_00/l00b_intro_to_jupyterlab.html">Lesson 0b: Introduction to JupyterLab - (Justin Bois) Introduction to Data Analysis in the Biological Sciences, Caltech</a></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b">Jupyter Lab: Evolution of the Jupyter Notebook. An overview of JupyterLab, the next generation of the Jupyter Notebook.</a></p></li>
+</ul>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

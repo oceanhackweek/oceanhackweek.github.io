@@ -1,254 +1,359 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
+<!DOCTYPE html>
+
 <html>
-<head>
-	<title>OceanHackWeek 2021</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="/assets/css/main.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-		  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-		  crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-			integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-			crossorigin=""></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116958811-1"></script>
-	<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-        gtag('config', 'UA-116958811-1');
-	</script>
-</head>
+    <title>OceanHackWeek (OHW) &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-<body class="landing">
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-	<!-- Header -->
-	<header id="header"  class="alt" >
-		<h1><a href="/">OceanHackWeek 2021</a></h1>
-		<nav id="nav">
-			<ul>
-				<li class="special">
-					<a href="#menu" class="menuToggle"><span>Menu</span></a>
-					<div id="menu">
-						<ul>
-							             
-							<li><a href="/">Home</a></li>
-							     
-							<li><a href="/code_of_conduct.html">Code of Conduct</a></li>
-							   
-							<li><a href="/applicant-info.html">Information for Applicants</a></li>
-							 
-							<li><a href="/hackweek.html">What is a hackweek?</a></li>
-							  
-							<li><a href="/our-team.html">Organizing committee</a></li>
-							  
-							<li><a href="/pasthackweeks.html">Past OceanHackWeeks</a></li>
-							  
-							<li><a href="/projects_2020.html">2020 OceanHackWeek Projects</a></li>
-							     
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About" href="about/index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
 
-<!-- Banner -->
-<section id="banner">
-	<div class="inner">
-		<h2>OceanHackWeek 2021</h2>
-		<p>Data Science + Oceanography<br> A <b><u>HYBRID</u></b>, hands-on, interactive workshop<br> August 3-6, 2021<br> <b>Virtual</b> @ a couple of time zones<br> <b>In person</b> @ Bigelow Laboratory for Ocean Sciences, Maine</p>
-		<ul class="actions">
-			<!-- <li><a href="#two" class="button special">Application due June 14 for in-person event,
-			June 28 for virtual event</a></li> -->
-			<!-- <li><span class="button special">Event details coming soon!</span></li> -->
-			<li><a href="/ohw-resources/" class="button special">For event details go to the OHW Resources site</a></li>
-		</ul>
-	</div>
-	<a href="#one" class="more scrolly">Learn More</a>
-</section>
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
 
-<section id="one" class="wrapper special style2">
-	<div class="inner">
-		<header class="major">
-			<h2>About OceanHackWeek</h2>
-			<p>
-				OceanHackWeek (OHW) is a 4-day collaborative learning experience aimed at exploring,
-				creating and promoting effective computation and analysis workflows for
-				large and complex oceanographic data. It includes tutorials, data exploration, software development, collaborative projects and community networking.
-				Its objectives are to:
-				<ul style="text-align: left">
-					<li>Promote data and software proficiency in ocean scientists: 
-						Provide participants with computational and data science skills that can 
-						advance oceanography research, which often requires the integration and 
-						manipulation of diverse sources of data and models.
-					</li>
-					<li>Facilitate inclusive community building: 
-						Connect oceanographers across disciplines and career stages and cultivate 
-						an open science and a sharing culture.
-					</li>
-				</ul>
-			</p>
-			<p>
-				OceanHackWeek 2021 will take place as a hybrid in-person and virtual, online event. 
-				The in-person event will take place at the Bigelow Laboratory for Ocean Sciences, in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). For the virtual event, formal daily activities will take place over a period of up to 3 hours per day. We expect to hold these sessions in at least two time zones, USA PDT (UTC-7) and Australian EST (UTC+10).
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
 
-			</p>
-			<p>
-				<a href="hackweek.html">What is a Hackweek?</a>
-				|
-				See the previously held OceanHackWeek events from 
-				<a href="https://oceanhackweek.github.io/ohw20/">2020</a>, 
-				<a href="https://oceanhackweek.github.io/ohw19/">2019</a> and
-				<a href="https://oceanhackweek.github.io/ohw2018/">2018</a>.
-			</p>
-		</header>
-	</div>
-</section>
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-<section id="two" class="wrapper alt style1">
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="#">
+<p class="title">OceanHackWeek</p>
+</a>
 
-	<!---->
-	
+    
+  </div>
 
-	<section class="spotlight">
-		<div class="image">
-			<img src="/assets/images/ohw18-hacking2.JPG" alt="" />
-		</div>
-		<div class="content">
-			<h2><a href="/applicant-info.html" class="link">Information for Applicants</a></h2>
-			<p><b>OceanHackWeek (OHW) 2021 will take place as a hybrid in-person and virtual, online event. <a href="applicant-info.html">Applications</a> closed on June 28, 2021. In OceanHackWeek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. To best benefit from the program, participants are expected to have some experience with Python or R programming and data analysis.</p>
-		</div>
-	</section>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="about/index.html">
+  About
+ </a>
+</li>
 
-</section>
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
 
-<section id="three" class="wrapper style2 special">
-    <div class="inner">
-        <header class="major">
-            <h2>Participant Quotes</h2>
-            <p><i>"My experience at the Oceanhackweek 2019 was in a few words a once in a lifetime learning experience. The people involved were amazing, from the organization group to all the participants. The project group I joined was extremely democratic and involved. I learned not only from more advanced researchers but also telling what I knew to my group partners. I definitely recommend this event for everyone that is eager to learn."</i> ~ Ágata Piffer Braga, 2019 Participant</p>
-            <p><i>"I feel so lucky that I didn't miss the brainstorm of the data techniques in OHW2019. I have been using python for data analysis abut two years. [...] And I was quite satisfied with Python packages [...] which are extensively used in my data analysis for numerical model outputs. So when I heard about Oceanhackweek, I expected that probably I could meet more Python fellows in the ocean community, and it will be very beneficial to stay in a community for debugging and learn new staff in future works. Actually, the week spent in OHW2019 paid me much more than I could ever have expected. Packages, such as xarray and Dask, expanded my vision on python’s applications in ocean data analysis. Lectures on Github opened the door of so many repositories of open-source projects. Pangeo provided a cutting-edge platform for oceanographers to use packages specifically written for ocean data. Cloud data storage and cloud computation demonstrated great potential for ocean researches. And the project work during the workshop really makes our hands dirty in using the techniques we learned. Our team worked on quality control using machine-learning methods. It was a lot of cooperation, hardworking, fun, and friendships."</i> ~ Xu Chen, 2019 Participant</p>
-            <p><i>"The workshop provided an excellent introduction to the existing infrastructure of oceanographic data-gathering resources. Also provided was an introduction to the open-source evolving tools for accessing and utilizing large data sets. The technical challenges in data-intensive research are daunting, and here this workshop’s model and enactment of collaborative work was particularly valuable to me."</i> ~ Rachel Jackson, San Francisco State University, 2018 Participant</p>
-            <p><i>"I am grateful to have attended Oceanhackweek, and to have been given the opportunity to expand my skill set in such a productive and pleasant environment. I live in Fairbanks, AK, where we are rather isolated and aren't naturally exposed to new tools or methods. [...] Oceanhackweek gave me that time, introduced me to possibilities via the tutorials, and through the projects produced a technical structure that I can apply to our research in Alaska."</i> ~ Liz Dobbins, University of Alaska, Fairbanks, 2018 Participant</p>
-            <p><i>"It is sometimes hard to predict whether a given conference, training or hack-a-thon might be worth your time. [...] The real challenge, of course, is to find a group of like minded people that want to expand their horizons and learn together, and that is just what I found when I attended Ocean Hackweek." </i> ~ Christian Saranson, 2018 Participant</p>
-        </header>
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
     </div>
-</section>
 
-<section id="four" class="wrapper style1 special">
-	<div class="inner">
-		<header class="major">
-			<h2>OceanHackWeek 2021 Sponsors</h2>
-			<p>Thanks to our sponsors that make this event possible.</p>
-		</header>
-		<div class="sponsors">
-			<div class="sponsors-row">
-				<div class="sponsors-logo">
-					<img src="assets/images/eScience_square_logo.jpg" alt="UW eScience">
-				</div>
-				<div class="sponsors-logo">
-					<img src="assets/images/BigelowLabs.png" alt="Bigelow Lab">
-				</div>
-				<div class="sponsors-logo">
-					<img src="assets/images/apl_logo_blue.jpg" alt="UW APL">
-				</div>
-			</div>
-			<div class="sponsors-row">
-				<div class="sponsors-logo">
-					<img src="assets/images/nsf.jpeg" alt="NSF">
-				</div>
-				<div class="sponsors-logo">
-					<img src="assets/images/ioos_logo.jpg" alt="IOOS">
-				</div>
-				<div class="sponsors-logo">
-					<img src="assets/images/OCB_logo.png" alt="OCB">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="five" class="wrapper style2 special">
-    <div class="inner">
-        <header class="major">
-            <h2>Location and time zones</h2>
-            <p>
-                <b>In-person workshop:</b>
-                <a href="https://www.bigelow.org">Bigelow Laboratory for Ocean Sciences</a>, 
-                East Boothbay, Maine (US EDT, UTC-4).
-            </p>
-            <p>
-                <b>Virtual event:</b>
-                We expect to hold formal sessions in at least two time zones, 
-                USA PDT (UTC-7) and Australian EST (UTC+10).
-
-            </p>
-        </header>
-        <!-- <div id="map"></div> -->
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
     </div>
-</section>
+  </div>
+</div>
+    </nav>
+    
 
-<!-- <script type="application/javascript">
-    var map = L.map('map').setView([47.65338269999999, -122.3118654], 12);
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="_static/logo.png" /></div></a>
 
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
 
-    L.marker([47.65338269999999, -122.3118654]).addTo(map)
-        .bindPopup('eScience Institute <br/> WRF Data Science Studio, UW Physics/Astronomy Tower, 6th Floor, Campus Box 351570, 3910 15th Ave NE, Seattle, WA 98195')
-        .openPopup();
-</script> -->
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
 
-<!-- Footer -->
-<footer id="footer">
-	<ul class="icons">
-		       
-		<li><a href="https://github.com/oceanhackweek" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-		 
-		<li><a href="https://oceanhackweek.slack.com" class="icon fa-slack" target="_blank"><span class="label">Slack</span></a></li>
-		  
-		<li><a href="mailto:oceanhkw@uw.edu" class="icon fa-envelope" target="_blank"><span class="label">email</span></a></li>
-		
-	</ul>
-	<ul class="copyright">
-		<li>&copy; OceanHackWeek 2021</li>
-		<!--<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.</li>-->
-		<!--<li>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</li>-->
-		<!--<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a>.</li>-->
-	</ul>
-</footer>
-
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
 </div>
 
-<!-- Scripts -->
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/jquery.scrollex.min.js"></script>
-<script src="/assets/js/jquery.scrolly.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="/assets/js/main.js"></script>
-</body>
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-oceanhackweek">
+   About OceanHackWeek
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#our-sponsors">
+   Our Sponsors
+  </a>
+ </li>
+</ul>
 
-</html>
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
 
-</body>
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/index.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
 
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="oceanhackweek-ohw">
+<h1>OceanHackWeek (OHW)<a class="headerlink" href="#oceanhackweek-ohw" title="Permalink to this headline">#</a></h1>
+<div class="note admonition">
+<p class="admonition-title">Join us at OceanHackWeek 2022!</p>
+<p>OceanHackWeek 2022 will take place <strong>August 15-19, 2022</strong>. The workshop will take a hybrid form consisting of a global virtual event and a number of regional “satellite” events that are either in-person or virtual. <strong>Applications are now open!</strong></p>
+<p><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference external" href="ohw22/" title="OHW22"><span>Go to OceanHackWeek 2022</span></a></span></p>
+<!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+</div>
+<!-- ::::{grid} 1 2 2 2
+:::{grid-item-card}  Get started
+
+- **(start/your-first-book.md)**: a step-by-step tutorial to get started.
+
+- **(create-a-template-book)**: get started with a simple template book.
+:::
+:::{grid-item-card}  Be inspired
+
+[**The Jupyter Book Gallery**](http://gallery.jupyterbook.org): A gallery of community books that have been created with Jupyter Book.
+
+[**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
+:::
+:::: -->
+<section id="about-oceanhackweek">
+<h2>About OceanHackWeek<a class="headerlink" href="#about-oceanhackweek" title="Permalink to this headline">#</a></h2>
+<img alt="OHW21 in person and on Zoom" class="align-right" src="_images/OHW21-collage-the3groups.jpg" style="width: 280px;" />
+<p><a class="reference internal" href="about/index.html"><span class="doc std std-doc">OceanHackWeek (OHW)</span></a> is a 5-day collaborative learning experience aimed at exploring,
+creating and promoting effective computation and analysis workflows for
+large and complex oceanographic data. It includes tutorials, data exploration, software development, collaborative projects and community networking.
+Its objectives are to:</p>
+<ul class="simple">
+<li><p>Promote data and software proficiency in ocean scientists: Provide participants with computational and data science skills that can advance oceanography research, which often requires the integration and manipulation of diverse sources of data and models.</p></li>
+<li><p>Facilitate inclusive community building: Connect oceanographers across disciplines and career stages and cultivate an open science and a sharing culture.</p></li>
+</ul>
+<!-- OceanHackWeek 2021 will take place as a hybrid in-person and virtual, online event. The in-person event will take place at the Bigelow Laboratory for Ocean Sciences, in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). For the virtual event, formal daily activities will take place over a period of up to 3 hours per day. We expect to hold these sessions in at least two time zones, USA PDT (UTC-7) and Australian EST (UTC+10). -->
+<!-- ## Information For Applicants
+
+OceanHackWeek (OHW) 2021 will take place as a hybrid in-person and virtual, online event. Applications closed on June 28, 2021. In OceanHackWeek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. To best benefit from the program, participants are expected to have some experience with Python or R programming and data analysis. -->
+<div class="note admonition">
+<p class="admonition-title">Participant Quotes</p>
+<blockquote class="epigraph">
+<div><p>My experience at the Oceanhackweek 2019 was in a few words a once in a lifetime learning experience. The people involved were amazing, from the organization group to all the participants. The project group I joined was extremely democratic and involved. I learned not only from more advanced researchers but also telling what I knew to my group partners. I definitely recommend this event for everyone that is eager to learn.</p>
+<p class="attribution">—Ágata Piffer Braga, 2019</p>
+</div></blockquote>
+<blockquote class="epigraph">
+<div><p>It is sometimes hard to predict whether a given conference, training or hack-a-thon might be worth your time. […] The real challenge, of course, is to find a group of like minded people that want to expand their horizons and learn together, and that is just what I found when I attended Ocean Hackweek.</p>
+<p class="attribution">—Christian Saranson, 2018</p>
+</div></blockquote>
+</div>
+</section>
+<section id="our-sponsors">
+<h2>Our Sponsors<a class="headerlink" href="#our-sponsors" title="Permalink to this headline">#</a></h2>
+<p>Thanks to our sponsors that have made OceanHackWeek possible over the last several years.</p>
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="UW eScience" src="_images/eScience_square_logo.jpg" style="width: 150px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="Bigelow Lab" src="_images/BigelowLabs.png" style="width: 180px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="UW APL" src="_images/apl_logo_blue.jpg" style="width: 180px;" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="NSF" src="_images/nsf.jpeg" style="width: 150px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="IOOS" src="_images/ioos_logo.jpg" style="width: 180px;" />
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+<img alt="OCB" src="_images/OCB_logo.png" style="width: 110px;" />
+  </div>
+</div>
+<!-- ## Location and Time Zones
+
+In-person workshop: Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine (US EDT, UTC-4).
+
+Virtual event: We expect to hold formal sessions in at least two time zones, USA PDT (UTC-7) and Australian EST (UTC+10). -->
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="about/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">About</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
 </html>

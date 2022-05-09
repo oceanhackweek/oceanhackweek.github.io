@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Editing OHW web site content and layout &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../index.html">
+<p class="title">OceanHackWeek</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#via-github">
+   Via Github
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-this-page">
+     Edit this page
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navigating-github">
+     Navigating Github
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-edits">
+     Making edits
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-pull-request">
+     Creating a Pull Request
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#locally">
+   Locally
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup-for-local-development">
+     Setup for local development
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#forking-the-repo">
+       Forking the repo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#environment">
+       Environment
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#commands">
+       Commands
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-and-linking-pages">
+     Writing and Linking Pages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-posts">
+     Writing Posts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#markdown">
+       Markdown
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#directives">
+         Directives
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#restructured-text">
+       ReStructured Text
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebooks">
+       Jupyter Notebooks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pull-requests">
+     Pull Requests
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#location-of-main-content-documents">
+   Location of main content documents
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/resources/website/updates.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="editing-ohw-web-site-content-and-layout">
+<h1>Editing OHW web site content and layout<a class="headerlink" href="#editing-ohw-web-site-content-and-layout" title="Permalink to this headline">#</a></h1>
+<p>The OceanHackweek web site uses <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> with the <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/latest/index.html">PyData theme</a> and <a class="reference external" href="https://ablog.readthedocs.io/en/latest/">Ablog</a> for adding posts.</p>
+<p>For quick changes to single pages, you can make edits directly via Github, or to make deeper changes you can work locally.</p>
+<section id="via-github">
+<h2>Via Github<a class="headerlink" href="#via-github" title="Permalink to this headline">#</a></h2>
+<p>Github is great for making small changes such as helping to clean up spelling mistakes.</p>
+<section id="edit-this-page">
+<h3>Edit this page<a class="headerlink" href="#edit-this-page" title="Permalink to this headline">#</a></h3>
+<p>On most pages of the site there is a right hand sidebar (you may need to expand your screen or decrease your font size to see it).
+At the bottom of the sidebar, there is a link to <strong>Edit this page</strong>.</p>
+<p>If you click the <strong>Edit this page</strong>, you’ll be taken to the source of the page on Github.</p>
+</section>
+<section id="navigating-github">
+<h3>Navigating Github<a class="headerlink" href="#navigating-github" title="Permalink to this headline">#</a></h3>
+<p>The code for the website is stored in the <a class="reference external" href="https://github.com/oceanhackweek/oceanhackweek.github.io">`oceanhackweek/oceanhackweek.github.io</a> repo. The folder structure largely mimics the path structure on the website, but see <em>Location of main content documents</em> below for specifics.</p>
+<p>Once you’ve found the page, there is a pencil icon in the top right to move into editing mode.</p>
+</section>
+<section id="making-edits">
+<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this headline">#</a></h3>
+<p>Most of the pages in the site are Markdown documents with some MyST formatting (see below). While Github can preview the changes to the Markdown, but it cannot parse the MyST, so it is likely to display some funky code blocks in their place. Once you create a PR, you’ll get an accurate preview of changes.</p>
+</section>
+<section id="creating-a-pull-request">
+<h3>Creating a Pull Request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this headline">#</a></h3>
+<p>Once you think you are happy with your edits, give the changes a name, and optionally a description (for example referencing an issue number that the change takes care of).</p>
+<p>Then select <strong>Create a new branch for this commit and start a pull request</strong> to create a PR.</p>
+<p>Github will take the title and description from the commit to start your PR, but it’s also a good place to discuss the changes further.</p>
+<p>Please include <code class="docutils literal notranslate"><span class="pre">&#64;oceanhackweek/website</span></code> in the PR description so the website team gets a notification about the PR.</p>
+<p>Once you create a PR Netlify will generate a preview site using much of the same build commands as the public website. This will allow you (and us) to see the exact effects of your changes.</p>
+</section>
+</section>
+<section id="locally">
+<h2>Locally<a class="headerlink" href="#locally" title="Permalink to this headline">#</a></h2>
+<p>For larger changes, or working with MyST, rST, or Jupyter Notebooks, it’s easier to work on the website locally.</p>
+<section id="setup-for-local-development">
+<h3>Setup for local development<a class="headerlink" href="#setup-for-local-development" title="Permalink to this headline">#</a></h3>
+<p>There are a few steps to get started with local development.</p>
+<section id="forking-the-repo">
+<h4>Forking the repo<a class="headerlink" href="#forking-the-repo" title="Permalink to this headline">#</a></h4>
+<p>The first step to work on the repo is to create your own fork.
+On <a class="reference external" href="https://github.com/oceanhackweek/oceanhackweek.github.io">`oceanhackweek/oceanhackweek.github.io</a> click <strong>Fork</strong> in the upper right corner and create the fork in your personal github account.</p>
+<p>Then click <strong>Code</strong> and clone the repo to your machine. (The Github CLI is nice for working with forks).</p>
+<p>It is worth noting that we are using the <code class="docutils literal notranslate"><span class="pre">source</span></code> branch as the base for this repo, but it is best to create a new branch to work off of for each set of changes and propose them in a Pull Request.</p>
+</section>
+<section id="environment">
+<h4>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">#</a></h4>
+<p>There is a pre-configured conda environment in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>.
+To use it, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">env</span> <span class="pre">-f=./environment.yml</span></code>, then activate with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">ohw-site</span></code>.</p>
+</section>
+<section id="commands">
+<h4>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">live</span></code> - The environment is setup with <a class="reference external" href="https://pypi.org/project/sphinx-autobuild/">sphinx-autobuild</a> which will update open browsers when files are saved. The site will be available at <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> - Launch a one off build of HTML output.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> - Clean all the build directories. This can be useful as Sphinx tries to do incremental builds, and sometimes it will end up out of sync.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">source</span></code> to bring in any changes from the main repo.</p></li>
+</ul>
+</section>
+</section>
+<section id="writing-and-linking-pages">
+<h3>Writing and Linking Pages<a class="headerlink" href="#writing-and-linking-pages" title="Permalink to this headline">#</a></h3>
+<p>Pages can be written as ReStructured Text, Markdown, or Jupyter Notebooks thanks to <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">MyST-NB</a>.</p>
+<p>To include a page into the site navigation, it needs to be included in a <code class="docutils literal notranslate"><span class="pre">toctree</span></code>.
+In most cases the <code class="docutils literal notranslate"><span class="pre">toctree</span></code>s will be found in one of the <code class="docutils literal notranslate"><span class="pre">index.md</span></code> pages.
+The <code class="docutils literal notranslate"><span class="pre">toctree</span></code> on the top level <code class="docutils literal notranslate"><span class="pre">index.md</span></code> controls the horizontal navigation at the top of the site, all other <code class="docutils literal notranslate"><span class="pre">toctree</span></code>s create the left sidebar navigation (the right sidebar navigation is created from headers within a page).</p>
+<p>From <code class="docutils literal notranslate"><span class="pre">./index.md</span></code>:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{toctree}
+:maxdepth: 2
+:hidden:
+about/index.md
+2022/index.md
+resources/index.md
+posts
+```
+</pre></div>
+</div>
+</section>
+<section id="writing-posts">
+<h3>Writing Posts<a class="headerlink" href="#writing-posts" title="Permalink to this headline">#</a></h3>
+<p>Like pages, posts can be written as ReStructured Text, Markdown, or Jupyter notebooks. To be treated as a post, they need to be within the <code class="docutils literal notranslate"><span class="pre">posts/</span></code> directory, and have a selection of metadata.</p>
+<p>The location and structure of the metadata varies depending on filetype. For a full list of the options, see the <a class="reference external" href="https://ablog.readthedocs.io/en/latest/manual/posting-and-listing/">ABlog</a> documentation.</p>
+<section id="markdown">
+<h4>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h4>
+<p>In Markdown, the metadata to create a post can be added as YAML frontmatter.</p>
+<p>For example:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
+date: 2021-08-07
+title: OceanHackWeek 2021 @ Bigelow Labs Recap
+tags: event, recap, OHW21
+category: Event
+<span class="gu">author: Alex Kerney</span>
+<span class="gu">---</span>
+<span class="gh"># OceanHackWeek 2021 @ Bigelow Labs</span>
+
+<span class="ge">_the rest of the post below_</span>
+</pre></div>
+</div>
+<p>The only required metadata tag to make a post is <code class="docutils literal notranslate"><span class="pre">date</span></code>. The rest will either be extracted from the post (the title), derived from <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> (authors), or treated as null (tags and comments).</p>
+<section id="directives">
+<h5>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">#</a></h5>
+<p>MyST-NB/MyST-Parser brings ReStructured Text style directive support to Markdown.
+The <code class="docutils literal notranslate"><span class="pre">toctree</span></code> above is one example, but rather than listing all possibilities, here are some resources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/content/myst.html">Jupyterbook - MyST Markdown Overview</a></p></li>
+<li><p><a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html">MyST syntax guide</a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">Sphinx - Directives</a></p></li>
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html">ReStructued Text - Directives</a></p></li>
+</ul>
+</section>
+</section>
+<section id="restructured-text">
+<h4>ReStructured Text<a class="headerlink" href="#restructured-text" title="Permalink to this headline">#</a></h4>
+<p>ReStructured Text can be written as usual for Sphinx documentation.</p>
+</section>
+<section id="jupyter-notebooks">
+<h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h4>
+<p>It’s a little sneaky to make a Jupyter notebook into a post. The metadata needs to be added to the notebook metadata.</p>
+<p>In JupyterLab, you can do this by clicking the gear at the top of the right sidebar, then expand the <em>Advanced Tools</em> section.</p>
+<p>Then you will see a JSON object with lots distracting Jupyter metadata.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;kernelspec&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;display_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Python 3 (ipykernel)&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;python3&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;language_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;codemirror_mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ipython&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;file_extension&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;.py&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;mimetype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text/x-python&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;nbconvert_exporter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;pygments_lexer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ipython3&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3.7.3&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>To turn it into a post, <code class="docutils literal notranslate"><span class="pre">date</span></code> and <code class="docutils literal notranslate"><span class="pre">title</span></code> keys needs to be added in addition to having the notebook within the <code class="docutils literal notranslate"><span class="pre">posts/</span></code> directory. I’d suggest <code class="docutils literal notranslate"><span class="pre">author</span></code>, <code class="docutils literal notranslate"><span class="pre">category</span></code>, and <code class="docutils literal notranslate"><span class="pre">tags</span></code> as well.</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="w">{</span>
+<span class="w"> </span>   &quot;kernelspec&quot;: {<span class="w"></span>
+<span class="w"> </span>       &quot;display_name&quot;: &quot;Python 3 (ipykernel)&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;language&quot;: &quot;python&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;name&quot;: &quot;python3&quot;<span class="w"></span>
+<span class="w"> </span>   },<span class="w"></span>
+<span class="w"> </span>   &quot;language_info&quot;: {<span class="w"></span>
+<span class="w"> </span>       &quot;codemirror_mode&quot;: {<span class="w"></span>
+<span class="w"> </span>           &quot;name&quot;: &quot;ipython&quot;,<span class="w"></span>
+<span class="w"> </span>           &quot;version&quot;: 3<span class="w"></span>
+<span class="w"> </span>       },<span class="w"></span>
+<span class="w"> </span>       &quot;file_extension&quot;: &quot;.py&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;mimetype&quot;: &quot;text/x-python&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;name&quot;: &quot;python&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;nbconvert_exporter&quot;: &quot;python&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;pygments_lexer&quot;: &quot;ipython3&quot;,<span class="w"></span>
+<span class="w"> </span>       &quot;version&quot;: &quot;3.7.3&quot;<span class="w"></span>
+<span class="w"> </span>   },<span class="w"></span>
+<span class="gi">+    &quot;author&quot;: &quot;Alex Kerney&quot;,</span><span class="w"></span>
+<span class="gi">+    &quot;date&quot;: &quot;2021-11-02&quot;,</span><span class="w"></span>
+<span class="gi">+    &quot;title&quot;: &quot;A notebook post&quot;,</span><span class="w"></span>
+<span class="gi">+    &quot;tags&quot;: [</span><span class="w"></span>
+<span class="gi">+      &quot;notebook&quot;,</span><span class="w"></span>
+<span class="gi">+      &quot;demo&quot;</span><span class="w"></span>
+<span class="gi">+    ],</span><span class="w"></span>
+<span class="gi">+    &quot;category&quot;: &quot;Projects&quot;</span><span class="w"></span>
+<span class="w">}</span>
+</pre></div>
+</div>
+<p>It’s worth noting that Jupyter is strict about JSON formatting, and it will not
+save the changes unless the formatting is correct.
+Namely that means not having trailing <code class="docutils literal notranslate"><span class="pre">,</span></code>s in objects or arrays.
+Once you start editing, you will see a revert or undo symbol show up at the top of the metadata box.
+When the JSON is valid, there will also be a checkmark.
+Click the check, then save the notebook for Sphinx/ABlog to find it.</p>
+</section>
+</section>
+<section id="pull-requests">
+<h3>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">#</a></h3>
+<p>Once you’ve made your changes, create a Pull Request to suggest that we include them in the website.</p>
+<p>Include a description of what the changes are, and maybe a screenshot to help describe them.</p>
+<p>Please tag <code class="docutils literal notranslate"><span class="pre">&#64;oceanhackweek/website</span></code> to notify the website maintainers that you’ve made a PR. If you make a draft PR, you can wait until you are ready, then tag the website maintainers.</p>
+<p>After you create a PR, Netlify will build the site and make a comment with a link to preview your changes. This also makes it easier for us to review the changes, and for you to share them with others.</p>
+</section>
+</section>
+<section id="location-of-main-content-documents">
+<h2>Location of main content documents<a class="headerlink" href="#location-of-main-content-documents" title="Permalink to this headline">#</a></h2>
+<p>While most pages follow the same structure in the repo, as they do on the website, there are a few additional files to be aware of:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conf.pd</span></code> - This is the Sphinx configuration file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> - The conda environment needed to build the website.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> - A pip installable environment to build the website. This is mainly used by Netlify to create previews of Pull Requests. It is generated with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">posts.md</span></code> - A stub page that is replaced when blog posts are generated.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_build/</span></code> - Automatically generated output from Sphinx.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">html/</span></code> - The HTML generated by Sphinx for the website.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_static/</span></code> - Various files that need to be included into the website.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_templates/</span></code> - A collection of Jinja2 templates to control page styling.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_ext/</span></code> - Custom Sphinx extensions.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ohw_team.py</span></code> - Sphinx extension to allow quick embedding of team member info.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">team.yaml</span></code> - Team member information.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

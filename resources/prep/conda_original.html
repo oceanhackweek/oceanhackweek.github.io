@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Conda and installing Python and R environments &#8212; OceanHackWeek  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../index.html">
+<p class="title">OceanHackWeek</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-conda">
+   What is Conda?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-software">
+   Python Software
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-miniconda">
+   Installing Miniconda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows">
+     Windows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linux-and-osx">
+     Linux and OSX
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-anaconda-optional">
+   Installing Anaconda (Optional)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-python">
+   Installing Python
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/resources/prep/conda_original.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="conda-and-installing-python-and-r-environments">
+<h1>Conda and installing Python and R environments<a class="headerlink" href="#conda-and-installing-python-and-r-environments" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="what-is-conda">
+<h2>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="http://conda.pydata.org/docs/"><strong>Conda</strong></a> is an <strong>open source <code class="docutils literal notranslate"><span class="pre">package</span></code> and <code class="docutils literal notranslate"><span class="pre">environment</span></code> management system for any programming languages, but very popular among python community,</strong></p>
+<p>The Hub is pre-configured with a customized “environment” of Python and R packages designed to run all the tutorial notebooks, and supporting a broad range of oceanographic applications. This environment is created and managed using the open-source <a class="reference external" href="https://docs.conda.io"><strong>Conda</strong> package and environment management system</a> for installing multiple versions of software packages together with their dependencies, and convenient switching between environments. Conda runs on Windows, macOS, and Linux: <em>“Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.”</em></p>
+<p>Conda may be used on your computer as well as the Hub …</p>
+<p>https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml</p>
+<p>For Python, the advantage of conda compared to <code class="docutils literal notranslate"><span class="pre">pip</span></code> is that it has a built in environment management system as well as the management of binaries, and non-Python dependencies.</p>
+<p>You do not need administrative or root permissions to install conda if you select a user-writable installation location.</p>
+<p>In the previous lesson we showed you a cloud-based environment for our work during the hackweek. What happens after the event when you want to go home and work with all the libraries we showed you? You will likely also want to have a functioning version of Python on your local laptop if that is not already in place. So this lesson takes you through our recommended procedure for doing that. We suggest you get this set up in advance so that we can help you troubleshoot when you arrive.</p>
+</section>
+<section id="python-software">
+<h2>Python Software<a class="headerlink" href="#python-software" title="Permalink to this headline">#</a></h2>
+<p>Python software is distributed as a series of <em>libraries</em> that are called within your code to perform certain tasks. There are many different collections, or <em>distributions</em> of Python software. Generally you install a specific distribution of Python and then add additional libraries as you need them. There are also several different <em>versions</em> of Python. The two main versions right now are 2.7 and 3.7, although Python 2.7 will not be supported past 2020. Some libraries only work with specific versions of Python.</p>
+<p>So even though Python is one of the most adaptable, easy-to-use software systems, you can see there are still complexities to work out and potential challenges when delivering content to a large group. Therefore we have a number of different ways that we are trying to simplify this process to maximize your learning during the hackweek.</p>
+<p>We also provide instructions for using <a class="reference external" href="https://www.continuum.io">Anaconda</a>, which is our recommended Python distribution, for installing and working with Python on your local computer. We can assist in setting up “conda” environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.</p>
+</section>
+<section id="installing-miniconda">
+<h2>Installing Miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this headline">#</a></h2>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">#</a></h3>
+<p>Click <a class="reference external" href="http://conda.pydata.org/miniconda.html">here</a> to download the proper installer for your Windows platform (64 bits).
+We recommend to download the Python 3 version of Miniconda. You can still create Python 2 environments using the Python 3 version of Miniconda.</p>
+<p>When installing, you will be asked if you wish to make the Anaconda Python your default Python for Windows.
+If you do not have any other installation that is a good option. If you want to keep multiple versions of python on your machine (e.g. ESRI-supplied python, or 64 bit versions of Anaconda), then don’t select the option to modify your path or modify your windows registry settings.</p>
+</section>
+<section id="linux-and-osx">
+<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this headline">#</a></h3>
+<p>You may follow manual steps from <a class="reference external" href="http://conda.pydata.org/miniconda.html">here</a> similar to the instructions on Windows (see above). Alternatively, you can execute these commands on a terminal shell (in this case, the bash shell):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For MacOSX</span>
+<span class="nv">url</span><span class="o">=</span>https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+<span class="c1"># For Linux</span>
+<span class="nv">url</span><span class="o">=</span>https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget <span class="nv">$url</span> -O miniconda.sh
+bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/miniconda/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+conda update conda --yes
+</pre></div>
+</div>
+</section>
+</section>
+<section id="installing-anaconda-optional">
+<h2>Installing Anaconda (Optional)<a class="headerlink" href="#installing-anaconda-optional" title="Permalink to this headline">#</a></h2>
+<p><em>NOTE: If you don’t have time or disk space for the entire distribution do not install Anaconda. Install only <a class="reference external" href="http://conda.pydata.org/miniconda.html">Miniconda</a>, a bootstrap version of Anaconda, which contains only Python, essential packages, and conda. We will provide an environment file to install all the packages necessary for the hackweek.</em></p>
+<p><a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a> is a data science platform that comes with a lot of packages. At its core, Anaconda uses the conda package management system.</p>
+<p>The list of packages included can be found <a class="reference external" href="https://docs.anaconda.com/anaconda/packages/pkg-docs"><em>here</em></a></p>
+<ol class="simple">
+<li><p>To install Anaconda, please click on the link below for your operating system, and follow the instructions on the <a class="reference external" href="https://www.anaconda.com/download/">site</a>.</p></li>
+<li><p>Once Anaconda installation step is finished run <code class="docutils literal notranslate"><span class="pre">python</span></code> in the command line to test if Anaconda is installed correctly. <strong>Note: For windows, please use the Anaconda prompt as the command line. It should be installed with your installation of Anaconda</strong>
+If Anaconda is installed correctly, you should have this prompt, which emphasizes <strong>Anaconda</strong>:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python
+Python <span class="m">3</span>.7.3<span class="p">|</span>Anaconda custom <span class="o">(</span>x86_64<span class="o">)</span><span class="p">|</span> <span class="o">(</span>default, Mar <span class="m">27</span> <span class="m">2019</span>, <span class="m">22</span>:11:17<span class="o">)</span>
+...
+</pre></div>
+</div>
+</section>
+<section id="installing-python">
+<h2>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">#</a></h2>
+<p>We will be using Python 3.6 or 3.7 during the week (either will work). Since Anaconda (on Linux) expects you to work in the “bash” shell, if this is not already your default shell, you need to set it to be so (use the “chsh -s /bin/bash” command to change your default shell to bash) or just run an instance of bash from the command line before issuing “Conda” commands (/bin/bash or where it is located on your system).</p>
+<p>If you are already familiar with Python 2.7, you can take a look at the syntax differences <a class="reference external" href="http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html">here</a>, but the main point to remember is to put the print statements in parentheses:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda create -n py37 <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7
+</pre></div>
+</div>
+<p>To use Python 3.7:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda activate py37
+</pre></div>
+</div>
+<p>To check if you have the correct version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python --version
+</pre></div>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+            &copy; Copyright 2022, OceanHackWeek.<br/>
+          This website is created using <a href="http://sphinx-doc.org/">Sphinx</a> and the tools from <a href="https://executablebooks.org/en/latest/">The Executable Book Project</a>.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
