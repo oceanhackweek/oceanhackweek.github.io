@@ -2,17 +2,19 @@
 
 ## Location
 
-TBD, likely near Brisbane
+Stradbroke Island, Brisbane, AU
 
-## Format: informal in-person gathering
+## Format: in-person
 
-## Applicants profile:
+We are planning for an in-person satellite event with approximately 10-12 participants. We'll watch tutorials together and work on projects within the group and also with participants in other satellites.
 
-## Summary
+<!-- ## Applicants profile: -->
 
-We will have limited support available for regional participants needing to travel.
+## Logistics
 
-Details of the event are still being fleshed out, including the exact location. Check back here soon for more info!
+We will have limited support available for regional participants needing to travel. Details of the event are still being fleshed out. Check back here soon for more info!
+
+If there is specific information you are looking for that will help you make application decisions, feel free to email the event organizer.
 
 ## Organizers
 
