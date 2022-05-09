@@ -4,7 +4,7 @@ Six Regional Satellite Events will take place this year to serve as local connec
 
 Global and satellite participants will have access to the same online resources and common communication channels, and are encouraged to interact one another across time zones and geographical locations especially on project work.
 
-Some satellite events have funding available to support regional travel to the meeting site, while others do not or aim for hosting hybrid meetings. Please check each satellite pages for detail. Note that funding request is _not_ part of the application process, and funding-related information will be provided by the satellite organizers after participants are accepted into the events.
+Some satellite events have funding available to support regional travel to the meeting site, while others do not or aim for hosting hybrid meetings. Please check each satellite page for detail. Note that funding request is _not_ part of the application process. Funding-related information will be provided by the satellite organizers after participants are accepted into the events.
 
 
 For help with time zone conversions, see [https://www.timeanddate.com](https://www.timeanddate.com) or similar sites.
