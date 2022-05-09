@@ -14,7 +14,6 @@ The OceanHackWeek program consists of hands-on tutorials, visual presentations, 
 ```{admonition} Applications for OHW22 are now open!
 :class: important
 
-Applications opened on May 9. 
 **To apply, please [fill out this form](https://form.jotform.com/221166776095160) by the end of June 1, 2022.**  
 Accepted applicants will be notified no later than June 18, 2022.
 ```
@@ -54,7 +53,7 @@ We expect all participants to be engaged in the team projects and focus during t
 
 ### Q: I am an undergraduate, and I'm not sure I'm ready for this
 
-This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program. See [here for details](seattle/index).
+This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington (Seattle, WA) will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program, with the regular OHW activites in the second week. See [here for details](seattle/index).
 
 ### Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?
 
@@ -69,7 +68,7 @@ Participants should familiarize themselves with the materials included in [Pytho
 
 ### Q: I don't know the first thing about version revision/control systems. Can I still apply?
 
-During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. Again we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for git.
+During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. In previous years we have offered refresher in the week prior to the actual OHW event. The organizing committee is deciding whether we can offer this in OHW22. You are welcome to check back here for this info, but we want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basic. 
 
 Note that we will require you to create a [GitHub account](https://github.com/) before completing the application.
 
