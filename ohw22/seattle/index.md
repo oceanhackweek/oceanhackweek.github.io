@@ -36,7 +36,7 @@ For questions specific to the regular OHW satellite, please email Dr. Wu-Jung Le
 
 ## Undergraduate summer program (August 8-26, 2022)
 
-This "Data Science in Oceanography" undergraduate program will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this longer undergraduate program.
+This "Data Science in Oceanography" undergraduate program will be held in person at the University of Washington, Seattle campus and will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this longer undergraduate program.
 
 See {download}`details in the program flyer <./undergrad_flyer.pdf>`
 
