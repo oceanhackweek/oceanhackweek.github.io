@@ -31,13 +31,13 @@ Apply to OceanHackWeek 2022!
 
 Global and satellite participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
 
+### Global Virtual Event
+
 ```{image} ../assets/images/ohw_hacking/ohw21-slack.png
 :alt: OHW21 Slack exchanges
 :width: 220px
 :align: right
 ```
-
-### Global Virtual Event
 The **Global Virtual Event** will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW22 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. The tutorials will be recorded and posted after the presentation. The exact hours of this global event are still being finalized, but we anticipate the activity time to be structured around the US Pacific Time (UTC-7) this year.
 
 ### Regional Satellites

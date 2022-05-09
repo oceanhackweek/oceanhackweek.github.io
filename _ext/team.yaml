@@ -46,6 +46,7 @@ team:
     affiliate: UW School of Oceanography
     image_url: https://www.ocean.washington.edu/files/alisongray-2018-20180717023407_smsq.jpg
     github_user: alisonrgray
+    email: argray@uw.edu
     roles:
       - OHW21 Organizer
       - OHW22 Organizer - Seattle UG
@@ -217,7 +218,7 @@ team:
     title: Assistant Professor
     affiliate: UW School of Oceanography
     image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
-    github_user: 
+    github_user: ONR-MURI
     email: gmanuch@uw.edu
     roles:
       - OHW22 Organizer - Seattle UG
@@ -237,7 +238,7 @@ team:
     title: Specialist, Ocean-Atmosphere Interactions
     affiliate: Instituto del Mar del Perú (IMARPE)
     image_url: https://media-exp1.licdn.com/dms/image/C4E03AQE44LX8nI8m7Q/profile-displayphoto-shrink_800_800/0/1584919922164?e=1657152000&v=beta&t=RRW1iE8CdFpdFAhWZr8vQvX266iIW5LI9dPlGcx3UJE
-    github_user:
+    github_user: davecorrea
     email: dcorrea@imarpe.gob.pe
     roles:
       - OHW18 Participant
