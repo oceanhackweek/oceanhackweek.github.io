@@ -46,11 +46,8 @@ Details of the event are still being fleshed out. Check back here soon for more 
 ## Australia
 
 - Time zone: UTC+10
-- Format: informal in-person gathering
-- Location: TBD, likely near Brisbane
-We will have limited support available for regional participants needing to travel.
-
-Details of the event are still being fleshed out, including the exact location. Check back here soon for more info!
+- Format: in-person gathering
+- Location: Stradbroke Island, Brisbane, Australia
 
 **See [more details and contact info here.](./australia/index)**
 
