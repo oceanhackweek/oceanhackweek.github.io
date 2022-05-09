@@ -52,7 +52,7 @@ For questions specific to the undergraduate summer program, please email Dr. Geo
 ## Organizers
 
 ```{ohw-team}
-:roles: OHW22 Organizer - UW*
+:roles: OHW22 Organizer - Seattle*
 :email_icon:
 ```
 

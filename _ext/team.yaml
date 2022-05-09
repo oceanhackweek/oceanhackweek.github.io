@@ -48,7 +48,7 @@ team:
     github_user: alisonrgray
     roles:
       - OHW21 Organizer
-      - OHW22 Organizer - UW UG
+      - OHW22 Organizer - Seattle UG
 
   - name: Joseph Gum
     title: Data Analyst
@@ -100,7 +100,7 @@ team:
   - name: Wu-Jung Lee
     title: Senior Oceanographer
     affiliate: UW Applied Physics Laboratory
-    image_url: https://leewujung.github.io/img/wjlee_pic-01.jpg
+    image_url: https://uw-echospace.github.io/author/wu-jung-lee/avatar_hue32bd5ea14559ee6625b974cf92f99ba_1703649_270x270_fill_q90_lanczos_center.jpg
     github_user: leewujung
     email: leewj@uw.edu
     roles:
@@ -112,7 +112,7 @@ team:
       - OHW19 Organizer
       - OHW20 Organizer
       - OHW21 Organizer
-      - OHW22 Organizer - UW
+      - OHW22 Organizer - Seattle
 
   - name: Paige Martin
     title: Postdoctoral Researcher
@@ -138,7 +138,7 @@ team:
       - OHW19 Organizer
       - OHW20 Organizer
       - OHW21 Organizer
-      - OHW22 Organizer - UW
+      - OHW22 Organizer - Seattle
       - OHW22 Organizer - Espanol
 
   - name: Catherine Mitchell
@@ -189,7 +189,7 @@ team:
     roles:
       - Steering Committee
       - OHW21 Organizer
-      - OHW22 Organizer - UW
+      - OHW22 Organizer - Seattle
 
   - name: Nick Mortimer
     title: Senior Engineer
@@ -220,7 +220,7 @@ team:
     github_user: 
     email: gmanuch@uw.edu
     roles:
-      - OHW22 Organizer - UW UG
+      - OHW22 Organizer - Seattle UG
 
   - name: Steve Diggs
     title: Data Manager
