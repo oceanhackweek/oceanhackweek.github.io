@@ -12,7 +12,9 @@ We are planning for an in-person satellite event with approximately 10-12 partic
 
 ## Logistics
 
-We will have limited support available for regional participants needing to travel. Details of the event are still being fleshed out. Check back here soon for more info!
+We will have limited support available for regional participants needing to travel. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
+
+Details of the event are still being fleshed out. Check back here soon for more info!
 
 If there is specific information you are looking for that will help you make application decisions, feel free to email the event organizer.
 
