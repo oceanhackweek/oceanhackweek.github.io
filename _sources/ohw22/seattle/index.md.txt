@@ -2,7 +2,7 @@
 
 We will have two sub-programs in the US Northwest satellite, including a regular 5-day OHW satellite and a 3-week undergraduate summer program. 
 
-These two sub-programs are coordinated in their planning and coincides in time. Participatns are encouraged to interact fully across the groups and with other satellites.
+These two sub-programs are coordinated in their planning and coincides in time. Participants are encouraged to interact fully across the groups and with other satellites.
 
 
 
