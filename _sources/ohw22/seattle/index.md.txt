@@ -27,7 +27,7 @@ We welcome participants from all career stages and encourage applications from g
 
 **Logistics**
 
-We are able to provide lodging for a small number of participants who need to travel within the US Northwest region to the event. If you need support to travel, please let us know the reasons and provide an estimate of the cost in your application form. This request is _not_ part of the applicant evaluation process.
+We are able to provide lodging for a small number of participants who need to travel within the US Northwest region to the event. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
 
 **Contact**
 
@@ -42,7 +42,7 @@ See {download}`details in the program flyer <./undergrad_flyer.pdf>`
 
 **Logistics**
 
-We are able to provide undergraduate participants full support for lodging and meals, as well as partial travel reimbursement.
+We are able to provide undergraduate participants full support for lodging and meals, as well as partial travel reimbursement. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
 
 **Contact**
 

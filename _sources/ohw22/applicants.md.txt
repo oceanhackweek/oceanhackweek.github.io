@@ -11,7 +11,7 @@ OceanHackWeek 2022 (OHW22) will happen from **August 15-19, 2022**. The workshop
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. Participants can apply for being in one of the regional satellites or the global virtual event. Regional satellite events are connected closely with the global virtual event, while providing additional collaboration and networking opportunities on a regional basis.
 
-```{admonition} Applications for OHW22 are now open!
+```{admonition} Application for OHW22 is now open!
 :class: important
 
 **To apply, please [fill out this form](https://form.jotform.com/221166776095160) by the end of June 1, 2022.**  
