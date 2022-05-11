@@ -122,6 +122,9 @@ team:
     github_user: paigem
     roles:
       - Steering Committee
+      - Tutorials
+      - Infrastructure
+      - Website
       - OHW21 Organizer - Australia
       - OHW22 Organizer
 
