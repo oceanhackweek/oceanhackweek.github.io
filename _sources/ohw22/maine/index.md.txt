@@ -1,7 +1,7 @@
 # US Northeast
 
 This year we are having two parallel East Coast events in Maine.
-One event will be held at Bigelow Labs in Boothbay, and the other at Gulf of Maine Research Institute in Portland
+One event will be held at Bigelow Labs in Boothbay, and the other at the Gulf of Maine Research Institute in Portland
 ​
 ## Location
 ​
@@ -30,3 +30,7 @@ We welcome participants from all career stages and encourage applications from g
 :roles: OHW22 Organizer - Maine
 :email_icon:
 ```
+
+If you have general questions about the events at Bigelow or the Gulf of Maine Research Institute, please ask them in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Northeast%22). 
+Please the organizers with `@oceanhackweek/ohw22-organizers-northeast` and add a `OHW22 - Northeast` label so that others can find answers about our satellite.
+You are also welcome to reach out to us by email.
