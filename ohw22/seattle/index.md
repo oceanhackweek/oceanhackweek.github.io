@@ -31,7 +31,7 @@ We are able to provide lodging for a small number of participants who need to tr
 
 **Contact**
 
-For questions specific to the regular OHW satellite, please email Dr. Wu-Jung Lee (leewj@uw.edu).
+For questions specific to the regular OHW satellite, please ask in our [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Northwest%22). Please tag the organizers with `@oceanhackweek/ohw22-organizers-northwest` and add a `OHW22 - Northwest` label so that others can find answers. Additionally you can email Dr. Wu-Jung Lee (leewj@uw.edu).
 
 
 ## Undergraduate summer program (August 8-26, 2022)

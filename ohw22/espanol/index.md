@@ -39,3 +39,6 @@ The in-person gatherings are intended for local participants. The online gatheri
 :roles: OHW22 Organizer - Espanol
 :email_icon:
 ```
+
+If you have general questions about the Español satellite, please ask them in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Espa%C3%B1ol%22).
+Please tag the organizers with `@oceanhackweek/ohw22-organizers-espanol` and add a `OHW22 - Espanol` label so that others can find answers about the satellite.
