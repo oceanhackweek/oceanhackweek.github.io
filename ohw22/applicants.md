@@ -19,9 +19,9 @@ Accepted applicants will be notified no later than June 18, 2022.
 ```
 
 Please see the FAQs below for answers to common questions.
-For additional questions, please email 
+For additional questions, please post in our [discussions on Github](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email 
 <a href="mailto:oceanhkw@uw.edu" target="_blank">oceanhkw@uw.edu</a>.
-For satellite event-specific questions, please contact satellite organizers listed in the main [Regional Satellites page](satellites) or in the individual event pages.
+For satellite event-specific questions, please post in the discussions, or contact satellite organizers listed in the individual event pages.
 
 **If you are applying for the undergraduate summer program “Data Science in Oceanography”** that will take place on August 8-26, 2022 in coordination with the US Northwest OHW satellite, see [this page](seattle/index) for more information and apply using the same OHW form.
 
@@ -31,7 +31,7 @@ For satellite event-specific questions, please contact satellite organizers list
 
 ### Q: The satellite event in my region doesn't have a lot of details yet, what should I do?
 
-Some regional satellite organizers are still fleshing out details of the event, including the exact location. Feel free to email them if there is specific information you need from them for you to make decisions on your application.
+Some regional satellite organizers are still fleshing out details of the event, including the exact location. Feel free to ask in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email them if there is specific information you need from them for you to make decisions on your application.
 
 ### Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?
 

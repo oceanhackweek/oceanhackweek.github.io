@@ -26,3 +26,6 @@ The goal is to give local students who believe are not ready to apply to the mai
 :roles: OHW22 Organizer - Florianopolis
 :email_icon:
 ```
+
+If you have general questions about the event at UFSC, please ask them in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Brazil%22).
+Please tag the organizers with `@oceanhackweek/ohw22-organizers-brazil` and add a `OHW22 - Brazil` label so that others can find answers about the satellite.

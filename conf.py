@@ -64,6 +64,11 @@ html_theme_options = {
             "icon": "fab fa-github-square",
         },
         {
+            "name": "Discussions",
+            "url": "https://github.com/orgs/oceanhackweek/discussions",
+            "icon": "fas fa-comments",
+        },
+        {
             "name": "Twitter",
             "url": "https://twitter.com/oceanhackweek",
             "icon": "fab fa-twitter-square",
