@@ -172,7 +172,7 @@ team:
       - Infrastructure
       - Website
       - OHW21 Organizer - Australia
-      - OHW22 Organizer - Australia
+      - OHW22 Organizer
 
   - name: Nick Record
     title: Senior Research Scientist
@@ -197,7 +197,7 @@ team:
 
   - name: Nick Mortimer
     title: Senior Engineer
-    affiliate: CSIRO Climate Science Centre, Australia
+    affiliate: CSIRO Oceans and Atmosphere, Australia
     image_url: https://avatars.githubusercontent.com/u/4338975?v=4
     github_user: NickMortimer
     email: Nick.Mortimer@csiro.au
