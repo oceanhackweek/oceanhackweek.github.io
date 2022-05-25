@@ -1,5 +1,7 @@
 # OHW-Español
 
+[CLIQUEYE AQUI PARA IR A LA PAGINA EN ESPANOL](XYZ)
+
 A group of Spanish-speaking OceanHackWeek organizers and former OceanHackWeek participants came together in October 2021 to work together to advance data science in Oceanography in Latin America and other Spanish-speaking communities. We are organizing an OceanHackWeek 2022 satellite event that will have in-person gatherings in Perú and Uruguay and a virtual gathering for anyone independent of their location. We will work together on tutorials and projects across these groups, and in coordination with the rest of OceanHackWeek. Communication in this satellite will be mainly in Spanish, but will switch to English when connecting with others across OceanHackWeek. Specific ideas that have been proposed include:
 
 - Perú: Tutorials and projects exploring and accessing satellite wind data and products in Python, to make statistics, associated with the Peruvian coastal upwelling process.
@@ -32,6 +34,8 @@ The in-person gatherings are intended for local participants. The online gatheri
 4. Participants can asynchronously work on projects with participants of other OHW events (either the global virtual event or other satellites). Or participants can work on projects synchronously with other OHW Espanol participants.
 5. Encourage participants to communicate with the main event (in English) and other satellite events to augment their OHW experience.
 
+If you have general questions about the Español satellite, please ask them in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Espa%C3%B1ol%22).
+Please tag the organizers with `@oceanhackweek/ohw22-organizers-espanol` and add a `OHW22 - Espanol` label so that others can find answers about the satellite.
 
 ## Organizers
 
@@ -40,5 +44,9 @@ The in-person gatherings are intended for local participants. The online gatheri
 :email_icon:
 ```
 
-If you have general questions about the Español satellite, please ask them in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Espa%C3%B1ol%22).
-Please tag the organizers with `@oceanhackweek/ohw22-organizers-espanol` and add a `OHW22 - Espanol` label so that others can find answers about the satellite.
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+Página en español <index.es>
+```
