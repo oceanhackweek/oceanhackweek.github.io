@@ -1,6 +1,6 @@
 # OHW-Español
 
-[CLIQUEYE AQUI PARA IR A LA PAGINA EN ESPANOL](XYZ)
+**(Ir a la [página en español, aquí](index.es))**
 
 A group of Spanish-speaking OceanHackWeek organizers and former OceanHackWeek participants came together in October 2021 to work together to advance data science in Oceanography in Latin America and other Spanish-speaking communities. We are organizing an OceanHackWeek 2022 satellite event that will have in-person gatherings in Perú and Uruguay and a virtual gathering for anyone independent of their location. We will work together on tutorials and projects across these groups, and in coordination with the rest of OceanHackWeek. Communication in this satellite will be mainly in Spanish, but will switch to English when connecting with others across OceanHackWeek. Specific ideas that have been proposed include:
 
