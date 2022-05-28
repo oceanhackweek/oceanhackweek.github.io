@@ -126,7 +126,7 @@ team:
       - Infrastructure
       - Website
       - OHW21 Organizer - Australia
-      - OHW22 Organizer
+      - OHW22 Organizer - Global
 
   - name: Emilio Mayorga
     title: Senior Oceanographer
@@ -172,7 +172,7 @@ team:
       - Infrastructure
       - Website
       - OHW21 Organizer - Australia
-      - OHW22 Organizer
+      - OHW22 Organizer - Global
 
   - name: Nick Record
     title: Senior Research Scientist
@@ -215,7 +215,7 @@ team:
     roles:
       - Steering Committee
       - OHW20 Organizer
-      - OHW22 Organizer
+      - OHW22 Organizer - Global
 
   - name: Georgy Manucharyan
     title: Assistant Professor
