@@ -42,6 +42,7 @@ exclude_patterns = [
     "jupyter_execute/**/*",
     "_InstructionSiteUpdates.md",
 ]
+
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 # I'm using a custom footer in _templates
 html_show_sphinx = True
@@ -90,7 +91,7 @@ html_context = {
     "github_version": "source",
 }
 
-
+html_title = "OceanHackWeek"
 # html_favicon = "_static/magnifying.ico"
 html_static_path = ["_static"]
 html_sidebars = {
@@ -113,6 +114,7 @@ html_sidebars = {
         # "archives.html", "tags.html"
     ],
 }
+
 blog_baseurl = ""
 blog_title = "OceanHackWeek"
 blog_path = "posts"
@@ -128,8 +130,6 @@ myst_admonition_enable = True
 myst_deflist_enable = True
 myst_update_mathjax = False
 myst_enable_extensions = ["substitution", "colon_fence"]
-
-# panels_add_bootstrap_css = False
 
 extensions += ["ablog"]
 
