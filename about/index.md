@@ -11,6 +11,14 @@ Its objectives are to:
 
 Learn more by browsing our [previous OceanHackWeek events](pasthackweeks), held annually since 2018. 
 
+## OceanHackWeek Presentations
+
+Lee, W-J., Tan, A., Staneva, V., Fernandes, F., Gum, J., Mayorga, E., Crone, T., Abernathey, R. (2020) Building Oceanhackweek: a week of data science, hacking, collaboration and more. 
+[Poster abstract](https://agu.confex.com/agu/osm20/meetingapp.cgi/Paper/649702) ED24C-3618, [Ocean Sciences Meeting 2020](https://www.agu.org/Ocean-Sciences-Meeting), 16-21 Feb, San Diego, CA. - {download}`Poster pdf<../_static/Lee2020_PosterOceanHackWeek_OSM20_ED24C-3618.pdf>`
+
+Mayorga E., Biddle M., Fernandes F., Gentemann C., Gum J., Gumustel D., Kerney A., Koh J., Lee W. J., Martin P., Mitchell C., Moore T., Record N., Tan A. (2022) OceanHackWeek (OHW) - A collaborative model for expanding data science proficiency in oceanography. 
+[Poster abstract](https://osm2022.secure-platform.com/a/gallery/rounds/3/details/8367) 8375, [Ocean Sciences Meeting 2022](https://www.aslo.org/osm2022/), 24 Feb - 4 Mar, Online. - {download}`Poster pdf<../_static/Mayorga2022_PosterOceanHackWeek_OSM22_8675_odp03.pdf>`
+
 ## What is a HackWeek?
 
 ```{image} ../assets/images/ohw_hacking/ohw21-PXL_20210803_151753297-small.jpg
