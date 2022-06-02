@@ -9,7 +9,7 @@ Gulf of Maine Research Institute, Portland, ME and/or Bigelow Laboratory for Oce
 ​
 ## Format: In-person
 ​
-We have reserved rooms at each location to watch the tutorials and work on projects. There is no travel, lodging or meal support provided.
+We have reserved confrence rooms at each location to watch the tutorials and work on projects. __There is no travel, lodging or meal support provided.__
 ​
 
 Once participants have been selected we will reach out to see which location people would prefer to be at.
