@@ -53,7 +53,7 @@ We expect all participants to be engaged in the team projects and focus during t
 
 ### Q: I am an undergraduate, and I'm not sure I'm ready for this
 
-This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington (Seattle, WA) will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program, with the regular OHW activites in the second week. See [here for details](seattle/index).
+This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington (Seattle, WA) will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program, with the regular OHW activities in the second week. See [here for details](seattle/index).
 
 ### Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?
 
