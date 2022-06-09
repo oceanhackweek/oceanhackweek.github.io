@@ -7,6 +7,19 @@ Un grupo de organizadoras, organizadores y participantes de ediciones previas  d
 
 Los tutoriales presentados en los eventos en persona también estarán disponible para las personas que participen en línea.
 
+:::{admonition} ¡Aplica al OceanHackWeek 2022!
+:class: note
+
+**La fecha límite ha sido *extendida al 15 de JUNIO, 2022*.** Visita la  [página de Información para aplicantes (en inglés)](../applicants) para mayor información y para acceder al formulario de aplicación. 
+
+```{button-link} ../../applicants
+:color: primary
+:expand:
+:tooltip: Aplica a OceanHackWeek 2022
+Aplica a  OceanHackWeek 2022
+```
+:::
+
 ## Formato
 
 Híbrido, es decir los participantes podrán unirse al evento en línea o en persona. En breve se compartirá más información. 
