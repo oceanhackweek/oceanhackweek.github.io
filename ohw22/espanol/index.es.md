@@ -12,7 +12,7 @@ Los tutoriales presentados en los eventos en persona también estarán disponibl
 
 **La fecha límite ha sido *extendida al 15 de JUNIO, 2022*.** Visita la  [página de Información para aplicantes (en inglés)](../applicants) para mayor información y para acceder al formulario de aplicación. 
 
-```{button-link} ../../applicants
+```{button-link} ../applicants
 :color: primary
 :expand:
 :tooltip: Aplica a OceanHackWeek 2022
