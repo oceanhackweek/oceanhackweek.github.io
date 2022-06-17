@@ -23,6 +23,7 @@ team:
     email: ocefpaf@gmail.com
     roles:
       - Steering Committee
+      - Application Selection
       - Tutorials
       - Infrastructure
       - OHW18 Organizer
@@ -138,6 +139,7 @@ team:
       - Steering Committee
       - Applicant Selection
       - Website
+      - Financial Planning
       - OHW18 Organizer
       - OHW19 Organizer
       - OHW20 Organizer
@@ -168,9 +170,6 @@ team:
     github_user: Thomas-Moore-Creative
     roles:
       - Steering Committee
-      - Projects
-      - Infrastructure
-      - Website
       - OHW21 Organizer - Australia
       - OHW22 Organizer - Global
 
@@ -192,6 +191,7 @@ team:
     github_user: dgumustel
     roles:
       - Steering Committee
+      - Tutorials
       - OHW21 Organizer
       - OHW22 Organizer - Seattle
 
@@ -214,6 +214,7 @@ team:
     github_user: sophieclayton
     roles:
       - Steering Committee
+      - Projects
       - OHW20 Organizer
       - OHW22 Organizer - Global
 
@@ -266,3 +267,13 @@ team:
     roles:
       - OHW20 Participant
       - OHW22 Organizer - Espanol
+
+  - name: Nora Loose
+    title: Postdoc
+    affiliate: University of Colorado, Boulder
+    image_url: https://avatars.githubusercontent.com/u/23617395?v=4
+    github_user: NoraLoose
+    email: nora.loose@gmail.com
+    roles:
+      - Projects
+      - OHW20 Participant
