@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Task Groups &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Past OHW Events" href="pasthackweeks.html" />
+    <link rel="prev" title="Steering Committee" href="steering_committee.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="pasthackweeks.html">
+  Past OHW Events
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../ohw22/index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="steering_committee.html">
+   Steering Committee
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Task Groups
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pasthackweeks.html">
+   Past OHW Events
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="code-of-conduct.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tutorials">
+   Tutorials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projects">
+   Projects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#financial-planning">
+   Financial Planning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#participant-application-selection">
+   Participant Application &amp; Selection
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#website-and-communication">
+   Website and Communication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#infrastructure">
+   Infrastructure
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/about/task-groups.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <section id="task-groups">
+<h1>Task Groups<a class="headerlink" href="#task-groups" title="Permalink to this heading">#</a></h1>
+<p>In order to make OceanHackWeek happen each year, we’ve found that we have a few core sets of tasks.</p>
+<p>Accordingly we organize ourselves around those tasks, both so that we have a smaller number of folks to make decisions, but also to make it easier to know who to talk to about any issues.</p>
+<p>Most of these groups have or will have Github teams &amp; Slack user group or channel that you can use to communicate with them.</p>
+<section id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this heading">#</a></h2>
+<p>Developing the flow of the week and figuring out what is key for us to teach and show.</p>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/orgs/oceanhackweek/teams/tutorials">&#64;oceanhackweek/tutorials</a></p></li>
+<li><p>Slack: &#64;help-tutorials</p></li>
+</ul>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Filipe Fernandes" class="card-image-top" src="https://oceanhackweek.github.io/assets/images/filipe.jpg" />
+<div class="card-body docutils">
+<p class="h5">Filipe Fernandes<a class="fab fa-github ml-1 reference external" href="https://github.com/ocefpaf"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:ocefpaf&#37;&#52;&#48;gmail&#46;com"><span></span></a></p>
+<span>Research Software Engineer - </span><em>NOAA IOOS</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Wu-Jung Lee" class="card-image-top" src="https://uw-echospace.github.io/author/wu-jung-lee/avatar_hue32bd5ea14559ee6625b974cf92f99ba_1703649_270x270_fill_q90_lanczos_center.jpg" />
+<div class="card-body docutils">
+<p class="h5">Wu-Jung Lee<a class="fab fa-github ml-1 reference external" href="https://github.com/leewujung"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:leewj&#37;&#52;&#48;uw&#46;edu"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Paige Martin" class="card-image-top" src="https://ocean-transport.github.io/_images/paige.jpg" />
+<div class="card-body docutils">
+<p class="h5">Paige Martin<a class="fab fa-github ml-1 reference external" href="https://github.com/paigem"><span></span></a></p>
+<span>Postdoctoral Researcher - </span><em>Australian National University / Lamont-Doherty Earth Science</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Catherine Mitchell" class="card-image-top" src="https://www.bigelow.org/img/people/cmitchell.png" />
+<div class="card-body docutils">
+<p class="h5">Catherine Mitchell<a class="fab fa-github ml-1 reference external" href="https://github.com/cathmmitchell"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:cmitchell&#37;&#52;&#48;bigelow&#46;org"><span></span></a></p>
+<span>Senior Research Scientist - </span><em>Bigelow Laboratory for Ocean Sciences</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Derya Gumustel" class="card-image-top" src="https://avatars.githubusercontent.com/u/51346322?v=4" />
+<div class="card-body docutils">
+<p class="h5">Derya Gumustel<a class="fab fa-github ml-1 reference external" href="https://github.com/dgumustel"><span></span></a></p>
+<span>Data Analytics Instructor - </span><em>General Assembly</em></div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects">
+<h2>Projects<a class="headerlink" href="#projects" title="Permalink to this heading">#</a></h2>
+<p>Wrangling all the crazy ideas that our participants &amp; leaders have.</p>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/orgs/oceanhackweek/teams/projects">&#64;oceanhackweek/projects</a></p></li>
+<li><p>Slack: &#64;help-projects</p></li>
+</ul>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Joseph Gum" class="card-image-top" src="https://oceanhackweek.github.io/assets/images/jgum.jpg" />
+<div class="card-body docutils">
+<p class="h5">Joseph Gum<a class="fab fa-github ml-1 reference external" href="https://github.com/asx-"><span></span></a></p>
+<span>Data Analyst - </span><em>University of Hawaii at Manoa</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Catherine Mitchell" class="card-image-top" src="https://www.bigelow.org/img/people/cmitchell.png" />
+<div class="card-body docutils">
+<p class="h5">Catherine Mitchell<a class="fab fa-github ml-1 reference external" href="https://github.com/cathmmitchell"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:cmitchell&#37;&#52;&#48;bigelow&#46;org"><span></span></a></p>
+<span>Senior Research Scientist - </span><em>Bigelow Laboratory for Ocean Sciences</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Sophie Clayton" class="card-image-top" src="https://avatars.githubusercontent.com/u/7740937?v=4" />
+<div class="card-body docutils">
+<p class="h5">Sophie Clayton<a class="fab fa-github ml-1 reference external" href="https://github.com/sophieclayton"><span></span></a></p>
+<span>Assistant Professor of Oceanography - </span><em>Old Dominion University</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Nora Loose" class="card-image-top" src="https://avatars.githubusercontent.com/u/23617395?v=4" />
+<div class="card-body docutils">
+<p class="h5">Nora Loose<a class="fab fa-github ml-1 reference external" href="https://github.com/NoraLoose"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:nora&#46;loose&#37;&#52;&#48;gmail&#46;com"><span></span></a></p>
+<span>Postdoc - </span><em>University of Colorado, Boulder</em></div>
+</div>
+</div>
+</div>
+</section>
+<section id="financial-planning">
+<h2>Financial Planning<a class="headerlink" href="#financial-planning" title="Permalink to this heading">#</a></h2>
+<p>If you’d like to give us money to help OceanHackWeek keep happening, or you’ve got an idea where to find some, let this team know.</p>
+<ul class="simple">
+<li><p>Slack: &#64;financial-planning</p></li>
+</ul>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Wu-Jung Lee" class="card-image-top" src="https://uw-echospace.github.io/author/wu-jung-lee/avatar_hue32bd5ea14559ee6625b974cf92f99ba_1703649_270x270_fill_q90_lanczos_center.jpg" />
+<div class="card-body docutils">
+<p class="h5">Wu-Jung Lee<a class="fab fa-github ml-1 reference external" href="https://github.com/leewujung"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:leewj&#37;&#52;&#48;uw&#46;edu"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Emilio Mayorga" class="card-image-top" src="https://staff.washington.edu/emiliom/images/emilio-2021_03_26-headshot.jpg" />
+<div class="card-body docutils">
+<p class="h5">Emilio Mayorga<a class="fab fa-github ml-1 reference external" href="https://github.com/emiliom"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:emiliom&#37;&#52;&#48;uw&#46;edu"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Catherine Mitchell" class="card-image-top" src="https://www.bigelow.org/img/people/cmitchell.png" />
+<div class="card-body docutils">
+<p class="h5">Catherine Mitchell<a class="fab fa-github ml-1 reference external" href="https://github.com/cathmmitchell"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:cmitchell&#37;&#52;&#48;bigelow&#46;org"><span></span></a></p>
+<span>Senior Research Scientist - </span><em>Bigelow Laboratory for Ocean Sciences</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Nick Record" class="card-image-top" src="https://www.bigelow.org/img/people/nrecord.png" />
+<div class="card-body docutils">
+<p class="h5">Nick Record<a class="fab fa-github ml-1 reference external" href="https://github.com/SeascapeScience"><span></span></a></p>
+<span>Senior Research Scientist - </span><em>Bigelow Laboratory for Ocean Sciences</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Steve Diggs" class="card-image-top" src="https://scripps.ucsd.edu/sites/default/files/profilePhoto/diggs_web.jpg" />
+<div class="card-body docutils">
+<p class="h5">Steve Diggs<a class="fab fa-github ml-1 reference external" href="https://github.com/sdiggs"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:sdiggs&#37;&#52;&#48;ucsd&#46;edu"><span></span></a></p>
+<span>Data Manager - </span><em>Scripps Institution of Oceanography</em></div>
+</div>
+</div>
+</div>
+</section>
+<section id="participant-application-selection">
+<h2>Participant Application &amp; Selection<a class="headerlink" href="#participant-application-selection" title="Permalink to this heading">#</a></h2>
+<p>The participant application and selection team develops the application process and form, and provides criteria for selection of participants.</p>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Joseph Gum" class="card-image-top" src="https://oceanhackweek.github.io/assets/images/jgum.jpg" />
+<div class="card-body docutils">
+<p class="h5">Joseph Gum<a class="fab fa-github ml-1 reference external" href="https://github.com/asx-"><span></span></a></p>
+<span>Data Analyst - </span><em>University of Hawaii at Manoa</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Wu-Jung Lee" class="card-image-top" src="https://uw-echospace.github.io/author/wu-jung-lee/avatar_hue32bd5ea14559ee6625b974cf92f99ba_1703649_270x270_fill_q90_lanczos_center.jpg" />
+<div class="card-body docutils">
+<p class="h5">Wu-Jung Lee<a class="fab fa-github ml-1 reference external" href="https://github.com/leewujung"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Emilio Mayorga" class="card-image-top" src="https://staff.washington.edu/emiliom/images/emilio-2021_03_26-headshot.jpg" />
+<div class="card-body docutils">
+<p class="h5">Emilio Mayorga<a class="fab fa-github ml-1 reference external" href="https://github.com/emiliom"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Catherine Mitchell" class="card-image-top" src="https://www.bigelow.org/img/people/cmitchell.png" />
+<div class="card-body docutils">
+<p class="h5">Catherine Mitchell<a class="fab fa-github ml-1 reference external" href="https://github.com/cathmmitchell"><span></span></a></p>
+<span>Senior Research Scientist - </span><em>Bigelow Laboratory for Ocean Sciences</em></div>
+</div>
+</div>
+</div>
+</section>
+<section id="website-and-communication">
+<h2>Website and Communication<a class="headerlink" href="#website-and-communication" title="Permalink to this heading">#</a></h2>
+<p>This team manages the website and some of the other outward communication.</p>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/orgs/oceanhackweek/teams/website/discussions">&#64;oceanhackweek/website</a></p></li>
+<li><p>Slack: &#64;help-website</p></li>
+</ul>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Alex Kerney" class="card-image-top" src="https://gmri-org-production.s3.amazonaws.com/images/Alex_Kerney.a5935ce3.fill-600x600-c75.jpg" />
+<div class="card-body docutils">
+<p class="h5">Alex Kerney<a class="fab fa-github ml-1 reference external" href="https://github.com/abkfenris"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:akerney&#37;&#52;&#48;gmri&#46;org"><span></span></a></p>
+<span>Web Application Developer - </span><em>Gulf of Maine Research Institute</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Paige Martin" class="card-image-top" src="https://ocean-transport.github.io/_images/paige.jpg" />
+<div class="card-body docutils">
+<p class="h5">Paige Martin<a class="fab fa-github ml-1 reference external" href="https://github.com/paigem"><span></span></a></p>
+<span>Postdoctoral Researcher - </span><em>Australian National University / Lamont-Doherty Earth Science</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Emilio Mayorga" class="card-image-top" src="https://staff.washington.edu/emiliom/images/emilio-2021_03_26-headshot.jpg" />
+<div class="card-body docutils">
+<p class="h5">Emilio Mayorga<a class="fab fa-github ml-1 reference external" href="https://github.com/emiliom"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:emiliom&#37;&#52;&#48;uw&#46;edu"><span></span></a></p>
+<span>Senior Oceanographer - </span><em>UW Applied Physics Laboratory</em></div>
+</div>
+</div>
+</div>
+</section>
+<section id="infrastructure">
+<h2>Infrastructure<a class="headerlink" href="#infrastructure" title="Permalink to this heading">#</a></h2>
+<p>The infrastructure team manages GitHub, JupyterHub, and Slack.</p>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/orgs/oceanhackweek/teams/infrastructure">&#64;oceanhackweek/infrastructure</a></p></li>
+<li><p>Slack: &#64;help-infrastructure and</p></li>
+</ul>
+<div class="row docutils">
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Filipe Fernandes" class="card-image-top" src="https://oceanhackweek.github.io/assets/images/filipe.jpg" />
+<div class="card-body docutils">
+<p class="h5">Filipe Fernandes<a class="fab fa-github ml-1 reference external" href="https://github.com/ocefpaf"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:ocefpaf&#37;&#52;&#48;gmail&#46;com"><span></span></a></p>
+<span>Research Software Engineer - </span><em>NOAA IOOS</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Alex Kerney" class="card-image-top" src="https://gmri-org-production.s3.amazonaws.com/images/Alex_Kerney.a5935ce3.fill-600x600-c75.jpg" />
+<div class="card-body docutils">
+<p class="h5">Alex Kerney<a class="fab fa-github ml-1 reference external" href="https://github.com/abkfenris"><span></span></a><a class="fas fa-envelope ml-1 reference external" href="mailto:akerney&#37;&#52;&#48;gmri&#46;org"><span></span></a></p>
+<span>Web Application Developer - </span><em>Gulf of Maine Research Institute</em></div>
+</div>
+</div>
+<div class="col-4 mb-1 docutils">
+<div class="card docutils">
+<img alt="Paige Martin" class="card-image-top" src="https://ocean-transport.github.io/_images/paige.jpg" />
+<div class="card-body docutils">
+<p class="h5">Paige Martin<a class="fab fa-github ml-1 reference external" href="https://github.com/paigem"><span></span></a></p>
+<span>Postdoctoral Researcher - </span><em>Australian National University / Lamont-Doherty Earth Science</em></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="steering_committee.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Steering Committee</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="pasthackweeks.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Past OHW Events</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.2.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
