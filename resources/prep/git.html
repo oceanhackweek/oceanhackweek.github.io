@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Git Setup and Basics &#8212; OceanHackWeek</title>
 <script>
@@ -25,8 +25,8 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
 
@@ -36,6 +36,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -46,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">  
+<meta name="docsearch:language" content="en">  
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -327,14 +328,14 @@
               
               <article class="bd-article" role="main">
                  <section id="git-setup-and-basics">
-<h1>Git Setup and Basics<a class="headerlink" href="#git-setup-and-basics" title="Permalink to this headline">#</a></h1>
+<h1>Git Setup and Basics<a class="headerlink" href="#git-setup-and-basics" title="Permalink to this heading">#</a></h1>
 <section id="about-git-and-github">
-<h2>About Git and GitHub<a class="headerlink" href="#about-git-and-github" title="Permalink to this headline">#</a></h2>
+<h2>About Git and GitHub<a class="headerlink" href="#about-git-and-github" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://git-scm.com/">Git</a> is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! <a class="reference external" href="https://github.com">GitHub</a> is a hosting service for Git repositories, enabling us to share code across teams in a web environment.</p>
 <p>We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own <a class="reference external" href="https://github.com/">GitHub</a> account.</p>
 </section>
 <section id="git-installation">
-<h2>Git Installation<a class="headerlink" href="#git-installation" title="Permalink to this headline">#</a></h2>
+<h2>Git Installation<a class="headerlink" href="#git-installation" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Windows</p>
 <ul>
@@ -355,24 +356,24 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 </div>
 </section>
 <section id="getting-started-with-bash-terminal">
-<h2>Getting started with Bash terminal<a class="headerlink" href="#getting-started-with-bash-terminal" title="Permalink to this headline">#</a></h2>
+<h2>Getting started with Bash terminal<a class="headerlink" href="#getting-started-with-bash-terminal" title="Permalink to this heading">#</a></h2>
 <p>During the hackweek it will be useful to know how to navigate between files from the command line. If you are not familiar with the linux shell commands, you can review the first three sections of this <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">Software Carpentry Shell Novice</a> lesson. On Windows, use the Git Bash terminal to run these commands.</p>
 </section>
 <section id="terminal-command-line-text-editor">
-<h2>Terminal (command line) text editor<a class="headerlink" href="#terminal-command-line-text-editor" title="Permalink to this headline">#</a></h2>
+<h2>Terminal (command line) text editor<a class="headerlink" href="#terminal-command-line-text-editor" title="Permalink to this heading">#</a></h2>
 <p>When working on the command line (the terminal or shell), it is often handy to modify file content directly from there. For that you can use a command line editor such as <a class="reference external" href="https://linuxize.com/post/how-to-use-nano-text-editor/">nano</a>. On Mac and Linux it is usually pre-installed, but for Windows you can follow the instructions in this <a class="reference external" href="http://carpentries.github.io/workshop-template/#editor">link</a> to set it up. Test your installation by opening a terminal and running <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">--version</span></code>. If it works you can link your git configuration with <code class="docutils literal notranslate"><span class="pre">nano</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="git-steps-and-workflows">
-<h2>Git steps and workflows<a class="headerlink" href="#git-steps-and-workflows" title="Permalink to this headline">#</a></h2>
+<h2>Git steps and workflows<a class="headerlink" href="#git-steps-and-workflows" title="Permalink to this heading">#</a></h2>
 <div class="admonition-centralized-vs-fork-clone-workflows admonition">
 <p class="admonition-title">“Centralized vs Fork-Clone workflows”</p>
 <p>Steps 1-5 focus on the Git “centralized workflow”. We present it here as an illustration, but <strong>the workflow we recommend for use in {OceanHackWeek is the Git Fork - Clone workflow, discussed in Step 6.</strong></p>
 </div>
 <section id="create-a-project-repository">
-<h3>1. Create a project repository<a class="headerlink" href="#create-a-project-repository" title="Permalink to this headline">#</a></h3>
+<h3>1. Create a project repository<a class="headerlink" href="#create-a-project-repository" title="Permalink to this heading">#</a></h3>
 <p>On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the {OceanHackWeek organization, <a class="reference external" href="https://github.com/oceanhackweek">https://github.com/oceanhackweek</a></p>
 <p><img alt="New Repo" src="../../_images/newRepo.png" /></p>
 <p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and follow the steps: check yes to create a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
@@ -387,7 +388,7 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 </ul>
 </section>
 <section id="clone-the-repository">
-<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">#</a></h3>
+<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
 <p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep {OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/oceanhackweek/ohw21-proj-myprojectname.git
 </pre></div>
@@ -395,7 +396,7 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 <p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw21-proj-myprojectname</span></code>. Navigate to the new folder, <code class="docutils literal notranslate"><span class="pre">ohw21-proj-myprojectname</span></code>.</p>
 </section>
 <section id="update-the-readme-with-your-name">
-<h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this headline">#</a></h3>
+<h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this heading">#</a></h3>
 <p>Open the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file with your favorite editor and create a new section header. Under this section add your name. Then add this change, commit it to the local repository, and push it so that it appears on the <code class="docutils literal notranslate"><span class="pre">origin</span></code> GitHub repository.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
 git commit -m <span class="s2">&quot;Adding new name to README.md&quot;</span>
@@ -409,7 +410,7 @@ git push origin
 </div>
 </section>
 <section id="update-your-local-repository-local-clone-with-the-changes-of-your-collaborators">
-<h3>4. Update your local repository (local clone) with the changes of your collaborators<a class="headerlink" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators" title="Permalink to this headline">#</a></h3>
+<h3>4. Update your local repository (local clone) with the changes of your collaborators<a class="headerlink" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin master
 </pre></div>
 </div>
@@ -456,7 +457,7 @@ git push origin master
 </div>
 </section>
 <section id="avoiding-problems-forking-workflow">
-<h3>6. Avoiding problems: forking workflow<a class="headerlink" href="#avoiding-problems-forking-workflow" title="Permalink to this headline">#</a></h3>
+<h3>6. Avoiding problems: forking workflow<a class="headerlink" href="#avoiding-problems-forking-workflow" title="Permalink to this heading">#</a></h3>
 <p>So far you collaborated using what is called a “centralized git workflow”: i.e. every collaborator makes directly changes to the repo.</p>
 <p><img alt="" src="../../_images/centralized_workflow_atlasian.png" /></p>
 <p>Some merge conflicts can be avoided by working with <strong>forks</strong> (using a “forking git workflow) instead of directly pushing to the repo.</p>
@@ -491,7 +492,7 @@ git remote add origin https://github.com/myghusername/ohw21-proj-ProjectName.git
 <p>Make sure your <code class="docutils literal notranslate"><span class="pre">origin</span></code> contains your github username, and upstream contains the <code class="docutils literal notranslate"><span class="pre">oceanhackweek</span></code> name.</p>
 </div>
 <section id="submitting-changes-via-a-pull-request">
-<h4>Submitting changes via a pull request<a class="headerlink" href="#submitting-changes-via-a-pull-request" title="Permalink to this headline">#</a></h4>
+<h4>Submitting changes via a pull request<a class="headerlink" href="#submitting-changes-via-a-pull-request" title="Permalink to this heading">#</a></h4>
 <p>Make some changes to a file and commit and publish them.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
 git commit -m <span class="s2">&quot;more changes&quot;</span>
@@ -516,9 +517,9 @@ git push origin master
 </section>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h2>
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">#</a></h2>
 <section id="deleting-files">
-<h3>Deleting files<a class="headerlink" href="#deleting-files" title="Permalink to this headline">#</a></h3>
+<h3>Deleting files<a class="headerlink" href="#deleting-files" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git rm filename.txt
 rm filename.txt
 </pre></div>
@@ -529,7 +530,7 @@ rm filename.txt
 </div>
 </section>
 <section id="reverting-to-the-previous-commit">
-<h3>Reverting to the previous commit<a class="headerlink" href="#reverting-to-the-previous-commit" title="Permalink to this headline">#</a></h3>
+<h3>Reverting to the previous commit<a class="headerlink" href="#reverting-to-the-previous-commit" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git revert HEAD
 </pre></div>
 </div>
@@ -540,7 +541,7 @@ rm filename.txt
 </section>
 </section>
 <section id="references-and-resources">
-<h2>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">#</a></h2>
+<h2>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this heading">#</a></h2>
 <p>Git and GitHub are very powerful tools but no doubt the learning curve is steep. Learning is an iterative process so below we list some resources which can help you be better prepared:</p>
 <ul class="simple">
 <li><p>OceanHackWeek (OHW) tutorials</p>
@@ -596,7 +597,7 @@ rm filename.txt
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.2.<br>
 </p>
   </div>
   

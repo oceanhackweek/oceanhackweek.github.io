@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Editing OHW web site content and layout &#8212; OceanHackWeek</title>
 <script>
@@ -25,8 +25,8 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
 
@@ -36,6 +36,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -46,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">  
+<meta name="docsearch:language" content="en">  
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -346,29 +347,29 @@
               
               <article class="bd-article" role="main">
                  <section id="editing-ohw-web-site-content-and-layout">
-<h1>Editing OHW web site content and layout<a class="headerlink" href="#editing-ohw-web-site-content-and-layout" title="Permalink to this headline">#</a></h1>
+<h1>Editing OHW web site content and layout<a class="headerlink" href="#editing-ohw-web-site-content-and-layout" title="Permalink to this heading">#</a></h1>
 <p>The OceanHackweek web site uses <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> with the <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/latest/index.html">PyData theme</a> and <a class="reference external" href="https://ablog.readthedocs.io/en/latest/">Ablog</a> for adding posts.</p>
 <p>For quick changes to single pages, you can make edits directly via Github, or to make deeper changes you can work locally.</p>
 <section id="via-github">
-<h2>Via Github<a class="headerlink" href="#via-github" title="Permalink to this headline">#</a></h2>
+<h2>Via Github<a class="headerlink" href="#via-github" title="Permalink to this heading">#</a></h2>
 <p>Github is great for making small changes such as helping to clean up spelling mistakes.</p>
 <section id="edit-this-page">
-<h3>Edit this page<a class="headerlink" href="#edit-this-page" title="Permalink to this headline">#</a></h3>
+<h3>Edit this page<a class="headerlink" href="#edit-this-page" title="Permalink to this heading">#</a></h3>
 <p>On most pages of the site there is a right hand sidebar (you may need to expand your screen or decrease your font size to see it).
 At the bottom of the sidebar, there is a link to <strong>Edit this page</strong>.</p>
 <p>If you click the <strong>Edit this page</strong>, you’ll be taken to the source of the page on Github.</p>
 </section>
 <section id="navigating-github">
-<h3>Navigating Github<a class="headerlink" href="#navigating-github" title="Permalink to this headline">#</a></h3>
+<h3>Navigating Github<a class="headerlink" href="#navigating-github" title="Permalink to this heading">#</a></h3>
 <p>The code for the website is stored in the <a class="reference external" href="https://github.com/oceanhackweek/oceanhackweek.github.io">`oceanhackweek/oceanhackweek.github.io</a> repo. The folder structure largely mimics the path structure on the website, but see <em>Location of main content documents</em> below for specifics.</p>
 <p>Once you’ve found the page, there is a pencil icon in the top right to move into editing mode.</p>
 </section>
 <section id="making-edits">
-<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this headline">#</a></h3>
+<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this heading">#</a></h3>
 <p>Most of the pages in the site are Markdown documents with some MyST formatting (see below). While Github can preview the changes to the Markdown, but it cannot parse the MyST, so it is likely to display some funky code blocks in their place. Once you create a PR, you’ll get an accurate preview of changes.</p>
 </section>
 <section id="creating-a-pull-request">
-<h3>Creating a Pull Request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this headline">#</a></h3>
+<h3>Creating a Pull Request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this heading">#</a></h3>
 <p>Once you think you are happy with your edits, give the changes a name, and optionally a description (for example referencing an issue number that the change takes care of).</p>
 <p>Then select <strong>Create a new branch for this commit and start a pull request</strong> to create a PR.</p>
 <p>Github will take the title and description from the commit to start your PR, but it’s also a good place to discuss the changes further.</p>
@@ -377,25 +378,25 @@ At the bottom of the sidebar, there is a link to <strong>Edit this page</strong>
 </section>
 </section>
 <section id="locally">
-<h2>Locally<a class="headerlink" href="#locally" title="Permalink to this headline">#</a></h2>
+<h2>Locally<a class="headerlink" href="#locally" title="Permalink to this heading">#</a></h2>
 <p>For larger changes, or working with MyST, rST, or Jupyter Notebooks, it’s easier to work on the website locally.</p>
 <section id="setup-for-local-development">
-<h3>Setup for local development<a class="headerlink" href="#setup-for-local-development" title="Permalink to this headline">#</a></h3>
+<h3>Setup for local development<a class="headerlink" href="#setup-for-local-development" title="Permalink to this heading">#</a></h3>
 <p>There are a few steps to get started with local development.</p>
 <section id="forking-the-repo">
-<h4>Forking the repo<a class="headerlink" href="#forking-the-repo" title="Permalink to this headline">#</a></h4>
+<h4>Forking the repo<a class="headerlink" href="#forking-the-repo" title="Permalink to this heading">#</a></h4>
 <p>The first step to work on the repo is to create your own fork.
 On <a class="reference external" href="https://github.com/oceanhackweek/oceanhackweek.github.io">`oceanhackweek/oceanhackweek.github.io</a> click <strong>Fork</strong> in the upper right corner and create the fork in your personal github account.</p>
 <p>Then click <strong>Code</strong> and clone the repo to your machine. (The Github CLI is nice for working with forks).</p>
 <p>It is worth noting that we are using the <code class="docutils literal notranslate"><span class="pre">source</span></code> branch as the base for this repo, but it is best to create a new branch to work off of for each set of changes and propose them in a Pull Request.</p>
 </section>
 <section id="environment">
-<h4>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">#</a></h4>
+<h4>Environment<a class="headerlink" href="#environment" title="Permalink to this heading">#</a></h4>
 <p>There is a pre-configured conda environment in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>.
 To use it, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">env</span> <span class="pre">-f=./environment.yml</span></code>, then activate with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">ohw-site</span></code>.</p>
 </section>
 <section id="commands">
-<h4>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">#</a></h4>
+<h4>Commands<a class="headerlink" href="#commands" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">live</span></code> - The environment is setup with <a class="reference external" href="https://pypi.org/project/sphinx-autobuild/">sphinx-autobuild</a> which will update open browsers when files are saved. The site will be available at <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> - Launch a one off build of HTML output.</p></li>
@@ -405,7 +406,7 @@ To use it, <code class="docutils literal notranslate"><span class="pre">conda</s
 </section>
 </section>
 <section id="writing-and-linking-pages">
-<h3>Writing and Linking Pages<a class="headerlink" href="#writing-and-linking-pages" title="Permalink to this headline">#</a></h3>
+<h3>Writing and Linking Pages<a class="headerlink" href="#writing-and-linking-pages" title="Permalink to this heading">#</a></h3>
 <p>Pages can be written as ReStructured Text, Markdown, or Jupyter Notebooks thanks to <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">MyST-NB</a>.</p>
 <p>To include a page into the site navigation, it needs to be included in a <code class="docutils literal notranslate"><span class="pre">toctree</span></code>.
 In most cases the <code class="docutils literal notranslate"><span class="pre">toctree</span></code>s will be found in one of the <code class="docutils literal notranslate"><span class="pre">index.md</span></code> pages.
@@ -423,11 +424,11 @@ posts
 </div>
 </section>
 <section id="writing-posts">
-<h3>Writing Posts<a class="headerlink" href="#writing-posts" title="Permalink to this headline">#</a></h3>
+<h3>Writing Posts<a class="headerlink" href="#writing-posts" title="Permalink to this heading">#</a></h3>
 <p>Like pages, posts can be written as ReStructured Text, Markdown, or Jupyter notebooks. To be treated as a post, they need to be within the <code class="docutils literal notranslate"><span class="pre">posts/</span></code> directory, and have a selection of metadata.</p>
 <p>The location and structure of the metadata varies depending on filetype. For a full list of the options, see the <a class="reference external" href="https://ablog.readthedocs.io/en/latest/manual/posting-and-listing/">ABlog</a> documentation.</p>
 <section id="markdown">
-<h4>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h4>
+<h4>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">#</a></h4>
 <p>In Markdown, the metadata to create a post can be added as YAML frontmatter.</p>
 <p>For example:</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
@@ -444,7 +445,7 @@ category: Event
 </div>
 <p>The only required metadata tag to make a post is <code class="docutils literal notranslate"><span class="pre">date</span></code>. The rest will either be extracted from the post (the title), derived from <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> (authors), or treated as null (tags and comments).</p>
 <section id="directives">
-<h5>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">#</a></h5>
+<h5>Directives<a class="headerlink" href="#directives" title="Permalink to this heading">#</a></h5>
 <p>MyST-NB/MyST-Parser brings ReStructured Text style directive support to Markdown.
 The <code class="docutils literal notranslate"><span class="pre">toctree</span></code> above is one example, but rather than listing all possibilities, here are some resources:</p>
 <ul class="simple">
@@ -456,11 +457,11 @@ The <code class="docutils literal notranslate"><span class="pre">toctree</span><
 </section>
 </section>
 <section id="restructured-text">
-<h4>ReStructured Text<a class="headerlink" href="#restructured-text" title="Permalink to this headline">#</a></h4>
+<h4>ReStructured Text<a class="headerlink" href="#restructured-text" title="Permalink to this heading">#</a></h4>
 <p>ReStructured Text can be written as usual for Sphinx documentation.</p>
 </section>
 <section id="jupyter-notebooks">
-<h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h4>
+<h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h4>
 <p>It’s a little sneaky to make a Jupyter notebook into a post. The metadata needs to be added to the notebook metadata.</p>
 <p>In JupyterLab, you can do this by clicking the gear at the top of the right sidebar, then expand the <em>Advanced Tools</em> section.</p>
 <p>Then you will see a JSON object with lots distracting Jupyter metadata.</p>
@@ -524,7 +525,7 @@ Click the check, then save the notebook for Sphinx/ABlog to find it.</p>
 </section>
 </section>
 <section id="pull-requests">
-<h3>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">#</a></h3>
+<h3>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this heading">#</a></h3>
 <p>Once you’ve made your changes, create a Pull Request to suggest that we include them in the website.</p>
 <p>Include a description of what the changes are, and maybe a screenshot to help describe them.</p>
 <p>Please tag <code class="docutils literal notranslate"><span class="pre">&#64;oceanhackweek/website</span></code> to notify the website maintainers that you’ve made a PR. If you make a draft PR, you can wait until you are ready, then tag the website maintainers.</p>
@@ -532,7 +533,7 @@ Click the check, then save the notebook for Sphinx/ABlog to find it.</p>
 </section>
 </section>
 <section id="location-of-main-content-documents">
-<h2>Location of main content documents<a class="headerlink" href="#location-of-main-content-documents" title="Permalink to this headline">#</a></h2>
+<h2>Location of main content documents<a class="headerlink" href="#location-of-main-content-documents" title="Permalink to this heading">#</a></h2>
 <p>While most pages follow the same structure in the repo, as they do on the website, there are a few additional files to be aware of:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">conf.pd</span></code> - This is the Sphinx configuration file.</p></li>
@@ -590,7 +591,7 @@ Click the check, then save the notebook for Sphinx/ABlog to find it.</p>
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.2.<br>
 </p>
   </div>
   

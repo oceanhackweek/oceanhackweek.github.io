@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Python Requirements &#8212; OceanHackWeek</title>
 <script>
@@ -25,8 +25,8 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
 
@@ -36,6 +36,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -46,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">  
+<meta name="docsearch:language" content="en">  
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -261,16 +262,16 @@
               
               <article class="bd-article" role="main">
                  <section id="python-requirements">
-<h1>Python Requirements<a class="headerlink" href="#python-requirements" title="Permalink to this headline">#</a></h1>
+<h1>Python Requirements<a class="headerlink" href="#python-requirements" title="Permalink to this heading">#</a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>Python software is distributed as a series of <em>libraries</em> that are called within your code to perform certain tasks. There are many different collections, or <em>distributions</em> of Python software. Generally you install a specific distribution of Python and then add additional libraries as you need them. There are also several different <em>versions</em> of Python. The two main versions right now are 2.7 and 3.7. During the hackweek we will be using Python 3.7 for the tutorials, and encouraging participants to do so. If you have only used Python 2 in the past check out the key differences <a class="reference external" href="https://www.geeksforgeeks.org/important-differences-between-python-2-x-and-python-3-x-with-examples/">here</a>.</p>
 <p>Even though Python is one of the most adaptable, easy-to-use software systems, you can see there are still complexities to work out and potential challenges when delivering content to a large group. Therefore we have a number of different ways that we are trying to simplify this process to maximize your learning during Oceanhackweek.</p>
 <p>We will be using Ocean <a class="reference external" href="https://pangeo.io/">Pangeo</a> (<a class="reference external" href="http://ocean.pangeo.io">http://ocean.pangeo.io</a>), which is a platform for using Jupyter Notebooks in the ocean, atmospheric, and climate research community.
 A <a class="reference external" href="https://jupyter.org/">Jupyter Notebook</a> is an open-source web application that allows users to create and share documents containing live code, equations, visualizations, and markdown texts.</p>
 </section>
 <section id="setting-up-python-locally">
-<h2>Setting up Python locally<a class="headerlink" href="#setting-up-python-locally" title="Permalink to this headline">#</a></h2>
+<h2>Setting up Python locally<a class="headerlink" href="#setting-up-python-locally" title="Permalink to this heading">#</a></h2>
 <p>Although, you we will provide you with a Python working environment, it will be good if you set up Python locally on your laptop: you might need it for some of your project work, Python review, or for future Python development. We recommend installing the <a class="reference external" href="https://conda.io/miniconda.html">Miniconda</a> Python distribution. We can assist in setting up “conda” environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.</p>
 <p><a class="reference external" href="http://conda.pydata.org/docs/"><strong>Conda</strong></a> is an <strong>open source <code class="docutils literal notranslate"><span class="pre">package</span></code> and <code class="docutils literal notranslate"><span class="pre">environment</span></code> management system for python libraries</strong>. We will be using various
 Python libraries with multiple dependencies, so it is critical that you have some sort of
@@ -285,7 +286,7 @@ package management system in place. Conda can be installed in almost any compute
 <p>To test your installation you can run <code class="docutils literal notranslate"><span class="pre">python</span></code> in the terminal and check if the version you have is Miniconda Python 3. Let us know if on Slack you are having problems with installing Conda.</p>
 </section>
 <section id="brushing-up-on-python">
-<h2>Brushing up on Python<a class="headerlink" href="#brushing-up-on-python" title="Permalink to this headline">#</a></h2>
+<h2>Brushing up on Python<a class="headerlink" href="#brushing-up-on-python" title="Permalink to this heading">#</a></h2>
 <p>Given all the heavy use of Python during Oceanhackweek, we will not be able to provide instruction in Python fundamentals. We expect you to have basic Python familiarity on the level of manipulating variables (lists, arrays), writing loops/functions, making simple plots. If you have not used Python before or it has been a while since you have used it, please, go thouroughly through the lesson below</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://swcarpentry.github.io/python-novice-gapminder/">Software Carpentry Python Tutorial</a> (1 day workshop with exercises)</p></li>
@@ -333,7 +334,7 @@ package management system in place. Conda can be installed in almost any compute
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.2.<br>
 </p>
   </div>
   

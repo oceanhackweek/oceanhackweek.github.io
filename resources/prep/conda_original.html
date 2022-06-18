@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Conda and installing Python and R environments &#8212; OceanHackWeek</title>
 <script>
@@ -25,8 +25,8 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
 
@@ -36,6 +36,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -46,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">  
+<meta name="docsearch:language" content="en">  
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -288,12 +289,12 @@
               
               <article class="bd-article" role="main">
                  <section id="conda-and-installing-python-and-r-environments">
-<h1>Conda and installing Python and R environments<a class="headerlink" href="#conda-and-installing-python-and-r-environments" title="Permalink to this headline">#</a></h1>
+<h1>Conda and installing Python and R environments<a class="headerlink" href="#conda-and-installing-python-and-r-environments" title="Permalink to this heading">#</a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="what-is-conda">
-<h2>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this headline">#</a></h2>
+<h2>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="http://conda.pydata.org/docs/"><strong>Conda</strong></a> is an <strong>open source <code class="docutils literal notranslate"><span class="pre">package</span></code> and <code class="docutils literal notranslate"><span class="pre">environment</span></code> management system for any programming languages, but very popular among python community,</strong></p>
 <p>The Hub is pre-configured with a customized “environment” of Python and R packages designed to run all the tutorial notebooks, and supporting a broad range of oceanographic applications. This environment is created and managed using the open-source <a class="reference external" href="https://docs.conda.io"><strong>Conda</strong> package and environment management system</a> for installing multiple versions of software packages together with their dependencies, and convenient switching between environments. Conda runs on Windows, macOS, and Linux: <em>“Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.”</em></p>
 <p>Conda may be used on your computer as well as the Hub …</p>
@@ -303,22 +304,22 @@
 <p>In the previous lesson we showed you a cloud-based environment for our work during the hackweek. What happens after the event when you want to go home and work with all the libraries we showed you? You will likely also want to have a functioning version of Python on your local laptop if that is not already in place. So this lesson takes you through our recommended procedure for doing that. We suggest you get this set up in advance so that we can help you troubleshoot when you arrive.</p>
 </section>
 <section id="python-software">
-<h2>Python Software<a class="headerlink" href="#python-software" title="Permalink to this headline">#</a></h2>
+<h2>Python Software<a class="headerlink" href="#python-software" title="Permalink to this heading">#</a></h2>
 <p>Python software is distributed as a series of <em>libraries</em> that are called within your code to perform certain tasks. There are many different collections, or <em>distributions</em> of Python software. Generally you install a specific distribution of Python and then add additional libraries as you need them. There are also several different <em>versions</em> of Python. The two main versions right now are 2.7 and 3.7, although Python 2.7 will not be supported past 2020. Some libraries only work with specific versions of Python.</p>
 <p>So even though Python is one of the most adaptable, easy-to-use software systems, you can see there are still complexities to work out and potential challenges when delivering content to a large group. Therefore we have a number of different ways that we are trying to simplify this process to maximize your learning during the hackweek.</p>
 <p>We also provide instructions for using <a class="reference external" href="https://www.continuum.io">Anaconda</a>, which is our recommended Python distribution, for installing and working with Python on your local computer. We can assist in setting up “conda” environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.</p>
 </section>
 <section id="installing-miniconda">
-<h2>Installing Miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this headline">#</a></h2>
+<h2>Installing Miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this heading">#</a></h2>
 <section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">#</a></h3>
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h3>
 <p>Click <a class="reference external" href="http://conda.pydata.org/miniconda.html">here</a> to download the proper installer for your Windows platform (64 bits).
 We recommend to download the Python 3 version of Miniconda. You can still create Python 2 environments using the Python 3 version of Miniconda.</p>
 <p>When installing, you will be asked if you wish to make the Anaconda Python your default Python for Windows.
 If you do not have any other installation that is a good option. If you want to keep multiple versions of python on your machine (e.g. ESRI-supplied python, or 64 bit versions of Anaconda), then don’t select the option to modify your path or modify your windows registry settings.</p>
 </section>
 <section id="linux-and-osx">
-<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this headline">#</a></h3>
+<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this heading">#</a></h3>
 <p>You may follow manual steps from <a class="reference external" href="http://conda.pydata.org/miniconda.html">here</a> similar to the instructions on Windows (see above). Alternatively, you can execute these commands on a terminal shell (in this case, the bash shell):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For MacOSX</span>
 <span class="nv">url</span><span class="o">=</span>https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
@@ -333,11 +334,11 @@ conda update conda --yes
 </section>
 </section>
 <section id="installing-anaconda-optional">
-<h2>Installing Anaconda (Optional)<a class="headerlink" href="#installing-anaconda-optional" title="Permalink to this headline">#</a></h2>
+<h2>Installing Anaconda (Optional)<a class="headerlink" href="#installing-anaconda-optional" title="Permalink to this heading">#</a></h2>
 <p><em>NOTE: If you don’t have time or disk space for the entire distribution do not install Anaconda. Install only <a class="reference external" href="http://conda.pydata.org/miniconda.html">Miniconda</a>, a bootstrap version of Anaconda, which contains only Python, essential packages, and conda. We will provide an environment file to install all the packages necessary for the hackweek.</em></p>
 <p><a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a> is a data science platform that comes with a lot of packages. At its core, Anaconda uses the conda package management system.</p>
 <p>The list of packages included can be found <a class="reference external" href="https://docs.anaconda.com/anaconda/packages/pkg-docs"><em>here</em></a></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>To install Anaconda, please click on the link below for your operating system, and follow the instructions on the <a class="reference external" href="https://www.anaconda.com/download/">site</a>.</p></li>
 <li><p>Once Anaconda installation step is finished run <code class="docutils literal notranslate"><span class="pre">python</span></code> in the command line to test if Anaconda is installed correctly. <strong>Note: For windows, please use the Anaconda prompt as the command line. It should be installed with your installation of Anaconda</strong>
 If Anaconda is installed correctly, you should have this prompt, which emphasizes <strong>Anaconda</strong>:</p></li>
@@ -349,7 +350,7 @@ Python <span class="m">3</span>.7.3<span class="p">|</span>Anaconda custom <span
 </div>
 </section>
 <section id="installing-python">
-<h2>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">#</a></h2>
+<h2>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this heading">#</a></h2>
 <p>We will be using Python 3.6 or 3.7 during the week (either will work). Since Anaconda (on Linux) expects you to work in the “bash” shell, if this is not already your default shell, you need to set it to be so (use the “chsh -s /bin/bash” command to change your default shell to bash) or just run an instance of bash from the command line before issuing “Conda” commands (/bin/bash or where it is located on your system).</p>
 <p>If you are already familiar with Python 2.7, you can take a look at the syntax differences <a class="reference external" href="http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html">here</a>, but the main point to remember is to put the print statements in parentheses:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
@@ -403,7 +404,7 @@ Python <span class="m">3</span>.7.3<span class="p">|</span>Anaconda custom <span
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.2.<br>
 </p>
   </div>
   

@@ -17,14 +17,8 @@ See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
-**The application deadline has been *extended to JUNE 15, 2022*.** Please visit the [Information for Applicants page](applicants) for detailed information and access to the application form. You will be asked to choose between the global virtual event and one of the satellite events.
+**Applications have closed and participant selection is in progress**
 
-```{button-link} applicants
-:color: primary
-:expand:
-:tooltip: Apply to OceanHackWeek 2022
-Apply to OceanHackWeek 2022!
-```
 :::
 
 ## A Global Virtual Event and Six Regional Satellites
