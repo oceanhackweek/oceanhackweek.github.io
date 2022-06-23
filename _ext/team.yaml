@@ -225,6 +225,8 @@ team:
     github_user: ONR-MURI
     email: gmanuch@uw.edu
     roles:
+      - Projects
+      - Tutorials
       - OHW22 Organizer - Seattle UG
 
   - name: Steve Diggs
@@ -255,6 +257,7 @@ team:
     github_user: lidefi87
     email: lilian.fierroarcos@utas.edu.au
     roles:
+      - Tutorials
       - OHW21 Participant
       - OHW22 Organizer - Espanol
 
