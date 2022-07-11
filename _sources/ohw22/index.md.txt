@@ -17,7 +17,7 @@ See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
-**Applications have closed and participant selection is in progress**
+**Applicants have been notified and participants should expect further communications**
 
 :::
 
