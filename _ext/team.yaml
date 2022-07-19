@@ -280,3 +280,12 @@ team:
     roles:
       - Projects
       - OHW20 Participant
+
+  - name: Chris Olson
+    title: Data Manager
+    affiliate: Scripps Institution of Oceanography
+    image_url: https://avatars.githubusercontent.com/u/9219758?v=4
+    github_user: cjolson64
+    # email:
+    roles:
+      - OHW22 Organizer - San Diego
