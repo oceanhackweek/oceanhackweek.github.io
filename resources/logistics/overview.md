@@ -1,12 +1,12 @@
 # Logistics Overview
 
-Some of you will participate in person at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org/) in Maine (US), and others will participate virtually from time zones all over the world. As we have learned throughout the pandemic, each of these gathering styles has strengths and weaknesses. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
+Some of you will participate in person at various satellite events, and others will participate virtually from time zones all over the world. As we have learned throughout the pandemic, each of these gathering styles has strengths and weaknesses. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
 
 ## Time
 
-OceanHackWeek 2021 will take place August 3-6. *Pre-hackweek OPTIONAL sessions* will be on July 29-30 as a 1-hour session each day.
+OceanHackWeek 2021 will take place August 15-19.
 
-**In-person participants** will gather for full days, 9am - 5pm EDT. While **virtual participants** may choose to engage primarily with this group and schedule via Zoom and Slack, we strongly encourage you to join the program designed specifically as a virtual event. The virtual event will be split into two schedules and groups based on the distribution of participant time zones, in a 3-hour daily block of formal, live activities. The **larger virtual event** will take place 11:00am - 2:00pm PDT / 18:00 - 21:00 UTC, *except the first day when we will start 30 minutes earlier*. The **“Oceania” virtual event** is intended to accommodate participants from Australia to India and will take place 12:00pm - 3:00pm AEST / 2:00 - 5:00 UTC. You will be asked to choose between the two virtual groups.
+**In-person participants** will gather as for times as directed by the satellite organizers. While **virtual participants** may choose to engage primarily with this group and schedule via Zoom and Slack, we strongly encourage you to join the program designed specifically as a virtual event. The virtual event will be split into two schedules and groups based on the distribution of participant time zones, in a 3-hour daily block of formal, live activities. The **larger virtual event** will take place 11:00am - 2:00pm PDT / 18:00 - 21:00 UTC.
 
 Detailed schedules are available [Schedule page](../schedule.md).
 

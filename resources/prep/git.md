@@ -1,17 +1,24 @@
 # Git Setup and Basics
 
+:::{admonition} Updates in progress
+:class: warning
+
+The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
+
+:::
+
 ## About Git and GitHub
 
 [Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
 
-We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own [GitHub](https://github.com/) account.
+We will use Git and GitHub for collaborative work. Be sure to arrive at OceanHackWeek with your own [GitHub](https://github.com/) account.
 
 ## Git Installation
 
 * Windows
     * Install Git for Windows from this [link](https://gitforwindows.org/). For more setup details follow these [instructions](https://carpentries.github.io/workshop-template/#shell)
 * Mac OS
-    * Download the [git installer](https://git-scm.com/download/mac) and run it.
+    * Download the [git installer](https://git-scm.com/download/mac) and run it. 
 * Linux (Debian): `sudo apt install git-all`
 
 To test, open the terminal (on Windows, Git Bash) and setup your username and email:
@@ -39,7 +46,7 @@ git config --global core.editor "nano -w"
 ## Git steps and workflows
 
 ```{admonition} "Centralized vs Fork-Clone workflows"
-Steps 1-5 focus on the Git "centralized workflow". We present it here as an illustration, but **the workflow we recommend for use in {OceanHackWeek is the Git Fork - Clone workflow, discussed in Step 6.**
+Steps 1-5 focus on the Git "centralized workflow". We present it here as an illustration, but **the workflow we recommend for use in OceanHackWeek is the Git Fork - Clone workflow, discussed in Step 6.**
 ```
 
 
@@ -51,7 +58,7 @@ On your own or someone in your project group (preferably one who has never done 
 
 Click `New` and follow the steps: check yes to create a `README.md` file.
 
-* Format project name as `ohw21-proj-myprojectname` (you can change the name later), where `myprojectname` is a brief name for your project
+* Format project name as `ohw22-proj-myprojectname` (you can change the name later), where `myprojectname` is a brief name for your project
 * Invite others to the repo:
     * `Settings -> Collaborators`
     * Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the `bell` notifications on the top right of the website.
@@ -61,10 +68,10 @@ Click `New` and follow the steps: check yes to create a `README.md` file.
 Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant's computer, if desired). Navigate through the terminal to the folder where you want to keep {OceanHackWeek work (`cd path_to_oceanhackweek`).
 
 ```bash
-git clone https://github.com/oceanhackweek/ohw21-proj-myprojectname.git
+git clone https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
 ```
 
-This will create a new folder called `ohw21-proj-myprojectname`. Navigate to the new folder, `ohw21-proj-myprojectname`.
+This will create a new folder called `ohw22-proj-myprojectname`. Navigate to the new folder, `ohw22-proj-myprojectname`.
 
 ### 3. Update the README with your name
 
@@ -144,10 +151,10 @@ So far you collaborated using what is called a "centralized git workflow": i.e. 
 
 ![](../img/centralized_workflow_atlasian.png)
 
-Some merge conflicts can be avoided by working with **forks** (using a "forking git workflow) instead of directly pushing to the repo.
+Many merge conflicts can be avoided by working with **forks** (using a "forking git workflow) instead of directly pushing to the repo.
 
 ```{admonition} "Forking Git Workflow"
-This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation [pdf is here](https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf), and the [recording is here](https://youtu.be/7nYFRixSV2c); **the workflow is the one recommended for use in OHW21.** 
+This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation [pdf is here](https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf), and the [recording is here](https://youtu.be/7nYFRixSV2c); **the workflow is the one recommended for use in OHW22.** 
 Here's an excellent guide to the Forking Git Workflow: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
 ```
 
@@ -177,6 +184,11 @@ From now on you will push to `origin`, but pull from `upstream`.
 
 ```{warning}
 Make sure your `origin` contains your github username, and upstream contains the `oceanhackweek` name.
+```
+
+```{admonition} Hint
+:class: toggle
+Github has a handy [command line tool `gh`](https://cli.github.com/). If you fork a repo and use the `gh` command shown on the page to clone the repo, it will set `upstream` and `origin` appropriately for you.
 ```
 
 #### Submitting changes via a pull request
