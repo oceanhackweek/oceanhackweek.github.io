@@ -21,6 +21,12 @@ We will use a [JupyterHub](https://jupyter.org/hub)-based online environment for
 
 We will use Slack, Zoom and GitHub as our primary communication and content delivery platforms. The week before OceanHackWeek you will receive via email an invitation to join the OceanHackWeek GitHub organization, [https://github.com/oceanhackweek/](https://github.com/oceanhackweek/) if you have not received it already, along with Slack invites and Zoom connection info.
 
+
+```{toctree}
+:hidden:
+Code of Conduct </about/code-of-conduct>
+```
+
 ```{toctree}
 :maxdepth: 2
 :hidden:
