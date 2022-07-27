@@ -94,9 +94,9 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
 :caption: OceanHackWeek 2022 (OHW22)
 :hidden:
 
-Resources </resources>
 Global Virtual Event <global/index>
 Regional Satellite Events <satellites>
+Resources </resources/index>
 Information for Applicants <applicants>
 Organizers <organizers>
 ```
