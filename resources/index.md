@@ -7,7 +7,7 @@ The resources are actively being updated! Some parts are still out of date, and 
 
 :::
 
-To make sure that OHW21 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
+To make sure that OHW22 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
 
 ## Schedules
 
@@ -34,13 +34,12 @@ schedule
 
 ```{toctree}
 :hidden:
-:caption: Preperation
+:caption: Preparation
 
-prep/git
+Git <prep/git>
 prep/github
 prep/jupyterhub
-prep/conda
-
+Conda, Python, R <prep/conda>
 ```
 
 ```{toctree}
@@ -48,7 +47,6 @@ prep/conda
 :caption: Tutorials
 
 tutorials/getting_started
-
 ```
 
 ```{toctree}
@@ -57,7 +55,6 @@ tutorials/getting_started
 
 projects/overview
 projects/steps
-
 ```
 
 ```{toctree}

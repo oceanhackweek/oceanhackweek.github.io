@@ -1,4 +1,4 @@
-# JupyterHub
+# Jupyter and the Hub
 
 :::{admonition} Updates in progress
 :class: warning

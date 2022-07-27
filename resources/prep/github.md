@@ -9,9 +9,9 @@ The resources are actively being updated! Some parts are still out of date, and 
 
 ## About Git and GitHub
 
-[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
+[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
 
-We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own [GitHub](https://github.com/) account.
+We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own [GitHub](https://github.com) account.
 
 ## Why do I need a GitHub account?
 
@@ -30,7 +30,7 @@ Then, click on the big green button and then answer a few required questions. Be
 
 GitHub organizations are a convenient way for teams to get all content relevant to a specific project or workshop into one place. By having everything in one central location you will spend less time searching for hackweek content. GitHub organizations have "teams" that offer simple ways to provide respository access to groups of people, rather than individuals.
 
-We have created a GitHub organization called oceanhackweek at [https://github.com/oceanhackweek](https://github.com/oceanhackweek). For security purposes you can only join the organization by invitation. You should already have received the invitation to GitHub. If you didn't:
+We have created a GitHub organization called "oceanhackweek" at [https://github.com/oceanhackweek](https://github.com/oceanhackweek). For security purposes you can only join the organization by invitation. You should already have received the invitation to GitHub. If you didn't:
 
 1. Once you have a GitHub ID, in the `#ohw22-helpdesk` Slack channel ask for help and include `@help-infrastructure` in your message so that folks who have the ability to make changes are notified.
 2. We will then send you an invitation which should generate an email notification to the email you provided when you signed up for GitHub
