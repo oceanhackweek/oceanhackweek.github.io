@@ -32,3 +32,11 @@ Examples of hacks include:
 
 Increasingly, research and software development are conducted by groups of people with diverse skills and backgrounds. We believe this collaborative work leads to more innovative solutions to complex problems. At OceanHackWeek, our goal is to explore with you some of the skills needed to navigate technical and social challenges of working in these kinds of collaborative settings. We believe the best way to do so is to provide opportunities for you to gain hands-on experience in working together with others on a well-defined problem related to ocean sciences.
 
+
+```{toctree}
+:maxdepth: 2
+:caption: OceanHackWeek 2022 (OHW22)
+:hidden:
+
+steps.md
+```

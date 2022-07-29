@@ -27,8 +27,17 @@ We will use Zoom to broadcast all tutorials. The Zoom link will be distributed v
 
 ## Hack projects
 
-See [Project overview](../projects/overview.md) and [Hacking at OHW21](../projects/steps.md) for more info.
+See [Project overview](../projects/index.md) and [Hacking at OHW21](../projects/steps.md) for more info.
 
 ## Getting Help
 
 See the [Getting Help page](getting_help.md) for guidance and links to have your questions answered or connect with organizers with concerns.
+
+
+```{toctree}
+:maxdepth: 2
+:caption: OceanHackWeek 2022 (OHW22)
+:hidden:
+
+getting_help.md
+```
