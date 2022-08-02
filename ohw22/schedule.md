@@ -1,18 +1,123 @@
 # Schedule
 
-OceanHackWeek 2021 will take place August 3-6. *Pre-hackweek OPTIONAL sessions* will be on July 29-30 as a 1-hour session each day ([see below for details](#pre-hackweek-optional-check-ins)).
+:::{admonition} Updates in progress
+:class: warning
 
+The schedules are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
+
+:::
+
+OceanHackWeek 2022 will take place August 15-19.
+
+With a global virtual event and many satellites, this schedule is still very much under development. The global virtual event will be meeting from 11-2 Pacific, and most satellites are planning at least part of their day around that time block to encourage cross-satellite interaction.
+
+## Overview of the global event
+
+<iframe width=600 height=600 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+## Satellite events
+
+For satellite event schedules, please check out their individual pages to see how each satellite will work with the global event.
+
+- [US Northeast](./maine/index.md)
+- [US Northwest](./seattle/index.md)
+- [US Southwest](./san-diego/index.md)
+- [Australia](./australia/index.md)
+- [Brazil](./brazil/index.md)
+- [OHW-Español](./espanol/index.md)
+
+## Global schedule Details
+
+### Monday
+
+#### Introduction + Code of Conduct - _11:00 - 11:30_
+
+#### Break - _11:00 - 11:30_
+
+#### Xarray - _11:45 - 13:00_ 
+
+_Depak Cherian_
+
+#### Break - _13:00 - 13:15_
+
+#### Project Brainstorming - _13:15 - 14:00_
+
+### Tuesday
+
+#### Satellite report out - _11:00 - 11:15_
+
+#### Break - _11:15 - 11:30_
+
+#### Dask - _11:30 - 12:15_
+
+_Depak Cherian_
+
+#### Break - _12:15 - 12:30_
+
+#### Data access in Python - _12:30 - 13:15_
+
+_Filipe Fernandes_
+
+#### Data access in R - _13:15 - 14:00_
+
+_Ben Tupper_
+
+### Wednesday
+
+#### Project teams report out - _11:00 - 11:15_
+
+#### Data visualization in R - _11:15 - 12:00_
+
+_Ben Tupper_
+
+#### Break - _12:00 - 12:15_
+
+#### Data visualization in Python - _12:15 - 13:00_
+
+_Derya Gumustel_
+
+#### Break - _13:00 - 13:15_
+
+#### Stress in the Geosciences - _13:15 - 14:00_
+
+_Alex Kerney_
+
+### Thursday
+
+#### Machine learning introduction - _11:00 - 11:45_
+
+_Valentina Staneva_
+
+#### Break - _11:45 - 12:00_
+
+#### Machine learning applications - _12:00 - 12:45_
+
+_Filipe Fernandes_
+
+#### Break - _12:45 - 13:00_
+
+#### Best practices for reproducable research - _13:00 - 14:00_
+
+_Nick Record_
+
+### Friday
+
+#### Project wrap up - _11:00 - 12:00_
+
+#### Project presentations - _12:00 - 14:00_
+
+<!-- 
 **In-person participants** will gather for full days, 9am - 5pm EDT. While **virtual participants** may choose to engage primarily with this group and schedule via Zoom and Slack, we strongly encourage you to join the program designed specifically as a virtual event. The virtual event will be split into two schedules and groups based on the distribution of participant time zones, in a 3-hour daily block of formal, live activities. The **larger virtual event** will take place 11:00am - 2:00pm PDT / 18:00 - 21:00 UTC, *except the first day when we will start 30 minutes earlier*. The **“Oceania” virtual event** is intended to accommodate participants from Australia to India and will take place 12:00pm - 3:00pm AEST / 2:00 - 5:00 UTC. You will be asked to choose between the two virtual groups.
 
 Tutorials covering data science topics will be live streamed and viewed at the same time by the in-person and main virtual events, at the times listed in the schedule below under [Main Virtual Event](#main-virtual-event).
 
-**Zoom links** will be posted posted on the `#ohw21-announcements` Slack channel.
+**Zoom links** will be posted posted on the `#ohw21-announcements` Slack channel. -->
 
 <!-- This schedule is also available as a
 [Google Calendar](https://calendar.google.com/calendar/embed?src=c_05tbvgs1f29lrv2s17diuscuhc%40group.calendar.google.com&ctz=America%2FNew_York)
 or [iCal/WebCal](https://calendar.google.com/calendar/ical/c_05tbvgs1f29lrv2s17diuscuhc%40group.calendar.google.com/public/basic.ics)
 subscription. -->
-
+<!-- 
 
 ## Pre-hackweek OPTIONAL check-ins
 
@@ -648,4 +753,4 @@ More detailed schedules are to come.
 <br>
 
 ### Wednesday-Friday (August 4-6) - TBD
-updates coming based on day 1 discussions
+updates coming based on day 1 discussions -->

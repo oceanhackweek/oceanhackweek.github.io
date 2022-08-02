@@ -1,6 +1,13 @@
 # Conda and installing Python and R environments
 
-### Overview 
+:::{admonition} Updates in progress
+:class: warning
+
+The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
+
+:::
+
+## Overview
 
 ### What is Conda?
 [**Conda**](http://conda.pydata.org/docs/) is an **open source `package` and `environment` management system for any programming languages, but very popular among python community,**
@@ -28,16 +35,27 @@ So even though Python is one of the most adaptable, easy-to-use software systems
 We also provide instructions for using [Anaconda](https://www.continuum.io), which is our recommended Python distribution, for installing and working with Python on your local computer. We can assist in setting up "conda" environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.
 
 
-### Installing Conda Miniconda
+## Installing Conda Miniconda
+
+:::{admonition} For local development
+:class: warning
+
+Conda is already installed on our JupyterHub, so these instructions are for if you wish to get started with developing locally.
+
+We may not have the ability to support everyone's individual system, so we have the JupyterLab setup so that everyone can work on the same pre-configured platform.
+
+:::
 
 If you don't have conda (either with *Miniconda* or the full *Anaconda Distribution*) already installed **we recommend [installing Miniconda for latest Python 3](https://docs.conda.io/en/latest/miniconda.html).**
 
 https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-#### Windows
+### Windows
+
 Download the proper installer for your Windows platform (64 bits). When installing, you will be asked if you wish to make the Anaconda Python your default Python for Windows. If you do not have any other installation that is a good option. If you want to keep multiple versions of Python on your machine (e.g. ESRI-supplied python, or 64 bit versions of Anaconda), then don't select the option to modify your path or modify your Windows registry settings.
 
-#### Linux and OSX
+### Linux and OSX
+
 You may follow manual steps from [here](https://docs.conda.io/en/latest/miniconda.html) similar to the instructions on Windows (see above). Alternatively, you can execute these commands on a terminal shell (in this case, the bash shell):
 
 ```bash
@@ -51,24 +69,24 @@ export PATH="$HOME/miniconda/bin:$PATH"
 conda update conda --yes
 ```
 
-### Installing Python
+## Installing Python
 
-We will be using Python 3.6 or 3.7 during the week (either will work). Since Anaconda (on Linux) expects you to work in the "bash" shell, if this is not already your default shell, you need to set it to be so (use the "chsh -s /bin/bash" command to change your default shell to bash) or just run an instance of bash from the command line before issuing "Conda" commands (/bin/bash or where it is located on your system).
+We will be using Python 3.8 or 3.9 during the week (either will work). Since Anaconda (on Linux) expects you to work in the "bash" shell, if this is not already your default shell, you need to set it to be so (use the "chsh -s /bin/bash" command to change your default shell to bash) or just run an instance of bash from the command line before issuing "Conda" commands (/bin/bash or where it is located on your system).
 
 If you are already familiar with Python 2.7, you can take a look at the syntax differences [here](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html), but the main point to remember is to put the print statements in parentheses:
+
 ```python
 print('Hello World!')
 ```
 
-
 ``` bash
-$ conda create -n py37 python=3.7
+$ conda create -n py39 python=3.9
 ```
 
-To use Python 3.7: 
+To use Python 3.9: 
 
 ``` bash
-$ conda activate py37
+$ conda activate py39
 ```
 
 To check if you have the correct version: 
@@ -76,5 +94,3 @@ To check if you have the correct version:
 ``` bash
 $ python --version
 ```
-
-

@@ -1,6 +1,11 @@
 # Getting started on tutorials
 
-**THIS PAGE HAS NOT BEEN UPDATED FROM OHW20 YET. CHECK BACK SOON!**
+:::{admonition} Updates in progress
+:class: warning
+
+The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2020, 2021 ("OHW21") or links that don't work.
+
+:::
 
 ## Introduction
 

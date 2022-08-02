@@ -144,8 +144,7 @@ Virtual event: We expect to hold formal sessions in at least two time zones, USA
 :hidden:
 
 about/index.md
-about/pasthackweeks.md
+% about/pasthackweeks.md
 OceanHackWeek 2022 <ohw22/index.md>
-% resources/index.md
 % posts
 ```

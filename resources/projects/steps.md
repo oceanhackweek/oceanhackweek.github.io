@@ -1,10 +1,17 @@
-# Hacking at OHW21
+# Hacking at OHW22
+
+:::{admonition} Updates in progress
+:class: warning
+
+The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
+
+:::
 
 ## How will the projects be conducted?
 
-We have put together the [Project proposal form](https://docs.google.com/forms/d/1Q71S1Rae7U_V5BrcSBOiXU1VvNmv7wsjNKBdG5wCEv0/edit) that includes a list of questions that walk you through the few things to consider while setting up a project. Feel free to bounce ideas and form groups in the `#ohw21_project` channel prior to the event, and submit the proposal form when you think you/your team is ready.
+We have put together a [few questions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning) that can help you propose a project in [GitHub discussions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning).
 
-On Tuesday August 3 we will have a brief “project setup” session for an overview of all projects already proposed up to that point, and give another opportunity to pitch new ideas that may be formed throughout the day. The deadline to submit project proposals is 3pm PDT / 6pm EDT / 22:00 UTC that day.
+On Monday August 15th we will have a brief “project setup” session for an overview of all projects already proposed up to that point, and give another opportunity to pitch new ideas that may be formed throughout the day. The deadline to submit project proposals is 3pm PDT / 6pm EDT / 22:00 UTC that day.
 
 ## Tips for getting started
 
