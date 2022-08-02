@@ -32,3 +32,11 @@ See [Project overview](../projects/overview.md) and [Hacking at OHW21](../projec
 ## Getting Help
 
 See the [Getting Help page](getting_help.md) for guidance and links to have your questions answered or connect with organizers with concerns.
+
+```{toctree}
+:hidden:
+
+Overview <./overview>
+Getting Help <getting_help>
+```
+

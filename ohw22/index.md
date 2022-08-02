@@ -94,8 +94,25 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
 :caption: OceanHackWeek 2022 (OHW22)
 :hidden:
 
-Information for Applicants <applicants>
+schedule
 Global Virtual Event <global/index>
 Regional Satellite Events <satellites>
 Organizers <organizers>
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: OHW22 Resources
+:hidden:
+
+Logistics <../resources/logistics/index>
+Preparation <../resources/prep/index>
+Tutorials <../resources/tutorials/getting_started>
+Projects <../resources/projects/index>
+```
+
+```{toctree}
+:caption: OHW22 Other information
+
+Information for Applicants <applicants>
 ```
