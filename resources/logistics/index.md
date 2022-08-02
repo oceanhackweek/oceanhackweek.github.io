@@ -18,7 +18,7 @@ We will use the [OceanHackWeek Slack workspace](http://oceanhackweek.slack.com/)
 
 ## OHW JupyterHub ("The Hub") and GitHub
 
-- OHW JupyterHub ("The Hub"): [https://ohw.pilot.2i2c.cloud](https://ohw.pilot.2i2c.cloud)
+- OHW JupyterHub ("The Hub"): [https://oceanhackweek.2i2c.cloud](https://oceanhackweek.2i2c.cloud)
 - OHW GitHub organization: [https://github.com/oceanhackweek](https://github.com/oceanhackweek)
 
 ## Tutorials broadcasting
