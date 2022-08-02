@@ -3,6 +3,16 @@
 This year we are having two parallel East Coast events in Maine.
 One event will be held at Bigelow Labs in Boothbay, and the other at the Gulf of Maine Research Institute in Portland
 ​
+## Schedule
+
+For most days, plan that we will be meeting from 10 - 5, though we will get started after lunch on Monday, to allow folks time to make their way to Portland or Boothbay and get settled in.
+
+On Wednesday, the GMRI folks will make their way up to Bigelow, so that we can hack as a full group together, explore another lab, have a cookout, and maybe go for a hike.
+
+<iframe width=700 height=850 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=806137536&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+For full details of tutorials and events, see the [global schedule](../schedule.md).
+
 ## Location
 ​
 Gulf of Maine Research Institute, Portland, ME and/or Bigelow Laboratory for Ocean Sciences, East Boothbay, ME
