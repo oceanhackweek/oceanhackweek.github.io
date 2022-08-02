@@ -27,7 +27,7 @@ We encourage you to use our shared JupyterHub resources for running all the tuto
 
 ## How do I access the shared cloud environment?
 
-Access to our shared cloud environment is easy. Click on [https://ohw.pilot.2i2c.cloud](https://ohw.pilot.2i2c.cloud)
+Access to our shared cloud environment is easy. Click on [https://oceanhackweek.2i2c.cloud](https://oceanhackweek.2i2c.cloud)
 
 ![hub-opening](../img/ohw21-jupyterhub-opening.png)
 
@@ -42,7 +42,7 @@ It will take a bit of time for this to load - be patient! Once things are spun u
 
 ## How do I get the tutorial repository?
 
-For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#How-do-I-get-my-code-in-and-out-of-JupyterHub)), or you can use [this magical nbgitpuller link](https://ohw.pilot.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=master). 
+For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#How-do-I-get-my-code-in-and-out-of-JupyterHub)), or you can use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=master). 
 
 Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls via a [series of sane rules](https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging).
 
@@ -92,7 +92,7 @@ After issuing the `git clone` command you should see something like this (again,
 
 ![hub shut down step 1](../img/ohw21-shutdownhub-step1.png)
 
-Then you can shutdown your server from your hub control panel (which you can also access directly from https://ohw.pilot.2i2c.cloud/hub/home ):
+Then you can shutdown your server from your hub control panel (which you can also access directly from [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home) ):
 
 ![hub shut down step 2](../img/ohw21-shutdownhub-step2.png)
 
