@@ -4,7 +4,7 @@ Some of you will participate in person at various satellite events, and others w
 
 ## Time
 
-OceanHackWeek 2021 will take place August 15-19.
+OceanHackWeek 2022 will take place August 15-19.
 
 **In-person participants** will gather as for times as directed by the satellite organizers. While **virtual participants** may choose to engage primarily with this group and schedule via Zoom and Slack, we strongly encourage you to join the program designed specifically as a virtual event. The virtual event will be split into two schedules and groups based on the distribution of participant time zones, in a 3-hour daily block of formal, live activities. The **larger virtual event** will take place 11:00am - 2:00pm PDT / 18:00 - 21:00 UTC.
 
