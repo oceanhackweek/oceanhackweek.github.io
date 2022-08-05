@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Conda and installing Python and R environments &#8212; OceanHackWeek</title>
+    <title>Conda &#8212; OceanHackWeek</title>
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
   document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
@@ -46,7 +46,7 @@
     <script src="../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Getting started on tutorials" href="../tutorials/getting_started.html" />
+    <link rel="next" title="Python and R learning resources" href="learning_python_r.html" />
     <link rel="prev" title="JupyterHub" href="jupyterhub.html" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="en">  
@@ -320,7 +320,12 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Conda, Python, R
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="learning_python_r.html">
+     Python and R learning resources
     </a>
    </li>
   </ul>
@@ -384,43 +389,43 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#what-is-conda">
+   What is Conda?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-on-the-jupyterhub">
+   Conda on the JupyterHub
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-is-conda">
-     What is Conda?
+    <a class="reference internal nav-link" href="#jupyterhub-base-environment">
+     JupyterHub base environment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#python-software">
-     Python Software
+    <a class="reference internal nav-link" href="#temporary-packages">
+     Temporary packages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-your-own-environment-on-jupyterhub">
+     Create your own environment on JupyterHub
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-conda-miniconda">
-   Installing Conda Miniconda
+  <a class="reference internal nav-link" href="#conda-on-your-own-computer">
+   Conda on your own computer
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#windows">
-     Windows
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#linux-and-osx">
-     Linux and OSX
+    <a class="reference internal nav-link" href="#installing-conda">
+     Installing Conda
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-python">
-   Installing Python
-  </a>
  </li>
 </ul>
 
@@ -447,77 +452,89 @@
           <div class="bd-content col-12 col-md-9 col-xl-7">
               
               <article class="bd-article" role="main">
-                 <section id="conda-and-installing-python-and-r-environments">
-<h1>Conda and installing Python and R environments<a class="headerlink" href="#conda-and-installing-python-and-r-environments" title="Permalink to this heading">#</a></h1>
-<div class="warning admonition">
-<p class="admonition-title">Updates in progress</p>
-<p>The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 (“OHW21”) or links that don’t work.</p>
-</div>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+                 <section id="conda">
+<h1>Conda<a class="headerlink" href="#conda" title="Permalink to this heading">#</a></h1>
+<p><em>or: How I Learned to Stop Worrying and Manage Python and R</em></p>
+<p>The JupyterHub is pre-configured with customized environments for both Python and R packages that are designed to be able to run all the tutorial notebooks, and support a broad range of oceanographic applications.</p>
+<p>This environment is created and managed using the open-source <a class="reference external" href="https://docs.conda.io"><strong>Conda</strong> package and environment management system</a> for installing multiple versions of software packages together with their dependencies, and convenient switching between environments.</p>
 <section id="what-is-conda">
-<h3>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this heading">#</a></h3>
-<p><a class="reference external" href="http://conda.pydata.org/docs/"><strong>Conda</strong></a> is an <strong>open source <code class="docutils literal notranslate"><span class="pre">package</span></code> and <code class="docutils literal notranslate"><span class="pre">environment</span></code> management system for any programming languages, but very popular among python community,</strong></p>
-<p>The Hub is pre-configured with a customized “environment” of Python and R packages designed to run all the tutorial notebooks, and supporting a broad range of oceanographic applications. This environment is created and managed using the open-source <a class="reference external" href="https://docs.conda.io"><strong>Conda</strong> package and environment management system</a> for installing multiple versions of software packages together with their dependencies, and convenient switching between environments. Conda runs on Windows, macOS, and Linux: <em>“Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.”</em></p>
-<p>Conda may be used on your computer as well as the Hub …</p>
-<p>https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml</p>
+<h2>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="http://conda.pydata.org/docs/"><strong>Conda</strong></a> is an <strong>open source <code class="docutils literal notranslate"><span class="pre">package</span></code> and <code class="docutils literal notranslate"><span class="pre">environment</span></code> management system for any programming languages, but very popular among the Python community,</strong></p>
+<p>Conda runs on Windows, macOS, and Linux: <em>“Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.”</em></p>
 <p>For Python, the advantage of conda compared to <code class="docutils literal notranslate"><span class="pre">pip</span></code> is that it has a built in environment management system as well as the management of binaries, and non-Python dependencies.</p>
-<p>You do not need administrative or root permissions to install conda if you select a user-writable installation location.</p>
-<p>In the previous lesson we showed you a cloud-based environment for our work during the hackweek. What happens after the event when you want to go home and work with all the libraries we showed you? You will likely also want to have a functioning version of Python on your local laptop if that is not already in place. So this lesson takes you through our recommended procedure for doing that. We suggest you get this set up in advance so that we can help you troubleshoot when you arrive.</p>
 </section>
-<section id="python-software">
-<h3>Python Software<a class="headerlink" href="#python-software" title="Permalink to this heading">#</a></h3>
-<p>Python software is distributed as a series of <em>libraries</em> that are called within your code to perform certain tasks. There are many different collections, or <em>distributions</em> of Python software. Generally you install a specific distribution of Python and then add additional libraries as you need them. There are also several different <em>versions</em> of Python. The two main versions right now are 2.7 and 3.7, although Python 2.7 will not be supported past 2020. Some libraries only work with specific versions of Python.</p>
-<p>So even though Python is one of the most adaptable, easy-to-use software systems, you can see there are still complexities to work out and potential challenges when delivering content to a large group. Therefore we have a number of different ways that we are trying to simplify this process to maximize your learning during the hackweek.</p>
-<p>We also provide instructions for using <a class="reference external" href="https://www.continuum.io">Anaconda</a>, which is our recommended Python distribution, for installing and working with Python on your local computer. We can assist in setting up “conda” environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.</p>
+<section id="conda-on-the-jupyterhub">
+<h2>Conda on the JupyterHub<a class="headerlink" href="#conda-on-the-jupyterhub" title="Permalink to this heading">#</a></h2>
+<p>The JupyterHub has both a pre-configured base environment, and environments that you create and manage yourself.</p>
+<section id="jupyterhub-base-environment">
+<h3>JupyterHub base environment<a class="headerlink" href="#jupyterhub-base-environment" title="Permalink to this heading">#</a></h3>
+<p>The Conda environment for the base JupyterHub environments are defined in <a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/">oceanhackweek/jupyter-image</a>. These image contains hopefully everything you will need for the tutorials and for general exploration.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> files (<a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/blob/main/py-base/environment.yml">Python</a>, <a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/blob/main/r/environment.yml">R</a>) captures the current state of the OceanHackWeek environment. You can explore these files to see what packages we have selected to come in the base environment.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># environment.yml</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OHW</span><span class="w"></span>
+<span class="nt">channels</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span><span class="w"></span>
+<span class="nt">dependencies</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.9</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pangeo-notebook=2021.07.24</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argopy</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bokeh</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bottleneck</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cartopy</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cdsapi</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cf-units</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cf_xarray</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmip6_preprocessing</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmocean</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">colorcet</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compilers</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compliance-checker</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-lock</span><span class="w"></span>
+<span class="c1">#   ... oh so many more packages that we are not going to include them all here</span><span class="w"></span>
+</pre></div>
+</div>
+<p>It also contains a lot of supporting infrastructure for running each individual’s JupyterLab server (for instance <code class="docutils literal notranslate"><span class="pre">compilers</span></code> and <code class="docutils literal notranslate"><span class="pre">conda-lock</span></code> in just that small subset), so we suggest building up an environment from scratch, rather than by trimming down the base environment.</p>
+<p>The exact state of the Conda environments are captured in <code class="docutils literal notranslate"><span class="pre">conda-linux-64.lock</span></code> in the same directories that includes the exact versions of all the packages, not just the ones we selected.</p>
+<p>There are also a handful of dependencies that are installed directly in the <code class="docutils literal notranslate"><span class="pre">Dockerfiles</span></code> that are also in the same directories.</p>
+<p>The full environments are captured as <a class="reference external" href="https://github.com/orgs/oceanhackweek/packages?repo_name=jupyter-image">Docker images</a> that can be pulled and run locally.</p>
 </section>
+<section id="temporary-packages">
+<h3>Temporary packages<a class="headerlink" href="#temporary-packages" title="Permalink to this heading">#</a></h3>
+<p>You can temporarily add packages to your hub, via Jupyter cell magic, <code class="docutils literal notranslate"><span class="pre">%pip</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">%conda</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code>. In R you can use <code class="docutils literal notranslate"><span class="pre">install.packages(&quot;package-name&quot;)</span></code> as usual.</p>
+<div class="danger admonition">
+<p class="admonition-title">pip install trouble</p>
+<p>For those who know their way around Jupyter, you may be tempted to <code class="docutils literal notranslate"><span class="pre">!pip</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code>. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance from <code class="docutils literal notranslate"><span class="pre">&#64;help-infrastructure</span></code> to debug). More information is <a class="reference external" href="https://pilot.2i2c.org/en/latest/admin/howto/environment.html#temporarily-install-packages-for-a-session">available here.</a></p>
+</div>
 </section>
-<section id="installing-conda-miniconda">
-<h2>Installing Conda Miniconda<a class="headerlink" href="#installing-conda-miniconda" title="Permalink to this heading">#</a></h2>
+<section id="create-your-own-environment-on-jupyterhub">
+<h3>Create your own environment on JupyterHub<a class="headerlink" href="#create-your-own-environment-on-jupyterhub" title="Permalink to this heading">#</a></h3>
+<p>To create your own Conda environment on JupyterHub, you can launch the terminal and run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> commands as expected. Be sure to specify <code class="docutils literal notranslate"><span class="pre">-n</span> <span class="pre">&lt;environment-name&gt;</span></code>. For a Python environment:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">cool-project</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">python=3.9</span> <span class="pre">xarray</span> <span class="pre">ipykernel</span></code></p>
 <div class="warning admonition">
-<p class="admonition-title">For local development</p>
-<p>Conda is already installed on our JupyterHub, so these instructions are for if you wish to get started with developing locally.</p>
-<p>We may not have the ability to support everyone’s individual system, so we have the JupyterLab setup so that everyone can work on the same pre-configured platform.</p>
+<p class="admonition-title">Kernel needed</p>
+<p>In order to get easy notebook or terminal access in JupyterLab, a Jupyter kernel needs to be included in the environment, such as <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> for Python or <code class="docutils literal notranslate"><span class="pre">irkernel</span></code> for R.</p>
 </div>
-<p>If you don’t have conda (either with <em>Miniconda</em> or the full <em>Anaconda Distribution</em>) already installed <strong>we recommend <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">installing Miniconda for latest Python 3</a>.</strong></p>
-<p>https://conda.io/projects/conda/en/latest/user-guide/install/index.html</p>
-<section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h3>
-<p>Download the proper installer for your Windows platform (64 bits). When installing, you will be asked if you wish to make the Anaconda Python your default Python for Windows. If you do not have any other installation that is a good option. If you want to keep multiple versions of Python on your machine (e.g. ESRI-supplied python, or 64 bit versions of Anaconda), then don’t select the option to modify your path or modify your Windows registry settings.</p>
-</section>
-<section id="linux-and-osx">
-<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this heading">#</a></h3>
-<p>You may follow manual steps from <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">here</a> similar to the instructions on Windows (see above). Alternatively, you can execute these commands on a terminal shell (in this case, the bash shell):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For MacOSX</span>
-<span class="nv">url</span><span class="o">=</span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-<span class="c1"># For Linux</span>
-<span class="nv">url</span><span class="o">=</span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-wget <span class="nv">$url</span> -O miniconda.sh
-bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda
-<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/miniconda/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
-conda update conda --yes
-</pre></div>
+<p>Once you’ve created an environment, you can run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">cool-project</span></code> as usual for access to the environment in the terminal.</p>
+<div class="admonition-wait-for-it admonition">
+<p class="admonition-title">Wait for it…</p>
+<p>It may take a minute or two for JupyterLab to show your new Conda environment.
+The <a class="reference external" href="https://github.com/Anaconda-Platform/nb_conda_kernels">package</a> that detects additional environments doesn’t run constantly, so give it a second before worrying that you created an environment wrong.</p>
 </div>
 </section>
 </section>
-<section id="installing-python">
-<h2>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this heading">#</a></h2>
-<p>We will be using Python 3.8 or 3.9 during the week (either will work). Since Anaconda (on Linux) expects you to work in the “bash” shell, if this is not already your default shell, you need to set it to be so (use the “chsh -s /bin/bash” command to change your default shell to bash) or just run an instance of bash from the command line before issuing “Conda” commands (/bin/bash or where it is located on your system).</p>
-<p>If you are already familiar with Python 2.7, you can take a look at the syntax differences <a class="reference external" href="http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html">here</a>, but the main point to remember is to put the print statements in parentheses:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda create -n py39 <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
-</pre></div>
-</div>
-<p>To use Python 3.9:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda activate py39
-</pre></div>
-</div>
-<p>To check if you have the correct version:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python --version
-</pre></div>
-</div>
+<section id="conda-on-your-own-computer">
+<h2>Conda on your own computer<a class="headerlink" href="#conda-on-your-own-computer" title="Permalink to this heading">#</a></h2>
+<p>Conda may be used on your computer as well as the Hub. If you wish to install the same environment as the hub is running, after you install Conda, you can download the <a class="reference external" href="https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml"><code class="docutils literal notranslate"><span class="pre">environment.yml</span></code></a> that we use, then <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">&lt;ENV</span> <span class="pre">NAME&gt;</span> <span class="pre">--file</span> <span class="pre">environment.yml</span></code></p>
+<section id="installing-conda">
+<h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this heading">#</a></h3>
+<p>There are a few different ways to install conda:</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a> which comes with a large pre-packaged environment, and a snazzy management interface to help explore what packages are available and what environments you have installed.</p></li>
+<li><p><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> is a stripped down version with just the installer, which is really for kick starting other environments. We’re using a Miniconda Docker image.</p></li>
+<li><p>There is also <a class="reference external" href="https://mamba.readthedocs.io/en/latest/index.html">Mamba</a> which is a newer take on Conda that tends to be faster, but isn’t currently compatible with our trick to allow you to set up your own Conda environments (<a class="reference external" href="https://github.com/Anaconda-Platform/nb_conda_kernels">nb_conda_kernels</a>).</p></li>
+</ul>
+<p>We recommend the use of Miniconda.</p>
+</section>
 </section>
 </section>
 
@@ -539,10 +556,10 @@ conda update conda --yes
           <p class="prev-next-title">JupyterHub</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../tutorials/getting_started.html" title="next page">
+  <a class='right-next' id="next-link" href="learning_python_r.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Getting started on tutorials</p>
+      <p class="prev-next-title">Python and R learning resources</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
