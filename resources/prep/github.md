@@ -9,7 +9,7 @@ The resources are actively being updated! Some parts are still out of date, and 
 
 ## About Git and GitHub
 
-[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
+[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
 
 We will use Git and GitHub for collaborative work. Be sure to arrive at {OceanHackWeek with your own [GitHub](https://github.com/) account.
 
