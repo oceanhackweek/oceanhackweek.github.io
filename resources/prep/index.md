@@ -31,5 +31,6 @@ The resources are actively being updated! Some parts are still out of date, and 
 Git <git>
 github
 jupyterhub
-Conda, Python, R <conda>
+conda
+learning_python_r
 ```
