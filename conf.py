@@ -128,6 +128,7 @@ post_date_format = "%d %B %Y"
 # -- Myst config ---------------------------------------------------
 myst_admonition_enable = True
 myst_deflist_enable = True
+myst_heading_anchors = 3
 myst_update_mathjax = False
 myst_enable_extensions = ["substitution", "colon_fence"]
 
