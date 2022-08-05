@@ -37,7 +37,7 @@ The [**Global Virtual Event**](global/index) will take place through synchronous
 ### Regional Satellites
 [**Six Regional Satellite Events**](satellites) will take place this year to serve as local connecting points for project work, community building, and engaging potential future OHW organizers. [OHW22 organizers](organizers) invite participants geographically located near one of these regional satellites or interested in virtual participation in a specific satellite to select one of these events. The satellite events may be virtual or in-person and take different formats depending on the event organizers. In-person participants may be required to be fully vaccinated against COVID-19.
 
-In coordination with the OHW Northwest satellite event, there will be a **[3-week-long undergraduate summer program “Data Science in Oceanography”](satellites/#undergraduate-summer-program-data-science-in-oceanography) taking place in-person on August 8-26 at the University of Washington**. This program will provide opportunities for undergraduate students in data-driven research in oceanography. See [the satellite event page](./seattle/index.md) for detail.
+In coordination with the OHW Northwest satellite event, there will be a **[3-week-long undergraduate summer program “Data Science in Oceanography”](seattle/index.md#undergraduate-summer-program-august-8-26-2022) taking place in-person on August 8-26 at the University of Washington**. This program will provide opportunities for undergraduate students in data-driven research in oceanography. See [the satellite event page](./seattle/index.md) for detail.
 
 ## OHW22 Sponsors
 

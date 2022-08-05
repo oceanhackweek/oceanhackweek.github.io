@@ -8,7 +8,7 @@ OceanHackWeek 2022 will take place August 15-19.
 
 **In-person participants** will gather as for times as directed by the satellite organizers. While **virtual participants** may choose to engage primarily with this group and schedule via Zoom and Slack, we strongly encourage you to join the program designed specifically as a virtual event. The virtual event will be split into two schedules and groups based on the distribution of participant time zones, in a 3-hour daily block of formal, live activities. The **larger virtual event** will take place 11:00am - 2:00pm PDT / 18:00 - 21:00 UTC.
 
-Detailed schedules are available [Schedule page](../schedule.md).
+Detailed schedules are available [Schedule page](../../ohw22/schedule.md).
 
 ## Channel of communication: Slack
 
@@ -27,7 +27,7 @@ We will use Zoom to broadcast all tutorials. The Zoom link will be distributed v
 
 ## Hack projects
 
-See [Project overview](../projects/overview.md) and [Hacking at OHW21](../projects/steps.md) for more info.
+See [Project overview](../projects/index.md) and [Hacking at OHW22](../projects/steps.md) for more info.
 
 ## Getting Help
 
