@@ -214,7 +214,7 @@ Submit a pull request by clicking `New pull request`:
 * Reviewer: look through changes in the files
 * Approve PR or ask for more changes.
 
-```{admonition}
+```{admonition} Note
 While your pull request is pending, any change you push to the fork will become a part of the request. This is useful if you are asked to make small changes before your PR is accepted.
 ```
 
