@@ -20,7 +20,7 @@ Híbrido, es decir los participantes podrán unirse al evento en línea o en per
 ## Ubicación
 
 El evento en línea utilizará Zoom y Slack para la presentación de tutoriales y facilitar comunicación entre participantes. Los eventos en persona serán en Perú y Uruguay.
-- [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), Callao/Lima, Perú (UTC-5)
+- [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), Santa Rosa, Lambayeque, Perú (UTC-5)
 - [Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay](https://udelar.edu.uy/directorio/lugares/centro-universitario-regional-del-este-cure-sede-rocha-1/), Rocha, Uruguay (UTC-3)
 
 ## Perfil esperado de las y los aplicantes
@@ -43,4 +43,11 @@ en el foro [Github Discussions](https://github.com/orgs/oceanhackweek/discussion
 ```{ohw-team}
 :roles: OHW22 Organizer - Espanol
 :email_icon:
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+English Description <index.en>
 ```

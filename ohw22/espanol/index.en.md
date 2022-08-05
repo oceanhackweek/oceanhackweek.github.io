@@ -13,7 +13,7 @@ A group of Spanish-speaking OceanHackWeek organizers and former OceanHackWeek pa
 
 ​Two groups will meet in person in Perú and Uruguay. Everyone else will join online via Zoom, Slack, GitHub, etc, with synchronous activities planned to be centered on UTC-4 time zone (Chile, Venezuela).
 ​
-- Instituto del Mar del Perú (IMARPE), Callao/Lima, Perú (UTC-5)
+- Instituto del Mar del Perú (IMARPE), Santa Rosa, Lambayeque, Perú (UTC-5)
 - Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay, Rocha, Uruguay (UTC-3)
 
 ## Format
@@ -42,11 +42,4 @@ Please tag the organizers with `@oceanhackweek/ohw22-organizers-espanol` and add
 ```{ohw-team}
 :roles: OHW22 Organizer - Espanol
 :email_icon:
-```
-
-```{toctree}
-:maxdepth: 2
-:hidden:
-
-Página en español <index.es>
 ```
