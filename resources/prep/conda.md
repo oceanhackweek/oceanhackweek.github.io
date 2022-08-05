@@ -1,96 +1,103 @@
-# Conda and installing Python and R environments
+# Conda
 
-:::{admonition} Updates in progress
-:class: warning
+_or: How I Learned to Stop Worrying and Manage Python and R_
 
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
+The JupyterHub is pre-configured with customized environments for both Python and R packages that are designed to be able to run all the tutorial notebooks, and support a broad range of oceanographic applications.
 
-:::
+This environment is created and managed using the open-source [**Conda** package and environment management system](https://docs.conda.io) for installing multiple versions of software packages together with their dependencies, and convenient switching between environments. 
 
-## Overview
+## What is Conda?
+[**Conda**](http://conda.pydata.org/docs/) is an **open source `package` and `environment` management system for any programming languages, but very popular among the Python community,**
 
-### What is Conda?
-[**Conda**](http://conda.pydata.org/docs/) is an **open source `package` and `environment` management system for any programming languages, but very popular among python community,**
-
-The Hub is pre-configured with a customized "environment" of Python and R packages designed to run all the tutorial notebooks, and supporting a broad range of oceanographic applications. This environment is created and managed using the open-source [**Conda** package and environment management system](https://docs.conda.io) for installing multiple versions of software packages together with their dependencies, and convenient switching between environments. Conda runs on Windows, macOS, and Linux: *"Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language."*
-
-Conda may be used on your computer as well as the Hub ...
-
-https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml
+Conda runs on Windows, macOS, and Linux: *"Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language."*
 
 For Python, the advantage of conda compared to `pip` is that it has a built in environment management system as well as the management of binaries, and non-Python dependencies.
 
-You do not need administrative or root permissions to install conda if you select a user-writable installation location.
+## Conda on the JupyterHub
 
+The JupyterHub has both a pre-configured base environment, and environments that you create and manage yourself.
 
-In the previous lesson we showed you a cloud-based environment for our work during the hackweek. What happens after the event when you want to go home and work with all the libraries we showed you? You will likely also want to have a functioning version of Python on your local laptop if that is not already in place. So this lesson takes you through our recommended procedure for doing that. We suggest you get this set up in advance so that we can help you troubleshoot when you arrive.
+### JupyterHub base environment
 
+The Conda environment for the base JupyterHub environments are defined in [oceanhackweek/jupyter-image](https://github.com/oceanhackweek/jupyter-image/). These image contains hopefully everything you will need for the tutorials and for general exploration.
 
-### Python Software
+The `environment.yml` files ([Python](https://github.com/oceanhackweek/jupyter-image/blob/main/py-base/environment.yml), [R](https://github.com/oceanhackweek/jupyter-image/blob/main/r/environment.yml)) captures the current state of the OceanHackWeek environment. You can explore these files to see what packages we have selected to come in the base environment.
 
-Python software is distributed as a series of *libraries* that are called within your code to perform certain tasks. There are many different collections, or *distributions* of Python software. Generally you install a specific distribution of Python and then add additional libraries as you need them. There are also several different *versions* of Python. The two main versions right now are 2.7 and 3.7, although Python 2.7 will not be supported past 2020. Some libraries only work with specific versions of Python.
+```yaml
+# environment.yml
+name: OHW
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pangeo-notebook=2021.07.24
+  - argopy
+  - bokeh
+  - bottleneck
+  - cartopy
+  - cdsapi
+  - cf-units
+  - cf_xarray
+  - cmip6_preprocessing
+  - cmocean
+  - colorcet
+  - compilers
+  - compliance-checker
+  - conda-lock
+#   ... oh so many more packages that we are not going to include them all here
+```
 
-So even though Python is one of the most adaptable, easy-to-use software systems, you can see there are still complexities to work out and potential challenges when delivering content to a large group. Therefore we have a number of different ways that we are trying to simplify this process to maximize your learning during the hackweek.
+It also contains a lot of supporting infrastructure for running each individual's JupyterLab server (for instance `compilers` and `conda-lock` in just that small subset), so we suggest building up an environment from scratch, rather than by trimming down the base environment.
 
-We also provide instructions for using [Anaconda](https://www.continuum.io), which is our recommended Python distribution, for installing and working with Python on your local computer. We can assist in setting up "conda" environments that will simplify the gathering of Python libraries and version specific to the tutorial you are working on.
+The exact state of the Conda environments are captured in `conda-linux-64.lock` in the same directories that includes the exact versions of all the packages, not just the ones we selected.
 
+There are also a handful of dependencies that are installed directly in the `Dockerfiles` that are also in the same directories.
 
-## Installing Conda Miniconda
+The full environments are captured as [Docker images](https://github.com/orgs/oceanhackweek/packages?repo_name=jupyter-image) that can be pulled and run locally.
 
-:::{admonition} For local development
-:class: warning
+### Temporary packages
 
-Conda is already installed on our JupyterHub, so these instructions are for if you wish to get started with developing locally.
+You can temporarily add packages to your hub, via Jupyter cell magic, `%pip install <list-of-packages>` or `%conda install <list-of-packages>`. In R you can use `install.packages("package-name")` as usual.
 
-We may not have the ability to support everyone's individual system, so we have the JupyterLab setup so that everyone can work on the same pre-configured platform.
+:::{admonition} pip install trouble
+:class: danger
+
+For those who know their way around Jupyter, you may be tempted to `!pip install <list-of-packages>`. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance from `@help-infrastructure` to debug). More information is [available here.](https://pilot.2i2c.org/en/latest/admin/howto/environment.html#temporarily-install-packages-for-a-session)
 
 :::
 
-If you don't have conda (either with *Miniconda* or the full *Anaconda Distribution*) already installed **we recommend [installing Miniconda for latest Python 3](https://docs.conda.io/en/latest/miniconda.html).**
+### Create your own environment on JupyterHub
 
-https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+To create your own Conda environment on JupyterHub, you can launch the terminal and run `conda create` commands as expected. Be sure to specify `-n <environment-name>`. For a Python environment:
 
-### Windows
+`conda create -n cool-project -c conda-forge python=3.9 xarray ipykernel`
 
-Download the proper installer for your Windows platform (64 bits). When installing, you will be asked if you wish to make the Anaconda Python your default Python for Windows. If you do not have any other installation that is a good option. If you want to keep multiple versions of Python on your machine (e.g. ESRI-supplied python, or 64 bit versions of Anaconda), then don't select the option to modify your path or modify your Windows registry settings.
+:::{admonition} Kernel needed
+:class: warning
 
-### Linux and OSX
+In order to get easy notebook or terminal access in JupyterLab, a Jupyter kernel needs to be included in the environment, such as `ipykernel` for Python or `irkernel` for R.
 
-You may follow manual steps from [here](https://docs.conda.io/en/latest/miniconda.html) similar to the instructions on Windows (see above). Alternatively, you can execute these commands on a terminal shell (in this case, the bash shell):
+:::
 
-```bash
-# For MacOSX
-url=https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-# For Linux
-url=https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-wget $url -O miniconda.sh
-bash miniconda.sh -b -p $HOME/miniconda
-export PATH="$HOME/miniconda/bin:$PATH"
-conda update conda --yes
-```
+Once you've created an environment, you can run `conda activate cool-project` as usual for access to the environment in the terminal.
 
-## Installing Python
+:::{admonition} Wait for it...
 
-We will be using Python 3.8 or 3.9 during the week (either will work). Since Anaconda (on Linux) expects you to work in the "bash" shell, if this is not already your default shell, you need to set it to be so (use the "chsh -s /bin/bash" command to change your default shell to bash) or just run an instance of bash from the command line before issuing "Conda" commands (/bin/bash or where it is located on your system).
+It may take a minute or two for JupyterLab to show your new Conda environment.
+The [package](https://github.com/Anaconda-Platform/nb_conda_kernels) that detects additional environments doesn't run constantly, so give it a second before worrying that you created an environment wrong.
 
-If you are already familiar with Python 2.7, you can take a look at the syntax differences [here](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html), but the main point to remember is to put the print statements in parentheses:
+:::
 
-```python
-print('Hello World!')
-```
+## Conda on your own computer
 
-``` bash
-$ conda create -n py39 python=3.9
-```
+Conda may be used on your computer as well as the Hub. If you wish to install the same environment as the hub is running, after you install Conda, you can download the [`environment.yml`](https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml) that we use, then `conda create -n <ENV NAME> --file environment.yml`
 
-To use Python 3.9: 
+### Installing Conda
 
-``` bash
-$ conda activate py39
-```
+There are a few different ways to install conda:
 
-To check if you have the correct version: 
+- The [Anaconda Individual Edition](https://www.anaconda.com/products/individual) which comes with a large pre-packaged environment, and a snazzy management interface to help explore what packages are available and what environments you have installed.
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) is a stripped down version with just the installer, which is really for kick starting other environments. We're using a Miniconda Docker image.
+- There is also [Mamba](https://mamba.readthedocs.io/en/latest/index.html) which is a newer take on Conda that tends to be faster, but isn't currently compatible with our trick to allow you to set up your own Conda environments ([nb_conda_kernels](https://github.com/Anaconda-Platform/nb_conda_kernels)).
 
-``` bash
-$ python --version
-```
+We recommend the use of Miniconda.
