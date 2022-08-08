@@ -10,6 +10,6 @@ The schedule of tutorials is available [here](../../ohw22/schedule.md), and link
 
 ## How do I get the tutorial repository into the Hub?
 
-For the tutorials, we recommend the use of [nbgitpuller](https://jupyterhub.github.io/nbgitpuller/) to clone and pull the tutorials repository, or update the clone you already have. Use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=master) to accomplish this clone or update.
+For the tutorials, we recommend the use of [nbgitpuller](https://jupyterhub.github.io/nbgitpuller/) to clone and pull the tutorials repository, or update the clone you already have. Use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=main) to accomplish this clone or update.
 
 See this [extended discussion](../prep/jupyterhub.md#how-do-i-get-the-tutorial-repository) for more details about `nbgitpuller` and the alternative approach relying on `git` commands and `GitHub` workflows.
