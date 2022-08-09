@@ -31,13 +31,47 @@ We welcome participants from all career stages and encourage applications from g
 3. We encourage students to communicate with the global virtual event and other satellite events to augment their OHW experience.
 
 
-**Logistics**
+### Location
+All activities will be in Ocean Sciences Building (OSB)  https://www.washington.edu/maps/#!/ocn on the University of Washington Seattle campus.
+- OSB 425 will be main location for tutorials and large group discussions
+- Other OSB locations can be leveraged for breakout discussions
 
+
+### Meals
+  - Most days: meal card $30/day, can use at any UW locations
+  - Wednesday: we’ll have a discussion over pizza session
+  - Help yourself for snacks and making coffee
+  - Lunch will be 1400-1500 each day
+
+<!-- 
 We are able to provide lodging for a small number of participants who need to travel within the US Northwest region to the event. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
+ -->
 
-**Contact**
+
+### Preparations 1: Git basics
+For project work during OHW we will rely heavily on basic git operations, so come prepared!
+
+- Here is a good tutorial to get you started/refreshed on Git basics
+  - Video: https://www.youtube.com/watch?v=Bc5BO9gPC9w
+  - [Slides used in video](https://docs.google.com/presentation/d/17h4m6gTG8mRfWaQR3nOn6LPR3hQdCgWzH2hPzpCtyFU/edit#slide=id.p1)
+
+
+### Preparations 2: Lightning talks
+To help everyone get to know each other better, we will do a 2-min lightning talk on Monday morning to kick off our satellite.
+- Max **2 minutes**, so that we have time for everyone. We'll set a timer! :)
+- Suggested format (3 slides):
+  - #1: Who am I?
+  - #2: One project that may be of interest to others at OHW22
+  - #3: What I want to get out of OHW22
+- Please [upload your slides here](https://drive.google.com/drive/folders/1x_Z0qw7xE6BEDtlvCyDHTb-WbCFMzd9X?usp=sharing) -- we've added the email we received from your registration to this folder. If you want another email to have access, slack message `@nw_organizers` in the `#ohw22_northwest` channel.
+
+ 
+### Contact
 
 For questions specific to the regular OHW satellite, please ask in our [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Northwest%22). Please tag the organizers with `@oceanhackweek/ohw22-organizers-northwest` and add a `OHW22 - Northwest` label so that others can find answers. Additionally you can email Dr. Wu-Jung Lee (leewj@uw.edu).
+
+
+
 
 
 ## Undergraduate summer program (August 8-26, 2022)
