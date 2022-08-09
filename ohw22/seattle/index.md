@@ -4,6 +4,13 @@ We will have two sub-programs in the US Northwest satellite, including a regular
 
 These two sub-programs are coordinated in their planning and overlap in time. Participants are encouraged to interact fully across the groups and with other satellites.
 
+## Schedule
+
+Our regular schedule will be 9am - 5pm PDT each day. 
+
+<iframe width=700 height=900 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=2096421604&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+For full details of tutorials and events, see the [global schedule](../schedule.md).
 
 ## Location
 
