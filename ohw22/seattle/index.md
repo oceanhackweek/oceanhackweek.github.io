@@ -52,7 +52,7 @@ We are able to provide lodging for a small number of participants who need to tr
 For project work during OHW we will rely heavily on basic git operations, so come prepared!
 
 - Here is a good tutorial to get you started/refreshed on Git basics
-  - Video: https://www.youtube.com/watch?v=Bc5BO9gPC9w
+  - [Git basics video](https://www.youtube.com/watch?v=Bc5BO9gPC9w)
   - [Slides used in video](https://docs.google.com/presentation/d/17h4m6gTG8mRfWaQR3nOn6LPR3hQdCgWzH2hPzpCtyFU/edit#slide=id.p1)
 
 
