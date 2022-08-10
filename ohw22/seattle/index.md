@@ -24,11 +24,18 @@ In-person. We have space reserved to watch OHW tutorials together and work on pr
 
 ## Regular OHW satellite (August 15-19, 2022)
 
-We welcome participants from all career stages and encourage applications from graduate students, postdocs and early career researchers. Advanced undergrad students with background in oceanography and data science are also welcome. Below is a summary of activities:
+<!-- 
+We welcome participants from all career stages and encourage applications from graduate students, postdocs and early career researchers. Advanced undergrad students with background in oceanography and data science are also welcome. 
+ -->
 
-1. We will watch all the tutorials together
-2. Participants can asynchronously work on projects with participants of other OHW events (either the global virtual event or other satellites). Or participants can work on projects synchronously with other participants in the two sub-programs in Seattle.
-3. We encourage students to communicate with the global virtual event and other satellite events to augment their OHW experience.
+We will have a diverse group of researchers at this satellite!
+
+With the detailed schedule shown above, during this week we will:
+
+1. Watch all global virtual event tutorials together
+2. Enjoy our satellite-specific tutorials and discussions as a group
+3. Work asynchronously on projects with participants of other OHW events (either the global virtual event or other satellites)
+4. Find opportunties to connect with participants from the global virtual event and other satellites to broaden our OHW experience.
 
 
 ### Meals
