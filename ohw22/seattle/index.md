@@ -32,7 +32,7 @@ We welcome participants from all career stages and encourage applications from g
 
 
 ### Location
-All activities will be in Ocean Sciences Building (OSB)  https://www.washington.edu/maps/#!/ocn on the University of Washington Seattle campus.
+All activities will be in [Ocean Sciences Building (OSB) https://uw.edu/maps/#!/ocn](https://uw.edu/maps/#!/ocn) on the University of Washington Seattle campus.
 - OSB 425 will be main location for tutorials and large group discussions
 - Other OSB locations can be leveraged for breakout discussions
 
