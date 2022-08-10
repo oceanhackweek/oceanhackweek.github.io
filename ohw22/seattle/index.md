@@ -13,9 +13,9 @@ Our regular schedule will be 9am - 5pm PDT each day.
 For full details of tutorials and events, see the [global schedule](../schedule.md).
 
 ## Location
-
-University of Washington, Seattle, WA
-
+All activities will be in [Ocean Sciences Building (OSB) https://uw.edu/maps/#!/ocn](https://uw.edu/maps/#!/ocn) on the University of Washington Seattle campus.
+- OSB 425 will be main location for tutorials and large group discussions
+- Other OSB locations can be leveraged for breakout discussions
 
 ## Format
 
@@ -29,12 +29,6 @@ We welcome participants from all career stages and encourage applications from g
 1. We will watch all the tutorials together
 2. Participants can asynchronously work on projects with participants of other OHW events (either the global virtual event or other satellites). Or participants can work on projects synchronously with other participants in the two sub-programs in Seattle.
 3. We encourage students to communicate with the global virtual event and other satellite events to augment their OHW experience.
-
-
-### Location
-All activities will be in [Ocean Sciences Building (OSB) https://uw.edu/maps/#!/ocn](https://uw.edu/maps/#!/ocn) on the University of Washington Seattle campus.
-- OSB 425 will be main location for tutorials and large group discussions
-- Other OSB locations can be leveraged for breakout discussions
 
 
 ### Meals
