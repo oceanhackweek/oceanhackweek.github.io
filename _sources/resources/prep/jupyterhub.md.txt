@@ -42,7 +42,7 @@ It will take a bit of time for this to load - be patient! Once things are spun u
 
 ## How do I get the tutorial repository?
 
-For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#how-do-i-get-my-code-in-and-out-of-jupyterhub)), or you can use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=main). 
+For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#how-do-i-get-my-code-in-and-out-of-jupyterhub)), or you can use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW22). 
 
 Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls via a [series of sane rules](https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging).
 
