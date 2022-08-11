@@ -96,7 +96,8 @@ Make sure your change appears online.
 git pull origin master
 ```
 
-```{admonition} "Remember `origin` is just a short name of the web address of the repository."
+```{admonition} "Short names for repositories:"
+"Remember `origin` is just a short name of the web address of the repository."
 To see what is hidden in origin: `git remote -v`
 ```
 
