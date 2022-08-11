@@ -52,7 +52,7 @@ You can accomplish the same results as nbgitpuller when using `git` directly, bu
 
 If you start by using the nbgitpuller link, and then switch to using git directly, or if you already have a copy of the repository in our account, using the nbgitpuller link again will most likely lead to [unpredictable results](https://jupyterhub.github.io/nbgitpuller/#when-to-use-nbgitpuller).
 
-This can be fixed by [removing the `ohw-tutorials` directory](https://imgs.xkcd.com/comics/git.png) and using nbgitpuller again.
+This can be fixed by [removing, renaming, or moving the `ohw-tutorials` directory](https://imgs.xkcd.com/comics/git.png) and using nbgitpuller again.
 ```
 
 
