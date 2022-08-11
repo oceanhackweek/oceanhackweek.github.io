@@ -25,6 +25,8 @@ You are also welcome to direct message the helpers if you don't feel comfortable
 - `@help-projects` - For help with managing projects, for instance asking how to set up a new repo, or organize meetings.
 - `@help-python` - Questions about Python programming.
 - `@help-r` - Questions about R programming.
+- `@help-ml` - Questions about machine learning.
+- `@help-git` - Questions about git.
 - `@help-tutorials` - For help with tutorial logistics, like cloning the notebooks.
 - `@help-website` - If there are any issues with the website tag us to take a look.
 
@@ -42,5 +44,5 @@ See the [Projects Getting Started page](../projects/steps.md). Feel free to post
 
 ## Reporting a Code of Conduct violation
 
-Harassment and other [Code of Conduct violations](../conduct.md) reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://oceanhackweek.wufoo.com/forms/zep2ybt1swlulc/).**
+Harassment and other [Code of Conduct violations](../../about/code-of-conduct.md) reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://oceanhackweek.wufoo.com/forms/zep2ybt1swlulc/).**
 
