@@ -1,4 +1,12 @@
-# OHW en Español - descripción
+# OHW en Español
+
+:::{admonition} Stale English-language description
+:class: note
+
+Go [here](index.en.md) for the English language description of this satellite.
+However, that page has not been updated since applications closed.
+:::
+
 
 Un grupo de organizadoras, organizadores y participantes de ediciones previas  del [OceanHackWeek (OHW)](https://oceanhackweek.github.io) se unieron en octubre del 2021 para fomentar el uso de la ciencia de datos en oceanografía en Latinoamérica y otras comunidades hispanohablantes. Este grupo estará organizando una serie de eventos para el [OHW 2022](https://oceanhackweek.github.io/ohw22/) que ofrecerá la opción de participar en persona en Perú y Uruguay, o en línea desde cualquier parte del mundo. Estos eventos en conjunto conformarán el evento satélite híbrido “OHW en Español”. Estos incluirán tutoriales y proyectos en coordinación con el evento OHW global y los otros satélites, pero nuestro idioma principal será el español. Sin embargo, se requiere que participantes tengan al menos un conocimiento medio  de inglés, ya que será el idioma principal del evento global. Los temas propuestos para los eventos de OHW en Español incluyen:
 - Perú: Tutoriales y proyectos enfocados en acceder, explorar y analizar datos satelitales sobre el viento, el cual influencia procesos de afloramiento a lo largo de las costas de Perú. Python será el lenguaje de programación utilizado.
@@ -7,12 +15,6 @@ Un grupo de organizadoras, organizadores y participantes de ediciones previas  d
 
 Los tutoriales presentados en los eventos en persona también estarán disponible para las personas que participen en línea.
 
-:::{admonition} ¡Nos vemos en OceanHackWeek 2022!
-:class: note
-
-**Las aplicaciones cerraron el 15 de Junio, 2022, y los participantes ya fueron seleccionados.** ¡Nos vemos en OceanHackWeek 2022 en Español del 15 al 19 de agosto!
-:::
-
 ## Formato
 
 Híbrido, es decir los participantes podrán unirse al evento en línea o en persona. En breve se compartirá más información. 
@@ -20,7 +22,7 @@ Híbrido, es decir los participantes podrán unirse al evento en línea o en per
 ## Ubicación
 
 El evento en línea utilizará Zoom y Slack para la presentación de tutoriales y facilitar comunicación entre participantes. Los eventos en persona serán en Perú y Uruguay.
-- [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), Callao/Lima, Perú (UTC-5)
+- [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), Santa Rosa, Lambayeque, Perú (UTC-5)
 - [Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay](https://udelar.edu.uy/directorio/lugares/centro-universitario-regional-del-este-cure-sede-rocha-1/), Rocha, Uruguay (UTC-3)
 
 ## Perfil esperado de las y los aplicantes
@@ -43,4 +45,12 @@ en el foro [Github Discussions](https://github.com/orgs/oceanhackweek/discussion
 ```{ohw-team}
 :roles: OHW22 Organizer - Espanol
 :email_icon:
+```
+
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+English Description <index.en>
 ```
