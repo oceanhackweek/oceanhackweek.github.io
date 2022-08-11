@@ -1,17 +1,10 @@
 # Hacking at OHW22
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
 ## How will the projects be conducted?
 
 We have put together a [few questions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning) that can help you propose a project in [GitHub discussions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning).
 
-On Monday August 15th we will have a brief “project setup” session for an overview of all projects already proposed up to that point, and give another opportunity to pitch new ideas that may be formed throughout the day. The deadline to submit project proposals is 3pm PDT / 6pm EDT / 22:00 UTC that day.
+On Monday August 15th we will have a brief “project setup” session for an overview of all projects already proposed up to that point, and give another opportunity to pitch new ideas that may be formed throughout the day. Project proposals must be submitted by the end of this day (Day 1). Each satellite may have its own, specific deadline time, so please connect with your satellite or the global event for details.
 
 ## Tips for getting started
 
@@ -20,6 +13,7 @@ On Monday August 15th we will have a brief “project setup” session for an ov
 * Help your group member: you might be the person they need to solve their problem, and vice versa.
 * When discussing, pitch your explanation to the least experienced hacker in the group, and you'll end up better understanding what you're trying to do, or need to revise your idea.
 * You can mix programming languages as needed in order to get started, but do check in with your project mentors and group members to make sure your efforts are straightforward to be absorbed into the project.
+
 
 <!-- * Start with ideas that are close to home: your research, a project for your company, something you have always been interested in. -->
 <!-- * Start with one simple idea first, and when it is built add complexity afterwards. -->
