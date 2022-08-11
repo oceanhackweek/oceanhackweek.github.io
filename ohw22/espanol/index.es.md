@@ -1,4 +1,12 @@
-# OHW en Español - descripción
+# OHW en Español
+
+:::{admonition} Stale English-language description
+:class: note
+
+Go [here](index.en.md) for the English language description of this satellite.
+However, that page has not been updated since applications closed.
+:::
+
 
 Un grupo de organizadoras, organizadores y participantes de ediciones previas  del [OceanHackWeek (OHW)](https://oceanhackweek.github.io) se unieron en octubre del 2021 para fomentar el uso de la ciencia de datos en oceanografía en Latinoamérica y otras comunidades hispanohablantes. Este grupo estará organizando una serie de eventos para el [OHW 2022](https://oceanhackweek.github.io/ohw22/) que ofrecerá la opción de participar en persona en Perú y Uruguay, o en línea desde cualquier parte del mundo. Estos eventos en conjunto conformarán el evento satélite híbrido “OHW en Español”. Estos incluirán tutoriales y proyectos en coordinación con el evento OHW global y los otros satélites, pero nuestro idioma principal será el español. Sin embargo, se requiere que participantes tengan al menos un conocimiento medio  de inglés, ya que será el idioma principal del evento global. Los temas propuestos para los eventos de OHW en Español incluyen:
 - Perú: Tutoriales y proyectos enfocados en acceder, explorar y analizar datos satelitales sobre el viento, el cual influencia procesos de afloramiento a lo largo de las costas de Perú. Python será el lenguaje de programación utilizado.
@@ -6,12 +14,6 @@ Un grupo de organizadoras, organizadores y participantes de ediciones previas  d
 - En línea (a través de Zoom): Tutorial sobre cómo acceder datos de modelos CMIP6, los cuales incluyen datos de diferentes escenarios de los efectos del cambio climático a nivel global.
 
 Los tutoriales presentados en los eventos en persona también estarán disponible para las personas que participen en línea.
-
-:::{admonition} ¡Nos vemos en OceanHackWeek 2022!
-:class: note
-
-**Las aplicaciones cerraron el 15 de Junio, 2022, y los participantes ya fueron seleccionados.** ¡Nos vemos en OceanHackWeek 2022 en Español del 15 al 19 de agosto!
-:::
 
 ## Formato
 
@@ -44,6 +46,7 @@ en el foro [Github Discussions](https://github.com/orgs/oceanhackweek/discussion
 :roles: OHW22 Organizer - Espanol
 :email_icon:
 ```
+
 
 ```{toctree}
 :maxdepth: 2
