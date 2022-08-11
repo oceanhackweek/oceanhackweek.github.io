@@ -434,6 +434,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resolving-the-merge-conflict">
+     5. Resolving the merge conflict
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#avoiding-problems-forking-workflow">
      6. Avoiding problems: forking workflow
     </a>
@@ -585,25 +590,23 @@ git push origin
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin master
 </pre></div>
 </div>
-<p>```{admonition} “Remember <code class="docutils literal notranslate"><span class="pre">origin</span></code> is just a short name of the web address of the repository.”
+<div class="admonition-short-names-for-repositories admonition">
+<p class="admonition-title">“Short names for repositories:”</p>
+<p>“Remember <code class="docutils literal notranslate"><span class="pre">origin</span></code> is just a short name of the web address of the repository.”
 To see what is hidden in origin: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-To continue practicing these steps, make more changes to the title and the description of the project.
-
-![Centralized Workflow](../img/centralized_workflow.png)
-
-*Ran into a problem?*
-
-When working with several people sometimes you
-
-* cannot push because changes have been made that have not been incorporated: need to first pull
-* when pulling you arrive into a merge conflict: need to resolve the conflict manually
-
-
-### 5. Resolving the merge conflict
-
-```bash
-git status
+</div>
+<p>To continue practicing these steps, make more changes to the title and the description of the project.</p>
+<p><img alt="Centralized Workflow" src="../../_images/centralized_workflow.png" /></p>
+<p><em>Ran into a problem?</em></p>
+<p>When working with several people sometimes you</p>
+<ul class="simple">
+<li><p>cannot push because changes have been made that have not been incorporated: need to first pull</p></li>
+<li><p>when pulling you arrive into a merge conflict: need to resolve the conflict manually</p></li>
+</ul>
+</section>
+<section id="resolving-the-merge-conflict">
+<h3>5. Resolving the merge conflict<a class="headerlink" href="#resolving-the-merge-conflict" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git status
 </pre></div>
 </div>
 <p>You will see the file/s which caused the merge conflict in green.</p>
