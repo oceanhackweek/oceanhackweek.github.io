@@ -5,7 +5,7 @@ One event will be held at Bigelow Labs in Boothbay, and the other at the Gulf of
 ​
 ## Schedule
 
-For most days, plan that we will be meeting from 10 - 5, though we will get started after lunch on Monday, to allow folks time to make their way to Portland or Boothbay and get settled in.
+For most days, plan that we will be meeting from 10 - 5.
 
 On Wednesday, the GMRI folks will make their way up to Bigelow, so that we can hack as a full group together, explore another lab, have a cookout, and maybe go for a hike.
 
