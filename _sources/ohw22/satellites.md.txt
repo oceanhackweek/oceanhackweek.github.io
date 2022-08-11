@@ -64,14 +64,14 @@ Details of the event are still being fleshed out. Check back here soon for more 
 **See [more details and contact info here.](./brazil/index)**
 
 
-## OHW-Español
+## Español
 
 - Time zone: UTC-4, approximately 
 - Format: virtual + small in-person gatherings
-- Location: virtual; Lima, Perú; Rocha, Uruguay
+- Location: virtual; Santa Rosa, Lambayeque, Perú; Rocha, Uruguay
 - In Spanish / bilingual (English as needed)
 
-**See [more details and contact info here.](./espanol/index)**
+**See [more details and contact info here.](./espanol/index.es)**
 
 
 ```{toctree}
@@ -84,5 +84,5 @@ seattle/index
 US Southwest <san-diego/index>
 australia/index
 Brazil <brazil/index>
-espanol/index
+Español <espanol/index.es.md>
 ```

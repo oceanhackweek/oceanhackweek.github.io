@@ -24,7 +24,7 @@ For satellite event schedules, please check out their individual pages to see ho
 - [US Southwest](./san-diego/index.md)
 - [Australia](./australia/index.md)
 - [Brazil](./brazil/index.md)
-- [OHW-Español](./espanol/index.md)
+- [Español](./espanol/index.es.md)
 
 ## Global schedule Details
 
