@@ -10,6 +10,28 @@ The schedule of tutorials is available [here](../../ohw22/schedule.md), and link
 
 ## How do I get the tutorial repository into the Hub?
 
-For the tutorials, we recommend the use of [nbgitpuller](https://jupyterhub.github.io/nbgitpuller/) to clone and pull the tutorials repository, or update the clone you already have. Use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW22) to accomplish this clone or update.
+For the tutorials, we recommend the use of [nbgitpuller](https://jupyterhub.github.io/nbgitpuller/) to clone and pull the tutorials repository, or update the clone you already have. Use the magical nbgitpuller link below to accomplish this clone or update.
+
+```{admonition} Pull tutorial repo via the magic of nbgitpuller
+
+The nbgitpuller link is magical, but it can't detect which profile you are currently running. Either should update the (same) tutorial repo, but it may error if you use the Python link if you are actively using the R profile, or the other way around.
+
+::::{tab-set}
+
+:::{tab-item} Python
+
+[Pull tutorial repo for the Python profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW22)
+
+:::
+
+:::{tab-item} R
+
+[Pull tutorial repo for the R profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW22)
+
+:::
+
+::::
+
+```
 
 See this [extended discussion](../prep/jupyterhub.md#how-do-i-get-the-tutorial-repository) for more details about `nbgitpuller` and the alternative approach relying on `git` commands and `GitHub` workflows.
