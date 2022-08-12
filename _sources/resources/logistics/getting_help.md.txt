@@ -1,12 +1,5 @@
 # Getting Help
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
 We know how overwhelming all of this information can be. Here is some for asking questions and figuring out where to turn for help.
 
 You can ask anything on the Slack `#ohw22-general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.

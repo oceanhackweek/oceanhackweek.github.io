@@ -1,12 +1,5 @@
 # Git Setup and Basics
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
 ## About Git and GitHub
 
 [Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
