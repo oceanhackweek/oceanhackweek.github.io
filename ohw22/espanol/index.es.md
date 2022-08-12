@@ -8,30 +8,40 @@ However, that page has not been updated since applications closed.
 :::
 
 
-Un grupo de organizadoras, organizadores y participantes de ediciones previas  del [OceanHackWeek (OHW)](https://oceanhackweek.github.io) se unieron en octubre del 2021 para fomentar el uso de la ciencia de datos en oceanografía en Latinoamérica y otras comunidades hispanohablantes. Este grupo estará organizando una serie de eventos para el [OHW 2022](https://oceanhackweek.github.io/ohw22/) que ofrecerá la opción de participar en persona en Perú y Uruguay, o en línea desde cualquier parte del mundo. Estos eventos en conjunto conformarán el evento satélite híbrido “OHW en Español”. Estos incluirán tutoriales y proyectos en coordinación con el evento OHW global y los otros satélites, pero nuestro idioma principal será el español. Sin embargo, se requiere que participantes tengan al menos un conocimiento medio  de inglés, ya que será el idioma principal del evento global. Los temas propuestos para los eventos de OHW en Español incluyen:
-- Perú: Tutoriales y proyectos enfocados en acceder, explorar y analizar datos satelitales sobre el viento, el cual influencia procesos de afloramiento a lo largo de las costas de Perú. Python será el lenguaje de programación utilizado.
-- Uruguay: Tutoriales mostrando funciones de R que permiten extraer y analizar datos satelitales. Aplicación de principios básicos de machine learning para proyectos en áreas costeras.
-- En línea (a través de Zoom): Tutorial sobre cómo acceder datos de modelos CMIP6, los cuales incluyen datos de diferentes escenarios de los efectos del cambio climático a nivel global.
+El satélite de OceanHackWeek 2022 (OHW22) en Español consiste en tres eventos o componentes paralelos: 
+- Un componente en línea con participantes de diferentes países
+- Un evento presencial en Perú, organizado por el [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), en Santa Rosa, Lambayeque, Perú (UTC-5)
+- Un evento presencial en Uruguay, organizado por el [Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay](https://udelar.edu.uy/directorio/lugares/centro-universitario-regional-del-este-cure-sede-rocha-1/), en Rocha, Uruguay (UTC-3)
 
-Los tutoriales presentados en los eventos en persona también estarán disponible para las personas que participen en línea.
+El evento en línea utilizará Zoom y Slack para la presentación de tutoriales y facilitar comunicación entre participantes.
 
-## Formato
+OHW22 en Español incluirá tutoriales y proyectos en coordinación con el evento OHW22 global y los otros satélites, pero nuestro idioma principal será el español. Sin embargo, se requiere que participantes tengan al menos un conocimiento medio  de inglés, ya que será el idioma principal del evento global. 
 
-Híbrido, es decir los participantes podrán unirse al evento en línea o en persona. En breve se compartirá más información. 
+## Horario
 
-## Ubicación
+El horario regular del **componente en línea** será de 12:00 a 15:00 PDT / 14:00 a 17:00 COT|ECT|PET cada día. [Este enlace](https://www.timeanddate.com/worldclock/converter.html?iso=20220817T190000&p1=234&p2=2444&p3=41&p4=190&p5=454&p6=3239&p7=396&p8=16) muestra conversiones a horas locales en los husos horarios de participantes y organizadores.
 
-El evento en línea utilizará Zoom y Slack para la presentación de tutoriales y facilitar comunicación entre participantes. Los eventos en persona serán en Perú y Uruguay.
-- [Instituto del Mar del Perú (IMARPE)](https://www.gob.pe/imarpe), Santa Rosa, Lambayeque, Perú (UTC-5)
-- [Centro Universitario Regional del Este (CURE), Universidad de la República Uruguay](https://udelar.edu.uy/directorio/lugares/centro-universitario-regional-del-este-cure-sede-rocha-1/), Rocha, Uruguay (UTC-3)
+<iframe width=700 height=640 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=323803934&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
-## Perfil esperado de las y los aplicantes
+También estamos planeando algunas actividades fuera de este horario, en las horas previas. En particular:
 
-Invitamos a personas en cualquier etapa de su carrera a aplicar. Incentivamos especialmente a estudiantes de posgrado, personas en programas post doctorales e investigadoras e investigadores en fases iniciales de su carrera a aplicar a nuestro evento. Estudiantes en los últimos semestres de su programa de grado también son bienvenidos a participar, aunque se recomienda que tengan bases en oceanografía y ciencia de datos. Si bien se espera que los tutoriales comiencen desde un nivel relativamente básico, el conocimiento previo de los lenguajes de programación usados en el evento (R y Python) facilitará la comprensión y el aprovechamiento de  los eventos satélites. Recomendamos a las personas sin experiencia previa en programación a revisar algunos de los siguientes documentos, según el lenguaje en que quiera enfocarse:
+- Martes 8/16 8:00 PDT / 10:00 COT|ECT|PET. Tutorial sobre Extración y análisis de datos de biodiversidad del sistema OBIS, por Enrique Montes
+- Un tutorial sobre el Análisis de series temporales de vientos costeros, por David Correa
+- Un par de ocasiones en las que podremos conectarnos entre los tres grupos de este satélite de OHW en Español: el grupo en línea, el de Perú y el Uruguay
+
+Tendremos más detalles pronto.
+
+## Preparación
+
+<!-- ## Perfil esperado de las y los aplicantes
+
+Invitamos a personas en cualquier etapa de su carrera a aplicar. Incentivamos especialmente a estudiantes de posgrado, personas en programas post doctorales e investigadoras e investigadores en fases iniciales de su carrera a aplicar a nuestro evento. Estudiantes en los últimos semestres de su programa de grado también son bienvenidos a participar, aunque se recomienda que tengan bases en oceanografía y ciencia de datos.  -->
+
+Si bien se espera que los tutoriales comiencen desde un nivel relativamente básico, el conocimiento previo de los lenguajes de programación usados en el evento (R y Python) facilitará la comprensión y el aprovechamiento de  los eventos satélites. Recomendamos a las personas sin experiencia previa en programación a revisar algunos de los siguientes documentos, según el lenguaje en que quiera enfocarse:
 - R - [https://cran.r-project.org/doc/contrib/rdebuts_es.pdf](https://cran.r-project.org/doc/contrib/rdebuts_es.pdf), [https://es.r4ds.hadley.nz](https://es.r4ds.hadley.nz)
 - Python - [https://tutorialpython.com](https://tutorialpython.com), [https://aprendepython.es](https://aprendepython.es), [https://docs.python.org/es/3/tutorial/](https://docs.python.org/es/3/tutorial/)
 
-Los eventos en persona están dirigidos principalmente a residentes locales o con capacidad de trasladarse a las ciudades sede, mientras que los eventos en línea están abiertos a cualquier persona sin importar su ubicación geográfica.
+<!-- Los eventos en persona están dirigidos principalmente a residentes locales o con capacidad de trasladarse a las ciudades sede, mientras que los eventos en línea están abiertos a cualquier persona sin importar su ubicación geográfica. -->
 
 ## Resumen
 
