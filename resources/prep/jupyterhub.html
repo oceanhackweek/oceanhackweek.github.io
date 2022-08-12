@@ -511,7 +511,23 @@ You will then see something like this while the JupyterHub {OceanHackWeek 2022 s
 </section>
 <section id="how-do-i-get-the-tutorial-repository">
 <h2>How do I get the tutorial repository?<a class="headerlink" href="#how-do-i-get-the-tutorial-repository" title="Permalink to this heading">#</a></h2>
-<p>For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route (<a class="reference internal" href="#how-do-i-get-my-code-in-and-out-of-jupyterhub"><span class="std std-doc">described below</span></a>), or you can use <a class="reference external" href="https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&amp;urlpath=lab%2Ftree%2Fohw-tutorials%2F&amp;branch=OHW22">this magical nbgitpuller link</a>.</p>
+<p>For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route (<a class="reference internal" href="#how-do-i-get-my-code-in-and-out-of-jupyterhub"><span class="std std-doc">described below</span></a>), or you can use the magical nbgitpuller link below.</p>
+<div class="admonition-pull-tutorial-repo-via-the-magic-of-nbgitpuller admonition">
+<p class="admonition-title">Pull tutorial repo via the magic of nbgitpuller</p>
+<p>The nbgitpuller link is magical, but it can’t detect which profile you are currently running. Either should update the (same) tutorial repo, but it may error if you use the Python link if you are actively using the R profile, or the other way around.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="e4a05ac5-51b0-4d84-a401-72162c689309" name="e90f406a-e554-49a5-9c86-480490aaffbb" type="radio">
+</input><label class="sd-tab-label" for="e4a05ac5-51b0-4d84-a401-72162c689309">
+Python</label><div class="sd-tab-content docutils">
+<p><a class="reference external" href="https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&amp;urlpath=lab%2Ftree%2Fohw-tutorials%2F&amp;branch=OHW22">Pull tutorial repo for the Python profile</a></p>
+</div>
+<input id="3aed3345-f48a-41f5-bc05-fb707a8a28ed" name="e90f406a-e554-49a5-9c86-480490aaffbb" type="radio">
+</input><label class="sd-tab-label" for="3aed3345-f48a-41f5-bc05-fb707a8a28ed">
+R</label><div class="sd-tab-content docutils">
+<p><a class="reference external" href="https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&amp;urlpath=rstudio%2F&amp;branch=OHW22">Pull tutorial repo for the R profile</a></p>
+</div>
+</div>
+</div>
 <p>Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls via a <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging">series of sane rules</a>.</p>
 <p>You can accomplish the same results as nbgitpuller when using <code class="docutils literal notranslate"><span class="pre">git</span></code> directly, but it can take a complicated dance of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span> <span class="pre">apply</span></code> to keep your changes and get the changes from upstream.</p>
 <div class="admonition warning">
