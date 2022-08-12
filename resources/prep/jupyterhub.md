@@ -42,7 +42,29 @@ It will take a bit of time for this to load - be patient! Once things are spun u
 
 ## How do I get the tutorial repository?
 
-For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#how-do-i-get-my-code-in-and-out-of-jupyterhub)), or you can use [this magical nbgitpuller link](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW22). 
+For the tutorials, there are two primary ways of getting the notebooks. You can use the traditional git management route ([described below](#how-do-i-get-my-code-in-and-out-of-jupyterhub)), or you can use the magical nbgitpuller link below.
+
+```{admonition} Pull tutorial repo via the magic of nbgitpuller
+
+The nbgitpuller link is magical, but it can't detect which profile you are currently running. Either should update the (same) tutorial repo, but it may error if you use the Python link if you are actively using the R profile, or the other way around.
+
+::::{tab-set}
+
+:::{tab-item} Python
+
+[Pull tutorial repo for the Python profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW22)
+
+:::
+
+:::{tab-item} R
+
+[Pull tutorial repo for the R profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW22)
+
+:::
+
+::::
+
+```
 
 Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls via a [series of sane rules](https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging).
 
