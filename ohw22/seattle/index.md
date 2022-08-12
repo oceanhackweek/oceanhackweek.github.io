@@ -62,7 +62,7 @@ To help everyone get to know each other better, we will do a 2-min lightning tal
 - Max **2 minutes**, so that we have time for everyone. We'll set a timer! :)
 - Suggested format (3 slides):
   - #1: Who am I?
-  - #2: One project that may be of interest to others at OHW22
+  - #2: One of my projects or project ideas that may be of interest to others at OHW22
   - #3: What I want to get out of OHW22
 - Please [upload your slides here](https://drive.google.com/drive/folders/1x_Z0qw7xE6BEDtlvCyDHTb-WbCFMzd9X?usp=sharing) -- we've added the email we received from your registration to this folder. If you want another email to have access, slack message `@nw_organizers` in the `#ohw22_northwest` channel.
 
