@@ -1,5 +1,9 @@
 # San Diego
 
+## Schedule
+
+<iframe width=650 height=1080 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=1661539286&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
 ## Location
 
 Scripps Institution of Oceanography, San Diego, CA
