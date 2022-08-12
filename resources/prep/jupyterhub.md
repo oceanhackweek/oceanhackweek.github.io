@@ -1,12 +1,5 @@
 # JupyterHub
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
 ## Jupyter notebooks and the Jupyter ecosystem
 
 You may have heard of [Jupyter](https://en.wikipedia.org/wiki/Project_Jupyter) -- an open computing "ecosystem" developed by [Project Jupyter](https://jupyter.org). This ecosystem is described succinctly and effectively in [the online open book, Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/):

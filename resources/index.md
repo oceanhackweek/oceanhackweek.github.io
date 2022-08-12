@@ -1,13 +1,6 @@
 # Resources
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
-To make sure that OHW21 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
+To make sure that OHW22 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
 
 ## Schedules
 

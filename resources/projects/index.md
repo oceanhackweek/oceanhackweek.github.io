@@ -1,12 +1,5 @@
 # Project Overview
 
-:::{admonition} Updates in progress
-:class: warning
-
-The resources are actively being updated! Some parts are still out of date, and is the content from last year. In the meantime, please watch out for references to 2021 ("OHW21") or links that don't work.
-
-:::
-
 Collaborative projects are a key component of OceanHackWeek, in which you get to interact with others closely and apply new skills to make something exciting happen: it can be creating tools to streamline access of a particular data source, visualizing some high density data interactively, testing existing models with new data sources, or anything else you may want to do at the intersection of oceanography and data science.
 
 ## What is a Hack?

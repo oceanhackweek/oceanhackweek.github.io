@@ -280,6 +280,7 @@ team:
     roles:
       - Projects
       - OHW20 Participant
+      - OHW22 Organizer - Global
 
   - name: Chris Olson
     title: Data Manager
