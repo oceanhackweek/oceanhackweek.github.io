@@ -115,4 +115,5 @@ Projects <../resources/projects/index>
 :caption: OHW22 Other information
 
 Information for Applicants <applicants>
+../resources/organizing/index
 ```
