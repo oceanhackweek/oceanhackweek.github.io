@@ -21,6 +21,16 @@ All activities will be in [Ocean Sciences Building (OSB) https://uw.edu/maps/#!/
 
 In-person. We have space reserved to watch OHW tutorials together and work on projects. We also plan to have social gatherings outside of the formal meeting space to explore and enjoy the region together.
 
+## COVID-19 precautions
+
+We strongly recommend all participants to wear a medical grade mask (N95, KN95, etc.) during OHW. Everyone has different health considerations and risk tolerance, and we would like to lower the risk of COVID-19 infections for everyone. 
+
+If you have close contacts with people who have tested positive or been in crowded confined space for a prolonged period, please consider taking a test before joining OHW in person.
+
+We plan to have remote connection via Zoom during the entire Northwest satellite event. If you test positive less than 5 days before OHW starts (i.e., on or after August 10), please stay home/in the hotel and let the organizers know. We will help ensure smooth connections for tutorials and facilitation of other activities. 
+
+
+
 
 ## Regular OHW satellite (August 15-19, 2022)
 
