@@ -85,6 +85,15 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
 ```
 
   </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/logos/nasa-logo.sm.png
+:alt: NASA
+:width: 150px
+```
+
+  </div>
+
 </div>
 
 
@@ -113,6 +122,7 @@ Projects <../resources/projects/index>
 
 ```{toctree}
 :caption: OHW22 Other information
+:hidden:
 
 Information for Applicants <applicants>
 ../resources/organizing/index
