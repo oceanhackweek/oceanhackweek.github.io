@@ -19,7 +19,7 @@ All activities will be in [Ocean Sciences Building (OSB) https://uw.edu/maps/#!/
 
 ## Format
 
-In-person. We have space reserved to watch OHW tutorials together and work on projects. We also plan to have social gatherings outside of the formal meeting space to explore and enjoy the region together.
+In-person with remote option. We have space reserved to watch OHW tutorials together and work on projects. We also plan to have social gatherings outside of the formal meeting space to explore and enjoy the region together.
 
 ## COVID-19 precautions
 
