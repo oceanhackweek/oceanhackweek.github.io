@@ -41,6 +41,7 @@ exclude_patterns = [
     "README.md",
     "jupyter_execute/**/*",
     "_InstructionSiteUpdates.md",
+    "_build/**"
 ]
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
@@ -136,6 +137,13 @@ extensions += ["ablog"]
 
 # Temporarily stored as off until we fix it
 jupyter_execute_notebooks = "off"  # TODO test
+
+nb_custom_formats = {
+    ".Rmd": [
+        "jupytext.reads",
+        {"fmt": "Rmd"}
+    ]
+}
 
 
 def setup(app):

@@ -6,6 +6,7 @@ dependencies:
   # website/blog building
   - myst-nb>=0.16.0
   - sphinx>= 5.0.2
+  - jupytext
   # - sphinx-panels
   - ablog>=0.10.26
   - sphinx-autobuild>=2021.3.14

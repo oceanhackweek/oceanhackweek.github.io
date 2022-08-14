@@ -13,7 +13,7 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 live:
-	sphinx-autobuild --ignore '_build/**/*' --ignore '**/.ipynb_checkpoints/*' --ignore 'jupyter_execute/**/*' -b dirhtml  . _build/dirhtml/
+	sphinx-autobuild --re-ignore '_build\/jupyter_execute\/.*' --ignore '_build/jupyter_execute/**/*' --ignore '**/.ipynb_checkpoints/*' --ignore 'jupyter_execute/**/*' -b dirhtml  . _build/dirhtml/
 
 .PHONY: help Makefile
 

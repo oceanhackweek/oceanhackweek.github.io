@@ -18,3 +18,9 @@ For satellite event schedules, please check out their individual pages to see ho
 - [Australia](./australia/index.md)
 - [Brazil](./brazil/index.md)
 - [Español](./espanol/index.es.md)
+
+```{toctree}
+:hidden:
+
+monday
+```
