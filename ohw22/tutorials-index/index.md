@@ -1,6 +1,7 @@
 # Tutorials
 
 ```{toctree}
+:maxdepth: 1
 
 ../../resources/tutorials/getting_started
 ../tutorials/00-Mon/xarray-in-45-min.ipynb
