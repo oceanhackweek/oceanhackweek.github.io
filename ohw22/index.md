@@ -17,7 +17,8 @@ See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
-**Applicants have been notified and participants should expect further communications**
+GVE tutorials will be delivered on [Zoom](https://bigelow.zoom.us/j/84201880574).
+Find password on Slack channel #ohw22_general!
 
 :::
 
