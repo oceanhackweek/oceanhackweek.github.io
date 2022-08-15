@@ -19,13 +19,13 @@ OHW22 en Español incluirá tutoriales y proyectos en coordinación con el event
 
 ## Horario
 
-El horario regular del **componente en línea** será de 12:00 a 15:00 PDT / 14:00 a 17:00 COT|ECT|PET cada día. [Este enlace](https://www.timeanddate.com/worldclock/converter.html?iso=20220817T190000&p1=234&p2=2444&p3=41&p4=190&p5=454&p6=3239&p7=396&p8=16) muestra conversiones a horas locales en los husos horarios de participantes y organizadores.
+El horario regular del **componente en línea** será de 12:00 a 15:00 PDT (UTC-7) / 14:00 a 17:00 COT|ECT|PET (UTC-5) cada día. [Este enlace](https://www.timeanddate.com/worldclock/converter.html?iso=20220817T190000&p1=234&p2=2444&p3=41&p4=190&p5=454&p6=3239&p7=396&p8=16) muestra conversiones a horas locales en los husos horarios de participantes y organizadores.
 
 <iframe width=700 height=640 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSK-BFmCaqDp04f6Kfc1tWNIHFDaxHclqe-2Rb4vNlt0we2bqXednUJ_Zk2sRoeqd5nxqsEvJHjYfm/pubhtml?gid=323803934&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 También estamos planeando algunas actividades fuera de este horario, en las horas previas. En particular:
 
-- Martes 8/16 8:00 PDT / 10:00 COT|ECT|PET. Tutorial sobre Extración y análisis de datos de biodiversidad del sistema OBIS, por Enrique Montes
+- Martes 8/16 8:00 PDT (UTC-7) / 10:00 COT|ECT|PET (UTC-5). Tutorial sobre Extración y análisis de datos de biodiversidad del sistema OBIS, por Enrique Montes
 - Un tutorial sobre el Análisis de series temporales de vientos costeros, por David Correa
 - Un par de ocasiones en las que podremos conectarnos entre los tres grupos de este satélite de OHW en Español: el grupo en línea, el de Perú y el Uruguay
 
