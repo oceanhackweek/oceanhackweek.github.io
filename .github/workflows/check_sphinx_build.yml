@@ -12,6 +12,8 @@ jobs:
       # https://github.com/actions/checkout
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Install Conda environment from environment.yml
         uses: mamba-org/provision-with-micromamba@v11

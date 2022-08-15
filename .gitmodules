@@ -1,0 +1,4 @@
+[submodule "ohw22/tutorials"]
+	path = ohw22/tutorials
+	url = https://github.com/oceanhackweek/ohw-tutorials.git
+	branch = OHW22
