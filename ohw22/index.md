@@ -14,12 +14,25 @@ The OceanHackWeek program consists of hands-on tutorials, visual presentations, 
 
 See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
+:::{admonition} Join OHW22 global virtual tutorials!
+:class: note
+
+Tutorials will be delivered on Zoom [here](https://bigelow.zoom.us/j/84201880574).
+Find password on the Slack channel #ohw22_general!
+
+:::
+
+
+<!---
 :::{admonition} Join us at OceanHackWeek 2022!
 :class: note
 
 **Applicants have been notified and participants should expect further communications**
+GVE tutorials will be delivered on [Zoom](https://bigelow.zoom.us/j/84201880574).
+Find password on Slack channel #ohw22_general!
 
 :::
+ -->
 
 ## A Global Virtual Event and Six Regional Satellites
 
