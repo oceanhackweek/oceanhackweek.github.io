@@ -1,0 +1,1056 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>pn.interact &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Widgets and reactive components" href="03_Interlinked_Panels.html" />
+    <link rel="prev" title="Welcome to HoloViz!" href="01_Overview.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../00-Mon/xarray-in-45-min.html">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/00-data-access.html">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/01_data_access.html">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="04_Basic_Plotting.html">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/00-unsupervised-PCA.html">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   pn.interact
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#component-types">
+   Component types
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#displaying-content">
+   Displaying content
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#laying-out-content">
+   Laying out content
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#updating-content">
+   Updating content
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-construct-and-display-a-new-panel-and-then-replace-a-component-in-a-new-cell">
+     Exercise: Construct and display a new Panel and then replace a component in a new cell
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#serving-panel-apps">
+   Serving Panel apps
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/02-Wed/01-data-visualization-in-python/tutorial/02_Building_Panels.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <style>div.container { width: 100% }</style>
+<img style="float:left;  vertical-align:text-bottom;" height="65" width="172" src="../assets/holoviz-logo-unstacked.svg" />
+<div style="float:right; vertical-align:text-bottom;"><h2>Tutorial 2: Building Panels</h2></div>
+<p><a href="https://panel.pyviz.org"><img src="../assets/panel.png" width=150></a></p>
+<p>Panel is designed to make it simple to add interactive controls to your existing
+plots and data displays, simple to build apps for your own use in a notebook,
+simple to deploy apps as standalone dashboards to share with colleagues, and
+seamlessly shift back and forth between each of these tasks as your needs
+evolve. If there is one thing you should take away from this tutorial, it’s
+Panel!</p>
+<p>Throughout this tutorial we will use a wave heights dataset collected by NOAA,
+so will start by loading it:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">load_data</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Additionally before displaying anything with Panel it is always necessary to
+load the Panel extension:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">panel</span> <span class="k">as</span> <span class="nn">pn</span>
+
+<span class="n">pn</span><span class="o">.</span><span class="n">extension</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="pn-interact">
+<h1>pn.interact<a class="headerlink" href="#pn-interact" title="Permalink to this heading">#</a></h1>
+<p>Before we get into the details of how Panel allows you to render and lay out
+objects we will dive straight in and use Panel’s <code class="docutils literal notranslate"><span class="pre">interact</span></code> function, modeled on
+the similar function in <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code>, to get a simple interactive app
+immediately. For instance, if you have a function that returns a row of a
+dataframe given an index, you can very easily make a panel with a widget to
+control the row displayed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">select_row</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">row</span><span class="p">]</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">row</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">format</span><span class="p">({</span><span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">t</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%c</span><span class="s2">&quot;</span><span class="p">)})</span>
+
+
+<span class="n">pn</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">select_row</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This approach can be used for any function that returns a displayable object,
+calling the function whenever one of the parameters of that function has
+changed.</p>
+<p>In the spirit of “shortcuts, not dead ends”, let’s see what’s in the object
+returned by <code class="docutils literal notranslate"><span class="pre">interact</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">app</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">select_row</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">interact</span></code> has constructed a Column panel consisting of one Column of
+widgets (with one widget), and one Row of output (with one HTML pane). This
+object, once created, is a full compositional Panel object, and can be
+reconfigured and expanded with additional content if you wish, without breaking
+the connections between widgets and values:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pn</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="s2">&quot;## Choose a row&quot;</span><span class="p">,</span> <span class="n">pn</span><span class="o">.</span><span class="n">Row</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hopefully from this simple example you can see the sorts of things Panel can do.
+In the rest of this section we’ll cover some of the items you can use in a panel
+and how to compose them. In the subsequent section we will dive into how to set
+up widgets and their relationships explicitly, and then build a custom dashboard
+as an exercise. For now, we won’t show code for any particular plotting library,
+but if you have a favorite one already, you should be able to use it with Panel
+in the exercises.</p>
+</section>
+<section id="component-types">
+<h1>Component types<a class="headerlink" href="#component-types" title="Permalink to this heading">#</a></h1>
+<p>Before we start building more interactive apps, we will learn about the three
+main types of components in Panel:</p>
+<ul class="simple">
+<li><p><strong>Pane</strong>: A Pane provides a view of an external object (text, image, plot,
+etc.) by wrapping it</p></li>
+<li><p><strong>Panel</strong>: A Panel lays out multiple components in a row, column, or grid.</p></li>
+<li><p><strong>Widget</strong>: A Widget provides input controls to add interactive features to
+your Panel.</p></li>
+</ul>
+<p>If you ever want to discover how a particular component works, see the
+<a class="reference external" href="https://panel.pyviz.org/reference/index.html">reference gallery</a>.</p>
+</section>
+<section id="displaying-content">
+<h1>Displaying content<a class="headerlink" href="#displaying-content" title="Permalink to this heading">#</a></h1>
+<p>The fundamental concept behind Panel is that it transforms the objects you give
+it into a viewable object that can be composed into a layout and updated
+dynamically. In this tutorial we will be building a dashboard visualizing a
+dataset of earthquake events, so let us start by displaying a title using the
+<code class="docutils literal notranslate"><span class="pre">pn.panel</span></code> function:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">panel</span><span class="p">(</span><span class="s2">&quot;## Major Waves Dashboard&quot;</span><span class="p">)</span>
+
+<span class="n">title</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To understand how Panel rendered this string we can take a look at the textual
+representation of this object:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># top 5 waves in July 2021</span>
+<span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;wvht&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df_sorted</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Panel transformed the <code class="docutils literal notranslate"><span class="pre">str</span></code> object and wrapped it in a so-called <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>
+<code class="docutils literal notranslate"><span class="pre">Pane</span></code>. The <code class="docutils literal notranslate"><span class="pre">pn.panel</span></code> function attempts to find the most appropriate
+representation for different objects whether it is a string, an image, or even a
+plot. So if we provide the location of a PNG file instead as a path or a URL,
+the <code class="docutils literal notranslate"><span class="pre">panel</span></code> function will automatically infer that it should be rendered as an
+image:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">noaa_logo</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">panel</span><span class="p">(</span><span class="s2">&quot;../assets/noaa-lrg.png&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">130</span><span class="p">)</span>
+<span class="n">noaa_logo</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The appropriate representation is resolved using a set of precedences, so it may
+sometimes be necessary to explicitly declare the type of Pane that is required.
+For example, if we want to display some <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, which cannot easily be
+distinguished from Markdown, we can explicitly declare it by specifying the
+<code class="docutils literal notranslate"><span class="pre">HTML</span></code> Pane type from the <code class="docutils literal notranslate"><span class="pre">pn.pane</span></code> module:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span>
+    <span class="s2">&quot;&lt;marquee width=500&gt;&lt;b&gt;Breaking news&lt;/b&gt;: Major waves off coast of Rat Islands&lt;/marquee&gt;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">pn.panel</span></code> function to display some different types of objects, e.g. an
+image, a pandas dataframe or even a plot you made.</p>
+<p>Now construct the same type of object by explicitly constructing the appropriate
+type in the <code class="docutils literal notranslate"><span class="pre">pn.pane</span></code> module (Hint: Print the object in the previous example to
+find out what it is):</p>
+</section>
+</section>
+<section id="laying-out-content">
+<h1>Laying out content<a class="headerlink" href="#laying-out-content" title="Permalink to this heading">#</a></h1>
+<p>In addition to <code class="docutils literal notranslate"><span class="pre">Pane</span></code> objects, Panel provides <code class="docutils literal notranslate"><span class="pre">Panel</span></code> objects that allow laying
+out components. The principal layouts are by <code class="docutils literal notranslate"><span class="pre">Row</span></code> or <code class="docutils literal notranslate"><span class="pre">Column</span></code>. These components
+act just like a regular <code class="docutils literal notranslate"><span class="pre">list</span></code> in Python:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">column</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">noaa_logo</span><span class="p">,</span> <span class="n">app</span><span class="p">)</span>
+
+<span class="n">column</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Panels may be nested arbitrarily to construct complex layouts. Internally, Panel
+will call the <code class="docutils literal notranslate"><span class="pre">pn.panel</span></code> function on any objects which are not already a known
+component type, making it easy to lay out objects without explicitly wrapping
+them in a panel component, though wrapping it explicitly can help ensure that it
+is the type you expect:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df_top5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_sorted</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;station&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;wvht&quot;</span><span class="p">])</span>
+
+<span class="n">row</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">Row</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">pn</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="s2">&quot;### Top 5&quot;</span><span class="p">,</span> <span class="n">pn</span><span class="o">.</span><span class="n">panel</span><span class="p">(</span><span class="n">df_top5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)))</span>
+
+<span class="n">row</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id1">
+<h2>Exercise<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">Row</span></code> and <code class="docutils literal notranslate"><span class="pre">Column</span></code> panels to lay out some of the objects (text, images, or
+plots) you rendered in the previous exercise.</p>
+<p>Try swapping a <code class="docutils literal notranslate"><span class="pre">Row</span></code> or <code class="docutils literal notranslate"><span class="pre">Column</span></code> with a <code class="docutils literal notranslate"><span class="pre">Tabs</span></code> component:</p>
+</section>
+</section>
+<section id="updating-content">
+<h1>Updating content<a class="headerlink" href="#updating-content" title="Permalink to this heading">#</a></h1>
+<p>So far we have only seen how Panel can be used to render and lay out objects,
+which on its own is not too exciting. However, all Panel objects can be modified
+once constructed, and all associated views will automatically update in
+response. Let us take the <code class="docutils literal notranslate"><span class="pre">title</span></code> pane we constructed above as an example:</p>
+<p>This dynamic behavior also extends to Panels, whose Panes will update as they
+are changed:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">column</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>As we discussed above <code class="docutils literal notranslate"><span class="pre">Row</span></code> and <code class="docutils literal notranslate"><span class="pre">Column</span></code> Panels behave much like lists. Just
+like lists, we can use <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">pop</span></code>, <code class="docutils literal notranslate"><span class="pre">remove</span></code>, <code class="docutils literal notranslate"><span class="pre">insert</span></code>, and all the other
+standard methods (including setting with =) to modify them. E.g. we could
+dynamically insert a caption for the logo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">This dashboard displays the tallest waves</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">column</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you uncomment and execute that cell, make sure to scroll back up to confirm
+that all versions of the <code class="docutils literal notranslate"><span class="pre">column</span></code> have been updated.</p>
+<section id="exercise-construct-and-display-a-new-panel-and-then-replace-a-component-in-a-new-cell">
+<h2>Exercise: Construct and display a new Panel and then replace a component in a new cell<a class="headerlink" href="#exercise-construct-and-display-a-new-panel-and-then-replace-a-component-in-a-new-cell" title="Permalink to this heading">#</a></h2>
+<details><summary>Hint</summary><br>
+<p>Use <code class="docutils literal notranslate"><span class="pre">print()</span></code> to see how objects are indexed, then use indexing to replace a
+component:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;../assets/panel.png&quot;</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+<section id="serving-panel-apps">
+<h1>Serving Panel apps<a class="headerlink" href="#serving-panel-apps" title="Permalink to this heading">#</a></h1>
+<p>So far we have been building Panel objects entirely within a notebook, which is
+a convenient way to build up an app, particularly for one-time or private use.
+However, a large part of the power of Panel is that it allows us to seamlessly
+transition between an iterative process inside the notebook to a deployed app.
+When developing an app inside the notebook it will display inline, but you can
+see what it looks like as a deployed app by calling <code class="docutils literal notranslate"><span class="pre">.show()</span></code> on the object. As
+long you are running this notebook on a local machine this will open a new
+window:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># row.show()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>otherwise let us simply look at what we have built here in the notebook:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">row</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Once you are happy with the app or dashboard you have built you can annotate it
+with <code class="docutils literal notranslate"><span class="pre">.servable()</span></code>. In the notebook, this annotation has no effect, but it will
+later indicate to the <code class="docutils literal notranslate"><span class="pre">panel</span> <span class="pre">serve</span></code> command that you want this particular
+component to be served. If you then go to the command line and run
+<code class="docutils literal notranslate"><span class="pre">panel</span> <span class="pre">serve</span> <span class="pre">02_Building_Panels.ipynb</span></code>, the code cells in the notebook will be
+executed and the resulting dashboard will be available as a web server.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">row</span><span class="o">.</span><span class="n">servable</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that despite this deep support for switching back and forth between Jupyter
+and deployed servers, Jupyter is in no way required for this process – the same
+deployed dashboard can be obtained by simply exporting the code cells here into
+their own .py file, and doing <code class="docutils literal notranslate"><span class="pre">panel</span> <span class="pre">serve</span> <span class="pre">02_Building_Panels.py</span></code>.</p>
+<section id="id2">
+<h2>Exercise<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Build a Panel component (or reuse one from a previous exercise) and call
+<code class="docutils literal notranslate"><span class="pre">.show()</span></code> on it.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="01_Overview.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Welcome to HoloViz!</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="03_Interlinked_Panels.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Widgets and reactive components</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

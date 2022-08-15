@@ -1,0 +1,1076 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Read in the data &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Read in the data" href="05_Composing_Plots.html" />
+    <link rel="prev" title="Widgets and reactive components" href="03_Interlinked_Panels.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../00-Mon/xarray-in-45-min.html">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/00-data-access.html">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-python/04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/01_data_access.html">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../01-Tue/00-data-access-in-R/03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02_Building_Panels.html">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/00-unsupervised-PCA.html">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../03-Thu/00-machine-learning/02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Read in the data
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-pandas-plot">
+   Using Pandas
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .plot
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-hvplot">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .hvplot
+    </span>
+   </code>
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datashader">
+   Datashader
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-on-points">
+   A Note on
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     points
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistical-plots">
+   Statistical Plots
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#categorical-variables">
+   Categorical variables
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grouping">
+   Grouping
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exploring-further">
+   Exploring further
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/02-Wed/01-data-visualization-in-python/tutorial/04_Basic_Plotting.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <style>div.container { width: 100% }</style>
+<img style="float:left;  vertical-align:text-bottom;" height="65" width="172" src="../assets/holoviz-logo-unstacked.svg" />
+<div style="float:right; vertical-align:text-bottom;"><h2>Tutorial 4. Basic Plotting</h2></div>
+<p>Previous sections have focused on putting various simple types of data together
+in notebooks and deployed servers, but most people will want to include plots as
+well. In this section, we’ll focus on one of the simplest (but still powerful)
+ways to get a plot.</p>
+<p>If you have tried to visualize a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> before, then you have likely
+encountered the
+<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas .plot() API</a>.
+This basic plotting interface uses <a class="reference external" href="http://matplotlib.org">Matplotlib</a> to render
+static PNGs or SVGs in a Jupyter notebook using the<code class="docutils literal notranslate"><span class="pre">inline</span></code> backend (or
+interactive figures via <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code> or <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">widget</span></code>) and for
+exporting from Python, with a command that can be as simple as <code class="docutils literal notranslate"><span class="pre">df.plot()</span></code> for a
+DataFrame with one or two columns.</p>
+<p>The Pandas .plot() API has emerged as a de-facto standard for high-level
+plotting APIs in Python, and is now supported by many different libraries that
+use other underlying plotting engines to provide additional power and
+flexibility. Thus learning this API allows you to access capabilities provided
+by a wide variety of underlying tools, with relatively little additional effort.
+The libraries currently supporting this API include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas</a>
+– Matplotlib-based API included with Pandas. Static or interactive output in
+Jupyter notebooks.</p></li>
+<li><p><a class="reference external" href="https://xarray.pydata.org/en/stable/plotting.html">xarray</a> –
+Matplotlib-based API included with xarray, based on pandas .plot API. Static
+or interactive output in Jupyter notebooks.</p></li>
+<li><p><a class="reference external" href="https://hvplot.pyviz.org">hvPlot</a> – HoloViews and Bokeh-based interactive
+plots for Pandas, GeoPandas, xarray, Dask, Intake, and Streamz data.</p></li>
+<li><p><a class="reference external" href="https://github.com/PatrikHlobil/Pandas-Bokeh">Pandas Bokeh</a> – Bokeh-based
+interactive plots, for Pandas, GeoPandas, and PySpark data.</p></li>
+<li><p><a class="reference external" href="https://github.com/santosjorge/cufflinks">Cufflinks</a> – Plotly-based
+interactive plots for Pandas data.</p></li>
+<li><p><a class="reference external" href="https://plotly.com/python/pandas-backend">Plotly Express</a> –
+Plotly-Express-based interactive plots for Pandas data; only partial support
+for the .plot API keywords</p></li>
+<li><p><a class="reference external" href="https://altair-viz.github.io/pdvega">PdVega</a> – Vega-lite-based, JSON-encoded
+interactive plots for Pandas data.</p></li>
+</ul>
+<p>In this notebook we’ll explore what is possible with the default <code class="docutils literal notranslate"><span class="pre">.plot</span></code> API and
+demonstrate the additional capabilities of <code class="docutils literal notranslate"><span class="pre">.hvplot</span></code>, using the same dataset. Of
+course, this particular dataset is just an example; the same approach can be
+used with just about any tabular dataset.</p>
+<section id="read-in-the-data">
+<h1>Read in the data<a class="headerlink" href="#read-in-the-data" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">load_data</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lat_min</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">latitude</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">lat_max</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">latitude</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="n">lon_min</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">longitude</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">lon_max</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">longitude</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="sa">f</span><span class="s2">&quot;Wave heights from </span><span class="si">{</span><span class="n">lat_min</span><span class="p">,</span> <span class="n">lat_max</span><span class="si">}</span><span class="s2"> latitude to </span><span class="si">{</span><span class="n">lon_min</span><span class="p">,</span> <span class="n">lon_max</span><span class="si">}</span><span class="s2"> longitude&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="using-pandas-plot">
+<h1>Using Pandas <code class="docutils literal notranslate"><span class="pre">.plot</span></code><a class="headerlink" href="#using-pandas-plot" title="Permalink to this heading">#</a></h1>
+<p>The first thing that we’d like to do with this data is visualize the locations
+of every earthquake. So we would like to make a scatter or points plot where
+<code class="docutils literal notranslate"><span class="pre">x='longitude'</span></code> and <code class="docutils literal notranslate"><span class="pre">y='latitude'</span></code>.</p>
+<p>If you are familiar with the <code class="docutils literal notranslate"><span class="pre">pandas.plot</span></code> API, you might expect to execute
+<code class="docutils literal notranslate"><span class="pre">df.plot.scatter(x='longitude',</span> <span class="pre">y='latitude')</span></code>. Feel free to try this out in a
+new cell, but it will throw an error:
+<code class="docutils literal notranslate"><span class="pre">AttributeError:</span> <span class="pre">'DataFrame'</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'plot'</span></code>. In order to make
+the data more manageable for now, we’ll briefly use just a fraction (1%) of it
+and call that <code class="docutils literal notranslate"><span class="pre">small_df</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">small_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mf">.1</span><span class="p">)</span>
+<span class="n">small_df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we have a smaller dataset with many fewer observations. We can use that to
+test out our visualizations before ramping back up to the full dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="using-hvplot">
+<h1>Using <code class="docutils literal notranslate"><span class="pre">.hvplot</span></code><a class="headerlink" href="#using-hvplot" title="Permalink to this heading">#</a></h1>
+<p>As you can see above, the Pandas API gives you a usable plot very easily, where
+you can start to see the density of waves in the western hemisphere. You can
+make a very similar plot with the same arguments using hvplot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hvplot.pandas</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here unlike in the Pandas <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> there is a default hover action on the
+datapoints to show the location values, and you can also pan and zoom to focus
+on any particular region of the data of interest.</p>
+<p>You might have noticed that many of the dots in the scatter that we’ve just
+created lie on top of one another. This is called
+<a class="reference external" href="http://datashader.org/user_guide/1_Plotting_Pitfalls.html#1.-Overplotting">“overplotting”</a>
+and can be avoided in a variety of ways, such as by making the dots slightly
+transparent, or binning the data. These approaches have the downside of
+introducing bias because you need to choose the alpha or the edges of the bins,
+and in order to do that, you have to make assumptions about the data. For an
+initial exploration of a new dataset, it’s much safer if you can just <strong><em>see</em></strong>
+the data, before you impose any assumptions about its form or structure.</p>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h2>
+<p>Try changing the alpha (try .1) on the plot above to see the effect of this
+approach</p>
+<p>Try creating a <code class="docutils literal notranslate"><span class="pre">hexbin</span></code> plot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">hexbin</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="datashader">
+<h1>Datashader<a class="headerlink" href="#datashader" title="Permalink to this heading">#</a></h1>
+<p>To avoid some of the problems of traditional scatter/point plots we can use
+<span class="xref myst">Datashader</span>, which aggregates data into each pixel without any
+arbitrary parameter settings. In <code class="docutils literal notranslate"><span class="pre">hvplot</span></code> we can activate this capability by
+setting <code class="docutils literal notranslate"><span class="pre">datashade=True</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">datashade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dynspread</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here you can see all of the rich detail in this set of thousands of wave
+heights. If you have a live Python process running, you can zoom in and see
+additional detail at each zoom level, without tuning any parameters or making
+any assumptions about the form or structure of the data. We’ll come back to
+Datashader later, but for now the important thing to know about it is that it
+lets us work with arbitrarily large datasets in a web browser conveniently.</p>
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">.hvplot()</span></code> API works here because unlike the other <code class="docutils literal notranslate"><span class="pre">.plot</span></code>
+libraries, <code class="docutils literal notranslate"><span class="pre">hvplot</span></code> doesn’t just target Pandas objects. Instead hvplot can be
+used with:</p>
+<ul class="simple">
+<li><p>Pandas : DataFrame, Series (columnar/tabular data)</p></li>
+<li><p>xarray : Dataset, DataArray (labelled multidimensional arrays)</p></li>
+<li><p>Dask : DataFrame, Series (distributed/out of core arrays and columnar data)</p></li>
+<li><p>Streamz : DataFrame(s), Series(s) (streaming columnar data)</p></li>
+<li><p>Intake : DataSource (data catalogues)</p></li>
+<li><p>GeoPandas : GeoDataFrame (geometry data)</p></li>
+<li><p>NetworkX : Graph (network graphs)</p></li>
+</ul>
+<section id="id1">
+<h2>Exercise<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Select a subset of the data, e.g. only magitudes &gt;5 and plot them with a
+different colormap (valid <code class="docutils literal notranslate"><span class="pre">cmap</span></code> values include ‘viridis’, ‘Reds’ and ‘magma’):</p>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">mag</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">datashade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Reds&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+<section id="a-note-on-points">
+<h1>A Note on <code class="docutils literal notranslate"><span class="pre">points</span></code><a class="headerlink" href="#a-note-on-points" title="Permalink to this heading">#</a></h1>
+<p>As a final note, we should really use <code class="docutils literal notranslate"><span class="pre">hvplot.points</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">hvplot.scatter</span></code> in this instance. The former does not exist in the standard
+pandas <code class="docutils literal notranslate"><span class="pre">.plot</span></code> API which is why we have used <code class="docutils literal notranslate"><span class="pre">hvplot.scatter</span></code> up until now.</p>
+<p>The reason scatter is inappropriate is that it implies that the y-axis
+(latitude) is a <em>dependent variable</em> with respect to the x-axis (latitude). In
+reality, this is not the case, as waves can happen anywhere on the Earth’s
+two-dimensional surface. For this reason, it is best to use <code class="docutils literal notranslate"><span class="pre">hvplot.points</span></code> for
+wave locations, as will be explained further in the next notebook.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">points</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">datashade</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="statistical-plots">
+<h1>Statistical Plots<a class="headerlink" href="#statistical-plots" title="Permalink to this heading">#</a></h1>
+<p>Let’s dive into some of the other capabilities of <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> and <code class="docutils literal notranslate"><span class="pre">.hvplot()</span></code>,
+starting with the frequency of different wind gusts.</p>
+<p>As a first pass, we’ll use a histogram first with <code class="docutils literal notranslate"><span class="pre">plot.hist</span></code> on the small data,
+then with <code class="docutils literal notranslate"><span class="pre">.hvplot.hist</span></code> on the full dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;gst&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Similarly we can create a histogram of the whole dataset using hvplot:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;gst&quot;</span><span class="p">,</span> <span class="n">bin_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id2">
+<h2>Exercise<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Create a kernel density estimate (kde) plot of wind gust speed using the smaller
+<code class="docutils literal notranslate"><span class="pre">small_df</span></code>:</p>
+</section>
+</section>
+<section id="categorical-variables">
+<h1>Categorical variables<a class="headerlink" href="#categorical-variables" title="Permalink to this heading">#</a></h1>
+<p>Next we’ll categorize the waves based on wind gusts. You can read about all the
+different variables available in this dataset
+<a class="reference external" href="https://coastwatch.pfeg.noaa.gov/erddap/info/cwwcNDBCMet/index.html">here</a>.</p>
+<p>First we’ll use <code class="docutils literal notranslate"><span class="pre">pd.cut</span></code> to split the small_dataset into gust categories.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gust_bins</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">]</span>
+<span class="n">gust_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Tame&quot;</span><span class="p">,</span> <span class="s2">&quot;Gusty&quot;</span><span class="p">,</span> <span class="s2">&quot;Blown Away&quot;</span><span class="p">]</span>
+<span class="n">gust_class_column</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">small_df</span><span class="p">[</span><span class="s2">&quot;gst&quot;</span><span class="p">],</span> <span class="n">gust_bins</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">gust_names</span><span class="p">)</span>
+
+<span class="n">small_df</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;gust_class&quot;</span><span class="p">,</span> <span class="n">gust_class_column</span><span class="p">)</span>
+<span class="c1"># handy: in case we need to modify the &quot;gust_class&quot;, we can drop it from our data frame in order to re-add it</span>
+<span class="c1"># small_df = small_df.drop([&#39;gust_class&#39;], axis=1)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can now use this new categorical variable to group our data. First we will
+overlay all our groups on the same plot using the <code class="docutils literal notranslate"><span class="pre">by</span></code> option:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;wvht&quot;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s2">&quot;gust_class&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>NOTE:</strong> Click on the legend to turn off certain categories and see what is
+behind them.</p>
+<section id="id3">
+<h2>Exercise<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>Add <code class="docutils literal notranslate"><span class="pre">subplots=True</span></code> and <code class="docutils literal notranslate"><span class="pre">width=300</span></code> to see the different classes side-by-side.
+The y-axis will be linked, so try zooming.</p>
+</section>
+</section>
+<section id="grouping">
+<h1>Grouping<a class="headerlink" href="#grouping" title="Permalink to this heading">#</a></h1>
+<p>To use a widget to toggle between classes, use the <code class="docutils literal notranslate"><span class="pre">groupby</span></code> option, here in a
+bivariate plot:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">small_df</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">bivariate</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;wvht&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;gst&quot;</span><span class="p">,</span> <span class="n">groupby</span><span class="o">=</span><span class="s2">&quot;gust_class&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exploring-further">
+<h1>Exploring further<a class="headerlink" href="#exploring-further" title="Permalink to this heading">#</a></h1>
+<p>These visualizations just touch the surface of what is available from hvPlot. To
+see many more examples, study the <a class="reference external" href="https://hvplot.pyviz.org">hvPlot website</a>.
+The following section will focus on how to put these plots together once you
+have them, linking them to understand and show their relationships.</p>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="03_Interlinked_Panels.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Widgets and reactive components</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="05_Composing_Plots.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Read in the data</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

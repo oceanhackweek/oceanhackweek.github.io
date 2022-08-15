@@ -99,7 +99,7 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
 
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 :caption: OceanHackWeek 2022 (OHW22)
 :hidden:
 
@@ -107,6 +107,7 @@ schedule
 Global Virtual Event <global/index>
 Regional Satellite Events <satellites>
 Organizers <organizers>
+tutorials-index/index
 ```
 
 ```{toctree}
@@ -116,7 +117,6 @@ Organizers <organizers>
 
 Logistics <../resources/logistics/index>
 Preparation <../resources/prep/index>
-Tutorials <../resources/tutorials/getting_started>
 Projects <../resources/projects/index>
 ```
 

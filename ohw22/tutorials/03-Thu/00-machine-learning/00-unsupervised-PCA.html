@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>A quick introduction to machine learning &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Unsupervised learning part 2: kmeans" href="01-unsupervised-kmeans.html" />
+    <link rel="prev" title="Machine learning applications" href="../../../tutorials-index/machine-learning-applications.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00-Mon/xarray-in-45-min.html">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-python/00-data-access.html">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-python/01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-python/02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-python/04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-R/01_data_access.html">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-R/02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01-Tue/00-data-access-in-R/03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/02_Building_Panels.html">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/04_Basic_Plotting.html">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-machine-learning-ml">
+   What is Machine Learning (ML)?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vocabulary">
+   Vocabulary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unsupervised-pca">
+   Unsupervised: PCA
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/03-Thu/00-machine-learning/00-unsupervised-PCA.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <section id="a-quick-introduction-to-machine-learning">
+<h1>A quick introduction to machine learning<a class="headerlink" href="#a-quick-introduction-to-machine-learning" title="Permalink to this heading">#</a></h1>
+<p>These notebooks are a brief, hands-on, introduction to machine learning. We will revise some of the nomenclature, principles, and applications from Valentina’s presentation.</p>
+<section id="what-is-machine-learning-ml">
+<h2>What is Machine Learning (ML)?<a class="headerlink" href="#what-is-machine-learning-ml" title="Permalink to this heading">#</a></h2>
+<p><strong>Caveat:</strong> I’m not a Staticician, Mathematicial, or ML expert. I only play one online. You can find my work on plays like “How to get by with little to no data” or “Oh gosh, the PI wants some buzz-words in the report.”</p>
+<p>What is ML (a personal point of view):</p>
+<ul class="simple">
+<li><p>Focus on practical problems</p></li>
+<li><p>Learn from the data and/or make predictions with it</p></li>
+<li><p>Middle ground between statistics and optimization techniques</p></li>
+<li><p>We have fast computers now, right? Let them do the work! (<a class="reference external" href="https://www.youtube.com/watch?app=desktop&amp;v=Iq9DzN6mvYA">Must see JVP talk on this</a>.)</p></li>
+</ul>
+<p><strong>Oversimplified take:</strong> Fit a model to data and use it to make predictions. (This is how scikit-learn designed its API BTW).</p>
+</section>
+<section id="vocabulary">
+<h2>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>model:</strong> Mathematical equations used to approximate the data.</p></li>
+<li><p><strong>parameters:</strong> Variables that define the model and control its behavior.</p></li>
+<li><p><strong>labels/classes:</strong> Quantity/category that we want to predict</p></li>
+<li><p><strong>features:</strong> Observations (information) used as predictors of labels/classes.</p></li>
+<li><p><strong>training:</strong> Use <strong>features</strong> and known <strong>labels/classes</strong> to fit the <strong>model</strong> estimate its <strong>parameters</strong> (full circle, right? But why stop now?).</p></li>
+<li><p><strong>hyper-parameters:</strong> Variables that influence the training and the model but are not estimated during training.</p></li>
+<li><p><strong>unsupervised learning:</strong> Extract information and structure from the data without “training”. We will see clustering, and Principal Component Analysis (PCA).</p></li>
+<li><p><strong>supervised learning:</strong> Fit a model using data to “train” it for making predictions. Examples: regression, classification, spam detection, recommendation systems. We’ll see KNN, a classification type of ML.</p></li>
+</ul>
+</section>
+<section id="unsupervised-pca">
+<h2>Unsupervised: PCA<a class="headerlink" href="#unsupervised-pca" title="Permalink to this heading">#</a></h2>
+<p>The dataset we will use was consists of Red, Green, Blue (<strong>parameters</strong>) composites from plastic pellets photos. We Also have some extra information on the pellet size, shape, etc.</p>
+<p>The <strong>labels</strong> are the yellowing index. The goal is to predict the yellowing based the pellets image. broken down to its RGB info,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;pellets-visual-classes-rgb.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s2">&quot;image&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;yellowing index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;yellowing index&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">axes</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;erosion&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;erosion&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;color&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;description&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;yellowing&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;yellowing&quot;</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">tick_right</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">tick_right</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We will be using only the R, G, B data for now.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">RGB</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="s2">&quot;g&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span>
+
+<span class="n">corr</span> <span class="o">=</span> <span class="n">RGB</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="c1"># Generate a mask for the upper triangle</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+<span class="n">mask</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">triu_indices_from</span><span class="p">(</span><span class="n">mask</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Draw the heatmap with the mask and correct aspect ratio</span>
+<span class="n">vmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">corr</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="o">~</span><span class="n">mask</span><span class="p">])</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span>
+    <span class="n">corr</span><span class="p">,</span>
+    <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">PuOr</span><span class="p">,</span>
+    <span class="n">vmin</span><span class="o">=-</span><span class="n">vmax</span><span class="p">,</span>
+    <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">,</span>
+    <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">linecolor</span><span class="o">=</span><span class="s2">&quot;lightgray&quot;</span><span class="p">,</span>
+    <span class="n">linewidths</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+        <span class="n">k</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">),</span>
+        <span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">k</span><span class="p">],</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+        <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+        <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{:.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">corr</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="n">j</span><span class="p">])</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">s</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The first step to most ML techniques is to standardize the data. We do not want high variance data to bias our model.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">z_score</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+
+<span class="n">zs</span> <span class="o">=</span> <span class="n">RGB</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">z_score</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">zs</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Should be 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zs</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Should be zero</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">zs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The pca object, or fitted model, was designed before pandas existed and it is based on numpy arrays. We can do better nowadays and add meaniful labels to it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loadings</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">pca</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">loadings</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;PC </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">pc</span> <span class="k">for</span> <span class="n">pc</span> <span class="ow">in</span> <span class="n">loadings</span><span class="o">.</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">loadings</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;TS </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">pc</span> <span class="k">for</span> <span class="n">pc</span> <span class="ow">in</span> <span class="n">loadings</span><span class="o">.</span><span class="n">columns</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">loadings</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">PCs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">loadings</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">RGB</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">line</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;linestyle&quot;</span><span class="p">:</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;k&quot;</span><span class="p">}</span>
+<span class="n">marker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;linestyle&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;markersize&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mf">2.75</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">PCs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">PCs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Scores&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">marker</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;PC1&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;PC2&quot;</span><span class="p">)</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">PCs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">PCs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">RGB</span><span class="o">.</span><span class="n">columns</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">perc</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="n">perc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">perc</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Percentage explained ratio&quot;</span><span class="p">],</span>
+    <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;PC </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">pc</span> <span class="k">for</span> <span class="n">pc</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">perc</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">perc</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The non-project loadings plot can help us see if the data has some sort of aggregation that we can leverage.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">common</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;linestyle&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;markersize&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">}</span>
+
+<span class="n">markers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;no yellowing&quot;</span><span class="p">},</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;^&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">},</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;moderate&quot;</span><span class="p">},</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;khaki&quot;</span><span class="p">,</span> <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">},</span>
+    <span class="mi">4</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;darkgoldenrod&quot;</span><span class="p">,</span> <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;very high&quot;</span><span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">loadings</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">loadings</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;yellowing index&quot;</span><span class="p">]):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">common</span><span class="p">,</span> <span class="o">**</span><span class="n">markers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;non-projected PC1&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;non-projected PC2&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">])</span>
+
+<span class="c1"># Trick to remove duplicate labels from the for-loop.</span>
+<span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+<span class="n">by_label</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">handles</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">by_label</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">by_label</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>PCA is probably be most robust, and easy to perform, non-supervised ML technique (it has been a common technique in ocean sciences since before the ML hype);</p></li>
+<li><p>We learned that a single RGB value does not have enough predictive power to be used alone, we’ll need at least a combination of Red and Green;</p></li>
+<li><p>The loading plot show that the moderate and the low yellowing have some overlaps and that can be troublesome when using this model for predictions.</p></li>
+</ul>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../../../tutorials-index/machine-learning-applications.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Machine learning applications</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="01-unsupervised-kmeans.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Unsupervised learning part 2: kmeans</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

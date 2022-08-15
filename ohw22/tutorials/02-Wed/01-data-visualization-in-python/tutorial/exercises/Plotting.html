@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise 3 &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../../_static/jquery.js"></script>
+    <script src="../../../../../../_static/underscore.js"></script>
+    <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Exercise 3
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-the-data-as-before">
+     Loading the data as before
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-raster-data">
+     Visualizing the raster data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-earthquake-positions">
+     Visualizing the earthquake positions
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enabling-the-box-select-tool">
+     Enabling the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       box_select
+      </span>
+     </code>
+     tool
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#composing-these-visualizations-together">
+     Composing these visualizations together
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4">
+   Exercise 4
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#highlighting-earthquakes-with-circles">
+     Highlighting earthquakes with circles
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#depth-and-magnitude-scatter-of-selected-earthquakes">
+     Depth and magnitude scatter of selected earthquakes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#final-visualization">
+   Final visualization
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/02-Wed/01-data-visualization-in-python/tutorial/exercises/Plotting.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <p><a href='http://www.holoviews.org'><img src="../../assets/pn_hv_gv_bk_ds_pa.png" alt="HoloViz logos" width="40%;" align="left"/></a></p>
+<div style="float:right;"><h2>Exercises 3-4: Plotting</h2></div>
+<section id="exercise-3">
+<h1>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this heading">#</a></h1>
+<p>In this exercise we will explore hvplot some more which we will build on in
+Exercise 4 to create a custom linked visualization.</p>
+<section id="loading-the-data-as-before">
+<h2>Loading the data as before<a class="headerlink" href="#loading-the-data-as-before" title="Permalink to this heading">#</a></h2>
+<p>We will be building a new visualization based on the same data we have cleaned
+and filtered in the rest of the tutorial. First we load the <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> of the
+<code class="docutils literal notranslate"><span class="pre">&gt;=7</span></code> earthquakes:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this if you haven&#39;t already to fetch earthquake and population data files</span>
+<span class="kn">from</span> <span class="nn">fetch_data</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">get_earthquake_data</span><span class="p">()</span>
+<span class="n">get_population_data</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Earthquakes dataset present, skipping download
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># noqa</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">dask.dataframe</span> <span class="k">as</span> <span class="nn">dd</span>
+<span class="kn">import</span> <span class="nn">holoviews</span> <span class="k">as</span> <span class="nn">hv</span>
+
+<span class="kn">from</span> <span class="nn">holoviews</span> <span class="kn">import</span> <span class="n">streams</span>  <span class="c1"># noqa</span>
+
+<span class="kn">import</span> <span class="nn">hvplot.dask</span>  <span class="c1"># noqa</span>
+<span class="kn">import</span> <span class="nn">hvplot.pandas</span>  <span class="c1"># noqa</span>
+<span class="kn">import</span> <span class="nn">hvplot.xarray</span>  <span class="c1"># noqa: adds hvplot method to xarray objects</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">dd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;../../data/earthquakes.parq&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">time</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;datetime64[ns]&quot;</span><span class="p">)</span>
+<span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;mag&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">mag</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">mag</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">cleaned_reindexed_df</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+<span class="n">cleaned_reindexed_df</span> <span class="o">=</span> <span class="n">cleaned_reindexed_df</span><span class="o">.</span><span class="n">persist</span><span class="p">()</span>
+<span class="n">most_severe</span> <span class="o">=</span> <span class="n">cleaned_reindexed_df</span><span class="p">[</span><span class="n">cleaned_reindexed_df</span><span class="o">.</span><span class="n">mag</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>And next we load the population density raster data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataarray</span><span class="p">(</span>
+    <span class="s2">&quot;../../data/gpw_v4_population_density_rev11_2010_2pt5_min.nc&quot;</span>
+<span class="p">)</span>
+<span class="n">cleaned_ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">values</span> <span class="o">!=</span> <span class="n">ds</span><span class="o">.</span><span class="n">nodatavals</span><span class="p">)</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">cleaned_ds</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;population&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualizing-the-raster-data">
+<h2>Visualizing the raster data<a class="headerlink" href="#visualizing-the-raster-data" title="Permalink to this heading">#</a></h2>
+<p>Start by using <code class="docutils literal notranslate"><span class="pre">hvplot.image</span></code> to visualize the whole of the population density
+data using the Datashader support in hvPlot. Grab a handle on this <code class="docutils literal notranslate"><span class="pre">Image</span></code>
+HoloViews object called <code class="docutils literal notranslate"><span class="pre">pop_density</span></code> and customize it using the <code class="docutils literal notranslate"><span class="pre">.opts</span></code> method,
+enabling a logarithmic color scale and a blue colormap (specifically the
+<code class="docutils literal notranslate"><span class="pre">'Blues'</span></code> colormap). At the end of the cell, display this object.</p>
+<p><br><details><summary>Hint</summary><br></p>
+<p>Don’t forget to include <code class="docutils literal notranslate"><span class="pre">rasterize=True</span></code> in the <code class="docutils literal notranslate"><span class="pre">hvplot.image</span></code> call. You can use
+<code class="docutils literal notranslate"><span class="pre">logz=True</span></code>, <code class="docutils literal notranslate"><span class="pre">clim=(1,</span> <span class="pre">np.nan)</span></code> and <code class="docutils literal notranslate"><span class="pre">cmap='Blues'</span></code> in the <code class="docutils literal notranslate"><span class="pre">.opts</span></code> method call</p>
+</details>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pop_density</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+<span class="p">)</span>  <span class="c1"># Use hvplot here to visualize the data in cleaned_ds and customize it with .opts</span>
+<span class="n">pop_density</span>  <span class="c1"># Display it</span>
+</pre></div>
+</div>
+</div>
+</div>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pop_density</span> <span class="o">=</span> <span class="n">cleaned_ds</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">rasterize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">logz</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="n">pop_density</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+<section id="visualizing-the-earthquake-positions">
+<h2>Visualizing the earthquake positions<a class="headerlink" href="#visualizing-the-earthquake-positions" title="Permalink to this heading">#</a></h2>
+<p>Now visualize the tabular data in <code class="docutils literal notranslate"><span class="pre">most_severe</span></code> by building a <code class="docutils literal notranslate"><span class="pre">hv.Points</span></code> object
+directly. This will be very similar to the approach shown in the tutorial but
+this time we want all the earthquakes to be marked with red crosses of size 100
+(no need to use the <code class="docutils literal notranslate"><span class="pre">.opts</span></code> method this time). As above, get a handle on this
+object and display it where the handle is now called <code class="docutils literal notranslate"><span class="pre">quake_points</span></code>:</p>
+<p><br><details><summary>Hint</summary><br></p>
+<p>Don’t forget to map the longitude and latitude dimensions to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> in the
+call to <code class="docutils literal notranslate"><span class="pre">hvplot.points</span></code>.</p>
+</details>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quake_points</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+<span class="p">)</span>  <span class="c1"># Use hvplot here to visualize the data in most_severe and customize it with .opts</span>
+<span class="n">quake_points</span>
+</pre></div>
+</div>
+</div>
+</div>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">quake_points</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">points</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">quake_points</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+<section id="enabling-the-box-select-tool">
+<h2>Enabling the <code class="docutils literal notranslate"><span class="pre">box_select</span></code> tool<a class="headerlink" href="#enabling-the-box-select-tool" title="Permalink to this heading">#</a></h2>
+<p>Now use <code class="docutils literal notranslate"><span class="pre">.opts</span></code> method to enable the Bokeh <code class="docutils literal notranslate"><span class="pre">box_select</span></code> tool on quake points.</p>
+<p><br><details><summary>Hint</summary><br></p>
+<p>The option is called <code class="docutils literal notranslate"><span class="pre">tools</span></code> and takes a list of tool names, in this case
+<code class="docutils literal notranslate"><span class="pre">'box_select'</span></code>.</p>
+</details>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">quake_points</span><span class="o">.</span><span class="n">opts</span><span class="p">(</span><span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tap&#39;</span><span class="p">])</span>
+<span class="n">quake_points</span> <span class="c1"># Display it </span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+<section id="composing-these-visualizations-together">
+<h2>Composing these visualizations together<a class="headerlink" href="#composing-these-visualizations-together" title="Permalink to this heading">#</a></h2>
+<p>Now overlay <code class="docutils literal notranslate"><span class="pre">quake_points</span></code> over <code class="docutils literal notranslate"><span class="pre">pop_density</span></code> to check everything looks correct.
+Make sure the box select tool is working as expected.</p>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pop_density</span> <span class="o">*</span> <span class="n">quake_points</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+</section>
+<section id="exercise-4">
+<h1>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this heading">#</a></h1>
+<p>Using <code class="docutils literal notranslate"><span class="pre">Selection1D</span></code>, define a HoloViews stream called <code class="docutils literal notranslate"><span class="pre">selection_stream</span></code> using
+<code class="docutils literal notranslate"><span class="pre">quake_points</span></code> as a source.</p>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">selection_stream</span> <span class="o">=</span> <span class="n">streams</span><span class="o">.</span><span class="n">Selection1D</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="n">quake_points</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><br></details></p>
+<section id="highlighting-earthquakes-with-circles">
+<h2>Highlighting earthquakes with circles<a class="headerlink" href="#highlighting-earthquakes-with-circles" title="Permalink to this heading">#</a></h2>
+<p>Now we want to create a circle around <em>all</em> the selected points chosen by the
+box select tool where each circle is centered at the latitude and longitude of a
+selected earthquake (10<code class="docutils literal notranslate"><span class="pre">^o</span></code> in diameter). A <code class="docutils literal notranslate"><span class="pre">hv.Ellipse</span></code> object can create a
+circle using the format <code class="docutils literal notranslate"><span class="pre">hv.Ellipse(x,</span> <span class="pre">y,</span> <span class="pre">diameter)</span></code> and we can build an overlay
+of circles from a list of <code class="docutils literal notranslate"><span class="pre">circles</span></code> using <code class="docutils literal notranslate"><span class="pre">hv.Overlay(circles)</span></code>. Using this
+information, complete the following callback for the <code class="docutils literal notranslate"><span class="pre">circle_marker</span></code>
+<code class="docutils literal notranslate"><span class="pre">DynamicMap</span></code>.</p>
+<p><br><details><summary>Hint</summary><br></p>
+<p>Each <code class="docutils literal notranslate"><span class="pre">circle</span></code> needs to be a <code class="docutils literal notranslate"><span class="pre">hv.Ellipse(longitude,</span> <span class="pre">latitude,</span> <span class="pre">10)</span></code> where
+longitude and latitude correspond to the current earthquake row.</p>
+</details>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">circles_callback</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">circles</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">([])</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># noqa</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="o">...</span>  <span class="c1"># Define the appropriate Ellipse element here</span>
+        <span class="n">circles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">(</span><span class="n">circles</span><span class="p">)</span>
+
+
+<span class="c1"># Uncomment when the above function is complete</span>
+<span class="c1"># circle_marker = hv.DynamicMap(circles_callback, streams=[selection_stream])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">circles_callback</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">circles</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>  <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">([])</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">Ellipse</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="n">circles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">(</span><span class="n">circles</span><span class="p">)</span>
+
+<span class="n">circle_marker</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="n">circles_callback</span><span class="p">,</span> <span class="n">streams</span><span class="o">=</span><span class="p">[</span><span class="n">selection_stream</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><br></details></p>
+<p>Now test this works by overlaying <code class="docutils literal notranslate"><span class="pre">pop_density</span></code>, <code class="docutils literal notranslate"><span class="pre">quake_points</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">circle_marker</span></code> together.</p>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pop_density</span> <span class="o">*</span> <span class="n">quake_points</span> <span class="o">*</span> <span class="n">circle_marker</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+<section id="depth-and-magnitude-scatter-of-selected-earthquakes">
+<h2>Depth and magnitude scatter of selected earthquakes<a class="headerlink" href="#depth-and-magnitude-scatter-of-selected-earthquakes" title="Permalink to this heading">#</a></h2>
+<p>Now let us generate a scatter plot of depth against magnitude for the selected
+earthquakes. Define a <code class="docutils literal notranslate"><span class="pre">DynamicMap</span></code> called <code class="docutils literal notranslate"><span class="pre">depth_magnitude_scatter</span></code> that uses a
+callback called <code class="docutils literal notranslate"><span class="pre">depth_magnitude_callback</span></code>. This is a two-line function that
+returns a <code class="docutils literal notranslate"><span class="pre">Scatter</span></code> element generated by <code class="docutils literal notranslate"><span class="pre">.hvplot.scatter</span></code>.</p>
+<p><br><details><summary>Hint</summary><br></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">index</span></code> argument of the callback can be passed straight to
+<code class="docutils literal notranslate"><span class="pre">most_severe.iloc</span></code> to get a filtered dataframe corresponding to the selected
+earthquakes.</p>
+</details>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">depth_magnitude_callback</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">selected</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">selected</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;mag&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;depth&#39;</span><span class="p">)</span>
+
+<span class="n">depth_magnitude_scatter</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="n">depth_magnitude_callback</span><span class="p">,</span> <span class="n">streams</span><span class="o">=</span><span class="p">[</span><span class="n">selection_stream</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+</section>
+<section id="final-visualization">
+<h1>Final visualization<a class="headerlink" href="#final-visualization" title="Permalink to this heading">#</a></h1>
+<p>Now overlay <code class="docutils literal notranslate"><span class="pre">pop_density</span></code>, <code class="docutils literal notranslate"><span class="pre">quake_points</span></code> and <code class="docutils literal notranslate"><span class="pre">circle_marker</span></code> and put this in a
+one column layout together with the linked plot, <code class="docutils literal notranslate"><span class="pre">depth_magnitude_scatter</span></code>.</p>
+<details><summary>Solution</summary><br>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">((</span><span class="n">pop_density</span> <span class="o">*</span> <span class="n">quake_points</span> <span class="o">*</span> <span class="n">circle_marker</span><span class="p">)</span> <span class="o">+</span> <span class="n">depth_magnitude_scatter</span><span class="p">)</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><br></details></p>
+<details><summary><b>Overall Solution</b></summary><br>
+<p>After loading the data, the following (slightly cleaned up) version generates
+the whole visualization:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pop_density</span> <span class="o">=</span> <span class="n">cleaned_ds</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">rasterize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">logz</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="n">quake_points</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">points</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">quake_points</span><span class="o">.</span><span class="n">opts</span><span class="p">(</span><span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;box_select&#39;</span><span class="p">])</span>
+
+<span class="n">selection_stream</span> <span class="o">=</span> <span class="n">streams</span><span class="o">.</span><span class="n">Selection1D</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="n">quake_points</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">circles_callback</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">circles</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>  <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">([])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">Ellipse</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Define the appropriate Ellipse element here</span>
+        <span class="n">circles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Overlay</span><span class="p">(</span><span class="n">circles</span><span class="p">)</span>
+
+<span class="n">circle_marker</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="n">circles_callback</span><span class="p">,</span> <span class="n">streams</span><span class="o">=</span><span class="p">[</span><span class="n">selection_stream</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">depth_magnitude_callback</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">selected</span> <span class="o">=</span> <span class="n">most_severe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">selected</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;mag&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;depth&#39;</span><span class="p">)</span>
+
+<span class="n">depth_magnitude_scatter</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="n">depth_magnitude_callback</span><span class="p">,</span> <span class="n">streams</span><span class="o">=</span><span class="p">[</span><span class="n">selection_stream</span><span class="p">])</span>
+
+<span class="p">((</span><span class="n">pop_density</span> <span class="o">*</span> <span class="n">quake_points</span> <span class="o">*</span> <span class="n">circle_marker</span><span class="p">)</span> <span class="o">+</span> <span class="n">depth_magnitude_scatter</span><span class="p">)</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><br></details></p>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

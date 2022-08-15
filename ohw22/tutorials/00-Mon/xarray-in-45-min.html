@@ -1,0 +1,1569 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Xarray in 45 minutes &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Data access in Python" href="../../tutorials-index/data-access-in-python.html" />
+    <link rel="prev" title="Getting started on tutorials" href="../../../resources/tutorials/getting_started.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-python/00-data-access.html">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-python/01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-python/02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-python/04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-R/01_data_access.html">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-R/02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01-Tue/00-data-access-in-R/03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/02_Building_Panels.html">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/04_Basic_Plotting.html">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02-Wed/01-data-visualization-in-python/tutorial/05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03-Thu/00-machine-learning/00-unsupervised-PCA.html">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03-Thu/00-machine-learning/01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03-Thu/00-machine-learning/02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-in-a-dataset">
+   What’s in a Dataset?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-in-a-dataarray">
+   What’s in a DataArray?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#named-dimensions">
+     Named dimensions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coordinate-variables">
+     Coordinate variables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arbitrary-attributes">
+     Arbitrary attributes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#underlying-data">
+     Underlying data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#review">
+     Review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-xarray">
+   Why Xarray?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-without-xarray-x">
+     Analysis without xarray:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       X(
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-with-xarray">
+     Analysis with xarray
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       =)
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extracting-data-or-indexing">
+   Extracting data or “indexing”
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#label-based-indexing">
+     Label-based indexing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#position-based-indexing">
+     Position-based indexing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#concepts-for-computation">
+   Concepts for computation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#broadcasting-expanding-data">
+     Broadcasting: expanding data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alignment-putting-data-on-the-same-grid">
+     Alignment: putting data on the same grid
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#high-level-computation">
+   High level computation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#groupby">
+     groupby
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resample">
+     resample
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#weighted">
+     weighted
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualization">
+   Visualization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-and-writing-files">
+   Reading and writing files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-scientific-python-ecosystem">
+   The scientific python ecosystem
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-tabular-data-structures">
+     Pandas: tabular data structures
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alternative-array-types">
+     Alternative array types
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dask">
+     Dask
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#holoviz">
+     HoloViz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cf-xarray">
+     cf_xarray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-cool-packages">
+     Other cool packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next">
+   Next
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#welcome">
+   Welcome!
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/00-Mon/xarray-in-45-min.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <img src="https://docs.xarray.dev/en/stable/_static/dataset-diagram-logo.png" align="right" width="30%">
+<section id="xarray-in-45-minutes">
+<h1>Xarray in 45 minutes<a class="headerlink" href="#xarray-in-45-minutes" title="Permalink to this heading">#</a></h1>
+<p>In this lesson, we discuss cover the basics of Xarray data structures. By the
+end of the lesson, we will be able to:</p>
+<ul class="simple">
+<li><p>Understand the basic data structures in Xarray</p></li>
+<li><p>Inspect <code class="docutils literal notranslate"><span class="pre">DataArray</span></code> and <code class="docutils literal notranslate"><span class="pre">Dataset</span></code> objects.</p></li>
+<li><p>Read and write netCDF files using Xarray.</p></li>
+<li><p>Understand that there are many packages that build on top of xarray</p></li>
+</ul>
+<p>We’ll start by reviewing the various components of the Xarray data model, represented here visually:</p>
+<img src="https://docs.xarray.dev/en/stable/_images/dataset-diagram.png" align="center" width="60%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format=&#39;retina&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Xarray has a few small real-world tutorial datasets hosted in the <a class="reference external" href="https://github.com/pydata/xarray-data">xarray-data</a> GitHub repository.</p>
+<p><a class="reference external" href="https://docs.xarray.dev/en/stable/generated/xarray.tutorial.open_dataset.html#xarray.tutorial.open_dataset">xarray.tutorial.load_dataset</a> is a convenience function to download and open DataSets by name (listed at that link).</p>
+<p>Here we’ll use <code class="docutils literal notranslate"><span class="pre">air</span> <span class="pre">temperature</span></code> from the <a class="reference external" href="https://www.weather.gov/ncep/">National Center for Environmental Prediction</a>. Xarray objects have convenient HTML representations to give an overview of what we’re working with:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">tutorial</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;air_temperature&quot;</span><span class="p">)</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that behind the scenes the <code class="docutils literal notranslate"><span class="pre">tutorial.open_dataset</span></code> downloads a file. It then uses <a class="reference external" href="https://docs.xarray.dev/en/stable/generated/xarray.open_dataset.html#xarray-open-dataset"><code class="docutils literal notranslate"><span class="pre">xarray.open_dataset</span></code></a> function to open that file (which for this datasets is a <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">netCDF</a> file).</p>
+<p>A few things are done automatically upon opening, but controlled by keyword arguments. For example, try passing the keyword argument <code class="docutils literal notranslate"><span class="pre">mask_and_scale=False</span></code>… what happens?</p>
+<section id="what-s-in-a-dataset">
+<h2>What’s in a Dataset?<a class="headerlink" href="#what-s-in-a-dataset" title="Permalink to this heading">#</a></h2>
+<p><em>Many DataArrays!</em></p>
+<p>What’s a DataArray?</p>
+<p>Datasets are dictionary-like containers of DataArrays. They are a mapping of
+variable name to DataArray:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out &quot;air&quot; dataarray with dictionary syntax</span>
+<span class="n">ds</span><span class="p">[</span><span class="s2">&quot;air&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can save some typing by using the “attribute” or “dot” notation. This won’t
+work for variable names that clash with a built-in method name (like <code class="docutils literal notranslate"><span class="pre">mean</span></code> for
+example).</p>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out dataarray using dot notation</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="what-s-in-a-dataarray">
+<h2>What’s in a DataArray?<a class="headerlink" href="#what-s-in-a-dataarray" title="Permalink to this heading">#</a></h2>
+<p><em>data + (a lot of) metadata</em></p>
+<section id="named-dimensions">
+<h3>Named dimensions<a class="headerlink" href="#named-dimensions" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.dims</span></code> correspond to the axes of your data.</p>
+<p>In this case we have 2 spatial dimensions (<code class="docutils literal notranslate"><span class="pre">latitude</span></code> and <code class="docutils literal notranslate"><span class="pre">longitude</span></code> are store with shorthand names <code class="docutils literal notranslate"><span class="pre">lat</span></code> and <code class="docutils literal notranslate"><span class="pre">lon</span></code>) and one temporal dimension (<code class="docutils literal notranslate"><span class="pre">time</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">dims</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="coordinate-variables">
+<h3>Coordinate variables<a class="headerlink" href="#coordinate-variables" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.coords</span></code> is a simple <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/data-structures.html#coordinates">data container</a>
+for coordinate variables.</p>
+<p>Here we see the actual timestamps and spatial positions of our air temperature data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">coords</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Coordinates objects support similar indexing notation</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># extracting coordinate variables</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">lon</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># extracting coordinate variables from .coords</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">coords</span><span class="p">[</span><span class="s2">&quot;lon&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is useful to think of the values in these coordinate variables as axis
+“labels” such as “tick labels” in a figure. These are coordinate locations on a
+grid at which you have data.</p>
+</section>
+<section id="arbitrary-attributes">
+<h3>Arbitrary attributes<a class="headerlink" href="#arbitrary-attributes" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.attrs</span></code> is a dictionary that can contain arbitrary Python objects (strings, lists, integers, dictionaries, etc.) Your only
+limitation is that some attributes may not be writeable to certain file formats.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">attrs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assign your own attributes!</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">&quot;who_is_awesome&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;xarray&quot;</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">attrs</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="underlying-data">
+<h3>Underlying data<a class="headerlink" href="#underlying-data" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.data</span></code> contains the <a class="reference external" href="https://numpy.org">numpy array</a> storing air temperature values.</p>
+<img src="https://raw.githubusercontent.com/numpy/numpy/623bc1fae1d47df24e7f1e29321d0c0ba2771ce0/branding/logo/primary/numpylogo.svg" width="25%">
+<p>Xarray structures wrapunderlying simpler array-like data structures. This part of Xarray is quite extensible allowing for distributed array, GPU arrays, sparse arrays, arrays with units etc. We’ll  briefly look at this later in this tutorial.</p>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># what is the type of the underlying data</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review">
+<h3>Review<a class="headerlink" href="#review" title="Permalink to this heading">#</a></h3>
+<p>Xarray provides two main data structures:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/data-structures.html#dataarray"><code class="docutils literal notranslate"><span class="pre">DataArrays</span></code></a> that wrap underlying data containers (e.g. numpy arrays) and contain associated metadata</p></li>
+<li><p><a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/data-structures.html#dataset"><code class="docutils literal notranslate"><span class="pre">DataSets</span></code></a> that are dictionary-like containers of DataArrays</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-xarray">
+<h2>Why Xarray?<a class="headerlink" href="#why-xarray" title="Permalink to this heading">#</a></h2>
+<p>Metadata provides context and provides code that is more legible. This reduces the likelihood of errors from typos and makes analysis more intuitive and fun!</p>
+<section id="analysis-without-xarray-x">
+<h3>Analysis without xarray: <code class="docutils literal notranslate"><span class="pre">X(</span></code><a class="headerlink" href="#analysis-without-xarray-x" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot the first timestep</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">lat</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># numpy array</span>
+<span class="n">lon</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">lon</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># numpy array</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># numpy array</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">temp</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">## what did I just do? I can&#39;t tell by looking at this line.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analysis-with-xarray">
+<h3>Analysis with xarray <code class="docutils literal notranslate"><span class="pre">=)</span></code><a class="headerlink" href="#analysis-with-xarray" title="Permalink to this heading">#</a></h3>
+<p>How readable is this code?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Use dimension names instead of axis numbers</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="extracting-data-or-indexing">
+<h2>Extracting data or “indexing”<a class="headerlink" href="#extracting-data-or-indexing" title="Permalink to this heading">#</a></h2>
+<p>Xarray supports</p>
+<ul class="simple">
+<li><p>label-based indexing using <code class="docutils literal notranslate"><span class="pre">.sel</span></code></p></li>
+<li><p>position-based indexing using <code class="docutils literal notranslate"><span class="pre">.isel</span></code></p></li>
+</ul>
+<p>See the <a class="reference external" href="https://docs.xarray.dev/en/stable/indexing.html">user guide</a> for more.</p>
+<section id="label-based-indexing">
+<h3>Label-based indexing<a class="headerlink" href="#label-based-indexing" title="Permalink to this heading">#</a></h3>
+<p>Xarray inherits its label-based indexing rules from pandas; this means great
+support for dates and times!</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out data for all of 2013-May</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;2013-05&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate slicing</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;2013-05&quot;</span><span class="p">,</span> <span class="s2">&quot;2013-07&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate &quot;nearest&quot; indexing</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lon</span><span class="o">=</span><span class="mf">240.2</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &quot;nearest indexing at multiple points&quot;</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lon</span><span class="o">=</span><span class="p">[</span><span class="mf">240.125</span><span class="p">,</span> <span class="mi">234</span><span class="p">],</span> <span class="n">lat</span><span class="o">=</span><span class="p">[</span><span class="mf">40.3</span><span class="p">,</span> <span class="mf">50.3</span><span class="p">],</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="position-based-indexing">
+<h3>Position-based indexing<a class="headerlink" href="#position-based-indexing" title="Permalink to this heading">#</a></h3>
+<p>This is similar to your usual numpy <code class="docutils literal notranslate"><span class="pre">array[0,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> but with the power of named
+dimensions!</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out time index 0 and lat index 0</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1">#  much better than ds.air[0, 0, :]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_output_scroll tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate slicing</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="concepts-for-computation">
+<h2>Concepts for computation<a class="headerlink" href="#concepts-for-computation" title="Permalink to this heading">#</a></h2>
+<p>Consider calculating the <em>mean air temperature per unit surface area</em> for this dataset. Because latitude and longitude correspond to spherical coordinates for Earth’s surface, each 2.5x2.5 degree grid cell actually has a different surface area as you move away from the equator! This is because <em>latitudinal length</em> is fixed ($ \delta Lat = R \delta \phi  $), but <em>longitudinal length varies with latitude</em> ($ \delta Lon = R \delta \lambda \cos(\phi) $)</p>
+<p>So the <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates">area element for lat-lon coordinates</a> is</p>
+<p>$$ \delta A = R^2 \delta\phi , \delta\lambda \cos(\phi) $$</p>
+<p>where $\phi$ is latitude, $\delta \phi$ is the spacing of the points in latitude, $\delta \lambda$ is the spacing of the points in longitude, and $R$ is Earth’s radius. (In this formula, $\phi$ and $\lambda$ are measured in radians)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Earth&#39;s average radius in meters</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">6.371e6</span>
+
+<span class="c1"># Coordinate spacing for this dataset is 2.5 x 2.5 degrees</span>
+<span class="n">dϕ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+<span class="n">dλ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+
+<span class="n">dlat</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">dϕ</span> <span class="o">*</span> <span class="n">xr</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">lon</span><span class="p">)</span>
+<span class="n">dlon</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">dλ</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">lat</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are two concepts here:</p>
+<ol class="arabic simple">
+<li><p>you can call functions like <code class="docutils literal notranslate"><span class="pre">np.cos</span></code> and <code class="docutils literal notranslate"><span class="pre">np.deg2rad</span></code> (<a class="reference external" href="https://numpy.org/doc/stable/reference/ufuncs.html">“numpy ufuncs”</a>) on Xarray objects and receive an Xarray object back.</p></li>
+<li><p>We used <a class="reference external" href="https://docs.xarray.dev/en/stable/generated/xarray.ones_like.html">ones_like</a> to create a DataArray that looks like <code class="docutils literal notranslate"><span class="pre">ds.air.lon</span></code> in all respects, except that the data are all ones</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cell latitude length is constant with longitude</span>
+<span class="n">dlat</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cell longitude length changes with latitude</span>
+<span class="n">dlon</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="broadcasting-expanding-data">
+<h3>Broadcasting: expanding data<a class="headerlink" href="#broadcasting-expanding-data" title="Permalink to this heading">#</a></h3>
+<p>Our longitude and latitude length DataArrays are both 1D with different dimension names. If we multiple these DataArrays together the dimensionality is expanded to 2D by <em>broadcasting</em>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cell_area</span> <span class="o">=</span> <span class="n">dlon</span> <span class="o">*</span> <span class="n">dlat</span>
+<span class="n">cell_area</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The result has two dimensions because xarray realizes that dimensions <code class="docutils literal notranslate"><span class="pre">lon</span></code> and
+<code class="docutils literal notranslate"><span class="pre">lat</span></code> are different so it automatically “broadcasts” to get a 2D result. See the
+last row in this image from <em>Jake VanderPlas Python Data Science Handbook</em></p>
+<img src="https://jakevdp.github.io/PythonDataScienceHandbook/figures/02.05-broadcasting.png" align="center">
+<p>Because xarray knows about dimension names we avoid having to create unnecessary
+size-1 dimensions using <code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code> or <code class="docutils literal notranslate"><span class="pre">.reshape</span></code>. For more, see the <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/computation.html#broadcasting-by-dimension-name">user guide</a></p>
+</section>
+<hr class="docutils" />
+<section id="alignment-putting-data-on-the-same-grid">
+<h3>Alignment: putting data on the same grid<a class="headerlink" href="#alignment-putting-data-on-the-same-grid" title="Permalink to this heading">#</a></h3>
+<p>When doing arithmetic operations xarray automatically “aligns” i.e. puts the
+data on the same grid. In this case <code class="docutils literal notranslate"><span class="pre">cell_area</span></code> and <code class="docutils literal notranslate"><span class="pre">ds.air</span></code> are at the same
+lat, lon points we end up with a result with the same shape (25x53):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">cell_area</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now lets make <code class="docutils literal notranslate"><span class="pre">cell_area</span></code> unaligned i.e. change the coordinate labels</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a copy of cell_area</span>
+<span class="c1"># then add 1e-5 degrees to latitude</span>
+<span class="n">cell_area_bad</span> <span class="o">=</span> <span class="n">cell_area</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">cell_area_bad</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cell_area</span><span class="o">.</span><span class="n">lat</span> <span class="o">+</span> <span class="mf">1e-5</span>  <span class="c1"># latitudes are off by 1e-5 degrees!</span>
+<span class="n">cell_area_bad</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cell_area_bad</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The result is an empty array with no latitude coordinates because none of them were aligned!</p>
+<p><strong>Tip:</strong> If you notice extra NaNs or missing points after xarray computation, it
+means that your xarray coordinates were not aligned <em>exactly</em>.</p>
+<p>For more, see
+<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/computation.html#automatic-alignment">the Xarray documentation</a>. <a class="reference external" href="https://tutorial.xarray.dev/fundamentals/02.3_aligning_data_objects.html">This tutorial notebook</a> also covers alignment and broadcasting.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="high-level-computation">
+<h2>High level computation<a class="headerlink" href="#high-level-computation" title="Permalink to this heading">#</a></h2>
+<p>(<code class="docutils literal notranslate"><span class="pre">groupby</span></code>, <code class="docutils literal notranslate"><span class="pre">resample</span></code>, <code class="docutils literal notranslate"><span class="pre">rolling</span></code>, <code class="docutils literal notranslate"><span class="pre">coarsen</span></code>, <code class="docutils literal notranslate"><span class="pre">weighted</span></code>)</p>
+<p>Xarray has some very useful high level objects that let you do common
+computations:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">groupby</span></code> :
+<a class="reference external" href="https://docs.xarray.dev/en/stable/groupby.html">Bin data in to groups and reduce</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resample</span></code> :
+<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/time-series.html#resampling-and-grouped-operations">Groupby specialized for time axes. Either downsample or upsample your data.</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rolling</span></code> :
+<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/computation.html#rolling-window-operations">Operate on rolling windows of your data e.g. running mean</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">coarsen</span></code> :
+<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/computation.html#coarsen-large-arrays">Downsample your data</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">weighted</span></code> :
+<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/computation.html#weighted-array-reductions">Weight your data before reducing</a></p></li>
+</ol>
+<p>Below we quickly demonstrate these patterns. See the user guide links above and <a class="reference external" href="https://tutorial.xarray.dev/intermediate/01-high-level-computation-patterns.html">the tutorial</a> for more.</p>
+<section id="groupby">
+<h3>groupby<a class="headerlink" href="#groupby" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># seasonal groups</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.season&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a seasonal mean</span>
+<span class="n">seasonal_mean</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.season&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">seasonal_mean</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The seasons are out of order (they are alphabetically sorted). This is a common
+annoyance. The solution is to use <code class="docutils literal notranslate"><span class="pre">.sel</span></code> to change the order of labels</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">seasonal_mean</span> <span class="o">=</span> <span class="n">seasonal_mean</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">season</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;DJF&quot;</span><span class="p">,</span> <span class="s2">&quot;MAM&quot;</span><span class="p">,</span> <span class="s2">&quot;JJA&quot;</span><span class="p">,</span> <span class="s2">&quot;SON&quot;</span><span class="p">])</span>
+<span class="n">seasonal_mean</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="resample">
+<h3>resample<a class="headerlink" href="#resample" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample to monthly frequency</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="weighted">
+<h3>weighted<a class="headerlink" href="#weighted" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># weight by cell_area and take mean over (time, lon)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">weighted</span><span class="p">(</span><span class="n">cell_area</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">([</span><span class="s2">&quot;lon&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">plot</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">#</a></h2>
+<p>(<code class="docutils literal notranslate"><span class="pre">.plot</span></code>)</p>
+<p>We have seen very simple plots earlier. Xarray also lets you easily visualize
+3D and 4D datasets by presenting multiple facets (or panels or subplots) showing
+variations across rows and/or columns.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># facet the seasonal_mean</span>
+<span class="n">seasonal_mean</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="s2">&quot;season&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># contours</span>
+<span class="n">seasonal_mean</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="s2">&quot;season&quot;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># line plots too? wut</span>
+<span class="n">seasonal_mean</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;lon&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;season&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For more see the <a class="reference external" href="https://docs.xarray.dev/en/stable/plotting.html">user guide</a>, the <a class="reference external" href="https://docs.xarray.dev/en/stable/examples/visualization_gallery.html">gallery</a>, and <a class="reference external" href="https://tutorial.xarray.dev/fundamentals/04.0_plotting.html">the tutorial material</a>.</p>
+</section>
+<hr class="docutils" />
+<section id="reading-and-writing-files">
+<h2>Reading and writing files<a class="headerlink" href="#reading-and-writing-files" title="Permalink to this heading">#</a></h2>
+<p>Xarray supports many disk formats. Below is a small example using netCDF. For
+more see the <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/io.html">documentation</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write to netCDF</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">to_netcdf</span><span class="p">(</span><span class="s2">&quot;my-example-dataset.nc&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To avoid the <code class="docutils literal notranslate"><span class="pre">SerializationWarning</span></code> you can assign a _FillValue for any NaNs in ‘air’ array by adding the keyword argument encoding=dict(air={_FillValue=-9999})</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># read from disk</span>
+<span class="n">fromdisk</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;my-example-dataset.nc&quot;</span><span class="p">)</span>
+<span class="n">fromdisk</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check that the two are identical</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">identical</span><span class="p">(</span><span class="n">fromdisk</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Tip:</strong> A common use case to read datasets that are a collection of many netCDF
+files. See the <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/io.html#reading-multi-file-datasets">documentation</a> for how
+to handle that.</p>
+<p>Finally to read other file formats, you might find yourself reading in the data using a different library and then creating a DataArray(<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/data-structures.html#creating-a-dataarray">docs</a>, <a class="reference external" href="https://tutorial.xarray.dev/fundamentals/01.1_creating_data_structures.html">tutorial</a>) from scratch. For example, you might use <code class="docutils literal notranslate"><span class="pre">h5py</span></code> to open an HDF5 file and then create a Dataset from that.
+For MATLAB files you might use <code class="docutils literal notranslate"><span class="pre">scipy.io.loadmat</span></code> or <code class="docutils literal notranslate"><span class="pre">h5py</span></code> depending on the version of MATLAB file you’re opening and then construct a Dataset.</p>
+</section>
+<hr class="docutils" />
+<section id="the-scientific-python-ecosystem">
+<h2>The scientific python ecosystem<a class="headerlink" href="#the-scientific-python-ecosystem" title="Permalink to this heading">#</a></h2>
+<p>Xarray ties in to the larger scientific python ecosystem and in turn many
+packages build on top of xarray. A long list of such packages is here:
+<a class="reference external" href="https://docs.xarray.dev/en/stable/related-projects.html">https://docs.xarray.dev/en/stable/related-projects.html</a>.</p>
+<p>Now we will demonstrate some cool features.</p>
+<section id="pandas-tabular-data-structures">
+<h3>Pandas: tabular data structures<a class="headerlink" href="#pandas-tabular-data-structures" title="Permalink to this heading">#</a></h3>
+<p>You can easily <a class="reference external" href="https://docs.xarray.dev/en/stable/pandas.html">convert</a> between xarray and <a class="reference external" href="https://pandas.pydata.org/">pandas</a> structures. This allows you to conveniently use the extensive pandas
+ecosystem of packages (like <a class="reference external" href="https://seaborn.pydata.org/">seaborn</a>) for your work.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert to pandas dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">to_dataframe</span><span class="p">()</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert dataframe to xarray</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_xarray</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="alternative-array-types">
+<h3>Alternative array types<a class="headerlink" href="#alternative-array-types" title="Permalink to this heading">#</a></h3>
+<p>This notebook has focused on Numpy arrays. Xarray can wrap <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/duckarrays.html">other array</a> types! For example:</p>
+<p><img src="https://docs.dask.org/en/stable/_images/dask_horizontal.svg" width="20%"> <a class="reference external" href="https://docs.dask.org/en/latest/array.html">distributed parallel arrays</a> &amp; <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/dask.html">Xarray user guide on Dask</a></p>
+<p><img src="https://sparse.pydata.org/en/stable/_images/logo.png" width="15%"> <strong>pydata/sparse</strong> : <a class="reference external" href="https://sparse.pydata.org">sparse arrays</a></p>
+<p><img src="https://raw.githubusercontent.com/cupy/cupy.dev/master/images/cupy_logo.png" width="22%"> <a class="reference external" href="https://cupy.dev">GPU arrays</a> &amp; <a class="reference external" href="https://cupy-xarray.readthedocs.io/">cupy-xarray</a></p>
+<p><img src="https://pint.readthedocs.io/en/stable/_images/logo-full.jpg" width="10%"> <strong>pint</strong> : <a class="reference external" href="https://pint.readthedocs.io">unit-aware arrays</a> &amp; <a class="reference external" href="https://github.com/xarray-contrib/pint-xarray">pint-xarray</a></p>
+</section>
+<section id="dask">
+<h3>Dask<a class="headerlink" href="#dask" title="Permalink to this heading">#</a></h3>
+<p>Dask cuts up NumPy arrays into blocks and parallelizes your analysis code across
+these blocks</p>
+<img src="https://raw.githubusercontent.com/dask/dask/main/docs/source/images/dask-array.svg" style="width:45%">
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate dask dataset</span>
+<span class="n">dasky</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">tutorial</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span>
+    <span class="s2">&quot;air_temperature&quot;</span><span class="p">,</span>
+    <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">},</span>  <span class="c1"># 10 time steps in each block</span>
+<span class="p">)</span>
+
+<span class="n">dasky</span><span class="o">.</span><span class="n">air</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>All computations with dask-backed xarray objects are lazy, allowing you to build
+up a complicated chain of analysis steps quickly</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate lazy mean</span>
+<span class="n">dasky</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To get concrete values, call <code class="docutils literal notranslate"><span class="pre">.compute</span></code> or <code class="docutils literal notranslate"><span class="pre">.load</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &quot;compute&quot; the mean</span>
+<span class="n">dasky</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="holoviz">
+<h3>HoloViz<a class="headerlink" href="#holoviz" title="Permalink to this heading">#</a></h3>
+<p>Quickly generate interactive plots from your data!</p>
+<p>The <a class="reference external" href="https://hvplot.holoviz.org/user_guide/Gridded_Data.html"><code class="docutils literal notranslate"><span class="pre">hvplot</span></code> package</a> attaches itself to all
+xarray objects under the <code class="docutils literal notranslate"><span class="pre">.hvplot</span></code> namespace. So instead of using <code class="docutils literal notranslate"><span class="pre">.plot</span></code> use <code class="docutils literal notranslate"><span class="pre">.hvplot</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hvplot.xarray</span>
+
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">hvplot</span><span class="p">(</span><span class="n">groupby</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">270</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="n">widget_location</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The time slider will only work if you’re executing the notebook, rather than viewing the website</p>
+</div>
+</section>
+<section id="cf-xarray">
+<h3>cf_xarray<a class="headerlink" href="#cf-xarray" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://cf-xarray.readthedocs.io/">cf_xarray</a> is a project that tries to
+let you make use of other CF attributes that xarray ignores. It attaches itself
+to all xarray objects under the <code class="docutils literal notranslate"><span class="pre">.cf</span></code> namespace.</p>
+<p>Where xarray allows you to specify dimension names for analysis, <code class="docutils literal notranslate"><span class="pre">cf_xarray</span></code>
+lets you specify logical names like <code class="docutils literal notranslate"><span class="pre">&quot;latitude&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;longitude&quot;</span></code> instead as
+long as the appropriate CF attributes are set.</p>
+<p>For example, the <code class="docutils literal notranslate"><span class="pre">&quot;longitude&quot;</span></code> dimension in different files might be labelled as: (lon, LON, long, x…), but cf_xarray let’s you always refer to the logical name <code class="docutils literal notranslate"><span class="pre">&quot;longitude&quot;</span></code> in your code:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cf_xarray</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># describe cf attributes in dataset</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">cf</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The following <code class="docutils literal notranslate"><span class="pre">mean</span></code> operation will work with any dataset that has appropriate
+attributes set that allow detection of the “latitude” variable (e.g.
+<code class="docutils literal notranslate"><span class="pre">units:</span> <span class="pre">&quot;degress_north&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">standard_name:</span> <span class="pre">&quot;latitude&quot;</span></code>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate equivalent of .mean(&quot;lat&quot;)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">cf</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;latitude&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># demonstrate indexing</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">cf</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">longitude</span><span class="o">=</span><span class="mf">242.5</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="other-cool-packages">
+<h3>Other cool packages<a class="headerlink" href="#other-cool-packages" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://xgcm.readthedocs.io/">xgcm</a> : grid-aware operations with xarray
+objects</p></li>
+<li><p><a class="reference external" href="https://xrft.readthedocs.io/">xrft</a> : fourier transforms with xarray</p></li>
+<li><p><a class="reference external" href="https://xclim.readthedocs.io/">xclim</a> : calculating climate indices with
+xarray objects</p></li>
+<li><p><a class="reference external" href="https://intake-xarray.readthedocs.io/">intake-xarray</a> : forget about file
+paths</p></li>
+<li><p><a class="reference external" href="https://corteva.github.io/rioxarray/stable/index.html">rioxarray</a> : raster
+files and xarray</p></li>
+<li><p><a class="reference external" href="https://xesmf.readthedocs.io/">xesmf</a> : regrid using ESMF</p></li>
+<li><p><a class="reference external" href="https://unidata.github.io/MetPy/latest/index.html">MetPy</a> : tools for working
+with weather data</p></li>
+</ul>
+<p>Check the Xarray <a class="reference external" href="https://docs.xarray.dev/en/stable/ecosystem.html">Ecosystem</a> page and <a class="reference external" href="https://tutorial.xarray.dev/intermediate/xarray_ecosystem.html">this tutorial</a> for even more packages and demonstrations.</p>
+</section>
+</section>
+<section id="next">
+<h2>Next<a class="headerlink" href="#next" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Read the <a class="reference external" href="https://tutorial.xarray.dev">tutorial</a> material and <a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/index.html">user guide</a></p></li>
+<li><p>See the description of <a class="reference external" href="https://docs.xarray.dev/en/stable/terminology.html">common terms</a> used in the xarray documentation:</p></li>
+<li><p>Answers to common questions on “how to do X” with Xarray are <a class="reference external" href="https://docs.xarray.dev/en/stable/howdoi.html">here</a></p></li>
+<li><p>Ryan Abernathey has a book on data analysis with a <a class="reference external" href="https://earth-env-data-science.github.io/lectures/xarray/xarray_intro.html">chapter on Xarray</a></p></li>
+<li><p><a class="reference external" href="https://projectpythia.org/">Project Pythia</a> has <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">foundational</a> and more <a class="reference external" href="https://cookbooks.projectpythia.org/">advanced</a> material on Xarray. Pythia also aggregates other <a class="reference external" href="https://projectpythia.org/resource-gallery.html">Python learning resources</a>.</p></li>
+<li><p>The <a class="reference external" href="https://github.com/pydata/xarray/discussions">Xarray Github Discussions</a> and <a class="reference external" href="https://discourse.pangeo.io/">Pangeo Discourse</a> are good places to ask questions.</p></li>
+<li><p>Tell your friends! Tweet!</p></li>
+</ol>
+</section>
+<section id="welcome">
+<h2>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h2>
+<p>Xarray is an open-source project and gladly welcomes all kinds of contributions. This could include reporting bugs, discussing new enhancements, contributing code, helping answer user questions, contributing documentation (even small edits like fixing spelling mistakes or rewording to make the text clearer). Welcome!</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../../../resources/tutorials/getting_started.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Getting started on tutorials</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../../tutorials-index/data-access-in-python.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Data access in Python</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

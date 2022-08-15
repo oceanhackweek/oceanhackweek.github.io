@@ -1,0 +1,1145 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1) ERDDAP &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="National Data Buoy Center" href="02_get_nbdc.html" />
+    <link rel="prev" title="Data access in R" href="../../../tutorials-index/data-access-in-r.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00-Mon/xarray-in-45-min.html">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-python/00-data-access.html">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-python/01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-python/02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-python/04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/02_Building_Panels.html">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/04_Basic_Plotting.html">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/00-unsupervised-PCA.html">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   1) ERDDAP
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-a-listing-of-servers-that-rerddap-knows-about">
+     Get a listing of servers that rerddap knows about
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-services-are-available-in-the-server">
+     What services are available in the server?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity">
+     Let’s query all the datasets that have the
+     <em>
+      standard_name
+     </em>
+     of
+     <em>
+      sea_water_practical_salinity
+     </em>
+     .
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-us-narrow-our-search-to-deployments-that-are-within-a-lon-lat-time-extent">
+     Let us narrow our search to deployments that are within a lon/lat/time extent.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opendap">
+   2) OPeNDAP
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bigelow-homegrown-r-packages">
+     Bigelow Homegrown R Packages
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#retrieve-the-variables-contained-in-the-netcdf-object">
+     Retrieve the variables contained in the netcdf object
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#retrieve-the-spatial-resolution-stated-in-the-global-metadata">
+     Retrieve the spatial resolution stated in the global metadata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-in-calcofi-station-data">
+   Read in CalCOFI Station Data
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-x-to-be-an-sf-object-containing-points">
+   Change x to be an sf object containing points
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-x-to-be-an-sf-object-containing-a-bounding-box">
+   Change x to be an sf object containing a bounding box
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extract-the-bounding-box">
+     Extract the bounding box
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plot-the-layer-we-extracted-and-the-points-on-top">
+     Plot the layer we extracted and the points on top
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wms">
+   3) WMS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-objectives">
+     Learning Objectives:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/01-Tue/00-data-access-in-R/01_data_access.Rmd">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>suppressPackageStartupMessages({
+  # from CRAN
+  library(dplyr)
+  library(sf)
+  library(stars)
+  library(readr)
+  
+  library(rerddap)
+  library(ncdf4)
+  library(leaflet)
+  library(ggplot2)
+  
+  # from Github
+  library(xyzt)
+  library(ghrsst)
+})
+</pre></div>
+</div>
+</div>
+</div>
+<section id="erddap">
+<h1>1) ERDDAP<a class="headerlink" href="#erddap" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://docs.ropensci.org/rerddap/index.html">rerddap</a></p>
+<section id="get-a-listing-of-servers-that-rerddap-knows-about">
+<h2>Get a listing of servers that rerddap knows about<a class="headerlink" href="#get-a-listing-of-servers-that-rerddap-knows-about" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s &lt;- servers()
+
+s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s |&gt; 
+  filter(short_name == &quot;OOI&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="what-services-are-available-in-the-server">
+<h2>What services are available in the server?<a class="headerlink" href="#what-services-are-available-in-the-server" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ds &lt;- ed_datasets(url=&quot;http://erddap.dataexplorer.oceanobservatories.org/erddap/&quot;)
+
+paste(&quot;We have&quot;, sum(ds$tabledap!=&quot;&quot;), &quot;tabledap&quot;, sum(ds$griddap!=&quot;&quot;), &quot;griddap, and&quot;, sum(ds$wms!=&quot;&quot;), &quot;wms.&quot;, sep=&quot; &quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity">
+<h2>Let’s query all the datasets that have the <em>standard_name</em> of <em>sea_water_practical_salinity</em>.<a class="headerlink" href="#let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>out &lt;- ed_search(query = &quot;sea_water_practical_salinity&quot;, 
+                 which = &quot;tabledap&quot;,
+                 url=&quot;http://erddap.dataexplorer.oceanobservatories.org/erddap/&quot;)
+
+out
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>paste(&quot;Found&quot;, length(out$alldata), &quot;datasets&quot;, sep=&quot; &quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="let-us-narrow-our-search-to-deployments-that-are-within-a-lon-lat-time-extent">
+<h2>Let us narrow our search to deployments that are within a lon/lat/time extent.<a class="headerlink" href="#let-us-narrow-our-search-to-deployments-that-are-within-a-lon-lat-time-extent" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://rstudio.github.io/leaflet/">leaflet</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>lon &lt;- c(-72, -69)
+lat &lt;- c(38, 41)
+
+leaflet() |&gt;
+  addTiles() |&gt;
+  setView(lng=sum(lon)/2, 
+          lat=sum(lat)/2, 
+          zoom=6) |&gt;
+  addRectangles(lng1 = lon[1],
+                lng2 = lon[2],
+                lat1 = lat[1],
+                lat2 = lat[2])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>out_bb &lt;- ed_search_adv(standard_name= &quot;sea_water_practical_salinity&quot;,
+                        which = &quot;tabledap&quot;,
+                        url=&quot;http://erddap.dataexplorer.oceanobservatories.org/erddap/&quot;,
+                        minLat=38,
+                        maxLat=41,
+                        minLon=-72,
+                        maxLon=-69,
+                        minTime = &quot;2016-07-10T00:00:00Z&quot;,
+                        maxTime = &quot;2017-02-10T00:00:00Z&quot;)
+
+dataset_ids &lt;- out_bb$info$dataset_id
+
+out_bb
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>paste(&quot;Found&quot;, length(out_bb$alldata), &quot;Datasets:&quot;, sep=&quot; &quot;)
+dataset_ids
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dataset_ids[1]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>info(dataset_ids[1], 
+     url=&quot;http://erddap.dataexplorer.oceanobservatories.org/erddap/&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>zz &lt;- tabledap(x = dataset_ids[1],
+               fields = c(&quot;z&quot;, 
+                          &quot;latitude&quot;, 
+                          &quot;longitude&quot;, 
+                          &quot;sea_water_practical_salinity_profiler_depth_enabled&quot;, 
+                          &quot;sea_water_temperature_profiler_depth_enabled&quot;, 
+                          &quot;time&quot;),
+               url = &quot;http://erddap.dataexplorer.oceanobservatories.org/erddap&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>head(zz)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>summary(zz)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>zz_sub &lt;- zz |&gt;
+  tibble() |&gt;
+  mutate(time = as.POSIXct(time),
+         z = as.numeric(z),
+         temperature = as.numeric(sea_water_temperature_profiler_depth_enabled),
+         salinity = as.numeric(sea_water_practical_salinity_profiler_depth_enabled)) |&gt;
+  select(-sea_water_temperature_profiler_depth_enabled, -sea_water_practical_salinity_profiler_depth_enabled) |&gt;
+  filter(between(time, as.POSIXct(&quot;2016-01-01 00:00:00&quot;), as.POSIXct(&quot;2016-12-31 00:00:00&quot;)),
+         z == min(z))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>summary(zz_sub)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>plot(x=zz_sub$time, y=zz_sub$salinity)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>plot(x=zz_sub$salinity, 
+     y=zz_sub$temperature)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ggplot(data=zz_sub, aes(x=salinity, y=temperature)) +
+  geom_point()
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="opendap">
+<h1>2) OPeNDAP<a class="headerlink" href="#opendap" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://www.r-bloggers.com/2016/08/a-netcdf-4-in-r-cheatsheet/">NetCDF4 Cheat Sheet</a></p>
+<section id="bigelow-homegrown-r-packages">
+<h2>Bigelow Homegrown R Packages<a class="headerlink" href="#bigelow-homegrown-r-packages" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://youtu.be/2ZWFYWMwq1c">Intro Video</a></p>
+<p><a class="reference external" href="https://github.com/BigelowLab/xyzt">xyzt</a>
+<a class="reference external" href="https://github.com/BigelowLab/ghrsst">ghrsst</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>url &lt;- &quot;https://opendap.jpl.nasa.gov/opendap/OceanTemperature/ghrsst/data/GDS2/L4/GLOB/JPL/MUR/v4.1/2022/221/20220809090000-JPL-L4_GHRSST-SSTfnd-MUR-GLOB-v02.0-fv04.1.nc&quot;
+
+X &lt;- nc_open(url)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="retrieve-the-variables-contained-in-the-netcdf-object">
+<h2>Retrieve the variables contained in the netcdf object<a class="headerlink" href="#retrieve-the-variables-contained-in-the-netcdf-object" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mur_vars(X)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="retrieve-the-spatial-resolution-stated-in-the-global-metadata">
+<h2>Retrieve the spatial resolution stated in the global metadata<a class="headerlink" href="#retrieve-the-spatial-resolution-stated-in-the-global-metadata" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mur_res(X)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="read-in-calcofi-station-data">
+<h1>Read in CalCOFI Station Data<a class="headerlink" href="#read-in-calcofi-station-data" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>x &lt;- xyzt::read_calcofi()
+
+x
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="change-x-to-be-an-sf-object-containing-points">
+<h1>Change x to be an sf object containing points<a class="headerlink" href="#change-x-to-be-an-sf-object-containing-points" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>points &lt;- x |&gt; 
+  as_POINT()
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>covars &lt;- ghrsst::extract(points, 
+                          X, 
+                          varname = &quot;analysed_sst&quot;)
+
+(y &lt;- dplyr::bind_cols(x, covars))
+
+y
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>summary(y)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="change-x-to-be-an-sf-object-containing-a-bounding-box">
+<h1>Change x to be an sf object containing a bounding box<a class="headerlink" href="#change-x-to-be-an-sf-object-containing-a-bounding-box" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>bbox &lt;- x |&gt;
+  as_BBOX()
+</pre></div>
+</div>
+</div>
+</div>
+<section id="extract-the-bounding-box">
+<h2>Extract the bounding box<a class="headerlink" href="#extract-the-bounding-box" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>layer &lt;- ghrsst::extract(bbox, X, 
+                          varname = &quot;analysed_sst&quot;)
+
+layer
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-the-layer-we-extracted-and-the-points-on-top">
+<h2>Plot the layer we extracted and the points on top<a class="headerlink" href="#plot-the-layer-we-extracted-and-the-points-on-top" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>par(mfrow = c(1,2))
+plot(layer, attr = &#39;analysed_sst&#39;, col = sf.colors(n=6), axes = TRUE, reset = FALSE)
+plot(sf::st_geometry(points), add = TRUE, col = &quot;black&quot;, pch = 19, cex = 1)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="wms">
+<h1>3) WMS<a class="headerlink" href="#wms" title="Permalink to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning Objectives:<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Add a WMS layer to an interactive map. (“GEBCO - General Bathymetric Chart of the Oceans”)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>leaflet() |&gt;
+  addTiles() |&gt;
+  setView(lng = -88,
+          lat = 30,
+          zoom = 5) |&gt;
+  addWMSTiles(
+    &quot;https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv?&quot;,
+    layers = &quot;GEBCO_latest&quot;,
+    options = WMSTileOptions(format = &quot;image/png&quot;, transparent = TRUE),
+    attribution=&quot;Weather data © 2012 IEM Nexrad&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../../../tutorials-index/data-access-in-r.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Data access in R</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="02_get_nbdc.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">National Data Buoy Center</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

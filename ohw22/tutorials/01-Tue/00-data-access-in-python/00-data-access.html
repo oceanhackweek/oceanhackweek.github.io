@@ -1,0 +1,1468 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Data Access &#8212; OceanHackWeek</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Extras: load netCDF files directly from HTTPS" href="01-extras-https.html" />
+    <link rel="prev" title="Data access in Python" href="../../../tutorials-index/data-access-in-python.html" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../about/index.html">
+  About
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../index.html">
+  OceanHackWeek 2022
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/oceanhackweek/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/orgs/oceanhackweek/discussions" rel="noopener" target="_blank" title="Discussions"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/oceanhackweek" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF" rel="noopener" target="_blank" title="YouTube"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:oceanhkw@uw.edu" rel="noopener" target="_blank" title="Email"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><a href="/"><div class="profile-pic"><img src="../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OceanHackWeek 2022 (OHW22)
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../schedule.html">
+   Schedule
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../global/index.html">
+   Global Virtual Event
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../satellites.html">
+   Regional Satellite Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../maine/index.html">
+     US Northeast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../seattle/index.html">
+     US Northwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../san-diego/index.html">
+     US Southwest
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../australia/index.html">
+     Australia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../brazil/index.html">
+     Brazil
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../espanol/index.es.html">
+     Español
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../espanol/index.en.html">
+       English Description
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organizers.html">
+   Organizers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../tutorials-index/index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/tutorials/getting_started.html">
+     Getting started on tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00-Mon/xarray-in-45-min.html">
+     Xarray in 45 minutes
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-python.html">
+     Data access in Python
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Data Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01-extras-https.html">
+       Extras: load netCDF files directly from HTTPS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02-extras-data-clean-up.html">
+       Data Clean Up (QARTOD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="04-extras-erddapy_saildrone.html">
+       First create the erddapy object
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-access-in-r.html">
+     Data access in R
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-R/01_data_access.html">
+       1) ERDDAP
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-R/02_get_nbdc.html">
+       National Data Buoy Center
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../00-data-access-in-R/03_get_nao.html">
+       Load packages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/data-vis-in-python.html">
+     Data visualization in Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/index.html">
+       Index and Schedule
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/00_Setup.html">
+       Getting set up
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/01_Overview.html">
+       Welcome to HoloViz!
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/02_Building_Panels.html">
+       pn.interact
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/03_Interlinked_Panels.html">
+       Widgets and reactive components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/04_Basic_Plotting.html">
+       Read in the data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02-Wed/01-data-visualization-in-python/tutorial/05_Composing_Plots.html">
+       Read in the data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/machine-learning-applications.html">
+     Machine learning applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/00-unsupervised-PCA.html">
+       A quick introduction to machine learning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/01-unsupervised-kmeans.html">
+       Unsupervised learning part 2: kmeans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03-Thu/00-machine-learning/02-supervised-knn.html">
+       Supervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../tutorials-index/espanol/index.html">
+     Espanol Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../tutorials-index/espanol/python-cientifico.html">
+       Python Cientifico
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../optional/espanol/python-cientifico/read_tabulardata.html">
+         Numpy arrays
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../optional/espanol/datos-espaciales-tidy/Notas.html">
+       Lectura de datos
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../optional/managing-conda-envs/README.html">
+     Managing conda environments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/logistics/index.html">
+   Logistics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/logistics/getting_help.html">
+     Getting Help
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/prep/index.html">
+   Preparation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/conda.html">
+     Conda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/prep/learning_python_r.html">
+     Python and R learning resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/projects/index.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/projects/steps.html">
+     Hacking at OHW22
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  OHW22 Other information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../applicants.html">
+   Information for Applicants
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../resources/organizing/index.html">
+   Organizing OHW
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/project-mentor-guide.html">
+     Project Mentors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../resources/organizing/helpers.html">
+     Tutorial Helpers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Data Access
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#servers-servers-everywhere-and-not-a-bit-to-flip">
+     servers, servers everywhere and not a bit to flip
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#whoami">
+   whoami
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#my-day-job-ioos">
+   My day job: IOOS
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#big-or-small-we-need-data">
+   Big or small we need data!
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback">
+   Feedback
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#web-services-type-of-servers">
+   Web Services/Type of servers
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-we-going-to-see-in-this-tutorial">
+   What are we going to see in this tutorial?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#erddap">
+   1) ERDDAP
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-objectives">
+     Learning objectives:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-erddap">
+   What is ERDDAP?
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-services-are-available-in-the-server">
+     What services are available in the server?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity">
+     Let’s query all the datasets that have the
+     <em>
+      standard_name
+     </em>
+     of
+     <em>
+      sea_water_practical_salinity
+     </em>
+     .
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-us-narrow-our-search-to-deployments-that-within-a-lon-lat-time-extent">
+     Let us narrow our search to deployments that within a lon/lat/time extent.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opendap">
+   2) OPeNDAP
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Learning objectives:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sos">
+   3) ~~SOS~~
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Learning objectives:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wms">
+   4) WMS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Learning objectives:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catalog-service-web-csw">
+   5) Catalog Service Web (CSW)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-there-a-canonical-source-for-data">
+     Is there a canonical source for data?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catalog-service-for-the-web-csw">
+   Catalog Service for the Web (CSW)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-more-complex-examples-on-how-to-find-data-in-the-catalog-please-check-the-ioos-code-gallery">
+   For more complex examples on how to find data in the catalog please check the IOOS code gallery:
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-to-find-data">
+   Where to find data?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extras-how-does-this-all-work">
+   Extras: how does this all work?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#standards">
+   Standards!
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bad-example">
+   Bad example
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#good-example">
+   Good example
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw22/tutorials/01-Tue/00-data-access-in-python/00-data-access.ipynb">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.plotting</span> <span class="kn">import</span> <span class="n">register_matplotlib_converters</span>
+
+<span class="n">register_matplotlib_converters</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="data-access">
+<h1>Data Access<a class="headerlink" href="#data-access" title="Permalink to this heading">#</a></h1>
+<section id="servers-servers-everywhere-and-not-a-bit-to-flip">
+<h2>servers, servers everywhere and not a bit to flip<a class="headerlink" href="#servers-servers-everywhere-and-not-a-bit-to-flip" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="https://imgs.xkcd.com/comics/digital_data.png" /></p>
+</section>
+</section>
+<section id="whoami">
+<h1>whoami<a class="headerlink" href="#whoami" title="Permalink to this heading">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">ocefpaf</span></code> (Filipe Fernandes)</p>
+<ul class="simple">
+<li><p>Physical Oceanographer</p></li>
+<li><p>Data Plumber</p></li>
+<li><p>Code Janitor</p></li>
+<li><p>CI babysitter</p></li>
+<li><p>Amazon-Dash-Button for conda-forge</p></li>
+</ul>
+</section>
+<section id="my-day-job-ioos">
+<h1>My day job: IOOS<a class="headerlink" href="#my-day-job-ioos" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="https://raw.githubusercontent.com/ocefpaf/2018-SciPy-talk/gh-pages/images/IOOS-RAs.jpg" /></p>
+</section>
+<section id="big-or-small-we-need-data">
+<h1>Big or small we need data!<a class="headerlink" href="#big-or-small-we-need-data" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>There are various sources: variety of servers, APIs, and web services. Just to
+list a few: OPeNDAP, ERDDAP, THREDDS, ftp, http(s), S3, LAS, etc.</p></li>
+</ul>
+<p><img alt="" src="https://imgs.xkcd.com/comics/data_pipeline.png" /></p>
+</section>
+<section id="feedback">
+<h1>Feedback<a class="headerlink" href="#feedback" title="Permalink to this heading">#</a></h1>
+<p>As you suffer from my tutorial on Data Access I’d love that you keep the following questions in mind so we can improve the tutorials. Should this tutorial focus on?</p>
+<ul class="simple">
+<li><p>Leveraging metadata for finding data and exploring data?</p></li>
+<li><p>Software packages to access, slice, and dice data?</p></li>
+<li><p>Data sources?</p></li>
+<li><p>None of the above, we don’t need this tutorial!</p></li>
+</ul>
+</section>
+<section id="web-services-type-of-servers">
+<h1>Web Services/Type of servers<a class="headerlink" href="#web-services-type-of-servers" title="Permalink to this heading">#</a></h1>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Data Type</p></th>
+<th class="head"><p>Web Service</p></th>
+<th class="head"><p>Response</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>In-situ data<br>(buoys, stations, etc)</p></td>
+<td><p>OGC SOS</p></td>
+<td><p>XML/CSV</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gridded data (models, satellite)</p></td>
+<td><p>OPeNDAP</p></td>
+<td><p>Binary</p></td>
+</tr>
+<tr class="row-even"><td><p>Raster Images</p></td>
+<td><p>OGC WMS</p></td>
+<td><p>GeoTIFF/PNG</p></td>
+</tr>
+<tr class="row-odd"><td><p>ERDDAP</p></td>
+<td><p>Restful API</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Your imagination is the limit!</p></li>
+</ul>
+</section>
+<section id="what-are-we-going-to-see-in-this-tutorial">
+<h1>What are we going to see in this tutorial?<a class="headerlink" href="#what-are-we-going-to-see-in-this-tutorial" title="Permalink to this heading">#</a></h1>
+<p>Browse and access data from:</p>
+<ol class="arabic simple">
+<li><p>ERDDAP</p></li>
+<li><p>OPeNDAP</p></li>
+<li><p>~~SOS~~</p></li>
+<li><p>WMS</p></li>
+<li><p>CSW and CKAN*</p></li>
+</ol>
+<p>* There are many examples on CSW in [the IOOS code lab] jupyter-book (https://ioos.github.io/ioos_code_lab/content/intro.html).</p>
+</section>
+<section id="erddap">
+<h1>1) ERDDAP<a class="headerlink" href="#erddap" title="Permalink to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning objectives:<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Explore an ERDDAP server with the python interface (erddapy);</p></li>
+<li><p>Find a data for a time/region of interest;</p></li>
+<li><p>Download the data with a familiar format and create some plots.</p></li>
+</ul>
+</section>
+</section>
+<section id="what-is-erddap">
+<h1>What is ERDDAP?<a class="headerlink" href="#what-is-erddap" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Flexible outputs: .html table, ESRI .asc and .csv, .csvp, Google Earth .kml,
+OPeNDAP binary, .mat, .nc, ODV .txt, .tsv, .json, and .xhtml</p></li>
+<li><p>RESTful API to access the data</p></li>
+<li><p>Standardize dates and time in the results</p></li>
+<li><p>Server-side searching and slicing</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">erddapy</span> <span class="kn">import</span> <span class="n">ERDDAP</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="s2">&quot;http://erddap.dataexplorer.oceanobservatories.org/erddap&quot;</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">ERDDAP</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">,</span> <span class="n">protocol</span><span class="o">=</span><span class="s2">&quot;tabledap&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="what-services-are-available-in-the-server">
+<h2>What services are available in the server?<a class="headerlink" href="#what-services-are-available-in-the-server" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">get_search_url</span><span class="p">(</span>
+        <span class="n">response</span><span class="o">=</span><span class="s2">&quot;csv&quot;</span><span class="p">,</span>
+        <span class="n">search_for</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s1">&#39;We have </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;tabledap&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()))</span><span class="si">}</span><span class="s1"> &#39;</span>
+    <span class="sa">f</span><span class="s1">&#39;tabledap, </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;griddap&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()))</span><span class="si">}</span><span class="s1"> &#39;</span>
+    <span class="sa">f</span><span class="s1">&#39;griddap, and </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;wms&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()))</span><span class="si">}</span><span class="s1"> wms.&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity">
+<h2>Let’s query all the datasets that have the <em>standard_name</em> of <em>sea_water_practical_salinity</em>.<a class="headerlink" href="#let-s-query-all-the-datasets-that-have-the-standard-name-of-sea-water-practical-salinity" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get_categorize_url</span><span class="p">(</span>
+    <span class="n">categorize_by</span><span class="o">=</span><span class="s2">&quot;standard_name&quot;</span><span class="p">,</span>
+    <span class="n">value</span><span class="o">=</span><span class="s2">&quot;sea_water_practical_salinity&quot;</span><span class="p">,</span>
+    <span class="n">response</span><span class="o">=</span><span class="s2">&quot;csv&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">dataset_ids</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;tabledap&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span> <span class="s2">&quot;Dataset ID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="n">dataset_ids_list</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_ids</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset_ids</span><span class="p">)</span><span class="si">}</span><span class="s2"> datasets&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="let-us-narrow-our-search-to-deployments-that-within-a-lon-lat-time-extent">
+<h2>Let us narrow our search to deployments that within a lon/lat/time extent.<a class="headerlink" href="#let-us-narrow-our-search-to-deployments-that-within-a-lon-lat-time-extent" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">FullScreenControl</span><span class="p">,</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Rectangle</span>
+
+<span class="n">min_lon</span><span class="p">,</span> <span class="n">max_lon</span> <span class="o">=</span> <span class="o">-</span><span class="mi">72</span><span class="p">,</span> <span class="o">-</span><span class="mi">69</span>
+<span class="n">min_lat</span><span class="p">,</span> <span class="n">max_lat</span> <span class="o">=</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">41</span>
+
+<span class="n">rectangle</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="n">min_lat</span><span class="p">,</span> <span class="n">min_lon</span><span class="p">),</span> <span class="p">(</span><span class="n">max_lat</span><span class="p">,</span> <span class="n">max_lon</span><span class="p">)))</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span>
+    <span class="n">center</span><span class="o">=</span><span class="p">((</span><span class="n">min_lat</span> <span class="o">+</span> <span class="n">max_lat</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">min_lon</span> <span class="o">+</span> <span class="n">max_lon</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">rectangle</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">FullScreenControl</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kw</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;min_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-07-10T00:00:00Z&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;max_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-02-10T00:00:00Z&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;min_lon&quot;</span><span class="p">:</span> <span class="n">min_lon</span><span class="p">,</span>
+    <span class="s2">&quot;max_lon&quot;</span><span class="p">:</span> <span class="n">max_lon</span><span class="p">,</span>
+    <span class="s2">&quot;min_lat&quot;</span><span class="p">:</span> <span class="n">min_lat</span><span class="p">,</span>
+    <span class="s2">&quot;max_lat&quot;</span><span class="p">:</span> <span class="n">max_lat</span><span class="p">,</span>
+    <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;sea_water_practical_salinity&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">search_url</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get_search_url</span><span class="p">(</span><span class="n">response</span><span class="o">=</span><span class="s2">&quot;csv&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">search_url</span><span class="p">)</span>
+<span class="n">dataset_ids</span> <span class="o">=</span> <span class="n">search</span><span class="p">[</span><span class="s2">&quot;Dataset ID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">dataset_ids_list</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_ids</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset_ids</span><span class="p">)</span><span class="si">}</span><span class="s2"> Datasets:</span><span class="se">\n</span><span class="si">{</span><span class="n">dataset_ids_list</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sal</span> <span class="o">=</span> <span class="s2">&quot;sea_water_practical_salinity_profiler_depth_enabled&quot;</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="s2">&quot;sea_water_temperature_profiler_depth_enabled&quot;</span>
+
+<span class="n">e</span><span class="o">.</span><span class="n">dataset_id</span> <span class="o">=</span> <span class="n">dataset_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">e</span><span class="o">.</span><span class="n">variables</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;z&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;latitude&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
+    <span class="n">sal</span><span class="p">,</span>
+    <span class="n">temp</span><span class="p">,</span>
+    <span class="s2">&quot;time&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get_download_url</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">(</span><span class="n">index_col</span><span class="o">=</span><span class="s2">&quot;time (UTC)&quot;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Exercise: experiment with the <code class="docutils literal notranslate"><span class="pre">e.to_xarray()</span></code> method. Think about why/where use
+one or the other?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">subset</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;z (m)&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;z (m)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mf">3.75</span><span class="p">))</span>
+<span class="n">subset</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sal</span><span class="si">}</span><span class="s2"> (1e-3)&quot;</span><span class="p">][</span><span class="s2">&quot;2016&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gsw</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<span class="k">def</span> <span class="nf">plot_ts</span><span class="p">():</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+    <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+    <span class="n">sigma</span> <span class="o">=</span> <span class="n">gsw</span><span class="o">.</span><span class="n">sigma0</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+
+    <span class="n">cnt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">cs</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="n">cnt</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">cs</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%2i</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Salinity [g kg$^{-1}$]&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Temperature [$^{\circ}$C]&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sal</span><span class="si">}</span><span class="s2"> (1e-3)&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2"> (degree_Celsius)&quot;</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">26</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plot_ts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">responses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mat&quot;</span><span class="p">,</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span> <span class="s2">&quot;ncCF&quot;</span><span class="p">,</span> <span class="s2">&quot;ncCFHeader&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">response</span> <span class="ow">in</span> <span class="n">responses</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">get_download_url</span><span class="p">(</span><span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Exercise: explore the web interface for the OOI server URL:</p>
+<p>http://erddap.dataexplorer.oceanobservatories.org/erddap/index.html</p>
+<p>or the IOOS glider dac:</p>
+<p>https://gliders.ioos.us/erddap</p>
+<p>and find a dataset of interested, download a format that you are familiar with
+and plot it (using the web interface or the Python, your choice).</p>
+</section>
+</section>
+<section id="opendap">
+<h1>2) OPeNDAP<a class="headerlink" href="#opendap" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>Learning objectives:<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Open model data from a THREDDS server via OPeNDAP with <code class="docutils literal notranslate"><span class="pre">xarray</span></code>;</p></li>
+<li><p>Discuss the differences with an <code class="docutils literal notranslate"><span class="pre">erddapy</span></code> request;</p></li>
+<li><p>Plot it using <code class="docutils literal notranslate"><span class="pre">xarray</span></code> interface.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cf_xarray</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;http://tds.marine.rutgers.edu/thredds/dodsC/roms/doppio/2017_da/avg/Averages_Best&quot;</span>
+<span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">cf</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;sea_water_potential_temperature&quot;</span>
+<span class="n">time</span> <span class="o">=</span> <span class="s2">&quot;2022-08-10&quot;</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="n">selection</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">cf</span><span class="p">[</span><span class="n">variable</span><span class="p">]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;2022-08-10&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">s_rho</span><span class="o">=</span><span class="n">surface</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span>
+    <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+    <span class="n">subplot_kw</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;projection&quot;</span><span class="p">:</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">()},</span>
+<span class="p">)</span>
+
+<span class="n">selection</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;lon_rho&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lat_rho&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sos">
+<h1>3) ~~SOS~~<a class="headerlink" href="#sos" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>Learning objectives:<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Use searvey to obtain CO-OPS data</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">shapely</span>
+<span class="kn">from</span> <span class="nn">searvey</span> <span class="kn">import</span> <span class="n">coops</span>
+
+<span class="n">secoora</span> <span class="o">=</span> <span class="n">shapely</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="o">-</span><span class="mf">87.4</span><span class="p">,</span> <span class="mf">24.25</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.7</span><span class="p">,</span> <span class="mf">36.7</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">coops</span><span class="o">.</span><span class="n">coops_stations_within_region</span><span class="p">(</span><span class="n">secoora</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Duck&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="kn">from</span> <span class="nn">searvey.coops</span> <span class="kn">import</span> <span class="n">COOPS_Station</span>
+
+<span class="n">station</span> <span class="o">=</span> <span class="n">COOPS_Station</span><span class="p">(</span><span class="s2">&quot;Duck&quot;</span><span class="p">)</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">station</span><span class="o">.</span><span class="n">product</span><span class="p">(</span>
+    <span class="s2">&quot;water_level&quot;</span><span class="p">,</span>
+    <span class="n">start_date</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span>
+    <span class="n">end_date</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span>
+<span class="p">)</span>
+
+<span class="n">ds</span><span class="p">[</span><span class="s2">&quot;v&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="wms">
+<h1>4) WMS<a class="headerlink" href="#wms" title="Permalink to this heading">#</a></h1>
+<section id="id3">
+<h2>Learning objectives:<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Add a WMS layer to an interactive map. (“Hurricane viz widget.”)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">FullScreenControl</span><span class="p">,</span> <span class="n">Map</span><span class="p">,</span> <span class="n">WMSLayer</span><span class="p">,</span> <span class="n">basemaps</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">SelectionSlider</span>
+<span class="kn">from</span> <span class="nn">traitlets</span> <span class="kn">import</span> <span class="n">Unicode</span>
+
+<span class="n">time_options</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;13:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;13:30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;14:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;14:30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;15:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;15:30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;16:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;16:30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;17:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;17:30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;18:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;18:30&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">slider</span> <span class="o">=</span> <span class="n">SelectionSlider</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Time:&quot;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">time_options</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">update_wms</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">time_wms</span><span class="o">.</span><span class="n">time</span> <span class="o">=</span> <span class="s2">&quot;2020-07-25T</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slider</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+
+<span class="n">slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_wms</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">TimeWMSLayer</span><span class="p">(</span><span class="n">WMSLayer</span><span class="p">):</span>
+    <span class="n">time</span> <span class="o">=</span> <span class="n">Unicode</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">sync</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">o</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time_wms</span> <span class="o">=</span> <span class="n">TimeWMSLayer</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r-t.cgi?&quot;</span><span class="p">,</span>
+    <span class="n">layers</span><span class="o">=</span><span class="s2">&quot;nexrad-n0r-wmst&quot;</span><span class="p">,</span>
+    <span class="n">time</span><span class="o">=</span><span class="s2">&quot;2020-07-25T13:00:00Z&quot;</span><span class="p">,</span>
+    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
+    <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">&quot;Weather data © 2012 IEM Nexrad&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">basemap</span><span class="o">=</span><span class="n">basemaps</span><span class="o">.</span><span class="n">CartoDB</span><span class="o">.</span><span class="n">Positron</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">88</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">time_wms</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">FullScreenControl</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slider</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="catalog-service-web-csw">
+<h1>5) Catalog Service Web (CSW)<a class="headerlink" href="#catalog-service-web-csw" title="Permalink to this heading">#</a></h1>
+<section id="is-there-a-canonical-source-for-data">
+<h2>Is there a canonical source for data?<a class="headerlink" href="#is-there-a-canonical-source-for-data" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="https://i.kym-cdn.com/photos/images/newsfeed/001/093/557/142.gif" /></p>
+<p>Well, kind of… The closet thing is are data catalogs like the <a class="reference external" href="https://data.ioos.us/">IOOS CSW catalog</a> or <a class="reference external" href="https://pangeo-forge.readthedocs.io/en/latest/">pangeo-forge</a>.</p>
+</section>
+</section>
+<section id="catalog-service-for-the-web-csw">
+<h1>Catalog Service for the Web (CSW)<a class="headerlink" href="#catalog-service-for-the-web-csw" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>A single source to find endpoints</p></li>
+<li><p>Nice python interface:<br><code class="docutils literal notranslate"><span class="pre">owslib.csw.CatalogueServiceWeb</span></code></p></li>
+<li><p>Advanced filtering:<br><code class="docutils literal notranslate"><span class="pre">owslib.fes</span></code></p></li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/ocefpaf/2018-SciPy-talk/gh-pages/images/IOOS.svg" /></p>
+</section>
+<section id="for-more-complex-examples-on-how-to-find-data-in-the-catalog-please-check-the-ioos-code-gallery">
+<h1>For more complex examples on how to find data in the catalog please check the IOOS code gallery:<a class="headerlink" href="#for-more-complex-examples-on-how-to-find-data-in-the-catalog-please-check-the-ioos-code-gallery" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://ioos.github.io/ioos_code_lab/content/intro.html">https://ioos.github.io/ioos_code_lab/content/intro.html</a></p>
+</section>
+<section id="where-to-find-data">
+<h1>Where to find data?<a class="headerlink" href="#where-to-find-data" title="Permalink to this heading">#</a></h1>
+<p>Curated list of ERDDAP servers:
+https://github.com/IrishMarineInstitute/awesome-erddap</p>
+<p>Environmental Data Service (EDS) model viewer: https://eds.ioos.us</p>
+<p>Exploring THREDDS servers: https://unidata.github.io/siphon/latest</p>
+</section>
+<section id="extras-how-does-this-all-work">
+<h1>Extras: how does this all work?<a class="headerlink" href="#extras-how-does-this-all-work" title="Permalink to this heading">#</a></h1>
+</section>
+<section id="standards">
+<h1>Standards!<a class="headerlink" href="#standards" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="https://imgs.xkcd.com/comics/standards.png" /></p>
+</section>
+<section id="bad-example">
+<h1>Bad example<a class="headerlink" href="#bad-example" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cftime</span>
+<span class="kn">import</span> <span class="nn">nc_time_axis</span>
+<span class="kn">from</span> <span class="nn">netCDF4</span> <span class="kn">import</span> <span class="n">Dataset</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://goosbrasil.org:8080/pirata/B19s34w.nc&quot;</span>
+<span class="n">nc</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="n">nc</span><span class="p">[</span><span class="s2">&quot;temperature&quot;</span><span class="p">][:]</span>
+<span class="n">times</span> <span class="o">=</span> <span class="n">nc</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">]</span>
+<span class="n">temp</span><span class="p">[</span><span class="n">temp</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mi">9999</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NaN</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">cftime</span><span class="o">.</span><span class="n">num2date</span><span class="p">(</span><span class="n">times</span><span class="p">[:],</span> <span class="n">times</span><span class="o">.</span><span class="n">units</span><span class="p">,</span> <span class="n">calendar</span><span class="o">=</span><span class="n">times</span><span class="o">.</span><span class="n">calendar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">t</span> <span class="o">&gt;=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">t</span> <span class="o">&lt;=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">mask</span><span class="p">],</span> <span class="n">temp</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">][</span><span class="n">mask</span><span class="p">],</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="good-example">
+<h1>Good example<a class="headerlink" href="#good-example" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s2">&quot;temperature&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">temp</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">depth_t</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="s2">&quot;2008&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../../../tutorials-index/data-access-in-python.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Data access in Python</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="01-extras-https.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Extras: load netCDF files directly from HTTPS</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, OceanHackWeek.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
