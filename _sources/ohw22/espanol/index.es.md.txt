@@ -31,6 +31,11 @@ También estamos planeando algunas actividades fuera de este horario, en las hor
 
 Tendremos más detalles pronto.
 
+El 8 de agosto tuvimos un [tutorial de reforzamiento de Python, en español](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW22/optional/espanol/python-cientifico):
+  - **Título:** Introducción a Python: Aprendiendo a explorar y analizar bases de datos para oceanógrafos
+  - **Instructora:** Alma Carolina Castillo Trujillo, [https://github.com/almacarolina](https://github.com/almacarolina)
+
+
 ## Preparación
 
 <!-- ## Perfil esperado de las y los aplicantes
