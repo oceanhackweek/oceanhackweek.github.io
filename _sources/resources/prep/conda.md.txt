@@ -90,7 +90,7 @@ The [package](https://github.com/Anaconda-Platform/nb_conda_kernels) that detect
 
 ## Conda on your own computer
 
-Conda may be used on your computer as well as the Hub. If you wish to install the same environment as the hub is running, after you install Conda, you can download the [`environment.yml`](https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml) that we use, then `conda create -n <ENV NAME> --file environment.yml`
+Conda may be used on your computer as well as the Hub. If you wish to install the same environment as the hub is running, after you install Conda, you can download the [`environment.yml`](https://raw.githubusercontent.com/oceanhackweek/ohw-tutorials/d51c880111305d7e345d98b7d8ccc031cbf0087e/environment.yml) that we use, then `conda env create -n <ENV NAME> --file environment.yml`
 
 ### Installing Conda
 
