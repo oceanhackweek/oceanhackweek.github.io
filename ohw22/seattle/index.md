@@ -52,7 +52,7 @@ With the detailed schedule shown above, during this week we will:
   - Most days: meal card $25/day, can use at any UW locations
   - Wednesday: we’ll have a discussion over pizza session
   - Help yourself for snacks and making coffee
-  - Lunch will tuypically be 1100 - 1200 or 1200 - 1300 each day
+  - Lunch will typically be 1100 - 1200 or 1200 - 1300 each day
 
 <!-- 
 We are able to provide lodging for a small number of participants who need to travel within the US Northwest region to the event. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
