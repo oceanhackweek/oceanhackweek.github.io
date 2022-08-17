@@ -57,7 +57,7 @@ It is worth noting that we are using the `source` branch as the base for this re
 #### Environment
 
 There is a pre-configured conda environment in `environment.yml`.
-To use it, `conda create env -f=./environment.yml`, then activate with `conda activate ohw-site`.
+To use it, `conda env create -f=./environment.yml`, then activate with `conda activate ohw-site`.
 
 #### Commands
 
