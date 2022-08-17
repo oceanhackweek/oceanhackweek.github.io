@@ -49,10 +49,10 @@ With the detailed schedule shown above, during this week we will:
 
 
 ### Meals
-  - Most days: meal card $30/day, can use at any UW locations
+  - Most days: meal card $25/day, can use at any UW locations
   - Wednesday: we’ll have a discussion over pizza session
   - Help yourself for snacks and making coffee
-  - Lunch will be 1400-1500 each day
+  - Lunch will tuypically be 1100 - 1200 or 1200 - 1300 each day
 
 <!-- 
 We are able to provide lodging for a small number of participants who need to travel within the US Northwest region to the event. Funding request is _not_ part of the application process and more info on this will be available after participants are accepted into this satellite.
@@ -80,9 +80,6 @@ To help everyone get to know each other better, we will do a 2-min lightning tal
 ### Contact
 
 For questions specific to the regular OHW satellite, please ask in our [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a?discussions_q=category%3AQ%26A+label%3A%22OHW22+-+Northwest%22). Please tag the organizers with `@oceanhackweek/ohw22-organizers-northwest` and add a `OHW22 - Northwest` label so that others can find answers. Additionally you can email Dr. Wu-Jung Lee (leewj@uw.edu).
-
-
-
 
 
 ## Undergraduate summer program (August 8-26, 2022)
