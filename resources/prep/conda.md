@@ -57,7 +57,7 @@ The full environments are captured as [Docker images](https://github.com/orgs/oc
 
 ### Temporary packages
 
-You can temporarily add packages to your hub, via Jupyter cell magic, `%pip install <list-of-packages>` or `%conda install <list-of-packages>`. In R you can use `install.packages("package-name")` as usual.
+You can temporarily add packages to your hub, via Jupyter cell magic, `%pip install <list-of-packages>` or `%conda install <list-of-packages>`. [Jupyter magics](https://ipython.readthedocs.io/en/stable/interactive/magics.html) always start with the character `%`. In R you can use `install.packages("package-name")` as usual.
 
 :::{admonition} pip install trouble
 :class: danger
