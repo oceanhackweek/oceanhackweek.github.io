@@ -7,20 +7,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
 
       - name: Install Conda environment from environment.yml
-        uses: mamba-org/provision-with-micromamba@v11
+        uses: mamba-org/provision-with-micromamba@v13
 
       - name: Build documentation
         shell: bash -l {0}
         run: |
-          make html
+          make clean html linkcheck
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         if: github.ref == 'refs/heads/source' && github.repository == 'oceanhackweek/oceanhackweek.github.io'
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
