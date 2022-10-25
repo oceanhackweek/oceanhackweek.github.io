@@ -6,7 +6,7 @@ description: OceanHackWeek Steering Committee
 
 # Steering Committee
 
-The OceanHackWeek Steering Committee helps chart the continued evolution of OceanHackWeek and focuses on longer term issues like funding and infrastructure. The [Steering Committee Charter](https://oceanhackweek.github.io/about/charter.html) guides these efforts.
+The OceanHackWeek Steering Committee helps chart the continued evolution of OceanHackWeek and focuses on longer term issues like funding and infrastructure. The [Steering Committee Charter](./charter) guides these efforts.
 
 ## Current Members
 
