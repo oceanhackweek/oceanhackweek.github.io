@@ -7,7 +7,7 @@ permalink: charter.html
 
 # Charter
 
-The [OceanHackWeek Steering Committee](https://oceanhackweek.github.io/about/steering_committee.html) has a charter to guide the evolution of OceanHackWeek and focus on longer term tasks. The charter defines the roles and responsibilities of the Steering Committee and its members, terms of reference and a decision making structure. 
+The [OceanHackWeek Steering Committee](./steering_committee) has a charter to guide the evolution of OceanHackWeek and focus on longer term tasks. The charter defines the roles and responsibilities of the Steering Committee and its members, terms of reference and a decision making structure. 
 
 The Steering Committee Charter will be revisited yearly and revised as necessary.
 
