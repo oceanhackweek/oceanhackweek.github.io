@@ -26,7 +26,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - A virtual event with 46 participants
 - Programming languages: Python + R
 - 10 tutorials + [8 projects](https://oceanhackweek.github.io/ohw21/projects_2020.html)
-- [Participant testimonials](testimonials#ohw20-virtual)
+- [Participant testimonials](testimonials.md#ohw20-virtual)
 - [Schedule](https://oceanhackweek.github.io/ohw-resources/ohw20/schedule/). Links to tutorials are found here.
 - [Web site](https://oceanhackweek.github.io/ohw20/)
 - [OHW20 Resources site](https://oceanhackweek.github.io/ohw-resources/ohw20/)
