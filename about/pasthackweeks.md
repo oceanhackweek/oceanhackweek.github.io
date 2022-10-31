@@ -17,7 +17,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - Programming languages: Python + R
 - 7 tutorials + [11 projects](https://oceanhackweek.github.io/ohw-resources/projects/projectlist/)
 - [Schedule](https://oceanhackweek.github.io/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here.
-- [Participant testimonials](testimonials#ohw21-hybrid)
+- [Participant testimonials](testimonials.md#ohw21-hybrid)
 - [Web site](https://oceanhackweek.github.io/ohw21/)
 - [OHW21 Resources site](https://oceanhackweek.github.io/ohw-resources/)
 
