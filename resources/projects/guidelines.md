@@ -49,9 +49,10 @@ Optional: links to manuscripts or technical documents for more in-depth analysis
 * Developing tutorials for using NASA data on the cloud.
 * Working on an efficient open source matchup tutorial for satellite orbital data and in situ point or trajectory data.
 * Developing an OSS algorithm development toolbox in Python to deal with a 400GB AMSR brightness temperature - in situ matchup database.
+<!-- 
 * [Argovis - a visualualization and API for accessing Argo data](https://argovis.colorado.edu/ng/home)
 * [OHW18 Projects](https://oceanhackweek.github.io/projects.html)
-
+-->
 
 
 ## Project Data Storage
