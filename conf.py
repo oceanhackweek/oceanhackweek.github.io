@@ -80,7 +80,11 @@ html_theme_options = {
             "url": "https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF",
             "icon": "fab fa-youtube-square",
         },
-        {"name": "Email", "url": "mailto:oceanhkw@uw.edu", "icon": "fas fa-envelope"},
+        {
+            "name": "Email", 
+            "url": "mailto:info@oceanhackweek.org", 
+            "icon": "fas fa-envelope"
+        },
     ],
     "use_edit_page_button": True,
 }

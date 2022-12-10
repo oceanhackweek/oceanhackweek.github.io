@@ -3,7 +3,7 @@
 Are you interested in learning more about OceanHackWeek, helping out with the next event, or learning about the next event and how to prepare a strong application? You can:
 
 - Look over this web site, both general pages and [past events](pasthackweeks)
-- Write to us at [oceanhkw@uw.edu](mailto:oceanhkw@uw.edu).
+- Write to us at [info@oceanhackweek.org](mailto:info@oceanhackweek.org).
 - Post a comment or question on the [OceanHackWeek GitHub Discussions](https://github.com/orgs/oceanhackweek/discussions) to engage a larger fraction of the OceanHackWeek community
 - Find us on Twitter at [https://twitter.com/oceanhackweek](https://twitter.com/oceanhackweek)
 - Look up our [FAQ for Applicants](../ohw22/applicants.md#faqs). Most of the FAQ entries are relevant for most years, but bear in mind that we update the FAQ every year to reflect the event being planned.
