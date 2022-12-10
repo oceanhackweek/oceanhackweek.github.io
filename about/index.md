@@ -55,4 +55,5 @@ task-groups
 pasthackweeks
 Testimonials <testimonials>
 code-of-conduct
+contact
 ```
