@@ -151,6 +151,13 @@
                     </li>
                 
 
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../about/pasthackweeks.html">
+                        Past OHW Events
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../../ohw22/index.html">
                         OceanHackWeek 2022
@@ -286,6 +293,13 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../../about/index.html">
                         About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../about/pasthackweeks.html">
+                        Past OHW Events
                       </a>
                     </li>
                 
@@ -607,8 +621,8 @@
 <li><p>Linux (Debian): <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">git-all</span></code></p></li>
 </ul>
 <p>To test, open the terminal (on Windows, Git Bash) and setup your username and email:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;your username&quot;</span>
-git config --global user.email <span class="s2">&quot;your email&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;your username&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;your email&quot;</span>
 </pre></div>
 </div>
 </section>
@@ -619,7 +633,7 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 <section id="terminal-command-line-text-editor">
 <h2>Terminal (command line) text editor<a class="headerlink" href="#terminal-command-line-text-editor" title="Permalink to this heading">#</a></h2>
 <p>When working on the command line (the terminal or shell), it is often handy to modify file content directly from there. For that you can use a command line editor such as <a class="reference external" href="https://linuxize.com/post/how-to-use-nano-text-editor/">nano</a>. On Mac and Linux it is usually pre-installed, but for Windows you can follow the instructions in this <a class="reference external" href="http://carpentries.github.io/workshop-template/#editor">link</a> to set it up. Test your installation by opening a terminal and running <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">--version</span></code>. If it works you can link your git configuration with <code class="docutils literal notranslate"><span class="pre">nano</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;nano -w&quot;</span>
 </pre></div>
 </div>
 </section>
@@ -647,7 +661,7 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 <section id="clone-the-repository">
 <h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
 <p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep {OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
 </pre></div>
 </div>
 <p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>. Navigate to the new folder, <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>.</p>
@@ -655,9 +669,9 @@ git config --global user.email <span class="s2">&quot;your email&quot;</span>
 <section id="update-the-readme-with-your-name">
 <h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this heading">#</a></h3>
 <p>Open the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file with your favorite editor and create a new section header. Under this section add your name. Then add this change, commit it to the local repository, and push it so that it appears on the <code class="docutils literal notranslate"><span class="pre">origin</span></code> GitHub repository.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
-git commit -m <span class="s2">&quot;Adding new name to README.md&quot;</span>
-git push origin
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Adding new name to README.md&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin
 </pre></div>
 </div>
 <p>Make sure your change appears online.</p>
@@ -668,7 +682,7 @@ git push origin
 </section>
 <section id="update-your-local-repository-local-clone-with-the-changes-of-your-collaborators">
 <h3>4. Update your local repository (local clone) with the changes of your collaborators<a class="headerlink" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
 </pre></div>
 </div>
 <div class="admonition-short-names-for-repositories admonition">
@@ -687,7 +701,7 @@ To see what is hidden in origin: <code class="docutils literal notranslate"><spa
 </section>
 <section id="resolving-the-merge-conflict">
 <h3>5. Resolving the merge conflict<a class="headerlink" href="#resolving-the-merge-conflict" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git status
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>status
 </pre></div>
 </div>
 <p>You will see the file/s which caused the merge conflict in green.</p>
@@ -700,9 +714,9 @@ To see what is hidden in origin: <code class="docutils literal notranslate"><spa
 </pre></div>
 </div>
 <p>Decide which changes you want to keep, and modify the file so it looks as you wish directly from the editor. Remove the unnecessary characters. Add, commit and push the changes.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
-git commit -m <span class="s2">&quot;resolving merge conflict&quot;</span>
-git push origin master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;resolving merge conflict&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
 </pre></div>
 </div>
 <p>You can continue working on as usual.</p>
@@ -731,14 +745,14 @@ Here’s an excellent guide to the Forking Git Workflow: <a class="reference ext
 <a class="github reference external" href="https://github.com/myghusername/ohw21-proj-ProjectName">myghusername/ohw21-proj-ProjectName</a></p></li>
 <li><p>Go to your local repo and rename your <code class="docutils literal notranslate"><span class="pre">origin</span></code> to point to the fork:</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote rm origin
-git remote add origin https://github.com/myghusername/ohw21-proj-ProjectName.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>rm<span class="w"> </span>origin
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/myghusername/ohw21-proj-ProjectName.git
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>Add a new remote to talk to the main repo:</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/oceanhackweek/ohw21-proj-ProjectName.git 
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/oceanhackweek/ohw21-proj-ProjectName.git<span class="w"> </span>
 </pre></div>
 </div>
 <p>From now on you will push to <code class="docutils literal notranslate"><span class="pre">origin</span></code>, but pull from <code class="docutils literal notranslate"><span class="pre">upstream</span></code>.</p>
@@ -753,9 +767,9 @@ git remote add origin https://github.com/myghusername/ohw21-proj-ProjectName.git
 <section id="submitting-changes-via-a-pull-request">
 <h4>Submitting changes via a pull request<a class="headerlink" href="#submitting-changes-via-a-pull-request" title="Permalink to this heading">#</a></h4>
 <p>Make some changes to a file and commit and publish them.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
-git commit -m <span class="s2">&quot;more changes&quot;</span>
-git push origin master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;more changes&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
 </pre></div>
 </div>
 <div class="admonition-note admonition">
@@ -783,8 +797,8 @@ git push origin master
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">#</a></h2>
 <section id="deleting-files">
 <h3>Deleting files<a class="headerlink" href="#deleting-files" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git rm filename.txt
-rm filename.txt
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>rm<span class="w"> </span>filename.txt
+rm<span class="w"> </span>filename.txt
 </pre></div>
 </div>
 <div class="admonition-note admonition">
@@ -794,7 +808,7 @@ rm filename.txt
 </section>
 <section id="reverting-to-the-previous-commit">
 <h3>Reverting to the previous commit<a class="headerlink" href="#reverting-to-the-previous-commit" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git revert HEAD
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>revert<span class="w"> </span>HEAD
 </pre></div>
 </div>
 <div class="admonition-note admonition">

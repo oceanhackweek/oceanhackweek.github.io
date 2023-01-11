@@ -9,7 +9,20 @@ description: Access materials from past hackweeks
 
 OceanHackWeek (**OHW**) has taken place annually starting in 2018. Materials from past hackweeks are available, though they may be incomplete, particularly for older events. Links to past tutorials and projects are also provided in most cases.
 
-OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format in 2021.
+OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format starting in 2021.
+
+## 2022 (OHW22)
+
+- A hybrid event with a global virtual event, several in-person "satellite" events, and satellites in Spanish and Portuguese.
+- Programming languages: Python + R
+- [Web site](https://oceanhackweek.org/ohw22/)
+- **Additional details will be added soon.**
+
+
+<!-- - A hybrid event with 70 participants, including 19 in-person participants at the Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine
+- 7 tutorials + [11 projects](https://oceanhackweek.github.io/ohw-resources/projects/projectlist/)
+- [Schedule](https://oceanhackweek.github.io/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here.
+- [Participant testimonials](testimonials.md#ohw21-hybrid) -->
 
 ## 2021 (OHW21)
 
