@@ -6,18 +6,12 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Join us at OceanHackWeek 2022!
+:::{admonition} Stay tuned for information about OceanHackWeek 2023!
 :class: note
 
-OceanHackWeek 2022 will take place **August 15-19, 2022**. The workshop will take a hybrid form consisting of a global virtual event and a number of regional “satellite” events that are either in-person or virtual. **Applicants have been notified and participants should expect further communications**
+We are making plans for OceanHackWeek 2023. While there are many decisions to be made, it will likely take place in August 2023. Visit us again by March 2023 for updates! In the meantime, you can learn more about OceanHackWeek by browsing this web site, including [last year's event, OHW22](ohw22/index); and [contact us](about/contact) if you're interested in helping out.
 
 
-```{button-link} ohw22/
-:color: primary
-:expand:
-:tooltip: OHW22
-Go to OceanHackWeek 2022
-```
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 :::
 
@@ -144,7 +138,7 @@ Virtual event: We expect to hold formal sessions in at least two time zones, USA
 :hidden:
 
 about/index.md
-% about/pasthackweeks.md
+about/pasthackweeks.md
 OceanHackWeek 2022 <ohw22/index.md>
 % posts
 ```
