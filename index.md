@@ -6,18 +6,18 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Stay tuned for information about OceanHackWeek 2023!
+```{admonition} Stay tuned for information about OceanHackWeek 2023!
 :class: note
 
 We are making plans for OceanHackWeek 2023. While there are many decisions to be made, it will likely take place in August 2023. Visit us again by March 2023 for updates! In the meantime, you can learn more about OceanHackWeek by browsing this web site, including [last year's event, OHW22](ohw22/index); and [contact us](about/contact) if you're interested in helping out.
-:::
+```
 
-:::{admonition} OceanHackWeek en Español / in Spanish, Feb 27 - Mar 3, 2023!
+```{admonition} OceanHackWeek en Español / in Spanish, Feb 27 - Mar 3, 2023!
 :class: important
 
 ¡Estamos organizando un evento virtual en español basado en OceanHackWeek, 
 y **la fecha límite de postulación ya se acerca, este 6 de febrero!** Para más información, [visita este anuncio.](https://github.com/orgs/oceanhackweek/discussions/38)
-:::
+```
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 
