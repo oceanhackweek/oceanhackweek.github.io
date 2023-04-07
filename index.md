@@ -135,6 +135,17 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
   </div>
 </div>
 
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} assets/images/logos/nasa-logo.sm.png
+:alt: NASA
+:width: 150px
+```
+
+  </div>
+</div>
+
 <!-- ## Location and Time Zones
 
 In-person workshop: Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine (US EDT, UTC-4).
