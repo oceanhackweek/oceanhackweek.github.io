@@ -6,20 +6,20 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-```{admonition} OceanHackWeek en Español / in Spanish, Feb 27 - Mar 3, 2023!
+```{admonition} OceanHackWeek 2023 will be on August 7 - 11!
 :class: important
 
-*Offshoot event in Spanish! Bear with us as we continue going multi-lingual.*
-
-¡Estamos organizando un evento virtual en español basado en OceanHackWeek, 
-y **la fecha límite de postulación ya se acerca, este 6 de febrero!** Para más información, [visita este anuncio.](https://github.com/orgs/oceanhackweek/discussions/38)
+We are making plans for OceanHackWeek 2023. It will be a hybrid event with an in-person gathering at the University of Washington in Seattle; a larger, global virtual event; and maybe a small Australian gathering. We will roll out initial web pages for OceanHackWeek 2023 very soon. 
+In the meantime, you can learn more about OceanHackWeek by browsing this web site, including [last year's event, OHW22](ohw22/index); and [contact us](about/contact) if you're interested in helping out.
 ```
 
-```{admonition} Stay tuned for information about OceanHackWeek 2023!
+```{admonition} OceanHackWeek en Español / in Spanish, Feb 27 - Mar 3, 2023!
 :class: note
 
-We are making plans for OceanHackWeek 2023. While there are many decisions to be made, it will likely take place in August 2023. Visit us again by March 2023 for updates! In the meantime, you can learn more about OceanHackWeek by browsing this web site, including [last year's event, OHW22](ohw22/index); and [contact us](about/contact) if you're interested in helping out.
+We had a great Spanish OceanHackWeek event, with participants from all over Latin America and Spain! We'll say more about it on this web site later on.
+You can check out the event website (in Spanish) at [https://intercoonecta.github.io](https://intercoonecta.github.io)
 ```
+
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 
