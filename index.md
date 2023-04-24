@@ -19,7 +19,7 @@ In the meantime, you can learn more about OceanHackWeek by browsing this web sit
 We had a great Spanish OceanHackWeek event, with participants from all over Latin America and Spain! We'll say more about it on this web site later on.
 You can check out the event website (in Spanish) at [https://intercoonecta.github.io](https://intercoonecta.github.io)
 ```
-
+STAY TUNED!
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 
