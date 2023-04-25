@@ -10,7 +10,7 @@ OceanHackWeek 2023 (OHW23) is a hands-on, interactive workshop focused on data s
 
 Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking!
 
-See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
+See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
 
 <!---
@@ -24,21 +24,19 @@ Find password on Slack channel #ohw22_general!
 :::
  -->
 
-## A Global Virtual Event and Six Regional Satellites
+## A hybrid in-person and virtual event
 
-Global and satellite participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
-
-### Global Virtual Event
+In-person and virtual participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
 
 ```{image} ../assets/images/ohw_hacking/ohw21-slack.png
 :alt: OHW21 Slack exchanges
 :width: 220px
 :align: right
 ```
-The [**Global Virtual Event**](global/index) will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW22 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. The tutorials will be recorded and posted after the presentation. The exact hours of this global event are still being finalized, but we anticipate the activity time to be structured around the US Pacific Time (UTC-7) this year.
+The virtual event will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW23 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. The tutorials will be recorded and posted after the presentation. The exact hours of this global event are still being finalized, but we anticipate the activity time to be structured around the US Pacific Time (UTC-7) this year.
 
 
-## OHW22 Sponsors
+## OHW23 Sponsors
 
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">

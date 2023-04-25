@@ -1,44 +1,32 @@
 ---
 layout: applicant
 # title: Information for Applicants
-description: OceanHackWeek (OHW) 2022
+description: OceanHackWeek (OHW) 2023
 permalink: applicant-info.html
 ---
 
 # Information for OHW23 Applicants
 
-OceanHackWeek 2023 (OHW23) is a hands-on, interactive workshop focused on data science in oceanography and fisheries. It will take place on **August 7-11, 2023** as a hybrid event with an in-person gathering at the University of Washington in Seattle; a larger, global virtual event; and possibly a small Australian gathering. Join us for five days of tutorials, data exploration, software development and community networking!
+OceanHackWeek 2023 is a hands-on, interactive hybrid in-person and virtual workshop focused on data science in oceanography and fisheries that will be held on **August 7-11, 2023**. Join us for five days of tutorials, data exploration, software development and community networking!
 
-OceanHackWeek 2021 is a small, hands-on, interactive hybrid in-person and virtual workshop focused on data science and oceanography that will be held during August 3-6, 2021. Join us for four days of tutorials, data exploration, software development and community networking!
-
-OceanHackWeek 2022 will happen from August 15-19, 2022. The workshop will take a hybrid form consisting of a global virtual event and a number of regional satellite events that are either in-person or virtual.
-
-
-
-The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. Participants can apply for being in one of the regional satellites or the global virtual event. Regional satellite events are connected closely with the global virtual event, while providing additional collaboration and networking opportunities on a regional basis.
-
-```{admonition} Applications have closed and participant selection is in progress
+```{admonition} Applications will open around May 8, 2023
 :class: important
 
-Accepted applicants will be notified no later than June 18, 2022.
+Please come back in early May for updates. **We plan to open applications
+starting around May 8, 2023.**
 ```
 
-The **in-person** event will take place at the University of Washington, in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 20-25 participants.
+The **in-person** event will take place at the [University of Washington](http://www.washington.edu), in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 20-25 participants.
 
 For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time. While plans are still tentative, we expect to hold these sessions in at least two time zones, USA EDT (UTC-4) and Australian EST (UTC+10).
 
 Please see the FAQs below for answers to common questions.
 For additional questions, please post in our [discussions on Github](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email 
 <a href="mailto:info@oceanhackweek.org" target="_blank">info@oceanhackweek.org</a>.
-For satellite event-specific questions, please post in the discussions, or contact satellite organizers listed in the individual event pages.
 
 ---
 
 ## FAQs
-
-### Q: The satellite event in my region doesn't have a lot of details yet, what should I do?
-
-Some regional satellite organizers are still fleshing out details of the event, including the exact location. Feel free to ask in [Github Discussions](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email them if there is specific information you need from them for you to make decisions on your application.
 
 ### Q: I am an undergrad / first year grad / faculty / etc. Is this program right for me?
 
@@ -57,10 +45,6 @@ If in doubt,
 simply apply and explain your motivation for participation.
 
 We expect all participants to be engaged in the team projects and focus during the week.
-
-### Q: I am an undergraduate, and I'm not sure I'm ready for this
-
-This year (2022) we have a special, enriched program for undergraduates! The "Data Science in Oceanography" program at the University of Washington (Seattle, WA) will provide opportunities for undergraduate students in data-driven research in oceanography. Participating students will interact closely with faculty and graduate student mentors to develop and advance individual research projects. Students will fully participate in the OHW Northwest satellite event as part of this 3-week long undergraduate program, with the regular OHW activities in the second week. See [here for details](seattle/index).
 
 ### Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?
 
@@ -112,6 +96,7 @@ we require that participants have had at least some familiarity or prior experie
 ### Q: I work in an ocean engineering / robotics / consulting company. Can I apply?
 
 <!-- We expect participants from the private sector to pay for their own expenses. -->
+Yes, we welcome applications from the private sector. 
 Make sure to explain your motivation for participation in the application form!
 We may hold a career panel discussion,
 so please mention if you are interested in participating.
