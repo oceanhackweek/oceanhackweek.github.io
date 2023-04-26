@@ -15,7 +15,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 - A hybrid event with a global virtual event, several in-person "satellite" events, and satellites in Spanish and Portuguese.
 - Programming languages: Python + R
-- [Web site](https://oceanhackweek.org/ohw22/)
+- [Web site](../ohw22/index)
 - **Additional details will be added soon.**
 
 
