@@ -18,7 +18,7 @@ starting around May 8, 2023.**
 
 The **in-person** event will take place at the [University of Washington](http://www.washington.edu), in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 20-25 participants.
 
-For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time. While plans are still tentative, we expect to hold these sessions in at least two time zones, USA EDT (UTC-4) and Australian EST (UTC+10).
+For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time. While plans are still tentative, we expect to hold these sessions in at least two time zones, likely USA PDT (UTC-7) and Australian EST (UTC+10).
 
 Please see the FAQs below for answers to common questions.
 For additional questions, please post in our [discussions on Github](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email 
@@ -103,14 +103,13 @@ so please mention if you are interested in participating.
 
 ### Q: I work in a non-US institution / organization / company. Can I apply?
 
-Yes, we welcome applications from abroad for the *virtual* event. 
-Due to COVID-19 concerns, the *in-person* event will be limited to vaccinated US residents.
+Yes, we welcome applications from abroad for both the in-person and virtual events.
 
 ### Q: I was a participant in previous OceanHackWeek. Can I apply again?
 
 Yes, we welcome applications from previous participants,
 but priority will be given to new applicants.
-If you are interested in being a TA (teaching assistant) during the hackweek,
+If you are interested in assisting as a project or tutorial helper during the hackweek,
 please mention that in the application.
 
 ### Q: Am I supposed to participate in all tutorials and presentations?
