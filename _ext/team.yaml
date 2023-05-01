@@ -301,3 +301,13 @@ team:
     # email:
     roles:
       - OHW22 Organizer - San Diego
+      
+  - name: Ali Chase
+    title: Postdoc
+    affiliate: UW Applied Physics Laboratory
+    image_url: https://avatars.githubusercontent.com/u/36081961?v=4
+    github_user: alisonpchase
+    email: alichase@uw.edu
+    roles:
+      - OHW23 Organizer
+ 
