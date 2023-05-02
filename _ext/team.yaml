@@ -310,4 +310,21 @@ team:
     email: alichase@uw.edu
     roles:
       - OHW23 Organizer
+      
+  - name: Myranda Shirk
+    title: Senior Data Scientist
+    affiliate: Vanderbilt University
+    image_url: https://ca.slack-edge.com/TUFFMB3EE-U0291LKH3K4-fe5fb5f59fbd-512
+    github_user: myrandaGoesToSpace
+    # email:
+    roles:
+      - OHW23 Organizer
+      
+  - name: Ben Tupper
+    title: Senior Research Associate
+    affiliate: Bigelow Laboratory for Ocean Sciences
+    image_url: https://www.bigelow.org/img/people/btupper.png
+    github_user: btupper
+    roles:
+      - OHW23 Organizer
  
