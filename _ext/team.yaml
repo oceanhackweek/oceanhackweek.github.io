@@ -322,7 +322,7 @@ team:
       
   - name: Ben Tupper
     title: Senior Research Associate
-    affiliation: Bigelow Laboratory for Ocean Sciences
+    affiliate: Bigelow Laboratory for Ocean Sciences
     image_url: https://www.bigelow.org/img/people/btupper.png
     github_user: btupper
     roles:
