@@ -327,4 +327,12 @@ team:
     github_user: btupper
     roles:
       - OHW23 Organizer
+      
+  - name: Callum Rollo
+    title: Data Scientist
+    affiliate: Voice of the Ocean Foundation
+    image_url: https://callumrollo.github.io/images/mug.jpg
+    github_user: callumrollo
+    roles:
+      - OHW23 Organizer
  
