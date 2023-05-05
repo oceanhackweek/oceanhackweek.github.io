@@ -13,11 +13,10 @@ Join us for five days of hands-on tutorials, data exploration, software developm
 
 See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
-```{admonition} Applications will open around May 8, 2023
+```{admonition} Applications for OHW23 are now open!
 :class: important
 
-Please come back in early May for updates. **We plan to open applications
-starting around May 8, 2023.** See the [Information for Applicants page](./applicants).
+Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
 ```
 
 <!---
