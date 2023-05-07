@@ -81,20 +81,21 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
   </div>
 </div>
 
+
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/nsf.jpeg
-:alt: NSF
-:width: 150px
+```{image} ../assets/images/logos/uwocean.jpg
+:alt: UW Oceanography
+:width: 250px
 ```
 
   </div>
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/ioos_logo.jpg
-:alt: IOOS
-:width: 180px
+```{image} ../assets/images/nsf.jpeg
+:alt: NSF
+:width: 150px
 ```
 
   </div>
@@ -106,9 +107,19 @@ In coordination with the OHW Northwest satellite event, there will be a **[3-wee
 ```
 
   </div>
-
 </div>
 
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/ioos_logo.jpg
+:alt: IOOS
+:width: 180px
+```
+
+  </div>
+</div>
 
 
 ```{toctree}
