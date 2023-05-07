@@ -72,20 +72,21 @@ The virtual event will take place through synchronous 3-hour periods per day and
   </div>
 </div>
 
+
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/nsf.jpeg
-:alt: NSF
-:width: 150px
+```{image} ../assets/images/logos/UW-SAFS.png
+:alt: UW SAFS
+:width: 130px
 ```
 
   </div>
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/ioos_logo.jpg
-:alt: IOOS
-:width: 180px
+```{image} ../assets/images/nsf.jpeg
+:alt: NSF
+:width: 150px
 ```
 
   </div>
@@ -97,9 +98,19 @@ The virtual event will take place through synchronous 3-hour periods per day and
 ```
 
   </div>
-
 </div>
 
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/ioos_logo.jpg
+:alt: IOOS
+:width: 180px
+```
+
+  </div>
+</div>
 
 
 ```{toctree}
