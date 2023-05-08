@@ -9,11 +9,12 @@ permalink: applicant-info.html
 
 OceanHackWeek 2023 is a hands-on, interactive hybrid in-person and virtual workshop focused on data science in oceanography and fisheries that will be held on **August 7-11, 2023**. Join us for five days of tutorials, data exploration, software development and community networking!
 
-```{admonition} Applications will open around May 8, 2023
+```{admonition} Applications for OHW23 are now open!
 :class: important
 
-Please come back in early May for updates. **We plan to open applications
-starting around May 8, 2023.**
+Applications opened on May 8. 
+**To apply, please [fill out this form](https://form.jotform.com/231165770626154) by the end of June 2, 2023.**  
+Accepted applicants will be notified no later than June 23, 2023.
 ```
 
 The **in-person** event will take place at the [University of Washington](http://www.washington.edu), in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 20-25 participants.
@@ -59,7 +60,7 @@ Participants should familiarize themselves with the materials included in [Pytho
 
 ### Q: I don't know the first thing about version revision/control systems. Can I still apply?
 
-During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. In previous years we have offered refresher in the week prior to the actual OHW event. The organizing committee is deciding whether we can offer this in OHW22. You are welcome to check back here for this info, but we want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basic. 
+During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. In previous years we have offered refresher in the week prior to the actual OHW event. The organizing committee is deciding whether we can offer this in OHW23. You are welcome to check back here for this info, but we want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basic. 
 
 Note that we will require you to create a [GitHub account](https://github.com/) before completing the application.
 
