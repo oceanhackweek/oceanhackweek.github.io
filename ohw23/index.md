@@ -1,5 +1,11 @@
 # OceanHackWeek 2023 (OHW23)
 
+```{admonition} Applications for OHW23 are now open!
+:class: important
+
+Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
+```
+
 OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual event, an in-person event in Seattle, US, and an in-person event in Western Australia (location TBD). It will take place on:
 
 - **August 7-11**, for the [virtual event](#the-virtual-event) and the [in-person event in Seattle, US](#us-in-person-event).
@@ -16,12 +22,6 @@ The OceanHackWeek program consists of hands-on tutorials, visual presentations, 
 Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking!
 
 See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
-
-```{admonition} Applications for OHW23 are now open!
-:class: important
-
-Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
-```
 
 <!---
 :::{admonition} Join us at OceanHackWeek 2022!
