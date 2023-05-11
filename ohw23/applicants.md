@@ -7,7 +7,7 @@ permalink: applicant-info.html
 
 # Information for OHW23 Applicants
 
-OceanHackWeek 2023 is a hands-on, interactive hybrid in-person and virtual workshop focused on data science in oceanography and fisheries that will be held on **August 7-11, 2023**. Join us for five days of tutorials, data exploration, software development and community networking!
+OceanHackWeek 2023 (OHW23) is a hands-on, interactive hybrid in-person and virtual workshop focused on data science in oceanography and fisheries that will be held on **August 7-11, 2023**. Join us for five days of tutorials, data exploration, software development and community networking!
 
 ```{admonition} Applications for OHW23 are now open!
 :class: important
@@ -17,9 +17,7 @@ Applications opened on May 8.
 Accepted applicants will be notified no later than June 23, 2023.
 ```
 
-The **in-person** event will take place at the [University of Washington](http://www.washington.edu), in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). We expect to accommodate approximately 20-25 participants.
-
-For the **virtual event**, formal daily activities will take place over a period of up to 3 hours per day. These activities include recorded tutorials with interactive discussions and project check-in with the entire group, but exclude actual project time. While plans are still tentative, we expect to hold these sessions in at least two time zones, likely USA PDT (UTC-7) and Australian EST (UTC+10).
+**See the [main OHW23 page](index) for information about each OHW23 event: virtual, in-person in the US and in-person in Australia.**
 
 Please see the FAQs below for answers to common questions.
 For additional questions, please post in our [discussions on Github](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email 
