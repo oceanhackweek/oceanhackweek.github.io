@@ -10,7 +10,7 @@ description: OceanHackWeek home
 :class: important
 
 **Applications for OceanHackWeek 2023 are now open!**  
-OceanHackWeek 2023 will be a hybrid event with a global virtual component; a 20-25 in-person component at the University of Washington in Seattle, WA, USA; and a small in-person component in Australia (likely Dunsborough).
+OceanHackWeek 2023 will be a hybrid workshop with a global virtual event; a 20-25 in-person event at the University of Washington in Seattle, WA, USA; and a small in-person event in Australia (likely Dunsborough).
 
 ```{button-link} ohw23/
 :color: primary
