@@ -1,7 +1,17 @@
 # OceanHackWeek 2023 (OHW23)
 
-OceanHackWeek 2023 (OHW23) will be held on **August 7-11, 2023** as a hybrid in-person and virtual, online event. The in-person event will take place at the [University of Washington](http://www.washington.edu), in Seattle, Washington (US PDT, UTC-7), as an all-day workshop (approximately 9am - 5pm). For the virtual event, formal daily activities will take place over a period of up to 3 hours per day. 
-We expect to hold these sessions in at least two time zones, likely USA PDT (UTC-7) and Australian EST (UTC+10). 
+```{admonition} Applications for OHW23 are now open!
+:class: important
+
+Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
+```
+
+OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual event, an in-person event in Seattle, US, and an in-person event in Western Australia (location TBD). It will take place on:
+
+- **August 7-11**, for the [virtual event](#the-virtual-event) and the [in-person event in Seattle, US](#us-in-person-event).
+- **August 8-12**, for the [in-person event in Western Australia](#australia-in-person-event).
+
+The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. The in-person event will be connected closely with the virtual event.
 
 ```{image} ../assets/images/ohw_hacking/ohw19-hacking.JPG
 :alt: OHW19 in person, hacking
@@ -12,12 +22,6 @@ We expect to hold these sessions in at least two time zones, likely USA PDT (UTC
 Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking!
 
 See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
-
-```{admonition} Applications for OHW23 are now open!
-:class: important
-
-Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
-```
 
 <!---
 :::{admonition} Join us at OceanHackWeek 2022!
@@ -32,14 +36,30 @@ Find password on Slack channel #ohw22_general!
 
 ## A hybrid in-person and virtual event
 
-In-person and virtual participants will have access to the same online resources and common communication channels, and will be encouraged to engage with one another.
+In-person and virtual participants in this hybrid event will have access to the same online resources and common communication channels. We will facilitate engagement with one another in projects and in helping each other regardless of participation modality.
+
+### The virtual event
+We currently plan for the structured activity time for the Virtual Event to take place 9am - 12pm US Pacific Time / UTC-7 (subject to small change depending on location of virtual participants, but will be around business hours for time zones in the Americas). This will include all interactive OHW23 tutorials delivered in real time, project collaboration, and other OHW-wide community building activities. The tutorials will be recorded and posted soon after the presentation.
 
 ```{image} ../assets/images/ohw_hacking/ohw21-slack.png
 :alt: OHW21 Slack exchanges
 :width: 220px
 :align: right
 ```
-The virtual event will take place through synchronous 3-hour periods per day and asynchronous collaboration. It will include all interactive OHW23 tutorials delivered in real time, project brainstorming, and other OHW-wide community building activities. Tutorials will be recorded and posted after the presentation.
+
+There will also be optional facilitated contact hours provisionally from 8am - 9am, 12pm - 1pm and between 4pm - 8pm US Pacific Time, to accommodate different time zones. These hours will be focused on project work and facilitation.
+
+Individual participation for project work outside of these hours is strongly encouraged.
+
+### US in-person event
+We expect to accomodate approximately 20-25 participants at the [University of Washington](http://www.washington.edu/), in Seattle, Washington. The event will be all day (approximately 9am - 6pm PT) for the 5-day period.
+
+We are hoping to be able to offer financial assistance to offset travel, lodging and meal costs during OceanHackWeek, but cannot guarantee assistance at this moment.
+
+### Australia in-person event
+The event will be all day (approximately 8am - 5pm AWST / UTC+8) for the 5-day period, and will take place on days that coincide with the virtual and US in-person events -- Tuesday Aug. 8 - Saturday Aug 12, local AWST time. It will be held in Western Australia (location TBD).
+
+We are hoping to be able to offer financial assistance to offset travel, lodging and meal costs during OceanHackWeek, but cannot guarantee assistance at this moment.
 
 
 ## OHW23 Sponsors
