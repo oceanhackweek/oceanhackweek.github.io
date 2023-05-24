@@ -38,13 +38,13 @@ importlib-metadata==6.6.0
 importlib-resources==5.8.0
 invoke==1.7.1
 ipykernel==6.15.1
-ipython==8.13.2
+ipython==8.12.2
 ipython-genutils==0.2.0
 ipywidgets==8.0.6
 jedi==0.18.2
 Jinja2==3.1.2
 jsonschema==4.6.2
-jupyter-cache==0.5.0
+jupyter-cache==0.6.1
 jupyter-client==7.3.4
 jupyter_core==5.3.0
 jupyterlab-pygments==0.2.2
@@ -109,7 +109,7 @@ sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
-SQLAlchemy==1.4.46
+SQLAlchemy==2.0.15
 stack-data==0.3.0
 tabulate==0.8.10
 terminado==0.17.1
@@ -127,5 +127,5 @@ wcwidth==0.2.5
 webencodings==0.5.1
 wheel==0.37.1
 widgetsnbextension==4.0.7
-xarray==2023.5.0
+xarray==2022.11.0
 zipp==3.8.0
