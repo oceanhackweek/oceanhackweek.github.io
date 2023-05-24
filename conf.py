@@ -58,7 +58,10 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "search_bar_text": "Search this site...",
     # "google_analytics_id": "",
-    "navbar_end": ["search-field.html", "navbar-icon-links"],
+    "navbar_end": [
+                    # "search-field.html", 
+                   "navbar-icon-links"
+                   ],
     "icon_links": [
         {
             "name": "GitHub",
@@ -87,6 +90,7 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
+    "header_links_before_dropdown": 3
 }
 html_scaled_image_link = False
 
