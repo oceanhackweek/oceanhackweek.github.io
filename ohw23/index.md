@@ -57,9 +57,8 @@ We expect to accomodate approximately 20-25 participants at the [University of W
 We are hoping to be able to offer financial assistance to offset travel, lodging and meal costs during OceanHackWeek, but cannot guarantee assistance at this moment.
 
 ### Australia in-person event
-The event will be all day (approximately 8am - 5pm AWST / UTC+8) for the 5-day period, and will take place on days that coincide with the virtual and US in-person events -- Tuesday Aug. 8 - Saturday Aug 12, local AWST time. It will be held in Western Australia (location TBD).
+The event will be all day (approximately 8am - 5pm AWST / UTC+8) for the 5-day period, and will take place on days that coincide with the virtual and US in-person events -- Tuesday Aug. 8 - Saturday Aug 12, local AWST time. OHW Australia will be held in Dunsbrough Western Australia. Accommodation will be provided at the [Dunsbrough Beach Cottages](https://dunsboroughbeachcottages.com.au/), and will consist of shared cabins. The event is self-catering, much like a typical field trip, basic food will be provided, participants are expected to help cook, prepare food and clean dishes. If you need to bring a caregiver to look after young children, please contact local organiser. Trasport from Perth to Dunsbrough will be provided leaving the morning of Aug 7 from Perth and returning Sunday Aug 13. Each day the hackathon will be conducted from the [Eagle Bay Community Hall](https://www.ebcha.org.au/gallery/) in Eagle Bay. We will have both morning and afternoon walks to compliment the indoor activities. A small travel budget is available for interstate participants to take part in OHW Australia.  
 
-We are hoping to be able to offer financial assistance to offset travel, lodging and meal costs during OceanHackWeek, but cannot guarantee assistance at this moment.
 
 
 ## OHW23 Sponsors
