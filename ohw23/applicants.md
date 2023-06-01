@@ -13,7 +13,7 @@ OceanHackWeek 2023 (OHW23) is a hands-on, interactive hybrid in-person and virtu
 :class: important
 
 Applications opened on May 8. 
-**To apply, please [fill out this form](https://form.jotform.com/231165770626154) by the end of June 9, 2023** (deadline extended from June 2)
+**To apply, please [fill out this form](https://form.jotform.com/231165770626154) by the end of June 9, 2023** (deadline extended from June 2).    
 Accepted applicants will be notified no later than June 23, 2023.
 ```
 
