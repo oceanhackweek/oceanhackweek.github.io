@@ -6,7 +6,7 @@
 Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
 ```
 
-OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual event, an in-person event in Seattle, US, and an in-person event in Western Australia (location TBD). It will take place on:
+OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual event, an in-person event in Seattle, US, and an in-person event in Dunsbrough, Western Australia. It will take place on:
 
 - **August 7-11**, for the [virtual event](#the-virtual-event) and the [in-person event in Seattle, US](#us-in-person-event).
 - **August 8-12**, for the [in-person event in Western Australia](#australia-in-person-event).
