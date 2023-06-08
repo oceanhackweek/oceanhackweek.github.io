@@ -11,17 +11,17 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: true
 
       - name: Install Conda environment from environment.yml
-        uses: mamba-org/provision-with-micromamba@v11
+        uses: mamba-org/provision-with-micromamba@v13
 
       - name: Build documentation
         shell: bash -l {0}
         run: |
-          make html
+          make clean html linkcheck
 
       # workaround https://github.com/actions/upload-artifact/issues/38
       - name: tarball
@@ -29,7 +29,7 @@ jobs:
 
       # https://github.com/actions/upload-artifact
       - name: Upload Website artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: Website
           path: site.tar.gz
