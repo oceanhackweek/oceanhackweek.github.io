@@ -56,6 +56,8 @@ if they are willing to get up-to-date on the expected basic skills before the pr
 
 Participants should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [Python novice inflammation](https://swcarpentry.github.io/python-novice-inflammation/) for a Python focus, or [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/) for an R focus. These are a good reflection of the level we expect participants to be at coming into the workshop.
 
+We also encourage participants to explore more advanced topics before the hackweek. For Python, we suggest looking at one of these resources: [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html), [An Introduction to Earth and Environmental Data Science](https://earth-env-data-science.github.io/intro), and [Data Carpentry - Python for Atmosphere and Ocean Scientists](https://carpentries-lab.github.io/python-aos-lesson/)
+
 ### Q: I don't know the first thing about version revision/control systems. Can I still apply?
 
 During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. In previous years we have offered refresher in the week prior to the actual OHW event. The organizing committee is deciding whether we can offer this in OHW23. You are welcome to check back here for this info, but we want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basic. 
