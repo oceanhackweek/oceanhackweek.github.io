@@ -41,7 +41,7 @@ exclude_patterns = [
     "README.md",
     "jupyter_execute/**/*",
     "_InstructionSiteUpdates.md",
-    "_build/**"
+    "_build/**",
 ]
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
@@ -59,9 +59,9 @@ html_theme_options = {
     "search_bar_text": "Search this site...",
     # "google_analytics_id": "",
     "navbar_end": [
-                    # "search-field.html", 
-                   "navbar-icon-links"
-                   ],
+        # "search-field.html",
+        "navbar-icon-links"
+    ],
     "icon_links": [
         {
             "name": "GitHub",
@@ -84,13 +84,13 @@ html_theme_options = {
             "icon": "fab fa-youtube-square",
         },
         {
-            "name": "Email", 
-            "url": "mailto:info@oceanhackweek.org", 
-            "icon": "fas fa-envelope"
+            "name": "Email",
+            "url": "/about/contact/",
+            "icon": "fas fa-envelope",
         },
     ],
     "use_edit_page_button": True,
-    "header_links_before_dropdown": 3
+    "header_links_before_dropdown": 3,
 }
 html_scaled_image_link = False
 
@@ -146,12 +146,7 @@ extensions += ["ablog"]
 # Temporarily stored as off until we fix it
 jupyter_execute_notebooks = "off"  # TODO test
 
-nb_custom_formats = {
-    ".Rmd": [
-        "jupytext.reads",
-        {"fmt": "Rmd"}
-    ]
-}
+nb_custom_formats = {".Rmd": ["jupytext.reads", {"fmt": "Rmd"}]}
 
 
 def setup(app):
