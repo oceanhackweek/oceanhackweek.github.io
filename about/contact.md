@@ -13,7 +13,7 @@ Are you interested in learning more about OceanHackWeek, helping out with the ne
 
 To generally stay in touch, you can sign up for our email list. This is also the best way to know when we are planning an event and open applications.
 
-We only send out only a few emails a year, mainly as we're planning our next event, as we are also suffering from overflowing inbox syndrome.
+We send out only a few emails a year, mainly as we're planning our next event, as we are also suffering from overflowing inbox syndrome.
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 
