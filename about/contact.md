@@ -11,7 +11,7 @@ Are you interested in learning more about OceanHackWeek, helping out with the ne
 
 ## Mailing list
 
-To generally stay in touch, you can sign up for our email list. This is also the best way to know when we are planning an event and open applications.
+Sign up for our email announcements list to stay in touch. This is also the best way to know when we are planning an event and open applications.
 
 We send out only a few emails a year, mainly as we're planning our next event, as we are also suffering from overflowing inbox syndrome.
 
