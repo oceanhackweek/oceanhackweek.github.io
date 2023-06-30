@@ -85,7 +85,7 @@ html_theme_options = {
         },
         {
             "name": "Email",
-            "url": "/about/contact/",
+            "url": "/about/contact.html",
             "icon": "fas fa-envelope",
         },
     ],
