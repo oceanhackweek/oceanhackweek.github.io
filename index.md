@@ -9,8 +9,8 @@ description: OceanHackWeek home
 :::{admonition} OceanHackWeek 2023 will be on August 7 - 11!
 :class: important
 
-**Applications for OceanHackWeek 2023 are now open!**  
-OceanHackWeek 2023 will be a hybrid workshop with a global virtual event; a 20-25 in-person event at the University of Washington in Seattle, WA, USA; and a small in-person event in Australia (likely Dunsborough).
+**OceanHackWeek 2023**  
+OceanHackWeek 2023 will be a hybrid workshop with a global virtual event; a 20-25 in-person event at the University of Washington in Seattle, WA, USA; and a small in-person event in Dunsborough, Western Australia. **Applicants have been notified and participants should expect further communications**
 
 ```{button-link} ohw23/
 :color: primary
@@ -20,14 +20,6 @@ Go to OceanHackWeek 2023
 ```
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 :::
-
-
-```{admonition} OceanHackWeek en Español / in Spanish, Feb 27 - Mar 3, 2023!
-:class: note
-
-We had a great Spanish OceanHackWeek event, with participants from all over Latin America and Spain! We'll say more about it on this web site later on.
-You can check out the event website (in Spanish) at [https://intercoonecta.github.io](https://intercoonecta.github.io)
-```
 
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
