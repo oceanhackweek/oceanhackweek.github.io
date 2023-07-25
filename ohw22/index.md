@@ -131,6 +131,8 @@ schedule
 Global Virtual Event <global/index>
 Regional Satellite Events <satellites>
 Organizers <organizers>
+Logistics <logistics/index>
 tutorials-index/index
+Projects <projects/index>
 Information for Applicants <applicants>
 ```

@@ -136,6 +136,10 @@ The event will be all day (approximately 8am - 5pm AWST / UTC+8) for the 5-day p
 :caption: OceanHackWeek 2023 (OHW23)
 :hidden:
 
+schedule
 Organizers <organizers>
+Logistics <logistics/index>
+tutorials-index/index
+Projects <projects/index>
 Information for Applicants <applicants>
 ```
