@@ -61,3 +61,11 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - [Participant testimonials](testimonials.md#ohw18-in-person)
 - [Schedule](https://oceanhackweek.github.io/ohw2018/schedule.html). Links to tutorials are found here.
 - [Web site](https://oceanhackweek.github.io/ohw2018/)
+
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+../ohw22/index.md
+```
