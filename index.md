@@ -146,19 +146,14 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
   </div>
 </div>
 
-<!-- ## Location and Time Zones
-
-In-person workshop: Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine (US EDT, UTC-4).
-
-Virtual event: We expect to hold formal sessions in at least two time zones, USA PDT (UTC-7) and Australian EST (UTC+10). -->
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
 
 about/index.md
-about/pasthackweeks.md
 OceanHackWeek 2023 <ohw23/index.md>
-OceanHackWeek 2022 <ohw22/index.md>
+resources/index.md
+about/pasthackweeks.md
 % posts
 ```
