@@ -1,9 +1,10 @@
 # Preparations
 
+Technical materials as preparation for the OceanHackWeek event.
 
 ```{toctree}
 :maxdepth: 2
-:caption: OceanHackWeek 2022 (OHW22)
+:caption: Table of Content
 
 Git <git>
 github
