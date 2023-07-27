@@ -12,7 +12,7 @@ OceanHackWeek 2022 will happen from **August 15-19, 2022**. The workshop will ta
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. Participants can apply for being in one of the regional satellites or the virtual global event. Regional satellite events are connected closely with the virtual global event, while providing additional collaboration and networking opportunities on a regional basis.
 
 
-See the [OHW21 program](https://oceanhackweek.github.io/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
+See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
 :::{admonition} Join OHW22 global virtual tutorials!
 :class: note
@@ -131,23 +131,8 @@ schedule
 Global Virtual Event <global/index>
 Regional Satellite Events <satellites>
 Organizers <organizers>
+Logistics <logistics/index>
 tutorials-index/index
-```
-
-```{toctree}
-:maxdepth: 2
-:caption: OHW22 Resources
-:hidden:
-
-Logistics <../resources/logistics/index>
-Preparation <../resources/prep/index>
-Projects <../resources/projects/index>
-```
-
-```{toctree}
-:caption: OHW22 Other information
-:hidden:
-
+Projects <projects/index>
 Information for Applicants <applicants>
-../resources/organizing/index
 ```
