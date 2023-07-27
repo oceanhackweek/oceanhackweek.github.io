@@ -27,7 +27,7 @@ We will use Zoom to broadcast all tutorials. The Zoom link will be distributed v
 
 ## Hack projects
 
-See [Project overview](../projects/index.md) and [Hacking at OHW22](../projects/steps.md) for more info.
+See the [Hacking at OHW23 page](../projects/index.md) for more information.
 
 ## Getting Help
 

@@ -33,7 +33,7 @@ You are also welcome to direct message the helpers if you don't feel comfortable
 
 ## Projects
 
-See the [Projects Getting Started page](../projects/steps.md). Feel free to post a question on the `#ohw22_project` channel, too.
+See the [Hacking at OHW22 page](../projects/index.md) for more information. Feel free to post a question on the `#ohw22_project` channel, too.
 
 ## Reporting a Code of Conduct violation
 

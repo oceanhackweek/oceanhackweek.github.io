@@ -2,11 +2,11 @@
 
 We know how overwhelming all of this information can be. Here is some for asking questions and figuring out where to turn for help.
 
-You can ask anything on the Slack `#ohw22-general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.
+You can ask anything on the Slack `#ohw23-general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.
 
 ## Helpdesk
 
-We've set up the `#ohw22-helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
+We've set up the `#ohw23-helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
 
 We will set up some helpdesk Slack user group that you can use to tag your question as, say, about Python. We'll list and describe those groups here. If you know the rough category of help that you may need, please tag one of the helpdesk user groups to get their attention. All help usergroups can be found by typing `@help-` and Slack will prompt with options.
 
@@ -25,7 +25,7 @@ You are also welcome to direct message the helpers if you don't feel comfortable
 
 ## During tutorials
 
-- Ask questions on Slack! Use the `#ohw22-tutorials` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
+- Ask questions on Slack! Use the `#ohw23-tutorials` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
 - **Vote up** questions from others to help the moderators prioritize which questions to ask the speaker during tutorials.
 - Tutorial moderators will mark questions that are best answered by the instructor and ask helpers (and anyone else!) to answer the rest in real time. Then when the instructor ask if there are questions the moderators will read those reserved for the instructor.
 - Zoom Chat will **not** be available. Ask on Slack!
@@ -33,7 +33,7 @@ You are also welcome to direct message the helpers if you don't feel comfortable
 
 ## Projects
 
-See the [Projects Getting Started page](../projects/steps.md). Feel free to post a question on the `#ohw22_project` channel, too.
+See the [Hacking at OHW23 page](../projects/index.md) for more information. Feel free to post a question on the `#ohw23_project` channel, too.
 
 ## Reporting a Code of Conduct violation
 
