@@ -23,5 +23,6 @@ PLACEHOLDER. SEE THE Organizing OHW section
 :hidden:
 
 Preparation <prep/index.md>
+Projects <projects.md>
 organizing/index.md
 ```

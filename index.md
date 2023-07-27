@@ -155,5 +155,5 @@ about/index.md
 OceanHackWeek 2023 <ohw23/index.md>
 resources/index.md
 about/pasthackweeks.md
-% posts
+<!-- posts -->
 ```

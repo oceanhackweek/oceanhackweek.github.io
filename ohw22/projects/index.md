@@ -1,35 +1,13 @@
-# Project Overview
+# Hacking at OHW22
 
-Collaborative projects are a key component of OceanHackWeek, in which you get to interact with others closely and apply new skills to make something exciting happen: it can be creating tools to streamline access of a particular data source, visualizing some high density data interactively, testing existing models with new data sources, or anything else you may want to do at the intersection of oceanography and data science.
+## How will the projects be conducted?
 
-## What is a Hack?
+We have put together a [few questions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning) that can help you propose a project in [GitHub discussions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning).
 
-A "hack" is a small project that aims to solve a specific problem using computational tools.
+On Monday August 15th we will have a brief “project setup” session for an overview of all projects already proposed up to that point, and give another opportunity to pitch new ideas that may be formed throughout the day. Project proposals must be submitted by the end of this day (Day 1). Each satellite may have its own, specific deadline time, so please connect with your satellite or the global event for details.
 
-Examples of hacks include:
+## Project overview
 
-* Build a working demo of a new or modified algorithm
-* Outline of a larger project, with some key features scoped
-* Visualization of an old dataset in a new manner
-* Modify an algorithm and apply it to a new dataset
-* Combine two pre-existing pieces of code to perform some new function
-* Create a tool to apply to work with existing code, datasets
-* Transform code from one language to another to use with other tools
-* Update old code to run faster, on new machines, and/or more efficiently
-* Extend an existing project with an additional feature
-* Simplify code to be more maintainable, aka "paying technical debt"
-
-
-
-## Why hack at OceanHackWeek?
-
-Increasingly, research and software development are conducted by groups of people with diverse skills and backgrounds. We believe this collaborative work leads to more innovative solutions to complex problems. At OceanHackWeek, our goal is to explore with you some of the skills needed to navigate technical and social challenges of working in these kinds of collaborative settings. We believe the best way to do so is to provide opportunities for you to gain hands-on experience in working together with others on a well-defined problem related to ocean sciences.
-
-
-```{toctree}
-:maxdepth: 2
-:caption: OceanHackWeek 2022 (OHW22)
-:hidden:
-
-steps.md
+```{include} ../../resources/projects.md
+:start-after: "# Project Overview"
 ```
