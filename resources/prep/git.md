@@ -86,7 +86,7 @@ Make sure your change appears online.
 ### 4. Update your local repository (local clone) with the changes of your collaborators
 
 ```bash
-git pull origin master
+git pull origin main
 ```
 
 ```{admonition} "Short names for repositories:"
@@ -129,7 +129,7 @@ Decide which changes you want to keep, and modify the file so it looks as you wi
 ```bash
 git add README.md
 git commit -m "resolving merge conflict"
-git push origin master
+git push origin main
 ```
 
 You can continue working on as usual.
@@ -192,7 +192,7 @@ Make some changes to a file and commit and publish them.
 ```bash
 git add README.md
 git commit -m "more changes"
-git push origin master
+git push origin main
 ```
 
 ```{admonition} Note
