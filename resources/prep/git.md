@@ -42,7 +42,6 @@ git config --global core.editor "nano -w"
 Steps 1-5 focus on the Git "centralized workflow". We present it here as an illustration, but **the workflow we recommend for use in OceanHackWeek is the Git Fork - Clone workflow, discussed in Step 6.**
 ```
 
-
 ### 1. Create a project repository
 
 On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the `oceanhackweek` organization, `https://github.com/oceanhackweek`
@@ -64,7 +63,7 @@ Each participant should clone the repository so they have their copy on their Ju
 git clone https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
 ```
 
-This will create a new folder called `ohw22-proj-myprojectname`. Navigate to the new folder, `ohw22-proj-myprojectname`.
+This will create a new folder called `ohw22-proj-myprojectname`. Navigate (`cd`) to this new folder.
 
 ### 3. Update the README with your name
 
@@ -81,7 +80,6 @@ Make sure your change appears online.
 ```{admonition} "Remember to run:"
 `git status` to observe the changes made into your repository. Pay attention to the colors. To see the changes in the files run `git diff`.
 ```
-
 
 ### 4. Update your local repository (local clone) with the changes of your collaborators
 
@@ -139,7 +137,6 @@ You can continue working on as usual.
 ```{admonition} "Remember to pull often and push small changes ..."
 ... to avoid messing with complicated merges and keep your repo up-to-date.
 ```
-
 
 ### 6. Avoiding problems: forking workflow
 
@@ -241,6 +238,7 @@ git revert HEAD
 ```{admonition} Note
 Your files in the local repo will still be there.
 ```
+
 
 ## References and Resources
 
