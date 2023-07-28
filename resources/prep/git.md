@@ -160,18 +160,18 @@ Forks are public copies of the main repo, from which you can submit changes to t
 * Fork the public repo (click on the *Fork* button)
 ![](../img/fork_button.png)
 * Note it looks the same but the web address contains your username
-  [https://github.com/myghusername/ohw21-proj-ProjectName](https://github.com/myghusername/ohw21-proj-ProjectName)
+  [https://github.com/myghusername/ohw22-proj-myprojectname](https://github.com/myghusername/ohw22-proj-myprojectname)
 * Go to your local repo and rename your `origin` to point to the fork:
 
 ```bash
 git remote rm origin
-git remote add origin https://github.com/myghusername/ohw21-proj-ProjectName.git
+git remote add origin https://github.com/myghusername/ohw22-proj-myprojectname.git
 ```
 
 * Add a new remote to talk to the main repo:
 
 ```bash
-git remote add upstream https://github.com/oceanhackweek/ohw21-proj-ProjectName.git 
+git remote add upstream https://github.com/oceanhackweek/ohw22-proj-myprojectname.git 
 ```
 
 From now on you will push to `origin`, but pull from `upstream`.
