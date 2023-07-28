@@ -531,7 +531,7 @@ document.write(`
 <section id="about-git-and-github">
 <h2>About Git and GitHub<a class="headerlink" href="#about-git-and-github" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://git-scm.com/">Git</a> is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! <a class="reference external" href="https://github.com">GitHub</a> is a hosting service for Git repositories, enabling us to share code across teams in a web environment.</p>
-<p>We will use Git and GitHub for collaborative work. Be sure to arrive at OceanHackWeek with your own <a class="reference external" href="https://github.com/">GitHub</a> account.</p>
+<p>We will use Git and GitHub for collaborative work. Be sure to arrive at OceanHackWeek with your own <a class="reference external" href="https://github.com">GitHub</a> account.</p>
 </section>
 <section id="git-installation">
 <h2>Git Installation<a class="headerlink" href="#git-installation" title="Permalink to this heading">#</a></h2>
@@ -546,7 +546,7 @@ document.write(`
 <li><p>Download the <a class="reference external" href="https://git-scm.com/download/mac">git installer</a> and run it.</p></li>
 </ul>
 </li>
-<li><p>Linux (Debian): <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">git-all</span></code></p></li>
+<li><p>Linux (Debian/Ubuntu): <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">git-all</span></code></p></li>
 </ul>
 <p>To test, open the terminal (on Windows, Git Bash) and setup your username and email:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;your username&quot;</span>
@@ -560,7 +560,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 </section>
 <section id="terminal-command-line-text-editor">
 <h2>Terminal (command line) text editor<a class="headerlink" href="#terminal-command-line-text-editor" title="Permalink to this heading">#</a></h2>
-<p>When working on the command line (the terminal or shell), it is often handy to modify file content directly from there. For that you can use a command line editor such as <a class="reference external" href="https://linuxize.com/post/how-to-use-nano-text-editor/">nano</a>. On Mac and Linux it is usually pre-installed, but for Windows you can follow the instructions in this <a class="reference external" href="http://carpentries.github.io/workshop-template/#editor">link</a> to set it up. Test your installation by opening a terminal and running <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">--version</span></code>. If it works you can link your git configuration with <code class="docutils literal notranslate"><span class="pre">nano</span></code>:</p>
+<p>When working on the command line (the terminal or shell), it is often handy to modify file content directly from there. For that you can use a command line editor such as <a class="reference external" href="https://linuxize.com/post/how-to-use-nano-text-editor/">nano</a>. On Mac and Linux it is usually pre-installed, and on Windows it is installed when you install Git (see <a class="reference external" href="http://carpentries.github.io/workshop-template/#editor">here</a> for more information about nano and its configuration). Test your installation by opening a terminal and running <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">--version</span></code>. If it works you can link your git configuration with <code class="docutils literal notranslate"><span class="pre">nano</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;nano -w&quot;</span>
 </pre></div>
 </div>
@@ -573,7 +573,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 </div>
 <section id="create-a-project-repository">
 <h3>1. Create a project repository<a class="headerlink" href="#create-a-project-repository" title="Permalink to this heading">#</a></h3>
-<p>On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the {OceanHackWeek organization, <a class="github reference external" href="https://github.com/oceanhackweek">oceanhackweek</a></p>
+<p>On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the <code class="docutils literal notranslate"><span class="pre">oceanhackweek</span></code> organization, <code class="docutils literal notranslate"><span class="pre">https://github.com/oceanhackweek</span></code></p>
 <p><img alt="New Repo" src="../../_images/newRepo.png" /></p>
 <p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and follow the steps: check yes to create a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
 <ul class="simple">
@@ -588,11 +588,11 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 </section>
 <section id="clone-the-repository">
 <h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
-<p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep {OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
+<p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
 </pre></div>
 </div>
-<p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>. Navigate to the new folder, <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>.</p>
+<p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>. Navigate (<code class="docutils literal notranslate"><span class="pre">cd</span></code>) to this new folder.</p>
 </section>
 <section id="update-the-readme-with-your-name">
 <h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this heading">#</a></h3>
@@ -610,7 +610,7 @@ git<span class="w"> </span>push<span class="w"> </span>origin
 </section>
 <section id="update-your-local-repository-local-clone-with-the-changes-of-your-collaborators">
 <h3>4. Update your local repository (local clone) with the changes of your collaborators<a class="headerlink" href="#update-your-local-repository-local-clone-with-the-changes-of-your-collaborators" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
 </pre></div>
 </div>
 <div class="admonition-short-names-for-repositories admonition">
@@ -620,19 +620,21 @@ To see what is hidden in origin: <code class="docutils literal notranslate"><spa
 </div>
 <p>To continue practicing these steps, make more changes to the title and the description of the project.</p>
 <p><img alt="Centralized Workflow" src="../../_images/centralized_workflow.png" /></p>
-<p><em>Ran into a problem?</em></p>
+<div class="attention admonition">
+<p class="admonition-title"><em>Ran into a problem?</em></p>
 <p>When working with several people sometimes you</p>
 <ul class="simple">
-<li><p>cannot push because changes have been made that have not been incorporated: need to first pull</p></li>
-<li><p>when pulling you arrive into a merge conflict: need to resolve the conflict manually</p></li>
+<li><p>Cannot push because changes have been made that have not been incorporated: need to first pull</p></li>
+<li><p>When pulling you arrive into a merge conflict: need to resolve the conflict manually</p></li>
 </ul>
+</div>
 </section>
 <section id="resolving-the-merge-conflict">
 <h3>5. Resolving the merge conflict<a class="headerlink" href="#resolving-the-merge-conflict" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>status
 </pre></div>
 </div>
-<p>You will see the file/s which caused the merge conflict in green.</p>
+<p>You will see the file(s) which caused the merge conflict in green.</p>
 <p>Open it and detect the conflict by the special format:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
 <span class="n">my</span> <span class="n">text</span>
@@ -644,7 +646,7 @@ To see what is hidden in origin: <code class="docutils literal notranslate"><spa
 <p>Decide which changes you want to keep, and modify the file so it looks as you wish directly from the editor. Remove the unnecessary characters. Add, commit and push the changes.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.md
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;resolving merge conflict&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
 </pre></div>
 </div>
 <p>You can continue working on as usual.</p>
@@ -670,17 +672,17 @@ Here’s an excellent guide to the Forking Git Workflow: <a class="reference ext
 <li><p>Fork the public repo (click on the <em>Fork</em> button)
 <img alt="" src="../../_images/fork_button.png" /></p></li>
 <li><p>Note it looks the same but the web address contains your username
-<a class="github reference external" href="https://github.com/myghusername/ohw21-proj-ProjectName">myghusername/ohw21-proj-ProjectName</a></p></li>
+<code class="docutils literal notranslate"><span class="pre">https://github.com/myghusername/ohw22-proj-myprojectname</span></code></p></li>
 <li><p>Go to your local repo and rename your <code class="docutils literal notranslate"><span class="pre">origin</span></code> to point to the fork:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>rm<span class="w"> </span>origin
-git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/myghusername/ohw21-proj-ProjectName.git
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/myghusername/ohw22-proj-myprojectname.git
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>Add a new remote to talk to the main repo:</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/oceanhackweek/ohw21-proj-ProjectName.git<span class="w"> </span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/oceanhackweek/ohw22-proj-myprojectname.git<span class="w"> </span>
 </pre></div>
 </div>
 <p>From now on you will push to <code class="docutils literal notranslate"><span class="pre">origin</span></code>, but pull from <code class="docutils literal notranslate"><span class="pre">upstream</span></code>.</p>
@@ -697,7 +699,7 @@ git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </s
 <p>Make some changes to a file and commit and publish them.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.md
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;more changes&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
 </pre></div>
 </div>
 <div class="admonition-note admonition">
