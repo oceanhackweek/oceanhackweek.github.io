@@ -2,7 +2,7 @@
 
 ## How will the projects be conducted?
 
-Instructions and guidance are coming soon! We encorage project ideas from participants; details to follow in the near future on how to propose an idea.
+Instructions and guidance are coming soon! We encourage project ideas from participants; details to follow in the near future on how to propose an idea.
 
 <!--We have put together a [few questions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning) that can help you propose a project in [GitHub discussions](https://github.com/oceanhackweek/discussions/discussions/categories/ohw22-project-planning).
 
