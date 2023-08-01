@@ -34,4 +34,4 @@ The nbgitpuller link is magical, but it can't detect which profile you are curre
 
 ```
 
-See this [extended discussion](../resources/prep/jupyterhub.html#how-do-i-get-the-tutorial-repository) for more details about `nbgitpuller` and the alternative approach relying on `git` commands and `GitHub` workflows.
+See this [extended discussion](../resources/prep/jupyterhub#how-do-i-get-the-tutorial-repository) for more details about `nbgitpuller` and the alternative approach relying on `git` commands and `GitHub` workflows.
