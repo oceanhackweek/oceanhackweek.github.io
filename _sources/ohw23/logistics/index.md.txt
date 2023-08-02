@@ -1,6 +1,6 @@
 # Logistics Overview
 
-Some of you will participate in person at various satellite events, and others will participate virtually from time zones all over the world. As we have learned throughout the pandemic, each of these gathering styles has strengths and weaknesses. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
+Some of you will participate in person in Seattle or Perth and others will participate virtually from time zones all over the world. Each of these gathering styles has strengths and weaknesses. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
 
 ## Time
 
