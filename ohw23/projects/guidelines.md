@@ -5,7 +5,6 @@ NOT USING THIS PAGE FOR OHW2020, CONSIDER REVIVING FOR LATER IN-PERSON EVENT.
 -->
 
 
-
 # Project Guidelines
 
 ## Project Template
