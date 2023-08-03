@@ -16,7 +16,7 @@ We will use Slack, Zoom and GitHub as our primary communication and content deli
 
 ## Projects
 
-The [Projects](/projects.md) page provides some tips and definitions regarding the motivation behind a "hack" event, what a hack project is, and how to brainstorm a project that would be a good fit for the hackweek setting.
+The [Projects](projects.md) page provides some tips and definitions regarding the motivation behind a "hack" event, what a hack project is, and how to brainstorm a project that would be a good fit for the hackweek setting.
 
 ## Organizing OceanHackWeek 
 
