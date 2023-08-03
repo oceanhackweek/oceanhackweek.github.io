@@ -8,7 +8,7 @@ To make sure that OHW23 will be a welcoming environment for everyone, please rea
 
 ## Preparation
 
-A variety of content can be found under the [Preparation](/prep/index.md) page, with resources provided on Git, GitHub, JupyterHub, Conda, Python and R.
+A variety of content can be found under the [Preparation](prep/index.md) page, with resources provided on Git, GitHub, JupyterHub, Conda, Python and R.
 
 We will use a [JupyterHub](https://jupyter.org/hub)-based online environment for all OceanHackWeek computational activities, including tutorials; this environment supports both Python and R. You will need a robust internet connection and a capable laptop or desktop computer. 
 
