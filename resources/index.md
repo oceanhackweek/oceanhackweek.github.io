@@ -20,7 +20,7 @@ The [Projects](/projects.md) page provides some tips and definitions regarding t
 
 ## Organizing OceanHackWeek 
 
-The [Organizing OHW](/organizing/index.md) page provides resources for project mentors and tutorial helpers who are involved in the facilitation of the hackweek event. If either of these roles apply to you, please read through the information provided, and thank you!
+The [Organizing OHW](organizing/index.md) page provides resources for project mentors and tutorial helpers who are involved in the facilitation of the hackweek event. If either of these roles apply to you, please read through the information provided, and thank you!
 
 
 ```{toctree}
