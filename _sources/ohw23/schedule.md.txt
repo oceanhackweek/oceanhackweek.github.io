@@ -1,8 +1,12 @@
 # Schedule
 
-**OceanHackWeek 2023 will take place on:**\
-August 7-11 for the virtual event and the in-person event in Seattle, US\
-August 8-12 for the in-person event in Western Australia
+**OceanHackWeek 2023 will take place on:**
+
+- August 7-11 for the virtual event and the in-person event in Seattle, US
+- August 8-12 for the in-person event in Western Australia
+
+**All times below are shown in "PDT", Pacific Daylight savings Time (UTC-7).** You can [use this link to convert](https://www.timeanddate.com/worldclock/converter.html?iso=20230807T160000&p1=1440&p2=234&p3=196&p4=16&p5=179) to your own local times.
+
 
 ## Seattle in-person schedule
 
