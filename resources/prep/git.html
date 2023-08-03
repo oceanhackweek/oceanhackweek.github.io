@@ -577,7 +577,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <p><img alt="New Repo" src="../../_images/newRepo.png" /></p>
 <p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and follow the steps: check yes to create a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
 <ul class="simple">
-<li><p>Format project name as <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code> (you can change the name later), where <code class="docutils literal notranslate"><span class="pre">myprojectname</span></code> is a brief name for your project</p></li>
+<li><p>Format project name as <code class="docutils literal notranslate"><span class="pre">ohw23-proj-myprojectname</span></code> (you can change the name later), where <code class="docutils literal notranslate"><span class="pre">myprojectname</span></code> is a brief name for your project</p></li>
 <li><p>Invite others to the repo:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Collaborators</span></code></p></li>
@@ -589,10 +589,10 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <section id="clone-the-repository">
 <h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
 <p>Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant’s computer, if desired). Navigate through the terminal to the folder where you want to keep OceanHackWeek work (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">path_to_oceanhackweek</span></code>).</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/oceanhackweek/ohw23-proj-myprojectname.git
 </pre></div>
 </div>
-<p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw22-proj-myprojectname</span></code>. Navigate (<code class="docutils literal notranslate"><span class="pre">cd</span></code>) to this new folder.</p>
+<p>This will create a new folder called <code class="docutils literal notranslate"><span class="pre">ohw23-proj-myprojectname</span></code>. Navigate (<code class="docutils literal notranslate"><span class="pre">cd</span></code>) to this new folder.</p>
 </section>
 <section id="update-the-readme-with-your-name">
 <h3>3. Update the README with your name<a class="headerlink" href="#update-the-readme-with-your-name" title="Permalink to this heading">#</a></h3>
@@ -662,7 +662,7 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
 <p>Many merge conflicts can be avoided by working with <strong>forks</strong> (using a “forking git workflow) instead of directly pushing to the repo.</p>
 <div class="admonition-forking-git-workflow admonition">
 <p class="admonition-title">“Forking Git Workflow”</p>
-<p>This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation <a class="reference external" href="https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf">pdf is here</a>, and the <a class="reference external" href="https://youtu.be/7nYFRixSV2c">recording is here</a>; <strong>the workflow is the one recommended for use in OHW22.</strong>
+<p>This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation <a class="reference external" href="https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf">pdf is here</a>, and the <a class="reference external" href="https://youtu.be/7nYFRixSV2c">recording is here</a>; <strong>this workflow is the one recommended for use in OHW23.</strong>
 Here’s an excellent guide to the Forking Git Workflow: <a class="reference external" href="https://www.dataschool.io/how-to-contribute-on-github/">Step-by-step guide to contributing on GitHub</a></p>
 </div>
 <p>Forks are public copies of the main repo, from which you can submit changes to the main repo.</p>
@@ -672,17 +672,17 @@ Here’s an excellent guide to the Forking Git Workflow: <a class="reference ext
 <li><p>Fork the public repo (click on the <em>Fork</em> button)
 <img alt="" src="../../_images/fork_button.png" /></p></li>
 <li><p>Note it looks the same but the web address contains your username
-<code class="docutils literal notranslate"><span class="pre">https://github.com/myghusername/ohw22-proj-myprojectname</span></code></p></li>
+<code class="docutils literal notranslate"><span class="pre">https://github.com/myghusername/ohw23-proj-myprojectname</span></code></p></li>
 <li><p>Go to your local repo and rename your <code class="docutils literal notranslate"><span class="pre">origin</span></code> to point to the fork:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>rm<span class="w"> </span>origin
-git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/myghusername/ohw22-proj-myprojectname.git
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/myghusername/ohw23-proj-myprojectname.git
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>Add a new remote to talk to the main repo:</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/oceanhackweek/ohw22-proj-myprojectname.git<span class="w"> </span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/oceanhackweek/ohw23-proj-myprojectname.git<span class="w"> </span>
 </pre></div>
 </div>
 <p>From now on you will push to <code class="docutils literal notranslate"><span class="pre">origin</span></code>, but pull from <code class="docutils literal notranslate"><span class="pre">upstream</span></code>.</p>

@@ -50,7 +50,7 @@ On your own or someone in your project group (preferably one who has never done 
 
 Click `New` and follow the steps: check yes to create a `README.md` file.
 
-* Format project name as `ohw22-proj-myprojectname` (you can change the name later), where `myprojectname` is a brief name for your project
+* Format project name as `ohw23-proj-myprojectname` (you can change the name later), where `myprojectname` is a brief name for your project
 * Invite others to the repo:
     * `Settings -> Collaborators`
     * Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the `bell` notifications on the top right of the website.
@@ -60,10 +60,10 @@ Click `New` and follow the steps: check yes to create a `README.md` file.
 Each participant should clone the repository so they have their copy on their JupyterHub account space (and locally in the participant's computer, if desired). Navigate through the terminal to the folder where you want to keep OceanHackWeek work (`cd path_to_oceanhackweek`).
 
 ```bash
-git clone https://github.com/oceanhackweek/ohw22-proj-myprojectname.git
+git clone https://github.com/oceanhackweek/ohw23-proj-myprojectname.git
 ```
 
-This will create a new folder called `ohw22-proj-myprojectname`. Navigate (`cd`) to this new folder.
+This will create a new folder called `ohw23-proj-myprojectname`. Navigate (`cd`) to this new folder.
 
 ### 3. Update the README with your name
 
@@ -147,7 +147,7 @@ So far you collaborated using what is called a "centralized git workflow": i.e. 
 Many merge conflicts can be avoided by working with **forks** (using a "forking git workflow) instead of directly pushing to the repo.
 
 ```{admonition} "Forking Git Workflow"
-This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation [pdf is here](https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf), and the [recording is here](https://youtu.be/7nYFRixSV2c); **the workflow is the one recommended for use in OHW22.** 
+This is the workflow covered in the OHW20 pre-hackweek presentation on 2020-8-6. The presentation [pdf is here](https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf), and the [recording is here](https://youtu.be/7nYFRixSV2c); **this workflow is the one recommended for use in OHW23.** 
 Here's an excellent guide to the Forking Git Workflow: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
 ```
 
@@ -159,18 +159,18 @@ Forks are public copies of the main repo, from which you can submit changes to t
 * Fork the public repo (click on the *Fork* button)
 ![](../img/fork_button.png)
 * Note it looks the same but the web address contains your username
-  `https://github.com/myghusername/ohw22-proj-myprojectname`
+  `https://github.com/myghusername/ohw23-proj-myprojectname`
 * Go to your local repo and rename your `origin` to point to the fork:
 
 ```bash
 git remote rm origin
-git remote add origin https://github.com/myghusername/ohw22-proj-myprojectname.git
+git remote add origin https://github.com/myghusername/ohw23-proj-myprojectname.git
 ```
 
 * Add a new remote to talk to the main repo:
 
 ```bash
-git remote add upstream https://github.com/oceanhackweek/ohw22-proj-myprojectname.git 
+git remote add upstream https://github.com/oceanhackweek/ohw23-proj-myprojectname.git 
 ```
 
 From now on you will push to `origin`, but pull from `upstream`.
