@@ -31,7 +31,7 @@ This tutorial will go over how to use 'omics data for classification of microbia
 :width: 100px
 :align: left
 ```
-[IMOS](https://imos.org.au/) **Programmatic access of oceanographic data**
+[Marty Hidas](IMOS, https://imos.org.au/) **Programmatic access of oceanographic data**
 IMOS "The gateway to Australian marine and climate science data" serves oceanographic data through it's interactive ADON data portal, but also provides access using commonly available [programmatic tools](https://help.aodn.org.au/aodn-data-tools/user-code-library/).  This tutorial demonstrates the use of these programmatic tools in Python that are equally applicable to non-IMOS data sources.  
 
 
