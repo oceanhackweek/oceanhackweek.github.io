@@ -52,7 +52,7 @@ Finally, each year we offer brief sessions on non-coding aspects of computationa
 
 [Joseph Gum](https://github.com/asx-) **Reproducible Research**
 
-[Alex Kerney](https://github.com/abkfenris) *Stresses in the geosciences""
+[Alex Kerney](https://github.com/abkfenris) **Stresses in the geosciences**
 
  
 
