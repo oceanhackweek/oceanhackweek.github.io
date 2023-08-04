@@ -4,6 +4,11 @@ We know how overwhelming all of this information can be. Here is some for asking
 
 You can ask anything on the Slack `#ohw23-general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.
 
+## Online Resources
+
+We provide a number of resources to help get you started on our [Resources page](https://oceanhackweek.org/resources/index.html). Please be sure to checks this page out, especially the section on preparation.
+
+
 ## Helpdesk
 
 We've set up the `#ohw23-helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
