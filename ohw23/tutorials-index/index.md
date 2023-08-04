@@ -16,7 +16,7 @@ The following tutorials will be presented live (and broadcast live on zoom) duri
 [Myranda Shirk](https://www.vanderbilt.edu/datascience/data-science-team/) **AI-assisted programming**
 With the recent success of large language models (LLMs) such as ChatGPT, mastery of a programming language is no longer required to write successful code. In this tutorial, we will explore the new workflow of AI-assisted programming and how it can streamline your hackathon project, no matter your coding experience.
 
-```{image} ../../assets/images/people/julia-brown.jpg
+```{image} ../../assets/images/people/julia-brown.png
 :alt: Julia Brown
 :width: 100px
 :align: left
