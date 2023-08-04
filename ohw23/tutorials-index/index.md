@@ -26,7 +26,7 @@ With the recent success of large language models (LLMs) such as ChatGPT, mastery
 This tutorial will go over how to use 'omics data for classification of microbial communities. I will highlight Kaiju, a read classification tool, discuss reference database options, and how to interpret and visualize the outputs of this workflow.
 
 
-```{image} ../../assets/images/people/imos.png
+```{image} ../../assets/images/people/imos-logo.png
 :alt:  IMOS logo
 :width: 100px
 :align: left
