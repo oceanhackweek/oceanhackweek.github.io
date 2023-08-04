@@ -7,7 +7,7 @@ We are pleased to present a number of tutorials during the week.  These tutorial
 
 The following tutorials will be presented live (and broadcast live on zoom) during our primary all-hands sessions, and will be recorded for later review.
 
-```{image} ../assets/images/people/Myranda-Shirk-6.jpg
+```{image} ../../assets/images/people/Myranda-Shirk-6.jpg
 :alt: Myranda Shirk
 :width: 100px
 :align: left
