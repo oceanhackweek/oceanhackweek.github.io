@@ -1,11 +1,5 @@
 # OceanHackWeek 2023 (OHW23)
 
-```{attention}
-:class: important
-
-**We are rolling out the content for OHW23.** Some pages may initially have old information from OHW22, but will be updated very soon. **Watch out for old content and check back soon!**
-```
-
 OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual event, an in-person event in Seattle, US, and an in-person event in Dunsbrough, Western Australia. It will take place on:
 
 - **August 7-11**, for the [virtual event](#the-virtual-event) and the [in-person event in Seattle, US](#us-in-person-event).
