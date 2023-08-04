@@ -1,11 +1,11 @@
 # Tutorials
 
-We are pleased to present a number of tutorials during the week.  These tutorials provide a look into the work that your colleagues pursue using ciding tools.  The software for most tutorials can be downloaded using the tools described in our [Tutorials Getting Started page](https://oceanhackweek.org/ohw23/tutorials_getting_started.html).  Please check the [schedule](https://oceanhackweek.org/ohw23/schedule.html) for the times of these presentations.
+We are pleased to present a number of tutorials during the week.  These tutorials provide a look into the work that your colleagues pursue using coding tools.  The software for most tutorials can be downloaded using the tools described in our [Tutorials Getting Started page](https://oceanhackweek.org/ohw23/tutorials_getting_started.html).  Please check the [schedule](https://oceanhackweek.org/ohw23/schedule.html) for the times of these presentations.
 
 
 ## Tutorials during the main sessions
 
-The following tutorials will be presented live during our primary all-hands sessions, and will be recorded for later review.
+The following tutorials will be presented live (and broadcast live on zoom) during our primary all-hands sessions, and will be recorded for later review.
 
 ```{image} ../assets/images/people/Myranda-Shirk-6.jpg
 :alt: Myranda Shirk
@@ -37,7 +37,7 @@ IMOS "The gateway to Australian marine and climate science data" serves oceanogr
 
 ## Tutorials during the "shoulder" sessions
 
-In addition, the following tutorials will be presented during our "shoulder blocks".  These will also be recorded and made available for later review. 
+In addition, the following tutorials will be presented during our "shoulder blocks", the times before and after the main sessions each day.  These tutorials will also be recorded and made available for later review. 
 
 [Filipe Fernandes](https://github.com/ocefpaf) **Introduction to  conda and environments** and **Introduction to Machine Learning (ML)**
 
