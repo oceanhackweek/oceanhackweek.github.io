@@ -3,7 +3,7 @@
 We are pleased to present a number of tutorials during the week.  These tutorials provide a look into the work that your colleagues pursue using coding tools.  The software for most tutorials can be downloaded using the tools described in our [Tutorials Getting Started page](https://oceanhackweek.org/ohw23/tutorials_getting_started.html).  Please check the [schedule](https://oceanhackweek.org/ohw23/schedule.html) for the times of these presentations.
 
 ```{admonition} Technical preparations and background for OceanHackWeek!
-- Please review the ["Preparation" materials](../../resources/prep/index.html) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW JupyterHub
+- Please review the ["Preparation" materials](../../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW JupyterHub
 - For tutorials on Python and R scientific tools and techniques that we will use in OceanHackWeek, see the [OHW 2022 tutorials page](https://oceanhackweek.org/ohw22/tutorials-index/index.html)!
 ```
 
