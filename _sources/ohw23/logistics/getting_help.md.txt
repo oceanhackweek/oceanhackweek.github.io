@@ -2,7 +2,7 @@
 
 We know how overwhelming all of this information can be. Here is some for asking questions and figuring out where to turn for help.
 
-You can ask anything on the Slack `#ohw23-general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.
+You can ask anything on the Slack `#ohw23_general` channel, any time. Organizers and helpers are monitoring this channel, and some of your fellow hackweek participants may be able to help you! Also, feel free to send a direct message on Slack to any of the organizers or helpers.
 
 ## Online Resources
 
@@ -11,7 +11,7 @@ We provide a number of resources to help get you started on our [Resources page]
 
 ## Helpdesk
 
-We've set up the `#ohw23-helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
+We've set up the `#ohw23_helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
 
 We will set up some helpdesk Slack user group that you can use to tag your question as, say, about Python. We'll list and describe those groups here. If you know the rough category of help that you may need, please tag one of the helpdesk user groups to get their attention. All help usergroups can be found by typing `@help-` and Slack will prompt with options.
 
