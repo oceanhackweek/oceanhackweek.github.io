@@ -1,6 +1,6 @@
 # Tutorials
 
-We are pleased to present a number of tutorials during the week.  These tutorials provide a look into the work that your colleagues pursue using coding tools.  The software for most tutorials can be downloaded using the tools described in our [Tutorials Getting Started page](../tutorials_getting_started.md).  Please check the [schedule](../schedule.html) for the times of these presentations.
+We are pleased to present a number of tutorials during the week.  These tutorials provide a look into the work that your colleagues pursue using coding tools.  The software for most tutorials can be downloaded using the tools described in our [Tutorials Getting Started page](../tutorials_getting_started.md).  Please check the [schedule](../schedule.md) for the times of these presentations.
 
 ```{admonition} Technical preparations and background for OceanHackWeek!
 - Please review the ["Preparation" materials](../../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW JupyterHub
