@@ -248,7 +248,6 @@ team:
       - Financial Planning
       - OHW21 Participant
       - OHW22 Organizer - San Diego
-      - OHW23 Organizer
 
   - name: David Correa Chilón
     title: Specialist, Ocean-Atmosphere Interactions
@@ -334,5 +333,5 @@ team:
     image_url: https://callumrollo.github.io/images/mug.jpg
     github_user: callumrollo
     roles:
-      - OHW23 Organizer
+      - OHW20 Participant
  
