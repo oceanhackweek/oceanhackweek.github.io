@@ -7,6 +7,11 @@ OceanHackWeek 2023 (OHW23) will take a **hybrid** form consisting of a virtual e
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period. The in-person event will be connected closely with the virtual event.
 
+```{admonition} Technical preparations and background for OceanHackWeek!
+- Please review the ["Preparation" materials](../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW `JupyterHub`
+- For tutorials on Python and R scientific tools and techniques that we will use in OceanHackWeek, see the [OHW 2022 tutorials page](../ohw22/tutorials-index/index.md)!
+```
+
 ```{image} ../assets/images/ohw_hacking/ohw19-hacking.JPG
 :alt: OHW19 in person, hacking
 :width: 230px
@@ -17,23 +22,15 @@ Join us for five days of hands-on tutorials, data exploration, software developm
 
 See the [OHW21 program](https://oceanhackweek.org/ohw-resources) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
-<!---
-:::{admonition} Join us at OceanHackWeek 2022!
-:class: note
-
-**Applicants have been notified and participants should expect further communications**
-GVE tutorials will be delivered on [Zoom](https://bigelow.zoom.us/j/84201880574).
-Find password on Slack channel #ohw22_general!
-
-:::
- -->
 
 ## A hybrid in-person and virtual event
 
 In-person and virtual participants in this hybrid event will have access to the same online resources and common communication channels. We will facilitate engagement with one another in projects and in helping each other regardless of participation modality.
 
+See the [schedules here](schedule.md).
+
 ### The virtual event
-We currently plan for the structured activity time for the Virtual Event to take place 9am - 12pm US Pacific Time / UTC-7 (subject to small change depending on location of virtual participants, but will be around business hours for time zones in the Americas). This will include all interactive OHW23 tutorials delivered in real time, project collaboration, and other OHW-wide community building activities. The tutorials will be recorded and posted soon after the presentation.
+Structured activity time for the Virtual Event will take place 9am - 12pm US Pacific Time / UTC-7. This will include all interactive OHW23 tutorials delivered in real time, project collaboration, and other OHW-wide community building activities. The tutorials will be recorded and posted soon after the end of the daily 3-hour Zoom event.
 
 ```{image} ../assets/images/ohw_hacking/ohw21-slack.png
 :alt: OHW21 Slack exchanges
@@ -46,13 +43,10 @@ There will also be optional facilitated contact hours provisionally from 8am - 9
 Individual participation for project work outside of these hours is strongly encouraged.
 
 ### US in-person event
-We expect to accomodate approximately 20-25 participants at the [University of Washington](http://www.washington.edu/), in Seattle, Washington. The event will be all day (approximately 9am - 6pm PT) for the 5-day period.
-
-We are hoping to be able to offer financial assistance to offset travel, lodging and meal costs during OceanHackWeek, but cannot guarantee assistance at this moment.
+There will be approximately 20 participants at the [University of Washington](http://www.washington.edu/), in Seattle, Washington. The event will be all day (approximately 9am - 6pm PT) for the 5-day period.
 
 ### Australia in-person event
 The event will be all day (approximately 8am - 5pm AWST / UTC+8) for the 5-day period, and will take place on days that coincide with the virtual and US in-person events -- Tuesday Aug. 8 - Saturday Aug 12, local AWST time. OHW Australia will be held in Dunsbrough Western Australia. Accommodation will be provided at the [Dunsbrough Beach Cottages](https://dunsboroughbeachcottages.com.au/), and will consist of shared cabins. The event is self-catering, much like a typical field trip, basic food will be provided, participants are expected to help cook, prepare food and clean dishes. If you need to bring a caregiver to look after young children, please contact local organiser. Trasport from Perth to Dunsbrough will be provided leaving the morning of Aug 7 from Perth and returning Sunday Aug 13. Each day the hackathon will be conducted from the [Eagle Bay Community Hall](https://www.ebcha.org.au/gallery/) in Eagle Bay. We will have both morning and afternoon walks to compliment the indoor activities. A small travel budget is available for interstate participants to take part in OHW Australia.  
-
 
 
 ## OHW23 Sponsors
