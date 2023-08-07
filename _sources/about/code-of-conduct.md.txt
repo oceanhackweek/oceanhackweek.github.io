@@ -26,7 +26,7 @@ OceanHackWeek organizers may take action to redress anything designed to, or wit
 
 
 ## Reporting a violation
-Harassment and other code of conduct violations reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://oceanhackweek.wufoo.com/forms/zep2ybt1swlulc/).**
+Harassment and other code of conduct violations reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://ohwcoc.wufoo.com/forms/z71akf608vqrgd/).**
 
 This anti-harassment policy is based on the example policy from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.
 
