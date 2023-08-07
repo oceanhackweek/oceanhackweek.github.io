@@ -25,13 +25,22 @@ Access to our shared cloud environment is easy. Click on [https://oceanhackweek.
 ![hub-opening](../img/ohw21-jupyterhub-opening.png)
 
 You can now click on the "Log in to continue" button, then on the next screen click on "Sign in with GitHub" to grant JupyterHub the required permissions. In the next window, enter your GitHub username (or email address) and password. 
-You will then see something like this while the JupyterHub {OceanHackWeek 2022 server environment is loading:
+
+Next, you will need to select the environment (server) you want to launch: Python or R
+
+![hub select Python or R](../img/ohw23-jupyterhub-select-Python-or-R.png)
+
+After making your selection, you will see something like this while the JupyterHub server environment is loading:
 
 ![hub-loading](../img/ohw21-jupyterhub-loading.png)
 
-It will take a bit of time for this to load - be patient! Once things are spun up you will see your very own instance of a [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) graphical user interface:
+It will take a bit of time for this to load - be patient! Once things are spun up, **if you selected Python** you will see your very own cloud instance of a [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) graphical user interface:
 
-![jupyterlab](../img/ohw21-jupyterlab.png)
+![JupyterLab](../img/ohw23-jupyterhub-Python-jupyterlab.png)
+
+**If you selected R,** you will see your very own cloud instance of [RStudio](https://posit.co/products/open-source/rstudio/):
+
+![RStudio](../img/ohw23-jupyterhub-R-RStudio.png)
 
 ## How do I get the tutorial repository?
 
