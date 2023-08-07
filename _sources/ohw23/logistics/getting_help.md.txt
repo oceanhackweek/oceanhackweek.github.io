@@ -44,5 +44,5 @@ See the [Hacking at OHW23 page](../projects/index.md) for more information. Feel
 
 ## Reporting a Code of Conduct violation
 
-Harassment and other [Code of Conduct violations](../../about/code-of-conduct.md) reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://oceanhackweek.wufoo.com/forms/zep2ybt1swlulc/).**
+Harassment and other [Code of Conduct violations](../../about/code-of-conduct.md) reduce the value of OceanHackWeek for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the instructors. You can make a report either personally or anonymously. **Anonymous reports can be made [here](https://ohwcoc.wufoo.com/forms/z71akf608vqrgd/).**
 
