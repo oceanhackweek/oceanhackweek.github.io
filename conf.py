@@ -80,7 +80,7 @@ html_theme_options = {
         },
         {
             "name": "YouTube",
-            "url": "https://www.youtube.com/playlist?list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF",
+            "url": "https://www.youtube.com/@OceanHackWeek/playlists",
             "icon": "fab fa-youtube-square",
         },
         {
