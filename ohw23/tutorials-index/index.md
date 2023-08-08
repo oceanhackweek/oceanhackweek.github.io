@@ -60,6 +60,7 @@ Finally, each year we offer brief sessions on non-coding aspects of computationa
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
 
 ../tutorials_getting_started
 ```
