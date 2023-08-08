@@ -17,7 +17,7 @@ The following tutorials will be presented live (and broadcast live on zoom) duri
 :align: left
 ```
 
-[Myranda Shirk](https://www.vanderbilt.edu/datascience/data-science-team/) **AI-assisted programming**
+[Myranda Shirk](https://www.vanderbilt.edu/datascience/data-science-team/) - **AI-assisted programming.**
 With the recent success of large language models (LLMs) such as ChatGPT, mastery of a programming language is no longer required to write successful code. In this tutorial, we will explore the new workflow of AI-assisted programming and how it can streamline your hackathon project, no matter your coding experience.
 
 ```{image} ../../assets/images/people/julia-brown.png
@@ -26,7 +26,7 @@ With the recent success of large language models (LLMs) such as ChatGPT, mastery
 :align: left
 ```
 
-[Julia Brown](https://www.bigelow.org/about/people/julia.html) **Read Classification of Ocean 'Omics Data**
+[Julia Brown](https://www.bigelow.org/about/people/julia.html) - **Read Classification of Ocean 'Omics Data.**
 This tutorial will go over how to use 'omics data for classification of microbial communities. I will highlight Kaiju, a read classification tool, discuss reference database options, and how to interpret and visualize the outputs of this workflow.
 
 
@@ -35,7 +35,7 @@ This tutorial will go over how to use 'omics data for classification of microbia
 :width: 100px
 :align: left
 ```
-[Marty Hidas](https://imos.org.au/) **Programmatic access of oceanographic data**
+[Marty Hidas](https://imos.org.au/) - [**Programmatic access of oceanographic data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
 IMOS "The gateway to Australian marine and climate science data" serves oceanographic data through it's interactive ADON data portal, but also provides access using commonly available [programmatic tools](https://help.aodn.org.au/aodn-data-tools/user-code-library/).  This tutorial demonstrates the use of these programmatic tools in Python that are equally applicable to non-IMOS data sources.  
 
 
@@ -46,16 +46,16 @@ In addition, the following tutorials will be presented during our "shoulder bloc
 - [Filipe Fernandes](https://github.com/ocefpaf)
   - [**Software installation survival guide** (conda and friends)](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
   - **Introduction to Machine Learning (ML)**
-- [Derya Gumustel](https://github.com/dgumustel) **Introduction to git and github** 
-- [Danilo Silva](https://github.com/nilodna) **Introduction to Xarray**
+- [Derya Gumustel](https://github.com/dgumustel) - **Introduction to git and github** 
+- [Danilo Silva](https://github.com/nilodna) - **Introduction to Xarray**
 
 
 ## Lectures and Discussions
 
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer two.
 
-- [Joseph Gum](https://github.com/asx-) [**Reproducible Research**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
-- [Alex Kerney](https://github.com/abkfenris) **Stresses in the geosciences**
+- [Joseph Gum](https://github.com/asx-) - [**Reproducible Research**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
+- [Alex Kerney](https://github.com/abkfenris) - **Stresses in the geosciences**
 
 
 ```{toctree}
