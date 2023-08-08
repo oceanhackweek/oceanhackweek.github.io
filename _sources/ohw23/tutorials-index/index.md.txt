@@ -46,7 +46,7 @@ In addition, the following tutorials will be presented during our "shoulder bloc
 - [Filipe Fernandes](https://github.com/ocefpaf)
   - [**Software installation survival guide** (conda and friends)](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
   - [**Introduction to Machine Learning (ML)**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
-- [Derya Gumustel](https://github.com/dgumustel) - **Introduction to git and github** 
+- [Derya Gumustel](https://github.com/dgumustel) - [**Introduction to git and github**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
 - [Danilo Silva](https://github.com/nilodna) - **Introduction to Xarray**
 
 
