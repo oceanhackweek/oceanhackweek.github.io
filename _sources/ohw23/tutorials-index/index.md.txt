@@ -43,22 +43,20 @@ IMOS "The gateway to Australian marine and climate science data" serves oceanogr
 
 In addition, the following tutorials will be presented during our "shoulder blocks", the times before and after the main sessions each day.  These tutorials will also be recorded and made available for later review. 
 
-[Filipe Fernandes](https://github.com/ocefpaf) **Introduction to  conda and environments** and **Introduction to Machine Learning (ML)**
-
-[Derya Gumustel](https://github.com/dgumustel) **Introduction to git and github** 
-
-[Danilo Silva](https://github.com/nilodna) **Introduction to Xarray**
+- [Filipe Fernandes](https://github.com/ocefpaf)
+  - [**Software installation survival guide** (conda and friends)](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
+  - **Introduction to Machine Learning (ML)**
+- [Derya Gumustel](https://github.com/dgumustel) **Introduction to git and github** 
+- [Danilo Silva](https://github.com/nilodna) **Introduction to Xarray**
 
 
 ## Lectures and Discussions
 
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer two.
 
-[Joseph Gum](https://github.com/asx-) **Reproducible Research**
+- [Joseph Gum](https://github.com/asx-) [**Reproducible Research**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
+- [Alex Kerney](https://github.com/abkfenris) **Stresses in the geosciences**
 
-[Alex Kerney](https://github.com/abkfenris) **Stresses in the geosciences**
-
- 
 
 ```{toctree}
 :maxdepth: 1
