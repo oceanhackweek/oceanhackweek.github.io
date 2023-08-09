@@ -132,7 +132,7 @@ If you are **using RStudio**, the `Log out` and `Quit session` under the `File` 
 ```{admonition} Note
 :class: important
 
-**You will not lose your work when shutting down the server.** Shutting down (Stop Server) will **NOT**
+**You will not lose your work when shutting down the server.** Shutting down (`Stop My Server`) will **NOT**
 cause any of your work to be lost or deleted. It simply shuts down some resources.
 It would be equivalent to turning off your desktop computer at the end of the day.
 ```
