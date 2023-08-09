@@ -127,7 +127,7 @@ Then you can shut down your server from your hub control panel (which you can al
 
 Note that the menu item `File > Log Out` doesn't actually shut down the server, so please follow these steps instead.
 
-If you are **using RStudio**, the `Log out` and `Quit session` under the `File` menu won't do much! Shut down your server from your hub control panel [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)), as described above.
+If you are **using RStudio**, the `Log out` and `Quit session` entries under the `File` menu won't do much! Shut down your server from your hub control panel [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)), as described above.
 
 ```{admonition} Note
 :class: important
