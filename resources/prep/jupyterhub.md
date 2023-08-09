@@ -112,22 +112,29 @@ After issuing the `git clone` command you should see something like this (again,
 
 ## End your Hub session every day. Will I lose all of my work?
 
-**When you are finished working for the day or for an extended period of time, it is important to explicitly shutdown your JupyterHub session,** to reduce the load on our cloud infrastructure and overall costs. 
+**When you are finished working for the day or for an extended period of time, it is important to explicitly shutdown your JupyterHub session,** 
+to reduce the load on our cloud infrastructure and overall costs. 
 
-**To shutdown your server**, if you are viewing JupyterLab, you access the control via `File > Hub Control Panel` menu item:
+**To shutdown your server:**
+
+If you are **using JupyterLab**, you access the control via `File > Hub Control Panel` menu item:
 
 ![hub shut down step 1](../img/ohw21-shutdownhub-step1.png)
 
-Then you can shutdown your server from your hub control panel (which you can also access directly from [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home) ):
+Then you can shut down your server from your hub control panel (which you can also access directly from [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)):
 
 ![hub shut down step 2](../img/ohw21-shutdownhub-step2.png)
 
 Note that the menu item `File > Log Out` doesn't actually shut down the server, so please follow these steps instead.
 
-```{warning} You will not lose your work when shutting down the server
+If you are **using RStudio**, the `Log out` and `Quit session` under the `File` menu won't do much! Shut down your server from your hub control panel [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)), as described above.
 
-Shutting down (Stop Server) will **NOT** cause any of your work to be lost or deleted. It simply shuts down some resources. It would be equivalent to turning off your desktop computer at the end of the day.
+```{admonition} Note
+:class: important
 
+**You will not lose your work when shutting down the server.** Shutting down (Stop Server) will **NOT**
+cause any of your work to be lost or deleted. It simply shuts down some resources.
+It would be equivalent to turning off your desktop computer at the end of the day.
 ```
 
 ## How do I do distributed computation?
