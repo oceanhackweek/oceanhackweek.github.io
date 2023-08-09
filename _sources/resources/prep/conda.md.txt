@@ -81,6 +81,11 @@ In order to get easy notebook or terminal access in JupyterLab, a Jupyter kernel
 
 Once you've created an environment, you can run `conda activate cool-project` as usual for access to the environment in the terminal.
 
+To use the kernel in a notebook, it has to be installed or registered.
+The specifics process will vary by kernel, but in general it will need to happen from within the activated environment.
+
+For Python it often looks like `python -m ipykernel install --user --name <name-to-display-in-jupyterhub>`.
+
 :::{admonition} Wait for it...
 
 It may take a minute or two for JupyterLab to show your new Conda environment.

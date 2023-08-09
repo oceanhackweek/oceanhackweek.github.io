@@ -589,6 +589,9 @@ document.write(`
 <p>In order to get easy notebook or terminal access in JupyterLab, a Jupyter kernel needs to be included in the environment, such as <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> for Python or <code class="docutils literal notranslate"><span class="pre">irkernel</span></code> for R.</p>
 </div>
 <p>Once you’ve created an environment, you can run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">cool-project</span></code> as usual for access to the environment in the terminal.</p>
+<p>To use the kernel in a notebook, it has to be installed or registered.
+The specifics process will vary by kernel, but in general it will need to happen from within the activated environment.</p>
+<p>For Python it often looks like <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">ipykernel</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">--name</span> <span class="pre">&lt;name-to-display-in-jupyterhub&gt;</span></code>.</p>
 <div class="admonition-wait-for-it admonition">
 <p class="admonition-title">Wait for it…</p>
 <p>It may take a minute or two for JupyterLab to show your new Conda environment.
