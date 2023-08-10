@@ -11,6 +11,16 @@ We are pleased to present a number of tutorials during the week.  These tutorial
 
 The following tutorials will be presented live (and broadcast live on zoom) during our primary all-hands sessions, and will be recorded for later review.
 
+```{image} ../../assets/images/people/imos-logo.png
+:alt:  IMOS logo
+:width: 100px
+:align: left
+```
+
+[Marty Hidas](https://imos.org.au/) - [**Programmatic access of oceanographic data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
+IMOS "The gateway to Australian marine and climate science data" serves oceanographic data through it's interactive ADON data portal, but also provides access using commonly available [programmatic tools](https://help.aodn.org.au/aodn-data-tools/user-code-library/).  This tutorial demonstrates the use of these programmatic tools in Python that are equally applicable to non-IMOS data sources.  
+
+
 ```{image} ../../assets/images/people/Myranda-Shirk-6.jpg
 :alt: Myranda Shirk
 :width: 100px
@@ -26,17 +36,8 @@ With the recent success of large language models (LLMs) such as ChatGPT, mastery
 :align: left
 ```
 
-[Julia Brown](https://www.bigelow.org/about/people/julia.html) - [**Read Classification of Ocean 'Omics Data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/02-Thu/)
+[Julia Brown](https://www.bigelow.org/about/people/julia.html) - [**Read Classification of Ocean 'Omics Data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/03-Thu/)
 This tutorial will go over how to use 'omics data for classification of microbial communities. I will highlight Kaiju, a read classification tool, discuss reference database options, and how to interpret and visualize the outputs of this workflow.
-
-
-```{image} ../../assets/images/people/imos-logo.png
-:alt:  IMOS logo
-:width: 100px
-:align: left
-```
-[Marty Hidas](https://imos.org.au/) - [**Programmatic access of oceanographic data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
-IMOS "The gateway to Australian marine and climate science data" serves oceanographic data through it's interactive ADON data portal, but also provides access using commonly available [programmatic tools](https://help.aodn.org.au/aodn-data-tools/user-code-library/).  This tutorial demonstrates the use of these programmatic tools in Python that are equally applicable to non-IMOS data sources.  
 
 
 ## Tutorials during the "shoulder" sessions
