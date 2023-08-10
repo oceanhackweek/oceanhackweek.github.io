@@ -36,7 +36,7 @@ With the recent success of large language models (LLMs) such as ChatGPT, mastery
 :align: left
 ```
 
-[Julia Brown](https://www.bigelow.org/about/people/julia.html) - [**Read Classification of Ocean 'Omics Data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/03-Thu/)
+[Julia Brown](https://www.bigelow.org/about/people/julia.html) - [**Read Classification of Ocean 'Omics Data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/03-Thu/README.md)
 This tutorial will go over how to use 'omics data for classification of microbial communities. I will highlight Kaiju, a read classification tool, discuss reference database options, and how to interpret and visualize the outputs of this workflow.
 
 
