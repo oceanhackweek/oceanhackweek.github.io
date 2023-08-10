@@ -2,3 +2,7 @@
 	path = ohw22/tutorials
 	url = https://github.com/oceanhackweek/ohw-tutorials.git
 	branch = OHW22
+[submodule "ohw23/tutorials"]
+	path = ohw23/tutorials
+	url = https://github.com/oceanhackweek/ohw-tutorials.git
+	branch = OHW23
