@@ -63,4 +63,9 @@ Finally, each year we offer brief sessions on non-coding aspects of computationa
 :hidden:
 
 ../tutorials_getting_started
+../tutorials/01-Tue/Data_access_methods_Python.ipynb
+machine-learning.md
+../tutorials/02-Wed/ai_assisted_programming_ohw.ipynb
+../tutorials/02-Wed/xarray-in-45-min.ipynb
+../tutorials/03-Thu/OHW_omics_lesson.ipynb
 ```
