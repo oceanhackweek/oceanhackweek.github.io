@@ -26,7 +26,7 @@ With the recent success of large language models (LLMs) such as ChatGPT, mastery
 :align: left
 ```
 
-[Julia Brown](https://www.bigelow.org/about/people/julia.html) - **Read Classification of Ocean 'Omics Data.**
+[Julia Brown](https://www.bigelow.org/about/people/julia.html) - [**Read Classification of Ocean 'Omics Data.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/02-Thu/)
 This tutorial will go over how to use 'omics data for classification of microbial communities. I will highlight Kaiju, a read classification tool, discuss reference database options, and how to interpret and visualize the outputs of this workflow.
 
 
@@ -55,7 +55,7 @@ In addition, the following tutorials will be presented during our "shoulder bloc
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer two.
 
 - [Joseph Gum](https://github.com/asx-) - [**Reproducible Research**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
-- [Alex Kerney](https://github.com/abkfenris) - **Stresses in the geosciences**
+- [Alex Kerney](https://github.com/abkfenris) - [**Stresses in the geosciences**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW23/02-Wed/README.md)
 
 
 ```{toctree}
@@ -63,4 +63,9 @@ Finally, each year we offer brief sessions on non-coding aspects of computationa
 :hidden:
 
 ../tutorials_getting_started
+../tutorials/01-Tue/Data_access_methods_Python.ipynb
+machine-learning.md
+../tutorials/02-Wed/ai_assisted_programming_ohw.ipynb
+../tutorials/02-Wed/xarray-in-45-min.ipynb
+../tutorials/03-Thu/OHW_omics_lesson.ipynb
 ```

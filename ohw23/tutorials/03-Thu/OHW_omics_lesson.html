@@ -1,0 +1,2107 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Meta’omics for Ocean Science &#8212; OceanHackWeek</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ohw23/tutorials/03-Thu/OHW_omics_lesson';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Hacking at OHW23" href="../../projects/index.html" />
+    <link rel="prev" title="Xarray in 45 minutes" href="../02-Wed/xarray-in-45-min.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this site..."
+         aria-label="Search this site..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../about/index.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        OceanHackWeek 2023
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../resources/index.html">
+                        Resources
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../about/pasthackweeks.html">
+                        Past OHW Events
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../about/index.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        OceanHackWeek 2023
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../resources/index.html">
+                        Resources
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../about/pasthackweeks.html">
+                        Past OHW Events
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments"></i></span>
+            <label class="sr-only">Discussions</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square"></i></span>
+            <label class="sr-only">YouTube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><a href="/"><div class="profile-pic"><img src="../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div></div>
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">OceanHackWeek 2023 (OHW23)</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../organizers.html">Organizers</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../logistics/index.html">Logistics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../logistics/getting_help.html">Getting Help</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../tutorials-index/index.html">Tutorials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials_getting_started.html">Getting started on tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../01-Tue/Data_access_methods_Python.html">Data Access Methods</a></li>
+
+
+
+
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials-index/machine-learning.html">Machine learning</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../01-Tue/machine-learning/00-what-is-a-pellet.html">The dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../01-Tue/machine-learning/01-unsupervised-PCA.html">A quick introduction to machine learning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../01-Tue/machine-learning/02-unsupervised-kmeans.html">Unsupervised learning part 2: kmeans</a></li>
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../01-Tue/machine-learning/03-supervised-knn.html">Supervised learning</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../02-Wed/ai_assisted_programming_ohw.html">AI-Assisted Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../02-Wed/xarray-in-45-min.html">Xarray in 45 minutes</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Meta’omics for Ocean Science</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/index.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../applicants.html">Information for Applicants</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">OceanHackWeek 2023 (OHW23)</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../../tutorials-index/index.html" class="nav-link">Tutorials</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Meta’omics for Ocean Science</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="meta-omics-for-ocean-science">
+<h1>Meta’omics for Ocean Science<a class="headerlink" href="#meta-omics-for-ocean-science" title="Permalink to this heading">#</a></h1>
+<p>Ocean Hack Week 2023 Tutorial by Julia M Brown</p>
+<p><img alt="scales" src="../../../_images/rainbow_satellite_to_microbe.png" /></p>
+<p>With thanks to the following for content and inspiration:<br />
+<a class="reference external" href="https://github.com/ggavelis">Greg Gavelis</a>, <a class="reference external" href="https://github.com/brwnj">Joe Brown</a>, <a class="reference external" href="https://github.com/microbiaki">Maria Pachiadaki</a>, <a class="reference external" href="https://www.bigelow.org/about/people/rstepanauskas.html">Ramunas Stepanauskas</a>, <a class="reference external" href="https://merenlab.org/">MerenLab</a>, <a class="reference external" href="https://bioinformatics-centre.github.io/kaiju/">Kaiju Team</a>, <a class="reference external" href="https://github.com/MarineOpticsLab">Cath Mitchell</a></p>
+<section id="what-is-omics-data">
+<h2>What is ‘omics data?<a class="headerlink" href="#what-is-omics-data" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Data on biological molecules</p></li>
+<li><p>‘Meta’ refers to collecting and processing samples in bulk</p></li>
+<li><p>Data often focused on specific <strong>unicellular</strong> size fractions</p></li>
+</ul>
+</section>
+<section id="how-is-it-generated">
+<h2>How is it generated?<a class="headerlink" href="#how-is-it-generated" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Collection of sample in bulk.</p></li>
+<li><p>For planktonic microbes, samples are collected based on a specific size fraction that targets different microbial groups</p>
+<ul>
+<li><p>e.g. bacteria and archaea, protists, phytoplankton, viruses</p></li>
+</ul>
+</li>
+<li><p>Nucleic acids, proteins or other target molecules extracted and sequenced</p></li>
+<li><p>For nucleotide data (DNA + RNA), samples often sequenced via Illumina sequencing</p>
+<ul>
+<li><p>generates short <strong>paired end</strong> reads</p></li>
+<li><p>reads can be characterized directly or used to assemble larger <strong>contiguous sequences</strong></p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="omics" src="../../../_images/metaXomics_diagram.png" /></p>
+</section>
+<section id="it-can-tell-us-the-who-and-what-of-microbial-communities">
+<h2>It can tell us the who and what of microbial communities<a class="headerlink" href="#it-can-tell-us-the-who-and-what-of-microbial-communities" title="Permalink to this heading">#</a></h2>
+<p><strong>Metagenome (DNA)</strong> : Presence and potential<br />
+<strong>Metatranscriptome (RNA)</strong>: Activity</p>
+<p><strong>Taxonomy:</strong></p>
+<ul class="simple">
+<li><p>What microbes are present – DNA</p></li>
+<li><p>Which microbes are active – RNA</p></li>
+</ul>
+<p><strong>Function:</strong></p>
+<ul class="simple">
+<li><p>What is the metabolic potential? – DNA</p></li>
+<li><p>What processes are being carried out? – RNA</p></li>
+</ul>
+</section>
+<section id="what-does-it-look-like">
+<h2>What does it look like?<a class="headerlink" href="#what-does-it-look-like" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>fastq - raw sequence read data with quality information included</p></li>
+<li><p>fasta - sequence data, can be contiguous sequences, open reading frames (i.e. coding sequences) or protein sequences</p></li>
+</ul>
+</section>
+<section id="how-can-we-use-raw-reads">
+<h2>How can we use raw reads?<a class="headerlink" href="#how-can-we-use-raw-reads" title="Permalink to this heading">#</a></h2>
+<p><strong>Read profiling</strong> is one of the most commonly used processes in ‘omics analysis. It is applied to access the relative abundance of taxonomic groups within metagenomic datasets (when using DNA metagenomes) or to estimate the expression of different microbial taxa (when RNA metatranscriptomes are used).</p>
+<p>In a nutshell short reads are aligned to a genomic reference sequences, which have taxonomic information assigned to them that may be assigned to the reads.</p>
+<p><img alt="recruitment" src="../../../_images/01-metagenomic-read-recruitment-simple.gif" /><br />
+(Thank you <a class="reference external" href="https://merenlab.org/">MerenLab</a> for the animation)</p>
+</section>
+</section>
+<section id="read-classification-tools">
+<h1>Read classification tools<a class="headerlink" href="#read-classification-tools" title="Permalink to this heading">#</a></h1>
+</section>
+<section id="kaiju">
+<h1><a class="reference external" href="https://kaiju.binf.ku.dk/server">Kaiju</a><a class="headerlink" href="#kaiju" title="Permalink to this heading">#</a></h1>
+<p><img alt="Kaiju" src="https://kaiju.binf.ku.dk/images/kaiju3_header.gif" /></p>
+<p><strong>Also: <a class="reference external" href="https://github.com/DerrickWood/kraken2/">Kraken2</a></strong></p>
+<p>These workflows are wicked fast!</p>
+<section id="how-do-they-work">
+<h2>How do they work?<a class="headerlink" href="#how-do-they-work" title="Permalink to this heading">#</a></h2>
+<p><strong>Database</strong><br />
+Database consists of a collection of translated proteins mapped to microbial genomes.</p>
+<img src="./tutorial_images/proteins_to_genomes.png" alt="p2g" width="400"/>
+</section>
+<section id="short-read-alignment">
+<h2>Short read alignment<a class="headerlink" href="#short-read-alignment" title="Permalink to this heading">#</a></h2>
+<p>Reads are translated into protein sequences and aligned to reference protein sequences. Best matches to proteins are then taxonomically assigned based on protein’s membership in microbial genomes.</p>
+<p><img alt="kaiju_diagram" src="../../../_images/short_read_align.png" /></p>
+</section>
+<section id="tools-are-as-good-as-your-reference-database">
+<h2>Tools are as good as your reference database<a class="headerlink" href="#tools-are-as-good-as-your-reference-database" title="Permalink to this heading">#</a></h2>
+<p>Kaiju and other classifiers rely on genome databases that primarily contain genomes from isolated microbes and genomes assembled from metagenomes (‘MAGs’).</p>
+<p><strong>Available Standard Kaiju Databases</strong><br />
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/US-NLM-NCBI-Logo.svg" alt="ncbi" width="100"/></p>
+<p><strong>nr</strong>: Non-redundant proteins from bacteria, archaea and viruses<br />
+<strong>RefSeq</strong>: Curated bacterial, archaeal and viral genomes from NCBI</p>
+<img src="https://progenomes.embl.de/img/progene_head21.png" alt="progenomes" width="300"/>  
+<p><strong>ProGenomes</strong>: Database of microbial genomes including MAGs from diverse environments</p>
+<p><strong>Note:</strong> Kaiju has other available databases that could be useful for your environment or organisms of interest. See their website for more options.</p>
+<p><strong>Database Limitations</strong>: Despite the depth of these collections, they leave stones unturned. Microbial genomic diversity is high in marine systems and genomes assembled from short reads represent only a fraction of the microbial diversity present in the ocean!</p>
+</section>
+<section id="sags">
+<h2>SAGs<a class="headerlink" href="#sags" title="Permalink to this heading">#</a></h2>
+<p>Single Cell Genomics is another type of ‘omics data that is well suited for reference genomic data. It consists of DNA sequence data generated from the DNA present in single cells.  Each set of data from each cell is referred to as a <strong>Single Amplified Genome (i.e. SAG)</strong>. SAGs represent real biological units recovered from samples, and contain genomic information specific to individuals.</p>
+<img src="./tutorial_images/scg_diagram.png" alt="sag" width="800"/>
+</section>
+<section id="gorg-tropics-a-collection-of-reference-genomes-from-individual-cells-from-the-tropical-and-sub-tropical-epipelagic-ocean">
+<h2>GORG-Tropics: A collection of reference genomes from individual cells from the Tropical and Sub-tropical Epipelagic Ocean<a class="headerlink" href="#gorg-tropics-a-collection-of-reference-genomes-from-individual-cells-from-the-tropical-and-sub-tropical-epipelagic-ocean" title="Permalink to this heading">#</a></h2>
+<p>GORG-Tropics is more representative of global ocean microbes than MAGs or currently available reference genomes*.</p>
+<p>*I am not sure if GORG-Tropics has been integrated into ProGenomes or not</p>
+<p><img alt="GORG-Figure2" src="https://ars.els-cdn.com/content/image/1-s2.0-S0092867419312735-gr2.jpg" /></p>
+<p>GORG-Tropics is more accurate and sensitive than default databases used for read classification by Kaiju when analyzing marine epipelagic samples. When GORG-Tropics used as a database for reads from similar environments, many more were able to be correctly classified.</p>
+<p><img alt="GORG-Figure" src="https://ars.els-cdn.com/content/image/1-s2.0-S0092867419312735-gr6.jpg" /></p>
+<p>The other advantage of using a tailored database is that it takes up less storage space :)</p>
+<section id="database-setup">
+<h3>Database Setup<a class="headerlink" href="#database-setup" title="Permalink to this heading">#</a></h3>
+<p>For this tutorial we’ll be using the GORG-Tropics database. This database is published alongside <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0092867419312735">this publication</a>, and in a data repository <a class="reference external" href="https://osf.io/pcwj9/">here</a>.</p>
+<p>Specific database files used for this tutorial are:<br />
+<a class="reference external" href="https://osf.io/a3428">GORG_v1_CREST.fmi</a><br />
+<a class="reference external" href="https://osf.io/a8bm5">nodes.dmp</a><br />
+<a class="reference external" href="https://osf.io/cqrh4">names.dmp</a></p>
+<p>Note that I am going to show you this workflow in steps using kaiju, BUT the entire kaiju workflow using the GORG-Tropics database is packaged into a docker/singularity container and can be run with nextflow for easy access and for scalability. You can find it <a class="reference external" href="https://github.com/BigelowLab/gorg-classifier">here</a>.</p>
+<p>The GORG-Classifier provides additional functionality beyond Kaiju to assign <strong>functional annotations</strong> to reads based on what specific gene was matched in the GORG-Tropics Database. This is unique to this tool.</p>
+<p>Today, I’m going to go over taxonomic annotation of reads.</p>
+</section>
+</section>
+<section id="data-prep">
+<h2>Data Prep<a class="headerlink" href="#data-prep" title="Permalink to this heading">#</a></h2>
+<p>We will be running Kaiju on a collection of epipelagic metagenomes from the Bermuda Atlantic Time Series using version 1 of the GORG-Tropics database.</p>
+<p>For this lesson, we look at microbial community dynamics over time at BATs using short read alignment with Kaiju against the GORG-Tropics database.</p>
+<p>The metagenomes we will use are a small subset of metagenomes reported in <a class="reference external" href="https://www.nature.com/articles/sdata2018176">this</a> publication. These metagenomes are available in NCBI’s Short Read Archive (sra) through NCBI project ID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA385855">PRJNA385855</a>. I’ve downloaded a metadata sheet with all sra metagenomes from this bioproject to: ./data/PRJNA385855_sra_metadata.csv</p>
+<p>Let’s check this table out, and I’ll show you which metagenomes I selected.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">os.path</span> <span class="k">as</span> <span class="nn">op</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./data/PRJNA385855_sra_metadata.csv&quot;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Run</th>
+      <th>Assay Type</th>
+      <th>AvgSpotLen</th>
+      <th>Bases</th>
+      <th>BioProject</th>
+      <th>BioSample</th>
+      <th>BioSampleModel</th>
+      <th>bottle_id</th>
+      <th>Bytes</th>
+      <th>Center Name</th>
+      <th>...</th>
+      <th>lat_lon</th>
+      <th>Library Name</th>
+      <th>LibraryLayout</th>
+      <th>LibrarySelection</th>
+      <th>LibrarySource</th>
+      <th>Organism</th>
+      <th>Platform</th>
+      <th>ReleaseDate</th>
+      <th>Sample Name</th>
+      <th>SRA Study</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>SRR6507277</td>
+      <td>WGS</td>
+      <td>300</td>
+      <td>16133582100</td>
+      <td>PRJNA385855</td>
+      <td>SAMN08390922</td>
+      <td>MIMS.me,MIGS/MIMS/MIMARKS.water</td>
+      <td>2140200308</td>
+      <td>6618578156</td>
+      <td>MIT</td>
+      <td>...</td>
+      <td>22.75 N 158 W</td>
+      <td>S0627</td>
+      <td>PAIRED</td>
+      <td>RANDOM</td>
+      <td>METAGENOMIC</td>
+      <td>marine metagenome</td>
+      <td>ILLUMINA</td>
+      <td>2018-05-01T00:00:00Z</td>
+      <td>S0627</td>
+      <td>SRP109831</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SRR6507278</td>
+      <td>WGS</td>
+      <td>300</td>
+      <td>15874959000</td>
+      <td>PRJNA385855</td>
+      <td>SAMN08390923</td>
+      <td>MIMS.me,MIGS/MIMS/MIMARKS.water</td>
+      <td>2160200304</td>
+      <td>6562862443</td>
+      <td>MIT</td>
+      <td>...</td>
+      <td>22.75 N 158 W</td>
+      <td>S0628</td>
+      <td>PAIRED</td>
+      <td>RANDOM</td>
+      <td>METAGENOMIC</td>
+      <td>marine metagenome</td>
+      <td>ILLUMINA</td>
+      <td>2018-05-01T00:00:00Z</td>
+      <td>S0628</td>
+      <td>SRP109831</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SRR6507279</td>
+      <td>WGS</td>
+      <td>300</td>
+      <td>15069825300</td>
+      <td>PRJNA385855</td>
+      <td>SAMN08390924</td>
+      <td>MIMS.me,MIGS/MIMS/MIMARKS.water</td>
+      <td>1024800503</td>
+      <td>6265839401</td>
+      <td>MIT</td>
+      <td>...</td>
+      <td>31.66 N 64.16 W</td>
+      <td>S0629</td>
+      <td>PAIRED</td>
+      <td>RANDOM</td>
+      <td>METAGENOMIC</td>
+      <td>marine metagenome</td>
+      <td>ILLUMINA</td>
+      <td>2018-05-01T00:00:00Z</td>
+      <td>S0629</td>
+      <td>SRP109831</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SRR6507280</td>
+      <td>WGS</td>
+      <td>300</td>
+      <td>25807308000</td>
+      <td>PRJNA385855</td>
+      <td>SAMN08390925</td>
+      <td>MIMS.me,MIGS/MIMS/MIMARKS.water</td>
+      <td>1025200510</td>
+      <td>10523504402</td>
+      <td>MIT</td>
+      <td>...</td>
+      <td>31.66 N 64.16 W</td>
+      <td>S0630</td>
+      <td>PAIRED</td>
+      <td>RANDOM</td>
+      <td>METAGENOMIC</td>
+      <td>marine metagenome</td>
+      <td>ILLUMINA</td>
+      <td>2018-05-01T00:00:00Z</td>
+      <td>S0630</td>
+      <td>SRP109831</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SRR5720219</td>
+      <td>WGS</td>
+      <td>300</td>
+      <td>6713331000</td>
+      <td>PRJNA385855</td>
+      <td>SAMN07137016</td>
+      <td>MIMS.me,MIGS/MIMS/MIMARKS.water</td>
+      <td>1640201117</td>
+      <td>2811014041</td>
+      <td>MIT</td>
+      <td>...</td>
+      <td>22.75 N 158 W</td>
+      <td>S0519</td>
+      <td>PAIRED</td>
+      <td>RANDOM</td>
+      <td>METAGENOMIC</td>
+      <td>marine metagenome</td>
+      <td>ILLUMINA</td>
+      <td>2018-05-01T00:00:00Z</td>
+      <td>S0519</td>
+      <td>SRP109831</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 36 columns</p>
+</div></div></div>
+</div>
+<p>There’s a lot of information here, for now, we just need the ‘Run’ ID so that we can use it to grab data from NCBI, as well as the collection date and depth.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># selecting surface samples collected from BATS</span>
+<span class="n">surface_bats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cruise_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;BATS&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;10m&#39;</span><span class="p">,</span><span class="s1">&#39;1m&#39;</span><span class="p">])][[</span><span class="s1">&#39;Run&#39;</span><span class="p">,</span><span class="s1">&#39;Collection_date&#39;</span><span class="p">,</span><span class="s1">&#39;cruise_id&#39;</span><span class="p">,</span><span class="s1">&#39;BioSample&#39;</span><span class="p">,</span><span class="s1">&#39;Depth&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;Collection_date&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">surface_bats</span><span class="p">),</span> <span class="s1">&#39;metagenomes&#39;</span><span class="p">)</span>
+<span class="n">surface_bats</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 21 metagenomes
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Run</th>
+      <th>Collection_date</th>
+      <th>cruise_id</th>
+      <th>BioSample</th>
+      <th>Depth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>74</th>
+      <td>SRR5720233</td>
+      <td>2003-02-21</td>
+      <td>BATS173</td>
+      <td>SAMN07137079</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>SRR5720238</td>
+      <td>2003-03-22</td>
+      <td>BATS174</td>
+      <td>SAMN07137082</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>SRR5720327</td>
+      <td>2003-04-22</td>
+      <td>BATS175</td>
+      <td>SAMN07137064</td>
+      <td>10m</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>SRR5720283</td>
+      <td>2003-05-20</td>
+      <td>BATS176</td>
+      <td>SAMN07137103</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>SRR5720235</td>
+      <td>2003-07-15</td>
+      <td>BATS178</td>
+      <td>SAMN07137085</td>
+      <td>10m</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>SRR5720286</td>
+      <td>2003-08-12</td>
+      <td>BATS179</td>
+      <td>SAMN07137088</td>
+      <td>10m</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>SRR5720332</td>
+      <td>2003-10-07</td>
+      <td>BATS181</td>
+      <td>SAMN07137067</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>SRR5720276</td>
+      <td>2003-11-04</td>
+      <td>BATS182</td>
+      <td>SAMN07137106</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>SRR5720262</td>
+      <td>2003-12-02</td>
+      <td>BATS183</td>
+      <td>SAMN07137109</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>SRR5720338</td>
+      <td>2004-01-27</td>
+      <td>BATS184</td>
+      <td>SAMN07137070</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>SRR5720322</td>
+      <td>2004-02-24</td>
+      <td>BATS185</td>
+      <td>SAMN07137121</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>SRR5720337</td>
+      <td>2004-03-23</td>
+      <td>BATS186</td>
+      <td>SAMN07137073</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>SRR5720256</td>
+      <td>2004-04-21</td>
+      <td>BATS187</td>
+      <td>SAMN07137091</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>SRR5720257</td>
+      <td>2004-05-18</td>
+      <td>BATS188</td>
+      <td>SAMN07137112</td>
+      <td>10m</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>SRR5720260</td>
+      <td>2004-06-15</td>
+      <td>BATS189</td>
+      <td>SAMN07137115</td>
+      <td>10m</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>SRR5720321</td>
+      <td>2004-08-17</td>
+      <td>BATS191</td>
+      <td>SAMN07137118</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>SRR5720251</td>
+      <td>2004-09-14</td>
+      <td>BATS192</td>
+      <td>SAMN07137094</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>SRR5720307</td>
+      <td>2004-10-13</td>
+      <td>BATS193</td>
+      <td>SAMN07137097</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>SRR5720278</td>
+      <td>2004-11-12</td>
+      <td>BATS194</td>
+      <td>SAMN07137100</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>SRR5720342</td>
+      <td>2004-12-08</td>
+      <td>BATS195</td>
+      <td>SAMN07137076</td>
+      <td>1m</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SRR6507279</td>
+      <td>2009-07-14</td>
+      <td>BATS248</td>
+      <td>SAMN08390924</td>
+      <td>10m</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Let’s just focus on one year to make things simple.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># grab only samples from 2004</span>
+<span class="c1"># naming it mgoi for &#39;metagenomes of interest&#39;</span>
+<span class="n">mgoi</span> <span class="o">=</span> <span class="n">surface_bats</span><span class="p">[</span><span class="n">surface_bats</span><span class="p">[</span><span class="s1">&#39;Collection_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;2004&#39;</span><span class="p">)]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">mgoi</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># going to save this table to file</span>
+<span class="n">mgoi</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;./data/bats_metagenomes_of_interest.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># I also saved a text file with one metagenome ID per line for downloading these metagenomes with a shell script</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/metagenomes_to_download.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">oh</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">run</span> <span class="ow">in</span> <span class="n">mgoi</span><span class="p">[</span><span class="s1">&#39;Run&#39;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">run</span><span class="p">,</span> <span class="n">file</span> <span class="o">=</span> <span class="n">oh</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>I next downloaded these metagenomes from NCBI using a package called <a class="reference external" href="https://github.com/rpetit3/fastq-dl">fastq-dl</a>. These metagenomes are large, and downloading them takes a while, so I did this overnight using a small shell script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ./data/
+
+while read p; 
+    do fastq-dl -a $p --provider sra; 
+done &lt; metagenomes_to_download.txt
+</pre></div>
+</div>
+<p>This downloads a set of paired reads files that look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">RunID</span><span class="p">}</span><span class="n">_1</span><span class="o">.</span><span class="n">fastq</span><span class="o">.</span><span class="n">gz</span>
+<span class="p">{</span><span class="n">RunID_2</span><span class="p">}</span><span class="o">.</span><span class="n">fastq</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p>Each file is between 1 and 3G in size. For the purposes of this tutorial, I subsampled these paired metagenomes down to 100000k reads per metagenome using a package called <a class="reference external" href="https://github.com/lh3/seqtk">seqtk</a>. I ran this in a jupyter notebook. The script I used to do this was:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%python
+import glob
+
+ffqs = glob.glob(&quot;*_1.fastq.gz&quot;)
+
+for f in ffqs:
+    r = f.replace(&#39;_1&#39;,&#39;_2&#39;)
+    
+    outf = &quot;./subsampled_metagenomes/{}&quot;.format(f.replace(&quot;_1.fastq.gz&quot;,
+                                                          &#39;_100ksub_1.fastq.gz&#39;))
+    outr = &quot;./subsampled_metagenomes/{}&quot;.format(r.replace(&quot;_2.fastq.gz&quot;,
+                                                          &#39;_100ksub_2.fastq.gz&#39;))
+    
+    !seqtk sample -s 123 {f} 100000 &gt; {outf}
+    
+    !seqtk sample -s 123 {r} 100000 &gt; {outr}
+</pre></div>
+</div>
+<p>The important command is <code class="docutils literal notranslate"><span class="pre">seqtk</span> <span class="pre">sample</span> <span class="pre">-s</span> <span class="pre">123</span> <span class="pre">{infastq}</span> <span class="pre">100000</span> <span class="pre">&gt;</span> <span class="pre">{outfastq}</span></code>.</p>
+<p>The script randomly subsamples a subset of reads. I needed to do this for paired metagenomic data, so to make sure the samples were random but consistent between the paired files I used the <code class="docutils literal notranslate"><span class="pre">-s</span></code> parameter to set the seed for random sampling. After the <code class="docutils literal notranslate"><span class="pre">-s</span></code> parameter (which can be any integer), I provide the input fastq file and then the number of reads I would like to subsample from the input file, I then send the output to a new file.</p>
+<section id="running-kaiju">
+<h3>Running Kaiju<a class="headerlink" href="#running-kaiju" title="Permalink to this heading">#</a></h3>
+<p>This happens in two steps. In the first step the reads are mapped to the database, and in the second step, taxonomy is assigned to each read based on how they mapped.</p>
+<p>Note: The first step takes much longer than the second.</p>
+<p>Let’s run this for an example genome, using only 10k reads:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">database_nodes</span> <span class="o">=</span> <span class="s1">&#39;/home/jovyan/shared/omics_tutorial/kaiju_db/nodes.dmp&#39;</span>
+<span class="n">database_names</span> <span class="o">=</span> <span class="n">database_nodes</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;nodes&#39;</span><span class="p">,</span><span class="s1">&#39;names&#39;</span><span class="p">)</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;/home/jovyan/shared/omics_tutorial/kaiju_db/GORG_v1_CREST.fmi&#39;</span>
+<span class="n">fq1</span> <span class="o">=</span> <span class="s1">&#39;/home/jovyan/shared/omics_tutorial/10k_subsampled_metagenomes/SRR5720233_10ksub_1.fastq.gz&#39;</span>
+<span class="n">fq2</span> <span class="o">=</span> <span class="n">fq1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_1.tar.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;_2.tar.gz&quot;</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">fq1</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_1.fastq.gz&#39;</span><span class="p">,</span><span class="s1">&#39;_vs_GORGv1_kaiju.out&#39;</span><span class="p">))</span>
+<span class="n">out_tax</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.out&#39;</span><span class="p">,</span><span class="s1">&#39;_wtaxonomy.out&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!kaiju -t {database_nodes} \
+-f {database} \
+-i {fq1} \
+-j {fq2} \
+-o {out} \
+-v
+
+!kaiju-addTaxonNames -t {database_nodes} \
+-n {database_names} \
+-i {out} \
+-o {out_tax} \
+-r superkingdom,phylum,class,order,family,genus,species
+</pre></div>
+</div>
+<p>The above will likely work on your local machine if you have a good amount of RAM, but it takes up too much RAM for the OHW jupyterhub, so pretend you’ve run this, and we’ll move on from there!</p>
+</section>
+<section id="exploring-results">
+<h3>Exploring Results<a class="headerlink" href="#exploring-results" title="Permalink to this heading">#</a></h3>
+<p>Disclaimer: I am visualizing the results of Kaiju with python today, BUT there are some great tools available through R’s <a class="reference external" href="https://joey711.github.io/phyloseq/">phyloseq package</a>.</p>
+<p>If I do this tutorial next year, I will begrudgingly learn how to do this (and more!) using R packages, but today you’re going to get some python.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out_tax</span> <span class="o">=</span> <span class="s2">&quot;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720342_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&quot;</span>
+
+<span class="n">odf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">out_tax</span><span class="p">,</span> 
+                  <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> 
+                  <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">,</span><span class="s1">&#39;read_id&#39;</span><span class="p">,</span><span class="s1">&#39;tax_id&#39;</span><span class="p">,</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">])</span>
+
+<span class="n">odf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>status</th>
+      <th>read_id</th>
+      <th>tax_id</th>
+      <th>taxonomy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>U</td>
+      <td>SRR5720342.29508414</td>
+      <td>0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>U</td>
+      <td>SRR5720342.14562609</td>
+      <td>0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>U</td>
+      <td>SRR5720342.3034975</td>
+      <td>0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C</td>
+      <td>SRR5720342.6694984</td>
+      <td>1754</td>
+      <td>Bacteria; Cyanobacteria; Oxyphotobacteria; Syn...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C</td>
+      <td>SRR5720342.20247457</td>
+      <td>2547</td>
+      <td>Bacteria; Proteobacteria; Gammaproteobacteria;...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The ouput table has four columns:</p>
+<blockquote>
+<div><p><strong>status</strong>: whether the read was classified (C) or unclassified (U)<br />
+<strong>read_id</strong>: ID of the mapped read<br />
+<strong>tax_id</strong>: taxonomic ID of mapped read<br />
+<strong>taxonomy</strong>: taxonomy of mapped read</p>
+</div></blockquote>
+<p>How many reads were classified?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">odf</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="s1">&#39;C&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">odf</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> 
+      <span class="s1">&#39;percent of reads were able to be classified.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>44.6 percent of reads were able to be classified.
+</pre></div>
+</div>
+</div>
+</div>
+<p>What does it mean for a read to be classified?</p>
+<p>It means that a read aligned to a protein from a genome in the database, and a taxonomic annotation was assigned.</p>
+<p><img alt="microbial_taxonomy" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Biological_classification_L_Pengo_vflip.svg" /></p>
+<p>In the output taxonomic data from Kaiju, the rank order is a little bit different from this diagram:</p>
+<ul class="simple">
+<li><p>superkingdom</p></li>
+<li><p>phylum</p></li>
+<li><p>class</p></li>
+<li><p>order</p></li>
+<li><p>family</p></li>
+<li><p>genus</p></li>
+<li><p>species</p></li>
+</ul>
+<p>In the Kaiju output table, the taxonomic ranks are all shown in the ‘taxonomy’ column, with each rank separated by a ‘;’</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># look at 10 most common taxonomic classifications</span>
+
+<span class="n">Counter</span><span class="p">(</span><span class="n">odf</span><span class="p">[</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">most_common</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(nan, 55360),
+ (&#39;Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Surface 1; NA; NA; &#39;,
+  9733),
+ (&#39;Bacteria; Cyanobacteria; Oxyphotobacteria; Synechococcales; Synechococcaceae; Prochlorococcus; NA; &#39;,
+  5787),
+ (&#39;Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; SAR86 clade; NA; NA; &#39;,
+  4137),
+ (&#39;Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; SAR116 clade; NA; NA; &#39;,
+  2288),
+ (&#39;Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Rhodospirillaceae; AEGEAN-169 marine group; NA; &#39;,
+  2227),
+ (&#39;Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; NA; NA; &#39;,
+  2191),
+ (&#39;Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Surface 2; NA; NA; &#39;,
+  1404),
+ (&#39;Bacteria; Marinimicrobia (SAR406 clade); NA; NA; NA; NA; NA; &#39;, 1251),
+ (&#39;Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; NA; &#39;,
+  1124)]
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are instances where the available classification does not go all the way down to species.  This happens either if the reference genome that the read hit is not classified to that level, or if the read had equivalent matches to references from two different taxonomic categories.  In this case Kaiju assigns the read to the <strong>last common ancestor</strong> of the two reads.</p>
+<img src="tutorial_images/phlyo_diagram.png" alt="lca_example" width="400"/>  
+<p>For example, in the above diagram, if a read hit proteins in both Species A and Species C, the read would be classified to the Family level, because that is their last common ancestral node.</p>
+<p>Sometimes, we want to examine distributions at specific taxonomic levels, so let’s split taxonomy column up into new columns, one for each taxonomic level.
+(notice that the taxonomic string used is the same as what we entered when we ran <code class="docutils literal notranslate"><span class="pre">kaiju-addTaxonNames</span></code>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_rank</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">index_val</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)[</span><span class="n">index_val</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">t</span>
+        
+<span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">rank</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;superkingdom,phylum,class,order,family,genus,species&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)):</span>
+    <span class="n">odf</span><span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=</span> <span class="n">odf</span><span class="p">[</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">(</span><span class="n">get_rank</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">j</span><span class="p">)))</span>
+
+<span class="n">odf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>status</th>
+      <th>read_id</th>
+      <th>tax_id</th>
+      <th>taxonomy</th>
+      <th>superkingdom</th>
+      <th>phylum</th>
+      <th>class</th>
+      <th>order</th>
+      <th>family</th>
+      <th>genus</th>
+      <th>species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>U</td>
+      <td>SRR5720342.29508414</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>U</td>
+      <td>SRR5720342.14562609</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>U</td>
+      <td>SRR5720342.3034975</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C</td>
+      <td>SRR5720342.6694984</td>
+      <td>1754</td>
+      <td>Bacteria; Cyanobacteria; Oxyphotobacteria; Syn...</td>
+      <td>Bacteria</td>
+      <td>Cyanobacteria</td>
+      <td>Oxyphotobacteria</td>
+      <td>Synechococcales</td>
+      <td>Synechococcaceae</td>
+      <td>Prochlorococcus</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C</td>
+      <td>SRR5720342.20247457</td>
+      <td>2547</td>
+      <td>Bacteria; Proteobacteria; Gammaproteobacteria;...</td>
+      <td>Bacteria</td>
+      <td>Proteobacteria</td>
+      <td>Gammaproteobacteria</td>
+      <td>Oceanospirillales</td>
+      <td>SAR86 clade</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>It’s worth noting here that there are two different null values in this table. The default NaN, which shows up for unclassified reads, and ‘NA’ which is a space holder within the taxonomic database to show that a read was aligned to the database, but was not assigned to that particular phylogenetic rank.</p>
+<p>We can fill in the null ‘NaN’s with ‘unmapped’ to be more explict, so that we can plot those values below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">odf</span> <span class="o">=</span> <span class="n">odf</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;unmapped&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s visualize the distribution of reads by ‘Phylum’ for this sample:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tax_level</span> <span class="o">=</span> <span class="s1">&#39;phylum&#39;</span>
+
+<span class="n">phycount</span> <span class="o">=</span> <span class="n">odf</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">tax_level</span><span class="p">,</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="c1">#tax_level = &#39;family&#39;</span>
+<span class="c1">#phycount = odf[odf[&#39;order&#39;] == &#39;SAR11 clade&#39;].groupby(tax_level, as_index = False)[&#39;read_id&#39;].count().sort_values(by = &#39;read_id&#39;, ascending = False)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">phycount</span><span class="p">[</span><span class="s1">&#39;read_id&#39;</span><span class="p">],</span> <span class="n">y</span> <span class="o">=</span> <span class="n">phycount</span><span class="p">[</span><span class="n">tax_level</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Total Reads Mapped per Group&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Total Reads Mapped per Group&#39;)
+</pre></div>
+</div>
+<img alt="../../../_images/306fb7332bfde9fa642f68e4200f1b6cddf0ac35600d2b92435a90571ea12dbf.png" src="../../../_images/306fb7332bfde9fa642f68e4200f1b6cddf0ac35600d2b92435a90571ea12dbf.png" />
+</div>
+</div>
+<p>Now let’s scale up to check out the whole series of samples from the surface at BATS collected in 2004.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outs</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/*.out&#39;</span><span class="p">)</span>
+<span class="n">outs</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720337_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720338_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720342_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720256_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720257_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720278_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720307_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720321_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720260_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720251_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;,
+ &#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/SRR5720322_100ksub_vs_GORGv1_kaiju_wtaxonomy.out&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">read_in_kaiju</span><span class="p">(</span><span class="n">outfile</span><span class="p">):</span>
+    <span class="n">library</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">outfile</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> 
+                  <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> 
+                  <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">,</span><span class="s1">&#39;read_id&#39;</span><span class="p">,</span><span class="s1">&#39;tax_id&#39;</span><span class="p">,</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">])</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;library&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">library</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">rank</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;superkingdom,phylum,class,order,family,genus,species&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)):</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">(</span><span class="n">get_rank</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">j</span><span class="p">)))</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;unmapped&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="n">tax_level</span> <span class="o">=</span> <span class="s1">&#39;phylum&#39;</span>
+
+<span class="n">combodf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">outs</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">read_in_kaiju</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+    <span class="n">phycount</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;library&#39;</span><span class="p">,</span><span class="n">tax_level</span><span class="p">],</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+    <span class="n">combodf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">combodf</span><span class="p">,</span> <span class="n">phycount</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Add sample information to dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load sample information and pull out &#39;month&#39; value for plotting</span>
+
+<span class="n">mg_metadata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/bats_metagenomes_of_interest.csv&#39;</span><span class="p">)</span>
+<span class="n">mg_metadata</span><span class="p">[[</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="s1">&#39;day&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">mg_metadata</span><span class="p">[</span><span class="s1">&#39;Collection_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">expand</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">mg_metadata</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mg_metadata</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">)</span>
+
+<span class="c1"># merging metadata table with the combined phylum counts</span>
+
+<span class="n">combodf</span> <span class="o">=</span> <span class="n">combodf</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">mg_metadata</span><span class="p">,</span> <span class="n">left_on</span> <span class="o">=</span> <span class="s1">&#39;library&#39;</span><span class="p">,</span> <span class="n">right_on</span> <span class="o">=</span> <span class="s1">&#39;Run&#39;</span><span class="p">,</span> <span class="n">how</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">to_plot</span> <span class="o">=</span> <span class="n">combodf</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="s1">&#39;phylum&#39;</span><span class="p">],</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;phylum&#39;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># generating a list of phyla, ordered by abundance</span>
+<span class="n">column_order</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">combodf</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;phylum&#39;</span><span class="p">,</span><span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;phylum&#39;</span><span class="p">])</span>
+
+<span class="c1"># ordering columns by abundance of different phyla</span>
+<span class="n">to_plot</span><span class="p">[</span><span class="n">column_order</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">stacked</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Reads Assigned to Phylum&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Reads Assigned to Phylum&#39;)
+</pre></div>
+</div>
+<img alt="../../../_images/04bf23b73e59d16aaf2a4c93aec88144914c15f65d7201d71f9bc1b29c0ed432.png" src="../../../_images/04bf23b73e59d16aaf2a4c93aec88144914c15f65d7201d71f9bc1b29c0ed432.png" />
+</div>
+</div>
+<p>This is perhaps not helpful?  Too many taxa are included that are not well represented in the plot. Instead, let’s identify the most represented taxa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># identifying the top phyla to plot</span>
+<span class="n">total_phycounts</span> <span class="o">=</span> <span class="n">combodf</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;phylum&#39;</span><span class="p">,</span><span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># keeping them as a list of top phyla, ordered by abundance</span>
+<span class="n">top_phyla</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">total_phycounts</span><span class="p">[</span><span class="n">total_phycounts</span><span class="p">[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;phylum&#39;</span><span class="p">])</span>
+
+<span class="c1"># add column labelling top phyla and calling all others &#39;Other&#39;</span>
+<span class="n">combodf</span><span class="p">[</span><span class="s1">&#39;plot_phyla&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">top_phyla</span> <span class="k">else</span> <span class="s1">&#39;Other&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">combodf</span><span class="p">[</span><span class="s1">&#39;phylum&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># group data by month and this new category, and create a pivot table for plotting</span>
+<span class="n">to_plot</span> <span class="o">=</span> <span class="n">combodf</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="s1">&#39;plot_phyla&#39;</span><span class="p">],</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;plot_phyla&#39;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="n">column_order</span> <span class="o">=</span> <span class="n">top_phyla</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;Other&#39;</span><span class="p">]</span>
+
+<span class="n">to_plot</span><span class="p">[</span><span class="n">column_order</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">stacked</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Reads Assigned to Phylum&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Reads Assigned to Phylum&#39;)
+</pre></div>
+</div>
+<img alt="../../../_images/9c4b2d457e5dae74de2a078a707a9f42a1cf13de074314f7c143a5c8d1de793c.png" src="../../../_images/9c4b2d457e5dae74de2a078a707a9f42a1cf13de074314f7c143a5c8d1de793c.png" />
+</div>
+</div>
+<p>This essentially looks the same, but now our legend isn’t crowded with all of the taxa present at low abundances in our samples.</p>
+<p>Something interesting we can see with this visualization is that there are variable numbers of unmapped reads. This could be due to a number of reasons. This variability influences the relative dynamics of taxa in this plot.</p>
+<p>An alternative is to calculate taxonomic distributions based on the abundance of only those reads that were assigned a taxonomy.</p>
+<p>To do this, I’m going to remove the ‘no assignment’ column from the table, and consider the relative abundance of taxa based on the total reads that were assigned taxa overall.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove the &#39;no assignment&#39; column and calculate relative abundance of assigned reads only</span>
+<span class="n">new_mat</span> <span class="o">=</span> <span class="n">to_plot</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;unmapped&#39;</span><span class="p">)</span>
+
+<span class="c1"># calculate relative abundance based on total reads recruited per sample</span>
+<span class="n">new_mat_ra</span> <span class="o">=</span> <span class="n">new_mat</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">new_mat</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># plot</span>
+<span class="n">new_mat_ra</span><span class="p">[</span><span class="n">column_order</span><span class="p">[</span><span class="mi">1</span><span class="p">:]]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">stacked</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Proportion Assigned Reads&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Proportion Assigned Reads&#39;)
+</pre></div>
+</div>
+<img alt="../../../_images/0a522bc3c800170bef313d7114f1eb87b68eb8bd24af4c538a598b68cf847175.png" src="../../../_images/0a522bc3c800170bef313d7114f1eb87b68eb8bd24af4c538a598b68cf847175.png" />
+</div>
+</div>
+<p>These two ways of normalizing counts show slightly different distributions!</p>
+<p>Let’s look at how dyanamics of the Phylum ‘Proteobacteria’ looks based on these two different visualizations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">compdf</span> <span class="o">=</span> <span class="n">to_plot</span><span class="p">[[</span><span class="s1">&#39;Proteobacteria&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Proteobacteria&#39;</span><span class="p">:</span><span class="s1">&#39;Proteobacteria_all_reads_considered&#39;</span><span class="p">})</span>
+
+<span class="c1"># normalizing it to total reads considered so that it&#39;s comparable </span>
+<span class="c1"># because we subsampled our metagenomes prior to running Kaiju, we can divide all these counts by the same number of reads</span>
+
+<span class="n">compdf</span><span class="p">[</span><span class="s1">&#39;Proteobacteria_all_reads_considered&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">compdf</span><span class="p">[</span><span class="s1">&#39;Proteobacteria_all_reads_considered&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">100000</span>
+<span class="n">compdf</span> <span class="o">=</span> <span class="n">compdf</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">new_mat_ra</span><span class="p">[[</span><span class="s1">&#39;Proteobacteria&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Proteobacteria&#39;</span><span class="p">:</span><span class="s1">&#39;Proteobacteria_mapped_reads_considered&#39;</span><span class="p">}),</span> 
+                      <span class="n">left_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">compdf</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Relative Read Abundance&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Month&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Month&#39;)
+</pre></div>
+</div>
+<img alt="../../../_images/3002f2cf73b231ccfd06d773f1c42f6b14064bbded87ec0fed4a7aa503aac074.png" src="../../../_images/3002f2cf73b231ccfd06d773f1c42f6b14064bbded87ec0fed4a7aa503aac074.png" />
+</div>
+</div>
+<p>The shape of distributions look similar but are not look entirely the same, and obviously show vastly different relative abundances.</p>
+<p>Ommitting the unmapped reads makes the assumption that the database being used is representative of microbial taxonomic diversity, even if it misses some of the read assignments.</p>
+</section>
+<section id="pca-for-beta-diversity">
+<h3>PCA for beta diversity<a class="headerlink" href="#pca-for-beta-diversity" title="Permalink to this heading">#</a></h3>
+<p>Phylum-level taxonomic groups are not super informative for understanding the dynamics of microbial communities. It would be better to compare overall relationships of samples based on more granular taxonomic levels.</p>
+<p>One way to do this is to use a dimensionality reduction method such as PCA. This gives an overall idea of the relationships in community structure between samples.</p>
+<p>First I am going to read in the output files from Kaiju like before, but now will consider the entirety of a taxonomic lineage, rather than Phylum-level taxonomic assignments.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outs</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/home/jovyan/shared/omics_tutorial/kaiju_results/results/*.out&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">read_in_kaiju</span><span class="p">(</span><span class="n">outfile</span><span class="p">):</span>
+    <span class="n">library</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">outfile</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> 
+                  <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> 
+                  <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">,</span><span class="s1">&#39;read_id&#39;</span><span class="p">,</span><span class="s1">&#39;tax_id&#39;</span><span class="p">,</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">])</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;library&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">library</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">rank</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;superkingdom,phylum,class,order,family,genus,species&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)):</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;taxonomy&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">(</span><span class="n">get_rank</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">j</span><span class="p">)))</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;unmapped&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="n">tax_level</span> <span class="o">=</span> <span class="s1">&#39;taxonomy&#39;</span>
+
+<span class="n">combodf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">outs</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">read_in_kaiju</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+    <span class="n">phycount</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;library&#39;</span><span class="p">,</span><span class="n">tax_level</span><span class="p">],</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;read_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+    <span class="n">combodf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">combodf</span><span class="p">,</span> <span class="n">phycount</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>As before, I’m adding some sample information to these data so that we can map the sequence collections back to the dates they were collected.</p>
+<p>Then, I’ll count reads assigned to each taxonomic category per sample, omit those reads where no taxonomy was assigned and create a matrix that contains the relative abundance of each taxonomic group per sample.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">combodf_w_metadata</span> <span class="o">=</span> <span class="n">combodf</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">mg_metadata</span><span class="p">,</span> <span class="n">left_on</span> <span class="o">=</span> <span class="s1">&#39;library&#39;</span><span class="p">,</span> <span class="n">right_on</span> <span class="o">=</span> <span class="s1">&#39;Run&#39;</span><span class="p">,</span> <span class="n">how</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="c1"># creating a pivot table with month as the index and taxonomy as the columns. NA values are zeros, but will substitute with 1 instead for eventual log transformation  </span>
+<span class="n">matdf</span> <span class="o">=</span> <span class="n">combodf_w_metadata</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;taxonomy&#39;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="s1">&#39;read_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># consider only reads that were assigned an annotation in final count, calculate relative abundance (ar = annotated relative abundance)</span>
+<span class="n">armat</span> <span class="o">=</span> <span class="n">matdf</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;unmapped&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">matdf</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;unmapped&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">armat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>taxonomy</th>
+      <th>Archaea (superkingdom); Ca. Woesearchaeota; Pacearchaeota; NA; NA; NA; NA;</th>
+      <th>Archaea (superkingdom); Euryarchaeota; Thermoplasmata; Marine Group II; NA; NA; NA;</th>
+      <th>Archaea (superkingdom); Euryarchaeota; Thermoplasmata; Marine Group III; NA; NA; NA;</th>
+      <th>Archaea (superkingdom); Euryarchaeota; Thermoplasmata; NA; NA; NA; NA;</th>
+      <th>Archaea (superkingdom); Thaumarchaeota; Nitrososphaeria; Ca. Nitrosopumilales; Ca. Nitrosopelagicus family incertae sedis; Ca. Nitrosopelagicus; NA;</th>
+      <th>Archaea (superkingdom); Thaumarchaeota; Nitrososphaeria; Ca. Nitrosopumilales; Ca. Nitrosopumilus family incertae sedis; Ca. Nitrosopumilus; NA;</th>
+      <th>Archaea (superkingdom); Thaumarchaeota; Nitrososphaeria; Ca. Nitrosopumilales; NA; NA; NA;</th>
+      <th>Bacteria; Actinobacteria; Acidimicrobiia; Acidimicrobiales; NA; NA; NA;</th>
+      <th>Bacteria; Actinobacteria; Acidimicrobiia; Acidimicrobiales; OM1 clade; Candidatus Actinomarina; NA;</th>
+      <th>Bacteria; Actinobacteria; Acidimicrobiia; Acidimicrobiales; OM1 clade; NA; NA;</th>
+      <th>...</th>
+      <th>Bacteria; Verrucomicrobia; NA; NA; NA; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Opitutae; MB11C04 marine group; NA; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Opitutae; NA; NA; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Opitutae; Puniceicoccales; Puniceicoccaceae; Coraliomargarita; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Opitutae; Puniceicoccales; Puniceicoccaceae; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Opitutae; Puniceicoccales; Puniceicoccaceae; marine group (Puniceicoccaceae); NA;</th>
+      <th>Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; DEV007; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; NA; NA; NA;</th>
+      <th>Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritalecea; Roseibacillus; NA;</th>
+      <th>NA; NA; NA; NA; NA; NA; NA;</th>
+    </tr>
+    <tr>
+      <th>month</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.000027</td>
+      <td>0.056736</td>
+      <td>0.006792</td>
+      <td>0.000027</td>
+      <td>0.024604</td>
+      <td>0.000245</td>
+      <td>0.001146</td>
+      <td>0.000027</td>
+      <td>0.029268</td>
+      <td>0.000273</td>
+      <td>...</td>
+      <td>0.000109</td>
+      <td>0.001037</td>
+      <td>0.000027</td>
+      <td>0.000136</td>
+      <td>0.000327</td>
+      <td>0.000136</td>
+      <td>0.005510</td>
+      <td>0.001337</td>
+      <td>0.000027</td>
+      <td>0.000164</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.000017</td>
+      <td>0.050026</td>
+      <td>0.007969</td>
+      <td>0.000017</td>
+      <td>0.020651</td>
+      <td>0.000151</td>
+      <td>0.000923</td>
+      <td>0.000017</td>
+      <td>0.036370</td>
+      <td>0.000302</td>
+      <td>...</td>
+      <td>0.000017</td>
+      <td>0.000419</td>
+      <td>0.000017</td>
+      <td>0.000101</td>
+      <td>0.000101</td>
+      <td>0.000084</td>
+      <td>0.001678</td>
+      <td>0.000352</td>
+      <td>0.000017</td>
+      <td>0.000201</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.000024</td>
+      <td>0.036509</td>
+      <td>0.004850</td>
+      <td>0.000024</td>
+      <td>0.009940</td>
+      <td>0.000215</td>
+      <td>0.000311</td>
+      <td>0.000024</td>
+      <td>0.039448</td>
+      <td>0.000239</td>
+      <td>...</td>
+      <td>0.000024</td>
+      <td>0.001290</td>
+      <td>0.000024</td>
+      <td>0.001219</td>
+      <td>0.000072</td>
+      <td>0.002700</td>
+      <td>0.000621</td>
+      <td>0.000143</td>
+      <td>0.000024</td>
+      <td>0.000239</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.000025</td>
+      <td>0.027693</td>
+      <td>0.003459</td>
+      <td>0.000025</td>
+      <td>0.009468</td>
+      <td>0.000172</td>
+      <td>0.000245</td>
+      <td>0.000025</td>
+      <td>0.028428</td>
+      <td>0.000294</td>
+      <td>...</td>
+      <td>0.000025</td>
+      <td>0.001153</td>
+      <td>0.000025</td>
+      <td>0.010326</td>
+      <td>0.000343</td>
+      <td>0.013589</td>
+      <td>0.001006</td>
+      <td>0.000196</td>
+      <td>0.000025</td>
+      <td>0.000098</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.000015</td>
+      <td>0.000061</td>
+      <td>0.000015</td>
+      <td>0.000015</td>
+      <td>0.000031</td>
+      <td>0.000015</td>
+      <td>0.000015</td>
+      <td>0.000015</td>
+      <td>0.019884</td>
+      <td>0.000061</td>
+      <td>...</td>
+      <td>0.000015</td>
+      <td>0.010209</td>
+      <td>0.000031</td>
+      <td>0.005120</td>
+      <td>0.000153</td>
+      <td>0.002613</td>
+      <td>0.000107</td>
+      <td>0.000046</td>
+      <td>0.000015</td>
+      <td>0.000031</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 124 columns</p>
+</div></div></div>
+</div>
+<p>To normalize the data, we’ll preform a center-log-ratio transformation, which is common for phylogenetic comparisons of sample data such as this.</p>
+<p>The package skbio has a function for this (<a class="reference external" href="http://scikit-bio.org/docs/0.4.2/generated/skbio.stats.composition.html#module-skbio.stats.composition">see here</a>), but we’ll do it the old fashion way to see how it works more closely.</p>
+<p>We will take the log of the above pivot table of relative abundances, and then subtract the mean per column.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the geometric mean along each row</span>
+<span class="n">geom_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">armat</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+
+<span class="c1"># Calculate the centered log-ratio transformation</span>
+
+<span class="n">clr_transformed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">armat</span> <span class="o">/</span> <span class="n">geom_mean</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">indf</span> <span class="o">=</span> <span class="n">clr_transformed</span>
+
+<span class="n">pca_components</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">pca_components</span><span class="p">)</span>
+<span class="n">fpca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">indf</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">indf</span><span class="p">)</span>
+<span class="p">(</span><span class="n">x_evr</span><span class="p">,</span> <span class="n">y_evr</span><span class="p">)</span> <span class="o">=</span> <span class="n">fpca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># establish point labels as the months</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">matdf</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;PC1 (</span><span class="si">{}</span><span class="s1">% variance explained)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x_evr</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PC2 (</span><span class="si">{}</span><span class="s1">% variance explained)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">y_evr</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">labels</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/c2940c40e0b384bb89f195a23867cdc03c0e0f28cd936ba5ef81802d21505c6c.png" src="../../../_images/c2940c40e0b384bb89f195a23867cdc03c0e0f28cd936ba5ef81802d21505c6c.png" />
+</div>
+</div>
+<p>Here we’ve plotted the first two principal components. I’ve added the amount of variance explained to each component to the axis labels. This image tells a story of seasons, and raises some questions about what would happen if we added additional time series data to it.</p>
+<p>That’s all I have for this tutorial. There’s only one more thing to say…</p>
+<p><img alt="HBD" src="../../../_images/HBD.png" /></p>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../02-Wed/xarray-in-45-min.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Xarray in 45 minutes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../projects/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hacking at OHW23</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Meta’omics for Ocean Science</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-omics-data">What is ‘omics data?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-is-it-generated">How is it generated?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#it-can-tell-us-the-who-and-what-of-microbial-communities">It can tell us the who and what of microbial communities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-it-look-like">What does it look like?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-we-use-raw-reads">How can we use raw reads?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#read-classification-tools">Read classification tools</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kaiju">Kaiju</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-they-work">How do they work?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-read-alignment">Short read alignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-are-as-good-as-your-reference-database">Tools are as good as your reference database</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sags">SAGs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gorg-tropics-a-collection-of-reference-genomes-from-individual-cells-from-the-tropical-and-sub-tropical-epipelagic-ocean">GORG-Tropics: A collection of reference genomes from individual cells from the Tropical and Sub-tropical Epipelagic Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#database-setup">Database Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prep">Data Prep</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-kaiju">Running Kaiju</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-results">Exploring Results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pca-for-beta-diversity">PCA for beta diversity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/ohw23/tutorials/03-Thu/OHW_omics_lesson.ipynb">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/ohw23/tutorials/03-Thu/OHW_omics_lesson.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, OceanHackWeek.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
