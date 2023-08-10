@@ -17,7 +17,7 @@ The following tutorials will be presented live (and broadcast live on zoom) duri
 :align: left
 ```
 
-[Myranda Shirk](https://www.vanderbilt.edu/datascience/data-science-team/) - **AI-assisted programming.**
+[Myranda Shirk](https://www.vanderbilt.edu/datascience/data-science-team/) - [**AI-assisted programming.**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/02-Wed/README.md)
 With the recent success of large language models (LLMs) such as ChatGPT, mastery of a programming language is no longer required to write successful code. In this tutorial, we will explore the new workflow of AI-assisted programming and how it can streamline your hackathon project, no matter your coding experience.
 
 ```{image} ../../assets/images/people/julia-brown.png
@@ -47,7 +47,7 @@ In addition, the following tutorials will be presented during our "shoulder bloc
   - [**Software installation survival guide** (conda and friends)](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/00-Mon/README.md)
   - [**Introduction to Machine Learning (ML)**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
 - [Derya Gumustel](https://github.com/dgumustel) - [**Introduction to git and github**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/01-Tue/README.md)
-- [Danilo Silva](https://github.com/nilodna) - **Introduction to Xarray**
+- [Danilo Silva](https://github.com/nilodna) - [**Introduction to Xarray**](https://github.com/oceanhackweek/ohw-tutorials/blob/OHW23/02-Wed/README.md)
 
 
 ## Lectures and Discussions
