@@ -2,6 +2,8 @@
 
 Projects from OceanHackWeek 2023.
 
+**Note:** There are a few additional projects from the team in Australia! They will be added soon.
+
 ## Inertial oscillations in the marginal ice zone
 
 - Project members: TO-BE-FILLED-IN!
