@@ -14,7 +14,7 @@ Projects from OceanHackWeek 2023.
 ### Oil spill monitoring: segmentation of satellite imagery
 
 - Project members: TO-BE-FILLED-IN!
-- GitHub repository: [https://github.com/oceanhackweek/ohw23-oil](https://github.com/oceanhackweek/ohw23_proj_oil)
+- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_oil](https://github.com/oceanhackweek/ohw23_proj_oil)
 - Presentation recording(s)
 <!-- - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g239da66eda5_26_0)  -->
 
