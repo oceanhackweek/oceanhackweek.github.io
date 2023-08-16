@@ -44,6 +44,7 @@ Projects from OceanHackWeek 2023.
 
 - Project members: TO-BE-FILLED-IN!
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_fancymoorings](https://github.com/oceanhackweek/ohw23_proj_fancymoorings)
+- Product: [Pacific Moorings Page](https://oceanhackweek.org/ohw23_proj_fancymoorings/)
 - [Presentation recording](https://youtu.be/90t6h36-BOQ)
 <!-- - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g239da66eda5_18_15) -->
 
@@ -60,29 +61,29 @@ Projects from OceanHackWeek 2023.
 ### Variability of the suppression of South Australian upwelling
 
 - Project members:
-- GitHub repository:
+- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_SAupwelling](https://github.com/oceanhackweek/ohw23_proj_SAupwelling)
 - Presentation recording(s)
 
 ### Direct geo referencing drone images
 
 - Project members:
-- GitHub repository:
+- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_drone_georef](https://github.com/oceanhackweek/ohw23_proj_drone_georef)
 - Presentation recording(s)
 
 ### Bioinformatic pipelines for standardized output
 
 - Project members:
-- GitHub repository:
-- Presentation recording(s)
-
-### Investigating the Indonesian throughflow
-
-- Project members:
-- GitHub repository:
+- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_amplicon](https://github.com/oceanhackweek/ohw23_proj_amplicon)
 - Presentation recording(s)
 
 ### Passive acoustics monitoring
 
 - Project members:
-- GitHub repository:
+- GitHub repository: [https://github.com/oceanhackweek/ohw23-proj-pamproject](https://github.com/oceanhackweek/ohw23-proj-pamproject)
+- Presentation recording(s)
+
+### Investigating the Indonesian throughflow
+
+- Project members:
+- GitHub repository: NO GITHUB REPOSITORY FOUND. MAYBE THIS PROJECT DID NOT GO THROUGH?
 - Presentation recording(s)
