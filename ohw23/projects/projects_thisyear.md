@@ -14,9 +14,9 @@ Projects from OceanHackWeek 2023.
 ### 2. Marine species distribution modeling tutorial: sea turtles
 
 - Project members: Catherine Courtier, Mackenzie Fiss, Denisse Fierro Arcos, Paulo Freire, Jade Hong, Caitlin O’Brien, Mary Solokas, Laura Tsang, Eli Holmes, Tylar Murray, Ben Tupper
-- Product: [Marine Species Distribution tutorial](https://oceanhackweek.org/ohw23_proj_marinesdms/)
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_marinesdms](https://github.com/oceanhackweek/ohw23_proj_marinesdms)
 - Presentation recordings: [Seattle + Virtual](https://youtu.be/6QGf7lvykC0) and [Australia](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=924)
+- Product: [Marine Species Distribution tutorial](https://oceanhackweek.org/ohw23_proj_marinesdms/)
 - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g25f8e87bf15_11_0)
 
 ### 3. Inertial oscillations in the marginal ice zone
@@ -44,8 +44,8 @@ Projects from OceanHackWeek 2023.
 
 - Project members: Seth Travis, Lu Guan, Samantha Huntington, Andrea Hilborn, Hafeez Opeyemi Oladejo, Tobias Ferreira, Veronica Martinez, Johnathan Evanilla, Halley McVeigh, Hameed Ajibade, Christian Sarason, Danilo Silva
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_fancymoorings](https://github.com/oceanhackweek/ohw23_proj_fancymoorings)
-- Product: [Pacific Moorings Page](https://oceanhackweek.org/ohw23_proj_fancymoorings/)
 - [Presentation recording](https://youtu.be/90t6h36-BOQ)
+- Product: [Pacific Moorings Page](https://oceanhackweek.org/ohw23_proj_fancymoorings/)
 <!-- - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g239da66eda5_18_15) -->
 
 ### 7. SST spatial distribution prediction using machine learning
@@ -59,26 +59,26 @@ Projects from OceanHackWeek 2023.
 
 ## Projects led by Australian participants
 
-### Variability of the suppression of South Australian upwelling
+### 1. Passive acoustics monitoring
 
-- Project members: Natalia Ribeiro, Marty Hidas, Vini Salazar, Duphrin Joseph, Alessio Arena, Catherine Kim
-- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_SAupwelling](https://github.com/oceanhackweek/ohw23_proj_SAupwelling)
-- [Presentation recording](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=1791)
+- Project members: Lucille Chapuis, Minh Phan
+- GitHub repository: [https://github.com/oceanhackweek/ohw23-proj-pamproject](https://github.com/oceanhackweek/ohw23-proj-pamproject)
+- [Presentation recording](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=3)
 
-### Direct geo referencing drone images
+### 2. Direct geo referencing drone images
 
 - Project members: Diana Vargas Ortega, Paul Branson, Nick Mortimer, Abdulla Alson Athif
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_drone_georef](https://github.com/oceanhackweek/ohw23_proj_drone_georef)
 - [Presentation recording](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=424)
 
-### Bioinformatic pipelines for standardized output
+### 3. Variability of the suppression of South Australian upwelling
+
+- Project members: Natalia Ribeiro, Marty Hidas, Vini Salazar, Duphrin Joseph, Alessio Arena, Catherine Kim
+- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_SAupwelling](https://github.com/oceanhackweek/ohw23_proj_SAupwelling)
+- [Presentation recording](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=1791)
+
+### 4. Bioinformatic pipelines for standardized output
 
 - Project members: Cindy Bessey, Vini Salazar
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_amplicon](https://github.com/oceanhackweek/ohw23_proj_amplicon)
-- Presentation recording(s)
-
-### Passive acoustics monitoring
-
-- Project members: Lucille Chapuis, Minh Phan
-- GitHub repository: [https://github.com/oceanhackweek/ohw23-proj-pamproject](https://github.com/oceanhackweek/ohw23-proj-pamproject)
-- [Presentation recording](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=3)
+- No presentation recording available
