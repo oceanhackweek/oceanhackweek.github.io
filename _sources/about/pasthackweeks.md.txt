@@ -13,59 +13,56 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 ## 2022 (OHW22)
 
-- A hybrid event with a global virtual event, several in-person "satellite" events, and satellites in Spanish and Portuguese.
+- A distributed, hybrid event with 104 participants encompassing a global virtual event, several in-person "satellite" events, and satellites in Spanish and Portuguese
 - Programming languages: Python + R
+- [15 tutorials](https://oceanhackweek.org/ohw22/tutorials-index/index.html) + [20 projects](https://oceanhackweek.org/ohw22/projects/projects_thisyear.html). Some tutorials may not be listed under the Tutorials page. See also the Global and Satellite schedule pages
+- [Schedule](https://oceanhackweek.org/ohw22/schedule.html)
+- Participant testimonials: *Will be added later*
 - [Web site](../ohw22/index)
-- **Additional details will be added soon.**
-
-
-<!-- - A hybrid event with 70 participants, including 19 in-person participants at the Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine
-- 7 tutorials + [11 projects](https://oceanhackweek.github.io/ohw-resources/projects/projectlist/)
-- [Schedule](https://oceanhackweek.github.io/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here.
-- [Participant testimonials](testimonials.md#ohw21-hybrid) -->
 
 ## 2021 (OHW21)
 
 - A hybrid event with 70 participants, including 19 in-person participants at the Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine
 - Programming languages: Python + R
-- 7 tutorials + [11 projects](https://oceanhackweek.github.io/ohw-resources/projects/projectlist/)
-- [Schedule](https://oceanhackweek.github.io/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here.
+- 7 tutorials + [11 projects](https://oceanhackweek.org/ohw-resources/projects/projectlist/)
+- [Schedule](https://oceanhackweek.org/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here
 - [Participant testimonials](testimonials.md#ohw21-hybrid)
-- [Web site](https://oceanhackweek.github.io/ohw21/)
-- [OHW21 Resources site](https://oceanhackweek.github.io/ohw-resources/)
+- [Web site](https://oceanhackweek.org/ohw21/)
+- [OHW21 Resources site](https://oceanhackweek.org/ohw-resources/)
 
 ## 2020 (OHW20)
 
 - A virtual event with 46 participants
 - Programming languages: Python + R
-- 10 tutorials + [8 projects](https://oceanhackweek.github.io/ohw21/projects_2020.html)
+- 10 tutorials + [8 projects](https://oceanhackweek.org/ohw21/projects_2020.html)
 - [Participant testimonials](testimonials.md#ohw20-virtual)
-- [Schedule](https://oceanhackweek.github.io/ohw-resources/ohw20/schedule/). Links to tutorials are found here.
-- [Web site](https://oceanhackweek.github.io/ohw20/)
-- [OHW20 Resources site](https://oceanhackweek.github.io/ohw-resources/ohw20/)
+- [Schedule](https://oceanhackweek.org/ohw-resources/ohw20/schedule/). Links to tutorials are found here
+- [Web site](https://oceanhackweek.org/ohw20/)
+- [OHW20 Resources site](https://oceanhackweek.org/ohw-resources/ohw20/)
 
 ## 2019 (OHW19)
 
 - An in-person event with 54 participants at the University of Washington, Seattle, Washington
 - Programming languages: Python
-- 8 tutorials + [11 projects](https://oceanhackweek.github.io/ohw19/projects_2019.html)
+- 8 tutorials + [11 projects](https://oceanhackweek.org/ohw19/projects_2019.html)
 - [Participant testimonials](testimonials.md#ohw19-in-person)
-- [Schedule](https://oceanhackweek.github.io/ohw19/curriculum_2019.html). Links to tutorials are found here.
-- [Web site](https://oceanhackweek.github.io/ohw19/)
+- [Schedule](https://oceanhackweek.org/ohw19/curriculum_2019.html). Links to tutorials are found here
+- [Web site](https://oceanhackweek.org/ohw19/)
 
 ## 2018 (OHW18)
 
 - An in-person event with 52 participants at the University of Washington, Seattle, Washington
 - Programming languages: Python
-- 13 tutorials + [11 projects](https://oceanhackweek.github.io/ohw2018/projects.html)
+- 13 tutorials + [11 projects](https://oceanhackweek.org/ohw2018/projects.html)
 - [Participant testimonials](testimonials.md#ohw18-in-person)
-- [Schedule](https://oceanhackweek.github.io/ohw2018/schedule.html). Links to tutorials are found here.
-- [Web site](https://oceanhackweek.github.io/ohw2018/)
+- [Schedule](https://oceanhackweek.org/ohw2018/schedule.html). Links to tutorials are found here
+- [Web site](https://oceanhackweek.org/ohw2018/)
 
 
 ```{toctree}
 :maxdepth: 1
 :hidden:
 
+../ohw23/index.md
 ../ohw22/index.md
 ```

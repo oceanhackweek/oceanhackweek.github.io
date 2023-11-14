@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -35,8 +35,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -86,6 +87,15 @@
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
   <input type="checkbox"
           class="sidebar-toggle"
           name="__primary"
@@ -125,7 +135,8 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
   
@@ -136,12 +147,12 @@
   
   
   
+  
     <p class="title logo__title">OceanHackWeek</p>
   
 </a></div>
     
   </div>
-  
   
   <div class="col-lg-9 navbar-header-items">
     
@@ -176,20 +187,20 @@
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links" class="dropdown-menu">
                     
                     <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../../about/pasthackweeks.html">
+                      <a class="nav-link dropdown-item nav-internal" href="../../about/pasthackweeks.html">
                         Past OHW Events
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -201,13 +212,15 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
@@ -222,8 +235,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -234,8 +247,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments"></i></span>
-            <label class="sr-only">Discussions</label></a>
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discussions</span></a>
         </li>
         <li class="nav-item">
           
@@ -246,8 +259,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -258,8 +271,8 @@ document.write(`
           
           
           
-          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square"></i></span>
-            <label class="sr-only">YouTube</label></a>
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
         </li>
         <li class="nav-item">
           
@@ -270,8 +283,8 @@ document.write(`
           
           
           
-          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope"></i></span>
-            <label class="sr-only">Email</label></a>
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Email</span></a>
         </li>
 </ul></div>
       
@@ -281,18 +294,20 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -341,20 +356,20 @@ document.write(`
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
                     <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../../about/pasthackweeks.html">
+                      <a class="nav-link dropdown-item nav-internal" href="../../about/pasthackweeks.html">
                         Past OHW Events
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -376,8 +391,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -388,8 +403,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments"></i></span>
-            <label class="sr-only">Discussions</label></a>
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discussions</span></a>
         </li>
         <li class="nav-item">
           
@@ -400,8 +415,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -412,8 +427,8 @@ document.write(`
           
           
           
-          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square"></i></span>
-            <label class="sr-only">YouTube</label></a>
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
         </li>
         <li class="nav-item">
           
@@ -424,8 +439,8 @@ document.write(`
           
           
           
-          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope"></i></span>
-            <label class="sr-only">Email</label></a>
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Email</span></a>
         </li>
 </ul></div>
         
@@ -452,32 +467,72 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">OceanHackWeek 2022 (OHW22)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="../schedule.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ohw23/index.html">OceanHackWeek 2023 (OHW23)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ohw23/schedule.html">Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ohw23/organizers.html">Organizers</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ohw23/logistics/index.html">Logistics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/logistics/getting_help.html">Getting Help</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ohw23/tutorials-index/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/tutorials_getting_started.html">Getting started on tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/tutorials/01-Tue/Data_access_methods_Python.html">Data Access Methods</a></li>
+
+
+
+
+
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../ohw23/tutorials-index/machine-learning.html">Machine learning</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ohw23/tutorials/01-Tue/machine-learning/00-what-is-a-pellet.html">The dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ohw23/tutorials/01-Tue/machine-learning/01-unsupervised-PCA.html">A quick introduction to machine learning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ohw23/tutorials/01-Tue/machine-learning/02-unsupervised-kmeans.html">Unsupervised learning part 2: kmeans</a></li>
+
+
+
+<li class="toctree-l4"><a class="reference internal" href="../../ohw23/tutorials/01-Tue/machine-learning/03-supervised-knn.html">Supervised learning</a></li>
+
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/tutorials/02-Wed/ai_assisted_programming_ohw.html">AI-Assisted Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/tutorials/02-Wed/xarray-in-45-min.html">Xarray in 45 minutes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/tutorials/03-Thu/OHW_omics_lesson.html">Meta’omics for Ocean Science</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ohw23/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ohw23/projects/projects_thisyear.html">OHW23 Projects List</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ohw23/applicants.html">Information for Applicants</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">OceanHackWeek 2022 (OHW22)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../schedule.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../global/index.html">Global Virtual Event</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../satellites.html">Regional Satellite Events</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../satellites.html">Regional Satellite Events</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../maine/index.html">US Northeast</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../seattle/index.html">US Northwest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../san-diego/index.html">US Southwest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../australia/index.html">Australia</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Brazil</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../espanol/index.es.html">Español</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../espanol/index.es.html">Español</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../espanol/index.en.html">English Description</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../organizers.html">Organizers</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../logistics/index.html">Logistics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../logistics/index.html">Logistics</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../logistics/getting_help.html">Getting Help</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../tutorials-index/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../tutorials-index/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../tutorials_getting_started.html">Getting started on tutorials</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../tutorials/00-Mon/xarray-in-45-min.html">Xarray in 45 minutes</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-access-in-python.html">Data access in Python</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-access-in-python.html">Data access in Python</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/01-Tue/00-data-access-in-python/00-data-access.html">Data Access</a></li>
 
 
@@ -510,7 +565,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/01-Tue/00-data-access-in-python/04-extras-erddapy_saildrone.html">First create the erddapy object</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-access-in-r.html">Data access in R</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-access-in-r.html">Data access in R</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/01-Tue/00-data-access-in-R/01_data_access.html">1) ERDDAP</a></li>
 
 
@@ -524,7 +579,7 @@ document.write(`
 
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-vis-in-python.html">Data visualization in Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/data-vis-in-python.html">Data visualization in Python</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/02-Wed/01-data-visualization-in-python/tutorial/index.html">Index and Schedule</a></li>
 
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/02-Wed/01-data-visualization-in-python/tutorial/00_Setup.html">Getting set up</a></li>
@@ -555,7 +610,7 @@ document.write(`
 
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/machine-learning-applications.html">Machine learning applications</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/machine-learning-applications.html">Machine learning applications</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/03-Thu/00-machine-learning/00-unsupervised-PCA.html">A quick introduction to machine learning</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/03-Thu/00-machine-learning/01-unsupervised-kmeans.html">Unsupervised learning part 2: kmeans</a></li>
 
@@ -565,7 +620,7 @@ document.write(`
 
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/espanol/index.html">Espanol Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../tutorials-index/espanol/index.html">Espanol Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials-index/espanol/python-cientifico.html">Python Cientifico</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../tutorials/optional/espanol/datos-espaciales-tidy/Notas.html">Lectura de datos</a></li>
 
@@ -574,7 +629,7 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="../tutorials/optional/managing-conda-envs/README.html">Managing conda environments</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../projects/projects_thisyear.html">OHW22 Projects List</a></li>
 </ul>
 </li>
@@ -612,8 +667,8 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../../index.html" class="nav-link" aria-label="Home">
@@ -629,7 +684,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../satellites.html" class="nav-link">OHW22 Regional Satellite Events</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">UFSC Satellite (Florianópolis, Brazil)</li>
+    <li class="breadcrumb-item active" aria-current="page">UFSC...</li>
   </ul>
 </nav>
 </div>
@@ -702,11 +757,10 @@ Please tag the organizers with <code class="docutils literal notranslate"><span 
               
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../australia/index.html"
@@ -726,10 +780,7 @@ Please tag the organizers with <code class="docutils literal notranslate"><span 
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -789,8 +840,8 @@ Please tag the organizers with <code class="docutils literal notranslate"><span 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -816,10 +867,11 @@ Please tag the organizers with <code class="docutils literal notranslate"><span 
     </div>
   
   
+  
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.3.
 </p></div>
       
     </div>
