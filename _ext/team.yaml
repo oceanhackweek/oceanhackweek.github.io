@@ -335,3 +335,13 @@ team:
     roles:
       - OHW20 Participant
  
+  - name: Natalia Ribeiro
+    title: Science Officer
+    affiliate: Integrated Marine Observing System (IMOS), Australia
+    image_url: https://imos.org.au/fileadmin/_processed_/b/c/csm_DSC_8209_f513b959ad.jpg
+    github_user: ribeiron
+    email: natalia.ribeirosantos@utas.edu.au
+    roles:
+      - Steering Committee
+      - OHW22 Participant
+      - OHW23 Participant
