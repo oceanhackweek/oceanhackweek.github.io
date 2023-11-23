@@ -6,24 +6,26 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} OceanHackWeek 2023 will be on August 7 - 11!
+:::{admonition} Stay tuned for OceanHackWeek 2024
 :class: important
 
-OceanHackWeek 2023 will be a hybrid workshop with a global virtual event; a 20-25 in-person event at the University of Washington in Seattle, WA, USA; and a small in-person event in Dunsborough, Western Australia. **Applicants have been notified and participants should expect further communications**
+Check back here in early 2024 for updates on OceanHackWeek 2024! In the meantime, [check out our past events,](about/pasthackweeks) including [OHW23](ohw23/index).
 
+<!-- 
 ```{button-link} ohw23/
 :color: primary
 :expand:
 :tooltip: OHW23
 Go to OceanHackWeek 2023
 ```
-<!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+-->
 :::
 
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 
-<!-- ::::{grid} 1 2 2 2
+<!--
+::::{grid} 1 2 2 2
 :::{grid-item-card}  Get started
 
 - **(start/your-first-book.md)**: a step-by-step tutorial to get started.
@@ -36,7 +38,8 @@ Go to OceanHackWeek 2023
 
 [**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
 :::
-:::: -->
+::::
+-->
 
 ## About OceanHackWeek
 
