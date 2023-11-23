@@ -1,5 +1,9 @@
 # About
 
+```{epigraph}
+**OUR MISSION** is to meet, collaborate, and learn at the intersection of ocean and data sciences. We create vibrant, diverse, and inclusive communities that push the future of open science.
+```
+
 OceanHackWeek (OHW) is a 5-day collaborative learning experience aimed at exploring,
 creating and promoting effective computation and analysis workflows for
 large and complex oceanographic data. It includes tutorials, data exploration, software development, collaborative projects and community networking.
