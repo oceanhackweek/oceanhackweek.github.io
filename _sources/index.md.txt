@@ -6,24 +6,26 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} OceanHackWeek 2023 will be on August 7 - 11!
+:::{admonition} Stay tuned for OceanHackWeek 2024
 :class: important
 
-OceanHackWeek 2023 will be a hybrid workshop with a global virtual event; a 20-25 in-person event at the University of Washington in Seattle, WA, USA; and a small in-person event in Dunsborough, Western Australia. **Applicants have been notified and participants should expect further communications**
+Check back here in early 2024 for updates on OceanHackWeek 2024! In the meantime, [check out our past events,](about/pasthackweeks) including [OHW23](ohw23/index).
 
+<!-- 
 ```{button-link} ohw23/
 :color: primary
 :expand:
 :tooltip: OHW23
 Go to OceanHackWeek 2023
 ```
-<!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+-->
 :::
 
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
 
-<!-- ::::{grid} 1 2 2 2
+<!--
+::::{grid} 1 2 2 2
 :::{grid-item-card}  Get started
 
 - **(start/your-first-book.md)**: a step-by-step tutorial to get started.
@@ -36,9 +38,14 @@ Go to OceanHackWeek 2023
 
 [**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
 :::
-:::: -->
+::::
+-->
 
 ## About OceanHackWeek
+
+```{epigraph}
+**OUR MISSION** is to meet, collaborate, and learn at the intersection of ocean and data sciences. We create vibrant, diverse, and inclusive communities that push the future of open science.
+```
 
 ```{image} assets/images/OHW21-collage-the3groups.jpg
 :alt: OHW21 in person and on Zoom
@@ -52,13 +59,6 @@ Its objectives are to:
 				
 - Promote data and software proficiency in ocean scientists: Provide participants with computational and data science skills that can advance oceanography research, which often requires the integration and manipulation of diverse sources of data and models.
 - Facilitate inclusive community building: Connect oceanographers across disciplines and career stages and cultivate an open science and a sharing culture.
-
-
-<!-- OceanHackWeek 2021 will take place as a hybrid in-person and virtual, online event. The in-person event will take place at the Bigelow Laboratory for Ocean Sciences, in East Boothbay, Maine (US EDT, UTC-4), as an all-day workshop (approximately 9am - 5pm). For the virtual event, formal daily activities will take place over a period of up to 3 hours per day. We expect to hold these sessions in at least two time zones, USA PDT (UTC-7) and Australian EST (UTC+10). -->
-
-<!-- ## Information For Applicants
-
-OceanHackWeek (OHW) 2021 will take place as a hybrid in-person and virtual, online event. Applications closed on June 28, 2021. In OceanHackWeek we will explore the intersection of data science and oceanography through tutorials and hands-on “hacking” projects. To best benefit from the program, participants are expected to have some experience with Python or R programming and data analysis. -->
 
 
 :::{admonition} Participant Quotes
