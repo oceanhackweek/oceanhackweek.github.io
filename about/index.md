@@ -55,7 +55,6 @@ The hackweek model was spearheaded by the successful [*Astro-*](http://astrohack
 
 steering_committee
 ohw-charter
-task-groups
 pasthackweeks
 Testimonials <testimonials>
 code-of-conduct
