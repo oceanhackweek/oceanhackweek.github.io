@@ -6,10 +6,10 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Stay tuned for OceanHackWeek 2024
+:::{admonition} Volunteer to help with OceanHackWeek 2024!
 :class: important
 
-Check back here in early 2024 for updates on OceanHackWeek 2024! In the meantime, [check out our past events,](about/pasthackweeks) including [OHW23](ohw23/index).
+OceanHackWeek 2024 will be August 26 - 30! We are recruiting Organizing Committee members, tutorial instructors, and project mentors for the event. [**Go to the OceanHackWeek 2024 page to learn more and apply.**](ohw24/index)
 
 <!-- 
 ```{button-link} ohw23/
@@ -152,7 +152,7 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 :hidden:
 
 about/index.md
-OceanHackWeek 2023 <ohw23/index.md>
+OceanHackWeek 2024 <ohw24/index.md>
 resources/index.md
 about/pasthackweeks.md
 ```
