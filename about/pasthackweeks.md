@@ -24,8 +24,8 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 - A distributed, hybrid event with 104 participants encompassing a global virtual event, several in-person "satellite" events, and satellites in Spanish and Portuguese
 - Programming languages: Python + R
-- [15 tutorials](https://oceanhackweek.org/ohw22/tutorials-index/index.html) + [20 projects](https://oceanhackweek.org/ohw22/projects/projects_thisyear.html). Some tutorials may not be listed under the Tutorials page. See also the Global and Satellite schedule pages
-- [Schedule](https://oceanhackweek.org/ohw22/schedule.html)
+- [15 tutorials](../ohw22/tutorials-index/index) + [20 projects](../ohw22/projects/projects_thisyear). Some tutorials may not be listed under the Tutorials page. See also the Global and Satellite schedule pages
+- [Schedule](../ohw22/schedule)
 - Participant testimonials: *Will be added later*
 - [Web site](../ohw22/index)
 
@@ -53,10 +53,10 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 - An in-person event with 54 participants at the University of Washington, Seattle, Washington
 - Programming languages: Python
-- 8 tutorials + [11 projects](https://oceanhackweek.org/ohw19/projects_2019.html)
+- 8 tutorials + [11 projects](/ohw19/projects_2019.html)
 - [Participant testimonials](testimonials.md#ohw19-in-person)
-- [Schedule](https://oceanhackweek.org/ohw19/curriculum_2019.html). Links to tutorials are found here
-- [Web site](https://oceanhackweek.org/ohw19/)
+- [Schedule](/ohw19/curriculum_2019.html). Links to tutorials are found here
+- [Web site](/ohw19/index.html)
 
 ## 2018 (OHW18)
 
