@@ -103,6 +103,7 @@ html_context = {
 html_title = "OceanHackWeek"
 # html_favicon = "_static/magnifying.ico"
 html_static_path = ["_static"]
+html_extra_path = ["ohw18-21"]
 html_sidebars = {
     "index": [
         "hello.html",
