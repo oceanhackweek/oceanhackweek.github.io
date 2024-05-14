@@ -123,7 +123,7 @@ team:
   - name: Paige Martin
     title: Support Scientist
     affiliate: NASA Transform to Open Science
-    image_url: https://paigem.github.io/assets/paige.jpg
+    image_url: https://www.access-nri.org.au/wp-content/uploads/2022/10/PAige-headshot-300x300.jpg
     github_user: paigem
     roles:
       - Steering Committee - Emeritus
@@ -209,7 +209,7 @@ team:
     github_user: NickMortimer
     email: Nick.Mortimer@csiro.au
     roles:
-      - Steering Committee
+      - Steering Committee - Emeritus
       - OHW20 Participant
       - OHW21 Organizer - Australia
       - OHW22 Organizer - Australia
