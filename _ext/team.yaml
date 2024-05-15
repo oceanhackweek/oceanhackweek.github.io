@@ -54,8 +54,8 @@ team:
       - OHW22 Organizer - Seattle UG
 
   - name: Joseph Gum
-    title: Data Analyst
-    affiliate: University of Hawaii at Manoa
+    title: Data Stewardship Coordinator
+    affiliate: NSF NCAR
     image_url: https://oceanhackweek.github.io/assets/images/jgum.jpg
     github_user: asx-
     roles:
@@ -121,8 +121,8 @@ team:
       - OHW23 Organizer
 
   - name: Paige Martin
-    title: Support Scientist
-    affiliate: NASA Transform to Open Science
+    title: User Training Team Leader
+    affiliate: ACCESS-NRI, Australia
     image_url: https://www.access-nri.org.au/wp-content/uploads/2022/10/PAige-headshot-300x300.jpg
     github_user: paigem
     roles:
