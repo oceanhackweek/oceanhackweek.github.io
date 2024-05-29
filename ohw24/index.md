@@ -2,8 +2,8 @@
 
 OceanHackWeek 2024 (OHW24) will be held on **August 26-30, 2024** as two in-person events, in East Boothbay, Maine, US and in Sydney, Australia. The US in-person event will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org).
 
-```{image} ../assets/images/ohw_hacking/ohw19-hacking.JPG
-:alt: OHW19 in person, hacking
+```{image} ../assets/images/ohw_hacking/ohw21-Bigelow-outing.jpg
+:alt: OHW21 in person, taking a break
 :width: 230px
 :align: left
 ```
@@ -15,21 +15,13 @@ See the [OHW23 program](https://oceanhackweek.org/ohw23/) (a hybrid event) to ge
 ```{admonition} Applications will open soon!
 :class: important
 
-Please come back in early June for updates!
+Please come back in early June for updates! See the [Information for Applicants](applicants) page.
 ```
 
 
 ## OHW24 Sponsors
 
 <div class="row">
-  <div class="col-4" style="margin-bottom: 1rem">
-
-```{image} ../assets/images/eScience_square_logo.jpg
-:alt: UW eScience
-:width: 150px
-```
-
-  </div>
   <div class="col-4" style="margin-bottom: 1rem">
 
 ```{image} ../assets/images/BigelowLabs.png
@@ -48,6 +40,8 @@ Please come back in early June for updates!
   </div>
 </div>
 
+
+<div>
   <div class="col-4" style="margin-bottom: 1rem">
 
 ```{image} ../assets/images/ioos_logo.jpg
@@ -67,5 +61,5 @@ Please come back in early June for updates!
 :hidden:
 
 Organizers <organizers>
-<!-- Information for Applicants <applicants> -->
+Information for Applicants <applicants>
 ```
