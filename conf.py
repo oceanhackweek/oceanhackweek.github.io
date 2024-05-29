@@ -140,7 +140,7 @@ myst_deflist_enable = True
 myst_heading_anchors = 3
 myst_update_mathjax = False
 myst_enable_extensions = [
-    "attrs_inline", 
+    # "attrs_inline", 
     "colon_fence",
     "substitution"
 ]
