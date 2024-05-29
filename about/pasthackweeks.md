@@ -53,10 +53,10 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 - An in-person event with 54 participants at the University of Washington, Seattle, Washington
 - Programming languages: Python
-- 8 tutorials + [11 projects](/ohw19/projects_2019.html)
+- 8 tutorials + [11 projects](https://oceanhackweek.org/ohw19/projects_2019.html)
 - [Participant testimonials](testimonials.md#ohw19-in-person)
-- [Schedule](/ohw19/curriculum_2019.html). Links to tutorials are found here
-- [Web site](/ohw19/index.html)
+- [Schedule](https://oceanhackweek.org/ohw19/curriculum_2019.html). Links to tutorials are found here
+- [Web site](https://oceanhackweek.org/ohw19/index.html)
 
 ## 2018 (OHW18)
 
