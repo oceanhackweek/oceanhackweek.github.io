@@ -2,10 +2,10 @@ name: ohw-site
 channels:
   - conda-forge
 dependencies:
-  - python>=3.8,<3.9
+  - python>=3.11,<3.12
   # website/blog building
-  - myst-nb>=0.16.0
-  - sphinx>= 5.0.2
+  - myst-nb>=0.19.0
+  - sphinx>=5.0.2
   - jupytext
   - pre-commit
   # - sphinx-panels
