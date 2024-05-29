@@ -6,19 +6,17 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Volunteer to help with OceanHackWeek 2024!
+:::{admonition} OceanHackWeek 2024 will be on August 26 - 30!
 :class: important
+OceanHackWeek 2024 will be an in-person event with two in-person gatherings in Maine, US and Sydney, Australia. Visit the [OHW24 event web site](ohw24/index) for more information,
+including updates about when applications will open!
 
-OceanHackWeek 2024 will be August 26 - 30! We are recruiting Organizing Committee members, tutorial instructors, and project mentors for the event. [**Go to the OceanHackWeek 2024 page to learn more and apply.**](ohw24/index)
-
-<!-- 
-```{button-link} ohw23/
+```{button-link} ohw24/
 :color: primary
 :expand:
-:tooltip: OHW23
-Go to OceanHackWeek 2023
+:tooltip: OHW24
+Go to OceanHackWeek 2024
 ```
--->
 :::
 
 

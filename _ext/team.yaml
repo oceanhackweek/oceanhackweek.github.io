@@ -32,6 +32,7 @@ team:
       - OHW21 Organizer
       - OHW22 Organizer - Florianopolis
       - OHW23 Organizer
+      - OHW24 Organizer
 
   - name: Chelle Gentemann
     title: Senior Scientist
@@ -68,6 +69,7 @@ team:
       - OHW21 Organizer
       - OHW22 Organizer - Global
       - OHW23 Organizer
+      - OHW24 Organizer - USA
 
   - name: Charley Haley
     title: Organizational & Social Strategist
@@ -90,6 +92,7 @@ team:
       - OHW21 Organizer - Maine
       - OHW22 Organizer - Maine
       - OHW23 Organizer
+      - OHW24 Organizer - USA
 
   - name: Jane Koh
     title: Program Specialist
@@ -119,6 +122,7 @@ team:
       - OHW21 Organizer
       - OHW22 Organizer - Seattle
       - OHW23 Organizer
+      - OHW24 Organizer - USA
 
   - name: Paige Martin
     title: User Training Team Leader
@@ -132,6 +136,7 @@ team:
       - Website
       - OHW21 Organizer - Australia
       - OHW22 Organizer - Global
+      - OHW24 Organizer - Australia
 
   - name: Emilio Mayorga
     title: Senior Oceanographer
@@ -168,6 +173,7 @@ team:
       - OHW21 Organizer - Maine
       - OHW22 Organizer - Maine
       - OHW23 Organizer
+      - OHW24 Organizer - USA
 
   - name: Thomas Moore
     title: Ocean Data Analyst
@@ -178,6 +184,7 @@ team:
       - Steering Committee
       - OHW21 Organizer - Australia
       - OHW22 Organizer
+      - OHW24 Organizer - Australia
 
   - name: Nick Record
     title: Senior Research Scientist
@@ -201,6 +208,7 @@ team:
       - OHW21 Organizer
       - OHW22 Organizer - Seattle
       - OHW23 Organizer
+      - OHW24 Organizer - USA
 
   - name: Nick Mortimer
     title: Senior Engineer
@@ -214,6 +222,7 @@ team:
       - OHW21 Organizer - Australia
       - OHW22 Organizer - Australia
       - OHW23 Organizer
+      - OHW24 Organizer - Australia
 
   - name: Sophie Clayton
     title: Assistant Professor of Oceanography
@@ -270,6 +279,7 @@ team:
       - OHW21 Participant
       - OHW22 Organizer - Espanol
       - OHW23 Organizer
+      - OHW24 Organizer - Australia
 
   - name: Ángel Segura
     title: Adjunct Professor
@@ -318,6 +328,7 @@ team:
     # email:
     roles:
       - OHW23 Organizer
+      - OHW24 Organizer - USA
       
   - name: Ben Tupper
     title: Senior Research Associate
@@ -345,3 +356,4 @@ team:
       - Steering Committee
       - OHW22 Participant
       - OHW23 Participant
+      - OHW24 Organizer - Australia
