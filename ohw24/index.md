@@ -18,6 +18,12 @@ See the [OHW23 program](https://oceanhackweek.org/ohw23/) (a hybrid event) to ge
 Please come back in early June for updates! See the [Information for Applicants](applicants) page.
 ```
 
+```{admonition} Apply to help with OceanHackWeek 2024!
+:class: important
+
+We are still looking for volunteers to help with OceanHackWeek 2024! Please [apply here](https://share.hsforms.com/1wW5CSVglSJyqAyG_EV3vXwe5s09). You can direct any questions to <a href="mailto:info@oceanhackweek.org" target="_blank">info@oceanhackweek.org</a>.
+```
+
 
 ## OHW24 Sponsors
 
