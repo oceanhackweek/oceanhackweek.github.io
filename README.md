@@ -1,7 +1,5 @@
 # OceanHackweek web site
 
-GitHub repository for the OceanHackweek (OHW) website, [https://oceanhackweek.github.io](https://oceanhackweek.github.io). The site is built on [Jekyll](https://jekyllrb.com).
-
 **Instructions for editing the content of the site** are found in [_InstructionSiteUpdates.md](_InstructionSiteUpdates.md). This document lays out which files control what content and provide instructions for deploying Jekyll locally and running it to update your local edits before submitting a pull request.
 
 ## Archived sites and pages from previous years
