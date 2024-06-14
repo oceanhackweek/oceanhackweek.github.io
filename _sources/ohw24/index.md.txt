@@ -12,10 +12,10 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
 See the [OHW23 program](https://oceanhackweek.org/ohw23/) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
-```{admonition} Applications will open soon!
+```{admonition} Applications for OHW24 are now open!
 :class: important
 
-Please come back in early June for updates! See the [Information for Applicants](applicants) page.
+Visit the [Information for Applicants page](./applicants) for more information, including the link to the application and an FAQ about the event and the application.
 ```
 
 ```{admonition} Apply to help with OceanHackWeek 2024!
