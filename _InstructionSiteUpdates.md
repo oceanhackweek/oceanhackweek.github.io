@@ -1,6 +1,6 @@
 # Editing OHW web site content and layout
 
-The OceanHackweek web site uses [Sphinx](https://www.sphinx-doc.org/en/master/) with the [PyData theme](https://pydata-sphinx-theme.readthedocs.io/en/latest/index.html) and [Ablog](https://ablog.readthedocs.io/en/latest/) for adding posts.
+The OceanHackweek web site uses [Sphinx](https://www.sphinx-doc.org/en/master/) with the [PyData theme](https://pydata-sphinx-theme.readthedocs.io/en/latest/index.html) and [Ablog](https://ablog.readthedocs.io/) for adding posts.
 
 For quick changes to single pages, you can make edits directly via Github, or to make deeper changes you can work locally.
 
@@ -90,7 +90,7 @@ posts
 
 Like pages, posts can be written as ReStructured Text, Markdown, or Jupyter notebooks. To be treated as a post, they need to be within the `posts/` directory, and have a selection of metadata.
 
-The location and structure of the metadata varies depending on filetype. For a full list of the options, see the [ABlog](https://ablog.readthedocs.io/en/latest/manual/posting-and-listing/) documentation.
+The location and structure of the metadata varies depending on filetype. For a full list of the options, see the [ABlog](https://ablog.readthedocs.io/manual/posting-and-listing/) documentation.
 
 #### Markdown
 

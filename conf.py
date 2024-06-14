@@ -151,3 +151,9 @@ nb_custom_formats = {".Rmd": ["jupytext.reads", {"fmt": "Rmd"}]}
 
 def setup(app):
     app.add_css_file("custom.css")
+
+
+linkcheck_ignore = [
+    "http://127.0.0.1:8000/",
+    "https://github.com/myghusername/ohw21-proj-ProjectName",
+]
