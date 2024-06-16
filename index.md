@@ -145,6 +145,16 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 ```
 
   </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+  
+  ```{image} assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
+  :alt: GOMO
+  :width: 180px
+  ```
+
+  </div>
+
 </div>
 
 
