@@ -44,6 +44,15 @@ We are still looking for volunteers to help with OceanHackWeek 2024! Please [app
 ```
 
   </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+ 
+```{image} ../assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
+:alt: GOMO
+:width: 180px
+```
+
+  </div>
 </div>
 
 
