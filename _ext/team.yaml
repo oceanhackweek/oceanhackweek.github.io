@@ -362,6 +362,7 @@ team:
     title: Program Manager
     affiliate: NOAA GOMO 
     image_url: https://static.wixstatic.com/media/1cb406_edd4a711bfae40ca81ecd71e90079079~mv2.jpg
+    github_user: hilatitude
     email: cynthia.garcia@noaa.gov
     roles:
       - Applicant Selection
