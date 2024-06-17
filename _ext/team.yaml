@@ -357,3 +357,13 @@ team:
       - OHW22 Participant
       - OHW23 Participant
       - OHW24 Organizer - Australia
+
+  - name: Cynthia Garcia 
+    title: Program Manager
+    affiliate: NOAA GOMO 
+    image_url: https://static.wixstatic.com/media/1cb406_edd4a711bfae40ca81ecd71e90079079~mv2.jpg
+    email: cynthia.garcia@noaa.gov
+    roles:
+      - Applicant Selection
+      - OHW22 Participant - Maine
+      - OHW24 Organizer - USA
