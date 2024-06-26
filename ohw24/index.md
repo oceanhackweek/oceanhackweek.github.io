@@ -56,13 +56,22 @@ We are still looking for volunteers to help with OceanHackWeek 2024! Please [app
 </div>
 
 
-<div>
+<div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
 ```{image} ../assets/images/ioos_logo.jpg
 :alt: IOOS
 :width: 180px
 ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/GMRI.png
+  :alt: Gulf of Maine Research Institute
+  :width: 180px
+  ```
 
   </div>
 
