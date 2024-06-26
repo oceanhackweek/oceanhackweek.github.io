@@ -155,6 +155,15 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 
   </div>
 
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} assets/images/logos/GMRI.png
+  :alt: Gulf of Maine Research Institute
+  :width: 180px
+  ```
+
+  </div>
+
 </div>
 
 
