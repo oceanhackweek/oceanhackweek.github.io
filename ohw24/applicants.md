@@ -12,8 +12,8 @@ OceanHackWeek 2024 (OHW24) is a hands-on, interactive in-person workshop focused
 ```{admonition} Applications for OHW24 are now open!
 :class: important
 
-Applications opened on June 14. **To apply, please [fill out this form](https://docs.google.com/forms/d/e/1FAIpQLScM_6iV2DPAjaG3gxdDbPfkTRa5yC6Rpnbr1VIXfYK3fzNvDw/viewform) by the end of June 30, 2024.**  
-Accepted applicants will be notified no later than July 9, 2024.
+Applications opened on June 14. **To apply, please [fill out this form](https://docs.google.com/forms/d/e/1FAIpQLScM_6iV2DPAjaG3gxdDbPfkTRa5yC6Rpnbr1VIXfYK3fzNvDw/viewform). We will start reviewing applications on July 8th, 2024.**  
+Accepted applicants will be notified no later than July 15, 2024.
 ```
 
 **See the [main OHW24 page](index) for information about each of the two in-person OHW24 events, in the US and in Australia.**
