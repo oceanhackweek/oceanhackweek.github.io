@@ -9,12 +9,6 @@ permalink: applicant-info.html
 
 OceanHackWeek 2024 (OHW24) is a hands-on, interactive in-person workshop focused on data science in oceanography and fisheries that will be held on **August 26-30, 2024**. Join us for five days of tutorials, data exploration, software development and community networking!
 
-```{admonition} Applications for OHW24 are now open!
-:class: important
-
-Applications opened on June 14. **To apply, please [fill out this form](https://docs.google.com/forms/d/e/1FAIpQLScM_6iV2DPAjaG3gxdDbPfkTRa5yC6Rpnbr1VIXfYK3fzNvDw/viewform). We will start reviewing applications on July 8th, 2024.**  
-Accepted applicants will be notified no later than July 15, 2024.
-```
 
 **See the [main OHW24 page](index) for information about each of the two in-person OHW24 events, in the US and in Australia.**
 
