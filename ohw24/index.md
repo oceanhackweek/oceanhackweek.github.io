@@ -13,6 +13,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 See the [OHW23 program](https://oceanhackweek.org/ohw23/) (a hybrid event) to get a better sense of the usual activities and how they're organized.
 
 
+
 ```{admonition} Apply to help with OceanHackWeek 2024!
 :class: important
 
