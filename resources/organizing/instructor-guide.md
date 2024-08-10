@@ -36,4 +36,15 @@ Although the content of your tutorial may not seem a lot when presented as stand
 * Share lessons learned: what worked well, what did not
 * Did you have to pivot the project?
 
+## Technical Setup
+
+Oceanhackweek usualy provides a JupyterHub environment within which participants can run any interactive tutorials. As an instructor you will have to ensure that your tutorial can run within the environment. For that you will need to:
+* provide your github username to the organizing team so that you get added to JupyterHub
+* familiarize yourself with the JupyterHub environment ([JupyterHub Intro](https://github.com/valentina-s/oceanhackweek.github.io/blob/instructor-guide/resources/prep/jupyterhub.md))
+* Identify which packages (and corresponding versions) you will need for the tutorial and provide them to the organizing team so that they are included into an image for building the JupyterHub (those can be PyPi, `conda`/`conda-forge`, R)
+* Ensure participants have access to the datasets used in the tutorial
+  * If there is need to store some datasets on JupyterHub, let us know!
+  * Make sure the datasets are reduced to a reasonable size to demonstrate the point, but not make the tutorial cumbersome to run
+  * If the tutorial requires executing many expensive queries to a server, please, consider storing a local copy for the demonstration
+
 
