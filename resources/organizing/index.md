@@ -6,4 +6,6 @@ These are resources on how to organize OceanHackWeek.
 
 Project Mentors <./project-mentor-guide>
 ./helpers
+
+Tutorial Instructors <./instructor-guide>
 ```
