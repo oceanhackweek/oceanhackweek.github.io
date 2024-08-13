@@ -19,7 +19,7 @@ Please provide a few measurable learning objectives for your tutorial: those sho
 Think about the balance of how your tutorial can be helpful to participants during the hackweek vs. afterwards throughout their careers.
 
 ## General Tips
-Think of ways to engage the audience during the tutorial. That can also set the right tone of how much detail you need to provide. Remember the more experienced participants may be the more vocal ones so think of ways to hear from everybody without making them feel uncomfortable for not knowing a concept. Anonymous polls can be useful (such as [particifi](https://particify.de/en/)). 
+Think of ways to engage the audience during the tutorial. That can also set the right tone of how much detail you need to provide. Remember the more experienced participants may be the more vocal ones so think of ways to hear from everybody without making them feel uncomfortable for not knowing a concept. Anonymous polls can be useful (such as [particify](https://particify.de/en/)). 
 
 Although the content of your tutorial may not seem a lot when presented as stand-alone, the participants are going through a sequence of tutorials during the week, and are also learning a lot of new things for their projects. 
 
