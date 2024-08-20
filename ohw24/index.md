@@ -1,6 +1,13 @@
 # OceanHackWeek 2024 (OHW24)
 
-OceanHackWeek 2024 (OHW24) will be held on **August 26-30, 2024** as two in-person events, in East Boothbay, Maine, US and in Sydney, Australia. The US in-person event will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org).
+OceanHackWeek 2024 (OHW24) will be held on **August 26-30, 2024** as two in-person events, in East Boothbay, Maine, US and in Sydney, Australia. The US event will take place at the [Bigelow Laboratory for Ocean Sciences](https://www.bigelow.org).
+
+The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period.
+
+```{admonition} Technical preparations and background for OceanHackWeek!
+- Please review the ["Preparation" materials](../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW `JupyterHub`
+- For tutorials on Python and R scientific tools and techniques that we will use in OceanHackWeek, see the [OHW 2022 tutorials page](../ohw22/tutorials-index/index.md)!
+```
 
 ```{image} ../assets/images/ohw_hacking/ohw21-Bigelow-outing.jpg
 :alt: OHW21 in person, taking a break
@@ -10,7 +17,17 @@ OceanHackWeek 2024 (OHW24) will be held on **August 26-30, 2024** as two in-pers
 
 The events will be all-day workshops (approximately 9am - 5pm). Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking!
 
-See the [OHW23 program](https://oceanhackweek.org/ohw23/) (a hybrid event) to get a better sense of the usual activities and how they're organized.
+
+## In-person event in Maine
+
+See the [schedules here](schedule.md).
+
+```{admonition} UPDATE THIS INFORMATION TO OHW24 CONTEXT!!
+:class: important
+- See the [ohw23 index page](../ohw23) as a template to content for this page, though the parts about the hybrid nature don't apply
+- Will you list the Australia event here, too?
+- Remove the admonition box below if applications for volunteers have closed
+```
 
 
 
@@ -42,7 +59,7 @@ We are still looking for volunteers to help with OceanHackWeek 2024! Please [app
   </div>
 
   <div class="col-4" style="margin-bottom: 1rem">
- 
+
 ```{image} ../assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
 :alt: GOMO
 :width: 180px
@@ -80,6 +97,10 @@ We are still looking for volunteers to help with OceanHackWeek 2024! Please [app
 :caption: OceanHackWeek 2024 (OHW24)
 :hidden:
 
+schedule
 Organizers <organizers>
+Logistics <logistics/index>
+tutorials-index/index
+Projects <projects/index>
 Information for Applicants <applicants>
 ```
