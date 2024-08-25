@@ -4,7 +4,7 @@
 **This page should be rewritten entirely!**
 ```-->
 
-To make sure that OHW23 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
+To make sure that OHW24 will be a welcoming environment for everyone, please read our [Code of Conduct](/about/code-of-conduct.md) carefully as part of your preparation. We expect all participants to adhere to the Code of Conduct in all interactions throughout the hackweek.
 
 ## Preparation
 
