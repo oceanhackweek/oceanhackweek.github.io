@@ -22,20 +22,13 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
 See the [schedules here](schedule.md).
 
-```{admonition} UPDATE THIS INFORMATION TO OHW24 CONTEXT!!
+<!-- ```{admonition} UPDATE THIS INFORMATION TO OHW24 CONTEXT!!
 :class: important
 - See the [ohw23 index page](../ohw23) as a template to content for this page, though the parts about the hybrid nature don't apply
 - Will you list the Australia event here, too?
 - Remove the admonition box below if applications for volunteers have closed
-```
+``` -->
 
-
-
-```{admonition} Apply to help with OceanHackWeek 2024!
-:class: important
-
-We are still looking for volunteers to help with OceanHackWeek 2024! Please [apply here](https://share.hsforms.com/1wW5CSVglSJyqAyG_EV3vXwe5s09). You can direct any questions to <a href="mailto:info@oceanhackweek.org" target="_blank">info@oceanhackweek.org</a>.
-```
 
 
 ## OHW24 Sponsors

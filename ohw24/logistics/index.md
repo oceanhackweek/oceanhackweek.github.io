@@ -1,15 +1,13 @@
 # Logistics Overview
 
-Some of you will participate in person in East Boothbay and others in Sydney. ~~and others will participate virtually from time zones all over the world. Each of these gathering styles has strengths and weaknesses.~~ We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
+Some of you will participate in person in East Boothbay and others in Sydney. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
 
 ## Time
 
-OceanHackWeek 2024 will take place:
+OceanHackWeek 2024 will take place August 26-30 for the in-person event in East Boothbay, Maine, US and in Western Australia.
 
-- August 26-30 for ~~the virtual event and~~ the in-person event in East Boothbay, Maine,, US
-- August 8-12 for the in-person event in Western Australia (**DO YOU INTEND TO LIST THE TWO EVENTS HERE?**)
 
-In-person participants will be engaged in OceanHackWeek throughout the day. ~~The virtual event will take place in a 3-hour daily block of formal, live activities, 09:00am - 12:00pm PDT / 16:00 - 19:00 UTC.~~
+In-person participants will be engaged in OceanHackWeek throughout the day.
 
 **Detailed schedules are available on the [Schedule page](../schedule.md).**
 

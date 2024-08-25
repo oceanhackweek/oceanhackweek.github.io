@@ -32,7 +32,7 @@ You are also welcome to direct message the helpers if you don't feel comfortable
 
 Tune in on Slack for continuous Q&A!
 
-- Ask questions on Slack! Use the `#ohw24-tutorials` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
+- Ask questions on Slack! Use the `#ohw24_tutorials` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
 - **Vote up** questions from others to help the moderators prioritize which questions to ask the speaker during tutorials.
 - Tutorial moderators will mark questions that are best answered by the instructor and ask helpers (and anyone else!) to answer the rest in real time. Then when the instructor ask if there are questions the moderators will read those reserved for the instructor.
 - Zoom Chat will **not** be available. Ask on Slack!
