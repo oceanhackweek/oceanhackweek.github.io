@@ -368,3 +368,13 @@ team:
       - Applicant Selection
       - OHW22 Participant - Maine
       - OHW24 Organizer - USA
+
+  - name: Eli Holmes 
+    title: Senior Scientist
+    affiliate: NOAA Fisheries 
+    image_url: https://avatars.githubusercontent.com/u/2545978?v=4
+    github_user: eeholmes
+    email: eli.holmes@noaa.gov
+    roles:
+      - OHW23 Organizer - Seattle
+      - OHW24 Organizer - USA
