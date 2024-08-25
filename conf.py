@@ -139,7 +139,11 @@ myst_admonition_enable = True
 myst_deflist_enable = True
 myst_heading_anchors = 3
 myst_update_mathjax = False
-myst_enable_extensions = ["substitution", "colon_fence"]
+myst_enable_extensions = [
+    "colon_fence",
+    "strikethrough",
+    "substitution",
+]
 
 extensions += ["ablog"]
 
