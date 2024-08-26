@@ -54,13 +54,13 @@ The nbgitpuller link is magical, but it can't detect which profile you are curre
 
 :::{tab-item} Python
 
-[Pull tutorial repo for the Python profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW23)
+[Pull tutorial repo for the Python profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW24)
 
 :::
 
 :::{tab-item} R
 
-[Pull tutorial repo for the R profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW23)
+[Pull tutorial repo for the R profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW24)
 
 :::
 
