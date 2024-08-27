@@ -16,7 +16,7 @@ Projects from OceanHackWeek 2023.
 - Project members: Catherine Courtier, Mackenzie Fiss, Denisse Fierro Arcos, Paulo Freire, Jade Hong, Caitlin O’Brien, Mary Solokas, Laura Tsang, Eli Holmes, Tylar Murray, Ben Tupper
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_marinesdms](https://github.com/oceanhackweek/ohw23_proj_marinesdms)
 - Presentation recordings: [Seattle + Virtual](https://youtu.be/6QGf7lvykC0) and [Australia](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=924)
-- Product: [Marine Species Distribution tutorial](https://oceanhackweek.org/ohw23_proj_marinesdms/)
+- Product: [Marine Species Distribution tutorial](https://oceanhackweek.org/tutorials_marine_sdm/)
 - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g25f8e87bf15_11_0)
 
 ### 3. Inertial oscillations in the marginal ice zone
