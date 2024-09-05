@@ -10,9 +10,9 @@ We've scheduled part of Day 1 for project ideation and the morning of Day 2 for 
 
 Please look over the information below for guidance about projects, how to get started and the motivations for working on projects.
 
-<!-- ## OHW24 projects list
+## OHW24 projects list
 
-Check out the [projects that formed this year!](projects_thisyear.md) -->
+Check out the [projects that formed this year!](projects_thisyear.md)
 
 ## Project overview
 
