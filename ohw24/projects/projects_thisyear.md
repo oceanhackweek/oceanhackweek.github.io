@@ -22,7 +22,7 @@ Projects from OceanHackWeek 2024.
 ### 3. Organizing and cataloging datasets and data access methods used in OHW projects
 
 - Project members: Derya Gumustel, Adam Kemberling, Kasanda Lassagne, Boris Shapkin, Valentina Staneva
-- GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_sea_ice_oscillations](https://github.com/oceanhackweek/ohw24_proj_catalog_us)
+- GitHub repository: [https://github.com/oceanhackweek/ohw24_proj_catalog_us](https://github.com/oceanhackweek/ohw24_proj_catalog_us)
 - [Presentation recording]() [Presentation slides]()
 - [Project pitch slide](https://docs.google.com/presentation/d/1MG32LTh15YH1vHQdv_7U-SAyclAFcNLs-xWWvf0eZ8g/edit#slide=id.g2f660589f1f_3_5)
 
