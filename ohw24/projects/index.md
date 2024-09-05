@@ -25,5 +25,5 @@ Check out the [projects that formed this year!](projects_thisyear.md)
 :maxdepth: 1
 :hidden:
 
-<!-- ./projects_thisyear -->
+./projects_thisyear
 ```
