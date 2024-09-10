@@ -378,3 +378,17 @@ team:
     roles:
       - OHW23 Organizer - Seattle
       - OHW24 Organizer - USA
+
+  - name: Valentina Staneva 
+    title: Senior Research Scientist
+    affiliate: eScience Institute 
+    image_url: https://raw.githubusercontent.com/uw-echospace/group-website/main/content/authors/vms16/avatar.jpg
+    github_user: valentina-s
+    email: vms16@uw.edu
+    roles:
+      - OHW18 Organizer
+      - OHW19 Organizer
+      - OHW20 Instructor
+      - OHW22 Instructor, Project Mentor
+      - OHW23 Project Mentor, Funding
+      - OHW24 Organizer 
