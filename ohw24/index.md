@@ -36,42 +36,20 @@ See the [schedules here](schedule.md).
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/BigelowLabs.png
-:alt: Bigelow Lab
-:width: 180px
-```
+  ```{image} ../assets/images/BigelowLabs.png
+  :alt: Bigelow Lab
+  :width: 180px
+  ```
 
   </div>
   <div class="col-4" style="margin-bottom: 1rem">
 
-```{image} ../assets/images/apl_logo_blue.jpg
-:alt: UW APL
-:width: 180px
-```
+  ```{image} ../assets/images/apl_logo_blue.jpg
+  :alt: UW APL
+  :width: 180px
+  ```
 
   </div>
-
-  <div class="col-4" style="margin-bottom: 1rem">
-
-```{image} ../assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
-:alt: GOMO
-:width: 180px
-```
-
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="col-4" style="margin-bottom: 1rem">
-
-```{image} ../assets/images/ioos_logo.jpg
-:alt: IOOS
-:width: 180px
-```
-
-  </div>
-
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/GMRI.png
@@ -80,7 +58,34 @@ See the [schedules here](schedule.md).
   ```
 
   </div>
+</div>
 
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/ioos_logo.jpg
+  :alt: IOOS
+  :width: 180px
+  ```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
+  :alt: GOMO
+  :width: 180px
+  ```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/SOI-Logo-fullcolor-brand-V3.jpg
+  :alt: Schmidt Ocean Institute
+  :width: 180px
+  ```
+
+  </div>
 </div>
 
 
