@@ -12,7 +12,11 @@ jobs:
           submodules: true
 
       - name: Install Conda environment from environment.yml
-        uses: mamba-org/provision-with-micromamba@v11
+        uses: mamba-org/setup-micromamba@v2.0.0
+        with:
+          environment-file: environment.yml
+          cache-environment: true
+    
 
       - name: Build documentation
         shell: bash -l {0}
