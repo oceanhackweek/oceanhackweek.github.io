@@ -17,11 +17,14 @@ Learn more by browsing our [previous OceanHackWeek events](pasthackweeks), held 
 
 ## OceanHackWeek Presentations
 
-Lee, W-J., Tan, A., Staneva, V., Fernandes, F., Gum, J., Mayorga, E., Crone, T., Abernathey, R. (2020) Building Oceanhackweek: a week of data science, hacking, collaboration and more. 
-[Poster abstract](https://agu.confex.com/agu/osm20/meetingapp.cgi/Paper/649702) ED24C-3618, [Ocean Sciences Meeting 2020](https://www.agu.org/Ocean-Sciences-Meeting), 16-21 Feb, San Diego, CA. - {download}`Poster pdf<../_static/Lee2020_PosterOceanHackWeek_OSM20_ED24C-3618.pdf>`
+Mitchell, C., Fernandes, F., Gum, J., Kerney, A., Lee, W-J., Mayorga, E., Moore, T., Mortimer, N., Ribeiro, N. (2024) OceanHackWeek: an inclusive, collaborative approach to developing oceanography data science skills.
+[Poster abstract](https://amsa-2024.p.asnevents.com.au/days/2024-09-16/abstract/104728) #660, [2024 Australian Marine Sciences Association (AMSA) Annual Meeting combined with NZMSS](https://www.amsa.asn.au/amsa-home/amsa-annual-conferences/2024-hobart/), 15-19 Sept, Hobart, Australia. - {download}`Poster pdf<../_static/Mitchell2024_PosterOceanHackWeek_AMSA24-660.pdf>`
 
-Mayorga E., Biddle M., Fernandes F., Gentemann C., Gum J., Gumustel D., Kerney A., Koh J., Lee W. J., Martin P., Mitchell C., Moore T., Record N., Tan A. (2022) OceanHackWeek (OHW) - A collaborative model for expanding data science proficiency in oceanography. 
+Mayorga E., Biddle M., Fernandes F., Gentemann C., Gum J., Gumustel D., Kerney A., Koh J., Lee W-J., Martin P., Mitchell C., Moore T., Record N., Tan A. (2022) OceanHackWeek (OHW) - A collaborative model for expanding data science proficiency in oceanography. 
 [Poster abstract](https://osm2022.secure-platform.com/a/gallery/rounds/3/details/8367) 8375, [Ocean Sciences Meeting 2022](https://www.aslo.org/osm2022/), 24 Feb - 4 Mar, Online. - {download}`Poster pdf<../_static/Mayorga2022_PosterOceanHackWeek_OSM22_8675_odp03.pdf>`
+
+Lee, W-J., Tan, A., Staneva, V., Fernandes, F., Gum, J., Mayorga, E., Crone, T., Abernathey, R. (2020) Building Oceanhackweek: a week of data science, hacking, collaboration and more. 
+[Poster abstract](https://agu.confex.com/agu/osm20/meetingapp.cgi/Paper/649702) ED24C-3618, [Ocean Sciences Meeting 2020](https://www.agu.org/Ocean-Sciences-Meeting), 16-21 Feb, San Diego, USA. - {download}`Poster pdf<../_static/Lee2020_PosterOceanHackWeek_OSM20_ED24C-3618.pdf>`
 
 ## What is a HackWeek?
 
