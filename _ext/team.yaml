@@ -181,7 +181,7 @@ team:
     image_url: https://avatars.githubusercontent.com/u/36463906?v=4
     github_user: Thomas-Moore-Creative
     roles:
-      - Steering Committee
+      - Steering Committee - Emeritus
       - OHW21 Organizer - Australia
       - OHW22 Organizer
       - OHW24 Organizer - Australia
@@ -230,7 +230,7 @@ team:
     image_url: https://avatars.githubusercontent.com/u/7740937?v=4
     github_user: sophieclayton
     roles:
-      - Steering Committee
+      - Steering Committee - Emeritus
       - Projects
       - OHW20 Organizer
       - OHW22 Organizer - Global
@@ -275,6 +275,7 @@ team:
     github_user: lidefi87
     email: lilian.fierroarcos@utas.edu.au
     roles:
+      - Steering Committee
       - Tutorials
       - OHW21 Participant
       - OHW22 Organizer - Espanol
@@ -327,6 +328,7 @@ team:
     github_user: myrandaGoesToSpace
     # email:
     roles:
+      - Steering Committee
       - OHW23 Organizer
       - OHW24 Organizer - USA
       
@@ -376,6 +378,7 @@ team:
     github_user: eeholmes
     email: eli.holmes@noaa.gov
     roles:
+      - Steering Committee
       - OHW23 Organizer - Seattle
       - OHW24 Organizer - USA
 
