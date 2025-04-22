@@ -24,7 +24,7 @@ The following tutorials will be presented live during the **US sessions**, and w
 
 ### Tuesday, August 27th
 
-[Derya Gumustel](https://www.linkedin.com/in/derya-gumustel) - [**Git&GitHub Primer**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW24_update_recording_links/us/01-Tue#git--github-primer)
+[Derya Gumustel](https://www.linkedin.com/in/derya-gumustel) - [**Git&GitHub Primer**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW24/us/01-Tue#git--github-primer)
 
 [Callum Rollo](https://callumrollo.github.io/) - [**Data Access in Python:**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW24/us/01-Tue#data-access-in-python) In this tutorial, participants will use Python to find and access ocean data via a range of protocols including ERDDAP, OPeNDAP and WMS. 
 
@@ -46,7 +46,7 @@ The following tutorials will be presented live during the **US sessions**, and w
 
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer the following.
 
-- [Eli Holmes](https://www.fisheries.noaa.gov/contact/elizabeth-holmes-phd) - [**Reproducible Collaboration**]((https://github.com/oceanhackweek/ohw-tutorials/tree/OHW24/us/00-Mon#reproducible-research))
+- [Eli Holmes](https://www.fisheries.noaa.gov/contact/elizabeth-holmes-phd) - [**Reproducible Collaboration**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW24/us/00-Mon#reproducible-research)
 - [Myranda Shirk](https://www.vanderbilt.edu/datascience/person/myranda-uselton-shirk/?type=lab)  - **AI use-case discussion** following a tutorial on AI-Assisted Programming.
 - [Alex Kerney](https://github.com/abkfenris) - [**Stresses in the geosciences**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW23/02-Wed/README.md), an open discussion about mental health in the geosciences.
 
