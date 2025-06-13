@@ -9,7 +9,15 @@ description: Access materials from past hackweeks
 
 OceanHackWeek (**OHW**) has taken place annually starting in 2018. Materials from past hackweeks are available, though they may be incomplete, particularly for older events. Links to past tutorials and projects are also provided in most cases.
 
-OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format starting in 2021.
+OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format from 2021 to 2023. In 2024, it was held at two in-person locations.
+
+## 2024 (OHW24)
+
+- Two in-person events, at the Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine, USA and in Sydney, Australia.
+- Programming languages: Python + R
+- [11 tutorials](../ohw24/tutorials-index/index) + [11 projects](../ohw24/projects/projects_thisyear)
+- [Schedule](../ohw24/schedule)
+- [Web site](../ohw24/index)
 
 ## 2023 (OHW23)
 
@@ -36,8 +44,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - 7 tutorials + [11 projects](https://oceanhackweek.org/ohw-resources/projects/projectlist/)
 - [Schedule](https://oceanhackweek.org/ohw-resources/schedule/#main-virtual-event). Links to tutorials are found here
 - [Participant testimonials](testimonials.md#ohw21-hybrid)
-- [Web site](https://oceanhackweek.org/ohw21/)
-- [OHW21 Resources site](https://oceanhackweek.org/ohw-resources/)
+- [Main web site](https://oceanhackweek.org/ohw21/) and [OHW21 Resources site](https://oceanhackweek.org/ohw-resources/)
 
 ## 2020 (OHW20)
 
@@ -46,8 +53,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 - 10 tutorials + [8 projects](https://oceanhackweek.org/ohw21/projects_2020.html)
 - [Participant testimonials](testimonials.md#ohw20-virtual)
 - [Schedule](https://oceanhackweek.org/ohw-resources/ohw20/schedule/). Links to tutorials are found here
-- [Web site](https://oceanhackweek.org/ohw20/)
-- [OHW20 Resources site](https://oceanhackweek.org/ohw-resources/ohw20/)
+- [Main web site](https://oceanhackweek.org/ohw20/) and [OHW20 Resources site](https://oceanhackweek.org/ohw-resources/ohw20/)
 
 ## 2019 (OHW19)
 
@@ -72,6 +78,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 :maxdepth: 1
 :hidden:
 
+../ohw24/index.md
 ../ohw23/index.md
 ../ohw22/index.md
 ```
