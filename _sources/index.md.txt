@@ -6,16 +6,20 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} OceanHackWeek 2024 will be on August 26 - 30!
+:::{admonition} Stay tuned for OceanHackWeek 2025
 :class: important
 
+We are planning an in-person event at the University of Washington in Seattle later this year. Check back soon for updates! 
+In the meantime, [check out our past events,](about/pasthackweeks) including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
 
+<!--
 ```{button-link} ohw24/
 :color: primary
 :expand:
 :tooltip: OHW24
 Go to OceanHackWeek 2024
 ```
+-->
 :::
 
 
