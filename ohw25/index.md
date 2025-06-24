@@ -1,6 +1,6 @@
 # OceanHackWeek 2025 (OHW25)
 
-OceanHackWeek 2025 (OHW25) will be held on **August 18-22, 2026** in Seattle, WA USA. The US event will take place at the [UW School of Fisheries and Aquatic Sciences](https://fish.uw.edu/).
+OceanHackWeek 2025 (OHW25) will be held on **August 18-22, 2025** in Seattle, WA USA. The US event will take place at the [UW School of Fisheries and Aquatic Sciences](https://fish.uw.edu/).
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period.
 
@@ -9,20 +9,15 @@ The OceanHackWeek program consists of hands-on tutorials, visual presentations, 
 - For tutorials on Python and R scientific tools and techniques that we will use in OceanHackWeek, see the [OHW 2022 tutorials page](../ohw22/tutorials-index/index.md)!
 ```
 
-```{image} ../assets/images/ohw_hacking/ohw21-Bigelow-outing.jpg
-:alt: OHW21 in person, taking a break
+```{image} ../assets/images/ohw_hacking/ohw23-group-pic.jpeg
+:alt: OHW23 group picture
 :width: 230px
 :align: left
 ```
 
-The events will be all-day workshops (approximately 9am - 5pm). Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking!
+The events will be all-day workshops (approximately 9am - 5pm). Join us for five days of hands-on tutorials, data exploration, software development, presentations, collaborative hack projects and community networking! See the [schedule here](schedule.md) -- also check out the past hackweeks for an idea of what a hackweek is like!
 
-
-## In-person event in Seattle
-
-See the [schedules here](schedule.md).
-
-<!-- ```{admonition} UPDATE THIS INFORMATION TO OHW24 CONTEXT!!
+<!-- ```{admonition} UPDATE THIS INFORMATION TO OHW25 CONTEXT!!
 :class: important
 - See the [ohw23 index page](../ohw23) as a template to content for this page, though the parts about the hybrid nature don't apply
 - Will you list the Australia event here, too?
@@ -60,14 +55,13 @@ See the [schedules here](schedule.md).
   </div>
 </div>
 
-
 <div class="row">
-    <div class="col-4" style="margin-bottom: 1rem">
+  <div class="col-4" style="margin-bottom: 1rem">
 
-    ```{image} ../assets/images/logos/UW-SAFS.png
-    :alt: UW SAFS
-    :width: 130px
-    ```
+  ```{image} ../assets/images/logos/UW-SAFS.png
+  :alt: UW SAFS
+  :width: 130px
+  ```
 
   </div>
 
@@ -101,7 +95,7 @@ See the [schedules here](schedule.md).
 
 ```{toctree}
 :maxdepth: 3
-:caption: OceanHackWeek 2024 (OHW24)
+:caption: OceanHackWeek 2025 (OHW25)
 :hidden:
 
 schedule
