@@ -70,6 +70,7 @@ team:
       - OHW22 Organizer - Global
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
 
   - name: Charley Haley
     title: Organizational & Social Strategist
@@ -330,8 +331,9 @@ team:
     github_user: myrandaGoesToSpace
     # email:
     roles:
-      - OHW23 Organizer
-      - OHW24 Organizer - USA
+      - OHW23 Organizer, Tutorial
+      - OHW24 Organizer, Tutorial - USA
+      - OHW25 Organizer
       
   - name: Ben Tupper
     title: Senior Research Associate
@@ -340,6 +342,7 @@ team:
     github_user: btupper
     roles:
       - OHW23 Organizer
+      - OHW24 Mentor
       
   - name: Callum Rollo
     title: Data Scientist
@@ -348,7 +351,8 @@ team:
     github_user: callumrollo
     roles:
       - OHW20 Participant
- 
+      - OHW24 Tutorial
+      
   - name: Natalia Ribeiro
     title: Science Officer
     affiliate: Integrated Marine Observing System (IMOS), Australia
@@ -374,14 +378,14 @@ team:
 
   - name: Eli Holmes 
     title: Senior Scientist
-    affiliate: NOAA Fisheries 
+    affiliate: NOAA Fisheries, UW SAFS
     image_url: https://avatars.githubusercontent.com/u/2545978?v=4
     github_user: eeholmes
     email: eli.holmes@noaa.gov
     roles:
-      - OHW23 Organizer - Seattle
-      - OHW24 Organizer - USA
-      - OHW25 Organizer
+      - OHW23 Organizer, Project Mentor - Seattle
+      - OHW24 Organizer, Project Mentor - USA
+      - OHW25 Organizer, Project Mentor
 
   - name: Valentina Staneva 
     title: Senior Research Scientist
@@ -395,4 +399,6 @@ team:
       - OHW20 Instructor
       - OHW22 Instructor, Project Mentor
       - OHW23 Project Mentor, Funding
-      - OHW24 Organizer 
+      - OHW24 Organizer, Project Mentor
+      - OHW25 Organizer
+
