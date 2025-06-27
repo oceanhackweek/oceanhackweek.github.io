@@ -242,17 +242,6 @@ team:
       - OHW22 Organizer - Global
       - OHW23 Organizer
 
-  - name: Georgy Manucharyan
-    title: Assistant Professor
-    affiliate: UW School of Oceanography
-    image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
-    github_user: gmanuch
-    email: gmanuch@uw.edu
-    roles:
-      - Projects
-      - Tutorials
-      - OHW22 Organizer - Seattle UG
-
   - name: Steve Diggs
     title: Data Manager
     affiliate: Scripps Institution of Oceanography
@@ -405,4 +394,15 @@ team:
       - OHW23 Project Mentor, Funding
       - OHW24 Organizer, Project Mentor
       - OHW25 Organizer
+
+  - name: Georgy Manucharyan
+    title: Assistant Professor
+    affiliate: UW School of Oceanography
+    image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
+    github_user: gmanuch
+    email: gmanuch@uw.edu
+    roles:
+      - Projects
+      - Tutorials
+      - OHW22 Organizer - Seattle UG
 
