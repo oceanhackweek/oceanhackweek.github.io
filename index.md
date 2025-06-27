@@ -9,13 +9,13 @@ description: OceanHackWeek home
 :::{admonition} Applications Open for OceanHackWeek 2025
 :class: important
 
-We are planning an in-person event at the University of Washington Aug 18-22 in Seattle, WA USA. [Click Here for Application](https://forms.gle/npWmq1QA4twbV5LT7). Applications are open through July 14th. What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
+We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. Applications are open through July 14th. What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
 
 ```{button-link} https://forms.gle/npWmq1QA4twbV5LT7
 :color: primary
 :expand:
 :tooltip: Apply to OHW25
-Apply to OHW25
+Apply to OceanHackWeek 2025
 ```
 :::
 
