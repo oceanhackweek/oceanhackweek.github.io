@@ -9,6 +9,8 @@ permalink: applicant-info.html
 
 OceanHackWeek 2025 (OHW24) is a hands-on, interactive in-person workshop focused on data science in oceanography and fisheries that will be held on **August 18-22, 2025** in Seattle, WA USA. Join us for five days of tutorials, data exploration, software development and community networking!
 
+[Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th.
+
 
 **See the [main OHW25 page](index) for information about the in-person OHW25 event in the Seattle, WA USA.**
 
