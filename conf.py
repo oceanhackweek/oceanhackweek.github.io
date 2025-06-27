@@ -101,7 +101,7 @@ html_context = {
 }
 
 html_title = "OceanHackWeek"
-# html_favicon = "_static/magnifying.ico"
+html_favicon = "_static/logo.png"
 html_static_path = ["_static"]
 html_sidebars = {
     "index": [
