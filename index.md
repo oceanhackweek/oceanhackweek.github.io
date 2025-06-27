@@ -9,8 +9,7 @@ description: OceanHackWeek home
 :::{admonition} Stay tuned for OceanHackWeek 2025
 :class: important
 
-We are planning an in-person event at the University of Washington in Seattle later this year. Check back soon for updates! 
-In the meantime, [check out our past events,](about/pasthackweeks) including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
+We are planning an in-person event at the University of Washington Aug 18-22 in Seattle, WA USA. [Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th. In the meantime, [check out our past events,](about/pasthackweeks) including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
 
 <!--
 ```{button-link} ohw24/
@@ -172,7 +171,7 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 :hidden:
 
 about/index.md
-OceanHackWeek 2024 <ohw24/index.md>
+OceanHackWeek 2025 <ohw25/index.md>
 resources/index.md
 about/pasthackweeks.md
 ```
