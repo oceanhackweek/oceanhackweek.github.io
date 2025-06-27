@@ -95,6 +95,7 @@ team:
       - OHW23 Organizer
       - OHW24 Organizer - USA
       - OHW25 Organizer
+      - OHW25 Infrastructure
 
   - name: Jane Koh
     title: Program Specialist
@@ -126,6 +127,7 @@ team:
       - OHW23 Organizer
       - OHW24 Organizer - USA
       - OHW25 Organizer
+      - OHW25 Project Mentor
 
   - name: Paige Martin
     title: User Training Team Leader
@@ -334,6 +336,7 @@ team:
       - OHW23 Organizer, Tutorial
       - OHW24 Organizer, Tutorial - USA
       - OHW25 Organizer
+      - OHW25 Tutorial Lead
       
   - name: Ben Tupper
     title: Senior Research Associate
@@ -351,7 +354,7 @@ team:
     github_user: callumrollo
     roles:
       - OHW20 Participant
-      - OHW24 Tutorial
+      - OHW24 Tutorial Lead
       
   - name: Natalia Ribeiro
     title: Science Officer
@@ -385,7 +388,8 @@ team:
     roles:
       - OHW23 Organizer, Project Mentor - Seattle
       - OHW24 Organizer, Project Mentor - USA
-      - OHW25 Organizer, Project Mentor
+      - OHW25 Organizer
+      - OHW25 Project Mentor
 
   - name: Valentina Staneva 
     title: Senior Research Scientist
