@@ -24,7 +24,7 @@ Apply to OceanHackWeek 2025
 :class: admonition
 
 Are you interested in helping at the OceanHackWeek workshop? Would you like to host your own OceanHackWeek style event? Then the OceanHackWeek Fellows Program is for you!
-Fellows will be immersed in the [OHW philosophy](about) and help support our mission to meet, collaborate, and learn at the intersection of ocean and data sciences. 
+Fellows will be immersed in the [OHW philosophy](about/index) and help support our mission to meet, collaborate, and learn at the intersection of ocean and data sciences. 
 Fellows will join the Organizing Committee for [OHW25](ohw25). Funding support will be provided for Fellows to attend OHW25 as project mentors and assist
 with logistical support. 
 **We will start reviewing applications immediately, with applications closing on July 14.**
