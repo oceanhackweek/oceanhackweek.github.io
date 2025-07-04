@@ -7,7 +7,7 @@ description: Access materials from past hackweeks
 
 # Past OHW Events
 
-OceanHackWeek (**OHW**) has taken place annually starting in 2018. Materials from past hackweeks are available, though they may be incomplete, particularly for older events. Links to past tutorials and projects are also provided in most cases.
+OceanHackWeek (**OHW**) has taken place annually starting in 2018. Materials from past hackweeks are available, though they may be incomplete, particularly for older events. Links to past tutorials and projects are also provided in most cases. [Searchable table of past OHW projects](https://oceanhackweek.org/ohw24_proj_catalog_us/OHW_project_table.html).
 
 OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format from 2021 to 2023. In 2024, it was held at two in-person locations.
 
