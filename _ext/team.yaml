@@ -215,6 +215,7 @@ team:
       - OHW22 Organizer - Seattle
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
 
   - name: Nick Mortimer
     title: Senior Engineer
@@ -406,3 +407,11 @@ team:
       - Tutorials
       - OHW22 Organizer - Seattle UG
 
+  - name: Christian Sarason
+    title: Senior Research Scientist
+    affiliate: UW Applied Physics Laboratory
+    image_url: https://avatars.githubusercontent.com/u/665290?v=4
+    github_user: cpsarason
+    email: cbps@uw.edu
+    roles:
+      - OHW25 Organizer
