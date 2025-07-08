@@ -335,7 +335,7 @@ team:
     github_user: btupper
     roles:
       - OHW23 Organizer
-      - OHW24 Mentor
+      - OHW24 Project Mentor
       
   - name: Callum Rollo
     title: Data Scientist
@@ -396,6 +396,7 @@ team:
       - OHW23 Project Mentor, Funding
       - OHW24 Organizer, Project Mentor
       - OHW25 Organizer
+      - OHW25 Project Mentor
 
   - name: Georgy Manucharyan
     title: Assistant Professor
@@ -416,3 +417,12 @@ team:
     email: cbps@uw.edu
     roles:
       - OHW25 Organizer
+
+  - name: Jon Peake 
+    title: Data Scientist
+    affiliate: NOAA Fisheries
+    image_url: https://avatars.githubusercontent.com/u/27690999?v=4
+    github_user: jonpeake
+    email: jonathan.peake@noaa.gov
+    roles:
+      - OHW25 Project Mentor
