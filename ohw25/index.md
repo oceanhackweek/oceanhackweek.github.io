@@ -91,7 +91,26 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-</div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/openscapes.png
+  :alt: Openscapes
+  :width: 180px
+  ```
+
+  </div>
+  
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/nmfs-opensci.png
+  :alt: NMFS Open Science
+  :width: 180px
+  ```
+
+  </div>
+  
+  </div>
 
 
 
