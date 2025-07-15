@@ -25,10 +25,12 @@ The committee typically meets once a week, but many tasks are carried out by sub
 ## OHW Fellows Program 2025: Important Information
 
 * OceanHackWeek 2025 (OHW25) will consist of an in-person event at the **University of Washington, Seattle, USA, on August 18th-22nd, 2025**. OHW Fellows will be required to attend this event.
-* Thanks to the support of our sponsor, there will be no cost for lodging or meals to attend OHW5. We will be able to support some travel expenses, as well as provide a stipend to any participating fellows.
+* Thanks to the support of our sponsor, there will be no cost for lodging or meals to attend OHW25. We will be able to support some travel expenses, as well as provide a stipend to any participating fellows.
 
+<!--
 [**Apply for the OHW Fellows program now!**](https://forms.gle/pPiyq5yrmEABzhXB8) We will start reviewing applications immediately, with applications closing on July 14th, 2025. 
-Accepted applicants will be notified no later than July 21st, 2025. 
+-->
+Applications are closed. Accepted applicants will be notified no later than July 21st, 2025. 
 
 For general questions, please email info@oceanhackweek.org
 
