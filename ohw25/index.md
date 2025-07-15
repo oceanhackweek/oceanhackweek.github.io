@@ -5,7 +5,7 @@ OceanHackWeek 2025 (OHW25) will be held on **August 18-22, 2025** in Seattle, WA
 <!--
 [Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th.
 -->
-**Applications closed. Decisions by July 21.**
+**Application review will begin July 15. Decisions by July 21.**
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period.
 
