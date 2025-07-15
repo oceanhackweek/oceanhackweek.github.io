@@ -6,19 +6,22 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Applications Open for OceanHackWeek 2025
+:::{admonition} Applications Closed for OceanHackWeek 2025. Decisions by July 21.
 :class: important
 
-We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. Applications are open through July 14th. 
-What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
+We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. 
+What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as [tutorial instructor or project mentor](resources/organizing/index).
 
+<!--
 ```{button-link} https://forms.gle/npWmq1QA4twbV5LT7
 :color: primary
 :expand:
 :tooltip: Apply to OHW25
 Apply to OceanHackWeek 2025
 ```
+-->
 :::
+
 
 :::{admonition} New in 2025: The OceanHackWeek Fellows Program
 :class: admonition
@@ -27,15 +30,17 @@ Are you interested in helping at the OceanHackWeek workshop? Would you like to h
 Fellows will be immersed in the [OHW philosophy](about/index) and help support our mission to meet, collaborate, and learn at the intersection of ocean and data sciences. 
 Fellows will join the Organizing Committee for [OHW25](ohw25/index). Funding support will be provided for Fellows to attend OHW25 as project mentors and assist
 with logistical support. 
-**We will start reviewing applications immediately, with applications closing on July 14.**
+**Applications closed. Decisions announced by July 21.**
 For more details [check our OHW Fellows page](about/fellows). 
 
+<!--
 ```{button-link} https://forms.gle/pPiyq5yrmEABzhXB8
 :color: primary
 :expand:
 :tooltip: Apply to OHW25 Fellows
 Apply to OceanHackWeek 2025 Fellows Program
 ```
+-->
 :::
 
 
