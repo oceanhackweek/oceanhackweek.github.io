@@ -6,11 +6,11 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} Applications Open for OceanHackWeek 2025
+:::{admonition} Applications Closed for OceanHackWeek 2025. Decisions by July 21.
 :class: important
 
-We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. **Applications closed. Decisions announced by July 21.**
-What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as Organizing Committee member, [tutorial instructor or project mentor](resources/organizing/index).
+We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. 
+What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as [tutorial instructor or project mentor](resources/organizing/index).
 
 <!--
 ```{button-link} https://forms.gle/npWmq1QA4twbV5LT7
@@ -19,8 +19,9 @@ What is OceanHackWeek? [Check out our past events](about/pasthackweeks), includi
 :tooltip: Apply to OHW25
 Apply to OceanHackWeek 2025
 ```
-:::
 -->
+:::
+
 
 :::{admonition} New in 2025: The OceanHackWeek Fellows Program
 :class: admonition
@@ -39,8 +40,8 @@ For more details [check our OHW Fellows page](about/fellows).
 :tooltip: Apply to OHW25 Fellows
 Apply to OceanHackWeek 2025 Fellows Program
 ```
-:::
 -->
+:::
 
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
