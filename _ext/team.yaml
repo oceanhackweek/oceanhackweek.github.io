@@ -426,3 +426,13 @@ team:
     email: jonathan.peake@noaa.gov
     roles:
       - OHW25 Project Mentor
+
+  - name: Rich Signell 
+    title: Research Oceanographer
+    affiliate: Open Science Computing
+    image_url: https://avatars.githubusercontent.com/u/125569335?v=4
+    github_user: rsignell
+    email: rich@opensciencecomputing.com 
+    roles:
+      - OHW25 Organizer
+      - OHW25 Project Mentor
