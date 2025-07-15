@@ -50,7 +50,7 @@ html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 html_show_copyright = True
-copyright = "2023, OceanHackWeek"
+copyright = "2025, OceanHackWeek"
 
 
 # -- HTML Config -------------------------------------------------
@@ -101,7 +101,7 @@ html_context = {
 }
 
 html_title = "OceanHackWeek"
-# html_favicon = "_static/magnifying.ico"
+html_favicon = "_static/logo.png"
 html_static_path = ["_static"]
 html_sidebars = {
     "index": [

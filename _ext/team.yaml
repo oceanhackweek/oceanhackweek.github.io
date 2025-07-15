@@ -70,6 +70,7 @@ team:
       - OHW22 Organizer - Global
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
 
   - name: Charley Haley
     title: Organizational & Social Strategist
@@ -93,6 +94,8 @@ team:
       - OHW22 Organizer - Maine
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
+      - OHW25 Infrastructure
 
   - name: Jane Koh
     title: Program Specialist
@@ -123,6 +126,8 @@ team:
       - OHW22 Organizer - Seattle
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
+      - OHW25 Project Mentor
 
   - name: Paige Martin
     title: User Training Team Leader
@@ -174,6 +179,7 @@ team:
       - OHW22 Organizer - Maine
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
 
   - name: Thomas Moore
     title: Ocean Data Analyst
@@ -209,6 +215,7 @@ team:
       - OHW22 Organizer - Seattle
       - OHW23 Organizer
       - OHW24 Organizer - USA
+      - OHW25 Organizer
 
   - name: Nick Mortimer
     title: Senior Engineer
@@ -235,17 +242,6 @@ team:
       - OHW20 Organizer
       - OHW22 Organizer - Global
       - OHW23 Organizer
-
-  - name: Georgy Manucharyan
-    title: Assistant Professor
-    affiliate: UW School of Oceanography
-    image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
-    github_user: gmanuch
-    email: gmanuch@uw.edu
-    roles:
-      - Projects
-      - Tutorials
-      - OHW22 Organizer - Seattle UG
 
   - name: Steve Diggs
     title: Data Manager
@@ -329,8 +325,10 @@ team:
     # email:
     roles:
       - Steering Committee
-      - OHW23 Organizer
-      - OHW24 Organizer - USA
+      - OHW23 Organizer, Tutorial
+      - OHW24 Organizer, Tutorial - USA
+      - OHW25 Organizer
+      - OHW25 Tutorial Lead
       
   - name: Ben Tupper
     title: Senior Research Associate
@@ -339,6 +337,7 @@ team:
     github_user: btupper
     roles:
       - OHW23 Organizer
+      - OHW24 Project Mentor
       
   - name: Callum Rollo
     title: Data Scientist
@@ -347,7 +346,8 @@ team:
     github_user: callumrollo
     roles:
       - OHW20 Participant
- 
+      - OHW24 Tutorial Lead
+      
   - name: Natalia Ribeiro
     title: Science Officer
     affiliate: Integrated Marine Observing System (IMOS), Australia
@@ -373,14 +373,16 @@ team:
 
   - name: Eli Holmes 
     title: Senior Scientist
-    affiliate: NOAA Fisheries 
+    affiliate: NOAA Fisheries, UW SAFS
     image_url: https://avatars.githubusercontent.com/u/2545978?v=4
     github_user: eeholmes
     email: eli.holmes@noaa.gov
     roles:
       - Steering Committee
-      - OHW23 Organizer - Seattle
-      - OHW24 Organizer - USA
+      - OHW23 Organizer, Project Mentor - Seattle
+      - OHW24 Organizer, Project Mentor - USA
+      - OHW25 Organizer
+      - OHW25 Project Mentor
 
   - name: Valentina Staneva 
     title: Senior Research Scientist
@@ -395,4 +397,44 @@ team:
       - OHW20 Instructor
       - OHW22 Instructor, Project Mentor
       - OHW23 Project Mentor, Funding
-      - OHW24 Organizer 
+      - OHW24 Organizer, Project Mentor
+      - OHW25 Organizer
+      - OHW25 Project Mentor
+
+  - name: Georgy Manucharyan
+    title: Assistant Professor
+    affiliate: UW School of Oceanography
+    image_url: https://www.ocean.washington.edu/files/dsc_0104-20191128052712_smsq.jpg
+    github_user: gmanuch
+    email: gmanuch@uw.edu
+    roles:
+      - OHW22 Organizer - Seattle UG
+
+  - name: Christian Sarason
+    title: Senior Research Scientist
+    affiliate: UW Applied Physics Laboratory
+    image_url: https://avatars.githubusercontent.com/u/665290?v=4
+    github_user: cpsarason
+    email: cbps@uw.edu
+    roles:
+      - OHW25 Organizer
+
+  - name: Jon Peake 
+    title: Data Scientist
+    affiliate: NOAA Fisheries
+    image_url: https://avatars.githubusercontent.com/u/27690999?v=4
+    github_user: jonpeake
+    email: jonathan.peake@noaa.gov
+    roles:
+      - OHW25 Project Mentor
+
+  - name: Rich Signell 
+    title: Research Oceanographer
+    affiliate: Open Science Computing
+    image_url: https://avatars.githubusercontent.com/u/125569335?v=4
+    github_user: rsignell
+    email: rich@opensciencecomputing.com 
+    roles:
+      - Steering Committee
+      - OHW25 Organizer
+      - OHW25 Project Mentor
