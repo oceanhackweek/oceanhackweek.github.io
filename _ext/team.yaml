@@ -436,3 +436,12 @@ team:
     roles:
       - OHW25 Organizer
       - OHW25 Project Mentor
+
+  - name: Your Name 
+    title: your title like PhD Student
+    affiliate: your affiliation
+    image_url: url see above
+    github_user: yourusername
+    email: you@email.com
+    roles:
+      - OHW25 Fellow
