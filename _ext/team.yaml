@@ -436,6 +436,15 @@ team:
     roles:
       - OHW25 Organizer
       - OHW25 Project Mentor
+      
+   - name: Rui Jin
+    title: Postdoctoral Researcher
+    affiliate: UW CICOES
+    image_url: https://ruijinsz.github.io/assets/images/avatar.jpg
+    github_user: RuiJinSZ
+    email: ruijin1@uw.edu
+    roles:
+      - OHW25 Fellow     
 
   - name: Your Name 
     title: your title like PhD Student
