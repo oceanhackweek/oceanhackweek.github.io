@@ -437,11 +437,11 @@ team:
       - OHW25 Organizer
       - OHW25 Project Mentor
 
-  - name: Your Name 
-    title: your title like PhD Student
-    affiliate: your affiliation
-    image_url: url see above
-    github_user: yourusername
-    email: you@email.com
+  - name: Bruna Strack Cândido 
+    title: MSc Student
+    affiliate: Copernicus Master in Digital Earth
+    image_url: https://avatars.githubusercontent.com/u/62394992?v=4
+    github_user: brunacandido
+    email: brunscandido@gmail.com
     roles:
       - OHW25 Fellow
