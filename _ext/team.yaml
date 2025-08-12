@@ -463,3 +463,12 @@ team:
     email: brunscandido@gmail.com
     roles:
       - OHW25 Fellow
+
+  - name: Boris Shapkin 
+    title: PhD Student
+    affiliate: Alfred Wegener Institute
+    image_url: https://avatars.githubusercontent.com/u/80640421?s=400&u=1d52cb46232a362204e09cb8db284e0313a9bb09&v=4
+    github_user: boryasbora
+    email: boris.shapkin@awi.de
+    roles:
+      - OHW25 Fellow
