@@ -436,6 +436,15 @@ team:
     roles:
       - OHW25 Organizer
       - OHW25 Project Mentor
+      
+  - name: Rui Jin
+    title: Postdoctoral Researcher
+    affiliate: UW CICOES
+    image_url: https://ruijinsz.github.io/assets/images/avatar.jpg
+    github_user: RuiJinSZ
+    email: ruijin1@uw.edu
+    roles:
+      - OHW25 Fellow     
 
   - name: Hafeez Oladejo 
     title: PhD Student
@@ -443,5 +452,14 @@ team:
     image_url: https://avatars.githubusercontent.com/u/88295217?v=4
     github_user: Hafeezopeyemi
     email: Hafeez.Oladejo@usm.edu
+    roles:
+      - OHW25 Fellow
+
+  - name: Bruna Strack Cândido 
+    title: MSc Student
+    affiliate: Copernicus Master in Digital Earth
+    image_url: https://avatars.githubusercontent.com/u/62394992?v=4
+    github_user: brunacandido
+    email: brunscandido@gmail.com
     roles:
       - OHW25 Fellow
