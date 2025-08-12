@@ -1,0 +1,28 @@
+[project]
+name = "ohw-site"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Alex Kerney <abk@mac.com>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64", "linux-aarch64", "win-64"]
+
+[tasks]
+live = "make live"
+clean = "make clean"
+html = "make html"
+linkcheck = "make html linkcheck"
+
+[dependencies]
+python = ">=3.8,<3.9"
+myst-nb = ">=0.16.0"
+sphinx = ">=5.0.2"
+jupytext = "*"
+pre-commit = "*"
+ablog = ">=0.10.26"
+sphinx-autobuild = ">=2021.3.14"
+pydata-sphinx-theme = ">=0.9.0"
+ipywidgets = ">=7.7.1"
+sphinx-design = ">=0.2.0"
+numpy = ">=1.23.1"
+pandas = ">=1.4.3"
+xarray = ">=2022.3.0"
