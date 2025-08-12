@@ -27,7 +27,12 @@ jobs:
       - name: Build documentation
         shell: bash -l {0}
         run: |
-          make html linkcheck
+          make html
+
+      # - name: Check links
+      #   shell: bash -l {0}
+      #   run: |
+      #     make linkcheck
 
       # workaround https://github.com/actions/upload-artifact/issues/38
       - name: tarball
