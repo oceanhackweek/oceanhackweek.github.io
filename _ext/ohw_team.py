@@ -86,15 +86,14 @@ class OHWTeam(SphinxDirective):
                 )
             )
             body = nodes.container(is_div=True, classes=["card-body"])
-            name = nodes.paragraph(text=member["name"], classes=["h5"])
+            name = nodes.paragraph(text=member["name"] + " ", classes=["h5"])
 
             # Add Github icon if github user account is provided
             if "github_user" in member and member["github_user"] is not None:
-                target = directives.uri("https://github.com/" + member["github_user"])
-                link = nodes.reference(
-                    "", refuri=target, text="", classes=["fab", "fa-github", "ml-1"]
-                )
-                link.append(nodes.inline(text=""))
+                target = "https://github.com/" + member["github_user"]
+                icon = nodes.inline(text="", classes=["fab", "fa-github", "ml-1"])
+                link = nodes.reference("", refuri=target)
+                link.append(icon)
                 name.append(link)
 
             # If emails are avaliable and email_icon is enabled, then add a email icon
@@ -103,11 +102,10 @@ class OHWTeam(SphinxDirective):
                 and "email" in member
                 and member["email"] is not None
             ):
-                target = directives.uri("mailto:" + member["email"])
-                link = nodes.reference(
-                    "", refuri=target, text="", classes=["fas", "fa-envelope", "ml-1"]
-                )
-                link.append(nodes.inline(text=""))
+                target = "mailto:" + member["email"]
+                icon = nodes.inline(text="", classes=["fas", "fa-envelope", "ml-1"])
+                link = nodes.reference("", refuri=target)
+                link.append(icon)
                 name.append(link)
 
             body.extend(
