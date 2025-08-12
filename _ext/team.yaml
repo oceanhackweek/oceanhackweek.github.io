@@ -187,7 +187,7 @@ team:
     image_url: https://avatars.githubusercontent.com/u/36463906?v=4
     github_user: Thomas-Moore-Creative
     roles:
-      - Steering Committee
+      - Steering Committee - Emeritus
       - OHW21 Organizer - Australia
       - OHW22 Organizer
       - OHW24 Organizer - Australia
@@ -237,7 +237,7 @@ team:
     image_url: https://avatars.githubusercontent.com/u/7740937?v=4
     github_user: sophieclayton
     roles:
-      - Steering Committee
+      - Steering Committee - Emeritus
       - Projects
       - OHW20 Organizer
       - OHW22 Organizer - Global
@@ -271,6 +271,7 @@ team:
     github_user: lidefi87
     email: lilian.fierroarcos@utas.edu.au
     roles:
+      - Steering Committee
       - Tutorials
       - OHW21 Participant
       - OHW22 Organizer - Espanol
@@ -323,6 +324,7 @@ team:
     github_user: myrandaGoesToSpace
     # email:
     roles:
+      - Steering Committee
       - OHW23 Organizer, Tutorial
       - OHW24 Organizer, Tutorial - USA
       - OHW25 Organizer
@@ -389,6 +391,7 @@ team:
     github_user: valentina-s
     email: vms16@uw.edu
     roles:
+      - Steering Committee
       - OHW18 Organizer
       - OHW19 Organizer
       - OHW20 Instructor
@@ -405,8 +408,6 @@ team:
     github_user: gmanuch
     email: gmanuch@uw.edu
     roles:
-      - Projects
-      - Tutorials
       - OHW22 Organizer - Seattle UG
 
   - name: Christian Sarason
@@ -434,6 +435,7 @@ team:
     github_user: rsignell
     email: rich@opensciencecomputing.com 
     roles:
+      - Steering Committee
       - OHW25 Organizer
       - OHW25 Project Mentor
       
