@@ -446,6 +446,15 @@ team:
     roles:
       - OHW25 Fellow     
 
+  - name: Hafeez Oladejo 
+    title: PhD Student
+    affiliate: University of Southern Mississippi
+    image_url: https://avatars.githubusercontent.com/u/88295217?v=4
+    github_user: Hafeezopeyemi
+    email: Hafeez.Oladejo@usm.edu
+    roles:
+      - OHW25 Fellow
+
   - name: Bruna Strack Cândido 
     title: MSc Student
     affiliate: Copernicus Master in Digital Earth
