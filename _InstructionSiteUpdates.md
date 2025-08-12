@@ -56,14 +56,14 @@ It is worth noting that we are using the `source` branch as the base for this re
 
 #### Environment
 
-There is a pre-configured conda environment in `environment.yml`.
-To use it, `conda env create --file environment.yml`, then activate with `conda activate ohw-site`.
+There is a pre-configured conda environment in `pixi.toml`.
+To use it, prefix commands with `pixi run` to make sure the environment is up to date.
 
 #### Commands
 
-- `make live` - The environment is setup with [sphinx-autobuild](https://pypi.org/project/sphinx-autobuild/) which will update open browsers when files are saved. The site will be available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
-- `make html` - Launch a one off build of HTML output.
-- `make clean` - Clean all the build directories. This can be useful as Sphinx tries to do incremental builds, and sometimes it will end up out of sync.
+- `pixi run live` - The environment is setup with [sphinx-autobuild](https://pypi.org/project/sphinx-autobuild/) which will update open browsers when files are saved. The site will be available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+- `pixi run html` - Launch a one off build of HTML output.
+- `pixi run clean` - Clean all the build directories. This can be useful as Sphinx tries to do incremental builds, and sometimes it will end up out of sync.
 - `git pull upstream source` to bring in any changes from the main repo.
 
 ### Writing and Linking Pages
@@ -210,7 +210,7 @@ After you create a PR, Netlify will build the site and make a comment with a lin
 While most pages follow the same structure in the repo, as they do on the website, there are a few additional files to be aware of:
 
 - `conf.pd` - This is the Sphinx configuration file.
-- `environment.yml` - The conda environment needed to build the website.
+- `pixi.toml` - The conda environment needed to build the website.
 - `requirements.txt` - A pip installable environment to build the website. This is mainly used by Netlify to create previews of Pull Requests. It is generated with `pip list --format=freeze > requirements.txt`
 - `posts.md` - A stub page that is replaced when blog posts are generated.
 - `_build/` - Automatically generated output from Sphinx.

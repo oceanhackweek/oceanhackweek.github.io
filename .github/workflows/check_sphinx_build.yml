@@ -18,21 +18,20 @@ jobs:
         with:
           submodules: true
 
-      - name: Install Conda environment from environment.yml
-        uses: mamba-org/setup-micromamba@0dea6379afdaffa5d528b3d1dabc45da37f443fc  # v2.0.4
+      - uses: prefix-dev/setup-pixi@v0.8.14
         with:
-          environment-file: environment.yml
-          cache-environment: true
+          pixi-version: v0.51.0
+          cache: true
 
       - name: Build documentation
         shell: bash -l {0}
         run: |
-          make html
+          pixi run html
 
-      # - name: Check links
-      #   shell: bash -l {0}
-      #   run: |
-      #     make linkcheck
+      - name: Check links
+        shell: bash -l {0}
+        run: |
+          pixi run linkcheck
 
       # workaround https://github.com/actions/upload-artifact/issues/38
       - name: tarball

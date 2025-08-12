@@ -11,3 +11,5 @@ _config_localdev.yml
 _build
 **/.ipynb_checkpoints/*
 __pycache__
+
+.pixi
