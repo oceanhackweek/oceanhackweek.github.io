@@ -52,7 +52,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   </div>
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/GMRI.png
+  ```{image} ../assets/images/logos/GMRI.jpg
   :alt: Gulf of Maine Research Institute
   :width: 180px
   ```
@@ -108,6 +108,15 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   ```{image} ../assets/images/logos/nmfs-opensci.png
   :alt: NMFS Open Science
+  :width: 180px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/earthmover.png
+  :alt: Earthmover
   :width: 180px
   ```
 
