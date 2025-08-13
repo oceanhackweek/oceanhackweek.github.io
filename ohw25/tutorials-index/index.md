@@ -40,7 +40,7 @@ The following tutorials will be presented live during the **US sessions**, and w
 
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer the following.
 
-- [OHW Fellows] - **Science Talks**
+- OHW Fellows - **Science Talks**
 - [Hafeez Oladejo](https://www.linkedin.com/in/hafeez-oladejo-a55b06167)  - **AI Assisted Programming Discussion** following a tutorial on LLMs.
 - [Alex Kerney](https://github.com/abkfenris) - [**Stresses in the geosciences**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/02-Wed/README.md), an open discussion about mental health in the geosciences.
 - [Joe Hamman](https://joehamman.com/about/) - **Advanced xarray and icechunk with ICESat2 data** (optional with [ICESat-2 Hackweek](https://2025.hackweek.io/))
