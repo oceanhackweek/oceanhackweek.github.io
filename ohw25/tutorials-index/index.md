@@ -28,25 +28,20 @@ The following tutorials will be presented live during the **US sessions**, and w
 [Finn Wimberly](https://www.whoi.edu/research-associate-ii-finn-wimberly/) - [**Xarray Tutorial**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/01-Tue#xarray) 
 
 ### Wednesday, August 28th
+[Boris Shapkin](https://de.linkedin.com/in/boris-shapkin) - [**Using LLMs and AI Agents with Climate and Ocean Data**]()
 
+[Kristen Thyng](https://www.linkedin.com/in/kristen-thyng) - [**Visualization**]()
 
 ### Thursday, August 29th
+[Valentina Staneva](https://valentina-s.github.io/) - [**Reproducible Workflows**]()
 
 
 ## Lectures and Discussions
 
 Finally, each year we offer brief sessions on non-coding aspects of computational oceanography; this year we are pleased to offer the following.
 
+- [Hafeez Oladejo](https://www.linkedin.com/in/hafeez-oladejo-a55b06167)  - **AI Assisted Programming Discussion** following a tutorial on LLMs.
+- [Alex Kerney](https://github.com/abkfenris) - [**Stresses in the geosciences**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/02-Wed/README.md), an open discussion about mental health in the geosciences.
+- [Joe Hamman](https://joehamman.com/about/) - **Advanced xarray and icechunk with ICESat2 data** (optional with [ICESat-2 Hackweek](https://2025.hackweek.io/))
 
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-
-../tutorials_getting_started
-../tutorials/01-Tue/Data_access_methods_Python.ipynb
-machine-learning.md
-../tutorials/02-Wed/ai_assisted_programming_ohw.ipynb
-../tutorials/02-Wed/xarray-in-45-min.ipynb
-../tutorials/03-Thu/OHW_omics_lesson.ipynb
-```
