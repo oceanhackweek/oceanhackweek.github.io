@@ -20,7 +20,7 @@ The following tutorials will be presented live during the **US sessions**, and w
 ### Monday, August 18th
 [Christian Sarason](https://apl.uw.edu/people/profile.php?last_name=Sarason&first_name=Christian) - [**Fight the dreaded 'It works for me' demon with conda package management and jupyter notebooks:**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/00-Mon#packagesjupyterlabhub) This tutorial will describe some of the pros, cons and pitfalls of package management and take quick tour of Pixi and JupyterHub using an example project.
 
-[Derya Gumustel](https://www.linkedin.com/in/derya-gumustel), [Rui Jin](https://ruijinsz.github.io/), [Bruna Strack Candido](https://at.linkedin.com/in/brunascandido)- [**Git&GitHub Primer**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/00-Mon#git--github-primer)
+[Derya Gumustel](https://www.linkedin.com/in/derya-gumustel), [Rui Jin](https://ruijinsz.github.io/), [Bruna Strack C\^{a}ndido](https://at.linkedin.com/in/brunascandido)- [**Git&GitHub Primer**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/00-Mon#git--github-primer)
 
 ### Tuesday, August 19th
 [Filipe Fernandes](https://github.com/ocefpaf) - [**Data Access in Python:**](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW25/01-Tue#data-access-in-python) In this tutorial, participants will use Python to find and access ocean data via a range of protocols including ERDDAP, OPeNDAP and WMS. 
