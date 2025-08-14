@@ -97,8 +97,19 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/openscapes.png
-  :alt: Openscapes
+  ```{image} ../assets/images/logos/earthmover.png
+  :alt: Earthmover
+  :width: 180px
+  ```
+
+  </div>
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/devseed.png
+  :alt: Development Seed
   :width: 180px
   ```
 
@@ -115,8 +126,8 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/earthmover.png
-  :alt: Earthmover
+  ```{image} ../assets/images/logos/openscapes.png
+  :alt: Openscapes
   :width: 180px
   ```
 
