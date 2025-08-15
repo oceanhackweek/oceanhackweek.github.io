@@ -86,10 +86,42 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
+</div>
+  
+<div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/SOI-Logo-fullcolor-brand-V3.jpg
   :alt: Schmidt Ocean Institute
+  :width: 180px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/earthmover.png
+  :alt: Earthmover
+  :width: 180px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/devseed.png
+  :alt: Development Seed
+  :width: 180px
+  ```
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/nmfs-opensci.png
+  :alt: NMFS Open Science
   :width: 180px
   ```
 
@@ -104,25 +136,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   </div>
   
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/nmfs-opensci.png
-  :alt: NMFS Open Science
-  :width: 180px
-  ```
-
-  </div>
-
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/earthmover.png
-  :alt: Earthmover
-  :width: 180px
-  ```
-
-  </div>
-  
-  </div>
+</div>
 
 
 
