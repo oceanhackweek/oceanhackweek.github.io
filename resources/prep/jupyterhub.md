@@ -20,7 +20,7 @@ We encourage you to use our shared JupyterHub resources for running all the tuto
 
 ## How do I access the shared cloud environment?
 
-Access to our shared cloud environment is easy. Click on [https://oceanhackweek.2i2c.cloud](https://oceanhackweek.2i2c.cloud)
+Access to our shared cloud environment by clicking on [https://workshop.nmfs-openscapes.2i2c.cloud](https://workshop.nmfs-openscapes.2i2c.cloud)
 
 ![hub-opening](../img/ohw21-jupyterhub-opening.png)
 
@@ -54,13 +54,13 @@ The nbgitpuller link is magical, but it can't detect which profile you are curre
 
 :::{tab-item} Python
 
-[Pull tutorial repo for the Python profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW24)
+[Pull tutorial repo for the Python profile](https://workshop.nmfs-openscapes.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW25)
 
 :::
 
 :::{tab-item} R
 
-[Pull tutorial repo for the R profile](https://oceanhackweek.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW24)
+[Pull tutorial repo for the R profile](https://workshop.nmfs-openscapes.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW25)
 
 :::
 
@@ -121,13 +121,13 @@ If you are **using JupyterLab**, you access the control via `File > Hub Control 
 
 ![hub shut down step 1](../img/ohw21-shutdownhub-step1.png)
 
-Then you can shut down your server from your hub control panel (which you can also access directly from [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)):
+Then you can shut down your server from your hub control panel (which you can also access directly from [https://workshop.nmfs-openscapes.2i2c.cloud/hub/home](https://workshop.nmfs-openscapes.2i2c.cloud/hub/home)):
 
 ![hub shut down step 2](../img/ohw21-shutdownhub-step2.png)
 
 Note that the menu item `File > Log Out` doesn't actually shut down the server, so please follow these steps instead.
 
-If you are **using RStudio**, the `Log out` and `Quit session` entries under the `File` menu won't do much! Shut down your server from your hub control panel [https://oceanhackweek.2i2c.cloud/hub/home](https://oceanhackweek.2i2c.cloud/hub/home)), as described above.
+If you are **using RStudio**, the `Log out` and `Quit session` entries under the `File` menu won't do much! Shut down your server from your hub control panel [https://workshop.nmfs-openscapes.2i2c.cloud/hub/home](https://workshop.nmfs-openscapes.2i2c.cloud/hub/home)), as described above.
 
 ```{admonition} Note
 :class: important
