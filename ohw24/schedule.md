@@ -15,4 +15,4 @@
 
 ## US in-person schedule
 
-<iframe width=700 height=600 src="https://docs.google.com/spreadsheets/d/1uzwU6hCjiu49dcl8JE0iik7nZy7LuQnrloN-i3v-fLw/pubhtml?gid=539810478&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+[https://docs.google.com/spreadsheets/d/1uzwU6hCjiu49dcl8JE0iik7nZy7LuQnrloN-i3v-fLw/pubhtml?gid=539810478&amp;single=true&amp;widget=true&amp;headers=false]()
