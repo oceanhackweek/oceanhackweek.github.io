@@ -20,7 +20,7 @@ We encourage you to use our shared JupyterHub resources for running all the tuto
 
 ## How do I access the shared cloud environment?
 
-Access to our shared cloud environment by clicking on [https://workshop.nmfs-openscapes.2i2c.cloud](https://workshop.nmfs-openscapes.2i2c.cloud)
+Access to our shared cloud environment by clicking on [https://nmfs-openscapes.2i2c.cloud](https://nmfs-openscapes.2i2c.cloud)
 
 ![hub-opening](../img/ohw21-jupyterhub-opening.png)
 
