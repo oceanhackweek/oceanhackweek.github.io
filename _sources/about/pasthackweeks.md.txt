@@ -11,6 +11,14 @@ OceanHackWeek (**OHW**) has taken place annually starting in 2018. Materials fro
 
 OceanHackWeek started out as an in-person event in Seattle with limited virtual access in 2018 and 2019, but moved to a virtual format in 2020 and a hybrid format from 2021 to 2023. In 2024, it was held at two in-person locations.
 
+## 2025 (OHW25)
+
+- One in-person events, at the University of Washington, Seattle, Washington USA.
+- Programming languages: Python + R
+- [tutorials](../ohw25/tutorials-index/index) + [projects](../ohw25/projects/projects_thisyear)
+- [Schedule](../ohw25/schedule)
+- [Web site](../ohw25/index)
+
 ## 2024 (OHW24)
 
 - Two in-person events, at the Bigelow Laboratory for Ocean Sciences, East Boothbay, Maine, USA and in Sydney, Australia.
