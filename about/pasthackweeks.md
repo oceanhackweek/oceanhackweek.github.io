@@ -13,7 +13,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 
 ## 2025 (OHW25)
 
-- One in-person events, at the University of Washington, Seattle, Washington USA.
+- One in-person event at the University of Washington, Seattle, Washington USA.
 - Programming languages: Python + R
 - [tutorials](../ohw25/tutorials-index/index) + [projects](../ohw25/projects/projects_thisyear)
 - [Schedule](../ohw25/schedule)
