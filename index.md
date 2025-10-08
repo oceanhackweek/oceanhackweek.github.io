@@ -6,6 +6,16 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
+:::{admonition} OceanHackWeek 2025
+:class: important
+
+OceanHackWeek 2025 was an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. [Check out the projects](https://oceanhackweek.org/ohw25/projects/projects_thisyear.html) from this year's OceanHackWeek!
+
+:::
+
+
+<!--
+
 :::{admonition} Applications Closed for OceanHackWeek 2025. Decisions by July 21.
 :class: important
 
@@ -42,6 +52,8 @@ Apply to OceanHackWeek 2025 Fellows Program
 ```
 -->
 :::
+
+-->
 
 
 <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
