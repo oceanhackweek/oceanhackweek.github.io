@@ -9,12 +9,11 @@ description: OceanHackWeek home
 :::{admonition} OceanHackWeek 2026
 :class: important
 
-Mark your calendars! OceanHackWeek 2026 will be at the Bamfield Marine Sciences Centre from August 24-28th.
+Mark your calendars! We are planning OceanHackWeek 2026 at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) from August 24-28th.
 
-If the spelling didn't give it away, we're headed to the West Coast of Vancouver Island next year, so start scheeming your adventures!
+If the spelling didn't give it away, we're headed to the West Coast of [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island) (British Columbia, Canada) next year, so start scheeming your adventures!
 
-Check back in 2026 as we scheme what a Canada flavored OceanHackWeek looks like.
-
+Check back in 2026 as we confirm the event and scheme what a Canada flavored OceanHackWeek looks like.
 :::
 
 
