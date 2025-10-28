@@ -6,10 +6,14 @@ description: OceanHackWeek home
 
 # OceanHackWeek (OHW)
 
-:::{admonition} OceanHackWeek 2025
+:::{admonition} OceanHackWeek 2026
 :class: important
 
-OceanHackWeek 2025 was an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. [Check out the projects](https://oceanhackweek.org/ohw25/projects/projects_thisyear.html) from this year's OceanHackWeek!
+Mark your calendars! OceanHackWeek 2026 will be at the Bamfield Marine Sciences Centre from August 24-28th.
+
+If the spelling didn't give it away, we're headed to the West Coast of Vancouver Island next year, so start scheeming your adventures!
+
+Check back in 2026 as we scheme what a Canada flavored OceanHackWeek looks like.
 
 :::
 
