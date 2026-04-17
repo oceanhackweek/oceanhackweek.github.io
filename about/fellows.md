@@ -34,3 +34,10 @@ Applications are closed. Accepted applicants will be notified no later than July
 
 For general questions, please email info@oceanhackweek.org
 
+```{toctree}
+:maxdepth: 3
+:caption: OHW Fellows
+:hidden:
+
+Past Fellows <fellows-team>
+```
