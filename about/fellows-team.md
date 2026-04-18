@@ -3,7 +3,9 @@ layout: page
 description: Team of OceanHackWeek Fellows
 ---
 
-# 2025 Fellows
+# OceanHackWeek Fellows
+
+## 2025
 
 ```{ohw-team}
 :roles: "OHW25 Fellow"
