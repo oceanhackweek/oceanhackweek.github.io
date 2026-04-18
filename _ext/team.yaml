@@ -96,6 +96,7 @@ team:
       - OHW24 Organizer - USA
       - OHW25 Organizer
       - OHW25 Infrastructure
+      - OHW26 Organizer
 
   - name: Jane Koh
     title: Program Specialist
@@ -161,6 +162,7 @@ team:
       - OHW22 Organizer - Seattle
       - OHW22 Organizer - Espanol
       - OHW23 Organizer
+      - OHW26 Organizer
 
   - name: Catherine Mitchell
     title: Senior Research Scientist
@@ -383,6 +385,7 @@ team:
       - OHW24 Organizer, Project Mentor - USA
       - OHW25 Organizer
       - OHW25 Project Mentor
+      - OHW26 Organizer
 
   - name: Valentina Staneva 
     title: Senior Research Scientist
@@ -400,6 +403,7 @@ team:
       - OHW24 Organizer, Project Mentor
       - OHW25 Organizer
       - OHW25 Project Mentor
+      - OHW26 Organizer
 
   - name: Georgy Manucharyan
     title: Assistant Professor
@@ -474,3 +478,13 @@ team:
     email: boris.shapkin@awi.de
     roles:
       - OHW25 Fellow
+
+  - name: Dwight Owen
+    title: Impact and Capacity Development Manager
+    affiliate: Ocean Networks Canada
+    image_url: https://cdn.onc-prod.intergalactic.space/small_IMG_0968_1x1_a23a75dbe0.jpg
+    # github_user: 
+    email: dwowens@oceannetworks.ca
+    roles:
+      - OHW25 Fellow
+      - OHW26 Organizer

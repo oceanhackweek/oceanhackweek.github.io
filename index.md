@@ -9,32 +9,22 @@ description: OceanHackWeek home
 :::{admonition} OceanHackWeek 2026
 :class: important
 
-Mark your calendars! OceanHackWeek 2026 will be at the Bamfield Marine Sciences Centre from August 24-28th.
+Mark your calendars! OceanHackWeek 2026 will be at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) from August 24-28th.
 
-If the spelling didn't give it away, we're headed to the West Coast of Vancouver Island next year, so start scheeming your adventures!
+If the spelling didn't give it away, we're headed to the West Coast of [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island) (British Columbia, Canada) next year, so start scheeming your adventures!
 
 Check back in 2026 as we scheme what a Canada flavored OceanHackWeek looks like.
 
-:::
-
-
-<!--
-
-:::{admonition} Applications Closed for OceanHackWeek 2025. Decisions by July 21.
-:class: important
-
-We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. 
-What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as [tutorial instructor or project mentor](resources/organizing/index).
-
-```{button-link} https://forms.gle/npWmq1QA4twbV5LT7
+```{button-link} ohw26/
 :color: primary
 :expand:
-:tooltip: Apply to OHW25
-Apply to OceanHackWeek 2025
+:tooltip: OHW26
+Go to OceanHackWeek 2026
 ```
 :::
 
 
+<!--
 :::{admonition} New in 2025: The OceanHackWeek Fellows Program
 :class: admonition
 
@@ -52,7 +42,6 @@ For more details [check our OHW Fellows page](about/fellows).
 Apply to OceanHackWeek 2025 Fellows Program
 ```
 :::
-
 -->
 
 
@@ -241,8 +230,8 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 :hidden:
 
 about/index.md
-OceanHackWeek 2025 <ohw25/index.md>
-OceanHackWeek Fellows <about/fellows.md>
+OHW 2026 <ohw26/index.md>
+OHW Fellows <about/fellows.md>
 resources/index.md
 about/pasthackweeks.md
 ```
