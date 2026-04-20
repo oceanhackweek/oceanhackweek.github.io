@@ -68,13 +68,13 @@ The nbgitpuller link is magical, but it can't detect which profile you are curre
 
 ```
 
-Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls (i.e., when you click the links above again) via a [series of sane rules](https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html#topic-automatic-merging).
+Nbgitpuller is nice, because it will automatically merge any changes you make with the changes from the upstream repo on subsequent pulls (i.e., when you click the links above again) via a [series of sane rules](https://nbgitpuller.readthedocs.io/en/latest/topic/automatic-merging.html).
 
 You can accomplish the same results as nbgitpuller when using `git` directly, but it can take a complicated dance of `git add`, `git stash`, `git pull`, and `git stash apply` to keep your changes and get the changes from upstream.
 
 ```{warning}
 
-If you start by using the `nbgitpuller` link and then switch to using git directly, or if you already have a copy of the repository in your account from a previous OHW, using the `nbgitpuller` link again will most likely lead to [unpredictable results](https://jupyterhub.github.io/nbgitpuller/#when-to-use-nbgitpuller).
+If you start by using the `nbgitpuller` link and then switch to using git directly, or if you already have a copy of the repository in your account from a previous OHW, using the `nbgitpuller` link again will most likely lead to [unpredictable results](https://nbgitpuller.readthedocs.io/en/latest/#when-to-use-nbgitpuller).
 
 This can be fixed by [removing, renaming, or moving the `ohw-tutorials` directory](https://imgs.xkcd.com/comics/git.png) and using nbgitpuller again.
 ```

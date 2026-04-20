@@ -73,11 +73,11 @@ html_theme_options = {
             "url": "https://github.com/orgs/oceanhackweek/discussions",
             "icon": "fas fa-comments",
         },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/oceanhackweek",
-            "icon": "fab fa-twitter-square",
-        },
+        # {
+        #     "name": "Twitter",
+        #     "url": "https://twitter.com/oceanhackweek",
+        #     "icon": "fab fa-twitter-square",
+        # },
         {
             "name": "YouTube",
             "url": "https://www.youtube.com/@OceanHackWeek/playlists",
@@ -152,6 +152,27 @@ jupyter_execute_notebooks = "off"  # TODO test
 
 nb_custom_formats = {".Rmd": ["jupytext.reads", {"fmt": "Rmd"}]}
 
+# configing link checking
+linkcheck_ignore = [
+    r"https://hub-binder.mybinder.ovh.*",
+    r"https://www.vanderbilt.edu/datascience/data-science-team/",
+    r"https://www.maren.cure.edu.uy/wp-content/uploads/2014/08/angel.jpg",
+    r"https://www.agu.org/Ocean-Sciences-Meeting",  # Works, but blocking linkcheck
+    r"https://udelar.edu.uy/directorio/lugares/centro-universitario-regional-del-este-cure-sede-rocha-1/",  # Cert issue
+    r"https://oceanhackweek.2i2c.cloud.*",  # Old 2i2c hub
+    r"https://linuxize.com/post/how-to-use-nano-text-editor/", # Works, but blocking linkcheck
+    r"https://imos.org.au/fileadmin/_processed_/b/c/csm_DSC_8209_f513b959ad.jpg",
+    r"https://doi.org/10.1073/pnas.1717196115",  # Works, but blocking linkcheck
+    r"https://jamboard.google.com/.*",  # Jamboard is shut down
+
+]
+linkcheck_exclude_documents = [
+    r".pixi/.*"
+]
+linkcheck_anchors_ignore_for_url = [
+    r"https://github.com/oceanhackweek/ohw-tutorials/.*",  # Not finding all anchors on Github
+    r"https://docs.google.com/presentation/.*",  # Google slides anchors are too dynamic
+]
 
 def setup(app):
     app.add_css_file("custom.css")
