@@ -152,6 +152,7 @@ jupyter_execute_notebooks = "off"  # TODO test
 
 nb_custom_formats = {".Rmd": ["jupytext.reads", {"fmt": "Rmd"}]}
 
+linkcheck_anchors = False
 
 def setup(app):
     app.add_css_file("custom.css")
