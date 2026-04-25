@@ -33,6 +33,7 @@ team:
       - OHW22 Organizer - Florianopolis
       - OHW23 Organizer
       - OHW24 Organizer
+      - OHW26 Organizer
 
   - name: Chelle Gentemann
     title: Senior Scientist
@@ -96,6 +97,7 @@ team:
       - OHW24 Organizer - USA
       - OHW25 Organizer
       - OHW25 Infrastructure
+      - OHW26 Organizer
 
   - name: Jane Koh
     title: Program Specialist
@@ -128,6 +130,7 @@ team:
       - OHW24 Organizer - USA
       - OHW25 Organizer
       - OHW25 Project Mentor
+      - OHW26 Organizer
 
   - name: Paige Martin
     title: User Training Team Leader
@@ -161,6 +164,7 @@ team:
       - OHW22 Organizer - Seattle
       - OHW22 Organizer - Espanol
       - OHW23 Organizer
+      - OHW26 Organizer
 
   - name: Catherine Mitchell
     title: Senior Research Scientist
@@ -383,6 +387,7 @@ team:
       - OHW24 Organizer, Project Mentor - USA
       - OHW25 Organizer
       - OHW25 Project Mentor
+      - OHW26 Organizer
 
   - name: Valentina Staneva 
     title: Senior Research Scientist
@@ -400,6 +405,7 @@ team:
       - OHW24 Organizer, Project Mentor
       - OHW25 Organizer
       - OHW25 Project Mentor
+      - OHW26 Organizer
 
   - name: Georgy Manucharyan
     title: Assistant Professor
@@ -418,6 +424,7 @@ team:
     email: cbps@uw.edu
     roles:
       - OHW25 Organizer
+      - OHW26 Organizer
 
   - name: Jon Peake 
     title: Data Scientist
@@ -474,3 +481,58 @@ team:
     email: boris.shapkin@awi.de
     roles:
       - OHW25 Fellow
+
+  - name: Dwight Owen
+    title: Impact and Capacity Development Manager
+    affiliate: Ocean Networks Canada
+    image_url: https://cdn.onc-prod.intergalactic.space/small_IMG_0968_1x1_a23a75dbe0.jpg
+    # github_user: 
+    email: dwowens@oceannetworks.ca
+    roles:
+      - OHW25 Fellow
+      - OHW26 Organizer
+
+  - name: Austen Sorochak
+    title: Impact Analyst
+    affiliate: Ocean Networks Canada
+    image_url: https://github.com/sorochak.png
+    github_user: sorochak
+    email: austensorochak@oceannetworks.ca
+    roles:
+      - OHW26 Organizer
+
+  - name: Carrie Weekes
+    title: Ocean Technologist
+    affiliate: Bamfield Marine Sciences Centre
+    image_url: https://avatars.githubusercontent.com/u/35845434?v=4
+    github_user: CarrieWeekes
+    email: cweekes@bamfieldmsc.com
+    roles:
+      - OHW26 Organizer
+  
+  - name: Tao Eastham
+    title: Head of Programs
+    affiliate: Bamfield Marine Sciences Centre
+    image_url: https://bamfieldmsc.com/wp-content/uploads/2026/03/7-1-350x350.png
+    # github_user: # TODO
+    email: teastham@bamfieldmsc.com
+    roles:
+      - OHW26 Organizer
+
+  - name: Jordan Watson
+    title: Director, CIOOS Pacific
+    affiliate: CIOOS Pacific, Ocean Networks Canada
+    image_url: https://cioospacific.ca/wp-content/uploads/2026/01/jordanw.png
+    # github_user: # TODO
+    email: jordanwatson@oceannetworks.ca 
+    roles:
+      - OHW26 Organizer
+
+  - name: Julek Chawarski
+    title: Biological Oceanographer
+    affiliate: ASL Environmental Sciences
+    image_url: https://www.aslenv.com/assets/images/julek.webp
+    github_user: https://github.com/jchawarski
+    email: jchawarski@aslenv.com
+    roles:
+      - OHW26 Organizer
