@@ -491,3 +491,48 @@ team:
     roles:
       - OHW25 Fellow
       - OHW26 Organizer
+
+  - name: Austen Sorochak
+    title: Impact Analyst
+    affiliate: Ocean Networks Canada
+    image_url: https://github.com/sorochak.png
+    github_user: sorochak
+    email: austensorochak@oceannetworks.ca
+    roles:
+      - OHW26 Organizer
+
+  - name: Carrie Weekes
+    title: Ocean Technologist
+    affiliate: Bamfield Marine Sciences Centre
+    image_url: https://avatars.githubusercontent.com/u/35845434?v=4
+    github_user: CarrieWeekes
+    email: cweekes@bamfieldmsc.com
+    roles:
+      - OHW26 Organizer
+  
+  - name: Tao Eastham
+    title: Head of Programs
+    affiliate: Bamfield Marine Sciences Centre
+    image_url: https://bamfieldmsc.com/wp-content/uploads/2026/03/7-1-350x350.png
+    # github_user: # TODO
+    email: teastham@bamfieldmsc.com
+    roles:
+      - OHW26 Organizer
+
+  - name: Jordan Watson
+    title: Director, CIOOS Pacific
+    affiliate: CIOOS Pacific, Ocean Networks Canada
+    image_url: https://cioospacific.ca/wp-content/uploads/2026/01/jordanw.png
+    # github_user: # TODO
+    email: jordanwatson@oceannetworks.ca 
+    roles:
+      - OHW26 Organizer
+
+  - name: Julek Chawarski
+    title: Biological Oceanographer
+    affiliate: ASL Environmental Sciences
+    image_url: https://www.aslenv.com/assets/images/julek.webp
+    github_user: https://github.com/jchawarski
+    email: jchawarski@aslenv.com
+    roles:
+      - OHW26 Organizer
