@@ -522,7 +522,7 @@ team:
   - name: Jordan Watson
     title: Director, CIOOS Pacific
     affiliate: CIOOS Pacific, Ocean Networks Canada
-    image_url: https://cioospacific.ca/wp-content/uploads/2026/01/jordanw.png
+    image_url: /assets/images/people/jordanwatson.jpg
     # github_user: # TODO
     email: jordanwatson@oceannetworks.ca 
     roles:
