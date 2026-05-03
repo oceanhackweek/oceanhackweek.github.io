@@ -504,7 +504,7 @@ team:
   - name: Carrie Weekes
     title: Ocean Technologist
     affiliate: Bamfield Marine Sciences Centre
-    image_url: https://oceanhackweek.github.io/assets/images/carrie-weekes.jpg
+    image_url: /assets/images/people/carrie-weekes.jpg
     github_user: CarrieWeekes
     email: cweekes@bamfieldmsc.com
     roles:
