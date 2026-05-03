@@ -93,7 +93,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/cryointhecloud.webp
+  ```{image} ../assets/images/cryointhecloud.png
   :alt: Cryo-in-the-cloud
   :width: 180px
   ```
