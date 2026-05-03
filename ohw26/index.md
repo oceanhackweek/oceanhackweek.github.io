@@ -33,36 +33,9 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/BigelowLabs.png
-  :alt: Bigelow Lab
+  ```{image} ../assets/images/logos/SOI-Logo-fullcolor-brand-V3.jpg
+  :alt: Schmidt Ocean Institute
   :width: 180px
-  ```
-
-  </div>
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/apl_logo_blue.jpg
-  :alt: UW APL
-  :width: 180px
-  ```
-
-  </div>
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/GMRI.jpg
-  :alt: Gulf of Maine Research Institute
-  :width: 180px
-  ```
-
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/UW-SAFS.png
-  :alt: UW SAFS
-  :width: 130px
   ```
 
   </div>
@@ -75,11 +48,43 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
+
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/GOMO_Horizontal_Lockup_Logo_in_Blue.png
-  :alt: GOMO
-  :width: 180px
+  ```{image} assets/images/logos/nasa-logo.sm.png
+  :alt: NASA
+  :width: 150px
+  ```
+
+  </div>
+  
+</div>
+
+<div class="row">
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} assets/images/logos/ONC_2024.png
+  :alt: Ocean Networks Canada
+  :width: 150px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} assets/images/logos/bmsc.png
+  :alt: Bamfield Marine Sciences Centre
+  :width: 150px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} assets/images/logos/asl.png
+  :alt: ASL Environmental Sciences
+  :width: 150px
   ```
 
   </div>
@@ -88,8 +93,16 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 <div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/SOI-Logo-fullcolor-brand-V3.jpg
-  :alt: Schmidt Ocean Institute
+  ```{image} ../assets/images/cryointhecloud.webp
+  :alt: Cryo-in-the-cloud
+  :width: 180px
+  ```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/apl_logo_blue.jpg
+  :alt: UW APL
   :width: 180px
   ```
 
@@ -97,21 +110,13 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} ../assets/images/logos/earthmover.png
-  :alt: Earthmover
+  ```{image} ../assets/images/logos/GMRI.jpg
+  :alt: Gulf of Maine Research Institute
   :width: 180px
   ```
 
   </div>
 
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/devseed.png
-  :alt: Development Seed
-  :width: 180px
-  ```
-
-  </div>
 </div>
 
 <div class="row">
@@ -119,15 +124,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   ```{image} ../assets/images/logos/nmfs-opensci.png
   :alt: NMFS Open Science
-  :width: 180px
-  ```
-
-  </div>
-
-  <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/openscapes.png
-  :alt: Openscapes
   :width: 180px
   ```
 
