@@ -51,7 +51,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} assets/images/logos/nasa-logo.sm.png
+  ```{image} ../assets/images/logos/nasa-logo.sm.png
   :alt: NASA
   :width: 150px
   ```
@@ -64,7 +64,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} assets/images/logos/ONC_2024.png
+  ```{image} ../assets/images/logos/ONC_2024.png
   :alt: Ocean Networks Canada
   :width: 150px
   ```
@@ -73,7 +73,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} assets/images/logos/bmsc.png
+  ```{image} ../assets/images/logos/bmsc.png
   :alt: Bamfield Marine Sciences Centre
   :width: 150px
   ```
@@ -82,7 +82,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
 
-  ```{image} assets/images/logos/asl.png
+  ```{image} ../assets/images/logos/asl.png
   :alt: ASL Environmental Sciences
   :width: 150px
   ```
