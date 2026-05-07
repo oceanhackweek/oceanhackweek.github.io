@@ -9,11 +9,9 @@ description: OceanHackWeek home
 :::{admonition} OceanHackWeek 2026
 :class: important
 
-Mark your calendars! OceanHackWeek 2026 will be at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) from August 24-28th.
+OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada!
 
-If the spelling didn't give it away, we're headed to the West Coast of [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island) (British Columbia, Canada), so start scheming your adventures!
-
-Stay tuned as we shape what a Canada flavoured OceanHackWeek looks like.
+**We're planning to open applications by the end of May.** Stay tuned and check back soon for updates.
 
 ```{button-link} ohw26/
 :color: primary
@@ -21,6 +19,12 @@ Stay tuned as we shape what a Canada flavoured OceanHackWeek looks like.
 :tooltip: OHW26
 Go to OceanHackWeek 2026
 ```
+
+```{admonition} Attention potential Industry Partners
+:class: seattention
+**We are looking for _industry partners_** to help us lower costs for participants and expose them to private-sector careers in ocean data science! Please contact [Julek Chawarski](mailto:jchawarski@aslenv.com) to learn more. Thank you for your support!
+```
+
 :::
 
 
