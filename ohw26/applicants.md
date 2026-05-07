@@ -1,18 +1,28 @@
 ---
 layout: applicant
 # title: Information for Applicants
-description: OceanHackWeek (OHW) 2025
+description: OceanHackWeek (OHW) 2026
 permalink: applicant-info.html
 ---
 
-# Information for OHW25 Applicants
+# Information for OHW26 Applicants
 
-OceanHackWeek 2025 (OHW25) is a hands-on, interactive in-person workshop focused on data science in oceanography and fisheries that will be held on **August 18-22, 2025** in Seattle, WA USA. Join us for five days of tutorials, data exploration, software development and community networking!
+OceanHackWeek 2026 (OHW26) is a hands-on, interactive in-person workshop focused on data science in oceanography and fisheries that will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada. Join us for five days of tutorials, data exploration, software development and community networking!
 
-[Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th.
+<!-- [Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th. -->
 
 
-**See the [main OHW25 page](index) for information about the in-person OHW25 event in the Seattle, WA USA.**
+:::{admonition} Applications will open this month (May)!
+:class: important
+
+We're planning to open applications by the end of May. Stay tuned and check back soon for updates!
+
+Due to funding limitations for OHW, **this year we will likely charge a registration fee** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+
+:::
+
+
+**See the [main OHW26 page](index) for more information about the 2026 event.**
 
 Please see the FAQs below for answers to common questions.
 For additional questions, please post in our [discussions on Github](https://github.com/orgs/oceanhackweek/discussions/categories/q-a) or email 
@@ -97,9 +107,9 @@ Make sure to explain your motivation for participation in the application form!
 We may hold a career panel discussion,
 so please mention if you are interested in participating.
 
-### Q: I work in a non-US institution / organization / company. Can I apply?
+### Q: I work in a non-Canadian institution / organization / company. Can I apply?
 
-Yes, we welcome applications from abroad for both the in-person and virtual events.
+Yes, we welcome applications from abroad.
 
 ### Q: I was a participant in previous OceanHackWeek. Can I apply again?
 

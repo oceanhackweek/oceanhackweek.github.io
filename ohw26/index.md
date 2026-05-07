@@ -1,12 +1,22 @@
 # OceanHackWeek 2026 (OHW26)
 
-OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada.
+OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada.
 
 <!--
 [Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th.
 -->
 
 <!-- **Application review will begin July 15. Decisions by July 21.** -->
+
+:::{admonition} Applications will open this month (May)!
+:class: important
+
+We're planning to open applications by the end of May. Stay tuned and check back soon for updates!
+
+Due to funding limitations for OHW, **this year we will likely charge a registration fee** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+
+:::
+
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period.
 
@@ -31,6 +41,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 ## OHW26 Sponsors
 
 <div class="row">
+
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/SOI-Logo-fullcolor-brand-V3.jpg
@@ -39,7 +50,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/ioos_logo.jpg
@@ -48,7 +58,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/nasa-logo.sm.png
@@ -70,7 +79,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/bmsc.png
@@ -79,7 +87,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/asl.png
@@ -91,6 +98,7 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 </div>
   
 <div class="row">
+
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/cryointhecloud.png
@@ -107,6 +115,18 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+```{image} ../assets/images/eScience_square_logo.jpg
+:alt: UW eScience
+:width: 150px
+```
+
+  </div>
+
+</div>
+
+<div class="row">
 
   <div class="col-4" style="margin-bottom: 1rem">
 
@@ -116,10 +136,6 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
-
-</div>
-
-<div class="row">
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/logos/nmfs-opensci.png
@@ -143,5 +159,5 @@ Organizers <organizers>
 <!-- Logistics <logistics/index> -->
 <!-- tutorials-index/index -->
 <!-- Projects <projects/index> -->
-<!-- Information for Applicants <applicants> -->
+Information for Applicants <applicants>
 ```
