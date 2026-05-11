@@ -9,32 +9,27 @@ description: OceanHackWeek home
 :::{admonition} OceanHackWeek 2026
 :class: important
 
-Mark your calendars! OceanHackWeek 2026 will be at the Bamfield Marine Sciences Centre from August 24-28th.
+OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada!
 
-If the spelling didn't give it away, we're headed to the West Coast of Vancouver Island next year, so start scheeming your adventures!
+**We're planning to open applications by Friday May 15.** Stay tuned and check back then!
 
-Check back in 2026 as we scheme what a Canada flavored OceanHackWeek looks like.
+```{button-link} ohw26/
+:color: primary
+:expand:
+:tooltip: OHW26
+Go to OceanHackWeek 2026
+```
+
+```{admonition} Attention potential industry partners and other sponsors
+:class: seattention
+
+**We are looking for _industry partners_ or other sponsors** to help us lower costs for participants and expose them to private-sector careers in ocean data science! Please contact [Julek Chawarski](mailto:jchawarski@aslenv.com) to learn more and discuss options. Even small funding support would be really helpful. Thank you!
+```
 
 :::
 
 
 <!--
-
-:::{admonition} Applications Closed for OceanHackWeek 2025. Decisions by July 21.
-:class: important
-
-We are planning an in-person event at the University of Washington **Aug 18-22, 2025** in Seattle, WA USA. 
-What is OceanHackWeek? [Check out our past events](about/pasthackweeks), including [OHW24](ohw24/index). Please [contact us](about/contact) if you're interested in contributing to OceanHackWeek 2025 as [tutorial instructor or project mentor](resources/organizing/index).
-
-```{button-link} https://forms.gle/npWmq1QA4twbV5LT7
-:color: primary
-:expand:
-:tooltip: Apply to OHW25
-Apply to OceanHackWeek 2025
-```
-:::
-
-
 :::{admonition} New in 2025: The OceanHackWeek Fellows Program
 :class: admonition
 
@@ -52,7 +47,6 @@ For more details [check our OHW Fellows page](about/fellows).
 Apply to OceanHackWeek 2025 Fellows Program
 ```
 :::
-
 -->
 
 
@@ -241,8 +235,8 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 :hidden:
 
 about/index.md
-OceanHackWeek 2025 <ohw25/index.md>
-OceanHackWeek Fellows <about/fellows.md>
+OHW 2026 <ohw26/index.md>
+OHW Fellows <about/fellows.md>
 resources/index.md
 about/pasthackweeks.md
 ```
