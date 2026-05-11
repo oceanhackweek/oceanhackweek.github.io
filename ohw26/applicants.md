@@ -12,12 +12,12 @@ OceanHackWeek 2026 (OHW26) is a hands-on, interactive in-person workshop focused
 <!-- [Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th. -->
 
 
-:::{admonition} Applications will open this month (May)!
+:::{admonition} Applications will open by May 15!
 :class: important
 
-We're planning to open applications by the end of May. Stay tuned and check back soon for updates!
+**We're planning to open applications by Friday May 15.** Stay tuned and check back then!
 
-Due to funding limitations for OHW, **this year we will likely charge a registration fee** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+Due to current funding limitations for OHW, **this year we may not be able to provide free-of-charge lodging and meals to participants.** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
 
 :::
 
