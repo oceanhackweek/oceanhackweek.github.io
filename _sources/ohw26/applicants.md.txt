@@ -50,6 +50,18 @@ simply apply and explain your motivation for participation.
 
 We expect all participants to be engaged in the team projects and focus during the week.
 
+### Q: How much is registration and what does it cover?
+
+This year’s registration is $1200 CAD. This covers food, lodging, and logistical support at BMSC. Students will be offered three daily meals and shared housing at one of the BMSC student lodges.
+
+### Q: What is BMSC and what is Bamfield like?
+
+This year, we are hosting Canada’s first OHW at the [Bamfield Marine Science Centre](https://bamfieldmsc.com/). BMSC is located on the western shore of Vancouver Island, in the small coastal community of Bamfield, BC.
+
+BMSC is an educational campus run by the Pacific Marine Science Alliance (PMSA), a consortium of 5 western universities and provides research infrastructure and housing to visiting scientists and students alike.
+
+Bamfield is a small community that shares land and history with the Huu-ay-aht First Nation. There are limited services in Bamfield: two small stores with basic groceries and supplies, a gas bar, hardware store, and boat repair shop. Water taxis are available for daily transport around Bamfield inlet and to West Bamfield. Participants should plan to bring weather appropriate clothing (think rain showers, fog, sunshine, muddy trails etc).
+
 ### Q: I am proficient in Matlab / other languages but have not used Python or R. Python or R has been on my list to learn. How can I make my application be stronger?
 
 We plan to accept participants with diverse skill levels and backgrounds in programming.
