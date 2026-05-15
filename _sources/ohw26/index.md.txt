@@ -2,18 +2,32 @@
 
 OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada.
 
-<!--
-[Applications are open](https://docs.google.com/forms/d/1Mb72g93TySkyG_ls1Ql_wGEgynbUTI1YF_QJm4Mivv0/viewform?edit_requested=true) through July 14th.
--->
-
-<!-- **Application review will begin July 15. Decisions by July 21.** -->
-
-:::{admonition} Applications will open by May 15!
+:::{admonition} Applications are open!
 :class: important
 
-**We're planning to open applications by Friday May 15.** Stay tuned and check back then!
+Application review will begin June 5th. Decisions by June 15th.
 
-Due to current funding limitations for OHW, **this year we may not be able to provide free-of-charge lodging and meals to participants.** We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+```{button-link} https://forms.gle/wRapTBKwGRyX8pZN8
+:color: primary
+:expand:
+:tooltip: Apply to OHW26
+Apply to OceanHackWeek 2026
+```
+
+Due to current funding limitations for OHW, **this year we are not able to provide free-of-charge lodging and meals to all participants.** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+
+```{button-link} ./applicants/
+:color: primary
+:expand:
+:tooltip: Applicant info
+More applicant info
+```
+
+```{admonition} Attention potential industry partners and other sponsors
+:class: seattention
+
+**We are looking for _industry partners_ or other sponsors** to help us lower costs for participants and expose them to private-sector careers in ocean data science! Please contact [Julek Chawarski](mailto:jchawarski@aslenv.com) to learn more and discuss options. Even small funding support would be really helpful. Thank you!
+```
 
 :::
 
