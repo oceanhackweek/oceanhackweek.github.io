@@ -151,4 +151,5 @@ Logistics <logistics/index>
 tutorials-index/index
 Projects <projects/index>
 Information for Applicants <applicants>
+OHW Fellows <../about/fellows.md>
 ```
