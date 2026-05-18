@@ -241,7 +241,6 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 
 about/index.md
 OHW 2026 <ohw26/index.md>
-OHW Fellows <about/fellows.md>
 resources/index.md
 about/pasthackweeks.md
 ```
