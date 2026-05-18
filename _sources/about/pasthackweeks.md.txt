@@ -86,6 +86,7 @@ OceanHackWeek started out as an in-person event in Seattle with limited virtual 
 :maxdepth: 1
 :hidden:
 
+../ohw25/index.md
 ../ohw24/index.md
 ../ohw23/index.md
 ../ohw22/index.md
