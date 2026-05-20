@@ -19,10 +19,18 @@ extensions = [
     "ablog",
     "sphinx_design",
     "ohw_team",
+    "sphinxext_opengraph",
 ]
 
 # sphinx_panels config
 panels_add_bootstrap_css = True
+
+# -- Open Graph meta tags (for LinkedIn, Facebook, etc.) --------
+ogp_site_url = "https://oceanhackweek.org/"
+ogp_title = "OceanHackWeek (OHW)"
+ogp_description = "A 5-day collaborative learning experience at the intersection of ocean and data sciences. Tutorials, hack projects, and community building."
+ogp_image = "https://oceanhackweek.org/_images/ohw23-group-pic.jpeg"
+ogp_type = "website"
 
 templates_path = ["_templates"]
 pygments_style = "sphinx"
