@@ -19,7 +19,7 @@ extensions = [
     "ablog",
     "sphinx_design",
     "ohw_team",
-    "sphinxext_opengraph",
+    "sphinxext.opengraph",
 ]
 
 # sphinx_panels config
