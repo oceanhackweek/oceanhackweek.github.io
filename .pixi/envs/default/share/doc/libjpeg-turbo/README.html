@@ -1,0 +1,1004 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta property="og:title" content="Background" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://oceanhackweek.org/.pixi/envs/default/share/doc/libjpeg-turbo/README.html" />
+<meta property="og:site_name" content="OceanHackWeek" />
+<meta property="og:description" content="libjpeg-turbo is a JPEG image codec that uses SIMD instructions to accelerate baseline JPEG compression and decompression on x86, x86-64, Arm, PowerPC, and MIPS systems, as well as progressive JPEG..." />
+<meta property="og:image" content="https://oceanhackweek.org/_images/ohw23-group-pic.jpeg" />
+<meta property="og:image:alt" content="OceanHackWeek" />
+<meta name="description" content="libjpeg-turbo is a JPEG image codec that uses SIMD instructions to accelerate baseline JPEG compression and decompression on x86, x86-64, Arm, PowerPC, and MIPS systems, as well as progressive JPEG..." />
+
+    <title>Background &#8212; OceanHackWeek</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../../../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../../../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../../_static/jquery.js"></script>
+    <script src="../../../../../../_static/underscore.js"></script>
+    <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../../_static/doctools.js"></script>
+    <script src="../../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '.pixi/envs/default/share/doc/libjpeg-turbo/README';</script>
+    <link rel="shortcut icon" href="../../../../../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this site..."
+         aria-label="Search this site..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">OceanHackWeek</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../about/index.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../ohw26/index.html">
+                        OHW 2026
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../resources/index.html">
+                        Resources
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../../../../../about/pasthackweeks.html">
+                        Past OHW Events
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discussions</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Email</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../about/index.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../ohw26/index.html">
+                        OHW 2026
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../../../../resources/index.html">
+                        Resources
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../../../../../about/pasthackweeks.html">
+                        Past OHW Events
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/oceanhackweek/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/orgs/oceanhackweek/discussions" title="Discussions" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-comments fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discussions</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/oceanhackweek" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@OceanHackWeek/playlists" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="/about/contact.html" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Email</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><a href="/"><div class="profile-pic"><img src="../../../../../../_static/logo.png" /></div></a>
+
+<div class="bio-info">
+    <div class="name">
+        OceanHackWeek
+    </div>
+    <div class="focusareas">
+        Data Science + Oceanography + Fisheries
+    </div>
+
+    <!-- <div class="whatido">
+        What I do
+    </div> -->
+</div></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Background</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="background">
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h1>
+<p>libjpeg-turbo is a JPEG image codec that uses SIMD instructions to accelerate
+baseline JPEG compression and decompression on x86, x86-64, Arm, PowerPC, and
+MIPS systems, as well as progressive JPEG compression on x86, x86-64, and Arm
+systems.  On such systems, libjpeg-turbo is generally 2-6x as fast as libjpeg,
+all else being equal.  On other types of systems, libjpeg-turbo can still
+outperform libjpeg by a significant amount, by virtue of its highly-optimized
+Huffman coding routines.  In many cases, the performance of libjpeg-turbo
+rivals that of proprietary high-speed JPEG codecs.</p>
+<p>libjpeg-turbo implements both the traditional libjpeg API as well as the less
+powerful but more straightforward TurboJPEG API.  libjpeg-turbo also features
+colorspace extensions that allow it to compress from/decompress to 32-bit and
+big-endian pixel buffers (RGBX, XBGR, etc.), as well as a full-featured Java
+interface.</p>
+<p>libjpeg-turbo was originally based on libjpeg/SIMD, an MMX-accelerated
+derivative of libjpeg v6b developed by Miyasaka Masaru.  The TigerVNC and
+VirtualGL projects made numerous enhancements to the codec in 2009, and in
+early 2010, libjpeg-turbo spun off into an independent project, with the goal
+of making high-speed JPEG compression/decompression technology available to a
+broader range of users and developers.  libjpeg-turbo is an ISO/IEC and ITU-T
+reference implementation of the JPEG standard.</p>
+<p>More information about libjpeg-turbo can be found at
+<a class="reference external" href="https://libjpeg-turbo.org">https://libjpeg-turbo.org</a>.</p>
+</section>
+<section id="funding">
+<h1>Funding<a class="headerlink" href="#funding" title="Permalink to this heading">#</a></h1>
+<p>libjpeg-turbo is an independent open source project, but we rely on patronage
+and funded development in order to maintain that independence.  The easiest way
+to ensure that libjpeg-turbo remains community-focused and free of any one
+organization’s agenda is to
+<a class="reference external" href="https://github.com/sponsors/libjpeg-turbo">sponsor our project through GitHub</a>.
+All sponsorship money goes directly toward funding the labor necessary to
+maintain libjpeg-turbo, support the user community, and implement bug fixes and
+strategically important features.</p>
+<p><a class="reference external" href="https://github.com/sponsors/libjpeg-turbo"><img alt="Sponsor libjpeg-turbo" src="https://img.shields.io/github/sponsors/libjpeg-turbo?label=Sponsor&amp;logo=GitHub" /></a></p>
+</section>
+<section id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h1>
+<p>libjpeg-turbo is covered by three compatible BSD-style open source licenses.
+Refer to <a class="reference internal" href="LICENSE.html"><span class="doc std std-doc">LICENSE.md</span></a> for a roll-up of license terms.</p>
+</section>
+<section id="building-libjpeg-turbo">
+<h1>Building libjpeg-turbo<a class="headerlink" href="#building-libjpeg-turbo" title="Permalink to this heading">#</a></h1>
+<p>Refer to <span class="xref myst">BUILDING.md</span> for complete instructions.</p>
+</section>
+<section id="using-libjpeg-turbo">
+<h1>Using libjpeg-turbo<a class="headerlink" href="#using-libjpeg-turbo" title="Permalink to this heading">#</a></h1>
+<p>libjpeg-turbo includes two APIs that can be used to compress and decompress
+JPEG images:</p>
+<ul class="simple">
+<li><p><strong>TurboJPEG API</strong><br>
+This API provides an easy-to-use interface for compressing and decompressing
+JPEG images in memory.  It also provides some functionality that would not be
+straightforward to achieve using the underlying libjpeg API, such as
+generating planar YUV images and performing multiple simultaneous lossless
+transforms on an image.  The Java interface for libjpeg-turbo is written on
+top of the TurboJPEG API.  The TurboJPEG API is recommended for first-time
+users of libjpeg-turbo.  Refer to <span class="xref myst">tjcomp.c</span>,
+<span class="xref myst">tjdecomp.c</span>, <span class="xref myst">tjtran.c</span>,
+<span class="xref myst">TJComp.java</span>, <span class="xref myst">TJDecomp.java</span>, and
+<span class="xref myst">TJTran.java</span> for examples of its usage and to
+<a class="reference external" href="https://libjpeg-turbo.org/Documentation/Documentation">https://libjpeg-turbo.org/Documentation/Documentation</a> for API
+documentation.</p></li>
+<li><p><strong>libjpeg API</strong><br>
+This is the de facto industry-standard API for compressing and decompressing
+JPEG images.  It is more difficult to use than the TurboJPEG API but also
+more powerful.  The libjpeg API implementation in libjpeg-turbo is both
+API/ABI-compatible and mathematically compatible with libjpeg v6b.  It can
+also optionally be configured to be API/ABI-compatible with libjpeg v7 and v8
+(see below.)  Refer to <span class="xref myst">cjpeg.c</span> and <span class="xref myst">djpeg.c</span> for
+examples of its usage and to <span class="xref myst">libjpeg.txt</span> for API
+documentation.</p></li>
+</ul>
+<p>There is no significant performance advantage to either API when both are used
+to perform similar operations.</p>
+<section id="colorspace-extensions">
+<h2>Colorspace Extensions<a class="headerlink" href="#colorspace-extensions" title="Permalink to this heading">#</a></h2>
+<p>libjpeg-turbo includes extensions that allow JPEG images to be compressed
+directly from (and decompressed directly to) buffers that use BGR, BGRX,
+RGBX, XBGR, and XRGB pixel ordering.  This is implemented with ten new
+colorspace constants:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>JCS_EXT_RGB   /* red/green/blue */
+JCS_EXT_RGBX  /* red/green/blue/x */
+JCS_EXT_BGR   /* blue/green/red */
+JCS_EXT_BGRX  /* blue/green/red/x */
+JCS_EXT_XBGR  /* x/blue/green/red */
+JCS_EXT_XRGB  /* x/red/green/blue */
+JCS_EXT_RGBA  /* red/green/blue/alpha */
+JCS_EXT_BGRA  /* blue/green/red/alpha */
+JCS_EXT_ABGR  /* alpha/blue/green/red */
+JCS_EXT_ARGB  /* alpha/red/green/blue */
+</pre></div>
+</div>
+<p>Setting <code class="docutils literal notranslate"><span class="pre">cinfo.in_color_space</span></code> (compression) or <code class="docutils literal notranslate"><span class="pre">cinfo.out_color_space</span></code>
+(decompression) to one of these values will cause libjpeg-turbo to read the
+red, green, and blue values from (or write them to) the appropriate position in
+the pixel when compressing from/decompressing to an RGB buffer.</p>
+<p>Your application can check for the existence of these extensions at compile
+time with:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#ifdef JCS_EXTENSIONS
+</pre></div>
+</div>
+<p>At run time, attempting to use these extensions with a libjpeg implementation
+that does not support them will result in a “Bogus input colorspace” error.
+Applications can trap this error in order to test whether run-time support is
+available for the colorspace extensions.</p>
+<p>When using the RGBX, BGRX, XBGR, and XRGB colorspaces during decompression, the
+X byte is undefined, and in order to ensure the best performance, libjpeg-turbo
+can set that byte to whatever value it wishes.  If an application expects the X
+byte to be used as an alpha channel, then it should specify <code class="docutils literal notranslate"><span class="pre">JCS_EXT_RGBA</span></code>,
+<code class="docutils literal notranslate"><span class="pre">JCS_EXT_BGRA</span></code>, <code class="docutils literal notranslate"><span class="pre">JCS_EXT_ABGR</span></code>, or <code class="docutils literal notranslate"><span class="pre">JCS_EXT_ARGB</span></code>.  When these colorspace
+constants are used, the X byte is guaranteed to be 0xFF, which is interpreted
+as opaque.</p>
+<p>Your application can check for the existence of the alpha channel colorspace
+extensions at compile time with:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#ifdef JCS_ALPHA_EXTENSIONS
+</pre></div>
+</div>
+<p><span class="xref myst">jcstest.c</span>, located in the libjpeg-turbo source tree,
+demonstrates how to check for the existence of the colorspace extensions at
+compile time and run time.</p>
+</section>
+<section id="libjpeg-v7-and-v8-api-abi-emulation">
+<h2>libjpeg v7 and v8 API/ABI Emulation<a class="headerlink" href="#libjpeg-v7-and-v8-api-abi-emulation" title="Permalink to this heading">#</a></h2>
+<p>With libjpeg v7 and v8, new features were added that necessitated extending the
+compression and decompression structures.  Unfortunately, due to the exposed
+nature of those structures, extending them also necessitated breaking backward
+ABI compatibility with previous libjpeg releases.  Thus, programs that were
+built to use libjpeg v7 or v8 did not work with libjpeg-turbo, since it is
+based on the libjpeg v6b code base.  Although libjpeg v7 and v8 are not
+as widely used as v6b, enough programs (including a few Linux distros) made
+the switch that there was a demand to emulate the libjpeg v7 and v8 ABIs
+in libjpeg-turbo.  It should be noted, however, that this feature was added
+primarily so that applications that had already been compiled to use libjpeg
+v7+ could take advantage of accelerated baseline JPEG encoding/decoding
+without recompiling.  libjpeg-turbo does not claim to support all of the
+libjpeg v7+ features, nor to produce identical output to libjpeg v7+ in all
+cases (see below.)</p>
+<p>By passing an argument of <code class="docutils literal notranslate"><span class="pre">-DWITH_JPEG7=1</span></code> or <code class="docutils literal notranslate"><span class="pre">-DWITH_JPEG8=1</span></code> to <code class="docutils literal notranslate"><span class="pre">cmake</span></code>, you
+can build a version of libjpeg-turbo that emulates the libjpeg v7 or v8 ABI, so
+that programs that are built against libjpeg v7 or v8 can be run with
+libjpeg-turbo.  The following section describes which libjpeg v7+ features are
+supported and which aren’t.</p>
+<section id="support-for-libjpeg-v7-and-v8-features">
+<h3>Support for libjpeg v7 and v8 Features<a class="headerlink" href="#support-for-libjpeg-v7-and-v8-features" title="Permalink to this heading">#</a></h3>
+<section id="fully-supported">
+<h4>Fully supported<a class="headerlink" href="#fully-supported" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>libjpeg API: IDCT scaling extensions in decompressor</strong><br>
+libjpeg-turbo supports IDCT scaling with scaling factors of 1/8, 1/4, 3/8,
+1/2, 5/8, 3/4, 7/8, 9/8, 5/4, 11/8, 3/2, 13/8, 7/4, 15/8, and 2/1 (only 1/4
+and 1/2 are SIMD-accelerated.)</p></li>
+<li><p><strong>libjpeg API: Arithmetic coding</strong></p></li>
+<li><p><strong>libjpeg API: In-memory source and destination managers</strong><br>
+See notes below.</p></li>
+<li><p><strong>cjpeg: Separate quality settings for luminance and chrominance</strong><br>
+Note that the libpjeg v7+ API was extended to accommodate this feature only
+for convenience purposes.  It has always been possible to implement this
+feature with libjpeg v6b (see rdswitch.c for an example.)</p></li>
+<li><p><strong>cjpeg: 32-bit BMP support</strong></p></li>
+<li><p><strong>cjpeg: <code class="docutils literal notranslate"><span class="pre">-rgb</span></code> option</strong></p></li>
+<li><p><strong>jpegtran: Lossless cropping</strong></p></li>
+<li><p><strong>jpegtran: <code class="docutils literal notranslate"><span class="pre">-perfect</span></code> option</strong></p></li>
+<li><p><strong>jpegtran: Forcing width/height when performing lossless crop</strong></p></li>
+<li><p><strong>rdjpgcom: <code class="docutils literal notranslate"><span class="pre">-raw</span></code> option</strong></p></li>
+<li><p><strong>rdjpgcom: Locale awareness</strong></p></li>
+</ul>
+</section>
+<section id="not-supported">
+<h4>Not supported<a class="headerlink" href="#not-supported" title="Permalink to this heading">#</a></h4>
+<p>NOTE:  As of this writing, extensive research has been conducted into the
+usefulness of DCT scaling as a means of data reduction and SmartScale as a
+means of quality improvement.  Readers are invited to peruse the research at
+<a class="reference external" href="https://libjpeg-turbo.org/About/SmartScale">https://libjpeg-turbo.org/About/SmartScale</a> and draw their own conclusions,
+but it is the general belief of our project that these features have not
+demonstrated sufficient usefulness to justify inclusion in libjpeg-turbo.</p>
+<ul class="simple">
+<li><p><strong>libjpeg API: DCT scaling in compressor</strong><br>
+<code class="docutils literal notranslate"><span class="pre">cinfo.scale_num</span></code> and <code class="docutils literal notranslate"><span class="pre">cinfo.scale_denom</span></code> are silently ignored.
+There is no technical reason why DCT scaling could not be supported when
+emulating the libjpeg v7+ API/ABI, but without the SmartScale extension (see
+below), only scaling factors of 1/2, 8/15, 4/7, 8/13, 2/3, 8/11, 4/5, and
+8/9 would be available, which is of limited usefulness.</p></li>
+<li><p><strong>libjpeg API: SmartScale</strong><br>
+<code class="docutils literal notranslate"><span class="pre">cinfo.block_size</span></code> is silently ignored.
+SmartScale is an extension to the JPEG format that allows for DCT block
+sizes other than 8x8.  Providing support for this new format would be
+feasible (particularly without full acceleration.)  However, until/unless
+the format becomes either an official industry standard or, at minimum, an
+accepted solution in the community, we are hesitant to implement it, as
+there is no sense of whether or how it might change in the future.  It is
+our belief that SmartScale has not demonstrated sufficient usefulness as a
+lossless format nor as a means of quality enhancement, and thus our primary
+interest in providing this feature would be as a means of supporting
+additional DCT scaling factors.</p></li>
+<li><p><strong>libjpeg API: Fancy downsampling in compressor</strong><br>
+<code class="docutils literal notranslate"><span class="pre">cinfo.do_fancy_downsampling</span></code> is silently ignored.
+This requires the DCT scaling feature, which is not supported.</p></li>
+<li><p><strong>jpegtran: Scaling</strong><br>
+This requires both the DCT scaling and SmartScale features, which are not
+supported.</p></li>
+<li><p><strong>Lossless RGB JPEG files</strong><br>
+This requires the SmartScale feature, which is not supported.</p></li>
+</ul>
+</section>
+</section>
+<section id="what-about-libjpeg-v9">
+<h3>What About libjpeg v9?<a class="headerlink" href="#what-about-libjpeg-v9" title="Permalink to this heading">#</a></h3>
+<p>libjpeg v9 introduced yet another field to the JPEG compression structure
+(<code class="docutils literal notranslate"><span class="pre">color_transform</span></code>), thus making the ABI backward incompatible with that of
+libjpeg v8.  This new field was introduced solely for the purpose of supporting
+lossless SmartScale encoding.  Furthermore, there was actually no reason to
+extend the API in this manner, as the color transform could have just as easily
+been activated by way of a new JPEG colorspace constant, thus preserving
+backward ABI compatibility.</p>
+<p>Our research (see link above) has shown that lossless SmartScale does not
+generally accomplish anything that can’t already be accomplished better with
+existing, standard lossless formats.  Therefore, at this time it is our belief
+that there is not sufficient technical justification for software projects to
+upgrade from libjpeg v8 to libjpeg v9, and thus there is not sufficient
+technical justification for us to emulate the libjpeg v9 ABI.</p>
+</section>
+</section>
+<section id="in-memory-source-destination-managers">
+<h2>In-Memory Source/Destination Managers<a class="headerlink" href="#in-memory-source-destination-managers" title="Permalink to this heading">#</a></h2>
+<p>By default, libjpeg-turbo 1.3 and later includes the <code class="docutils literal notranslate"><span class="pre">jpeg_mem_src()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">jpeg_mem_dest()</span></code> functions, even when not emulating the libjpeg v8 API/ABI.
+Previously, it was necessary to build libjpeg-turbo from source with libjpeg v8
+API/ABI emulation in order to use the in-memory source/destination managers,
+but several projects requested that those functions be included when emulating
+the libjpeg v6b API/ABI as well.  This allows the use of those functions by
+programs that need them, without breaking ABI compatibility for programs that
+don’t, and it allows those functions to be provided in the “official”
+libjpeg-turbo binaries.</p>
+<p>Note that, on most Un*x systems, the dynamic linker will not look for a
+function in a library until that function is actually used.  Thus, if a program
+is built against libjpeg-turbo 1.3+ and uses <code class="docutils literal notranslate"><span class="pre">jpeg_mem_src()</span></code> or
+<code class="docutils literal notranslate"><span class="pre">jpeg_mem_dest()</span></code>, that program will not fail if run against an older version
+of libjpeg-turbo or against libjpeg v7- until the program actually tries to
+call <code class="docutils literal notranslate"><span class="pre">jpeg_mem_src()</span></code> or <code class="docutils literal notranslate"><span class="pre">jpeg_mem_dest()</span></code>.  Such is not the case on Windows.
+If a program is built against the libjpeg-turbo 1.3+ DLL and uses
+<code class="docutils literal notranslate"><span class="pre">jpeg_mem_src()</span></code> or <code class="docutils literal notranslate"><span class="pre">jpeg_mem_dest()</span></code>, then it must use the libjpeg-turbo 1.3+
+DLL at run time.</p>
+<p>Both cjpeg and djpeg have been extended to allow testing the in-memory
+source/destination manager functions.  See their respective man pages for more
+details.</p>
+</section>
+</section>
+<section id="mathematical-compatibility">
+<h1>Mathematical Compatibility<a class="headerlink" href="#mathematical-compatibility" title="Permalink to this heading">#</a></h1>
+<p>For the most part, libjpeg-turbo should produce identical output to libjpeg
+v6b.  There are two exceptions:</p>
+<ol class="arabic simple">
+<li><p>When decompressing a JPEG image that uses 4:4:0 chrominance subsampling, the
+outputs of libjpeg v6b and libjpeg-turbo can differ because libjpeg-turbo
+implements a “fancy” (smooth) 4:4:0 upsampling algorithm and libjpeg did not.</p></li>
+<li><p>When using the floating point DCT/IDCT, the outputs of libjpeg v6b and
+libjpeg-turbo can differ for the following reasons:</p>
+<ul class="simple">
+<li><p>The SSE/SSE2 floating point DCT implementation in libjpeg-turbo is ever
+so slightly more accurate than the implementation in libjpeg v6b, but not
+by any amount perceptible to human vision (generally in the range of 0.01
+to 0.08 dB gain in PNSR.)</p></li>
+<li><p>When not using the SIMD extensions, libjpeg-turbo uses the more accurate
+(and slightly faster) floating point IDCT algorithm introduced in libjpeg
+v8a as opposed to the algorithm used in libjpeg v6b.  It should be noted,
+however, that this algorithm basically brings the accuracy of the
+floating point IDCT in line with the accuracy of the accurate integer
+IDCT.  The floating point DCT/IDCT algorithms are mainly a legacy
+feature, and they do not produce significantly more accuracy than the
+accurate integer algorithms.  (To put numbers on this, the typical
+difference in PNSR between the two algorithms is less than 0.10 dB,
+whereas changing the quality level by 1 in the upper range of the quality
+scale is typically more like a 1.0 dB difference.)</p></li>
+<li><p>If the floating point algorithms in libjpeg-turbo are not implemented
+using SIMD instructions on a particular platform, then the accuracy of
+the floating point DCT/IDCT can depend on the compiler settings.</p></li>
+</ul>
+</li>
+</ol>
+<p>While libjpeg-turbo does emulate the libjpeg v8 API/ABI, under the hood it is
+still using the same algorithms as libjpeg v6b, so there are several specific
+cases in which libjpeg-turbo cannot be expected to produce the same output as
+libjpeg v8:</p>
+<ul class="simple">
+<li><p>When decompressing using scaling factors of 1/2 and 1/4, because libjpeg v8
+implements those scaling algorithms differently than libjpeg v6b does, and
+libjpeg-turbo’s SIMD extensions are based on the libjpeg v6b behavior.</p></li>
+<li><p>When using chrominance subsampling, because libjpeg v8 implements this
+with its DCT/IDCT scaling algorithms rather than with a separate
+downsampling/upsampling algorithm.  In our testing, the subsampled/upsampled
+output of libjpeg v8 is less accurate than that of libjpeg v6b for this
+reason.</p></li>
+<li><p>When decompressing using a scaling factor &gt; 1 and merged (AKA “non-fancy” or
+“non-smooth”) chrominance upsampling, because libjpeg v8 does not support
+merged upsampling with scaling factors &gt; 1.</p></li>
+</ul>
+</section>
+<section id="performance-pitfalls">
+<h1>Performance Pitfalls<a class="headerlink" href="#performance-pitfalls" title="Permalink to this heading">#</a></h1>
+<section id="restart-markers">
+<h2>Restart Markers<a class="headerlink" href="#restart-markers" title="Permalink to this heading">#</a></h2>
+<p>The optimized Huffman decoder in libjpeg-turbo does not handle restart markers
+in a way that makes the rest of the libjpeg infrastructure happy, so it is
+necessary to use the slow Huffman decoder when decompressing a JPEG image that
+has restart markers.  This can cause the decompression performance to drop by
+as much as 20%, but the performance will still be much greater than that of
+libjpeg.  Many consumer packages, such as Photoshop, use restart markers when
+generating JPEG images, so images generated by those programs will experience
+this issue.</p>
+</section>
+<section id="fast-integer-forward-dct-at-high-quality-levels">
+<h2>Fast Integer Forward DCT at High Quality Levels<a class="headerlink" href="#fast-integer-forward-dct-at-high-quality-levels" title="Permalink to this heading">#</a></h2>
+<p>The algorithm used by the SIMD-accelerated quantization function cannot produce
+correct results whenever the fast integer forward DCT is used along with a JPEG
+quality of 98-100.  Thus, libjpeg-turbo must use the non-SIMD quantization
+function in those cases.  This causes performance to drop by as much as 40%.
+It is therefore strongly advised that you use the accurate integer forward DCT
+whenever encoding images with a JPEG quality of 98 or higher.</p>
+</section>
+</section>
+<section id="memory-debugger-pitfalls">
+<h1>Memory Debugger Pitfalls<a class="headerlink" href="#memory-debugger-pitfalls" title="Permalink to this heading">#</a></h1>
+<p>Valgrind and Memory Sanitizer (MSan) can generate false positives
+(specifically, incorrect reports of uninitialized memory accesses) when used
+with libjpeg-turbo’s SIMD extensions.  There are two ways to work around this
+when testing libjpeg-turbo with Valgrind, MSan, or other memory debuggers:</p>
+<ol class="arabic simple">
+<li><p>Disable the SIMD extensions, either by passing an argument of
+<code class="docutils literal notranslate"><span class="pre">-DWITH_SIMD=0</span></code> to <code class="docutils literal notranslate"><span class="pre">cmake</span></code> when configuring the build or by setting the
+environment variable <code class="docutils literal notranslate"><span class="pre">JSIMD_FORCENONE</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code> at run time.</p></li>
+<li><p>Define the <code class="docutils literal notranslate"><span class="pre">ZERO_BUFFERS</span></code> preprocessor macro (for instance, by adding
+<code class="docutils literal notranslate"><span class="pre">-DZERO_BUFFERS=1</span></code> to <code class="docutils literal notranslate"><span class="pre">CMAKE_C_FLAGS</span></code>.)</p></li>
+</ol>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Background</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funding">Funding</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#building-libjpeg-turbo">Building libjpeg-turbo</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#using-libjpeg-turbo">Using libjpeg-turbo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colorspace-extensions">Colorspace Extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libjpeg-v7-and-v8-api-abi-emulation">libjpeg v7 and v8 API/ABI Emulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#support-for-libjpeg-v7-and-v8-features">Support for libjpeg v7 and v8 Features</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fully-supported">Fully supported</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#not-supported">Not supported</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-libjpeg-v9">What About libjpeg v9?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-memory-source-destination-managers">In-Memory Source/Destination Managers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-compatibility">Mathematical Compatibility</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-pitfalls">Performance Pitfalls</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-markers">Restart Markers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-integer-forward-dct-at-high-quality-levels">Fast Integer Forward DCT at High Quality Levels</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memory-debugger-pitfalls">Memory Debugger Pitfalls</a></li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/oceanhackweek/oceanhackweek.github.io/edit/source/.pixi/envs/default/share/doc/libjpeg-turbo/README.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../../../../_sources/.pixi/envs/default/share/doc/libjpeg-turbo/README.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, OceanHackWeek.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
