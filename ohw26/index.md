@@ -115,7 +115,10 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   <div class="col-4" style="margin-bottom: 1rem">
     
-  <img src="../assets/images/logos/cioospacific-logo.svg" alt="CIOOS Pacific" width="180px">
+  ```{image} ../assets/images/logos/cioospacific-logo-teal.png
+  :alt: CIOOS Pacific
+  :width: 180px
+  ```
 
   </div>
   <div class="col-4" style="margin-bottom: 1rem">
