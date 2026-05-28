@@ -114,13 +114,12 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 <div class="row">
 
   <div class="col-4" style="margin-bottom: 1rem">
-
-  ```{image} ../assets/images/logos/cryointhecloud.png
-  :alt: Cryo-in-the-cloud
+```{image} ../assets/images/logos/cioospacific-logo.svg
+  :alt: CIOOS Pacific
   :width: 180px
-  ```
-
+```
   </div>
+  
   <div class="col-4" style="margin-bottom: 1rem">
 
   ```{image} ../assets/images/apl_logo_blue.jpg
@@ -154,6 +153,15 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
   ```{image} ../assets/images/logos/nmfs-opensci.png
   :alt: NMFS Open Science
+  :width: 180px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/cryointhecloud.png
+  :alt: Cryo-in-the-cloud
   :width: 180px
   ```
 
