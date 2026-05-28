@@ -198,6 +198,40 @@ Thanks to our sponsors that have made OceanHackWeek possible over the last sever
 
   <div class="col-4" style="margin-bottom: 1rem">
 
+  ```{image} ../assets/images/logos/ONC_2024.png
+  :alt: Ocean Networks Canada
+  :width: 150px
+  ```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/bmsc.png
+  :alt: Bamfield Marine Sciences Centre
+  :width: 150px
+  ```
+
+  </div>
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/asl.png
+  :alt: ASL Environmental Sciences
+  :width: 150px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+    
+  ```{image} ../assets/images/logos/pacific_en_min.png
+  :alt: CIOOS Pacific
+  :width: 180px
+  ```
+
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
   ```{image} assets/images/logos/earthmover.png
   :alt: Earthmover
   :width: 180px
