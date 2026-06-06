@@ -59,7 +59,7 @@ We expect all participants to be engaged in the team projects and focus during t
 
 This year’s registration is $550 CAD. This covers food, lodging, and logistical support at BMSC. Students will be offered three daily meals and shared housing at one of the BMSC student lodges.
 
-For local participants it is $130 CAD which includes cafetira lunches.
+For local participants it is $130 CAD which includes lunches.
 
 ```{admonition} Attention potential industry partners and other sponsors
 :class: seattention
