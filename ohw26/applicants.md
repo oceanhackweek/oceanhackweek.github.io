@@ -13,7 +13,7 @@ OceanHackWeek 2026 (OHW26) is a hands-on, interactive in-person workshop focused
 :::{admonition} Applications are open!
 :class: important
 
-Application review will begin June 5th. Decisions by June 15th.
+Application are extended until June 15th. Decisions by June 29th.
 
 ```{button-link} https://forms.gle/wRapTBKwGRyX8pZN8
 :color: primary
@@ -57,7 +57,9 @@ We expect all participants to be engaged in the team projects and focus during t
 
 ### Q: How much is registration and what does it cover?
 
-This year’s registration is $1200 CAD. This covers food, lodging, and logistical support at BMSC. Students will be offered three daily meals and shared housing at one of the BMSC student lodges.
+This year’s registration is $550 CAD. This covers food, lodging, and logistical support at BMSC. Students will be offered three daily meals and shared housing at one of the BMSC student lodges.
+
+For local participants it is $130 CAD which includes cafetira lunches.
 
 ```{admonition} Attention potential industry partners and other sponsors
 :class: seattention
