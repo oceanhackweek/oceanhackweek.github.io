@@ -5,7 +5,7 @@ OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfie
 :::{admonition} Applications are open!
 :class: important
 
-Application review will begin June 5th. Decisions by June 15th.
+Applications are extended until June 15th. Decisions by June 29th.
 
 ```{button-link} https://forms.gle/wRapTBKwGRyX8pZN8
 :color: primary
