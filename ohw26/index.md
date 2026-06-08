@@ -14,7 +14,7 @@ Applications are extended until June 15th. Decisions by June 29th.
 Apply to OceanHackWeek 2026
 ```
 
-Due to current funding limitations for OHW, **this year we are not able to provide free-of-charge lodging and meals to all participants.** to cover shortfalls in lodging and meals support. We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
+Due to current funding limitations for OHW, **this year we are not able to provide free-of-charge lodging and meals to all participants.** We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
 
 ```{button-link} ./applicants
 :color: primary
