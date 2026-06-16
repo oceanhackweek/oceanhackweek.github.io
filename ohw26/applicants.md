@@ -10,19 +10,16 @@ permalink: applicant-info.html
 OceanHackWeek 2026 (OHW26) is a hands-on, interactive in-person workshop focused on data science in oceanography and fisheries that will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada. Join us for five days of tutorials, data exploration, software development and community networking!
 
 
-:::{admonition} Applications are open!
+:::{admonition} Applications are closed
 :class: important
 
-Application are extended until June 15th. Decisions by June 29th.
+Applications are now closed, and applicants will be emailed with decisions by June 29th.
 
-```{button-link} https://forms.gle/wRapTBKwGRyX8pZN8
-:color: primary
-:expand:
-:tooltip: Apply to OHW26
-Apply to OceanHackWeek 2026
+```{admonition} Attention potential industry partners and other sponsors
+:class: seattention
+
+**We are looking for _industry partners_ or other sponsors** to help us lower costs for participants and expose them to private-sector careers in ocean data science! Please contact [Julek Chawarski](mailto:jchawarski@aslenv.com) to learn more and discuss options. Even small funding support would be really helpful. Thank you!
 ```
-
-Due to current funding limitations for OHW, **this year we are not able to provide free-of-charge lodging and meals to all participants.** We're doing everything we can to keep costs low and provide opportunities for additional support to participants with the greatest need.
 
 :::
 
