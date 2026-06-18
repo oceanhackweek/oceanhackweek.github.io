@@ -248,11 +248,11 @@ Git and GitHub are very powerful tools but no doubt the learning curve is steep.
     * OHW20 tutorial: Git/GitHub Survival Guide presentation. [pdf](https://raw.githubusercontent.com/oceanhackweek/ohw-preweek/master/git-github-survival-guide/Git-GitHub-survival-guide.pdf) and [video](https://youtu.be/7nYFRixSV2c)
     * OHW19 tutorial: Git, GitHub, and Project Collaboration. [presentation files](https://github.com/oceanhackweek/ohw19-tutorial-github) and [video](https://www.youtube.com/watch?v=wWKDp4Uw25A&list=PLA6PlfxWZPLTPQ_OIr3dDPF9FRiHQXoVF&index=14&t=0s). This tutorial is the source of most of the materials for this Git page.
 * [git-novice - Software Carpentry Lesson](http://swcarpentry.github.io/git-novice/) (3 hours with exercises)
-* [Setting Up Git - Software Carpentry Lesson](https://swcarpentry.github.io/git-novice/02-setup/index.html)
+* [Setting Up Git - Software Carpentry Lesson](https://swcarpentry.github.io/git-novice/02-setup.html)
 * [Atlassian Tutorials - Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * An excellent guide to the Forking Git Workflow: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
 * [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E) (3:45 min)
-* [GitHub Learning Lab](https://lab.github.com/): practice with a bot! (On your own pace)
+* [GitHub Skills](https://skills.github.com/): practice with a bot! (On your own pace)
 * [An interactive Git Tutorial: the tool you didn’t know you needed. From personal workflows to open collaboration](https://berkeley-stat159-f17.github.io/stat159-f17/lectures/01-git/Git-Tutorial..html)
 * [GeoHackWeek 2019 tutorial: Getting started with Git](https://geohackweek.github.io/Introductory/03-git-tutorial/)
 * [ICESAT-2HackWeek intro-jupyter-git repo](https://github.com/ICESAT-2HackWeek/intro-jupyter-git), with several notebooks going into a lot of detail.

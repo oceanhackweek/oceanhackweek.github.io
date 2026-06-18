@@ -10,7 +10,7 @@ platforms = ["osx-arm64", "osx-64", "linux-64", "linux-aarch64", "win-64"]
 live = "make live"
 clean = "make clean"
 html = "make html"
-linkcheck = "make html linkcheck"
+linkcheck = "make linkcheck"
 
 [dependencies]
 python = ">=3.8,<3.9"

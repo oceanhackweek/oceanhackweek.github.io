@@ -54,7 +54,7 @@ if they are willing to get up-to-date on the expected basic skills before the pr
 
 Participants should familiarize themselves with the materials included in [Python novice gapminder](https://swcarpentry.github.io/python-novice-gapminder/) and [Python novice inflammation](https://swcarpentry.github.io/python-novice-inflammation/) for a Python focus, or [R novice gapminder](http://swcarpentry.github.io/r-novice-gapminder/) for an R focus. These are a good reflection of the level we expect participants to be at coming into the workshop.
 
-We also encourage participants to explore more advanced topics before the hackweek. For Python, we suggest looking at one of these resources: [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html), [An Introduction to Earth and Environmental Data Science](https://earth-env-data-science.github.io/intro), and [Data Carpentry - Python for Atmosphere and Ocean Scientists](https://carpentries-lab.github.io/python-aos-lesson/)
+We also encourage participants to explore more advanced topics before the hackweek. For Python, we suggest looking at one of these resources: [Pythia Foundations](https://foundations.projectpythia.org/), [An Introduction to Earth and Environmental Data Science](https://earth-env-data-science.github.io/intro), and [Data Carpentry - Python for Atmosphere and Ocean Scientists](https://carpentries-lab.github.io/python-aos-lesson/)
 
 ### Q: I don't know the first thing about version revision/control systems. Can I still apply?
 

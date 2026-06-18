@@ -28,10 +28,10 @@ jobs:
         run: |
           pixi run html
 
-      # - name: Check links
-      #   shell: bash -l {0}
-      #   run: |
-      #     pixi run linkcheck
+      - name: Check links
+        shell: bash -l {0}
+        run: |
+          pixi run linkcheck
 
       # workaround https://github.com/actions/upload-artifact/issues/38
       - name: tarball

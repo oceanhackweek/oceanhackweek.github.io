@@ -53,7 +53,7 @@ Projects from OceanHackWeek 2023.
 - Project members: Jiarui Yu, Paula Birocchi, Boris Shapkin, Alex Slonimer, Dafrosa Kataraihya, Hao Tang, Danyang Li, Chandrama Sarker, Zhengxi Zhou
 - GitHub repository: [https://github.com/oceanhackweek/ohw23_proj_sst](https://github.com/oceanhackweek/ohw23_proj_sst)
 - Presentation recordings: [Seattle + Virtual](https://youtu.be/ySfmD5JNVxo) and [Australia](https://youtu.be/j4C2Y5GurQU?list=PLVH-j9gOscWmTQNctTx07pf97BRuUxCBX&t=1090)
-- [Presentation Slide](https://docs.google.com/presentation/d/1uUAIsuj9bxOFMVeIG_h5Bs-ZGDrRodldlz2FHfj4TbE/edit#slide=id.p)
+<!-- - [Presentation Slide](https://docs.google.com/presentation/d/1uUAIsuj9bxOFMVeIG_h5Bs-ZGDrRodldlz2FHfj4TbE/edit#slide=id.p) -->
 <!-- - [Project pitch slide](https://docs.google.com/presentation/d/1eQKSdFHNGMDqGJMY4d-yGnNm4UrUj5kIS2mLQGPMZC8/edit#slide=id.g239da66eda5_25_5) -->
 
 

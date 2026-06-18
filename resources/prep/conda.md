@@ -21,7 +21,7 @@ The JupyterHub has both a pre-configured base environment, and environments that
 
 The Conda environment for the base JupyterHub environments are defined in [oceanhackweek/jupyter-image](https://github.com/oceanhackweek/jupyter-image/). These image contains hopefully everything you will need for the tutorials and for general exploration.
 
-The `environment.yml` files ([Python](https://github.com/oceanhackweek/jupyter-image/blob/main/py-base/environment.yml), [R](https://github.com/oceanhackweek/jupyter-image/blob/main/r/environment.yml)) captures the current state of the OceanHackWeek environment. You can explore these files to see what packages we have selected to come in the base environment.
+The `environment.yml` files ([Python](https://github.com/oceanhackweek/jupyter-image/blob/main/py-base/pixi.toml), [R](https://github.com/oceanhackweek/jupyter-image/blob/main/r/environment.yml)) captures the current state of the OceanHackWeek environment. You can explore these files to see what packages we have selected to come in the base environment.
 
 ```yaml
 # environment.yml
