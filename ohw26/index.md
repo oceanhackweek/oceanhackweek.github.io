@@ -168,10 +168,10 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 :caption: OceanHackWeek 2026 (OHW26)
 :hidden:
 
-<!-- schedule -->
+schedule
 Organizers <organizers>
 <!-- Logistics <logistics/index> -->
 <!-- tutorials-index/index -->
 <!-- Projects <projects/index> -->
-Information for Applicants <applicants>
+<!-- Information for Applicants <applicants> -->
 ```
