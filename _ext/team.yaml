@@ -536,3 +536,13 @@ team:
     email: jchawarski@aslenv.com
     roles:
       - OHW26 Organizer
+
+  - name: Jordan Watson 
+    title: Director
+    affiliate: CIOOS (Canadian Integrated Ocean Observing System) Pacific
+    image_url: https://avatars.githubusercontent.com/u/7504852?v=4
+    github_user: https://github.com/jordanwatson
+    email: jordanwatson@oceannetworks.ca
+    roles:
+      - OHW26 Organizer
+    # Links from https://jordanwatson.github.io/
