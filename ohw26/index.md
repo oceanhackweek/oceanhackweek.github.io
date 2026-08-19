@@ -2,16 +2,18 @@
 
 OceanHackWeek 2026 (OHW26) will be held on **August 24-28, 2026** at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of beautiful [Vancouver Island](https://en.wikipedia.org/wiki/Vancouver_Island), British Columbia, Canada.
 
-:::{admonition} Applications are closed
+:::{admonition} The schedule is live
 :class: important
 
-Applications are now closed, and applicants will be emailed with decisions by June 29th.
+The schedule for the week is now live. 
 
-```{button-link} ./applicants
+Please use Slack for any questions and to say hello!
+
+```{button-link} ./schedule
 :color: primary
 :expand:
-:tooltip: Applicant info
-More applicant info
+:tooltip: Event schedule
+The schedule
 ```
 
 ```{admonition} Attention potential industry partners and other sponsors
