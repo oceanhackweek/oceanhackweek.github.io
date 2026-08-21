@@ -12,10 +12,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://oceanhackweek.org/resources/prep/conda.html" />
 <meta property="og:site_name" content="OceanHackWeek" />
-<meta property="og:description" content="or: How I Learned to Stop Worrying and Manage Python and R The JupyterHub is pre-configured with customized environments for both Python and R packages that are designed to be able to run all the t..." />
+<meta property="og:description" content="or: How I Learned to Stop Worrying and Manage Python and R The JupyterHub offers pre-configured environments – for Python and for R – that are designed to be able to run all the tutorial notebooks,..." />
 <meta property="og:image" content="https://oceanhackweek.org/_images/ohw23-group-pic.jpeg" />
 <meta property="og:image:alt" content="OceanHackWeek" />
-<meta name="description" content="or: How I Learned to Stop Worrying and Manage Python and R The JupyterHub is pre-configured with customized environments for both Python and R packages that are designed to be able to run all the t..." />
+<meta name="description" content="or: How I Learned to Stop Worrying and Manage Python and R The JupyterHub offers pre-configured environments – for Python and for R – that are designed to be able to run all the tutorial notebooks,..." />
 
     <title>Conda &#8212; OceanHackWeek</title>
   
@@ -560,7 +560,7 @@
                    <section id="conda">
 <h1>Conda<a class="headerlink" href="#conda" title="Permalink to this heading">#</a></h1>
 <p><em>or: How I Learned to Stop Worrying and Manage Python and R</em></p>
-<p>The JupyterHub is pre-configured with customized environments for both Python and R packages that are designed to be able to run all the tutorial notebooks, and support a broad range of oceanographic applications.</p>
+<p>The JupyterHub offers pre-configured environments – for Python and for R – that are designed to be able to run all the tutorial notebooks, and support a broad range of oceanographic applications.</p>
 <p>This environment is created and managed using the open-source <a class="reference external" href="https://docs.conda.io"><strong>Conda</strong> package and environment management system</a> for installing multiple versions of software packages together with their dependencies, and convenient switching between environments.</p>
 <section id="what-is-conda">
 <h2>What is Conda?<a class="headerlink" href="#what-is-conda" title="Permalink to this heading">#</a></h2>
@@ -573,42 +573,15 @@
 <p>The JupyterHub has both a pre-configured base environment, and environments that you create and manage yourself.</p>
 <section id="jupyterhub-base-environment">
 <h3>JupyterHub base environment<a class="headerlink" href="#jupyterhub-base-environment" title="Permalink to this heading">#</a></h3>
-<p>The Conda environment for the base JupyterHub environments are defined in <a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/">oceanhackweek/jupyter-image</a>. These image contains hopefully everything you will need for the tutorials and for general exploration.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> files (<a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/blob/main/py-base/environment.yml">Python</a>, <a class="reference external" href="https://github.com/oceanhackweek/jupyter-image/blob/main/r/environment.yml">R</a>) captures the current state of the OceanHackWeek environment. You can explore these files to see what packages we have selected to come in the base environment.</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># environment.yml</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OHW</span>
-<span class="nt">channels</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
-<span class="nt">dependencies</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.9</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pangeo-notebook=2021.07.24</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argopy</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bokeh</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bottleneck</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cartopy</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cdsapi</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cf-units</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cf_xarray</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmip6_preprocessing</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmocean</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">colorcet</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compilers</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compliance-checker</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-lock</span>
-<span class="c1">#   ... oh so many more packages that we are not going to include them all here</span>
-</pre></div>
-</div>
-<p>It also contains a lot of supporting infrastructure for running each individual’s JupyterLab server (for instance <code class="docutils literal notranslate"><span class="pre">compilers</span></code> and <code class="docutils literal notranslate"><span class="pre">conda-lock</span></code> in just that small subset), so we suggest building up an environment from scratch, rather than by trimming down the base environment.</p>
-<p>The exact state of the Conda environments are captured in <code class="docutils literal notranslate"><span class="pre">conda-linux-64.lock</span></code> in the same directories that includes the exact versions of all the packages, not just the ones we selected.</p>
-<p>There are also a handful of dependencies that are installed directly in the <code class="docutils literal notranslate"><span class="pre">Dockerfiles</span></code> that are also in the same directories.</p>
-<p>The full environments are captured as <a class="reference external" href="https://github.com/orgs/oceanhackweek/packages?repo_name=jupyter-image">Docker images</a> that can be pulled and run locally.</p>
+<p>You pick the base environment when you start your server, from the <strong>Environment</strong> dropdown on CryoCloud’s Server Options page – see <a class="reference internal" href="jupyterhub.html#how-do-i-access-the-shared-cloud-environment"><span class="std std-doc">How do I access the shared cloud environment?</span></a> for a walkthrough. The OceanHackWeek image contains hopefully everything you will need for the tutorials and for general exploration.</p>
+<p>The base environment also contains a lot of supporting infrastructure for running each individual’s JupyterLab server, so if you need something different we suggest building up your own environment from scratch, rather than by trimming down the base environment.</p>
 </section>
 <section id="temporary-packages">
 <h3>Temporary packages<a class="headerlink" href="#temporary-packages" title="Permalink to this heading">#</a></h3>
 <p>You can temporarily add packages to your hub, via Jupyter cell magic, <code class="docutils literal notranslate"><span class="pre">%pip</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">%conda</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code>. <a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">Jupyter magics</a> always start with the character <code class="docutils literal notranslate"><span class="pre">%</span></code>. In R you can use <code class="docutils literal notranslate"><span class="pre">install.packages(&quot;package-name&quot;)</span></code> as usual.</p>
 <div class="danger admonition">
 <p class="admonition-title">pip install trouble</p>
-<p>For those who know their way around Jupyter, you may be tempted to <code class="docutils literal notranslate"><span class="pre">!pip</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code>. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance from <code class="docutils literal notranslate"><span class="pre">&#64;help-infrastructure</span></code> to debug). More information is <a class="reference external" href="https://pilot.2i2c.org/admin/howto/environment/#temporarily-install-packages-for-a-session">available here.</a></p>
+<p>For those who know their way around Jupyter, you may be tempted to <code class="docutils literal notranslate"><span class="pre">!pip</span> <span class="pre">install</span> <span class="pre">&lt;list-of-packages&gt;</span></code>. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance in the <code class="docutils literal notranslate"><span class="pre">#ohw26_helpdesk</span></code> Slack channel to debug). More information is <a class="reference external" href="https://docs.2i2c.org/user/get-started/">available here.</a></p>
 </div>
 </section>
 <section id="create-your-own-environment-on-jupyterhub">
@@ -632,13 +605,13 @@ The <a class="reference external" href="https://github.com/Anaconda-Platform/nb_
 </section>
 <section id="conda-on-your-own-computer">
 <h2>Conda on your own computer<a class="headerlink" href="#conda-on-your-own-computer" title="Permalink to this heading">#</a></h2>
-<p>Conda may be used on your computer as well as the Hub. If you wish to install the same environment as the hub is running, after you install Conda, you can download the <a class="reference external" href="https://raw.githubusercontent.com/oceanhackweek/ohw-tutorials/d51c880111305d7e345d98b7d8ccc031cbf0087e/environment.yml"><code class="docutils literal notranslate"><span class="pre">environment.yml</span></code></a> that we use, then <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">&lt;ENV</span> <span class="pre">NAME&gt;</span> <span class="pre">--file</span> <span class="pre">environment.yml</span></code></p>
+<p>Conda may be used on your computer as well as the Hub, and we encourage you to practice with it locally so that you can keep working after the event. If a tutorial ships an <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> alongside its notebooks in <a class="reference external" href="https://github.com/oceanhackweek/ohw-tutorials"><code class="docutils literal notranslate"><span class="pre">oceanhackweek/ohw-tutorials</span></code></a>, you can recreate that environment locally with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">&lt;ENV</span> <span class="pre">NAME&gt;</span> <span class="pre">--file</span> <span class="pre">environment.yml</span></code>.</p>
 <section id="installing-conda">
 <h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this heading">#</a></h3>
 <p>There are a few different ways to install conda:</p>
 <ul class="simple">
 <li><p>The <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a> which comes with a large pre-packaged environment, and a snazzy management interface to help explore what packages are available and what environments you have installed.</p></li>
-<li><p><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> is a stripped down version with just the installer, which is really for kick starting other environments. We’re using a Miniconda Docker image.</p></li>
+<li><p><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> is a stripped down version with just the installer, which is really for kick starting other environments.</p></li>
 <li><p>There is also <a class="reference external" href="https://mamba.readthedocs.io/en/latest/index.html">Mamba</a> which is a newer take on Conda that tends to be faster, but isn’t currently compatible with our trick to allow you to set up your own Conda environments (<a class="reference external" href="https://github.com/Anaconda-Platform/nb_conda_kernels">nb_conda_kernels</a>).</p></li>
 </ul>
 <p>We recommend the use of Miniconda.</p>
@@ -757,7 +730,7 @@ The <a class="reference external" href="https://github.com/Anaconda-Platform/nb_
 
   <p class="copyright">
     
-      © Copyright 2025, OceanHackWeek.
+      © Copyright 2026, OceanHackWeek.
       <br/>
     
   </p>

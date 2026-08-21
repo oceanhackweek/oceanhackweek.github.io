@@ -1,10 +1,10 @@
 # Logistics Overview
 
-OHW25 will be in person in Seattle, Washington at the University of Washington. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
+OHW26 will be in person at the [Bamfield Marine Sciences Centre](https://bamfieldmsc.com) on the West Coast of Vancouver Island, British Columbia, Canada. We are committed to providing an engaging and full experience for everyone and will strive to facilitate cross communication and collaboration across all participants.
 
 ## Time
 
-OceanHackWeek 2025 will take place August 18-22.  The in-person participants will be engaged in OceanHackWeek throughout the day.
+OceanHackWeek 2026 will take place August 24-28.  The participants will be engaged in OceanHackWeek throughout the day.
 
 **Detailed schedule is available on the [Schedule page](../schedule.md).**
 
@@ -15,18 +15,18 @@ We will use the [OceanHackWeek Slack workspace](http://oceanhackweek.slack.com/)
 
 [Go directly from a channel or direct message chat into a voice or video chat](https://slack.com/help/articles/216771908-Make-calls-in-Slack), with screen-sharing capability. This will be particularly useful during hack project time.
 
-## OHW JupyterHub ("The Hub") and GitHub
+## JupyterHub ("The Hub") and GitHub
 
-- OHW JupyterHub ("The Hub"): [https://workshop.nmfs-openscapes.2i2c.cloud](https://workshop.nmfs-openscapes.2i2c.cloud)
+For tutorials and project work we use [CryoCloud](https://book.cryointhecloud.com/), a community JupyterHub where we set up pre-configured compute environments.
+
+- The Hub: [https://hub.cryointhecloud.com](https://hub.cryointhecloud.com)
 - OHW GitHub organization: [https://github.com/oceanhackweek](https://github.com/oceanhackweek)
 
-## Tutorials broadcasting
-
-We will use Zoom to broadcast all tutorials. The Zoom link will be distributed via Slack.
+You need to be in the [`ohw26-participants`](https://github.com/orgs/oceanhackweek/teams/ohw26-participants) team **with your organization membership set to public** before you can log in. See the [FAQ](faq.md) for the short version, or the [JupyterHub preparation page](../../resources/prep/jupyterhub.md) for the full walkthrough with screenshots.
 
 ## Hack projects
 
-See the [Hacking at OHW25 page](../projects/index.md) for more information.
+See the [Hacking at OHW26 page](../projects/index.md) for more information.
 
 ## Getting Help
 
@@ -35,7 +35,7 @@ See the [Getting Help page](getting_help.md) for guidance and links to have your
 ```{toctree}
 :hidden:
 
-Overview <./overview>
+FAQ <faq>
 Getting Help <getting_help>
 ```
 

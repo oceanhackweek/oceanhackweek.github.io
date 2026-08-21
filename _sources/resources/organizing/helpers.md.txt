@@ -16,5 +16,5 @@
 - Make sure to follow Code of Conduct when interacting on Slack
 - Help answer questions if you can
 - Upvote (add `+1` emoji) questions you think are important
-- If questions pop up in other channels unrelated to the tutorials, please answer if you can or ping [the appropriate team](../logistics/getting_help.md#slack-help-groups)
-- If there are answers at the end of the tutorial that did not get answered, please ping [the appropriate team](../logistics/getting_help.md#slack-help-groups)
+- If questions pop up in other channels unrelated to the tutorials, please answer if you can or ping someone who can
+- If there are questions at the end of the tutorial that did not get answered, please ping someone who can help

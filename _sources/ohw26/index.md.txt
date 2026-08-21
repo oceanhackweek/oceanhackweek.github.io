@@ -27,12 +27,10 @@ The schedule
 
 The OceanHackWeek program consists of hands-on tutorials, visual presentations, and collaborative hack projects throughout a 5-day period.
 
-<!-- 
 ```{admonition} Technical preparations and background for OceanHackWeek!
-- Please review the ["Preparation" materials](../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW `JupyterHub`
-- For tutorials on Python and R scientific tools and techniques that we will use in OceanHackWeek, see the [OHW 2022 tutorials page](../ohw22/tutorials-index/index.md)!
+- Please review the ["Preparation" materials](../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW `JupyterHub` on [CryoCloud](https://book.cryointhecloud.com/)
+- The [Compute FAQ](logistics/faq.md) covers logging in to CryoCloud, picking an environment, and shutting your server down
 ```
--->
 
 ```{image} ../assets/images/ohw_hacking/ohw23-group-pic.jpeg
 :alt: OHW23 group picture
@@ -172,8 +170,10 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
 
 schedule
 Organizers <organizers>
-<!-- Logistics <logistics/index> -->
-<!-- tutorials-index/index -->
-<!-- Projects <projects/index> -->
-<!-- Information for Applicants <applicants> -->
+Logistics <logistics/index>
+tutorials-index/index
+Tutorials Getting Started <tutorials_getting_started>
+Projects <projects/index>
+Information for Applicants <applicants>
+OHW Fellows <../about/fellows.md>
 ```
