@@ -25,7 +25,7 @@ GitHub organizations are a convenient way for teams to get all content relevant 
 
 We have created a GitHub organization called oceanhackweek at [https://github.com/oceanhackweek](https://github.com/oceanhackweek). For security purposes you can only join the organization by invitation. You should already have received the invitation to GitHub. If you didn't:
 
-1. Once you have a GitHub ID, in the `#ohw23_helpdesk` Slack channel ask for help and include `@help-infrastructure` in your message so that folks who have the ability to make changes are notified.
+1. Once you have a GitHub ID, ask for help in the `#ohw26_helpdesk` Slack channel so that folks who have the ability to make changes are notified.
 2. We will then send you an invitation which should generate an email notification to the email you provided when you signed up for GitHub
 3. Follow the links in the email to accept the invitation
 

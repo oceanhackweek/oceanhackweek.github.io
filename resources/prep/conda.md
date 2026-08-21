@@ -30,7 +30,7 @@ You can temporarily add packages to your hub, via Jupyter cell magic, `%pip inst
 :::{admonition} pip install trouble
 :class: danger
 
-For those who know their way around Jupyter, you may be tempted to `!pip install <list-of-packages>`. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance from `@help-infrastructure` to debug). More information is [available here.](https://docs.2i2c.org/user/get-started/)
+For those who know their way around Jupyter, you may be tempted to `!pip install <list-of-packages>`. This can leave your environment in an inconsistent state, which may prevent your server from starting (and will require some heavy duty assistance in the `#ohw26_helpdesk` Slack channel to debug). More information is [available here.](https://docs.2i2c.org/user/get-started/)
 
 :::
 
