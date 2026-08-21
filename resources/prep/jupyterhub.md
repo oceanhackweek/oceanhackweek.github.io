@@ -14,33 +14,59 @@ We will use the [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) softw
 
 ## Why are we using a shared cloud computing environment?
 
-Teaching software to a diverse group of participants, each with different computers and operating systems, can be challenging. There are specific ways to configure our software for the tutorials to be successful, so it takes time to get everyone set up consistently. Our solution to this is to give everyone access to a cloud computing environment that is pre-configured for the specific software we will deploy. This cloud computing instance can be accessed from any web browser, which eliminates the need for configuring each person's individual computer. For this hackweek we have created virtual computing instances that can be deployed on demand in a parallel computing environment. We use JupyterHub as a way to give a Jupyter Notebook server ([JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)) to each person in a group. [These (slightly old) slides](https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview?from_action=save) give a nice overview of what JupyterHub is all about. JupyterHub enables us to quickly begin working with code without spending time to get the necessary libraries and dependencies set up on everyone's individual computers.
+Teaching software to a diverse group of participants, each with different computers and operating systems, can be challenging. There are specific ways to configure our software for the tutorials to be successful, so it takes time to get everyone set up consistently. Our solution to this is to give everyone access to a cloud computing environment that is pre-configured for the specific software we will deploy. This cloud computing instance can be accessed from any web browser, which eliminates the need for configuring each person's individual computer. We use JupyterHub as a way to give a Jupyter Notebook server ([JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)) to each person in a group. [These (slightly old) slides](https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview?from_action=save) give a nice overview of what JupyterHub is all about. JupyterHub enables us to quickly begin working with code without spending time to get the necessary libraries and dependencies set up on everyone's individual computers.
 
-We encourage you to use our shared JupyterHub resources for running all the tutorials and for your projects. We also hope you will practice installing Python libraries locally on your laptop so that you can continue working after leaving our event.
+For OceanHackWeek we use [**CryoCloud**](https://book.cryointhecloud.com/), a community JupyterHub run on [2i2c](https://2i2c.org) infrastructure, where we can set up pre-configured compute environments for the tutorials. CryoCloud serves a broad cryosphere and ocean science community, and OceanHackWeek is one of the groups it hosts.
+
+We encourage you to use CryoCloud for running all the tutorials and for your projects. We also hope you will practice installing Python libraries locally on your laptop so that you can continue working after leaving our event.
+
+## Before you can log in: your GitHub membership
+
+CryoCloud decides what you can access from your GitHub organization and team membership, so two things need to be true before your first login:
+
+1. You have **accepted the invitation** to the [OceanHackWeek GitHub organization](https://github.com/oceanhackweek).
+2. Your organization membership is **public**, so that you show up in the participants team for the current event (for OHW26, [`ohw26-participants`](https://github.com/orgs/oceanhackweek/teams/ohw26-participants)).
+
+To check the second one, find yourself on the team page above and open your own profile within the organization (a URL like `https://github.com/orgs/oceanhackweek/people/YOUR-USERNAME`). **Membership** should read `public`:
+
+![GitHub organization membership set to public](../img/ohw26-cryocloud-github-visibility.png)
+
+If it reads `private`, use the dropdown next to it to switch it to public.
 
 ## How do I access the shared cloud environment?
 
-Access to our shared cloud environment by clicking on [https://nmfs-openscapes.2i2c.cloud](https://nmfs-openscapes.2i2c.cloud)
+Go to [https://hub.cryointhecloud.com](https://hub.cryointhecloud.com) and sign in with GitHub.
 
-![hub-opening](../img/ohw21-jupyterhub-opening.png)
+The first time you log in, GitHub will ask you to authorize `nasa-cryo-prod` (the CryoCloud deployment, run by 2i2c) to read your organization and team membership:
 
-You can now click on the "Log in to continue" button, then on the next screen click on "Sign in with GitHub" to grant JupyterHub the required permissions. In the next window, enter your GitHub username (or email address) and password. 
+![Authorize nasa-cryo-prod by 2i2c](../img/ohw26-cryocloud-authorize-2i2c.png)
 
-Next, you will need to select the environment (server) you want to launch: Python or R
+```{admonition} Grant access to the oceanhackweek organization
+:class: important
 
-![hub select Python or R](../img/ohw23-jupyterhub-select-Python-or-R.png)
+On this screen, make sure **`oceanhackweek`** is granted — if it shows an `✕` with a **Grant** button next to it, click **Grant** before authorizing. CryoCloud cannot see your OceanHackWeek team membership otherwise, and your server won't have the OceanHackWeek environment available.
+```
 
-After making your selection, you will see something like this while the JupyterHub server environment is loading:
+Next you will land on the **Server Options** page, where you choose an **Environment** (the image, i.e. the set of installed software) and a **Resource Allocation** (how much RAM and CPU):
 
-![hub-loading](../img/ohw21-jupyterhub-loading.png)
+![CryoCloud Server Options: Environment and Resource Allocation](../img/ohw26-cryocloud-server-options.png)
 
-It will take a bit of time for this to load - be patient! Once things are spun up, **if you selected Python** you will see your very own cloud instance of a [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) graphical user interface:
+- **Environment** — choose the **OceanHackWeek Python Image** for the tutorials and for most project work. If you are working in R, choose the **Py-Rocket** R image instead.
+- **Resource Allocation** — **8 GB of RAM** should be plenty for the tutorials. Pick the smallest allocation that does the job; the compute is shared and donated.
 
-![JupyterLab](../img/ohw23-jupyterhub-Python-jupyterlab.png)
+You make this choice on every startup, so you can come back and pick something different later.
 
-**If you selected R,** you will see your very own cloud instance of [RStudio](https://posit.co/products/open-source/rstudio/):
+Then click **Start**. You will see a progress bar and an event log while your server spins up:
 
-![RStudio](../img/ohw23-jupyterhub-R-RStudio.png)
+![Server starting up, pulling the OceanHackWeek image](../img/ohw26-cryocloud-server-starting.png)
+
+```{admonition} Startup can take several minutes
+:class: note
+
+Starting a new node and pulling our environment takes a while — especially if everyone is logging in at once, such as at the beginning of a tutorial. Be patient, and don't reload repeatedly.
+```
+
+Once things are spun up, you will be dropped into your very own cloud instance of the [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) interface (or [RStudio](https://posit.co/products/open-source/rstudio/), if you started the Py-Rocket R image).
 
 ## How do I get the tutorial repository?
 
@@ -54,13 +80,13 @@ The nbgitpuller link is magical, but it can't detect which profile you are curre
 
 :::{tab-item} Python
 
-[Pull tutorial repo for the Python profile](https://workshop.nmfs-openscapes.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW25)
+[Pull tutorial repo for the Python profile](https://hub.cryointhecloud.com/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=lab%2Ftree%2Fohw-tutorials%2F&branch=OHW26)
 
 :::
 
 :::{tab-item} R
 
-[Pull tutorial repo for the R profile](https://workshop.nmfs-openscapes.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW25)
+[Pull tutorial repo for the R profile](https://hub.cryointhecloud.com/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foceanhackweek%2Fohw-tutorials&urlpath=rstudio%2F&branch=OHW26)
 
 :::
 
@@ -112,22 +138,22 @@ After issuing the `git clone` command you should see something like this (again,
 
 ## End your Hub session every day. Will I lose all of my work?
 
-**When you are finished working for the day or for an extended period of time, it is important to explicitly shutdown your JupyterHub session,** 
-to reduce the load on our cloud infrastructure and overall costs. 
+**When you are finished working for the day or for an extended period of time, it is important to explicitly shutdown your JupyterHub session,**
+to reduce the load on our cloud infrastructure and overall costs.
 
 **To shutdown your server:**
 
 If you are **using JupyterLab**, you access the control via `File > Hub Control Panel` menu item:
 
-![hub shut down step 1](../img/ohw21-shutdownhub-step1.png)
+![File menu with Hub Control Panel highlighted](../img/ohw26-cryocloud-hub-control-panel.png)
 
-Then you can shut down your server from your hub control panel (which you can also access directly from [https://workshop.nmfs-openscapes.2i2c.cloud/hub/home](https://workshop.nmfs-openscapes.2i2c.cloud/hub/home)):
+Then click **Stop My Server** in your hub control panel (which you can also reach directly at [https://hub.cryointhecloud.com/hub/home](https://hub.cryointhecloud.com/hub/home)):
 
-![hub shut down step 2](../img/ohw21-shutdownhub-step2.png)
+![Hub control panel with Stop My Server button](../img/ohw26-cryocloud-stop-server.png)
 
 Note that the menu item `File > Log Out` doesn't actually shut down the server, so please follow these steps instead.
 
-If you are **using RStudio**, the `Log out` and `Quit session` entries under the `File` menu won't do much! Shut down your server from your hub control panel [https://workshop.nmfs-openscapes.2i2c.cloud/hub/home](https://workshop.nmfs-openscapes.2i2c.cloud/hub/home)), as described above.
+If you are **using RStudio**, the `Log out` and `Quit session` entries under the `File` menu won't do much! Shut down your server from your hub control panel, [https://hub.cryointhecloud.com/hub/home](https://hub.cryointhecloud.com/hub/home), as described above.
 
 ```{admonition} Note
 :class: important
@@ -137,39 +163,19 @@ cause any of your work to be lost or deleted. It simply shuts down some resource
 It would be equivalent to turning off your desktop computer at the end of the day.
 ```
 
-## How do I do distributed computation?
+## Using CryoCloud after OceanHackWeek
 
-[Dask](https://dask.org/) is available on the JupyterHub for distributed compute.
+Access granted for the event is tied to the event. If you would like to keep using CryoCloud afterwards, go through CryoCloud's own [getting started instructions](https://book.cryointhecloud.com/getting-started/), including the survey. You'll then be invited to their Slack channel, which is how the hub admins and users stay in touch.
 
-To start up a Dask cluster, call
+Two notes on filling out that form:
 
-``` python
-from dask.distributed import Client
-from dask_gateway import GatewayCluster
-
-cluster = GatewayCluster()
-client = Client(cluster)
-
-# xarray becomes even more awesome
-```
-
-And then either call `cluster` on it's own line in a cell and use the UI, or `cluster.scale(NUMBER_OF_WORKERS_TO_SCALE_TO)`.
-
-```{admonition} Note
-
-Just as it can take a few minutes for JupyterHub to start up your server, it can also take a few minutes before Dask workers become available. 
-
-We are working on making Dask (and server) scaling faster, but no promises of faster scaling at this point.
-```
-
-Similar to your server, please shutdown your Dask clusters when you are done.
-
-``` python
-cluster.shutdown()  # or cluster.close()
-```
+- **Award number** — if you don't have a grant number to enter, put down `OceanHackWeek`. It doesn't bill any grant; it's used for tracking and for justifying their compute credits.
+- **Institution** — the list is a bit US-centric at the moment. If one of the options is a reasonable match but there's a better term for your situation, please put that down under *Other*, so that the form can be improved.
 
 ## References and Resources
 
+- [CryoCloud JupyterBook](https://book.cryointhecloud.com/) — the hub's own documentation, including tutorials on working in the cloud.
+- [2i2c user documentation](https://docs.2i2c.org/user/get-started/) — general guidance for 2i2c-managed hubs like CryoCloud.
 - [Why Jupyter is data scientists’ computational notebook of choice. An improved architecture and enthusiastic user base are driving uptake of the open-source web tool (Nature, 2018-10)](https://www.nature.com/articles/d41586-018-07196-1)
 - [Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/), an online open book.
 - OceanHackWeek 2020 pre-hackweek tutorial "Jupyter and Scientific Python basics: numpy, pandas, matplotlib": [Jupyter notebooks](https://github.com/oceanhackweek/ohw-preweek/tree/master/data-analysis-modules) — [tutorial video](https://youtu.be/CTUAgpvfze0).
