@@ -29,7 +29,7 @@ The OceanHackWeek program consists of hands-on tutorials, visual presentations, 
 
 ```{admonition} Technical preparations and background for OceanHackWeek!
 - Please review the ["Preparation" materials](../resources/prep/index.md) covering basic topics like `Git`, `GitHub`, `conda` package management and the OHW `JupyterHub` on [CryoCloud](https://book.cryointhecloud.com/)
-- New for OHW26: the [Compute FAQ](logistics/faq.md) covers logging in to CryoCloud, picking an environment, and shutting your server down
+- The [Compute FAQ](logistics/faq.md) covers logging in to CryoCloud, picking an environment, and shutting your server down
 ```
 
 ```{image} ../assets/images/ohw_hacking/ohw23-group-pic.jpeg

@@ -4,7 +4,7 @@ OHW26 will be in person at the [Bamfield Marine Sciences Centre](https://bamfiel
 
 ## Time
 
-OceanHackWeek 2026 will take place August 24-28.  The in-person participants will be engaged in OceanHackWeek throughout the day.
+OceanHackWeek 2026 will take place August 24-28.  The participants will be engaged in OceanHackWeek throughout the day.
 
 **Detailed schedule is available on the [Schedule page](../schedule.md).**
 
@@ -23,10 +23,6 @@ For tutorials and project work we use [CryoCloud](https://book.cryointhecloud.co
 - OHW GitHub organization: [https://github.com/oceanhackweek](https://github.com/oceanhackweek)
 
 You need to be in the [`ohw26-participants`](https://github.com/orgs/oceanhackweek/teams/ohw26-participants) team **with your organization membership set to public** before you can log in. See the [FAQ](faq.md) for the short version, or the [JupyterHub preparation page](../../resources/prep/jupyterhub.md) for the full walkthrough with screenshots.
-
-## Tutorials broadcasting
-
-We will use Zoom to broadcast all tutorials. The Zoom link will be distributed via Slack.
 
 ## Hack projects
 

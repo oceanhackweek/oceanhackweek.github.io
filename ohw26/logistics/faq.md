@@ -83,4 +83,4 @@ Two notes on that form:
 
 ## Something's broken and this page didn't help
 
-Ask in the `#ohw26_helpdesk` Slack channel and tag `@help-infrastructure`. See the [Getting Help page](getting_help.md) for the other help groups.
+Ask in the `#ohw26_helpdesk` Slack channel. See the [Getting Help page](getting_help.md) for the other help groups.

@@ -13,26 +13,15 @@ We provide a number of resources to help get you started on our [Resources page]
 
 We've set up the `#ohw26_helpdesk` Slack channel to ask technical questions (or other types of questions, if you'd like). 
 
-We will set up some helpdesk Slack user group that you can use to tag your question as, say, about Python. We'll list and describe those groups here. If you know the rough category of help that you may need, please tag one of the helpdesk user groups to get their attention. All help usergroups can be found by typing `@help-` and Slack will prompt with options.
+We will set up some helpdesk Slack user group that you can use to tag your question as, say, about Python. We'll list and describe those groups here.
 
 You are also welcome to direct message the helpers if you don't feel comfortable asking questions publicly.
-
-### Slack help groups
-
-- `@help-infrastructure` - For issues regarding the CryoCloud JupyterHub, Slack, Github, and Zoom. See the [Compute FAQ](faq.md) first for the common hub questions.
-- `@help-projects` - For help with managing projects, for instance asking how to set up a new repo, or organize meetings.
-- `@help-python` - Questions about Python programming.
-- `@help-r` - Questions about R programming.
-- `@help-ml` - Questions about machine learning.
-- `@help-git` - Questions about git.
-- `@help-tutorials` - For help with tutorial logistics, like cloning the notebooks.
-- `@help-website` - If there are any issues with the website tag us to take a look.
 
 ## During tutorials
 
 Tune in on Slack for continuous Q&A!
 
-- Ask questions on Slack! Use the `#ohw26_tutorials` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
+- Ask questions on Slack! Use the `#ohw26_general` channel to ask questions or check out answers to questions others have posed. We will use this same channel every day. Several of us will be monitoring this channel and addressing your questions throughout the tutorials
 - **Vote up** questions from others to help the moderators prioritize which questions to ask the speaker during tutorials.
 - Tutorial moderators will mark questions that are best answered by the instructor and ask helpers (and anyone else!) to answer the rest in real time. Then when the instructor ask if there are questions the moderators will read those reserved for the instructor.
 - Zoom Chat will **not** be available. Ask on Slack!
