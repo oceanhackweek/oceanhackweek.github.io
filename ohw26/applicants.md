@@ -87,7 +87,7 @@ We also encourage participants to explore more advanced topics before the hackwe
 
 ### Q: I don't know the first thing about version revision/control systems. Can I still apply?
 
-During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. In previous years we have offered refresher in the week prior to the actual OHW event. The organizing committee is deciding whether we can offer this in OHW24. You are welcome to check back here for this info, but we want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basic. 
+During the hackweek we will use Git and GitHub but you are not expected to be an expert on it. Check the [schedule](schedule.md) for any Git and GitHub sessions during the week. We want to emphasize that nothing is better than trying it yourself first -- we recommend the [Software Carpentry lessons](https://swcarpentry.github.io/git-novice/) for learning git basics.
 
 Note that we will require you to create a [GitHub account](https://github.com/) before completing the application.
 
