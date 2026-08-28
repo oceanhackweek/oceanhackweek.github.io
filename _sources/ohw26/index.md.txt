@@ -158,6 +158,16 @@ The events will be all-day workshops (approximately 9am - 5pm). Join us for five
   ```
 
   </div>
+  </div>
+
+  <div class="col-4" style="margin-bottom: 1rem">
+
+  ```{image} ../assets/images/logos/RTRF_Logo-01_Stacked_BLK.png
+  :alt: Cryo-in-the-cloud
+  :width: 180px
+  ```
+
+  </div>
   
 </div>
 
