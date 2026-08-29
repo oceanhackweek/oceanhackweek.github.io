@@ -13,7 +13,6 @@ The OceanHackWeek Steering Committee helps chart the continued evolution of Ocea
 ```{ohw-team}
 :roles: Steering Committee
 :badges:
-:hide_role_badges: "OHW18 O*,OHW19 O*,OHW20 O*,OHW21 O*,*Participant*"
 ```
 
 ## Past Members
@@ -24,5 +23,4 @@ Without their help OceanHackWeek wouldn't be what it is today.
 ```{ohw-team}
 :roles: Steering Committee - Emeritus
 :badges:
-:hide_role_badges: "OHW18 O*,OHW19 O*,OHW20 O*,OHW21 O*,*Participant*"
 ```
