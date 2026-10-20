@@ -8,19 +8,23 @@ OceanHackWeek (OHW) is a 5-day collaborative learning experience aimed at explor
 creating and promoting effective computation and analysis workflows for
 large and complex oceanographic data. It includes tutorials, data exploration, software development, collaborative projects and community networking.
 
-Its objectives are to:
+Its **OBJECTIVES** are to:
 
 - Promote data and software proficiency in ocean scientists: Provide participants with computational and data science skills that can advance oceanography research, which often requires the integration and manipulation of diverse sources of data and models.
 - Facilitate inclusive community building: Connect oceanographers across disciplines and career stages and cultivate an open science and a sharing culture.
 
 Learn more by browsing our [previous OceanHackWeek events](pasthackweeks), held annually since 2018. 
 
-## OceanHackWeek Presentations
+## OceanHackWeek Publications and Presentations
+
+Mitchell, C., W.-J. Lee, F. Fernandes, J. Gum, A. Kerney, E. Mayorga, T. Moore, N. Mortimer, N. Ribeiro, and V. Staneva. 2026. OceanHackWeek: An inclusive, collaborative approach to developing oceanography data science skills. *Oceanography* 39(1):50–55, https://doi.org/10.5670/oceanog.2026.e104
+
+Martin, P.E., E. Eli Holmes, E. Mayorga, J.K. Ansong, U. Bhaskar, J. Cornejo-Donoso, D. Correa-Chilón, R. Damoah, D. Fierro-Arcos, L. Gómez-Navarro, N. Kumar, A. Lawal-Are, S. Maity, S. Majumder, D. Menemenlis, A. Modi, E. Nyadjro, O. Oghenechovwen, A. Oikonomou, M. Oladipo, M. Peña, D.T. Quaye, Y. Santana-Falcón, BR Smitha, C. Troupin, G. Vagenas, H. Villalobos, and G.L. Wagner. 2025. Harnessing marine open data science for ocean sustainability in Africa, South Asia, and Latin America. *Oceanography* 38(1):59–66, https://doi.org/10.5670/oceanog.2025.121
 
 Mitchell, C., Fernandes, F., Gum, J., Kerney, A., Lee, W-J., Mayorga, E., Moore, T., Mortimer, N., Ribeiro, N. (2024) OceanHackWeek: an inclusive, collaborative approach to developing oceanography data science skills.
 [Poster abstract](https://amsa-2024.p.asnevents.com.au/days/2024-09-16/abstract/104728) #660, [2024 Australian Marine Sciences Association (AMSA) Annual Meeting combined with NZMSS](https://www.amsa.asn.au/amsa-home/amsa-annual-conferences/2024-hobart/), 15-19 Sept, Hobart, Australia. - {download}`Poster pdf<../_static/Mitchell2024_PosterOceanHackWeek_AMSA24-660.pdf>`
 
-Mayorga E., Biddle M., Fernandes F., Gentemann C., Gum J., Gumustel D., Kerney A., Koh J., Lee W-J., Martin P., Mitchell C., Moore T., Record N., Tan A. (2022) OceanHackWeek (OHW) - A collaborative model for expanding data science proficiency in oceanography. 
+Mayorga E., Biddle, M., Fernandes, F., Gentemann, C., Gum, J., Gumustel, D., Kerney, A., Koh, J., Lee, W-J., Martin, P., Mitchell, C., Moore, T., Record, N., Tan, A. (2022) OceanHackWeek (OHW) - A collaborative model for expanding data science proficiency in oceanography. 
 [Poster abstract](https://osm2022.secure-platform.com/a/gallery/rounds/3/details/8367) 8375, [Ocean Sciences Meeting 2022](https://www.aslo.org/osm2022/), 24 Feb - 4 Mar, Online. - {download}`Poster pdf<../_static/Mayorga2022_PosterOceanHackWeek_OSM22_8675_odp03.pdf>`
 
 Lee, W-J., Tan, A., Staneva, V., Fernandes, F., Gum, J., Mayorga, E., Crone, T., Abernathey, R. (2020) Building Oceanhackweek: a week of data science, hacking, collaboration and more. 
